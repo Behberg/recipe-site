@@ -20,6 +20,15 @@ logo_url: /favicon.svg
 media_folder: public/images/recipes
 public_folder: /images/recipes
 
+# Valodas. Latviešu ir galvenā. Receptēm var pievienot tulkojumus: katrai valodai
+# tiek saglabāts atsevišķs fails (piem. pelekie-zirni.en.md). Tulkot vajag tikai tekstu,
+# daudzumi, laiki un attēli tiek ņemti no latviešu receptes. Ja tulkojuma nav, rāda latviski.
+i18n:
+  structure: multiple_files
+  locales: [lv, en, ru, lt]
+  default_locale: lv
+  omit_default_locale_from_filename: true
+
 # Faila nosaukums no virsraksta: "Pelēkie zirņi" kļūst par "pelekie-zirni".
 slug:
   encoding: ascii
@@ -35,6 +44,7 @@ collections:
     folder: src/content/recipes
     extension: md
     format: frontmatter
+    i18n: true
     create: true
     delete: true
     slug: '{{title}}'
@@ -48,10 +58,11 @@ collections:
       - { label: 'Virtuve', field: cuisine }
       - { label: 'Kategorija', field: category }
     fields:
-      - { label: 'Nosaukums', name: title, widget: string }
+      - { label: 'Nosaukums', name: title, widget: string, i18n: true }
       - label: 'Īss apraksts'
         name: description
         widget: text
+        i18n: true
         hint: 'Viens vai divi teikumi. Redzams zem virsraksta un Google meklēšanā.'
       - label: 'Virtuve'
         name: cuisine
@@ -116,6 +127,7 @@ collections:
         name: yield
         widget: string
         required: false
+        i18n: true
         hint: 'Ievārījumiem un cepumiem, piem. "4 burkām pa 0,5 l" vai "apm. 40 pīrāgiem". Tad porciju vietā rāda ½×, 1×, 2×, 3× pogas.'
       - label: 'Grūtība'
         name: difficulty
@@ -128,30 +140,35 @@ collections:
       - label: 'Sastāvdaļas'
         name: ingredients
         widget: list
+        i18n: true
         summary: '{{fields.amount}} {{fields.unit}} {{fields.name}}'
-        hint: 'Daudzums tiek automātiski pārrēķināts, kad lietotājs maina porciju skaitu.'
+        hint: 'Daudzums tiek automātiski pārrēķināts, kad lietotājs maina porciju skaitu. Tulkojumā pietiek pārtulkot nosaukumus: bieži lietotas sastāvdaļas tiek pārtulkotas automātiski.'
         fields:
-          - { label: 'Sastāvdaļa', name: name, widget: string, hint: 'piem. "kviešu milti" vai "sāls pēc garšas"' }
-          - { label: 'Daudzums', name: amount, widget: number, value_type: float, required: false, hint: 'Tikai skaitlis. 0.5 tiks parādīts kā ½' }
+          - { label: 'Sastāvdaļa', name: name, widget: string, i18n: true, hint: 'piem. "kviešu milti" vai "sāls pēc garšas"' }
+          - { label: 'Daudzums', name: amount, widget: number, value_type: float, required: false, i18n: duplicate, hint: 'Tikai skaitlis. 0.5 tiks parādīts kā ½' }
           - label: 'Mērvienība'
             name: unit
             widget: string
             required: false
+            i18n: duplicate
             hint: 'g, kg, ml, l, ēd. k., tējk., gab., daiv., šķipsna, saujiņa'
           - label: 'Grupa (nav obligāta)'
             name: group
             widget: string
             required: false
+            i18n: true
             hint: 'piem. "Mīklai" vai "Pildījumam". Sastāvdaļas ar vienādu grupu tiek rādītas kopā.'
       - label: 'Pagatavošanas soļi'
         name: steps
         widget: list
+        i18n: true
         hint: 'Viens solis = viena darbība. Ja solī ir laiks (piem. "vāra 10 minūtes"), lapā parādās taimera poga.'
         field: { label: 'Solis', name: step, widget: text }
       - label: 'Padomi'
         name: tips
         widget: list
         required: false
+        i18n: true
         field: { label: 'Padoms', name: tip, widget: text }
       - label: 'Birkas'
         name: tags
@@ -180,6 +197,7 @@ collections:
         name: body
         widget: markdown
         required: false
+        i18n: true
         hint: 'Neliels ievads par recepti. Rādīts virs sastāvdaļām.'
 
   # ---------------------------------------------------------------- Virtuves
@@ -208,6 +226,37 @@ collections:
       - { label: 'Krāsa', name: color, widget: color, default: '#9e3039' }
       - { label: 'Apraksts', name: description, widget: text }
       - { label: 'Secība', name: order, widget: number, value_type: int, default: 100, hint: 'Mazāks skaitlis = augstāk sarakstā' }
+      - label: 'Tulkojumi'
+        name: translations
+        widget: object
+        required: false
+        collapsed: true
+        hint: 'Nosaukums un apraksts angļu, krievu un lietuviešu valodā. Ja tukšs, rāda latviski.'
+        fields:
+          - label: 'English'
+            name: en
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
+          - label: 'Русский'
+            name: ru
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
+          - label: 'Lietuvių'
+            name: lt
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
 
   # ---------------------------------------------------------------- Kategorijas
   - name: categories
@@ -229,6 +278,37 @@ collections:
       - { label: 'Krāsa', name: color, widget: color, default: '#c8773a' }
       - { label: 'Apraksts', name: description, widget: text }
       - { label: 'Secība', name: order, widget: number, value_type: int, default: 100 }
+      - label: 'Tulkojumi'
+        name: translations
+        widget: object
+        required: false
+        collapsed: true
+        hint: 'Nosaukums un apraksts angļu, krievu un lietuviešu valodā. Ja tukšs, rāda latviski.'
+        fields:
+          - label: 'English'
+            name: en
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
+          - label: 'Русский'
+            name: ru
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
+          - label: 'Lietuvių'
+            name: lt
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
 
   # ---------------------------------------------------------------- Svētki
   - name: svetki
@@ -276,6 +356,37 @@ collections:
       - { label: 'Kura pēc kārtas (1 līdz 5, -1 = pēdējā)', name: nth, widget: number, value_type: int, required: false }
       - { label: 'Cik dienas iepriekš rādīt sākumlapā', name: leadDays, widget: number, value_type: int, default: 14 }
       - { label: 'Secība', name: order, widget: number, value_type: int, default: 100 }
+      - label: 'Tulkojumi'
+        name: translations
+        widget: object
+        required: false
+        collapsed: true
+        hint: 'Nosaukums un apraksts angļu, krievu un lietuviešu valodā. Ja tukšs, rāda latviski.'
+        fields:
+          - label: 'English'
+            name: en
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
+          - label: 'Русский'
+            name: ru
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
+          - label: 'Lietuvių'
+            name: lt
+            widget: object
+            required: false
+            fields:
+              - { label: 'Nosaukums', name: name, widget: string, required: false }
+              - { label: 'Reģions', name: region, widget: string, required: false }
+              - { label: 'Apraksts', name: description, widget: text, required: false }
 
   # ---------------------------------------------------------------- Iestatījumi
   - name: iestatijumi
