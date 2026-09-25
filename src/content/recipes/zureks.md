@@ -4,6 +4,9 @@ description: "Poļu skābā rudzu miltu zupa ar desu, kartupeļiem, olu un mārr
 cuisine: polu
 category: zupas
 emoji: "🥣"
+icon: soup
+iconColors: "#e8dcc0"
+iconExtra: "egg bacon"
 prepTime: 15
 cookTime: 35
 servings: 6

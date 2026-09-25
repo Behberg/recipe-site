@@ -4,6 +4,9 @@ description: "Kraukšķīgi rupjmaizes grauzdiņi ar ķiploku un krēmīgu siera
 cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🍞"
+icon: plate
+iconColors: "#5a3420, #f3efe6, #f3cf5a"
+iconExtra: "sticks dip"
 prepTime: 10
 cookTime: 10
 servings: 4

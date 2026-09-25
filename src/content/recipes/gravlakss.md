@@ -4,6 +4,9 @@ description: "Sālī, cukurā un dillēs marinēts lasis ar sinepju mērci. Gata
 cuisine: skandinavu
 category: salati-un-uzkodas
 emoji: "🐟"
+icon: plate
+iconColors: "#f28b5a, #f3efe6"
+iconExtra: "salmon herbs"
 prepTime: 20
 cookTime: 0
 servings: 8

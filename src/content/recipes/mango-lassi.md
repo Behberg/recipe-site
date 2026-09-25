@@ -4,6 +4,9 @@ description: "Krēmīgs indiešu jogurta dzēriens ar mango un kardamonu."
 cuisine: indiesu
 category: dzerieni
 emoji: "🥭"
+icon: glass
+iconColors: "#f2b33a"
+iconExtra: "🥭"
 prepTime: 5
 cookTime: 0
 servings: 2

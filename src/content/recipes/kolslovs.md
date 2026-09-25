@@ -4,6 +4,9 @@ description: "Kraukšķīgi kāpostu un burkānu salāti krēmīgā mērcē. Obl
 cuisine: amerikas
 category: salati-un-uzkodas
 emoji: "🥬"
+icon: soup
+iconColors: "#f1ecd8, #f7f2ea, #e8801e"
+iconExtra: "chunks"
 prepTime: 15
 cookTime: 0
 servings: 6

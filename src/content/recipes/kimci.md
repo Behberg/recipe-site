@@ -4,6 +4,9 @@ description: "Korejiešu raudzēti Pekinas kāposti ar čili, ķiploku un ingver
 cuisine: korejiesu
 category: ievarijumi-un-konservi
 emoji: "🌶️"
+icon: jar
+iconColors: "#d8402a"
+iconExtra: "🌶️"
 prepTime: 60
 cookTime: 0
 servings: 16

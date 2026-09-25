@@ -4,6 +4,9 @@ description: "Kraukšķīgi, saldskābi marinēti gurķi ar dillēm, ķiplokiem 
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🥒"
+icon: jar
+iconColors: "#7a9a3a"
+iconExtra: "🥒"
 prepTime: 30
 cookTime: 20
 servings: 12

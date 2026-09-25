@@ -4,6 +4,9 @@ description: "Sadrupinātas bezē, putukrējums un zemenes vienā glāzē. Vasar
 cuisine: britu
 category: saldie-edieni
 emoji: "🍓"
+icon: layers
+iconColors: "#f7f0e0, #d6364a, #fbf7ef"
+iconExtra: "cream 🍓"
 prepTime: 10
 cookTime: 0
 servings: 4

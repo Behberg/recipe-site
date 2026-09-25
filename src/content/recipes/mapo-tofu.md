@@ -4,6 +4,9 @@ description: "Mīksts tofu pikantā mērcē ar malto gaļu, ķiploku un čili. S
 cuisine: kiniesu
 category: pamatedieni
 emoji: "🥘"
+icon: soup
+iconColors: "#b8321f"
+iconExtra: "cubes herbs"
 prepTime: 10
 cookTime: 15
 servings: 3

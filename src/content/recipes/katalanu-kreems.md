@@ -4,6 +4,8 @@ description: "Spāņu olu krēms ar citronu un kanēli un kraukšķīgu karamele
 cuisine: spanu
 category: saldie-edieni
 emoji: "🍮"
+icon: ramekin
+iconColors: "#c8842a"
 prepTime: 15
 cookTime: 15
 servings: 4

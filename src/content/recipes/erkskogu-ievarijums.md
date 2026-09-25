@@ -4,6 +4,8 @@ description: "Dzintara krāsas ērkšķogu ievārījums ar veselām ogām. Vecm�
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟢"
+icon: jar
+iconColors: "#9bb84a"
 prepTime: 30
 cookTime: 30
 servings: 10

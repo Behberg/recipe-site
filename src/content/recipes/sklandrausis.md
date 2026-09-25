@@ -4,6 +4,9 @@ description: "Kurzemes lībiešu rausis ar rudzu mīklas pamatni, kartupeļu un 
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🥧"
+icon: tart
+iconColors: "#e8801e, #b88a4e"
+iconExtra: "cinnamon"
 prepTime: 45
 cookTime: 25
 servings: 12

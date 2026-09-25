@@ -4,6 +4,9 @@ description: "Rozā, atspirdzinoša rabarberu limonāde ar citronu un piparmētr
 cuisine: latviesu
 category: dzerieni
 emoji: "🍹"
+icon: glass
+iconColors: "#f2a0b0"
+iconExtra: "ice mint"
 prepTime: 10
 cookTime: 15
 servings: 8

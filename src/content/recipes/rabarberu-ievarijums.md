@@ -4,6 +4,8 @@ description: "Skābeni salds rabarberu ievārījums ar svaigu ingveru un apelsī
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🌱"
+icon: jar
+iconColors: "#d9607a"
 prepTime: 20
 cookTime: 30
 servings: 8

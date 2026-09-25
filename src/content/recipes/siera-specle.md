@@ -4,6 +4,8 @@ description: "Mīkstas mājas olu nūdeles ar kausētu sieru un kraukšķīgiem 
 cuisine: vacu
 category: pamatedieni
 emoji: "🧀"
+icon: casserole
+iconColors: "#f0c23a"
 prepTime: 20
 cookTime: 20
 servings: 4

@@ -4,6 +4,9 @@ description: "Salda rupjmaizes zupa ar žāvētiem augļiem, kanēli un putukrē
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🥣"
+icon: soup
+iconColors: "#5a2e1a"
+iconExtra: "cream"
 prepTime: 15
 cookTime: 30
 servings: 6

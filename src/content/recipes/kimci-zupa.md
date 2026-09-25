@@ -4,6 +4,9 @@ description: "Sildoša un sātīga korejiešu zupa ar nobriedušu kimči, cūkga
 cuisine: korejiesu
 category: zupas
 emoji: "🌶️"
+icon: soup
+iconColors: "#d8402a"
+iconExtra: "cubes chili"
 prepTime: 10
 cookTime: 25
 servings: 3

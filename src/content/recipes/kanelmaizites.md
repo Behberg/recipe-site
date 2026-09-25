@@ -4,6 +4,9 @@ description: "Mīkstas, smaržīgas zviedru kanēļmaizītes ar kardamonu un pē
 cuisine: skandinavu
 category: maize-un-cepumi
 emoji: "🥐"
+icon: bun
+iconColors: "#d9913a"
+iconExtra: "swirl sugar"
 prepTime: 40
 cookTime: 15
 servings: 20

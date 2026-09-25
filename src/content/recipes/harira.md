@@ -4,6 +4,9 @@ description: "Marokas tomātu, lēcu un aunazirņu zupa ar garšvielām un citro
 cuisine: marokas
 category: zupas
 emoji: "🥣"
+icon: soup
+iconColors: "#c85a2a"
+iconExtra: "chunks herbs"
 prepTime: 15
 cookTime: 45
 servings: 6

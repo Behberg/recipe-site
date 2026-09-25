@@ -4,6 +4,9 @@ description: "Pikanta Sičuaņas vista vokā ar zemesriekstiem, čili un saldsk�
 cuisine: kiniesu
 category: pamatedieni
 emoji: "🌶️"
+icon: skillet
+iconColors: "#b8521f, #c98a4a"
+iconExtra: "chunks nuts"
 prepTime: 15
 cookTime: 10
 servings: 3

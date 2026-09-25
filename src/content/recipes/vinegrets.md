@@ -4,6 +4,9 @@ description: "Krāsaini biešu salāti ar kartupeļiem, burkāniem, marinētiem 
 cuisine: austrumeiropas
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#b0203a, #f7f2ea, #e8c070"
+iconExtra: "chunks"
 prepTime: 20
 cookTime: 45
 servings: 6

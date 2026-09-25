@@ -4,6 +4,9 @@ description: "Mīksta, gaisīga itāļu plātsmaize ar olīveļļu, rupjo sāli 
 cuisine: italu
 category: maize-un-cepumi
 emoji: "🥖"
+icon: flatbread
+iconColors: "#e0a852, #e8b862"
+iconExtra: "dimples herbs"
 prepTime: 20
 cookTime: 25
 servings: 8

@@ -4,6 +4,9 @@ description: "Mīkstas rauga maizītes ar ķiploku un dilles eļļu. Obligāts p
 cuisine: ukrainu
 category: maize-un-cepumi
 emoji: "🧄"
+icon: bun
+iconColors: "#d9913a"
+iconExtra: "cluster herbs"
 prepTime: 25
 cookTime: 20
 servings: 12

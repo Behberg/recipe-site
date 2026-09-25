@@ -4,6 +4,9 @@ description: "Sulīga, salda banānu maize no pārgatavojušiem banāniem. Broka
 cuisine: amerikas
 category: maize-un-cepumi
 emoji: "🍌"
+icon: loaf
+iconColors: "#a86a36"
+iconExtra: "🍌"
 prepTime: 10
 cookTime: 55
 servings: 10

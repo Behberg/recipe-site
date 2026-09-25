@@ -4,6 +4,8 @@ description: "Biezs, tumšs un vitamīniem bagāts upeņu ievārījums. Ātrāka
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🫐"
+icon: jar
+iconColors: "#2a1030"
 prepTime: 20
 cookTime: 15
 servings: 10

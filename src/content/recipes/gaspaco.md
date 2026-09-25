@@ -4,6 +4,9 @@ description: "Auksta spāņu tomātu zupa ar gurķi, papriku un olīveļļu. Vas
 cuisine: spanu
 category: zupas
 emoji: "🍅"
+icon: soup
+iconColors: "#d6402a"
+iconExtra: "cubes herbs"
 prepTime: 15
 cookTime: 0
 servings: 4

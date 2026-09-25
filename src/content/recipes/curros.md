@@ -4,6 +4,9 @@ description: "Kraukšķīgi cepti mīklas stienīši ar kanēļa cukuru un biezu
 cuisine: spanu
 category: saldie-edieni
 emoji: "🥖"
+icon: plate
+iconColors: "#d9a557, #f3efe6, #5a3020"
+iconExtra: "sticks dip"
 prepTime: 15
 cookTime: 20
 servings: 4

@@ -4,6 +4,9 @@ description: "Grieķu baklažānu kārtojums ar jēra vai liellopu gaļas mērci
 cuisine: grieku
 category: pamatedieni
 emoji: "🍆"
+icon: casserole
+iconColors: "#e8c878"
+iconExtra: "🍆"
 prepTime: 45
 cookTime: 60
 servings: 8

@@ -4,6 +4,9 @@ description: "Irdens kuskuss ar ceptiem dārzeņiem, aunazirņiem, rozīnēm un 
 cuisine: marokas
 category: pamatedieni
 emoji: "🥘"
+icon: soup
+iconColors: "#e8cf8a, #f7f2ea, #c8402a"
+iconExtra: "chunks herbs"
 prepTime: 15
 cookTime: 35
 servings: 4

@@ -4,6 +4,8 @@ description: "Brazīlijas šokolādes karameļu bumbiņas no kondensētā piena.
 cuisine: latinamerikas
 category: saldie-edieni
 emoji: "🍬"
+icon: sweets
+iconColors: "#4a2a1a"
 prepTime: 20
 cookTime: 15
 servings: 20

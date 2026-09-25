@@ -4,6 +4,9 @@ description: "Gaisīgs, rozā mannas deserts ar dzērvenēm vai brūklenēm. Pas
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍧"
+icon: layers
+iconColors: "#f4b6cc"
+iconExtra: "cream"
 prepTime: 5
 cookTime: 20
 servings: 4

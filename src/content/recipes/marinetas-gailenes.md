@@ -4,6 +4,9 @@ description: "Mazas gailenes saldskābā marinādē ar sīpolu un garšvielām. 
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍄"
+icon: jar
+iconColors: "#e0a02a"
+iconExtra: "🍄"
 prepTime: 40
 cookTime: 25
 servings: 8

@@ -4,6 +4,8 @@ description: "Tortiljas ar vistas un siera pildījumu, ceptas pikantā tomātu m
 cuisine: meksikas
 category: pamatedieni
 emoji: "🌮"
+icon: casserole
+iconColors: "#c8402a"
 prepTime: 25
 cookTime: 25
 servings: 4

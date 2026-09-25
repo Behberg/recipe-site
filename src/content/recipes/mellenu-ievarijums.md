@@ -4,6 +4,9 @@ description: "Meža melleņu ievārījums ar citronu. Tumšs, biezs un bagāts a
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🫐"
+icon: jar
+iconColors: "#2e2a6a"
+iconExtra: "🫐"
 prepTime: 15
 cookTime: 20
 servings: 10

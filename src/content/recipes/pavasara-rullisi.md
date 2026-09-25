@@ -4,6 +4,9 @@ description: "Kraukšķīgi rullīši ar kāpostiem, burkāniem, šampinjoniem u
 cuisine: kiniesu
 category: salati-un-uzkodas
 emoji: "🥢"
+icon: plate
+iconColors: "#d9a052, #f3efe6, #d6402a"
+iconExtra: "rolls dip"
 prepTime: 40
 cookTime: 20
 servings: 6

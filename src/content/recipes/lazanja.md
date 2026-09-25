@@ -4,6 +4,9 @@ description: "Klasiska itāļu lazanja ar gaļas mērci, bešamela mērci un kau
 cuisine: italu
 category: pamatedieni
 emoji: "🍝"
+icon: cake
+iconColors: "#e8c36a, #b8401f, #f3e6c8, #b8401f, #e8c36a"
+iconExtra: "herbs"
 prepTime: 40
 cookTime: 45
 servings: 8

@@ -4,6 +4,9 @@ description: "Maigs indiešu lēcu karijs ar kurkumu, ķiploku un tomātiem. Lē
 cuisine: indiesu
 category: pamatedieni
 emoji: "🍲"
+icon: soup
+iconColors: "#e0a526"
+iconExtra: "herbs"
 prepTime: 10
 cookTime: 30
 servings: 4

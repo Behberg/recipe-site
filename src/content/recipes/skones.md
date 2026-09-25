@@ -4,6 +4,9 @@ description: "Mīkstas britu tējas maizītes, ko pasniedz ar ievārījumu un sa
 cuisine: britu
 category: maize-un-cepumi
 emoji: "🫖"
+icon: bun
+iconColors: "#e3b567"
+iconExtra: "round 🍓"
 prepTime: 15
 cookTime: 15
 servings: 8

@@ -4,6 +4,9 @@ description: "Šokolādes un cepumu deserts ar iebiezināto pienu. Bez cepšanas
 cuisine: lietuviesu
 category: saldie-edieni
 emoji: "🍫"
+icon: loaf
+iconColors: "#4a2a1a, #e8d3a8"
+iconExtra: "chunks"
 prepTime: 15
 cookTime: 5
 servings: 10

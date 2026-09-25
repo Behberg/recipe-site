@@ -4,6 +4,9 @@ description: "Šokolādes biskvīts ar ķiršiem un putukrējumu. Slavenākā v�
 cuisine: vacu
 category: saldie-edieni
 emoji: "🍒"
+icon: cake
+iconColors: "#3a1f14, #fbf6ea, #3a1f14, #fbf6ea"
+iconExtra: "🍒"
 prepTime: 60
 cookTime: 35
 servings: 12

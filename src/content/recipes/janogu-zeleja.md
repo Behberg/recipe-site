@@ -4,6 +4,8 @@ description: "Caurspīdīga, spīdīga jāņogu želeja bez sēkliņām. Pie ga�
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🔴"
+icon: jar
+iconColors: "#d0101e"
 prepTime: 20
 cookTime: 20
 servings: 8

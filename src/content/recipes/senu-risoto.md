@@ -4,6 +4,9 @@ description: "Krēmīgs itāļu risoto ar šampinjoniem vai meža sēnēm, parme
 cuisine: italu
 category: pamatedieni
 emoji: "🍚"
+icon: soup
+iconColors: "#efe0bc, #f7f2ea, #b89a6a"
+iconExtra: "mushrooms herbs"
 prepTime: 10
 cookTime: 30
 servings: 4

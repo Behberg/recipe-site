@@ -4,6 +4,9 @@ description: "Stipra, sildoša svaiga ingvera tēja ar citronu un medu. Pret saa
 cuisine: latviesu
 category: dzerieni
 emoji: "🫖"
+icon: glass
+iconColors: "#e8b84a, #6f9a4a"
+iconExtra: "mug 🍋"
 prepTime: 5
 cookTime: 10
 servings: 2

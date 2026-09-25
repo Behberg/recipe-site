@@ -4,6 +4,9 @@ description: "Svētku kartupeļu salāti ar gaļu, olām, gurķiem un krējuma u
 cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#f3ecd6, #f7f2ea, #e8a0a0"
+iconExtra: "chunks"
 prepTime: 30
 cookTime: 30
 servings: 8

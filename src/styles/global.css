@@ -793,10 +793,10 @@ p {
   --c: var(--brand);
   display: grid;
   place-items: center;
+  /* Soft tint of the category colour, shared by emoji and illustrated icons. */
   background:
-    radial-gradient(circle at 22% 18%, rgb(255 255 255 / 0.35), transparent 42%),
-    radial-gradient(circle at 85% 90%, rgb(0 0 0 / 0.18), transparent 50%),
-    linear-gradient(145deg, color-mix(in oklab, var(--c) 72%, #fff 28%), var(--c));
+    radial-gradient(circle at 25% 15%, rgb(255 255 255 / 0.7), transparent 45%),
+    linear-gradient(150deg, color-mix(in oklab, var(--c) 14%, #fffaf3), color-mix(in oklab, var(--c) 30%, #fffaf3));
   position: relative;
   overflow: hidden;
 }
@@ -812,8 +812,22 @@ p {
   position: relative;
   font-size: clamp(3.2rem, 14vw, 5.5rem);
   line-height: 1;
-  filter: drop-shadow(0 14px 18px rgb(0 0 0 / 0.28));
+  filter: drop-shadow(0 12px 14px rgb(60 30 10 / 0.16));
   transform: rotate(-6deg);
+}
+.art::before {
+  background-image: radial-gradient(color-mix(in oklab, var(--c) 30%, transparent) 1.2px, transparent 1.4px);
+  opacity: 0.5;
+}
+.art--icon .dish-icon {
+  position: relative;
+  width: 78%;
+  height: auto;
+  max-height: 88%;
+  filter: drop-shadow(0 10px 14px rgb(60 30 10 / 0.12));
+}
+.art--icon.art--lg .dish-icon {
+  width: min(70%, 380px);
 }
 .art--lg .art-emoji {
   font-size: clamp(6rem, 30vw, 11rem);
@@ -1229,8 +1243,10 @@ p {
   left: 50%;
   transform: translateX(-50%);
   display: grid;
+  /* minmax(0, 1fr): long recipe titles must not stretch the timer past the screen edge */
+  grid-template-columns: minmax(0, 1fr);
   gap: 6px;
-  width: min(290px, calc(100vw - 24px));
+  width: min(340px, calc(100vw - 32px));
   pointer-events: none;
 }
 .ktimers.in-dialog {
@@ -1240,8 +1256,9 @@ p {
   pointer-events: auto;
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 4px 4px 4px 8px;
+  min-width: 0;
+  gap: 10px;
+  padding: 6px 6px 6px 10px;
   border-radius: var(--pill);
   background: var(--ink);
   color: var(--bg);
@@ -1250,12 +1267,12 @@ p {
 }
 .ktimer-ring {
   flex-shrink: 0;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: conic-gradient(var(--honey) var(--p, 0%), rgb(255 255 255 / 0.18) 0);
-  -webkit-mask: radial-gradient(circle, transparent 6px, #000 7px);
-  mask: radial-gradient(circle, transparent 6px, #000 7px);
+  -webkit-mask: radial-gradient(circle, transparent 8px, #000 9px);
+  mask: radial-gradient(circle, transparent 8px, #000 9px);
 }
 .ktimer-text {
   flex: 1;
@@ -1265,14 +1282,14 @@ p {
   line-height: 1.15;
 }
 .ktimer-label {
-  font-size: 0.66rem;
+  font-size: 0.72rem;
   opacity: 0.75;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .ktimer-time {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.01em;
 }
@@ -1280,9 +1297,9 @@ p {
   flex-shrink: 0;
   display: grid;
   place-items: center;
-  min-width: 32px;
-  height: 32px;
-  padding: 0 8px;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
   border-radius: var(--pill);
   background: rgb(255 255 255 / 0.14);
   font-weight: 700;
@@ -1308,8 +1325,8 @@ p {
   padding: 0 14px;
 }
 .ktimer-btn svg {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
 }
 .ktimer-btn[data-act='cancel'] {
   background: rgb(255 255 255 / 0.22);

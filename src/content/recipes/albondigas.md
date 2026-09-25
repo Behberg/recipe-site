@@ -4,6 +4,9 @@ description: "Spāņu gaļas bumbiņas bagātīgā tomātu mērcē ar papriku un
 cuisine: spanu
 category: pamatedieni
 emoji: "🍝"
+icon: skillet
+iconColors: "#c8402a, #8a5230"
+iconExtra: "balls herbs"
 prepTime: 20
 cookTime: 30
 servings: 4

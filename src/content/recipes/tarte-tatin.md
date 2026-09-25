@@ -4,6 +4,9 @@ description: "Karamelizēti āboli zem kraukšķīgas kārtainās mīklas. Pēc 
 cuisine: francu
 category: saldie-edieni
 emoji: "🍎"
+icon: tart
+iconColors: "#c8702a, #d9a14e"
+iconExtra: "apples"
 prepTime: 20
 cookTime: 45
 servings: 8

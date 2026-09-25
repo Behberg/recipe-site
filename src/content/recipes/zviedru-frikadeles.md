@@ -4,6 +4,9 @@ description: "Mazas gaļas bumbiņas krējuma mērcē ar brūkleņu ievārījumu
 cuisine: skandinavu
 category: pamatedieni
 emoji: "🍖"
+icon: skillet
+iconColors: "#e8d3a8, #8a5230"
+iconExtra: "balls"
 prepTime: 25
 cookTime: 25
 servings: 4

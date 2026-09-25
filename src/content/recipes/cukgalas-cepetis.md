@@ -4,6 +4,9 @@ description: "Sulīgs cūkgaļas cepetis ar kraukšķīgu garoziņu, ķimenēm u
 cuisine: latviesu
 category: pamatedieni
 emoji: "🍖"
+icon: roast
+iconColors: "#a8582a"
+iconExtra: "herbs"
 prepTime: 20
 cookTime: 120
 servings: 8

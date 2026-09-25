@@ -4,6 +4,9 @@ description: "Atspirdzinošs sarkanvīna dzēriens ar apelsīniem, āboliem un k
 cuisine: spanu
 category: dzerieni
 emoji: "🍷"
+icon: glass
+iconColors: "#8a1a3a"
+iconExtra: "orange ice"
 prepTime: 15
 cookTime: 0
 servings: 8

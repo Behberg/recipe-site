@@ -4,6 +4,9 @@ description: "Mīksti mājas kartupeļu njoki brūnā sviestā ar salviju un par
 cuisine: italu
 category: pamatedieni
 emoji: "🥔"
+icon: plate
+iconColors: "#efe2b0, #f3efe6, #e3b04a"
+iconExtra: "dumplings herbs"
 prepTime: 40
 cookTime: 20
 servings: 4

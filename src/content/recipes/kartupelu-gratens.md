@@ -4,6 +4,8 @@ description: "Plānās kartupeļu šķēlēs krējumā ar ķiploku, cepti krāsn
 cuisine: francu
 category: pamatedieni
 emoji: "🥔"
+icon: casserole
+iconColors: "#efd28a"
 prepTime: 20
 cookTime: 70
 servings: 6

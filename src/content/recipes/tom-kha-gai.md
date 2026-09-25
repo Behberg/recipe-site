@@ -4,6 +4,9 @@ description: "Maiga taju kokosriekstu zupa ar vistu, ingveru, citronzāli un lai
 cuisine: taizemes
 category: zupas
 emoji: "🥥"
+icon: soup
+iconColors: "#f3e3c0"
+iconExtra: "chili herbs"
 prepTime: 15
 cookTime: 20
 servings: 4

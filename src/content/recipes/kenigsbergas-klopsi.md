@@ -4,6 +4,9 @@ description: "Maigas gaļas bumbiņas baltā krējuma mērcē ar kaperiem un cit
 cuisine: vacu
 category: pamatedieni
 emoji: "🍖"
+icon: skillet
+iconColors: "#efe4c8, #b8844a"
+iconExtra: "balls herbs"
 prepTime: 20
 cookTime: 30
 servings: 4

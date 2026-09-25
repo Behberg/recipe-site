@@ -4,6 +4,9 @@ description: "Japāņu kāpostu pankūka ar bekonu, majonēzi un saldsāļu mēr
 cuisine: japanu
 category: pamatedieni
 emoji: "🥞"
+icon: flatbread
+iconColors: "#c98a3a, #7a3e22"
+iconExtra: "lines herbs"
 prepTime: 15
 cookTime: 15
 servings: 2

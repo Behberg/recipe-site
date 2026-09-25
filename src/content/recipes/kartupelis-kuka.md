@@ -4,6 +4,9 @@ description: "Leģendārās šokolādes cepumu bumbiņas ar kondensēto pienu un
 cuisine: austrumeiropas
 category: saldie-edieni
 emoji: "🍫"
+icon: sweets
+iconColors: "#5a3020"
+iconExtra: "oval"
 prepTime: 25
 cookTime: 0
 servings: 12

@@ -4,6 +4,9 @@ description: "Krēmīga gaileņu mērce ar sīpoliem un dillēm. Latvijas vasara
 cuisine: latviesu
 category: pamatedieni
 emoji: "🍄"
+icon: skillet
+iconColors: "#f0dfb8, #e3a02b"
+iconExtra: "mushrooms herbs"
 prepTime: 15
 cookTime: 25
 servings: 4

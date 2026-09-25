@@ -4,6 +4,9 @@ description: "Caurspīdīgi rīsu papīra rullīši ar garnelēm, nūdelēm, dā
 cuisine: vjetnamiesu
 category: salati-un-uzkodas
 emoji: "🥬"
+icon: plate
+iconColors: "#eef2e0, #f3efe6, #c98a4a"
+iconExtra: "rolls dip"
 prepTime: 30
 cookTime: 5
 servings: 4

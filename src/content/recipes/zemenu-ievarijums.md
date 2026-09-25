@@ -4,6 +4,9 @@ description: "Klasisks ievārījums ar veselām zemenēm un sīrupu, kas smaržo
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍓"
+icon: jar
+iconColors: "#c8102e"
+iconExtra: "🍓"
 prepTime: 20
 cookTime: 40
 servings: 12

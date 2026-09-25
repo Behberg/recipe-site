@@ -4,6 +4,9 @@ description: "Sautētu kabaču, burkānu un sīpolu pasta. Garšīgi uz maizes u
 cuisine: austrumeiropas
 category: ievarijumi-un-konservi
 emoji: "🥒"
+icon: jar
+iconColors: "#d98a3a"
+iconExtra: "🥒"
 prepTime: 25
 cookTime: 60
 servings: 10

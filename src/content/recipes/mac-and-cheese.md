@@ -4,6 +4,8 @@ description: "Krēmīgi makaroni bagātīgā čedaras siera mērcē ar kraukšķ
 cuisine: amerikas
 category: pamatedieni
 emoji: "🧀"
+icon: casserole
+iconColors: "#f0c23a"
 prepTime: 15
 cookTime: 25
 servings: 4

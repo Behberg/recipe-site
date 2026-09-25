@@ -3,7 +3,7 @@ title: "Vistas birjāni"
 description: "Smaržīgi basmati rīsi kārtās ar garšvielu vistu, ceptiem sīpoliem un zaļumiem."
 cuisine: indiesu
 category: pamatedieni
-emoji: "🍚"
+emoji: "🍛"
 prepTime: 40
 cookTime: 60
 servings: 6

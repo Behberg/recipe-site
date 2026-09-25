@@ -3,7 +3,7 @@ title: "Aukstās sezama nūdeles ar gurķi"
 description: "Ātras ķīniešu nūdeles riekstainā sezama un sojas mērcē ar kraukšķīgu gurķi un čili."
 cuisine: kiniesu
 category: pamatedieni
-emoji: "🥢"
+emoji: "🍜"
 prepTime: 10
 cookTime: 10
 servings: 2

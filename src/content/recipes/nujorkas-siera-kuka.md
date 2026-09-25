@@ -4,6 +4,9 @@ description: "Blīva, krēmīga siera kūka ar cepumu pamatni. Ar ogām vai iev�
 cuisine: amerikas
 category: saldie-edieni
 emoji: "🍰"
+icon: cake
+iconColors: "#b8864a, #f7ecd0"
+iconExtra: "🍓"
 prepTime: 25
 cookTime: 70
 servings: 12

@@ -4,6 +4,9 @@ description: "Mīksta rauga plātsmaize ar biezu vaniļas biezpiena kārtu. Kafi
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🍰"
+icon: cake
+iconColors: "#d9a55a, #f7ecd0"
+iconExtra: "dots"
 prepTime: 30
 cookTime: 30
 servings: 12

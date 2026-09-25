@@ -4,6 +4,9 @@ description: "Viegla japāņu zupa ar miso pastu, tofu, jūras aļģēm un lokie
 cuisine: japanu
 category: zupas
 emoji: "🍵"
+icon: soup
+iconColors: "#d9b87a"
+iconExtra: "cubes herbs"
 prepTime: 5
 cookTime: 10
 servings: 4

@@ -4,6 +4,9 @@ description: "Veseli ķiršu tomāti saldskābā marinādē ar ķiplokiem un dil
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍅"
+icon: jar
+iconColors: "#d6402a"
+iconExtra: "🍅"
 prepTime: 25
 cookTime: 20
 servings: 12

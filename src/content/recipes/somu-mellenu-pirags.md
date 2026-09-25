@@ -4,6 +4,8 @@ description: "Plāns smilšu mīklas pīrāgs ar mellenēm un krējuma pildījum
 cuisine: skandinavu
 category: saldie-edieni
 emoji: "🫐"
+icon: tart
+iconColors: "#3a2a6a, #d9a14e"
 prepTime: 20
 cookTime: 30
 servings: 8

@@ -4,6 +4,9 @@ description: "Ungāru liellopa gaļas zupa ar saldo papriku, kartupeļiem un ķi
 cuisine: ungaru
 category: zupas
 emoji: "🍲"
+icon: soup
+iconColors: "#b8421f"
+iconExtra: "chunks"
 prepTime: 20
 cookTime: 120
 servings: 6

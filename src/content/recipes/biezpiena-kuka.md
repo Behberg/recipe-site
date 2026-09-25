@@ -4,6 +4,9 @@ description: "Krēmīga biezpiena kūka ar kraukšķīgu smilšu mīklas pamatni
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍰"
+icon: cake
+iconColors: "#d9a55a, #f5e6c4"
+iconExtra: "dots"
 prepTime: 25
 cookTime: 60
 servings: 10

@@ -4,6 +4,9 @@ description: "Dzintara krāsas ābolu ievārījums ar kanēli un citronu. Smarž
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍏"
+icon: jar
+iconColors: "#e0a33a"
+iconExtra: "🍏"
 prepTime: 25
 cookTime: 40
 servings: 12

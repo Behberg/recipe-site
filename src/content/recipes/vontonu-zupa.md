@@ -4,6 +4,9 @@ description: "Dzidra buljona zupa ar maigiem gaļas un garneļu pelmeņiem, pak 
 cuisine: kiniesu
 category: zupas
 emoji: "🥣"
+icon: soup
+iconColors: "#e8c890"
+iconExtra: "dumplings herbs"
 prepTime: 40
 cookTime: 15
 servings: 4

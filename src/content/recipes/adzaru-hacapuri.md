@@ -4,6 +4,9 @@ description: "Laivas formas gruzīnu siera maize ar kausētu sieru, olas dzelten
 cuisine: gruzinu
 category: maize-un-cepumi
 emoji: "🧀"
+icon: flatbread
+iconColors: "#e3a857, #f3cf5a"
+iconExtra: "boat yolk"
 prepTime: 30
 cookTime: 20
 servings: 4

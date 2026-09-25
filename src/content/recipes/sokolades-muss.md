@@ -4,6 +4,9 @@ description: "Gaisīgs franču šokolādes deserts no tikai trim sastāvdaļām:
 cuisine: francu
 category: saldie-edieni
 emoji: "🍫"
+icon: layers
+iconColors: "#5a3020, #6b3e26"
+iconExtra: "cream"
 prepTime: 20
 cookTime: 5
 servings: 6

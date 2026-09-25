@@ -4,6 +4,9 @@ description: "Maigas liellopu gaļas strēmeles krējuma un sēņu mērcē. Ātr
 cuisine: austrumeiropas
 category: pamatedieni
 emoji: "🥩"
+icon: skillet
+iconColors: "#d9b98a, #7a3e22"
+iconExtra: "chunks herbs"
 prepTime: 15
 cookTime: 20
 servings: 4

@@ -4,6 +4,8 @@ description: "Zīdaini maigs vaniļas krējuma deserts ar svaigu ogu mērci. Gat
 cuisine: italu
 category: saldie-edieni
 emoji: "🍮"
+icon: layers
+iconColors: "#fbf6ea, #fbf6ea, #c2185b"
 prepTime: 15
 cookTime: 10
 servings: 4

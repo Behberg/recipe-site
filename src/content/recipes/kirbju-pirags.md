@@ -4,6 +4,8 @@ description: "Amerikāņu ķirbju pīrāgs ar kanēli, ingveru un muskatriekstu 
 cuisine: amerikas
 category: saldie-edieni
 emoji: "🥧"
+icon: tart
+iconColors: "#d9722a, #d9a14e"
 prepTime: 30
 cookTime: 55
 servings: 10

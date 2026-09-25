@@ -4,6 +4,8 @@ description: "Smaržīgs aveņu ievārījums ar spilgtu krāsu. Vislabāk garšo
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍇"
+icon: jar
+iconColors: "#c2185b"
 prepTime: 10
 cookTime: 20
 servings: 10

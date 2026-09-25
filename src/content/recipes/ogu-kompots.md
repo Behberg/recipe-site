@@ -4,6 +4,9 @@ description: "Dzidrs, salds ogu kompots ziemai no upenēm, jāņogām, ķiršiem
 cuisine: latviesu
 category: dzerieni
 emoji: "🍷"
+icon: jar
+iconColors: "#8a1a4a"
+iconExtra: "🍒"
 prepTime: 20
 cookTime: 15
 servings: 12

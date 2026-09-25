@@ -4,6 +4,8 @@ description: "Lēni vārīts, biezs plūmju biezenis ar nelielu cukura daudzumu.
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟣"
+icon: jar
+iconColors: "#4a1a3a"
 prepTime: 30
 cookTime: 120
 servings: 12

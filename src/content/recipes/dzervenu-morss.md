@@ -4,6 +4,9 @@ description: "Skābens, atspirdzinošs dzērveņu dzēriens ar medu. Silts ziem�
 cuisine: latviesu
 category: dzerieni
 emoji: "🧃"
+icon: glass
+iconColors: "#b3122e"
+iconExtra: "ice"
 prepTime: 10
 cookTime: 10
 servings: 6

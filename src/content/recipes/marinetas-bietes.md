@@ -4,6 +4,8 @@ description: "Saldskābas marinētas bietes ar krustnagliņām. Gatavas salātie
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟥"
+icon: jar
+iconColors: "#8a1638"
 prepTime: 20
 cookTime: 60
 servings: 12

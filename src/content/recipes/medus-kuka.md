@@ -4,6 +4,9 @@ description: "Plānas medus kārtas ar skābā krējuma krēmu. Pēc nakts ledus
 cuisine: austrumeiropas
 category: saldie-edieni
 emoji: "🍯"
+icon: cake
+iconColors: "#c98a3a, #f3e6c8, #c98a3a, #f3e6c8, #c98a3a, #f3e6c8"
+iconExtra: "drizzle"
 prepTime: 60
 cookTime: 40
 servings: 12

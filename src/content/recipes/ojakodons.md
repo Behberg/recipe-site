@@ -4,6 +4,9 @@ description: "Vista un sīpoli saldsāļā buljonā ar maigi sarecējušu olu uz
 cuisine: japanu
 category: pamatedieni
 emoji: "🍚"
+icon: soup
+iconColors: "#f2d47a, #f7f2ea, #c98a4a"
+iconExtra: "chunks herbs"
 prepTime: 10
 cookTime: 15
 servings: 2

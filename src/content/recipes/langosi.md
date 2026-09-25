@@ -4,6 +4,8 @@ description: "Cepta ungāru rauga plāceņa maize ar ķiploku, skābo krējumu u
 cuisine: ungaru
 category: maize-un-cepumi
 emoji: "🫓"
+icon: flatbread
+iconColors: "#d9a052, #fbf7ef, #f3cf5a"
 prepTime: 20
 cookTime: 15
 servings: 6

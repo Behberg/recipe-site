@@ -4,6 +4,9 @@ description: "Taju zaļais karijs kokosriekstu pienā ar vistu, baklažānu un b
 cuisine: taizemes
 category: pamatedieni
 emoji: "🍛"
+icon: soup
+iconColors: "#8aa33a"
+iconExtra: "chunks herbs"
 prepTime: 15
 cookTime: 20
 servings: 4

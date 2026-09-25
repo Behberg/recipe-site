@@ -4,6 +4,8 @@ description: "Grieķu pīrāgs ar spinātiem, fetu un dillēm starp kraukšķīg
 cuisine: grieku
 category: maize-un-cepumi
 emoji: "🥬"
+icon: cake
+iconColors: "#e8b85a, #4f7a2c, #e8b85a, #f0c46a"
 prepTime: 30
 cookTime: 45
 servings: 8

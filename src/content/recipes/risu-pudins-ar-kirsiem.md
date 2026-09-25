@@ -4,6 +4,8 @@ description: "Krēmīgs vaniļas rīsu deserts ar mandelēm un siltu ķiršu mē
 cuisine: skandinavu
 category: saldie-edieni
 emoji: "🍚"
+icon: layers
+iconColors: "#fbf6ea, #fbf6ea, #7a0f24"
 prepTime: 15
 cookTime: 45
 servings: 6

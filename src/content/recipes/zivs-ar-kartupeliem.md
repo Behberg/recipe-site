@@ -4,6 +4,9 @@ description: "Mencas fileja kraukšķīgā alus mīklā ar frī kartupeļiem un 
 cuisine: britu
 category: pamatedieni
 emoji: "🐟"
+icon: plate
+iconColors: "#e0b060, #f0cf6a"
+iconExtra: "cutlet sticks"
 prepTime: 20
 cookTime: 30
 servings: 4

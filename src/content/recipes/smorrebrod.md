@@ -4,6 +4,9 @@ description: "Rudzu maize ar dažādiem virsējiem: siļķi, olām, garnelēm va
 cuisine: skandinavu
 category: salati-un-uzkodas
 emoji: "🥪"
+icon: flatbread
+iconColors: "#4a2c1a, #f7f0e0, #f28b5a"
+iconExtra: "toast herbs"
 prepTime: 25
 cookTime: 10
 servings: 4

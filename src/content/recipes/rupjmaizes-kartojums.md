@@ -4,6 +4,9 @@ description: "Leģendārais latviešu deserts: kārtas ar saldu rupjmaizes drupa
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍨"
+icon: layers
+iconColors: "#4a2c1a, #f7f0e0, #b3122e, #4a2c1a, #f7f0e0"
+iconExtra: "crumbs"
 prepTime: 25
 cookTime: 10
 servings: 6

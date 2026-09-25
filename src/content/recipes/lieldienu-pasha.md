@@ -4,6 +4,9 @@ description: "Svinīgs biezpiena deserts ar sviestu, krējumu, rozīnēm un suk�
 cuisine: austrumeiropas
 category: saldie-edieni
 emoji: "🐣"
+icon: cake
+iconColors: "#f7f0e0, #fbf6ea"
+iconExtra: "dots 🐣"
 prepTime: 30
 cookTime: 10
 servings: 10

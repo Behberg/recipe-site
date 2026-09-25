@@ -4,6 +4,8 @@ description: "Zīdains vaniļas krēms ar kraukšķīgu karamelizēta cukura vir
 cuisine: francu
 category: saldie-edieni
 emoji: "🍮"
+icon: ramekin
+iconColors: "#c8842a"
 prepTime: 20
 cookTime: 40
 servings: 6

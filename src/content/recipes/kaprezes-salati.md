@@ -4,6 +4,9 @@ description: "Nogatavojušies tomāti, maiga mocarella un svaigs baziliks ar ol�
 cuisine: italu
 category: salati-un-uzkodas
 emoji: "🍅"
+icon: plate
+iconColors: "#d6402a, #f3efe6"
+iconExtra: "slices herbs"
 prepTime: 5
 cookTime: 0
 servings: 2

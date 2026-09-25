@@ -4,6 +4,9 @@ description: "Saldskābi sautēti kāposti ar speķi un burkāniem. Ideāls pied
 cuisine: latviesu
 category: pamatedieni
 emoji: "🥬"
+icon: soup
+iconColors: "#d9c98a, #f7f2ea, #c8664a"
+iconExtra: "chunks bacon"
 prepTime: 10
 cookTime: 60
 servings: 6

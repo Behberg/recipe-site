@@ -4,6 +4,9 @@ description: "Lēni sautēta vista ar sālītiem citroniem, olīvām, ingveru un
 cuisine: marokas
 category: pamatedieni
 emoji: "🍲"
+icon: soup
+iconColors: "#e0a526, #f7f2ea, #5c6b2a"
+iconExtra: "chunks olives lemon"
 prepTime: 20
 cookTime: 60
 servings: 4

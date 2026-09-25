@@ -4,6 +4,9 @@ description: "Plāna, sulīga cūkgaļas karbonāde panējumā ar ceptiem kartup
 cuisine: latviesu
 category: pamatedieni
 emoji: "🥩"
+icon: plate
+iconColors: "#c98a3a, #f0cf6a"
+iconExtra: "cutlet potatoes"
 prepTime: 20
 cookTime: 30
 servings: 4

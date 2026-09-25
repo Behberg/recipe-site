@@ -4,6 +4,9 @@ description: "Argentīnas zaļā mērce ar pētersīļiem, ķiploku, oregano un 
 cuisine: latinamerikas
 category: salati-un-uzkodas
 emoji: "🌿"
+icon: soup
+iconColors: "#5f8a2c"
+iconExtra: "herbs"
 prepTime: 10
 cookTime: 0
 servings: 6

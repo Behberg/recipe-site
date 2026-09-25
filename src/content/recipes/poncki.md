@@ -4,6 +4,9 @@ description: "Mīksti un kupli poļu rauga virtuļi ar aveņu ievārījumu un p�
 cuisine: polu
 category: saldie-edieni
 emoji: "🍩"
+icon: bun
+iconColors: "#d9913a"
+iconExtra: "round sugar"
 prepTime: 40
 cookTime: 20
 servings: 12

@@ -4,6 +4,9 @@ description: "Sātīga, skābena kāpostu zupa ar kūpinātu gaļu. Otrajā dien
 cuisine: latviesu
 category: zupas
 emoji: "🥬"
+icon: soup
+iconColors: "#d9b86a"
+iconExtra: "chunks cream"
 prepTime: 20
 cookTime: 90
 servings: 6

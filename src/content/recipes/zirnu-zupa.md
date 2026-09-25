@@ -4,6 +4,9 @@ description: "Bieza, krēmīga dzelteno zirņu zupa ar kūpinātu gaļu un grauz
 cuisine: latviesu
 category: zupas
 emoji: "🥣"
+icon: soup
+iconColors: "#e0c040"
+iconExtra: "croutons"
 prepTime: 15
 cookTime: 90
 servings: 6

@@ -4,6 +4,9 @@ description: "Liellopa gaļa, lēni sautēta sarkanvīnā ar burkāniem, sīpoli
 cuisine: francu
 category: pamatedieni
 emoji: "🥘"
+icon: soup
+iconColors: "#6b2a1f, #f7f2ea, #c86a3a"
+iconExtra: "chunks mushrooms"
 prepTime: 30
 cookTime: 180
 servings: 6

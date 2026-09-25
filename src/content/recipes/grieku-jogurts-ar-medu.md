@@ -4,6 +4,9 @@ description: "Biezs grieķu jogurts ar medu, grauzdētiem valriekstiem un svaig�
 cuisine: grieku
 category: brokastis
 emoji: "🍯"
+icon: soup
+iconColors: "#f6f2e8, #f7f2ea, #d9a531"
+iconExtra: "nuts swirl"
 prepTime: 3
 cookTime: 2
 servings: 2

@@ -4,6 +4,9 @@ description: "Samtaina, oranža ķirbju zupa ar ingveru, kokosriekstu pienu un g
 cuisine: francu
 category: zupas
 emoji: "🎃"
+icon: soup
+iconColors: "#e8801e"
+iconExtra: "cream seeds"
 prepTime: 15
 cookTime: 30
 servings: 4

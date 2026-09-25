@@ -4,6 +4,9 @@ description: "Dzidra, sildoša zupa ar maltās gaļas bumbiņām, kartupeļiem, 
 cuisine: latviesu
 category: zupas
 emoji: "🍲"
+icon: soup
+iconColors: "#e8c36a"
+iconExtra: "balls dill"
 prepTime: 20
 cookTime: 30
 servings: 6

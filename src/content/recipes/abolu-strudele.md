@@ -4,6 +4,9 @@ description: "Plāna mīkla ar āboliem, rozīnēm, kanēli un grauzdētu rīvma
 cuisine: vacu
 category: saldie-edieni
 emoji: "🥐"
+icon: loaf
+iconColors: "#e3b567"
+iconExtra: "sugar 🍎"
 prepTime: 30
 cookTime: 40
 servings: 8

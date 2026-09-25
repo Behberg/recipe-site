@@ -4,6 +4,9 @@ description: "Vienkārša, sulīga ābolu kūka, kas izdodas vienmēr. Rudens sm
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍎"
+icon: cake
+iconColors: "#e8c078, #f3dca0"
+iconExtra: "dots 🍎"
 prepTime: 20
 cookTime: 45
 servings: 10

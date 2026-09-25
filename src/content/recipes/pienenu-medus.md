@@ -4,6 +4,9 @@ description: "Zeltains sīrups no pieneņu ziediem un citrona. Garšo pēc pavas
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🌼"
+icon: jar
+iconColors: "#f2b705"
+iconExtra: "🌼"
 prepTime: 30
 cookTime: 90
 servings: 16

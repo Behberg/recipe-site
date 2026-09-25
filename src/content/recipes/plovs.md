@@ -4,6 +4,9 @@ description: "Vidusāzijas rīsi, lēni gatavoti ar jēra vai liellopa gaļu, bu
 cuisine: austrumeiropas
 category: pamatedieni
 emoji: "🍚"
+icon: soup
+iconColors: "#e0a040, #f7f2ea, #e8801e"
+iconExtra: "chunks"
 prepTime: 25
 cookTime: 90
 servings: 8

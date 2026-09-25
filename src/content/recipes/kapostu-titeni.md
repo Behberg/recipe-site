@@ -4,6 +4,9 @@ description: "Kāpostu lapās ietīta gaļas un rīsu masa, lēni sautēta tomā
 cuisine: latviesu
 category: pamatedieni
 emoji: "🥬"
+icon: plate
+iconColors: "#cfd9a0, #f3efe6, #c8402a"
+iconExtra: "rolls sauce"
 prepTime: 40
 cookTime: 60
 servings: 6

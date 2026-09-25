@@ -4,6 +4,9 @@ description: "Bieza kartupeļu un olu omlete ar sīpoliem. Spāņu bāru klasika
 cuisine: spanu
 category: brokastis
 emoji: "🍳"
+icon: cake
+iconColors: "#f0c85a, #f3d26a"
+iconExtra: "dots"
 prepTime: 15
 cookTime: 30
 servings: 4

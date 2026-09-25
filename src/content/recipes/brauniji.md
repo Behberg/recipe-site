@@ -4,6 +4,9 @@ description: "Mitri, blīvi šokolādes brauniji ar kraukšķīgu virsu. Īsts p
 cuisine: amerikas
 category: saldie-edieni
 emoji: "🍫"
+icon: cake
+iconColors: "#4a2a1a, #5a3020"
+iconExtra: "nuts"
 prepTime: 15
 cookTime: 25
 servings: 16

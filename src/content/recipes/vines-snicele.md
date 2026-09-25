@@ -4,6 +4,9 @@ description: "Plāna, kraukšķīga teļa vai cūkgaļas šnicele ar citronu un 
 cuisine: vacu
 category: pamatedieni
 emoji: "🥩"
+icon: plate
+iconColors: "#d6933a, #f3efe6"
+iconExtra: "cutlet lemon"
 prepTime: 20
 cookTime: 15
 servings: 4

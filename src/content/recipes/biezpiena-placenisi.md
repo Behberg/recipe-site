@@ -4,6 +4,9 @@ description: "Maigi, zeltaini biezpiena plācenīši brokastīm ar krējumu un i
 cuisine: latviesu
 category: brokastis
 emoji: "🥞"
+icon: plate
+iconColors: "#e6b05a, #f3efe6, #fbf5ea"
+iconExtra: "rounds sauce"
 prepTime: 10
 cookTime: 15
 servings: 3

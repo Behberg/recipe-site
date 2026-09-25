@@ -10,7 +10,7 @@ Built with [Astro](https://astro.build) as a fully static site for **Netlify**, 
 - **Cuisine directory**: 26 cuisines grouped by continent (Latviešu, Itāļu, Franču, Spāņu, Grieķu, Gruzīnu, Japāņu, Ķīniešu, Indiešu, Taizemes, Korejiešu, Meksikāņu and more). Admin can add more.
 - **Categories**: breakfasts, soups, mains, salads, breads and cookies, sweets, jams and preserves, drinks (admin can add more).
 - **Instant search and filters** (category, cuisine, time, difficulty), diacritic-insensitive, mirrored in the URL.
-- **240+ recipes** from 26 cuisines: savoury, sweets, baking, jams, preserves and drinks.
+- **270+ recipes** from 26 cuisines: savoury, simple everyday and comfort food, sweets, baking, jams, preserves and drinks.
 - **Recipe page**: servings scaler (or ½×/1×/2×/3× for jars and batches), and "cik tev ir?": tap any amount, type what you actually have (e.g. 650 g strawberries) and the whole recipe is recalculated, with g/kg and ml/l conversion.
 - **Kitchen timers**: auto-detected from steps ("vāra 10 minūtes"), several at once, keep running across pages and reloads, repeating chime and vibration until dismissed, visible inside cooking mode.
 - **Cooking mode**: full-screen, one step at a time, swipe between steps, keeps the screen awake.
@@ -19,7 +19,7 @@ Built with [Astro](https://astro.build) as a fully static site for **Netlify**, 
 - **Svētku galds + calendar** (`/svetki/`): occasions with date rules (fixed dates, Easter-relative like Meteņi, "2nd Sunday of May" like Mātes diena). The browser calculates the next dates, sorts the calendar and shows the upcoming occasion's recipes on the home page when it is within its lead time.
 - **Favourites** (Izlase) stored on the device, no account needed.
 - **SEO**: schema.org `Recipe` data (Google rich results), sitemap, Open Graph, canonical URLs.
-- **Images**: photos uploaded in the admin are resized and converted on the fly by the Netlify Image CDN. Recipes without a photo get an illustrated emoji card.
+- **Images**: photos uploaded in the admin are resized and converted on the fly by the Netlify Image CDN. Until a recipe has a photo it shows an illustrated dish icon (jar, soup bowl, cake slice, pīrāgi and more, recoloured per dish; see `src/lib/dishIcons.ts`) or a matching emoji. The admin sets these with the Ilustrācija fields.
 - **Google AdSense ready**, switched off until configured (see below).
 
 ## Development

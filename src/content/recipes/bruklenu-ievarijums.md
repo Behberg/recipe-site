@@ -4,6 +4,9 @@ description: "Skābeni rūgtens brūkleņu ievārījums ar āboliem. Obligāts p
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍒"
+icon: jar
+iconColors: "#b3122e"
+iconExtra: "🍎"
 prepTime: 20
 cookTime: 30
 servings: 12

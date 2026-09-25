@@ -4,6 +4,9 @@ description: "Spilgti rozā vasaras zupa ar bietēm, kefīru, gurķiem, dillēm 
 cuisine: latviesu
 category: zupas
 emoji: "🥣"
+icon: soup
+iconColors: "#e55b9b"
+iconExtra: "egg dill"
 prepTime: 20
 cookTime: 40
 servings: 4

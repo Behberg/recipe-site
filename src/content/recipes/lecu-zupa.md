@@ -4,6 +4,9 @@ description: "Samtaina sarkano lēcu zupa ar kuminu, citronu un pikantu paprikas
 cuisine: turku
 category: zupas
 emoji: "🥣"
+icon: soup
+iconColors: "#e0782a"
+iconExtra: "swirl lemon"
 prepTime: 10
 cookTime: 30
 servings: 4

@@ -4,6 +4,9 @@ description: "Maiga grieķu vistas zupa ar rīsiem, kas sabiezināta ar olām un
 cuisine: grieku
 category: zupas
 emoji: "🍋"
+icon: soup
+iconColors: "#f2e3a0"
+iconExtra: "lemon herbs"
 prepTime: 10
 cookTime: 30
 servings: 4

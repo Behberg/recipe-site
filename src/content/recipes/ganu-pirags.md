@@ -4,6 +4,9 @@ description: "Maltās gaļas un dārzeņu sautējums zem kartupeļu biezeņa seg
 cuisine: britu
 category: pamatedieni
 emoji: "🥧"
+icon: casserole
+iconColors: "#f0d48a"
+iconExtra: "peaks"
 prepTime: 25
 cookTime: 50
 servings: 6

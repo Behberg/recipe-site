@@ -4,6 +4,9 @@ description: "Skāba un asa taju zupa ar garnelēm, citronzāli, laimu un šampi
 cuisine: taizemes
 category: zupas
 emoji: "🍤"
+icon: soup
+iconColors: "#e8702a"
+iconExtra: "shrimp herbs"
 prepTime: 15
 cookTime: 15
 servings: 4

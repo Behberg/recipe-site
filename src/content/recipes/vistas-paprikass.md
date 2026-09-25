@@ -4,6 +4,9 @@ description: "Vista maigā paprikas un skābā krējuma mērcē. Pasniedz ar nū
 cuisine: ungaru
 category: pamatedieni
 emoji: "🍗"
+icon: skillet
+iconColors: "#d8602a, #f0c89a"
+iconExtra: "chunks cream"
 prepTime: 15
 cookTime: 45
 servings: 4

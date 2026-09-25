@@ -4,6 +4,9 @@ description: "Bagātīga biešu zupa ar liellopu gaļu, kāpostiem un krējumu. 
 cuisine: ukrainu
 category: zupas
 emoji: "🍲"
+icon: soup
+iconColors: "#b0203a"
+iconExtra: "cream dill"
 prepTime: 30
 cookTime: 120
 servings: 6

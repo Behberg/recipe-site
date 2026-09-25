@@ -4,6 +4,9 @@ description: "Peru svaigu zivju uzkoda, „gatavota” laimas sulā ar sarkano s
 cuisine: latinamerikas
 category: salati-un-uzkodas
 emoji: "🐠"
+icon: soup
+iconColors: "#f2efe6, #f7f2ea, #d33a4a"
+iconExtra: "chunks lemon"
 prepTime: 25
 cookTime: 0
 servings: 4

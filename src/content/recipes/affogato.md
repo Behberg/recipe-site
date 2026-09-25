@@ -4,6 +4,9 @@ description: "Vaniļas saldējums, pārliets ar karstu espreso. Itāļu deserts 
 cuisine: italu
 category: saldie-edieni
 emoji: "🍨"
+icon: layers
+iconColors: "#6b3e26, #f6efe0"
+iconExtra: "cream"
 prepTime: 3
 cookTime: 2
 servings: 2

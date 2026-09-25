@@ -77,6 +77,38 @@ collections:
         widget: string
         required: false
         hint: 'Piemēram 🍓 vai 🥧. Ja atstāj tukšu, tiek izmantota kategorijas emocijzīme.'
+      - label: 'Ilustrācija (ja nav foto)'
+        name: icon
+        widget: select
+        required: false
+        hint: 'Zīmēta ikona, kas tiek rādīta, kamēr receptei nav foto. Ja nav izvēlēta, rāda emocijzīmi.'
+        options:
+          - { label: 'Burka (ievārījumi, konservi)', value: jar }
+          - { label: 'Bļoda (zupas, putras, salāti, sautējumi)', value: soup }
+          - { label: 'Glāze vai krūze (dzērieni)', value: glass }
+          - { label: 'Deserts glāzē kārtās', value: layers }
+          - { label: 'Kūkas gabals', value: cake }
+          - { label: 'Pīrāgs (apaļš, atvērts)', value: tart }
+          - { label: 'Pīrādziņi un maizītes', value: bun }
+          - { label: 'Maizes klaips, kēkss', value: loaf }
+          - { label: 'Sacepums formā', value: casserole }
+          - { label: 'Panna ar mērci', value: skillet }
+          - { label: 'Šķīvis (kotletes, kartupeļi u. c.)', value: plate }
+          - { label: 'Cepetis', value: roast }
+          - { label: 'Konfektes, cepumi, olas', value: sweets }
+          - { label: 'Plāceņmaize, grauzdiņš', value: flatbread }
+          - { label: 'Siera ritulis', value: wheel }
+          - { label: 'Krēms formiņā', value: ramekin }
+      - label: 'Ilustrācijas krāsas'
+        name: iconColors
+        widget: string
+        required: false
+        hint: 'Viena vai vairākas krāsas ar komatu, piem. "#c8102e" ievārījumam vai "#d9a55a, #f5e6c4" kūkas kārtām (no apakšas uz augšu).'
+      - label: 'Ilustrācijas detaļas'
+        name: iconExtra
+        widget: string
+        required: false
+        hint: 'Neobligāti. Emocijzīme nozīmītei (piem. 🍓) un/vai vārdi: egg, dill, cream, chunks, bacon, herbs, balls, eggs, noodles, lemon, cheese, crumble, cinnamon, two, swirl, sugar, round, cluster, seeds, marble, peaks, potatoes, patty, cutlet, dumplings, rolls, sticks, dip, foam, ice, orange, mug.'
       - { label: 'Sagatavošanas laiks (min)', name: prepTime, widget: number, value_type: int, min: 0, default: 15 }
       - { label: 'Gatavošanas laiks (min)', name: cookTime, widget: number, value_type: int, min: 0, default: 30 }
       - { label: 'Porcijas', name: servings, widget: number, value_type: int, min: 1, default: 4 }

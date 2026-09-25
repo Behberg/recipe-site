@@ -4,6 +4,8 @@ description: "Gaisīgs vaniļas mannas deserts ar olu baltumiem un skābenu dzē
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍮"
+icon: layers
+iconColors: "#f7eed6, #f7eed6, #c2185b"
 prepTime: 15
 cookTime: 20
 servings: 4

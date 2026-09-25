@@ -4,6 +4,9 @@ description: "Turku olu kultenis ar tomātiem, papriku un sīpoliem. Brokastis, 
 cuisine: turku
 category: brokastis
 emoji: "🍳"
+icon: skillet
+iconColors: "#d6402a, #f6c445"
+iconExtra: "chunks herbs"
 prepTime: 10
 cookTime: 15
 servings: 2

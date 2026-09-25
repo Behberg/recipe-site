@@ -4,6 +4,9 @@ description: "Kraukšķīgi vistas gabaliņi spīdīgā saldskābā mērcē ar p
 cuisine: kiniesu
 category: pamatedieni
 emoji: "🍍"
+icon: soup
+iconColors: "#e0602a, #f7f2ea, #f2c230"
+iconExtra: "chunks"
 prepTime: 20
 cookTime: 20
 servings: 4

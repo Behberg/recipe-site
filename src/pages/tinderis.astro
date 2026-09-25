@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { getCatalog, totalTime, formatMinutes, imageUrl } from '../lib/recipes';
+import { dishIconSvg, parseIcon } from '../lib/dishIcons';
 
 const { recipes, cuisineById, categoryById } = await getCatalog();
 
@@ -15,17 +16,20 @@ const deck = recipes.map((r) => {
     e: r.data.emoji || cat?.data.emoji || '🍽️',
     c: cat?.data.color || '#9e3039',
     i: r.data.image ? imageUrl(r.data.image, 700) : '',
+    s: r.data.image ? '' : dishIconSvg(parseIcon(r.data.icon, r.data.iconColors, r.data.iconExtra), r.data.title),
     m: totalTime(r),
     time: formatMinutes(totalTime(r)),
     diff: r.data.difficulty,
     cu: r.data.cuisine.id,
     cun: cui ? `${cui.data.emoji} ${cui.data.name}` : '',
     ca: r.data.category.id,
+    tg: r.data.tags,
   };
 });
 
 const moods = [
   { id: 'viss', label: '🎲 Jebkas' },
+  { id: 'majigi', label: '🏠 Kaut kas mājīgs' },
   { id: 'satigs', label: '🍲 Kaut kas sātīgs' },
   { id: 'saldais', label: '🍰 Kaut kas salds' },
   { id: 'atri', label: '⚡ Ātri, līdz 30 min' },
@@ -114,8 +118,8 @@ const moods = [
 
 <script>
   type R = {
-    id: string; t: string; d: string; e: string; c: string; i: string; m: number;
-    time: string; diff: string; cu: string; cun: string; ca: string;
+    id: string; t: string; d: string; e: string; c: string; i: string; s: string; m: number;
+    time: string; diff: string; cu: string; cun: string; ca: string; tg: string[];
   };
   const ALL: R[] = JSON.parse(document.getElementById('tinder-data')!.textContent!);
   const root = document.querySelector<HTMLElement>('[data-tinder]')!;
@@ -124,6 +128,7 @@ const moods = [
 
   const moodFilter: Record<string, (r: R) => boolean> = {
     viss: () => true,
+    majigi: (r) => r.tg.includes('mājīgi'),
     satigs: (r) => ['pamatedieni', 'zupas'].includes(r.ca),
     saldais: (r) => ['saldie-edieni', 'maize-un-cepumi'].includes(r.ca),
     atri: (r) => r.m <= 30 && r.ca !== 'ievarijumi-un-konservi',
@@ -161,6 +166,13 @@ const moods = [
       img.alt = '';
       img.draggable = false;
       wrap.append(img);
+    } else if (r.s) {
+      // Trusted markup generated at build time by dishIconSvg().
+      const art = document.createElement('div');
+      art.className = 'art art--icon art--lg';
+      art.style.setProperty('--c', r.c);
+      art.innerHTML = r.s;
+      wrap.append(art);
     } else {
       const art = document.createElement('div');
       art.className = 'art art--lg';

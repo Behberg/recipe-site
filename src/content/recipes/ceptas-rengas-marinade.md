@@ -4,6 +4,9 @@ description: "Apceptas reņģes, kas ievilkušās saldskābā sīpolu marinādē
 cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🐟"
+icon: plate
+iconColors: "#c9924a, #f3efe6, #f3efe6"
+iconExtra: "fish herbs"
 prepTime: 20
 cookTime: 20
 servings: 6

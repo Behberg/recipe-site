@@ -4,6 +4,9 @@ description: "Tradicionāli krāsotas olas ar sīpolu mizām un augu rakstiem. D
 cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🥚"
+icon: sweets
+iconColors: "#a0401e"
+iconExtra: "egg"
 prepTime: 30
 cookTime: 15
 servings: 10

@@ -4,6 +4,9 @@ description: "Mīksti rauga pīrādziņi ar kūpinātu speķi un sīpoliem. Neat
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🥐"
+icon: bun
+iconColors: "#d9913a"
+iconExtra: "two"
 prepTime: 90
 cookTime: 15
 servings: 40

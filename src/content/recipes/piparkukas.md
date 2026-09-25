@@ -4,6 +4,9 @@ description: "Smaržīgas Ziemassvētku piparkūkas ar ingveru, kanēli, krustna
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🍪"
+icon: sweets
+iconColors: "#b8733a"
+iconExtra: "star"
 prepTime: 40
 cookTime: 10
 servings: 60

@@ -4,6 +4,9 @@ description: "Paprikas, tomātu un sīpolu sautējums ziemas krājumiem. Piedēv
 cuisine: ungaru
 category: ievarijumi-un-konservi
 emoji: "🫑"
+icon: jar
+iconColors: "#d6402a"
+iconExtra: "🫑"
 prepTime: 30
 cookTime: 40
 servings: 12

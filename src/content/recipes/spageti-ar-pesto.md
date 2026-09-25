@@ -3,7 +3,7 @@ title: "Spageti ar baziliku pesto"
 description: "Mājās gatavots zaļais pesto ar baziliku, priežu riekstiem, parmezānu un ķiploku. Pusdienas 15 minūtēs."
 cuisine: italu
 category: pamatedieni
-emoji: "🌿"
+emoji: "🍝"
 prepTime: 10
 cookTime: 10
 servings: 4

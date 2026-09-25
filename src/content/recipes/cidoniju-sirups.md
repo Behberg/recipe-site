@@ -4,6 +4,9 @@ description: "Neapstrādātas Japānas cidonijas ar cukuru: aromātisks vitamīn
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍋"
+icon: jar
+iconColors: "#f2c230"
+iconExtra: "🍋"
 prepTime: 40
 cookTime: 0
 servings: 20

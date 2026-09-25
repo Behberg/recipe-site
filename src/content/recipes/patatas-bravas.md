@@ -4,6 +4,9 @@ description: "Kraukšķīgi cepti kartupeļu kubiņi ar pikantu tomātu mērci u
 cuisine: spanu
 category: salati-un-uzkodas
 emoji: "🥔"
+icon: plate
+iconColors: "#e0a64a, #f3efe6, #c8402a"
+iconExtra: "cubes sauce"
 prepTime: 15
 cookTime: 35
 servings: 4

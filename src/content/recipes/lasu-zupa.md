@@ -4,6 +4,9 @@ description: "Maiga zivju zupa ar lasi, kartupeļiem, saldo krējumu un dillēm.
 cuisine: latviesu
 category: zupas
 emoji: "🐟"
+icon: soup
+iconColors: "#f1dcc0, #f7f2ea, #f28b5a"
+iconExtra: "chunks dill"
 prepTime: 15
 cookTime: 20
 servings: 4

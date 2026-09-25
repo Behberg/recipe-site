@@ -4,6 +4,9 @@ description: "Lietuviešu kartupeļu klimpas ar gaļas pildījumu un speķa un k
 cuisine: lietuviesu
 category: pamatedieni
 emoji: "🥔"
+icon: plate
+iconColors: "#e8dcb0, #f3efe6, #d9a066"
+iconExtra: "dumplings"
 prepTime: 60
 cookTime: 30
 servings: 6

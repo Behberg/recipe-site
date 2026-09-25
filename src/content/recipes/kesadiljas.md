@@ -4,6 +4,9 @@ description: "Kraukšķīgas tortiljas ar kūstošu sieru, pupiņām un kukurūz
 cuisine: meksikas
 category: pamatedieni
 emoji: "🧀"
+icon: plate
+iconColors: "#e8b25a, #f3efe6, #c8402a"
+iconExtra: "wedges sauce"
 prepTime: 10
 cookTime: 10
 servings: 4

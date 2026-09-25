@@ -4,6 +4,9 @@ description: "Kraukšķīgas filo kārtas ar valriekstiem un pistācijām, pārl
 cuisine: turku
 category: saldie-edieni
 emoji: "🥮"
+icon: cake
+iconColors: "#d99a3a, #f0c46a, #d99a3a, #f0c46a, #d99a3a"
+iconExtra: "nuts"
 prepTime: 40
 cookTime: 50
 servings: 24

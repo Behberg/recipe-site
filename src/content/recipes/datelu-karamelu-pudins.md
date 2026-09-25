@@ -4,6 +4,9 @@ description: "Mitrs, silts dateļu kūkas pudiņš, pārliets ar karsto sviesta 
 cuisine: britu
 category: saldie-edieni
 emoji: "🍯"
+icon: cake
+iconColors: "#6b3a1f, #8a4a24"
+iconExtra: "drizzle"
 prepTime: 20
 cookTime: 35
 servings: 8

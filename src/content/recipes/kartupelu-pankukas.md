@@ -4,6 +4,9 @@ description: "Kraukšķīgas rīvētu kartupeļu pankūkas ar sīpolu. Pasniedz 
 cuisine: latviesu
 category: pamatedieni
 emoji: "🥔"
+icon: plate
+iconColors: "#d9913a, #f3efe6, #fbf7ef"
+iconExtra: "rounds sauce"
 prepTime: 20
 cookTime: 20
 servings: 4

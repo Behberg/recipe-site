@@ -4,6 +4,9 @@ description: "Traķu karaīmu pīrādziņi ar jēra vai liellopu gaļas un sīpo
 cuisine: lietuviesu
 category: maize-un-cepumi
 emoji: "🥟"
+icon: bun
+iconColors: "#d68a34"
+iconExtra: "two pleat"
 prepTime: 45
 cookTime: 30
 servings: 10

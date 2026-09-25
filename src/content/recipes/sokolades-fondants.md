@@ -4,6 +4,8 @@ description: "Mazas šokolādes kūciņas ar šķidru, karstu vidu. Romantisks d
 cuisine: francu
 category: saldie-edieni
 emoji: "🍫"
+icon: ramekin
+iconColors: "#3a1f14, #5a3020"
 prepTime: 15
 cookTime: 12
 servings: 2

@@ -4,6 +4,9 @@ description: "Bagātīga, skābena gaļas zupa ar kūpinājumiem, marinētiem gu
 cuisine: austrumeiropas
 category: zupas
 emoji: "🍲"
+icon: soup
+iconColors: "#b8421f"
+iconExtra: "lemon olives"
 prepTime: 20
 cookTime: 40
 servings: 6

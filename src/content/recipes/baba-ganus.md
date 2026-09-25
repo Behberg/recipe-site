@@ -4,6 +4,9 @@ description: "Baklažānu pasta ar dūmu aromātu, tahini, ķiploku un citronu."
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
 emoji: "🍆"
+icon: soup
+iconColors: "#cdb89a"
+iconExtra: "swirl herbs 🍆"
 prepTime: 10
 cookTime: 40
 servings: 6

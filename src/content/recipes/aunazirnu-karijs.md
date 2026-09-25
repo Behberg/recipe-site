@@ -4,6 +4,9 @@ description: "Aunazirņi pikantā tomātu un sīpolu mērcē ar indiešu garšvi
 cuisine: indiesu
 category: pamatedieni
 emoji: "🫘"
+icon: soup
+iconColors: "#d9822b"
+iconExtra: "chunks herbs"
 prepTime: 10
 cookTime: 25
 servings: 4

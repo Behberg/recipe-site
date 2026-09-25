@@ -4,6 +4,9 @@ description: "Zīdaini gluds humuss ar tahini, citronu un ķiploku. Pasniedz ar 
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
 emoji: "🧆"
+icon: soup
+iconColors: "#e3cfa4"
+iconExtra: "swirl"
 prepTime: 15
 cookTime: 0
 servings: 6

@@ -4,6 +4,9 @@ description: "Latvijas nacionālais ēdiens: mīksti pelēkie zirņi ar kraukš�
 cuisine: latviesu
 category: pamatedieni
 emoji: "🫘"
+icon: soup
+iconColors: "#8a7560, #f7f2ea, #c8664a"
+iconExtra: "chunks bacon"
 prepTime: 15
 cookTime: 90
 servings: 4

@@ -4,6 +4,9 @@ description: "Vistas fileja ar zaļumu sviesta pildījumu kraukšķīgā panēju
 cuisine: ukrainu
 category: pamatedieni
 emoji: "🍗"
+icon: plate
+iconColors: "#d6933a, #f3efe6"
+iconExtra: "cutlet herbs"
 prepTime: 30
 cookTime: 25
 servings: 4

@@ -4,6 +4,9 @@ description: "Siltie kartupeļu salāti ar sīpolu, bekonu un etiķa mērci. Bez
 cuisine: vacu
 category: salati-un-uzkodas
 emoji: "🥔"
+icon: soup
+iconColors: "#e8d08a, #f7f2ea, #c8664a"
+iconExtra: "chunks herbs"
 prepTime: 15
 cookTime: 25
 servings: 4

@@ -4,6 +4,8 @@ description: "Dzeltenais ķimeņu siers, bez kura nav iedomājami Jāņi. Pagata
 cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🧀"
+icon: wheel
+iconColors: "#f2c230"
 prepTime: 20
 cookTime: 30
 servings: 8

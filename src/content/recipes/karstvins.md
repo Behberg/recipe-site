@@ -4,6 +4,9 @@ description: "Silts, smaržīgs sarkanvīns ar apelsīnu, kanēli un krustnagli�
 cuisine: vacu
 category: dzerieni
 emoji: "🍷"
+icon: glass
+iconColors: "#7a1a2a, #c8583a"
+iconExtra: "mug orange"
 prepTime: 10
 cookTime: 15
 servings: 6

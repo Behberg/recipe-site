@@ -4,6 +4,9 @@ description: "Korejiešu marinēta liellopa gaļa, ātri apcepta ar sīpoliem. S
 cuisine: korejiesu
 category: pamatedieni
 emoji: "🥩"
+icon: skillet
+iconColors: "#7a3e22, #3a2a1a"
+iconExtra: "chunks herbs"
 prepTime: 15
 cookTime: 10
 servings: 4

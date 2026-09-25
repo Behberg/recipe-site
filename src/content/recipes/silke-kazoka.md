@@ -4,6 +4,9 @@ description: "Svētku kārtainie salāti ar siļķi, kartupeļiem, burkāniem, o
 cuisine: austrumeiropas
 category: salati-un-uzkodas
 emoji: "🐟"
+icon: cake
+iconColors: "#f3ecd6, #e8a64a, #f7f0e0, #e8801e, #7a1a4a"
+iconExtra: "dots"
 prepTime: 40
 cookTime: 40
 servings: 8

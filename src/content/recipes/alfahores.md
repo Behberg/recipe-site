@@ -4,6 +4,9 @@ description: "Maigi kukurūzas cietes cepumi, salīmēti ar karamelizētu konden
 cuisine: latinamerikas
 category: maize-un-cepumi
 emoji: "🍪"
+icon: sweets
+iconColors: "#e8c998, #fbf9f5"
+iconExtra: "walnut"
 prepTime: 30
 cookTime: 12
 servings: 15

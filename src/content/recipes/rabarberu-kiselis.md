@@ -4,6 +4,8 @@ description: "Skābeni salds rabarberu ķīselis ar vaniļu. Pasniedz ar pienu v
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍧"
+icon: layers
+iconColors: "#e87a90"
 prepTime: 10
 cookTime: 15
 servings: 4

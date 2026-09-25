@@ -4,6 +4,9 @@ description: "Irdeni rīsi, sautēti ar tomātiem, sīpolu, ķiploku un kuminu. 
 cuisine: meksikas
 category: pamatedieni
 emoji: "🍚"
+icon: soup
+iconColors: "#e0782a, #f7f2ea, #6f9a3a"
+iconExtra: "chunks"
 prepTime: 10
 cookTime: 25
 servings: 4

@@ -4,6 +4,9 @@ description: "Franču pīrāgs ar kraukšķīgu mīklu, bekonu, sieru un krēmī
 cuisine: francu
 category: maize-un-cepumi
 emoji: "🥧"
+icon: tart
+iconColors: "#f0cf6a, #d9a14e"
+iconExtra: "herbs"
 prepTime: 30
 cookTime: 40
 servings: 8

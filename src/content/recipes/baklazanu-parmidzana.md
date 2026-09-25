@@ -4,6 +4,9 @@ description: "Cepti baklažāni kārtās ar tomātu mērci, mocarellu un parmez�
 cuisine: italu
 category: pamatedieni
 emoji: "🍆"
+icon: casserole
+iconColors: "#c8502a"
+iconExtra: "🍆"
 prepTime: 30
 cookTime: 40
 servings: 6

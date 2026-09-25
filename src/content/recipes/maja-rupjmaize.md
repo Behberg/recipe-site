@@ -4,6 +4,9 @@ description: "Īsta rudzu ieraugā raudzēta rupjmaize ar ķimenēm. Lēns proce
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🍞"
+icon: loaf
+iconColors: "#4a2c1a"
+iconExtra: "seeds"
 prepTime: 60
 cookTime: 90
 servings: 20

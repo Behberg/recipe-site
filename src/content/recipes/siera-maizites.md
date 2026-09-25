@@ -4,6 +4,9 @@ description: "Mazas, lipīgas siera maizītes no cietes mīklas. Iekšā tukšas
 cuisine: latinamerikas
 category: maize-un-cepumi
 emoji: "🧀"
+icon: bun
+iconColors: "#e3b04a"
+iconExtra: "cluster"
 prepTime: 15
 cookTime: 25
 servings: 6

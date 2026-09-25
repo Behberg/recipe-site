@@ -4,6 +4,9 @@ description: "Dabīgi skābēti kāposti ar burkāniem un ķimenēm. Tikai kāpo
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🥬"
+icon: jar
+iconColors: "#d9cf8a"
+iconExtra: "🥬"
 prepTime: 40
 cookTime: 0
 servings: 20

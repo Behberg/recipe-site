@@ -4,6 +4,9 @@ description: "Tumši sarkans ķiršu ievārījums ar veselām ogām. Brīnišķ�
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍒"
+icon: jar
+iconColors: "#7a0f24"
+iconExtra: "🍒"
 prepTime: 40
 cookTime: 30
 servings: 10

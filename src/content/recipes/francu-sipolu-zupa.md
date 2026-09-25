@@ -4,6 +4,9 @@ description: "Lēni karamelizēti sīpoli bagātīgā buljonā ar siera grauzdi�
 cuisine: francu
 category: zupas
 emoji: "🧅"
+icon: soup
+iconColors: "#8a5a2b"
+iconExtra: "cheese"
 prepTime: 15
 cookTime: 75
 servings: 4

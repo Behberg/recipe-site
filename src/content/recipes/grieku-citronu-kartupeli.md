@@ -4,6 +4,9 @@ description: "Krāsnī cepti kartupeļi ar citronu, ķiploku un oregano. Iekšā
 cuisine: grieku
 category: pamatedieni
 emoji: "🥔"
+icon: plate
+iconColors: "#e8b84a, #f3efe6"
+iconExtra: "potatoes lemon"
 prepTime: 10
 cookTime: 60
 servings: 4

@@ -4,6 +4,9 @@ description: "Krēmīgs olu kultenis ar kūpinātu lasi, lokiem un grauzdētu ma
 cuisine: britu
 category: brokastis
 emoji: "🍳"
+icon: flatbread
+iconColors: "#d9a557, #f6d56a, #f28b5a"
+iconExtra: "toast"
 prepTime: 5
 cookTime: 10
 servings: 2

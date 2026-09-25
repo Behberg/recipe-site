@@ -4,6 +4,9 @@ description: "Mitra, garšvielām bagāta burkānu kūka ar valriekstiem un sald
 cuisine: amerikas
 category: saldie-edieni
 emoji: "🥕"
+icon: cake
+iconColors: "#c8783a, #f7f0e0"
+iconExtra: "drizzle 🥕"
 prepTime: 30
 cookTime: 45
 servings: 12

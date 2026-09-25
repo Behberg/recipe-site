@@ -4,6 +4,9 @@ description: "Viegli skābena pavasara zupa ar svaigām skābenēm, kartupeļiem
 cuisine: latviesu
 category: zupas
 emoji: "🌿"
+icon: soup
+iconColors: "#8aa33a"
+iconExtra: "egg cream"
 prepTime: 15
 cookTime: 30
 servings: 4

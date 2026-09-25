@@ -4,6 +4,9 @@ description: "Olas, kas lēni sautētas pikantā tomātu un paprikas mērcē. Id
 cuisine: tuvo-austrumu
 category: brokastis
 emoji: "🍳"
+icon: skillet
+iconColors: "#c8402a, #f6a71c"
+iconExtra: "eggs herbs"
 prepTime: 10
 cookTime: 25
 servings: 2

@@ -4,6 +4,9 @@ description: "Svētku pīle ar kraukšķīgu ādu, pildīta ar skābeniem āboli
 cuisine: latviesu
 category: pamatedieni
 emoji: "🦆"
+icon: roast
+iconColors: "#b8662e"
+iconExtra: "apples"
 prepTime: 30
 cookTime: 150
 servings: 6

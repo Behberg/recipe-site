@@ -4,6 +4,9 @@ description: "Gaisīgs biskvīts ar svaigām zemenēm un vaniļas putukrējumu. 
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍓"
+icon: cake
+iconColors: "#e8c078, #fbf6ea, #e8c078, #fbf6ea"
+iconExtra: "🍓"
 prepTime: 40
 cookTime: 30
 servings: 10

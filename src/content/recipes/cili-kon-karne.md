@@ -4,6 +4,9 @@ description: "Pikants liellopu gaļas un pupiņu sautējums ar tomātiem un gar�
 cuisine: amerikas
 category: pamatedieni
 emoji: "🌶️"
+icon: soup
+iconColors: "#9a2a1c"
+iconExtra: "chunks cream"
 prepTime: 15
 cookTime: 60
 servings: 6

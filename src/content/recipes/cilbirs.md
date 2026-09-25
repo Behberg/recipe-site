@@ -4,6 +4,9 @@ description: "Atdzītas olas uz ķiploku jogurta, pārlietas ar karstu paprikas 
 cuisine: turku
 category: brokastis
 emoji: "🥚"
+icon: soup
+iconColors: "#f4efe4"
+iconExtra: "eggs chili"
 prepTime: 10
 cookTime: 10
 servings: 2

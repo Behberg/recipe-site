@@ -4,6 +4,9 @@ description: "Burgundijas klasika: vista lēni sautēta sarkanvīnā ar bekonu, 
 cuisine: francu
 category: pamatedieni
 emoji: "🍷"
+icon: soup
+iconColors: "#6b1a2a, #f7f2ea, #c98a4a"
+iconExtra: "chunks mushrooms"
 prepTime: 25
 cookTime: 90
 servings: 6

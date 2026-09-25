@@ -4,6 +4,8 @@ description: "Oranžs, skābens smiltsērkšķu sīrups bez vārīšanas. Īsta 
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟠"
+icon: jar
+iconColors: "#f28c1e"
 prepTime: 30
 cookTime: 0
 servings: 20

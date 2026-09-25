@@ -4,6 +4,8 @@ description: "Klasisks itāļu deserts ar kafijā mērcētiem savojardi cepumiem
 cuisine: italu
 category: saldie-edieni
 emoji: "☕"
+icon: cake
+iconColors: "#c9a27a, #fbf6ea, #c9a27a, #fbf6ea, #6b4a3a"
 prepTime: 30
 cookTime: 0
 servings: 8

@@ -4,6 +4,9 @@ description: "Sātīga itāļu dārzeņu zupa ar pupiņām, mazajiem makaroniem 
 cuisine: italu
 category: zupas
 emoji: "🥣"
+icon: soup
+iconColors: "#c8602a"
+iconExtra: "chunks herbs"
 prepTime: 20
 cookTime: 40
 servings: 6

@@ -4,6 +4,9 @@ description: "Skābeni salds rabarberu pīrāgs ar drupaču virskārtu. Vienkār
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🥧"
+icon: tart
+iconColors: "#d9607a, #d9a14e"
+iconExtra: "crumble"
 prepTime: 20
 cookTime: 40
 servings: 8

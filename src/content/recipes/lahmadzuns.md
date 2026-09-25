@@ -4,6 +4,9 @@ description: "Plāna turku pica ar pikantu maltās gaļas, tomātu un pētersī�
 cuisine: turku
 category: maize-un-cepumi
 emoji: "🫓"
+icon: flatbread
+iconColors: "#e0a852, #b8421f"
+iconExtra: "herbs"
 prepTime: 30
 cookTime: 15
 servings: 6

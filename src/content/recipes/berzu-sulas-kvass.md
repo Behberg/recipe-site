@@ -4,6 +4,9 @@ description: "Viegli dzirkstošs pavasara dzēriens no bērzu sulas, rozīnēm u
 cuisine: latviesu
 category: dzerieni
 emoji: "🥂"
+icon: glass
+iconColors: "#efe8c4"
+iconExtra: "bubbles"
 prepTime: 10
 cookTime: 0
 servings: 12

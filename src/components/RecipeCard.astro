@@ -33,7 +33,7 @@ const search = [d.title, d.description, cuisine?.data.name, category?.data.name,
   data-search={search}
 >
   <div class="card-media">
-    <RecipeArt image={d.image} emoji={emoji} color={color} alt={d.title} eager={eager} />
+    <RecipeArt image={d.image} emoji={emoji} icon={d.icon} iconColors={d.iconColors} iconExtra={d.iconExtra} color={color} alt={d.title} eager={eager} />
     {
       showBadge && cuisine && (
         <span class="card-badge">

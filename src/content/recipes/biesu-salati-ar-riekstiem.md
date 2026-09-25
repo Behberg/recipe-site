@@ -4,6 +4,9 @@ description: "Vienkārši, sātīgi biešu salāti ar ķiploku, valriekstiem, ž
 cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#9c1c4a"
+iconExtra: "chunks nuts"
 prepTime: 15
 cookTime: 40
 servings: 4

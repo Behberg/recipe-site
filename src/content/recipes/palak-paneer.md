@@ -4,6 +4,9 @@ description: "Siera kubiņi krēmīgā spinātu mērcē ar ķiploku, ingveru un 
 cuisine: indiesu
 category: pamatedieni
 emoji: "🥬"
+icon: soup
+iconColors: "#4f7a2c"
+iconExtra: "cubes"
 prepTime: 15
 cookTime: 25
 servings: 4

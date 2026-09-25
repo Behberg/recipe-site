@@ -4,6 +4,9 @@ description: "Provansas dārzeņu sautējums ar baklažāniem, kabačiem, paprik
 cuisine: francu
 category: pamatedieni
 emoji: "🍆"
+icon: skillet
+iconColors: "#c8402a, #6f3a8a"
+iconExtra: "chunks herbs"
 prepTime: 25
 cookTime: 50
 servings: 6

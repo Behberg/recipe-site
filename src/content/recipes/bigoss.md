@@ -4,6 +4,9 @@ description: "Poļu mednieku sautējums ar skābētiem kāpostiem, dažādām ga
 cuisine: polu
 category: pamatedieni
 emoji: "🥘"
+icon: skillet
+iconColors: "#b89a5a, #8a3a22"
+iconExtra: "chunks"
 prepTime: 25
 cookTime: 150
 servings: 8

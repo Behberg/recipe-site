@@ -4,6 +4,9 @@ description: "Gruzīnu vistas sautējums tomātos ar sīpoliem, ķiploku un daud
 cuisine: gruzinu
 category: pamatedieni
 emoji: "🍗"
+icon: skillet
+iconColors: "#c8402a, #d9913a"
+iconExtra: "chunks herbs"
 prepTime: 15
 cookTime: 50
 servings: 4

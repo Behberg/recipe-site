@@ -13,6 +13,7 @@ const { recipes, cuisines, categories, cuisineById, categoryById } = await getCa
 const featured = recipes.filter((r) => r.data.featured).slice(0, 8);
 const latest = recipes.slice(0, 8);
 const latvian = recipes.filter((r) => r.data.cuisine.id === 'latviesu').slice(0, 10);
+const comfort = recipes.filter((r) => r.data.tags.includes('mājīgi')).slice(0, 12);
 const hero = featured[0] ?? recipes[0];
 
 const countBy = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key].id === id).length;
@@ -49,6 +50,7 @@ const jsonLd = {
       </form>
       <div class="hero-chips">
         <a class="chip" href="/receptes/?laiks=30">⚡ Līdz 30 min</a>
+        <a class="chip" href="/receptes/?q=mājīgi">🏠 Mājīgi</a>
         <a class="chip" href={cuisineUrl('latviesu')}>🇱🇻 Latviešu</a>
         <a class="chip" href={categoryUrl('saldie-edieni')}>🍰 Saldie</a>
         <a class="chip" href={categoryUrl('ievarijumi-un-konservi')}>🍓 Ievārījumi</a>
@@ -67,6 +69,9 @@ const jsonLd = {
           <div class="hero-feature-media">
             <RecipeArt
               image={hero.data.image}
+              icon={hero.data.icon}
+              iconColors={hero.data.iconColors}
+              iconExtra={hero.data.iconExtra}
               emoji={hero.data.emoji || categoryById.get(hero.data.category.id)?.data.emoji || '🍽️'}
               color={categoryById.get(hero.data.category.id)?.data.color || '#9e3039'}
               alt={hero.data.title}
@@ -249,6 +254,28 @@ const jsonLd = {
         <div class="rail">
           {latvian.map((r) => (
             <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide showBadge={false} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Simple comfort food -->
+  {
+    comfort.length > 0 && (
+      <section class="section container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">🏠 Kā mājās</span>
+            <h2>Vienkārši un mājīgi</h2>
+          </div>
+          <a class="link-more" href="/receptes/?q=mājīgi">
+            Visas <Icon name="arrow-right" />
+          </a>
+        </div>
+        <div class="rail">
+          {comfort.map((r) => (
+            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide />
           ))}
         </div>
       </section>

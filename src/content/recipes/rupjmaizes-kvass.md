@@ -4,6 +4,9 @@ description: "Dabīgi raudzēts, atspirdzinošs kvass no rupjmaizes, cukura un r
 cuisine: latviesu
 category: dzerieni
 emoji: "🍺"
+icon: glass
+iconColors: "#6a3a1a"
+iconExtra: "foam"
 prepTime: 20
 cookTime: 0
 servings: 10

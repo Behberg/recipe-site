@@ -4,6 +4,9 @@ description: "Riekstu formas cepumi ar vārītā kondensētā piena pildījumu. 
 cuisine: austrumeiropas
 category: maize-un-cepumi
 emoji: "🌰"
+icon: sweets
+iconColors: "#d9a55a"
+iconExtra: "walnut"
 prepTime: 45
 cookTime: 20
 servings: 30

@@ -884,7 +884,8 @@
         "desa$",
         "desin",
         "skink",
-        "varita gal"
+        "varita gal",
+        "cisin"
       ]
     },
     {
@@ -1269,7 +1270,9 @@
         "baget",
         "cabat",
         "maize grauzdes",
-        "burgeru maizit"
+        "burgeru maizit",
+        "baltmaiz",
+        "tostermaiz"
       ]
     },
     {
@@ -1327,7 +1330,8 @@
       "group": "merces",
       "match": [
         "marineti gurk",
-        "gurku marinad"
+        "gurku marinad",
+        "marinets gurk"
       ]
     },
     {
@@ -1831,6 +1835,33 @@
       "match": [
         "asa cili merc",
         "salda cili merc"
+      ]
+    },
+    {
+      "id": "auzu-parslas",
+      "name": "Auzu pārslas",
+      "emoji": "🥣",
+      "group": "pieliekamais",
+      "match": [
+        "auzu pars"
+      ]
+    },
+    {
+      "id": "griki",
+      "name": "Griķi",
+      "emoji": "🌾",
+      "group": "pieliekamais",
+      "match": [
+        "grik"
+      ]
+    },
+    {
+      "id": "kukuruzas-parslas",
+      "name": "Kukurūzas pārslas",
+      "emoji": "🥣",
+      "group": "pieliekamais",
+      "match": [
+        "kukuruzas pars"
       ]
     }
   ]

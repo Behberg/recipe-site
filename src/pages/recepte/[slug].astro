@@ -110,7 +110,7 @@ const useMultiplier = Boolean(d.yield);
     <!-- Hero -->
     <header class="r-hero container">
       <div class="r-media">
-        <RecipeArt image={d.image} emoji={emoji} color={color} alt={d.title} sizes="(min-width: 900px) 560px, 100vw" large eager />
+        <RecipeArt image={d.image} emoji={emoji} icon={d.icon} iconColors={d.iconColors} iconExtra={d.iconExtra} color={color} alt={d.title} sizes="(min-width: 900px) 560px, 100vw" large eager />
         <div class="r-media-actions no-print">
           <a class="fav-btn" href={categoryUrl(d.category.id)} aria-label={`Atpakaļ uz: ${category?.data.name}`}>
             <Icon name="chevron-left" />

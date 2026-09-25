@@ -4,6 +4,9 @@ description: "Grauzdēta maize ar ķiploku, sulīgiem tomātiem, baziliku un ol�
 cuisine: italu
 category: salati-un-uzkodas
 emoji: "🍅"
+icon: flatbread
+iconColors: "#d9a557, #d6402a"
+iconExtra: "toast herbs"
 prepTime: 10
 cookTime: 5
 servings: 4

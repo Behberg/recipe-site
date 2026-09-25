@@ -4,6 +4,9 @@ description: "Cepti pīrādziņi ar liellopa gaļu, sīpoliem, olīvām un olu. 
 cuisine: latinamerikas
 category: maize-un-cepumi
 emoji: "🥟"
+icon: bun
+iconColors: "#d9913a"
+iconExtra: "two pleat"
 prepTime: 45
 cookTime: 25
 servings: 8

@@ -4,6 +4,8 @@ description: "Lietuviešu kartupeļu sacepums ar speķi un sīpoliem. Kraukšķ�
 cuisine: lietuviesu
 category: pamatedieni
 emoji: "🥔"
+icon: casserole
+iconColors: "#c98a3a"
 prepTime: 30
 cookTime: 90
 servings: 8

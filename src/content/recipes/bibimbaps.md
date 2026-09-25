@@ -4,6 +4,9 @@ description: "Korejiešu rīsu bļoda ar dārzeņiem, gaļu, ceptu olu un aso go
 cuisine: korejiesu
 category: pamatedieni
 emoji: "🍲"
+icon: soup
+iconColors: "#f3efe6, #f7f2ea, #c8402a"
+iconExtra: "chunks eggs"
 prepTime: 30
 cookTime: 20
 servings: 4

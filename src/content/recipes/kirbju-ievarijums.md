@@ -4,6 +4,9 @@ description: "Saulains ķirbju ievārījums ar apelsīnu un citronu. Negaidīti 
 cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🎃"
+icon: jar
+iconColors: "#e8801e"
+iconExtra: "🎃"
 prepTime: 25
 cookTime: 50
 servings: 12
