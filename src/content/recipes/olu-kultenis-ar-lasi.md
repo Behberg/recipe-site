@@ -1,7 +1,7 @@
 ---
 title: "Olu kultenis ar kūpinātu lasi"
 description: "Krēmīgs olu kultenis ar kūpinātu lasi, lokiem un grauzdētu maizi. Svētku brokastis gultā."
-cuisine: eiropas
+cuisine: britu
 category: brokastis
 emoji: "🍳"
 prepTime: 5

@@ -1,7 +1,7 @@
 ---
 title: "Boršs"
 description: "Bagātīga biešu zupa ar liellopu gaļu, kāpostiem un krējumu. To mīl visā Austrumeiropā."
-cuisine: austrumeiropas
+cuisine: ukrainu
 category: zupas
 emoji: "🍲"
 prepTime: 30

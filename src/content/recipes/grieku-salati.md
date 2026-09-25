@@ -1,7 +1,7 @@
 ---
 title: "Grieķu salāti"
 description: "Tomāti, gurķi, sarkanie sīpoli, olīvas un feta ar olīveļļu un oregano."
-cuisine: vidusjuras
+cuisine: grieku
 category: salati-un-uzkodas
 emoji: "🥗"
 prepTime: 15

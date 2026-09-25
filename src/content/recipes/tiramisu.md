@@ -1,7 +1,7 @@
 ---
 title: "Tiramisu"
 description: "Klasisks itāļu deserts ar kafijā mērcētiem savojardi cepumiem un maskarpones krēmu."
-cuisine: eiropas
+cuisine: italu
 category: saldie-edieni
 emoji: "☕"
 prepTime: 30

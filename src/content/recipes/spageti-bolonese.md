@@ -1,7 +1,7 @@
 ---
 title: "Spageti boloņese"
 description: "Bagātīga, lēni sautēta gaļas un tomātu mērce ar spageti un parmezānu."
-cuisine: eiropas
+cuisine: italu
 category: pamatedieni
 emoji: "🍝"
 prepTime: 15

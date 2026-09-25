@@ -1,7 +1,7 @@
 ---
 title: "Lazanja"
 description: "Klasiska itāļu lazanja ar gaļas mērci, bešamela mērci un kausētu sieru."
-cuisine: eiropas
+cuisine: italu
 category: pamatedieni
 emoji: "🍝"
 prepTime: 40

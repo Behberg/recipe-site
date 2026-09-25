@@ -1,7 +1,7 @@
 ---
 title: "Franču pankūkas (krepi)"
 description: "Plānas, elastīgas krepi pankūkas saldam vai sāļam pildījumam."
-cuisine: eiropas
+cuisine: francu
 category: brokastis
 emoji: "🥞"
 prepTime: 10

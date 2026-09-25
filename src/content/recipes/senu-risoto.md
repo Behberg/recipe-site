@@ -1,7 +1,7 @@
 ---
 title: "Sēņu risoto"
 description: "Krēmīgs itāļu risoto ar šampinjoniem vai meža sēnēm, parmezānu un sviestu."
-cuisine: eiropas
+cuisine: italu
 category: pamatedieni
 emoji: "🍚"
 prepTime: 10

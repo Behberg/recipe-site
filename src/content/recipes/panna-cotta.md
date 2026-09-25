@@ -1,7 +1,7 @@
 ---
 title: "Panna cotta ar ogu mērci"
 description: "Zīdaini maigs vaniļas krējuma deserts ar svaigu ogu mērci. Gatavs bez cepšanas."
-cuisine: eiropas
+cuisine: italu
 category: saldie-edieni
 emoji: "🍮"
 prepTime: 15

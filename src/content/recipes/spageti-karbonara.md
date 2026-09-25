@@ -1,7 +1,7 @@
 ---
 title: "Spageti karbonāra"
 description: "Īsta romiešu karbonāra ar olu dzeltenumiem, pekorino sieru un kraukšķīgu guančali. Bez krējuma."
-cuisine: eiropas
+cuisine: italu
 category: pamatedieni
 emoji: "🍝"
 prepTime: 10

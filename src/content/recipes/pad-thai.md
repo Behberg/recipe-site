@@ -1,7 +1,7 @@
 ---
 title: "Pad Thai"
 description: "Taizemes rīsu nūdeles ar garnelēm vai vistu, olu, pupiņu asniem un zemesriekstiem."
-cuisine: azijas
+cuisine: taizemes
 category: pamatedieni
 emoji: "🍜"
 prepTime: 20

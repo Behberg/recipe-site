@@ -166,6 +166,11 @@ collections:
     sortable_fields: [order, name]
     fields:
       - { label: 'Nosaukums', name: name, widget: string, hint: 'piem. "Itāļu" (lapā: "Itāļu virtuve")' }
+      - label: 'Kontinents'
+        name: continent
+        widget: select
+        default: Eiropa
+        options: ['Eiropa', 'Āzija', 'Tuvie Austrumi un Āfrika', 'Amerika']
       - { label: 'Reģions', name: region, widget: string, required: false, hint: 'piem. "Itālija, Sicīlija"' }
       - { label: 'Emocijzīme', name: emoji, widget: string, hint: 'piem. 🍕 vai karogs 🇮🇹' }
       - { label: 'Krāsa', name: color, widget: color, default: '#9e3039' }

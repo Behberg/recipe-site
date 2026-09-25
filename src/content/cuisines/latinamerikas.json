@@ -1,8 +1,9 @@
 {
   "name": "Latīņamerikas",
-  "region": "Meksika, Peru",
-  "emoji": "🌮",
-  "color": "#d1602a",
-  "order": 8,
-  "description": "Laima, čili, avokado un kukurūza. Svētki katrā kumosā."
+  "continent": "Amerika",
+  "region": "Peru, Brazīlija, Argentīna",
+  "emoji": "🌎",
+  "color": "#3f8a3a",
+  "order": 42,
+  "description": "Seviče, empanadas un brigadeiro. Kontinents ar ļoti daudzveidīgām garšām."
 }

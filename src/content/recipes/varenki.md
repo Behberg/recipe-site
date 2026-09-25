@@ -1,7 +1,7 @@
 ---
 title: "Vareņiki ar kartupeļiem"
 description: "Ukraiņu pusmēness pelmeņi ar kartupeļu un sīpolu pildījumu un krējumu."
-cuisine: austrumeiropas
+cuisine: ukrainu
 category: pamatedieni
 emoji: "🥟"
 prepTime: 60

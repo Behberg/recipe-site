@@ -1,7 +1,7 @@
 ---
 title: "Vistas suvlaki ar tzatziki"
 description: "Marinētas vistas iesmiņi ar citronu un oregano, pasniegti ar pitu un gurķu jogurta mērci."
-cuisine: vidusjuras
+cuisine: grieku
 category: pamatedieni
 emoji: "🍢"
 prepTime: 20

@@ -1,7 +1,7 @@
 ---
 title: "Ceptie rīsi ar olu un dārzeņiem"
 description: "Ātrs ķīniešu vokā gatavots ēdiens no vakardienas rīsiem ar olu, zirnīšiem, burkāniem un sojas mērci."
-cuisine: azijas
+cuisine: kiniesu
 category: pamatedieni
 emoji: "🍳"
 prepTime: 10

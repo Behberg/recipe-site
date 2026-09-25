@@ -1,7 +1,7 @@
 ---
 title: "Kesadiljas ar sieru un pupiņām"
 description: "Kraukšķīgas tortiljas ar kūstošu sieru, pupiņām un kukurūzu. Gatavas 15 minūtēs."
-cuisine: latinamerikas
+cuisine: meksikas
 category: pamatedieni
 emoji: "🧀"
 prepTime: 10

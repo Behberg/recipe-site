@@ -1,7 +1,7 @@
 ---
 title: "Kišs Lorēna"
 description: "Franču pīrāgs ar kraukšķīgu mīklu, bekonu, sieru un krēmīgu olu pildījumu."
-cuisine: eiropas
+cuisine: francu
 category: maize-un-cepumi
 emoji: "🥧"
 prepTime: 30

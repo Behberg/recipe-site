@@ -4,42 +4,85 @@ import { getCatalog, cuisineUrl, plural } from '../../lib/recipes';
 
 const { recipes, cuisines } = await getCatalog();
 const count = (id: string) => recipes.filter((r) => r.data.cuisine.id === id).length;
+
+const continents = [
+  { id: 'Eiropa', emoji: '🏰' },
+  { id: 'Āzija', emoji: '🏯' },
+  { id: 'Tuvie Austrumi un Āfrika', emoji: '🕌' },
+  { id: 'Amerika', emoji: '🗽' },
+]
+  .map((c) => ({ ...c, cuisines: cuisines.filter((x) => x.data.continent === c.id && count(x.id) > 0) }))
+  .filter((c) => c.cuisines.length);
 ---
 
-<Base title="Pasaules virtuves" description="Latviešu, Eiropas, Āzijas, Tuvo Austrumu, Amerikas un citu pasaules virtuvju receptes.">
+<Base title="Pasaules virtuves" description="Latviešu, itāļu, franču, japāņu, indiešu, meksikāņu un citu pasaules virtuvju receptes.">
   <section class="page-hero container">
     <span class="eyebrow">Ceļojums pa pasauli</span>
     <h1>Pasaules virtuves</h1>
-    <p>Sāc ar mājām un dodies tālāk. Katrai virtuvei savas garšas, tradīcijas un iecienītākie ēdieni.</p>
-  </section>
-  <section class="section container">
-    <div class="cuisine-grid cuisines-page">
+    <p>Sāc ar mājām un dodies tālāk. {cuisines.length} virtuves, katrai savas garšas, tradīcijas un iecienītākie ēdieni.</p>
+    <nav class="jump" aria-label="Kontinenti">
       {
-        cuisines.map((c, i) => {
-          const n = count(c.id);
-          return (
-            <a class:list={['cuisine-tile', { 'cuisine-tile--featured': i === 0 }]} href={cuisineUrl(c.id)} style={`--c:${c.data.color}`}>
-              <div>
-                <h3>{c.data.name}</h3>
-                <p class="region">{c.data.description}</p>
-              </div>
-              <span class="count">
-                {n} {plural(n, 'recepte', 'receptes')}
-              </span>
-              <span class="emoji" aria-hidden="true">
-                {c.data.emoji}
-              </span>
-            </a>
-          );
-        })
+        continents.map((c) => (
+          <a class="chip" href={`#${c.id.toLowerCase().replace(/\s+/g, '-')}`}>
+            <span aria-hidden="true">{c.emoji}</span> {c.id}
+          </a>
+        ))
       }
-    </div>
+    </nav>
   </section>
+
+  {
+    continents.map((c) => (
+      <section class="section container" id={c.id.toLowerCase().replace(/\s+/g, '-')} aria-labelledby={`h-${c.id}`}>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              {c.cuisines.length} {plural(c.cuisines.length, 'virtuve', 'virtuves')}
+            </span>
+            <h2 id={`h-${c.id}`}>
+              <span aria-hidden="true">{c.emoji}</span> {c.id}
+            </h2>
+          </div>
+        </div>
+        <div class="cuisine-grid cuisines-page">
+          {c.cuisines.map((x) => {
+            const n = count(x.id);
+            return (
+              <a class:list={['cuisine-tile', { 'cuisine-tile--featured': x.id === 'latviesu' }]} href={cuisineUrl(x.id)} style={`--c:${x.data.color}`}>
+                <div>
+                  <h3>{x.data.name}</h3>
+                  <p class="region">{x.data.description}</p>
+                </div>
+                <span class="count">
+                  {n} {plural(n, 'recepte', 'receptes')}
+                </span>
+                <span class="emoji" aria-hidden="true">
+                  {x.data.emoji}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    ))
+  }
 </Base>
 
 <style>
+  .jump {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+  }
+  .jump::-webkit-scrollbar {
+    display: none;
+  }
   .cuisines-page :global(.cuisine-tile) {
-    min-height: 180px;
+    min-height: 170px;
   }
   .cuisines-page :global(.region) {
     max-width: 78%;

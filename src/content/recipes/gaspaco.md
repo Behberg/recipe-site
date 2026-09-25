@@ -1,7 +1,7 @@
 ---
 title: "Gaspačo"
 description: "Auksta spāņu tomātu zupa ar gurķi, papriku un olīveļļu. Vasaras karstumam."
-cuisine: vidusjuras
+cuisine: spanu
 category: zupas
 emoji: "🍅"
 prepTime: 15

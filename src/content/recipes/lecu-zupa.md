@@ -1,7 +1,7 @@
 ---
 title: "Turku sarkano lēcu zupa"
 description: "Samtaina sarkano lēcu zupa ar kuminu, citronu un pikantu paprikas sviestu."
-cuisine: tuvo-austrumu
+cuisine: turku
 category: zupas
 emoji: "🥣"
 prepTime: 10

@@ -1,8 +1,9 @@
 {
-  "name": "Amerikas",
+  "name": "Amerikāņu",
+  "continent": "Amerika",
   "region": "ASV, Kanāda",
-  "emoji": "🍔",
+  "emoji": "🇺🇸",
   "color": "#2c6e49",
-  "order": 7,
-  "description": "Kuplas pankūkas, burgeri un sātīgi ēdieni lielām kompānijām."
+  "order": 40,
+  "description": "Kuplas pankūkas, burgeri, grils un kūkas lielām kompānijām."
 }

@@ -16,6 +16,8 @@ const latvian = recipes.filter((r) => r.data.cuisine.id === 'latviesu').slice(0,
 const hero = featured[0] ?? recipes[0];
 
 const countBy = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key].id === id).length;
+// Latvian first, then the cuisines with the most recipes.
+const topCuisines = [...cuisines].sort((a, b) => Number(b.id === 'latviesu') - Number(a.id === 'latviesu') || countBy('cuisine', b.id) - countBy('cuisine', a.id)).slice(0, 9);
 const promo = ['saldie-edieni', 'ievarijumi-un-konservi']
   .map((id) => categoryById.get(id))
   .filter((c) => c !== undefined);
@@ -40,7 +42,7 @@ const jsonLd = {
     <div class="hero-copy reveal">
       <span class="eyebrow">Latviešu receptes un pasaules virtuves</span>
       <h1>Ko šodien <em>gatavosim?</em></h1>
-      <p>Pārbaudītas receptes no vecmāmiņas pavārgrāmatas līdz Tokijai. Skaidri soļi, ērti telefonā, bez liekiem vārdiem.</p>
+      <p>Pārbaudītas receptes no vecmāmiņas pavārgrāmatas līdz Tokijai.</p>
       <form class="search-field hero-search" action="/receptes/" method="get" role="search">
         <Icon name="search" />
         <input type="search" name="q" placeholder="Piem. zirņi, pankūkas, ievārījums..." aria-label="Meklēt receptes" enterkeyhint="search" />
@@ -182,7 +184,7 @@ const jsonLd = {
     </div>
     <div class="cuisine-grid">
       {
-        cuisines.map((c, i) => {
+        topCuisines.map((c, i) => {
           const n = countBy('cuisine', c.id);
           return (
             <a class:list={['cuisine-tile', { 'cuisine-tile--featured': i === 0 }]} href={cuisineUrl(c.id)} style={`--c:${c.data.color}`}>

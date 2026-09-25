@@ -1,7 +1,7 @@
 ---
 title: "Kanēļmaizītes"
 description: "Mīkstas, smaržīgas zviedru kanēļmaizītes ar kardamonu un pērļu cukuru."
-cuisine: eiropas
+cuisine: skandinavu
 category: maize-un-cepumi
 emoji: "🥐"
 prepTime: 40

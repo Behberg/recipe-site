@@ -1,7 +1,7 @@
 ---
 title: "Franču sīpolu zupa"
 description: "Lēni karamelizēti sīpoli bagātīgā buljonā ar siera grauzdiņu virsū."
-cuisine: eiropas
+cuisine: francu
 category: zupas
 emoji: "🧅"
 prepTime: 15

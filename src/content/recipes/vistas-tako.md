@@ -1,7 +1,7 @@
 ---
 title: "Vistas tako"
 description: "Mīkstas kukurūzas tortiljas ar garšvielu vistu, piko de galjo, avokado un laimu."
-cuisine: latinamerikas
+cuisine: meksikas
 category: pamatedieni
 emoji: "🌮"
 prepTime: 20

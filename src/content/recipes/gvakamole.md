@@ -1,7 +1,7 @@
 ---
 title: "Gvakamole"
 description: "Svaiga avokado mērce ar laimu, koriandru, sīpolu un čili. Gatava 10 minūtēs."
-cuisine: latinamerikas
+cuisine: meksikas
 category: salati-un-uzkodas
 emoji: "🥑"
 prepTime: 10

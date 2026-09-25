@@ -1,7 +1,7 @@
 ---
 title: "Vīnes šnicele"
 description: "Plāna, kraukšķīga teļa vai cūkgaļas šnicele ar citronu un kartupeļu salātiem."
-cuisine: eiropas
+cuisine: vacu
 category: pamatedieni
 emoji: "🥩"
 prepTime: 20

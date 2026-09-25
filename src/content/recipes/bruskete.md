@@ -1,7 +1,7 @@
 ---
 title: "Bruskete ar tomātiem un baziliku"
 description: "Grauzdēta maize ar ķiploku, sulīgiem tomātiem, baziliku un olīveļļu."
-cuisine: vidusjuras
+cuisine: italu
 category: salati-un-uzkodas
 emoji: "🍅"
 prepTime: 10

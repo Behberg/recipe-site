@@ -1,7 +1,7 @@
 ---
 title: "Sviesta vista (butter chicken)"
 description: "Indiešu vista maigā tomātu, sviesta un krējuma mērcē ar garam masala. Pasniedz ar rīsiem vai naan maizi."
-cuisine: azijas
+cuisine: indiesu
 category: pamatedieni
 emoji: "🍛"
 prepTime: 20

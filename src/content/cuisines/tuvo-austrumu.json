@@ -1,8 +1,9 @@
 {
   "name": "Tuvo Austrumu",
-  "region": "Libāna, Izraēla, Turcija",
+  "continent": "Tuvie Austrumi un Āfrika",
+  "region": "Libāna, Izraēla, Sīrija",
   "emoji": "🧆",
   "color": "#c07a1e",
-  "order": 5,
-  "description": "Garšvielas, humuss, svaigas maizītes un krāsaini mezes."
+  "order": 30,
+  "description": "Humuss, falafeļi un svaigi salāti ar daudz zaļumu un citronu."
 }

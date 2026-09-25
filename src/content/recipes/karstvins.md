@@ -1,7 +1,7 @@
 ---
 title: "Karstvīns"
 description: "Silts, smaržīgs sarkanvīns ar apelsīnu, kanēli un krustnagliņām. Ziemas vakariem."
-cuisine: eiropas
+cuisine: vacu
 category: dzerieni
 emoji: "🍷"
 prepTime: 10

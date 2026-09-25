@@ -1,7 +1,7 @@
 ---
 title: "Ķirbju krēmzupa"
 description: "Samtaina, oranža ķirbju zupa ar ingveru, kokosriekstu pienu un grauzdētām ķirbju sēkliņām."
-cuisine: eiropas
+cuisine: francu
 category: zupas
 emoji: "🎃"
 prepTime: 15

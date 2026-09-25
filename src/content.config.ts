@@ -11,6 +11,7 @@ const cuisines = defineCollection({
   loader: glob({ pattern: '*.json', base: './src/content/cuisines' }),
   schema: z.object({
     name: z.string(),
+    continent: z.enum(['Eiropa', 'Āzija', 'Tuvie Austrumi un Āfrika', 'Amerika']).default('Eiropa'),
     region: optString,
     emoji: z.string(),
     color: z.string().default('#9e3039'),

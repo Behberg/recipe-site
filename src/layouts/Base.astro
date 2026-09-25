@@ -23,6 +23,9 @@ const path = Astro.url.pathname;
 
 const [cuisines, categories, occasions, recipes] = await Promise.all([getCuisines(), getCategories(), getOccasions(), getRecipes()]);
 const recipeIds = recipes.map((r) => r.id);
+const footerCuisines = [...cuisines]
+  .sort((a, b) => recipes.filter((r) => r.data.cuisine.id === b.id).length - recipes.filter((r) => r.data.cuisine.id === a.id).length)
+  .slice(0, 10);
 
 const is = {
   home: path === '/',
@@ -135,7 +138,8 @@ const nav = [
           <div>
             <h4>Virtuves</h4>
             <ul>
-              {cuisines.map((c) => <li><a href={cuisineUrl(c.id)}>{c.data.name}</a></li>)}
+              {footerCuisines.map((c) => <li><a href={cuisineUrl(c.id)}>{c.data.name}</a></li>)}
+              <li><a href="/virtuves/" class="more">Visas {cuisines.length} virtuves</a></li>
             </ul>
           </div>
           <div>
@@ -263,5 +267,9 @@ const nav = [
   }
   .footer-tools {
     margin-top: 16px;
+  }
+  .more {
+    font-weight: 600;
+    color: var(--brand);
   }
 </style>

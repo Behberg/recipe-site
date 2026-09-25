@@ -1,7 +1,7 @@
 ---
 title: "Šokolādes fondants"
 description: "Mazas šokolādes kūciņas ar šķidru, karstu vidu. Romantisks deserts divatā."
-cuisine: eiropas
+cuisine: francu
 category: saldie-edieni
 emoji: "🍫"
 prepTime: 15

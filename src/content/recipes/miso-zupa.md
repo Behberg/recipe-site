@@ -1,7 +1,7 @@
 ---
 title: "Miso zupa"
 description: "Viegla japāņu zupa ar miso pastu, tofu, jūras aļģēm un lokiem. Gatava 10 minūtēs."
-cuisine: azijas
+cuisine: japanu
 category: zupas
 emoji: "🍵"
 prepTime: 5

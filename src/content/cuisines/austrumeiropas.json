@@ -1,8 +1,9 @@
 {
   "name": "Austrumeiropas",
-  "region": "Ukraina, Polija, Lietuva",
+  "continent": "Eiropa",
+  "region": "Baltkrievija, Moldova, Vidusāzija",
   "emoji": "🥟",
   "color": "#7a4e9c",
-  "order": 4,
-  "description": "Sātīgas zupas, pelmeņi un sirsnīgi ēdieni garajiem vakariem."
+  "order": 14,
+  "description": "Pelmeņi, soļanka, plovs un medus kūka. Ēdieni, kas pazīstami visā reģionā."
 }

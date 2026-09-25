@@ -1,7 +1,7 @@
 ---
 title: "Teriyaki vista ar rīsiem"
 description: "Glazēti vistas šķiņķīši spīdīgā, saldsāļā teriyaki mērcē ar rīsiem un sezamu."
-cuisine: azijas
+cuisine: japanu
 category: pamatedieni
 emoji: "🍗"
 prepTime: 10

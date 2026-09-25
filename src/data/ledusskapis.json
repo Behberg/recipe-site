@@ -321,7 +321,7 @@
     },
     {
       "id": "kukuruza",
-      "name": "Kukurūza (konservēta)",
+      "name": "Kukurūza",
       "emoji": "🌽",
       "group": "darzeni",
       "match": [
@@ -814,7 +814,9 @@
       "group": "gala",
       "match": [
         "vist",
-        "vistas"
+        "vistas",
+        "skinkisi$",
+        "skinkisus$"
       ]
     },
     {
@@ -1405,14 +1407,18 @@
     },
     {
       "id": "azijas-produkti",
-      "name": "Miso, mirin, tamarinds, aļģes",
+      "name": "Miso, mirin, nori, gočudžana",
       "emoji": "🍱",
       "group": "merces",
       "match": [
         "miso",
         "mirin",
         "tamarind",
-        "wakame"
+        "wakame",
+        "nori",
+        "gocudzan",
+        "doubanjiang",
+        "cili pupinu past"
       ]
     },
     {
@@ -1611,6 +1617,220 @@
       "group": "citi",
       "match": [
         "berzu sul"
+      ]
+    },
+    {
+      "id": "spinati",
+      "name": "Spināti vai pak choi",
+      "emoji": "🥬",
+      "group": "darzeni",
+      "match": [
+        "spinat",
+        "pak choi"
+      ]
+    },
+    {
+      "id": "redisi",
+      "name": "Redīsi",
+      "emoji": "🔴",
+      "group": "darzeni",
+      "match": [
+        "redis"
+      ]
+    },
+    {
+      "id": "rozmarins",
+      "name": "Rozmarīns",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "rozmarin"
+      ]
+    },
+    {
+      "id": "salvija",
+      "name": "Salvija",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "salvij"
+      ]
+    },
+    {
+      "id": "citronzale",
+      "name": "Citronzāle",
+      "emoji": "🌾",
+      "group": "zalumi",
+      "match": [
+        "citronzal"
+      ]
+    },
+    {
+      "id": "ananass",
+      "name": "Ananāss",
+      "emoji": "🍍",
+      "group": "augli",
+      "match": [
+        "ananas"
+      ]
+    },
+    {
+      "id": "dateles",
+      "name": "Dateles",
+      "emoji": "🟤",
+      "group": "augli",
+      "match": [
+        "datel"
+      ]
+    },
+    {
+      "id": "ogas",
+      "name": "Svaigas ogas",
+      "emoji": "🍒",
+      "group": "augli",
+      "match": [
+        "ogas$"
+      ]
+    },
+    {
+      "id": "bumbieri",
+      "name": "Bumbieri",
+      "emoji": "🍐",
+      "group": "augli",
+      "match": [
+        "bumbier"
+      ]
+    },
+    {
+      "id": "zilais-siers",
+      "name": "Zilais siers",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "zilais sier"
+      ]
+    },
+    {
+      "id": "halloumi",
+      "name": "Halloumi vai paneer",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "halloumi",
+        "paneer"
+      ]
+    },
+    {
+      "id": "saldejums",
+      "name": "Saldējums",
+      "emoji": "🍨",
+      "group": "piena",
+      "match": [
+        "saldejum"
+      ]
+    },
+    {
+      "id": "tuncis",
+      "name": "Tuncis (konservēts)",
+      "emoji": "🐟",
+      "group": "gala",
+      "match": [
+        "tuncis",
+        "tunca"
+      ]
+    },
+    {
+      "id": "kuskuss",
+      "name": "Kuskuss",
+      "emoji": "🌾",
+      "group": "pieliekamais",
+      "match": [
+        "kuskus"
+      ]
+    },
+    {
+      "id": "priezu-rieksti",
+      "name": "Priežu rieksti",
+      "emoji": "🌰",
+      "group": "pieliekamais",
+      "match": [
+        "priezu riekst"
+      ]
+    },
+    {
+      "id": "kokosa-skaidinas",
+      "name": "Kokosriekstu skaidiņas",
+      "emoji": "🥥",
+      "group": "pieliekamais",
+      "match": [
+        "kokosriekstu skaidin"
+      ]
+    },
+    {
+      "id": "zemesriekstu-sviests",
+      "name": "Zemesriekstu sviests",
+      "emoji": "🥜",
+      "group": "pieliekamais",
+      "match": [
+        "zemesriekstu sviest"
+      ]
+    },
+    {
+      "id": "beze",
+      "name": "Bezē",
+      "emoji": "🤍",
+      "group": "maize",
+      "match": [
+        "beze"
+      ]
+    },
+    {
+      "id": "kartaina-mikla",
+      "name": "Kārtainā mīkla",
+      "emoji": "🥐",
+      "group": "maize",
+      "match": [
+        "kartain"
+      ]
+    },
+    {
+      "id": "aziju-mikla",
+      "name": "Vontonu, gjozu vai rullīšu loksnes",
+      "emoji": "🥟",
+      "group": "maize",
+      "match": [
+        "vonton",
+        "gjoz",
+        "rullisu loks",
+        "risu papir"
+      ]
+    },
+    {
+      "id": "karija-pasta",
+      "name": "Karija pasta",
+      "emoji": "🍛",
+      "group": "merces",
+      "match": [
+        "karija past"
+      ]
+    },
+    {
+      "id": "kimci",
+      "name": "Kimči",
+      "emoji": "🌶️",
+      "group": "merces",
+      "match": [
+        "kimci"
+      ]
+    },
+    {
+      "id": "asa-merce",
+      "name": "Asā čili mērce",
+      "emoji": "🌶️",
+      "group": "merces",
+      "match": [
+        "asa cili merc",
+        "salda cili merc"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 ---
 title: "Kimči"
 description: "Korejiešu raudzēti Pekinas kāposti ar čili, ķiploku un ingveru. Pikanti un veselīgi."
-cuisine: azijas
+cuisine: korejiesu
 category: ievarijumi-un-konservi
 emoji: "🌶️"
 prepTime: 60

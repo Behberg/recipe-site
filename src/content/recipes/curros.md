@@ -1,7 +1,7 @@
 ---
 title: "Čurros ar šokolādes mērci"
 description: "Kraukšķīgi cepti mīklas stienīši ar kanēļa cukuru un biezu karstās šokolādes mērci."
-cuisine: latinamerikas
+cuisine: spanu
 category: saldie-edieni
 emoji: "🥖"
 prepTime: 15

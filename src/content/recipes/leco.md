@@ -1,7 +1,7 @@
 ---
 title: "Lečo"
 description: "Paprikas, tomātu un sīpolu sautējums ziemas krājumiem. Piedēvs gaļai vai pamatēdiens ar olām."
-cuisine: austrumeiropas
+cuisine: ungaru
 category: ievarijumi-un-konservi
 emoji: "🫑"
 prepTime: 30

@@ -1,7 +1,7 @@
 ---
 title: "Baklava"
 description: "Kraukšķīgas filo kārtas ar valriekstiem un pistācijām, pārlietas ar medus sīrupu."
-cuisine: tuvo-austrumu
+cuisine: turku
 category: saldie-edieni
 emoji: "🥮"
 prepTime: 40

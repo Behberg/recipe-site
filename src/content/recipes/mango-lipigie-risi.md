@@ -1,7 +1,7 @@
 ---
 title: "Mango ar lipīgajiem rīsiem"
 description: "Taizemes deserts: kokosriekstu pienā vārīti lipīgie rīsi ar gatavu mango un sezamu."
-cuisine: azijas
+cuisine: taizemes
 category: saldie-edieni
 emoji: "🥭"
 prepTime: 10

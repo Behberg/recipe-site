@@ -1,7 +1,7 @@
 ---
 title: "Aukstās sezama nūdeles ar gurķi"
 description: "Ātras ķīniešu nūdeles riekstainā sezama un sojas mērcē ar kraukšķīgu gurķi un čili."
-cuisine: azijas
+cuisine: kiniesu
 category: pamatedieni
 emoji: "🥢"
 prepTime: 10

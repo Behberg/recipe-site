@@ -1,7 +1,7 @@
 ---
 title: "Cepelīni"
 description: "Lietuviešu kartupeļu klimpas ar gaļas pildījumu un speķa un krējuma mērci."
-cuisine: austrumeiropas
+cuisine: lietuviesu
 category: pamatedieni
 emoji: "🥔"
 prepTime: 60

@@ -1,7 +1,7 @@
 ---
 title: "Musaka"
 description: "Grieķu baklažānu kārtojums ar jēra vai liellopu gaļas mērci un bešamelu."
-cuisine: vidusjuras
+cuisine: grieku
 category: pamatedieni
 emoji: "🍆"
 prepTime: 45

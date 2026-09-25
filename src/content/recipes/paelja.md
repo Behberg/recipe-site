@@ -1,7 +1,7 @@
 ---
 title: "Paelja ar jūras veltēm"
 description: "Spāņu safrāna rīsi ar garnelēm, mīdijām, vistu un papriku. Ēdiens lielai kompānijai."
-cuisine: vidusjuras
+cuisine: spanu
 category: pamatedieni
 emoji: "🥘"
 prepTime: 25
