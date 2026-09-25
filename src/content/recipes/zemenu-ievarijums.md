@@ -35,4 +35,4 @@ date: 2026-06-28
 draft: false
 ---
 
-Vārot ievārījumu vairākās reizēs, ogas saglabā formu un krāsu. Ziemā tas ir labākais kompanjons pankūkām.
+Vārot ievārījumu vairākās reizēs, ogas saglabā formu un krāsu. Ziemā tas ir labākais papildinājums pankūkām.

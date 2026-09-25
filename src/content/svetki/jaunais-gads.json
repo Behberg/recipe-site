@@ -1,0 +1,11 @@
+{
+  "name": "Jaunais gads",
+  "emoji": "🥂",
+  "color": "#3b4a8c",
+  "dateType": "fiksets",
+  "month": 12,
+  "day": 31,
+  "leadDays": 10,
+  "order": 2,
+  "description": "Uzkodas, salāti un dzērieni, ar kuriem sagaidīt pusnakti."
+}

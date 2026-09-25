@@ -39,6 +39,7 @@ steps:
   - "Pēc garšas pievieno sāli un piparus."
   - "Pasniedz ar pusītē pārgrieztu olu, karoti krējuma un dillēm."
 tags: ["pavasaris", "tradicionāls"]
+occasions: [balta-galdauta-svetki]
 featured: false
 date: 2026-05-14
 draft: false

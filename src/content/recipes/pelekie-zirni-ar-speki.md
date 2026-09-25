@@ -31,6 +31,7 @@ tips:
   - "Ja zirņi nav mērcēti, vārīšanas laiks var pagarināties līdz 2 stundām."
   - "Kefīrs nav obligāts, bet tieši tas padara ēdienu īsti latvisku."
 tags: ["tradicionāls", "Ziemassvētki", "sātīgs"]
+occasions: [ziemassvetki, 18-novembris]
 featured: true
 date: 2026-09-20
 draft: false

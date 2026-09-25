@@ -45,6 +45,7 @@ steps:
   - "Ar karoti liek mīklas bumbiņas uz pannas ar atstarpēm."
   - "Cep 10 līdz 12 minūtes. Vidus šķitīs nepagatavots, bet atdziestot tas sacietēs."
 tags: ["cepumi", "bērniem", "ātri"]
+occasions: [helovins, dzimsanas-diena]
 featured: false
 date: 2026-05-30
 draft: false

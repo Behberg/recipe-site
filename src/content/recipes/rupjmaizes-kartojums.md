@@ -54,6 +54,7 @@ steps:
 tips:
   - "Drupatas var pagatavot iepriekš un uzglabāt slēgtā burkā līdz nedēļai."
 tags: ["deserts", "tradicionāls", "bez cepšanas"]
+occasions: [ziemassvetki, 18-novembris]
 featured: true
 date: 2026-09-10
 draft: false

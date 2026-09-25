@@ -25,6 +25,7 @@ steps:
 tips:
   - "Cidoniju sīrups ir lielisks tējai, kokteiļiem un saldējumam."
 tags: ["bez vārīšanas", "ziemas krājumi", "rudens"]
+occasions: [mikeldiena]
 featured: false
 date: 2026-09-15
 draft: false

@@ -1,0 +1,9 @@
+{
+  "name": "Dzimšanas diena",
+  "emoji": "🎂",
+  "color": "#8a5cc2",
+  "dateType": "nav",
+  "leadDays": 0,
+  "order": 14,
+  "description": "Kliņģeris, kūkas un ēdieni lielai svinību kompānijai."
+}

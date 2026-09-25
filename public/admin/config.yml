@@ -126,6 +126,16 @@ collections:
         widget: list
         required: false
         hint: 'piem. vasara, veģetārs, Ziemassvētki'
+      - label: 'Svētki'
+        name: occasions
+        widget: relation
+        collection: svetki
+        value_field: '{{slug}}'
+        search_fields: [name]
+        display_fields: ['{{emoji}} {{name}}']
+        multiple: true
+        required: false
+        hint: 'Recepte parādīsies šo svētku lapā un sākumlapā, kad svētki tuvojas.'
       - { label: 'Izcelt sākumlapā', name: featured, widget: boolean, default: false }
       - label: 'Publicēšanas datums'
         name: date
@@ -182,3 +192,83 @@ collections:
       - { label: 'Krāsa', name: color, widget: color, default: '#c8773a' }
       - { label: 'Apraksts', name: description, widget: text }
       - { label: 'Secība', name: order, widget: number, value_type: int, default: 100 }
+
+  # ---------------------------------------------------------------- Svētki
+  - name: svetki
+    label: Svētku galds
+    label_singular: Svētki
+    description: Svētki un to datumi. Kalendārs pats aprēķina nākamo datumu un laicīgi piedāvā receptes sākumlapā.
+    folder: src/content/svetki
+    extension: json
+    format: json
+    create: true
+    delete: false
+    slug: '{{name}}'
+    identifier_field: name
+    summary: '{{emoji}} {{name}}'
+    sortable_fields: [order, name]
+    fields:
+      - { label: 'Nosaukums', name: name, widget: string }
+      - { label: 'Emocijzīme', name: emoji, widget: string }
+      - { label: 'Krāsa', name: color, widget: color, default: '#9e3039' }
+      - { label: 'Apraksts', name: description, widget: text }
+      - label: 'Kā nosaka datumu'
+        name: dateType
+        widget: select
+        default: fiksets
+        options:
+          - { label: 'Katru gadu tajā pašā datumā (piem. 24. decembris)', value: fiksets }
+          - { label: 'Atkarībā no Lieldienām (piem. Meteņi)', value: lieldienas }
+          - { label: 'Noteikta nedēļas diena mēnesī (piem. maija 2. svētdiena)', value: nedelas-diena }
+          - { label: 'Jebkurā dienā (piem. dzimšanas diena)', value: nav }
+      - { label: 'Mēnesis (1 līdz 12)', name: month, widget: number, value_type: int, min: 1, max: 12, required: false }
+      - { label: 'Diena', name: day, widget: number, value_type: int, min: 1, max: 31, required: false, hint: 'Tikai fiksētam datumam' }
+      - { label: 'Dienas no Lieldienām', name: easterOffset, widget: number, value_type: int, required: false, hint: 'Piem. -47 Meteņiem, 0 Lieldienām' }
+      - label: 'Nedēļas diena'
+        name: weekday
+        widget: select
+        required: false
+        options:
+          - { label: 'Svētdiena', value: 0 }
+          - { label: 'Pirmdiena', value: 1 }
+          - { label: 'Otrdiena', value: 2 }
+          - { label: 'Trešdiena', value: 3 }
+          - { label: 'Ceturtdiena', value: 4 }
+          - { label: 'Piektdiena', value: 5 }
+          - { label: 'Sestdiena', value: 6 }
+      - { label: 'Kura pēc kārtas (1 līdz 5, -1 = pēdējā)', name: nth, widget: number, value_type: int, required: false }
+      - { label: 'Cik dienas iepriekš rādīt sākumlapā', name: leadDays, widget: number, value_type: int, default: 14 }
+      - { label: 'Secība', name: order, widget: number, value_type: int, default: 100 }
+
+  # ---------------------------------------------------------------- Iestatījumi
+  - name: iestatijumi
+    label: Iestatījumi
+    files:
+      - name: ledusskapis
+        label: Ledusskapja produkti
+        file: src/data/ledusskapis.json
+        format: json
+        description: Produkti lapā "Kas ir ledusskapī?". Katram produktam ir atslēgvārdi, pēc kuriem to atpazīst recepšu sastāvdaļās.
+        fields:
+          - label: 'Grupas'
+            name: groups
+            widget: list
+            summary: '{{emoji}} {{name}}'
+            fields:
+              - { label: 'ID', name: id, widget: string, hint: 'Īss, bez garumzīmēm, piem. darzeni' }
+              - { label: 'Nosaukums', name: name, widget: string }
+              - { label: 'Emocijzīme', name: emoji, widget: string }
+          - label: 'Produkti'
+            name: items
+            widget: list
+            summary: '{{emoji}} {{name}}'
+            fields:
+              - { label: 'ID', name: id, widget: string, hint: 'Īss, bez garumzīmēm, piem. kartupeli' }
+              - { label: 'Nosaukums', name: name, widget: string }
+              - { label: 'Emocijzīme', name: emoji, widget: string }
+              - { label: 'Grupas ID', name: group, widget: string, hint: 'Viena no grupām augstāk, piem. darzeni' }
+              - { label: 'Pamatprodukts (parasti ir mājās)', name: staple, widget: boolean, required: false, default: false }
+              - label: 'Atslēgvārdi'
+                name: match
+                widget: list
+                hint: 'Vārda sākums bez garumzīmēm, piem. "kartupel" atrod kartupeļi, kartupeļu. Ar $ beigās: tikai precīzs vārds, piem. "ola$".'

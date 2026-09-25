@@ -1,0 +1,1617 @@
+{
+  "groups": [
+    {
+      "id": "darzeni",
+      "name": "Dārzeņi un sēnes",
+      "emoji": "🥕"
+    },
+    {
+      "id": "zalumi",
+      "name": "Zaļumi",
+      "emoji": "🌿"
+    },
+    {
+      "id": "augli",
+      "name": "Augļi un ogas",
+      "emoji": "🍓"
+    },
+    {
+      "id": "piena",
+      "name": "Piena produkti un olas",
+      "emoji": "🥛"
+    },
+    {
+      "id": "gala",
+      "name": "Gaļa un zivis",
+      "emoji": "🥩"
+    },
+    {
+      "id": "pieliekamais",
+      "name": "Pieliekamais",
+      "emoji": "🫙"
+    },
+    {
+      "id": "maize",
+      "name": "Maize un konditoreja",
+      "emoji": "🍞"
+    },
+    {
+      "id": "merces",
+      "name": "Mērces un konservi",
+      "emoji": "🥫"
+    },
+    {
+      "id": "garsvielas",
+      "name": "Garšvielas",
+      "emoji": "🧂"
+    },
+    {
+      "id": "citi",
+      "name": "Dzērieni un citi",
+      "emoji": "🍷"
+    }
+  ],
+  "items": [
+    {
+      "id": "sals",
+      "name": "Sāls",
+      "emoji": "🧂",
+      "group": "garsvielas",
+      "staple": true,
+      "match": [
+        "sals$"
+      ]
+    },
+    {
+      "id": "pipari",
+      "name": "Melnie pipari",
+      "emoji": "⚫",
+      "group": "garsvielas",
+      "staple": true,
+      "match": [
+        "pipar"
+      ]
+    },
+    {
+      "id": "cukurs",
+      "name": "Cukurs",
+      "emoji": "🍬",
+      "group": "pieliekamais",
+      "staple": true,
+      "match": [
+        "cukur",
+        "pudercukur",
+        "perlu cukur",
+        "brunais cukur",
+        "baltais cukur"
+      ]
+    },
+    {
+      "id": "ella",
+      "name": "Eļļa",
+      "emoji": "🫗",
+      "group": "pieliekamais",
+      "staple": true,
+      "match": [
+        "ella$"
+      ]
+    },
+    {
+      "id": "milti",
+      "name": "Kviešu milti",
+      "emoji": "🌾",
+      "group": "pieliekamais",
+      "staple": true,
+      "match": [
+        "milt"
+      ]
+    },
+    {
+      "id": "udens",
+      "name": "Ūdens",
+      "emoji": "💧",
+      "group": "citi",
+      "staple": true,
+      "match": [
+        "uden",
+        "ledus$"
+      ]
+    },
+    {
+      "id": "buljons",
+      "name": "Buljons (kubiņš)",
+      "emoji": "🍲",
+      "group": "pieliekamais",
+      "staple": true,
+      "match": [
+        "buljon",
+        "dashi",
+        "liellopu buljon",
+        "vistas buljon"
+      ]
+    },
+    {
+      "id": "kartupeli",
+      "name": "Kartupeļi",
+      "emoji": "🥔",
+      "group": "darzeni",
+      "match": [
+        "kartupel"
+      ]
+    },
+    {
+      "id": "batate",
+      "name": "Batātes",
+      "emoji": "🍠",
+      "group": "darzeni",
+      "match": [
+        "saldais kartupel",
+        "batat"
+      ]
+    },
+    {
+      "id": "sipoli",
+      "name": "Sīpoli",
+      "emoji": "🧅",
+      "group": "darzeni",
+      "match": [
+        "sipol",
+        "sipolu miz"
+      ]
+    },
+    {
+      "id": "kiploki",
+      "name": "Ķiploki",
+      "emoji": "🧄",
+      "group": "darzeni",
+      "match": [
+        "kiplok"
+      ]
+    },
+    {
+      "id": "burkani",
+      "name": "Burkāni",
+      "emoji": "🥕",
+      "group": "darzeni",
+      "match": [
+        "burkan"
+      ]
+    },
+    {
+      "id": "bietes",
+      "name": "Bietes",
+      "emoji": "🟣",
+      "group": "darzeni",
+      "match": [
+        "biet"
+      ]
+    },
+    {
+      "id": "kaposti",
+      "name": "Baltie kāposti",
+      "emoji": "🥬",
+      "group": "darzeni",
+      "match": [
+        "kapost"
+      ]
+    },
+    {
+      "id": "pekinas-kaposti",
+      "name": "Pekinas kāposti",
+      "emoji": "🥬",
+      "group": "darzeni",
+      "match": [
+        "pekinas kapost"
+      ]
+    },
+    {
+      "id": "gurki",
+      "name": "Gurķi",
+      "emoji": "🥒",
+      "group": "darzeni",
+      "match": [
+        "gurk"
+      ]
+    },
+    {
+      "id": "tomati",
+      "name": "Tomāti",
+      "emoji": "🍅",
+      "group": "darzeni",
+      "match": [
+        "tomat"
+      ]
+    },
+    {
+      "id": "paprika",
+      "name": "Paprika",
+      "emoji": "🫑",
+      "group": "darzeni",
+      "match": [
+        "paprik"
+      ]
+    },
+    {
+      "id": "cili",
+      "name": "Čili pipari",
+      "emoji": "🌶️",
+      "group": "darzeni",
+      "match": [
+        "cili",
+        "cili pipar",
+        "cili ell",
+        "cili parsl",
+        "halapen",
+        "gochugaru"
+      ]
+    },
+    {
+      "id": "kabaci",
+      "name": "Kabači",
+      "emoji": "🥒",
+      "group": "darzeni",
+      "match": [
+        "kabac"
+      ]
+    },
+    {
+      "id": "baklazani",
+      "name": "Baklažāni",
+      "emoji": "🍆",
+      "group": "darzeni",
+      "match": [
+        "baklazan"
+      ]
+    },
+    {
+      "id": "kirbis",
+      "name": "Ķirbis",
+      "emoji": "🎃",
+      "group": "darzeni",
+      "match": [
+        "kirbi",
+        "kirbju sekl"
+      ]
+    },
+    {
+      "id": "puravs",
+      "name": "Puravs",
+      "emoji": "🥬",
+      "group": "darzeni",
+      "match": [
+        "purav"
+      ]
+    },
+    {
+      "id": "selerija",
+      "name": "Selerija",
+      "emoji": "🥬",
+      "group": "darzeni",
+      "match": [
+        "selerij"
+      ]
+    },
+    {
+      "id": "senes",
+      "name": "Šampinjoni vai meža sēnes",
+      "emoji": "🍄",
+      "group": "darzeni",
+      "match": [
+        "sampinjon",
+        "meza sen"
+      ]
+    },
+    {
+      "id": "gailenes",
+      "name": "Gailenes",
+      "emoji": "🍄",
+      "group": "darzeni",
+      "match": [
+        "gailen"
+      ]
+    },
+    {
+      "id": "zirnisi",
+      "name": "Zaļie zirnīši",
+      "emoji": "🟢",
+      "group": "darzeni",
+      "match": [
+        "zalie zirnis"
+      ]
+    },
+    {
+      "id": "kukuruza",
+      "name": "Kukurūza (konservēta)",
+      "emoji": "🌽",
+      "group": "darzeni",
+      "match": [
+        "kukuruz"
+      ]
+    },
+    {
+      "id": "salati",
+      "name": "Salātu lapas",
+      "emoji": "🥗",
+      "group": "darzeni",
+      "match": [
+        "salat"
+      ]
+    },
+    {
+      "id": "avokado",
+      "name": "Avokado",
+      "emoji": "🥑",
+      "group": "darzeni",
+      "match": [
+        "avokad"
+      ]
+    },
+    {
+      "id": "asni",
+      "name": "Pupiņu asni",
+      "emoji": "🌱",
+      "group": "darzeni",
+      "match": [
+        "mungo",
+        "asni$",
+        "mungo pupinu asn"
+      ]
+    },
+    {
+      "id": "marrutki",
+      "name": "Mārrutki",
+      "emoji": "🌿",
+      "group": "darzeni",
+      "match": [
+        "marrutk"
+      ]
+    },
+    {
+      "id": "dilles",
+      "name": "Dilles",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "dill"
+      ]
+    },
+    {
+      "id": "petersili",
+      "name": "Pētersīļi",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "petersil"
+      ]
+    },
+    {
+      "id": "koriandrs",
+      "name": "Svaigs koriandrs",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "koriandr"
+      ]
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "emoji": "🌱",
+      "group": "zalumi",
+      "match": [
+        "loki$",
+        "loku$"
+      ]
+    },
+    {
+      "id": "baziliks",
+      "name": "Baziliks",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "bazilik"
+      ]
+    },
+    {
+      "id": "piparmetras",
+      "name": "Piparmētras",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "piparmetr"
+      ]
+    },
+    {
+      "id": "timians",
+      "name": "Timiāns",
+      "emoji": "🌿",
+      "group": "zalumi",
+      "match": [
+        "timian"
+      ]
+    },
+    {
+      "id": "skabenes",
+      "name": "Skābenes",
+      "emoji": "🍃",
+      "group": "zalumi",
+      "match": [
+        "skabenes$"
+      ]
+    },
+    {
+      "id": "lapas",
+      "name": "Upeņu vai ķiršu lapas",
+      "emoji": "🍃",
+      "group": "zalumi",
+      "match": [
+        "upenu lap",
+        "kirsu lap",
+        "lapas$"
+      ]
+    },
+    {
+      "id": "aboli",
+      "name": "Āboli",
+      "emoji": "🍎",
+      "group": "augli",
+      "match": [
+        "abol"
+      ]
+    },
+    {
+      "id": "citroni",
+      "name": "Citroni",
+      "emoji": "🍋",
+      "group": "augli",
+      "match": [
+        "citron"
+      ]
+    },
+    {
+      "id": "laimas",
+      "name": "Laimas",
+      "emoji": "🍈",
+      "group": "augli",
+      "match": [
+        "laim"
+      ]
+    },
+    {
+      "id": "apelsini",
+      "name": "Apelsīni",
+      "emoji": "🍊",
+      "group": "augli",
+      "match": [
+        "apelsin"
+      ]
+    },
+    {
+      "id": "banani",
+      "name": "Banāni",
+      "emoji": "🍌",
+      "group": "augli",
+      "match": [
+        "banan"
+      ]
+    },
+    {
+      "id": "mango",
+      "name": "Mango",
+      "emoji": "🥭",
+      "group": "augli",
+      "match": [
+        "mango$"
+      ]
+    },
+    {
+      "id": "zemenes",
+      "name": "Zemenes",
+      "emoji": "🍓",
+      "group": "augli",
+      "match": [
+        "zemen"
+      ]
+    },
+    {
+      "id": "avenes",
+      "name": "Avenes",
+      "emoji": "🍇",
+      "group": "augli",
+      "match": [
+        "aven"
+      ]
+    },
+    {
+      "id": "mellenes",
+      "name": "Mellenes",
+      "emoji": "🫐",
+      "group": "augli",
+      "match": [
+        "mellen"
+      ]
+    },
+    {
+      "id": "bruklenes",
+      "name": "Brūklenes",
+      "emoji": "🔴",
+      "group": "augli",
+      "match": [
+        "bruklen"
+      ]
+    },
+    {
+      "id": "dzervenes",
+      "name": "Dzērvenes",
+      "emoji": "🔴",
+      "group": "augli",
+      "match": [
+        "dzerven"
+      ]
+    },
+    {
+      "id": "upenes",
+      "name": "Upenes",
+      "emoji": "🫐",
+      "group": "augli",
+      "match": [
+        "upen"
+      ]
+    },
+    {
+      "id": "janogas",
+      "name": "Jāņogas",
+      "emoji": "🔴",
+      "group": "augli",
+      "match": [
+        "janog"
+      ]
+    },
+    {
+      "id": "erkskogas",
+      "name": "Ērkšķogas",
+      "emoji": "🟢",
+      "group": "augli",
+      "match": [
+        "erkskog"
+      ]
+    },
+    {
+      "id": "kirsi",
+      "name": "Ķirši",
+      "emoji": "🍒",
+      "group": "augli",
+      "match": [
+        "kirs"
+      ]
+    },
+    {
+      "id": "plumes",
+      "name": "Plūmes",
+      "emoji": "🟣",
+      "group": "augli",
+      "match": [
+        "plum"
+      ]
+    },
+    {
+      "id": "rabarberi",
+      "name": "Rabarberi",
+      "emoji": "🌱",
+      "group": "augli",
+      "match": [
+        "rabarber"
+      ]
+    },
+    {
+      "id": "smiltserkski",
+      "name": "Smiltsērkšķi",
+      "emoji": "🟠",
+      "group": "augli",
+      "match": [
+        "smiltserksk"
+      ]
+    },
+    {
+      "id": "cidonijas",
+      "name": "Japānas cidonijas",
+      "emoji": "🍋",
+      "group": "augli",
+      "match": [
+        "cidonij"
+      ]
+    },
+    {
+      "id": "rozines",
+      "name": "Rozīnes",
+      "emoji": "🍇",
+      "group": "augli",
+      "match": [
+        "rozin"
+      ]
+    },
+    {
+      "id": "zaveti-augli",
+      "name": "Žāvēti augļi",
+      "emoji": "🍑",
+      "group": "augli",
+      "match": [
+        "zavet",
+        "sukad"
+      ]
+    },
+    {
+      "id": "pienenes",
+      "name": "Pieneņu ziedi",
+      "emoji": "🌼",
+      "group": "augli",
+      "match": [
+        "pienen"
+      ]
+    },
+    {
+      "id": "olas",
+      "name": "Olas",
+      "emoji": "🥚",
+      "group": "piena",
+      "match": [
+        "ola$",
+        "olas$",
+        "olu$"
+      ]
+    },
+    {
+      "id": "piens",
+      "name": "Piens",
+      "emoji": "🥛",
+      "group": "piena",
+      "match": [
+        "piens$",
+        "piena$"
+      ]
+    },
+    {
+      "id": "sviests",
+      "name": "Sviests",
+      "emoji": "🧈",
+      "group": "piena",
+      "match": [
+        "sviest"
+      ]
+    },
+    {
+      "id": "saldais-krejums",
+      "name": "Saldais krējums",
+      "emoji": "🥛",
+      "group": "piena",
+      "match": [
+        "saldais krejum"
+      ]
+    },
+    {
+      "id": "skabais-krejums",
+      "name": "Skābais krējums",
+      "emoji": "🥣",
+      "group": "piena",
+      "match": [
+        "skabais krejum"
+      ]
+    },
+    {
+      "id": "kefirs",
+      "name": "Kefīrs vai paniņas",
+      "emoji": "🥛",
+      "group": "piena",
+      "match": [
+        "kefir",
+        "panin"
+      ]
+    },
+    {
+      "id": "jogurts",
+      "name": "Jogurts",
+      "emoji": "🥛",
+      "group": "piena",
+      "match": [
+        "jogurt"
+      ]
+    },
+    {
+      "id": "biezpiens",
+      "name": "Biezpiens",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "biezpien"
+      ]
+    },
+    {
+      "id": "ciets-siers",
+      "name": "Ciets siers",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "sier$",
+        "ciets sier",
+        "rivets sier",
+        "cedar",
+        "gruyer"
+      ]
+    },
+    {
+      "id": "parmezans",
+      "name": "Parmezāns",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "parmezan",
+        "pekorin"
+      ]
+    },
+    {
+      "id": "mocarella",
+      "name": "Mocarella",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "mocarell"
+      ]
+    },
+    {
+      "id": "feta",
+      "name": "Feta",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "feta$",
+        "feta sier"
+      ]
+    },
+    {
+      "id": "kausetais-siers",
+      "name": "Kausētais siers",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "kausetais sier"
+      ]
+    },
+    {
+      "id": "kremsiers",
+      "name": "Krēmsiers vai maskarpone",
+      "emoji": "🧀",
+      "group": "piena",
+      "match": [
+        "kremsier",
+        "maskarpon"
+      ]
+    },
+    {
+      "id": "kondensetais-piens",
+      "name": "Kondensētais piens",
+      "emoji": "🥫",
+      "group": "piena",
+      "match": [
+        "kondensetais pien"
+      ]
+    },
+    {
+      "id": "malta-gala",
+      "name": "Maltā gaļa",
+      "emoji": "🥩",
+      "group": "gala",
+      "match": [
+        "malta gal",
+        "malta cukgal",
+        "malta liellop",
+        "malta jer"
+      ]
+    },
+    {
+      "id": "vista",
+      "name": "Vistas gaļa",
+      "emoji": "🍗",
+      "group": "gala",
+      "match": [
+        "vist",
+        "vistas"
+      ]
+    },
+    {
+      "id": "cukgala",
+      "name": "Cūkgaļa",
+      "emoji": "🥩",
+      "group": "gala",
+      "match": [
+        "cukgal",
+        "cukas",
+        "kakla karbonad"
+      ]
+    },
+    {
+      "id": "liellopu-gala",
+      "name": "Liellopu vai teļa gaļa",
+      "emoji": "🥩",
+      "group": "gala",
+      "match": [
+        "liellop",
+        "tela$"
+      ]
+    },
+    {
+      "id": "pile",
+      "name": "Pīle",
+      "emoji": "🦆",
+      "group": "gala",
+      "match": [
+        "pile$"
+      ]
+    },
+    {
+      "id": "spekis",
+      "name": "Speķis",
+      "emoji": "🥓",
+      "group": "gala",
+      "match": [
+        "spek",
+        "kupinats spek"
+      ]
+    },
+    {
+      "id": "bekons",
+      "name": "Bekons",
+      "emoji": "🥓",
+      "group": "gala",
+      "match": [
+        "bekon",
+        "guancal",
+        "pancet"
+      ]
+    },
+    {
+      "id": "kupinajumi",
+      "name": "Kūpinājumi, desa, šķiņķis",
+      "emoji": "🌭",
+      "group": "gala",
+      "match": [
+        "kupinaj",
+        "kupinat",
+        "kupinata gal",
+        "ribin",
+        "des$",
+        "desa$",
+        "desin",
+        "skink",
+        "varita gal"
+      ]
+    },
+    {
+      "id": "lasis",
+      "name": "Lasis",
+      "emoji": "🐟",
+      "group": "gala",
+      "match": [
+        "lasa$",
+        "lasis$",
+        "kupinats las"
+      ]
+    },
+    {
+      "id": "silke",
+      "name": "Siļķe",
+      "emoji": "🐟",
+      "group": "gala",
+      "match": [
+        "silk"
+      ]
+    },
+    {
+      "id": "rengas",
+      "name": "Reņģes",
+      "emoji": "🐟",
+      "group": "gala",
+      "match": [
+        "reng"
+      ]
+    },
+    {
+      "id": "balta-zivs",
+      "name": "Baltā zivs (menca, asaris)",
+      "emoji": "🐠",
+      "group": "gala",
+      "match": [
+        "balta ziv",
+        "menc",
+        "asar"
+      ]
+    },
+    {
+      "id": "garneles",
+      "name": "Garneles",
+      "emoji": "🦐",
+      "group": "gala",
+      "match": [
+        "garnel"
+      ]
+    },
+    {
+      "id": "midijas",
+      "name": "Mīdijas",
+      "emoji": "🦪",
+      "group": "gala",
+      "match": [
+        "midij"
+      ]
+    },
+    {
+      "id": "ansovi",
+      "name": "Anšovi",
+      "emoji": "🐟",
+      "group": "gala",
+      "match": [
+        "ansov"
+      ]
+    },
+    {
+      "id": "risi",
+      "name": "Rīsi",
+      "emoji": "🍚",
+      "group": "pieliekamais",
+      "match": [
+        "risi$",
+        "arborio"
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Makaroni un spageti",
+      "emoji": "🍝",
+      "group": "pieliekamais",
+      "match": [
+        "makaron",
+        "spaget",
+        "lazanj"
+      ]
+    },
+    {
+      "id": "nudeles",
+      "name": "Nūdeles",
+      "emoji": "🍜",
+      "group": "pieliekamais",
+      "match": [
+        "nudel"
+      ]
+    },
+    {
+      "id": "manna",
+      "name": "Mannas putraimi",
+      "emoji": "🥣",
+      "group": "pieliekamais",
+      "match": [
+        "mann"
+      ]
+    },
+    {
+      "id": "bulgurs",
+      "name": "Bulgurs",
+      "emoji": "🌾",
+      "group": "pieliekamais",
+      "match": [
+        "bulgur"
+      ]
+    },
+    {
+      "id": "pelekie-zirni",
+      "name": "Pelēkie zirņi",
+      "emoji": "🫘",
+      "group": "pieliekamais",
+      "match": [
+        "pelekie zirn"
+      ]
+    },
+    {
+      "id": "dzeltenie-zirni",
+      "name": "Dzeltenie zirņi",
+      "emoji": "🟡",
+      "group": "pieliekamais",
+      "match": [
+        "dzeltenie zirn"
+      ]
+    },
+    {
+      "id": "lecas",
+      "name": "Lēcas",
+      "emoji": "🟠",
+      "group": "pieliekamais",
+      "match": [
+        "lec"
+      ]
+    },
+    {
+      "id": "aunazirni",
+      "name": "Aunazirņi",
+      "emoji": "🫘",
+      "group": "pieliekamais",
+      "match": [
+        "aunazirn"
+      ]
+    },
+    {
+      "id": "pupinas",
+      "name": "Pupiņas (konservētas)",
+      "emoji": "🫘",
+      "group": "pieliekamais",
+      "match": [
+        "pupin"
+      ]
+    },
+    {
+      "id": "rudzu-milti",
+      "name": "Rudzu milti",
+      "emoji": "🌾",
+      "group": "pieliekamais",
+      "match": [
+        "rudzu milt"
+      ]
+    },
+    {
+      "id": "ciete",
+      "name": "Ciete",
+      "emoji": "🥄",
+      "group": "pieliekamais",
+      "match": [
+        "ciet",
+        "kukuruzas ciet",
+        "kartupelu ciet"
+      ]
+    },
+    {
+      "id": "cepamais-pulveris",
+      "name": "Cepamais pulveris",
+      "emoji": "🥄",
+      "group": "pieliekamais",
+      "match": [
+        "cepamais pulver"
+      ]
+    },
+    {
+      "id": "soda",
+      "name": "Dzeramā soda",
+      "emoji": "🥄",
+      "group": "pieliekamais",
+      "match": [
+        "soda$"
+      ]
+    },
+    {
+      "id": "raugs",
+      "name": "Raugs",
+      "emoji": "🍞",
+      "group": "pieliekamais",
+      "match": [
+        "raug"
+      ]
+    },
+    {
+      "id": "ieraugs",
+      "name": "Rudzu ieraugs un iesals",
+      "emoji": "🍞",
+      "group": "pieliekamais",
+      "match": [
+        "ieraug",
+        "iesal"
+      ]
+    },
+    {
+      "id": "sokolade",
+      "name": "Šokolāde",
+      "emoji": "🍫",
+      "group": "pieliekamais",
+      "match": [
+        "sokolad"
+      ]
+    },
+    {
+      "id": "kakao",
+      "name": "Kakao pulveris",
+      "emoji": "🍫",
+      "group": "pieliekamais",
+      "match": [
+        "kakao"
+      ]
+    },
+    {
+      "id": "valrieksti",
+      "name": "Valrieksti",
+      "emoji": "🌰",
+      "group": "pieliekamais",
+      "match": [
+        "valriekst"
+      ]
+    },
+    {
+      "id": "zemesrieksti",
+      "name": "Zemesrieksti",
+      "emoji": "🥜",
+      "group": "pieliekamais",
+      "match": [
+        "zemesriekst"
+      ]
+    },
+    {
+      "id": "mandeles",
+      "name": "Mandeles",
+      "emoji": "🌰",
+      "group": "pieliekamais",
+      "match": [
+        "mandel"
+      ]
+    },
+    {
+      "id": "pistacijas",
+      "name": "Pistācijas",
+      "emoji": "🟢",
+      "group": "pieliekamais",
+      "match": [
+        "pistacij"
+      ]
+    },
+    {
+      "id": "sezams",
+      "name": "Sezama sēklas un eļļa",
+      "emoji": "⚪",
+      "group": "pieliekamais",
+      "match": [
+        "sezam"
+      ]
+    },
+    {
+      "id": "tahini",
+      "name": "Tahini",
+      "emoji": "🥣",
+      "group": "pieliekamais",
+      "match": [
+        "tahin"
+      ]
+    },
+    {
+      "id": "medus",
+      "name": "Medus",
+      "emoji": "🍯",
+      "group": "pieliekamais",
+      "match": [
+        "medus$",
+        "medu$"
+      ]
+    },
+    {
+      "id": "kokosriekstu-piens",
+      "name": "Kokosriekstu piens",
+      "emoji": "🥥",
+      "group": "pieliekamais",
+      "match": [
+        "kokosriekstu pien"
+      ]
+    },
+    {
+      "id": "vanila",
+      "name": "Vaniļa",
+      "emoji": "🌼",
+      "group": "pieliekamais",
+      "match": [
+        "vanil",
+        "vanilas cukur"
+      ]
+    },
+    {
+      "id": "zelatins",
+      "name": "Želatīns",
+      "emoji": "🟨",
+      "group": "pieliekamais",
+      "match": [
+        "zelatin"
+      ]
+    },
+    {
+      "id": "olivas",
+      "name": "Olīvas",
+      "emoji": "🫒",
+      "group": "merces",
+      "match": [
+        "olivas$"
+      ]
+    },
+    {
+      "id": "olivella",
+      "name": "Olīveļļa",
+      "emoji": "🫒",
+      "group": "merces",
+      "match": [
+        "olivell"
+      ]
+    },
+    {
+      "id": "kaperi",
+      "name": "Kaperi",
+      "emoji": "🟢",
+      "group": "merces",
+      "match": [
+        "kaper"
+      ]
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
+      "emoji": "⬜",
+      "group": "pieliekamais",
+      "match": [
+        "tofu"
+      ]
+    },
+    {
+      "id": "rupjmaize",
+      "name": "Rupjmaize",
+      "emoji": "🍞",
+      "group": "maize",
+      "match": [
+        "rupjmaiz"
+      ]
+    },
+    {
+      "id": "baltmaize",
+      "name": "Baltmaize vai bagete",
+      "emoji": "🥖",
+      "group": "maize",
+      "match": [
+        "balta maiz",
+        "baget",
+        "cabat",
+        "maize grauzdes",
+        "burgeru maizit"
+      ]
+    },
+    {
+      "id": "rivmaize",
+      "name": "Rīvmaize",
+      "emoji": "🍞",
+      "group": "maize",
+      "match": [
+        "rivmaiz"
+      ]
+    },
+    {
+      "id": "tortiljas",
+      "name": "Tortiljas, lavašs, pita",
+      "emoji": "🌯",
+      "group": "maize",
+      "match": [
+        "tortilj",
+        "lavas",
+        "pitas",
+        "kukuruzas tortilj"
+      ]
+    },
+    {
+      "id": "cepumi",
+      "name": "Sausie cepumi",
+      "emoji": "🍪",
+      "group": "maize",
+      "match": [
+        "cepum"
+      ]
+    },
+    {
+      "id": "filo",
+      "name": "Filo mīkla",
+      "emoji": "🥐",
+      "group": "maize",
+      "match": [
+        "filo"
+      ]
+    },
+    {
+      "id": "etikis",
+      "name": "Etiķis",
+      "emoji": "🧴",
+      "group": "merces",
+      "match": [
+        "etik"
+      ]
+    },
+    {
+      "id": "marineti-gurki",
+      "name": "Marinēti gurķi",
+      "emoji": "🥒",
+      "group": "merces",
+      "match": [
+        "marineti gurk",
+        "gurku marinad"
+      ]
+    },
+    {
+      "id": "skabeti-kaposti",
+      "name": "Skābēti kāposti",
+      "emoji": "🥬",
+      "group": "merces",
+      "match": [
+        "skabeti kapost"
+      ]
+    },
+    {
+      "id": "tomatu-pasta",
+      "name": "Tomātu pasta",
+      "emoji": "🥫",
+      "group": "merces",
+      "match": [
+        "tomatu past"
+      ]
+    },
+    {
+      "id": "konserveti-tomati",
+      "name": "Konservēti tomāti vai passata",
+      "emoji": "🥫",
+      "group": "merces",
+      "match": [
+        "tomati sava sul",
+        "tomatu biezen",
+        "tomatu merc",
+        "passat"
+      ]
+    },
+    {
+      "id": "majoneze",
+      "name": "Majonēze",
+      "emoji": "🥚",
+      "group": "merces",
+      "match": [
+        "majonez"
+      ]
+    },
+    {
+      "id": "sinepes",
+      "name": "Sinepes",
+      "emoji": "🟡",
+      "group": "merces",
+      "match": [
+        "sinep"
+      ]
+    },
+    {
+      "id": "kecups",
+      "name": "Kečups",
+      "emoji": "🍅",
+      "group": "merces",
+      "match": [
+        "kecup"
+      ]
+    },
+    {
+      "id": "sojas-merce",
+      "name": "Sojas mērce",
+      "emoji": "🥢",
+      "group": "merces",
+      "match": [
+        "sojas"
+      ]
+    },
+    {
+      "id": "zivju-merce",
+      "name": "Zivju mērce",
+      "emoji": "🐟",
+      "group": "merces",
+      "match": [
+        "zivju merc"
+      ]
+    },
+    {
+      "id": "azijas-produkti",
+      "name": "Miso, mirin, tamarinds, aļģes",
+      "emoji": "🍱",
+      "group": "merces",
+      "match": [
+        "miso",
+        "mirin",
+        "tamarind",
+        "wakame"
+      ]
+    },
+    {
+      "id": "lauru-lapas",
+      "name": "Lauru lapas",
+      "emoji": "🍃",
+      "group": "garsvielas",
+      "match": [
+        "laur",
+        "lauru lap"
+      ]
+    },
+    {
+      "id": "smarzigie-pipari",
+      "name": "Smaržīgie pipari",
+      "emoji": "🟤",
+      "group": "garsvielas",
+      "match": [
+        "smarzigie pipar"
+      ]
+    },
+    {
+      "id": "kanelis",
+      "name": "Kanēlis",
+      "emoji": "🟤",
+      "group": "garsvielas",
+      "match": [
+        "kanel"
+      ]
+    },
+    {
+      "id": "kardamons",
+      "name": "Kardamons",
+      "emoji": "🟢",
+      "group": "garsvielas",
+      "match": [
+        "kardamon"
+      ]
+    },
+    {
+      "id": "krustnaglinas",
+      "name": "Krustnagliņas",
+      "emoji": "🟤",
+      "group": "garsvielas",
+      "match": [
+        "krustnagl"
+      ]
+    },
+    {
+      "id": "ingvers",
+      "name": "Ingvers",
+      "emoji": "🫚",
+      "group": "garsvielas",
+      "match": [
+        "ingver"
+      ]
+    },
+    {
+      "id": "muskatrieksts",
+      "name": "Muskatrieksts",
+      "emoji": "🟤",
+      "group": "garsvielas",
+      "match": [
+        "muskat"
+      ]
+    },
+    {
+      "id": "kimenes",
+      "name": "Ķimenes",
+      "emoji": "🌾",
+      "group": "garsvielas",
+      "match": [
+        "kimen"
+      ]
+    },
+    {
+      "id": "kumins",
+      "name": "Kumins (Romas ķimenes)",
+      "emoji": "🟫",
+      "group": "garsvielas",
+      "match": [
+        "romas kimen",
+        "kumin"
+      ]
+    },
+    {
+      "id": "malts-koriandrs",
+      "name": "Koriandrs (malts)",
+      "emoji": "🟫",
+      "group": "garsvielas",
+      "match": [
+        "malts koriandr",
+        "kaltets koriandr",
+        "saslika garsviel"
+      ]
+    },
+    {
+      "id": "kurkuma",
+      "name": "Kurkuma",
+      "emoji": "🟡",
+      "group": "garsvielas",
+      "match": [
+        "kurkum"
+      ]
+    },
+    {
+      "id": "garam-masala",
+      "name": "Garam masala",
+      "emoji": "🟫",
+      "group": "garsvielas",
+      "match": [
+        "garam"
+      ]
+    },
+    {
+      "id": "paprikas-pulveris",
+      "name": "Paprikas pulveris",
+      "emoji": "🟥",
+      "group": "garsvielas",
+      "match": [
+        "kupinata paprik",
+        "paprikas pulver"
+      ]
+    },
+    {
+      "id": "oregano",
+      "name": "Oregano",
+      "emoji": "🌿",
+      "group": "garsvielas",
+      "match": [
+        "oregan"
+      ]
+    },
+    {
+      "id": "majorans",
+      "name": "Majorāns",
+      "emoji": "🌿",
+      "group": "garsvielas",
+      "match": [
+        "majoran"
+      ]
+    },
+    {
+      "id": "safrans",
+      "name": "Safrāns",
+      "emoji": "🟠",
+      "group": "garsvielas",
+      "match": [
+        "safran"
+      ]
+    },
+    {
+      "id": "aniss",
+      "name": "Zvaigžņu anīss",
+      "emoji": "⭐",
+      "group": "garsvielas",
+      "match": [
+        "anis"
+      ]
+    },
+    {
+      "id": "vins",
+      "name": "Vīns",
+      "emoji": "🍷",
+      "group": "citi",
+      "match": [
+        "baltvin",
+        "sarkanvin",
+        "vins$"
+      ]
+    },
+    {
+      "id": "alkohols",
+      "name": "Rums, liķieris vai alus",
+      "emoji": "🥃",
+      "group": "citi",
+      "match": [
+        "likier",
+        "rums$",
+        "alus$"
+      ]
+    },
+    {
+      "id": "kafija",
+      "name": "Kafija",
+      "emoji": "☕",
+      "group": "citi",
+      "match": [
+        "kafij"
+      ]
+    },
+    {
+      "id": "berzu-sula",
+      "name": "Bērzu sula",
+      "emoji": "🌳",
+      "group": "citi",
+      "match": [
+        "berzu sul"
+      ]
+    }
+  ]
+}

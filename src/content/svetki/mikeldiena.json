@@ -1,0 +1,11 @@
+{
+  "name": "Miķeļdiena",
+  "emoji": "🍎",
+  "color": "#b5552a",
+  "dateType": "fiksets",
+  "month": 9,
+  "day": 29,
+  "leadDays": 14,
+  "order": 10,
+  "description": "Rudens ražas svētki: āboli, ķirbji, sēnes un ziemas krājumi."
+}

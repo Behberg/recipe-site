@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
+import LogoMark from '../components/LogoMark.astro';
 import AdsLoader from '../components/AdsLoader.astro';
 import { SITE } from '../site.config';
-import { getCuisines, getCategories, cuisineUrl, categoryUrl } from '../lib/recipes';
+import { getCuisines, getCategories, getOccasions, getRecipes, cuisineUrl, categoryUrl, occasionUrl } from '../lib/recipes';
 
 interface Props {
   title?: string;
@@ -20,19 +21,26 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image || '/og-image.png', Astro.site);
 const path = Astro.url.pathname;
 
-const [cuisines, categories] = await Promise.all([getCuisines(), getCategories()]);
+const [cuisines, categories, occasions, recipes] = await Promise.all([getCuisines(), getCategories(), getOccasions(), getRecipes()]);
+const recipeIds = recipes.map((r) => r.id);
 
-const tabs = [
-  { href: '/', label: 'Sākums', icon: 'home', match: (p: string) => p === '/' },
-  {
-    href: '/receptes/',
-    label: 'Receptes',
-    icon: 'book',
-    match: (p: string) => p.startsWith('/receptes') || p.startsWith('/recepte/') || p.startsWith('/kategorijas'),
-  },
-  { href: '/virtuves/', label: 'Virtuves', icon: 'globe', match: (p: string) => p.startsWith('/virtuves') },
-  { href: '/izlase/', label: 'Izlase', icon: 'heart', match: (p: string) => p.startsWith('/izlase') },
-] as const;
+const is = {
+  home: path === '/',
+  recipes: path.startsWith('/receptes') || path.startsWith('/recepte/') || path.startsWith('/kategorijas'),
+  cuisines: path.startsWith('/virtuves'),
+  occasions: path.startsWith('/svetki'),
+  fridge: path.startsWith('/ledusskapis'),
+  tinder: path.startsWith('/tinderis'),
+  favorites: path.startsWith('/izlase'),
+};
+
+const nav = [
+  { href: '/receptes/', label: 'Receptes', on: is.recipes },
+  { href: '/virtuves/', label: 'Virtuves', on: is.cuisines },
+  { href: '/svetki/', label: 'Svētku galds', on: is.occasions },
+  { href: '/ledusskapis/', label: 'Ledusskapis', on: is.fridge },
+  { href: '/tinderis/', label: 'Tinderis', on: is.tinder },
+];
 ---
 
 <!doctype html>
@@ -78,13 +86,13 @@ const tabs = [
     <header class="site-header" id="site-header">
       <div class="container">
         <a class="logo" href="/" aria-label={`${SITE.name}, sākumlapa`}>
-          <span class="logo-mark"><Icon name="utensils" /></span>
+          <span class="logo-mark"><LogoMark /></span>
           {SITE.name}
         </a>
         <nav class="main-nav" aria-label="Galvenā navigācija">
           {
-            tabs.map((t) => (
-              <a href={t.href} aria-current={t.match(path) ? 'page' : undefined}>
+            nav.map((t) => (
+              <a href={t.href} aria-current={t.on ? 'page' : undefined}>
                 {t.label}
               </a>
             ))
@@ -97,6 +105,9 @@ const tabs = [
           </a>
           <a class="icon-btn header-search-mobile" href="/receptes/#meklet" aria-label="Meklēt receptes">
             <Icon name="search" />
+          </a>
+          <a class="icon-btn" href="/izlase/" aria-label="Mana izlase" aria-current={is.favorites ? 'page' : undefined}>
+            <Icon name="heart" />
           </a>
         </div>
       </div>
@@ -111,10 +122,15 @@ const tabs = [
         <div class="footer-grid">
           <div class="about">
             <a class="logo" href="/">
-              <span class="logo-mark"><Icon name="utensils" /></span>
+              <span class="logo-mark"><LogoMark /></span>
               {SITE.name}
             </a>
             <p class="footer-about">{SITE.description}</p>
+            <ul class="footer-tools">
+              <li><a href="/ledusskapis/">🧊 Kas ir ledusskapī?</a></li>
+              <li><a href="/tinderis/">🔥 Recepšu Tinderis</a></li>
+              <li><a href="/svetki/">🎉 Svētku galds un kalendārs</a></li>
+            </ul>
           </div>
           <div>
             <h4>Virtuves</h4>
@@ -128,6 +144,12 @@ const tabs = [
               {categories.map((c) => <li><a href={categoryUrl(c.id)}>{c.data.name}</a></li>)}
             </ul>
           </div>
+          <div>
+            <h4>Svētku galds</h4>
+            <ul>
+              {occasions.map((o) => <li><a href={occasionUrl(o.id)}>{o.data.name}</a></li>)}
+            </ul>
+          </div>
         </div>
         <div class="footer-bottom">
           <span>© {new Date().getFullYear()} {SITE.name}. Gatavots ar mīlestību Latvijā.</span>
@@ -138,32 +160,97 @@ const tabs = [
 
     <nav class="tabbar" aria-label="Apakšējā navigācija">
       <ul>
-        {
-          tabs.map((t) => (
-            <li>
-              <a href={t.href} aria-current={t.match(path) ? 'page' : undefined}>
-                <span class="tab-icon">
-                  <Icon name={t.icon} />
-                </span>
-                {t.label}
-              </a>
-            </li>
-          ))
-        }
+        <li>
+          <a href="/" aria-current={is.home ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="home" /></span>Sākums
+          </a>
+        </li>
+        <li>
+          <a href="/receptes/" aria-current={is.recipes || is.cuisines ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="book" /></span>Receptes
+          </a>
+        </li>
+        <li class="tab-center">
+          <button type="button" data-ideas-open aria-haspopup="dialog" aria-current={is.fridge || is.tinder ? 'page' : undefined}>
+            <span class="tab-fab"><Icon name="sparkle" /></span>Ko gatavot?
+          </button>
+        </li>
+        <li>
+          <a href="/svetki/" aria-current={is.occasions ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="gift" /></span>Svētki
+          </a>
+        </li>
+        <li>
+          <a href="/izlase/" aria-current={is.favorites ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="heart" /></span>Izlase
+          </a>
+        </li>
       </ul>
     </nav>
 
+    <!-- "Ko gatavot?" sheet -->
+    <dialog class="sheet ideas" data-ideas aria-label="Ko gatavot?">
+      <div class="sheet-grip" aria-hidden="true"></div>
+      <h2>Ko šodien gatavot?</h2>
+      <div class="ideas-grid">
+        <a class="idea" href="/ledusskapis/" style="--c:#2f7f86">
+          <span class="idea-emoji" aria-hidden="true">🧊</span>
+          <strong>Kas ir ledusskapī?</strong>
+          <span>Atzīmē produktus, un mēs atradīsim receptes</span>
+        </a>
+        <a class="idea" href="/tinderis/" style="--c:#c2334d">
+          <span class="idea-emoji" aria-hidden="true">🔥</span>
+          <strong>Recepšu Tinderis</strong>
+          <span>Velc pa labi vai pa kreisi, līdz ir uzvarētājs</span>
+        </a>
+        <a class="idea" href="/svetki/" style="--c:#b8912a">
+          <span class="idea-emoji" aria-hidden="true">🎉</span>
+          <strong>Svētku galds</strong>
+          <span>Receptes tuvākajiem svētkiem</span>
+        </a>
+        <a class="idea" href="/virtuves/" style="--c:#3b5b8c">
+          <span class="idea-emoji" aria-hidden="true">🌍</span>
+          <strong>Pasaules virtuves</strong>
+          <span>No Latvijas līdz Meksikai</span>
+        </a>
+      </div>
+      <button type="button" class="btn btn-ghost ideas-random" data-random>
+        <Icon name="dice" /> Pārsteidz mani ar nejaušu recepti
+      </button>
+      <button type="button" class="icon-btn sheet-close" data-ideas-close aria-label="Aizvērt"><Icon name="x" /></button>
+    </dialog>
+
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script is:inline type="application/json" id="recipe-ids" set:html={JSON.stringify(recipeIds)} />
 
     <script>
       import { initFavorites } from '../lib/favorites';
+      import { initTimers } from '../lib/timers';
 
       initFavorites();
+      initTimers();
+
+      // Toasts must follow the timers into an open modal, otherwise the top layer hides them.
+      const toastEl = document.getElementById('toast')!;
+      document.addEventListener('timers:host', (e) => ((e as CustomEvent<HTMLElement | null>).detail ?? document.body).appendChild(toastEl));
 
       const header = document.getElementById('site-header');
       const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 4);
       onScroll();
       window.addEventListener('scroll', onScroll, { passive: true });
+
+      // "Ko gatavot?" sheet
+      const sheet = document.querySelector<HTMLDialogElement>('[data-ideas]')!;
+      document.querySelector('[data-ideas-open]')?.addEventListener('click', () => sheet.showModal());
+      sheet.querySelector('[data-ideas-close]')!.addEventListener('click', () => sheet.close());
+      sheet.addEventListener('click', (e) => e.target === sheet && sheet.close());
+
+      document.addEventListener('click', (e) => {
+        if (!(e.target as HTMLElement).closest('[data-random]')) return;
+        const ids: string[] = JSON.parse(document.getElementById('recipe-ids')!.textContent || '[]');
+        if (ids.length) location.href = `/recepte/${ids[Math.floor(Math.random() * ids.length)]}/`;
+      });
     </script>
     <AdsLoader />
   </body>
@@ -173,5 +260,8 @@ const tabs = [
   .footer-about {
     margin-top: 12px;
     max-width: 40ch;
+  }
+  .footer-tools {
+    margin-top: 16px;
   }
 </style>

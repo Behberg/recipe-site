@@ -40,4 +40,4 @@ date: 2026-08-12
 draft: false
 ---
 
-Labs gvakamole sākas ar labu avokado: tam jābūt mīkstam, kad to viegli saspiež.
+Laba gvakamole sākas ar labu avokado: tam jābūt mīkstam, kad to viegli saspiež.

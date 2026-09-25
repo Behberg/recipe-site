@@ -1,0 +1,12 @@
+{
+  "name": "Tēvu diena",
+  "emoji": "🔥",
+  "color": "#5a4632",
+  "dateType": "nedelas-diena",
+  "month": 9,
+  "weekday": 0,
+  "nth": 2,
+  "leadDays": 10,
+  "order": 9,
+  "description": "Grils, steiki un sātīgi ēdieni tētim."
+}

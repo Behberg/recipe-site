@@ -66,6 +66,7 @@ steps:
   - "Katrā rausī vispirms liek kartupeļu kārtu, virsū burkānu kārtu."
   - "Cep 200 °C krāsnī 20 līdz 25 minūtes, līdz malas ir zeltainas. Pasniedz ar kanēli un krējumu."
 tags: ["tradicionāls", "Kurzeme", "ES aizsargāts"]
+occasions: [18-novembris]
 featured: false
 date: 2026-08-18
 draft: false

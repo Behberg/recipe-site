@@ -1,0 +1,746 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { getCatalog, totalTime, formatMinutes, imageUrl } from '../lib/recipes';
+
+const { recipes, cuisineById, categoryById } = await getCatalog();
+
+const deck = recipes.map((r) => {
+  const cat = categoryById.get(r.data.category.id);
+  const cui = cuisineById.get(r.data.cuisine.id);
+  return {
+    id: r.id,
+    t: r.data.title,
+    d: r.data.description,
+    e: r.data.emoji || cat?.data.emoji || '🍽️',
+    c: cat?.data.color || '#9e3039',
+    i: r.data.image ? imageUrl(r.data.image, 700) : '',
+    m: totalTime(r),
+    time: formatMinutes(totalTime(r)),
+    diff: r.data.difficulty,
+    cu: r.data.cuisine.id,
+    cun: cui ? `${cui.data.emoji} ${cui.data.name}` : '',
+    ca: r.data.category.id,
+  };
+});
+
+const moods = [
+  { id: 'viss', label: '🎲 Jebkas' },
+  { id: 'satigs', label: '🍲 Kaut kas sātīgs' },
+  { id: 'saldais', label: '🍰 Kaut kas salds' },
+  { id: 'atri', label: '⚡ Ātri, līdz 30 min' },
+  { id: 'latviesu', label: '🇱🇻 Latviešu' },
+  { id: 'brokastis', label: '🍳 Brokastis' },
+  { id: 'pasaule', label: '🌍 Kaut kas eksotisks' },
+];
+---
+
+<Base title="Recepšu Tinderis" description="Nevari izlemt, ko gatavot? Velc receptes pa labi vai pa kreisi, līdz paliek viens uzvarētājs.">
+  <div class="tinder container" data-tinder>
+    <!-- Start -->
+    <section class="stage start" data-screen="start">
+      <span class="eyebrow">🔥 Recepšu Tinderis</span>
+      <h1>Nevari izlemt, ko gatavot?</h1>
+      <p class="lead">Tev parādīsim 12 receptes. <strong>Pa labi</strong>, ja gribas, <strong>pa kreisi</strong>, ja ne. Patikušās cīnīsies finālā, līdz paliek viena.</p>
+      <div class="how" aria-hidden="true">
+        <span class="how-card how-l">👈 Nē</span>
+        <span class="how-card how-c">🍽️</span>
+        <span class="how-card how-r">Jā 👉</span>
+      </div>
+      <h2 class="mood-title">Kas šodien garšotu?</h2>
+      <div class="moods" role="radiogroup" aria-label="Noskaņojums">
+        {
+          moods.map((m, i) => (
+            <button type="button" class="chip mood" role="radio" aria-checked={i === 0 ? 'true' : 'false'} data-mood={m.id}>
+              {m.label}
+            </button>
+          ))
+        }
+      </div>
+      <button type="button" class="btn btn-primary start-btn" data-start>
+        <Icon name="flame" /> Sākam!
+      </button>
+    </section>
+
+    <!-- Swipe -->
+    <section class="stage swipe" data-screen="swipe" hidden>
+      <div class="swipe-top">
+        <span data-progress>1 / 12</span>
+        <span class="liked-count"><Icon name="heart" /> <span data-liked>0</span></span>
+      </div>
+      <div class="deck" data-deck aria-live="polite"></div>
+      <div class="swipe-actions">
+        <button type="button" class="round nope" data-nope aria-label="Nē, nākamā"><Icon name="x" /></button>
+        <button type="button" class="round undo" data-undo aria-label="Atsaukt"><Icon name="refresh" /></button>
+        <button type="button" class="round like" data-like aria-label="Jā, patīk"><Icon name="heart" /></button>
+      </div>
+      <p class="swipe-hint">Velc karti vai izmanto pogas. Uz datora strādā arī ← un → taustiņi.</p>
+    </section>
+
+    <!-- Duel -->
+    <section class="stage duel" data-screen="duel" hidden>
+      <span class="eyebrow" data-duel-round>Fināls</span>
+      <h2>Kura labāk?</h2>
+      <p class="lead">Pieskaries receptei, ko gribi vairāk.</p>
+      <div class="duel-cards" data-duel></div>
+    </section>
+
+    <!-- No likes -->
+    <section class="stage nolike" data-screen="nolike" hidden>
+      <div class="big" aria-hidden="true">🙈</div>
+      <h2>Nekas neiekrita acīs?</h2>
+      <p class="lead">Nekas traks, izmēģini citu noskaņojumu vai jaunu kavu.</p>
+      <div class="end-actions">
+        <button type="button" class="btn btn-primary" data-again>Jauna kava</button>
+        <button type="button" class="btn btn-ghost" data-restart>Mainīt noskaņojumu</button>
+      </div>
+    </section>
+
+    <!-- Winner -->
+    <section class="stage winner" data-screen="winner" hidden>
+      <canvas class="confetti" data-confetti aria-hidden="true"></canvas>
+      <span class="eyebrow">🏆 Mums ir uzvarētājs</span>
+      <h2>Šodien gatavosim:</h2>
+      <div class="winner-card" data-winner></div>
+      <div class="end-actions">
+        <a class="btn btn-primary" data-winner-link href="#">Uz recepti <Icon name="arrow-right" /></a>
+        <button type="button" class="btn btn-ghost" data-restart>Spēlēt vēlreiz</button>
+      </div>
+    </section>
+  </div>
+
+  <script is:inline type="application/json" id="tinder-data" set:html={JSON.stringify(deck)} />
+</Base>
+
+<script>
+  type R = {
+    id: string; t: string; d: string; e: string; c: string; i: string; m: number;
+    time: string; diff: string; cu: string; cun: string; ca: string;
+  };
+  const ALL: R[] = JSON.parse(document.getElementById('tinder-data')!.textContent!);
+  const root = document.querySelector<HTMLElement>('[data-tinder]')!;
+  const $ = <T extends HTMLElement>(sel: string) => root.querySelector<T>(sel)!;
+  const DECK_SIZE = 12;
+
+  const moodFilter: Record<string, (r: R) => boolean> = {
+    viss: () => true,
+    satigs: (r) => ['pamatedieni', 'zupas'].includes(r.ca),
+    saldais: (r) => ['saldie-edieni', 'maize-un-cepumi'].includes(r.ca),
+    atri: (r) => r.m <= 30 && r.ca !== 'ievarijumi-un-konservi',
+    latviesu: (r) => r.cu === 'latviesu' && r.ca !== 'ievarijumi-un-konservi',
+    brokastis: (r) => r.ca === 'brokastis' || (r.m <= 20 && r.ca !== 'ievarijumi-un-konservi'),
+    pasaule: (r) => r.cu !== 'latviesu' && r.ca !== 'ievarijumi-un-konservi',
+  };
+
+  let mood = 'viss';
+  let deck: R[] = [];
+  let index = 0;
+  let liked: R[] = [];
+  let history: { r: R; like: boolean }[] = [];
+
+  function show(screen: string) {
+    root.querySelectorAll<HTMLElement>('[data-screen]').forEach((s) => (s.hidden = s.dataset.screen !== screen));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  const shuffle = <T,>(a: T[]) => {
+    const b = [...a];
+    for (let i = b.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [b[i], b[j]] = [b[j], b[i]];
+    }
+    return b;
+  };
+
+  function media(r: R) {
+    const wrap = document.createElement('div');
+    wrap.className = 'tc-media';
+    if (r.i) {
+      const img = document.createElement('img');
+      img.src = r.i;
+      img.alt = '';
+      img.draggable = false;
+      wrap.append(img);
+    } else {
+      const art = document.createElement('div');
+      art.className = 'art art--lg';
+      art.style.setProperty('--c', r.c);
+      const em = document.createElement('span');
+      em.className = 'art-emoji';
+      em.textContent = r.e;
+      art.append(em);
+      wrap.append(art);
+    }
+    return wrap;
+  }
+
+  function cardEl(r: R, extra = '') {
+    const el = document.createElement('article');
+    el.className = `tcard ${extra}`;
+    el.dataset.id = r.id;
+    el.append(media(r));
+    const body = document.createElement('div');
+    body.className = 'tc-body';
+    const badge = document.createElement('span');
+    badge.className = 'tc-badge';
+    badge.textContent = r.cun;
+    const h = document.createElement('h3');
+    h.textContent = r.t;
+    const meta = document.createElement('p');
+    meta.className = 'tc-meta';
+    meta.textContent = `⏱ ${r.time} · ${r.diff}`;
+    const d = document.createElement('p');
+    d.className = 'tc-desc';
+    d.textContent = r.d;
+    body.append(badge, h, meta, d);
+    el.append(body);
+    const yes = document.createElement('span');
+    yes.className = 'stamp stamp-yes';
+    yes.textContent = 'GRIBU!';
+    const no = document.createElement('span');
+    no.className = 'stamp stamp-no';
+    no.textContent = 'NĒ';
+    el.append(yes, no);
+    return el;
+  }
+
+  /* ---------- Swiping ---------- */
+  const deckEl = $('[data-deck]');
+
+  function renderDeck() {
+    deckEl.replaceChildren();
+    // Top card last in DOM so it sits on top; show up to 3.
+    deck
+      .slice(index, index + 3)
+      .reverse()
+      .forEach((r, i, arr) => {
+        const el = cardEl(r, i === arr.length - 1 ? 'is-top' : '');
+        el.style.setProperty('--depth', String(arr.length - 1 - i));
+        deckEl.append(el);
+      });
+    $('[data-progress]').textContent = `${Math.min(index + 1, deck.length)} / ${deck.length}`;
+    $('[data-liked]').textContent = String(liked.length);
+    ($('[data-undo]') as HTMLButtonElement).disabled = history.length === 0;
+    const top = deckEl.querySelector<HTMLElement>('.is-top');
+    if (top) bindDrag(top);
+  }
+
+  function decide(like: boolean) {
+    const r = deck[index];
+    if (!r) return;
+    if (like) liked.push(r);
+    history.push({ r, like });
+    index++;
+    navigator.vibrate?.(like ? [10, 30, 10] : 8);
+    if (index >= deck.length) setTimeout(finishDeck, 250);
+    else renderDeck();
+  }
+
+  function flyOut(like: boolean) {
+    const top = deckEl.querySelector<HTMLElement>('.is-top');
+    if (!top || top.dataset.leaving) return;
+    top.dataset.leaving = '1';
+    top.classList.add(like ? 'show-yes' : 'show-no');
+    top.style.transition = 'transform .35s cubic-bezier(.2,.8,.2,1), opacity .35s';
+    top.style.transform = `translate(${like ? 140 : -140}%, -4%) rotate(${like ? 24 : -24}deg)`;
+    top.style.opacity = '0';
+    setTimeout(() => decide(like), 220);
+  }
+
+  function bindDrag(el: HTMLElement) {
+    let sx = 0, sy = 0, dx = 0, dy = 0, t0 = 0, dragging = false;
+    el.addEventListener('pointerdown', (e) => {
+      dragging = true;
+      sx = e.clientX;
+      sy = e.clientY;
+      t0 = performance.now();
+      el.setPointerCapture(e.pointerId);
+      el.style.transition = 'none';
+    });
+    el.addEventListener('pointermove', (e) => {
+      if (!dragging) return;
+      dx = e.clientX - sx;
+      dy = e.clientY - sy;
+      el.style.transform = `translate(${dx}px, ${dy * 0.4}px) rotate(${dx * 0.06}deg)`;
+      el.style.setProperty('--yes', String(Math.max(0, Math.min(1, dx / 100))));
+      el.style.setProperty('--no', String(Math.max(0, Math.min(1, -dx / 100))));
+    });
+    const end = () => {
+      if (!dragging) return;
+      dragging = false;
+      const v = Math.abs(dx) / Math.max(1, performance.now() - t0);
+      if (Math.abs(dx) > 100 || (Math.abs(dx) > 40 && v > 0.6)) {
+        flyOut(dx > 0);
+      } else {
+        el.style.transition = 'transform .35s cubic-bezier(.2,.8,.2,1)';
+        el.style.transform = '';
+        el.style.setProperty('--yes', '0');
+        el.style.setProperty('--no', '0');
+      }
+      dx = dy = 0;
+    };
+    el.addEventListener('pointerup', end);
+    el.addEventListener('pointercancel', end);
+  }
+
+  $('[data-like]').addEventListener('click', () => flyOut(true));
+  $('[data-nope]').addEventListener('click', () => flyOut(false));
+  $('[data-undo]').addEventListener('click', () => {
+    const last = history.pop();
+    if (!last) return;
+    index--;
+    if (last.like) liked = liked.filter((r) => r !== last.r);
+    renderDeck();
+  });
+  document.addEventListener('keydown', (e) => {
+    if ($('[data-screen="swipe"]').hidden) return;
+    if (e.key === 'ArrowRight') flyOut(true);
+    if (e.key === 'ArrowLeft') flyOut(false);
+  });
+
+  /* ---------- Flow ---------- */
+  function newDeck() {
+    deck = shuffle(ALL.filter(moodFilter[mood])).slice(0, DECK_SIZE);
+    index = 0;
+    liked = [];
+    history = [];
+    show('swipe');
+    renderDeck();
+  }
+
+  function finishDeck() {
+    if (liked.length === 0) return show('nolike');
+    if (liked.length === 1) return winner(liked[0]);
+    duel(shuffle(liked));
+  }
+
+  function duel(contenders: R[]) {
+    show('duel');
+    let champion = contenders[0];
+    let i = 1;
+    const box = $('[data-duel]');
+    const round = () => {
+      const challenger = contenders[i];
+      $('[data-duel-round]').textContent = `Fināls · ${i} / ${contenders.length - 1}`;
+      const a = cardEl(champion, 'duel-card');
+      const b = cardEl(challenger, 'duel-card');
+      const vs = document.createElement('span');
+      vs.className = 'vs';
+      vs.textContent = 'VS';
+      box.replaceChildren(a, vs, b);
+      [a, b].forEach((el) => {
+        el.tabIndex = 0;
+        el.setAttribute('role', 'button');
+        const pick = () => {
+          el.classList.add('picked');
+          (el === a ? b : a).classList.add('lost');
+          champion = el === a ? champion : challenger;
+          i++;
+          setTimeout(() => (i < contenders.length ? round() : winner(champion)), 380);
+        };
+        el.addEventListener('click', pick);
+        el.addEventListener('keydown', (e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), pick()));
+      });
+    };
+    round();
+  }
+
+  function winner(r: R) {
+    show('winner');
+    const box = $('[data-winner]');
+    box.replaceChildren(cardEl(r, 'win-card'));
+    ($('[data-winner-link]') as HTMLAnchorElement).href = `/recepte/${r.id}/`;
+    confetti();
+  }
+
+  root.querySelectorAll<HTMLButtonElement>('[data-mood]').forEach((b) =>
+    b.addEventListener('click', () => {
+      mood = b.dataset.mood!;
+      root.querySelectorAll('[data-mood]').forEach((x) => x.setAttribute('aria-checked', String(x === b)));
+    }),
+  );
+  $('[data-start]').addEventListener('click', newDeck);
+  root.querySelectorAll('[data-again]').forEach((b) => b.addEventListener('click', newDeck));
+  root.querySelectorAll('[data-restart]').forEach((b) => b.addEventListener('click', () => show('start')));
+
+  /* ---------- Confetti ---------- */
+  function confetti() {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const canvas = $('[data-confetti]') as HTMLCanvasElement;
+    const ctx = canvas.getContext('2d')!;
+    const w = (canvas.width = canvas.offsetWidth * devicePixelRatio);
+    const h = (canvas.height = canvas.offsetHeight * devicePixelRatio);
+    const colors = ['#9e3039', '#d98b2b', '#3f7a4a', '#e0646e', '#f4c542', '#3b5b8c'];
+    const bits = Array.from({ length: 140 }, () => ({
+      x: w / 2 + (Math.random() - 0.5) * w * 0.3,
+      y: h * 0.35,
+      vx: (Math.random() - 0.5) * 16 * devicePixelRatio,
+      vy: (-Math.random() * 14 - 4) * devicePixelRatio,
+      r: Math.random() * Math.PI,
+      vr: (Math.random() - 0.5) * 0.3,
+      s: (Math.random() * 6 + 4) * devicePixelRatio,
+      c: colors[Math.floor(Math.random() * colors.length)],
+    }));
+    let frames = 0;
+    const step = () => {
+      ctx.clearRect(0, 0, w, h);
+      for (const b of bits) {
+        b.vy += 0.35 * devicePixelRatio;
+        b.vx *= 0.99;
+        b.x += b.vx;
+        b.y += b.vy;
+        b.r += b.vr;
+        ctx.save();
+        ctx.translate(b.x, b.y);
+        ctx.rotate(b.r);
+        ctx.fillStyle = b.c;
+        ctx.fillRect(-b.s / 2, -b.s / 4, b.s, b.s / 2);
+        ctx.restore();
+      }
+      if (frames++ < 180) requestAnimationFrame(step);
+      else ctx.clearRect(0, 0, w, h);
+    };
+    step();
+  }
+</script>
+
+<style>
+  .tinder {
+    max-width: 560px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .stage {
+    position: relative;
+    text-align: center;
+  }
+  .stage h1,
+  .stage h2 {
+    font-size: clamp(1.9rem, 1.4rem + 2.4vw, 2.8rem);
+    margin-top: 8px;
+  }
+  .lead {
+    color: var(--ink-2);
+    margin: 10px auto 0;
+    max-width: 44ch;
+  }
+  .how {
+    position: relative;
+    height: 150px;
+    margin: 24px auto 8px;
+    max-width: 320px;
+  }
+  .how-card {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 110px;
+    height: 130px;
+    margin-left: -55px;
+    display: grid;
+    place-items: center;
+    border-radius: var(--r);
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow);
+  }
+  .how-l {
+    background: var(--surface-2);
+    transform: translateX(-80px) rotate(-12deg);
+    color: var(--ink-3);
+  }
+  .how-r {
+    background: var(--brand-soft);
+    color: var(--brand);
+    transform: translateX(80px) rotate(12deg);
+  }
+  .how-c {
+    background: var(--brand);
+    font-size: 3rem;
+    z-index: 1;
+    animation: wiggle 2.4s ease-in-out infinite;
+  }
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: translateX(-14px) rotate(-7deg);
+    }
+    75% {
+      transform: translateX(14px) rotate(7deg);
+    }
+  }
+  .mood-title {
+    font-size: 1.2rem !important;
+    margin-top: 12px !important;
+  }
+  .moods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .mood[aria-checked='true'] {
+    background: var(--ink);
+    color: var(--bg);
+    box-shadow: none;
+  }
+  .start-btn {
+    margin-top: 24px;
+    min-height: 56px;
+    padding: 0 34px;
+    font-size: 1.05rem;
+  }
+
+  .swipe-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--ink-2);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  .liked-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--brand);
+  }
+  .liked-count :global(svg) {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+  .deck {
+    position: relative;
+    height: min(62dvh, 540px);
+    min-height: 420px;
+  }
+  .deck :global(.tcard) {
+    position: absolute;
+    inset: 0;
+    transform: translateY(calc(var(--depth) * 12px)) scale(calc(1 - var(--depth) * 0.04));
+    transition: transform 0.35s var(--ease);
+  }
+  .deck :global(.tcard.is-top) {
+    cursor: grab;
+    touch-action: none;
+  }
+  .deck :global(.tcard.is-top:active) {
+    cursor: grabbing;
+  }
+  :global(.tcard) {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-lg), inset 0 0 0 1px var(--line);
+    text-align: left;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  :global(.tc-media) {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  :global(.tc-media img),
+  :global(.tc-media .art) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  :global(.tc-body) {
+    padding: 16px 18px 18px;
+  }
+  :global(.tc-badge) {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--ink-3);
+  }
+  :global(.tcard h3) {
+    font-size: 1.5rem;
+    margin-top: 4px;
+  }
+  :global(.tc-meta) {
+    font-size: 0.85rem;
+    color: var(--ink-3);
+    margin-top: 4px;
+  }
+  :global(.tc-desc) {
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    margin-top: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  :global(.stamp) {
+    position: absolute;
+    top: 28px;
+    padding: 6px 14px;
+    border: 4px solid currentColor;
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    background: rgb(255 255 255 / 0.85);
+    opacity: 0;
+    pointer-events: none;
+  }
+  :global(.stamp-yes) {
+    left: 22px;
+    color: #2f8a4a;
+    transform: rotate(-14deg);
+    opacity: var(--yes, 0);
+  }
+  :global(.stamp-no) {
+    right: 22px;
+    color: #c2334d;
+    transform: rotate(14deg);
+    opacity: var(--no, 0);
+  }
+  :global(.tcard.show-yes .stamp-yes),
+  :global(.tcard.show-no .stamp-no) {
+    opacity: 1;
+  }
+  .swipe-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 26px;
+  }
+  .round {
+    display: grid;
+    place-items: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: var(--surface);
+    box-shadow: var(--shadow), inset 0 0 0 1px var(--line);
+    transition: transform 0.15s var(--ease);
+  }
+  .round:active {
+    transform: scale(0.88);
+  }
+  .round :global(svg) {
+    width: 30px;
+    height: 30px;
+    stroke-width: 2.4;
+  }
+  .nope {
+    color: #c2334d;
+  }
+  .like {
+    color: #fff;
+    background: linear-gradient(145deg, #e0646e, var(--brand));
+    box-shadow: 0 12px 24px -10px var(--brand);
+  }
+  .like :global(svg) {
+    fill: currentColor;
+  }
+  .undo {
+    width: 48px;
+    height: 48px;
+    color: var(--ink-3);
+  }
+  .undo :global(svg) {
+    width: 20px;
+    height: 20px;
+  }
+  .undo:disabled {
+    opacity: 0.35;
+  }
+  .swipe-hint {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: var(--ink-3);
+  }
+
+  .duel-cards {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .duel-cards :global(.duel-card) {
+    height: 340px;
+    cursor: pointer;
+    transition:
+      transform 0.3s var(--ease),
+      opacity 0.3s,
+      box-shadow 0.3s;
+  }
+  .duel-cards :global(.duel-card:hover) {
+    transform: translateY(-4px);
+  }
+  .duel-cards :global(.duel-card h3) {
+    font-size: 1.1rem;
+  }
+  .duel-cards :global(.duel-card .tc-desc),
+  .duel-cards :global(.duel-card .stamp) {
+    display: none;
+  }
+  .duel-cards :global(.picked) {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 4px var(--brand), var(--shadow-lg);
+  }
+  .duel-cards :global(.lost) {
+    opacity: 0.25;
+    transform: scale(0.94);
+  }
+  .duel-cards :global(.vs) {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--brand);
+  }
+
+  .big {
+    font-size: 4rem;
+    margin-top: 24px;
+  }
+  .end-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 22px;
+  }
+  .winner-card {
+    margin: 20px auto 0;
+    max-width: 380px;
+  }
+  .winner-card :global(.win-card) {
+    height: 440px;
+    animation: winpop 0.6s var(--ease);
+  }
+  .winner-card :global(.stamp) {
+    display: none;
+  }
+  @keyframes winpop {
+    from {
+      transform: scale(0.7) rotate(-6deg);
+      opacity: 0;
+    }
+  }
+  .confetti {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 60;
+  }
+</style>

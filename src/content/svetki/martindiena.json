@@ -1,0 +1,11 @@
+{
+  "name": "Mārtiņdiena",
+  "emoji": "🦆",
+  "color": "#7a4e2d",
+  "dateType": "fiksets",
+  "month": 11,
+  "day": 10,
+  "leadDays": 14,
+  "order": 12,
+  "description": "Ziemas sākums: cepta pīle, kāposti, pīrāgi un pilns galds."
+}

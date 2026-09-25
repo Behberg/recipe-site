@@ -1,6 +1,6 @@
 ---
 title: "Rabarberu pīrāgs ar kraukšķīgu virskārtu"
-description: "Skābeni saldais rabarberu pīrāgs ar drupaču virskārtu. Vienkāršākā vasaras kūka."
+description: "Skābeni salds rabarberu pīrāgs ar drupaču virskārtu. Vienkāršākā vasaras kūka."
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🥧"
@@ -52,6 +52,7 @@ steps:
   - "Cep 35 līdz 40 minūtes, līdz virsa ir zeltaina un koka irbulis iznāk sauss."
   - "Pasniedz remdenu ar putukrējumu vai vaniļas saldējumu."
 tags: ["vasara", "kūka", "dārza ražai"]
+occasions: [balta-galdauta-svetki, mates-diena]
 featured: false
 date: 2026-06-01
 draft: false

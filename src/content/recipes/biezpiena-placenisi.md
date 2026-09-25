@@ -35,6 +35,7 @@ steps:
   - "Cep sakarsētā eļļā uz vidējas uguns 3 minūtes no katras puses, līdz zeltaini."
   - "Pasniedz ar skābo krējumu un iecienītāko ievārījumu."
 tags: ["brokastis", "ātri", "veģetārs"]
+occasions: [meteni]
 featured: false
 date: 2026-02-20
 draft: false

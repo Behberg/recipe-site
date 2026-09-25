@@ -56,4 +56,4 @@ date: 2026-08-25
 draft: false
 ---
 
-Ātrāk nekā pasūtīt piegādi, un daudz garšīgāk.
+Ātrāk nekā pasūtīt ēdienu uz mājām, un daudz garšīgāk.

@@ -1,6 +1,6 @@
 ---
 title: "Speķa pīrāgi"
-description: "Pūkaini rauga pīrādziņi ar kūpinātu speķi un sīpoliem. Svētku galda un Jāņu nakts karaļi."
+description: "Mīksti rauga pīrādziņi ar kūpinātu speķi un sīpoliem. Neatņemami svētku galdā un Jāņu naktī."
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🥐"
@@ -69,6 +69,7 @@ tips:
   - "Pildījumu vislabāk sagatavot dienu iepriekš, tad garšas savienojas."
   - "Pīrāgus var sasaldēt un uzsildīt krāsnī 5 minūtes."
 tags: ["Jāņi", "Ziemassvētki", "rauga mīkla"]
+occasions: [ziemassvetki, jaunais-gads, meteni, lieldienas, balta-galdauta-svetki, ligo, martindiena, 18-novembris]
 featured: true
 date: 2026-06-20
 draft: false

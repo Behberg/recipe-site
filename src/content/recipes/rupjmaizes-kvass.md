@@ -35,6 +35,7 @@ steps:
 tips:
   - "Pudeles atver uzmanīgi: raudzēšanās rada spiedienu."
 tags: ["vasara", "raudzēts"]
+occasions: [balta-galdauta-svetki, ligo]
 featured: false
 date: 2026-07-20
 draft: false

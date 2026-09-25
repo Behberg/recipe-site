@@ -1,6 +1,6 @@
 ---
 title: "Amerikāņu pankūkas"
-description: "Biezas, pūkainas pankūkas ar kļavu sīrupu un ogām. Svētdienas brokastu zvaigzne."
+description: "Biezas, gaisīgas pankūkas ar kļavu sīrupu un ogām. Īstas svētdienas brokastis."
 cuisine: amerikas
 category: brokastis
 emoji: "🥞"
@@ -38,11 +38,12 @@ ingredients:
 steps:
   - "Vienā bļodā sajauc sausās sastāvdaļas."
   - "Otrā bļodā sakuļ paniņas, olas un izkausētu sviestu."
-  - "Šķidrās sastāvdaļas ielej sausajās un tikai viegli samaisa. Neliels kunkulis ir labs: tas padara pankūkas pūkainas."
+  - "Šķidrās sastāvdaļas ielej sausajās un tikai viegli samaisa. Nelieli kunkulīši netraucē: tieši tie padara pankūkas gaisīgas."
   - "Ļauj mīklai atpūsties 5 minūtes."
   - "Cep sausā vai nedaudz ieeļļotā pannā uz vidējas uguns. Kad virspusē parādās burbulīši, apgriež."
   - "Pasniedz kaudzē ar sviestu, kļavu sīrupu un ogām."
 tags: ["ASV", "brokastis", "bērniem"]
+occasions: [meteni]
 featured: true
 date: 2026-09-18
 draft: false

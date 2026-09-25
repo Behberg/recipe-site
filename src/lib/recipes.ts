@@ -4,6 +4,7 @@ export { formatMinutes, plural, formatAmount } from './format';
 export type Recipe = CollectionEntry<'recipes'>;
 export type Cuisine = CollectionEntry<'cuisines'>;
 export type Category = CollectionEntry<'categories'>;
+export type Occasion = CollectionEntry<'svetki'>;
 
 /** Published recipes, newest first. Drafts are visible only in `npm run dev`. */
 export async function getRecipes(): Promise<Recipe[]> {
@@ -19,6 +20,10 @@ export async function getCategories(): Promise<Category[]> {
   return (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
 }
 
+export async function getOccasions(): Promise<Occasion[]> {
+  return (await getCollection('svetki')).sort((a, b) => a.data.order - b.data.order);
+}
+
 /** Loads everything the recipe cards need in one go. */
 export async function getCatalog() {
   const [recipes, cuisines, categories] = await Promise.all([getRecipes(), getCuisines(), getCategories()]);
@@ -32,6 +37,7 @@ export const totalTime = (r: Recipe) => r.data.prepTime + r.data.cookTime;
 export const recipeUrl = (id: string) => `/recepte/${id}/`;
 export const cuisineUrl = (id: string) => `/virtuves/${id}/`;
 export const categoryUrl = (id: string) => `/kategorijas/${id}/`;
+export const occasionUrl = (id: string) => `/svetki/${id}/`;
 
 /**
  * Image URL for photos uploaded through the admin panel. In production they are resized

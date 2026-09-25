@@ -1,0 +1,12 @@
+{
+  "name": "Mātes diena",
+  "emoji": "💐",
+  "color": "#c24d7a",
+  "dateType": "nedelas-diena",
+  "month": 5,
+  "weekday": 0,
+  "nth": 2,
+  "leadDays": 14,
+  "order": 7,
+  "description": "Brokastis gultā, kūka un maigi deserti, ar kuriem pateikt paldies mammai."
+}

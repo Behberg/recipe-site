@@ -1,0 +1,564 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import pantryData from '../data/ledusskapis.json';
+import { createMatcher, type Pantry } from '../lib/fridge';
+import { getCatalog } from '../lib/recipes';
+
+const pantry = pantryData as Pantry;
+const match = createMatcher(pantry);
+const { recipes, cuisineById, categoryById } = await getCatalog();
+
+const recipeNeeds = recipes.map((r) => ({ id: r.id, req: match(r.data.ingredients).requirements }));
+
+// Most used ingredients first inside every group, so the likely ones are on top.
+const usage = new Map<string, number>();
+for (const r of recipeNeeds) for (const req of r.req) for (const id of req) usage.set(id, (usage.get(id) ?? 0) + 1);
+const staples = pantry.items.filter((i) => i.staple);
+const groups = pantry.groups
+  .map((g) => ({
+    ...g,
+    items: pantry.items
+      .filter((i) => i.group === g.id && !i.staple && usage.has(i.id))
+      .sort((a, b) => (usage.get(b.id) ?? 0) - (usage.get(a.id) ?? 0)),
+  }))
+  .filter((g) => g.items.length);
+
+const quickPicks = ['olas', 'kartupeli', 'sipoli', 'piens', 'sviests', 'vista', 'tomati', 'biezpiens', 'aboli', 'skabais-krejums'];
+
+const data = {
+  items: Object.fromEntries(pantry.items.map((i) => [i.id, { n: i.name, e: i.emoji, s: !!i.staple }])),
+  recipes: recipeNeeds,
+};
+---
+
+<Base title="Kas ir ledusskapī?" description="Atzīmē produktus, kas tev ir mājās, un atrodi receptes, ko vari pagatavot uzreiz.">
+  <section class="page-hero container">
+    <span class="eyebrow">🧊 Ledusskapis</span>
+    <h1>Kas ir ledusskapī?</h1>
+    <p>Atzīmē produktus, kas tev ir mājās. Mēs parādīsim, ko vari pagatavot uzreiz un kam pietrūkst tikai viena vai divu lietu.</p>
+  </section>
+
+  <div class="container fridge" data-fridge>
+    <!-- Picker -->
+    <section class="picker" aria-labelledby="picker-title">
+      <h2 id="picker-title" class="sr-only">Produkti</h2>
+
+      <div class="search-field">
+        <Icon name="search" />
+        <input type="search" placeholder="Meklē produktu, piem. biezpiens" aria-label="Meklēt produktu" data-item-search autocomplete="off" />
+      </div>
+
+      <div class="selected" data-selected-wrap hidden>
+        <div class="selected-head">
+          <strong>Tev ir: <span data-selected-count>0</span></strong>
+          <button type="button" class="link-btn" data-clear>Notīrīt visu</button>
+        </div>
+        <div class="selected-list" data-selected></div>
+      </div>
+
+      <label class="staples">
+        <input type="checkbox" data-staples checked />
+        <span class="switch" aria-hidden="true"></span>
+        <span>
+          <strong>Pamatprodukti ir mājās</strong>
+          <small>{staples.map((s) => s.name.toLowerCase()).join(', ')}</small>
+        </span>
+      </label>
+
+      <div class="quick" data-quick>
+        <span class="quick-label">Biežāk:</span>
+        {
+          quickPicks.map((id) => {
+            const it = pantry.items.find((i) => i.id === id);
+            return it ? (
+              <button type="button" class="chip pick" data-item={id} aria-pressed="false">
+                <span aria-hidden="true">{it.emoji}</span>
+                {it.name}
+              </button>
+            ) : null;
+          })
+        }
+      </div>
+
+      {
+        groups.map((g) => (
+          <details class="group" open={['darzeni', 'piena', 'gala'].includes(g.id)} data-group>
+            <summary>
+              <span aria-hidden="true">{g.emoji}</span>
+              {g.name}
+              <span class="group-count" data-group-count />
+              <Icon name="chevron-down" class="chev" />
+            </summary>
+            <div class="chips">
+              {g.items.map((i) => (
+                <button type="button" class="chip pick" data-item={i.id} data-name={i.name.toLowerCase()} aria-pressed="false">
+                  <span aria-hidden="true">{i.emoji}</span>
+                  {i.name}
+                </button>
+              ))}
+            </div>
+          </details>
+        ))
+      }
+      <p class="empty-search" data-empty-search hidden>Šāds produkts nav atrasts.</p>
+    </section>
+
+    <!-- Results -->
+    <section class="results" id="rezultati" aria-labelledby="results-title" aria-live="polite">
+      <h2 id="results-title" class="results-title" data-results-title>Izvēlies produktus</h2>
+      <div class="results-empty" data-results-empty>
+        <div class="big" aria-hidden="true">🥕🥚🧀</div>
+        <p>Pieskaries produktiem kreisajā pusē vai augstāk. Receptes parādīsies šeit uzreiz.</p>
+      </div>
+      <div class="results-none" data-results-none hidden>
+        <div class="big" aria-hidden="true">🤔</div>
+        <p>Ar šiem produktiem vēl nekas nesanāk. Pievieno vēl kādu produktu vai ieslēdz pamatproduktus.</p>
+      </div>
+
+      <div data-bucket="0" hidden>
+        <h3 class="bucket-title">✅ Vari gatavot tūlīt</h3>
+        <div class="grid" data-bucket-grid></div>
+      </div>
+      <div data-bucket="1" hidden>
+        <h3 class="bucket-title">🛒 Trūkst tikai viena produkta</h3>
+        <div class="grid" data-bucket-grid></div>
+      </div>
+      <div data-bucket="2" hidden>
+        <h3 class="bucket-title">🛍️ Trūkst divu produktu</h3>
+        <div class="grid" data-bucket-grid></div>
+      </div>
+
+      <template data-pool>
+        {
+          recipes.map((r) => (
+            <div class="fr" data-fr={r.id}>
+              <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} />
+              <p class="fr-note" />
+            </div>
+          ))
+        }
+      </template>
+    </section>
+
+    <a class="fridge-bar" href="#rezultati" data-fridge-bar hidden>
+      <span data-bar-text></span>
+      <strong>Skatīt <Icon name="arrow-right" /></strong>
+    </a>
+  </div>
+
+  <script is:inline type="application/json" id="fridge-data" set:html={JSON.stringify(data)} />
+</Base>
+
+<script>
+  import { plural } from '../lib/format';
+  import { syncFavorites } from '../lib/favorites';
+
+  type Data = {
+    items: Record<string, { n: string; e: string; s: boolean }>;
+    recipes: { id: string; req: string[][] }[];
+  };
+  const KEY = 'dzervene:ledusskapis';
+  const data: Data = JSON.parse(document.getElementById('fridge-data')!.textContent!);
+  const root = document.querySelector<HTMLElement>('[data-fridge]')!;
+  const staplesBox = root.querySelector<HTMLInputElement>('[data-staples]')!;
+  const pool = root.querySelector<HTMLTemplateElement>('[data-pool]')!.content;
+  const cards = new Map(Array.from(pool.querySelectorAll<HTMLElement>('[data-fr]')).map((el) => [el.dataset.fr!, el]));
+  const buckets = Array.from(root.querySelectorAll<HTMLElement>('[data-bucket]'));
+
+  let selected = new Set<string>();
+  try {
+    const saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+    if (Array.isArray(saved.items)) selected = new Set(saved.items.filter((id: string) => data.items[id]));
+    if (saved.staples === false) staplesBox.checked = false;
+  } catch {
+    /* ignore */
+  }
+  const persist = () => {
+    try {
+      localStorage.setItem(KEY, JSON.stringify({ items: [...selected], staples: staplesBox.checked }));
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const has = (id: string) => selected.has(id) || (staplesBox.checked && data.items[id]?.s);
+
+  function compute() {
+    const out: { id: string; missing: string[]; used: number; total: number }[] = [];
+    for (const r of data.recipes) {
+      const missing: string[] = [];
+      let used = 0;
+      for (const req of r.req) {
+        if (req.some((id) => has(id))) {
+          if (req.some((id) => selected.has(id))) used++;
+        } else missing.push(req[0]);
+      }
+      if (used > 0 && missing.length <= 2) out.push({ id: r.id, missing, used, total: r.req.length });
+    }
+    return out.sort((a, b) => a.missing.length - b.missing.length || b.used / b.total - a.used / a.total || a.total - b.total);
+  }
+
+  function render() {
+    // Chips
+    root.querySelectorAll<HTMLButtonElement>('[data-item]').forEach((b) => b.setAttribute('aria-pressed', String(selected.has(b.dataset.item!))));
+    root.querySelectorAll<HTMLElement>('[data-group]').forEach((g) => {
+      const n = g.querySelectorAll('[aria-pressed="true"]').length;
+      g.querySelector<HTMLElement>('[data-group-count]')!.textContent = n ? String(n) : '';
+    });
+
+    // Selected tray
+    const wrap = root.querySelector<HTMLElement>('[data-selected-wrap]')!;
+    wrap.hidden = selected.size === 0;
+    root.querySelector('[data-selected-count]')!.textContent = String(selected.size);
+    root.querySelector('[data-selected]')!.replaceChildren(
+      ...[...selected].map((id) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'chip sel';
+        b.dataset.item = id;
+        b.setAttribute('aria-label', `Noņemt: ${data.items[id].n}`);
+        b.textContent = `${data.items[id].e} ${data.items[id].n} ✕`;
+        return b;
+      }),
+    );
+
+    // Results
+    const results = compute();
+    buckets.forEach((bucket) => {
+      const n = Number(bucket.dataset.bucket);
+      const list = results.filter((r) => r.missing.length === n);
+      bucket.hidden = list.length === 0;
+      bucket.querySelector('[data-bucket-grid]')!.replaceChildren(
+        ...list.map((r) => {
+          const el = cards.get(r.id)!;
+          const note = el.querySelector<HTMLElement>('.fr-note')!;
+          note.className = 'fr-note' + (r.missing.length ? ' is-missing' : ' is-ok');
+          note.textContent = r.missing.length
+            ? `Trūkst: ${r.missing.map((id) => `${data.items[id].e} ${data.items[id].n}`).join(', ')}`
+            : `Tev ir viss vajadzīgais`;
+          return el;
+        }),
+      );
+    });
+    root.querySelector<HTMLElement>('[data-results-empty]')!.hidden = selected.size > 0;
+    root.querySelector<HTMLElement>('[data-results-none]')!.hidden = selected.size === 0 || results.length > 0;
+    const ready = results.filter((r) => r.missing.length === 0).length;
+    root.querySelector('[data-results-title]')!.textContent = selected.size
+      ? `${results.length} ${plural(results.length, 'recepte', 'receptes')}${ready ? `, ${ready} gatavas uzreiz` : ''}`
+      : 'Izvēlies produktus';
+
+    const bar = root.querySelector<HTMLElement>('[data-fridge-bar]')!;
+    bar.hidden = selected.size === 0;
+    bar.querySelector('[data-bar-text]')!.textContent = `${selected.size} ${plural(selected.size, 'produkts', 'produkti')} · ${results.length} ${plural(results.length, 'recepte', 'receptes')}`;
+    // Favourite hearts inside freshly inserted cards
+    syncFavorites();
+    persist();
+  }
+
+  root.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-item]');
+    if (b) {
+      const id = b.dataset.item!;
+      selected.has(id) ? selected.delete(id) : selected.add(id);
+      navigator.vibrate?.(8);
+      render();
+    }
+    if ((e.target as HTMLElement).closest('[data-clear]')) {
+      selected.clear();
+      render();
+    }
+  });
+  staplesBox.addEventListener('change', render);
+
+  // Product search
+  const search = root.querySelector<HTMLInputElement>('[data-item-search]')!;
+  const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
+  search.addEventListener('input', () => {
+    const q = norm(search.value.trim());
+    let any = false;
+    root.querySelectorAll<HTMLDetailsElement>('[data-group]').forEach((g) => {
+      let n = 0;
+      g.querySelectorAll<HTMLElement>('[data-name]').forEach((c) => {
+        const ok = !q || norm(c.dataset.name!).includes(q);
+        c.hidden = !ok;
+        if (ok) n++;
+      });
+      g.hidden = n === 0;
+      if (q && n) g.open = true;
+      any ||= n > 0;
+    });
+    root.querySelector<HTMLElement>('[data-quick]')!.hidden = !!q;
+    root.querySelector<HTMLElement>('[data-empty-search]')!.hidden = any;
+  });
+
+  render();
+</script>
+
+<style>
+  .fridge {
+    display: grid;
+    gap: 28px;
+    padding-top: 16px;
+    padding-bottom: 72px;
+  }
+  @media (min-width: 960px) {
+    .fridge {
+      grid-template-columns: minmax(320px, 400px) 1fr;
+      align-items: start;
+      gap: 40px;
+    }
+    .picker {
+      position: sticky;
+      top: calc(var(--header-h) + 12px);
+      max-height: calc(100dvh - var(--header-h) - 24px);
+      overflow-y: auto;
+      padding-right: 6px;
+      scrollbar-width: thin;
+    }
+    .results :global(.grid) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .picker {
+    display: grid;
+    gap: 12px;
+    align-content: start;
+  }
+  .selected {
+    padding: 12px;
+    border-radius: var(--r);
+    background: var(--brand-soft);
+  }
+  .selected-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  .link-btn {
+    color: var(--brand);
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .selected-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .selected-list :global(.sel) {
+    height: 34px;
+    background: var(--surface);
+    font-size: 0.82rem;
+  }
+  .staples {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: var(--r);
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+    cursor: pointer;
+  }
+  .staples input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .switch {
+    flex-shrink: 0;
+    position: relative;
+    width: 46px;
+    height: 28px;
+    border-radius: var(--pill);
+    background: var(--surface-3);
+    transition: background 0.2s;
+  }
+  .switch::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s var(--ease);
+  }
+  .staples input:checked + .switch {
+    background: var(--ok);
+  }
+  .staples input:checked + .switch::after {
+    transform: translateX(18px);
+  }
+  .staples input:focus-visible + .switch {
+    outline: 3px solid color-mix(in oklab, var(--brand) 60%, transparent);
+    outline-offset: 2px;
+  }
+  .staples strong {
+    display: block;
+    font-size: 0.9rem;
+  }
+  .staples small {
+    display: block;
+    color: var(--ink-3);
+    font-size: 0.76rem;
+    line-height: 1.35;
+  }
+  .quick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+  .quick-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ink-3);
+    margin-right: 2px;
+  }
+  .group {
+    border-radius: var(--r);
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .group summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+  }
+  .group summary::-webkit-details-marker {
+    display: none;
+  }
+  .group-count {
+    min-width: 22px;
+    height: 22px;
+    padding: 0 7px;
+    border-radius: var(--pill);
+    background: var(--brand);
+    color: var(--brand-ink);
+    font-size: 0.72rem;
+    display: inline-grid;
+    place-items: center;
+  }
+  .group-count:empty {
+    display: none;
+  }
+  .group summary :global(.chev) {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    color: var(--ink-3);
+    transition: transform 0.25s var(--ease);
+  }
+  .group[open] summary :global(.chev) {
+    transform: rotate(180deg);
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0 12px 14px;
+  }
+  .pick {
+    height: 36px;
+    padding: 0 12px;
+    font-size: 0.85rem;
+  }
+  .pick[aria-pressed='true'] {
+    background: var(--brand);
+    color: var(--brand-ink);
+  }
+  .empty-search {
+    color: var(--ink-3);
+    text-align: center;
+    padding: 12px;
+  }
+
+  .results-title {
+    font-size: clamp(1.4rem, 1.1rem + 1.4vw, 2rem);
+    margin-bottom: 12px;
+  }
+  .results-empty,
+  .results-none {
+    padding: 36px 20px;
+    border-radius: var(--r-lg);
+    background: var(--surface-2);
+    text-align: center;
+    color: var(--ink-2);
+  }
+  .results-empty .big,
+  .results-none .big {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+  }
+  .bucket-title {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 20px 0 12px;
+  }
+  .fr {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+  }
+  .fr-note {
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 0.76rem;
+    line-height: 1.35;
+    font-weight: 600;
+  }
+  .fr-note.is-ok {
+    background: color-mix(in oklab, var(--ok) 14%, var(--surface));
+    color: var(--ok);
+  }
+  .fr-note.is-missing {
+    background: color-mix(in oklab, var(--honey) 16%, var(--surface));
+    color: color-mix(in oklab, var(--honey) 60%, var(--ink));
+  }
+
+  .fridge-bar {
+    position: fixed;
+    z-index: 45;
+    left: 12px;
+    right: 12px;
+    bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 14px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: var(--pill);
+    background: var(--ink);
+    color: var(--bg);
+    box-shadow: var(--shadow-lg);
+    font-size: 0.9rem;
+    animation: reveal 0.3s var(--ease);
+  }
+  .fridge-bar strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .fridge-bar :global(svg) {
+    width: 18px;
+    height: 18px;
+  }
+  @media (min-width: 960px) {
+    .fridge-bar {
+      display: none;
+    }
+  }
+</style>

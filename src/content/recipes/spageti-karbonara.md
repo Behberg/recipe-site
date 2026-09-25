@@ -35,6 +35,7 @@ steps:
 tips:
   - "Panna nedrīkst būt karsta, kad pievieno olas, citādi tās sarecēs."
 tags: ["Itālija", "ātri", "pasta"]
+occasions: [valentindiena]
 featured: true
 date: 2026-09-01
 draft: false

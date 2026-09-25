@@ -1,0 +1,11 @@
+{
+  "name": "Valentīndiena",
+  "emoji": "❤️",
+  "color": "#c2334d",
+  "dateType": "fiksets",
+  "month": 2,
+  "day": 14,
+  "leadDays": 12,
+  "order": 4,
+  "description": "Romantiskas vakariņas divatā un deserti, kas kūst mutē."
+}

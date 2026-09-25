@@ -46,4 +46,4 @@ date: 2026-07-10
 draft: false
 ---
 
-Grieķijā šos salātus sauc par horiatiki jeb "ciema salātiem". Fetu nesadrupina, bet liek virsū veselu.
+Grieķijā šos salātus sauc par horiatiki jeb „ciema salātiem”. Fetu nesadrupina, bet liek virsū veselu.

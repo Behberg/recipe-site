@@ -1,4 +1,4 @@
-const KEY = 'garsigi:izlase';
+const KEY = 'dzervene:izlase';
 
 export function getFavorites(): string[] {
   try {
@@ -28,7 +28,7 @@ export function toast(message: string) {
   toastTimer = window.setTimeout(() => el.classList.remove('show'), 2200);
 }
 
-function sync() {
+export function syncFavorites() {
   const favs = new Set(getFavorites());
   document.querySelectorAll<HTMLButtonElement>('[data-fav]').forEach((btn) => {
     btn.setAttribute('aria-pressed', String(favs.has(btn.dataset.fav!)));
@@ -36,7 +36,7 @@ function sync() {
 }
 
 export function initFavorites() {
-  sync();
+  syncFavorites();
   document.addEventListener('click', (e) => {
     const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-fav]');
     if (!btn) return;
@@ -45,7 +45,7 @@ export function initFavorites() {
     const favs = getFavorites();
     const on = !favs.includes(id);
     save(on ? [id, ...favs] : favs.filter((f) => f !== id));
-    sync();
+    syncFavorites();
     btn.classList.remove('pop');
     void btn.offsetWidth;
     btn.classList.add('pop');
@@ -53,6 +53,6 @@ export function initFavorites() {
     toast(on ? 'Saglabāts izlasē ❤️' : 'Izņemts no izlases');
   });
   // Keep buttons in sync when favourites change in another tab or on back navigation.
-  window.addEventListener('storage', (e) => e.key === KEY && sync());
-  window.addEventListener('pageshow', sync);
+  window.addEventListener('storage', (e) => e.key === KEY && syncFavorites());
+  window.addEventListener('pageshow', syncFavorites);
 }

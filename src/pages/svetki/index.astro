@@ -1,0 +1,184 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import OccasionBanner from '../../components/OccasionBanner.astro';
+import { getOccasions, getRecipes, occasionUrl, plural } from '../../lib/recipes';
+
+const [occasions, recipes] = await Promise.all([getOccasions(), getRecipes()]);
+const count = (id: string) => recipes.filter((r) => r.data.occasions.some((o) => o.id === id)).length;
+const rules = occasions.map((o) => ({ id: o.id, ...o.data }));
+---
+
+<Base
+  title="Svētku galds un kalendārs"
+  description="Receptes Ziemassvētkiem, Jaunajam gadam, Lieldienām, Jāņiem, 18. novembrim un citiem svētkiem. Kalendārs parāda, kuri svētki tuvojas."
+>
+  <section class="page-hero container">
+    <span class="eyebrow">🎉 Svētku galds</span>
+    <h1>Ko likt galdā svētkos?</h1>
+    <p>No Meteņiem līdz Ziemassvētkiem. Kalendārs pats zina, kuri svētki tuvojas, un piedāvā piemērotas receptes.</p>
+  </section>
+
+  <OccasionBanner mode="page" />
+
+  <section class="section container" aria-labelledby="cal-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Svētku kalendārs</span>
+        <h2 id="cal-title">Tuvākie svētki</h2>
+      </div>
+    </div>
+
+    <ol class="calendar" data-calendar>
+      {
+        occasions.map((o) => {
+          const n = count(o.id);
+          return (
+            <li data-cal={o.id} style={`--c:${o.data.color}`}>
+              <a href={occasionUrl(o.id)} class="cal-row">
+                <span class="cal-date" data-cal-date>
+                  {o.data.dateType === 'nav' ? (
+                    <span class="cal-any" aria-hidden="true">
+                      {o.data.emoji}
+                    </span>
+                  ) : (
+                    <>
+                      <strong data-cal-day>·</strong>
+                      <small data-cal-month />
+                    </>
+                  )}
+                </span>
+                <span class="cal-main">
+                  <strong>
+                    {o.data.name} <span aria-hidden="true">{o.data.emoji}</span>
+                  </strong>
+                  <span class="cal-sub">
+                    <span data-cal-countdown>{o.data.dateType === 'nav' ? 'Jebkurā dienā' : ''}</span>
+                    <span class="dot" aria-hidden="true">
+                      ·
+                    </span>
+                    {n} {plural(n, 'recepte', 'receptes')}
+                  </span>
+                </span>
+                <Icon name="chevron-right" class="cal-chev" />
+              </a>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </section>
+
+  <script is:inline type="application/json" id="cal-rules" set:html={JSON.stringify(rules)} />
+</Base>
+
+<script>
+  import { nextOccurrence, countdown, monthShort, type OccasionRule } from '../../lib/calendar';
+
+  const rules: OccasionRule[] = JSON.parse(document.getElementById('cal-rules')!.textContent!);
+  const list = document.querySelector<HTMLElement>('[data-calendar]')!;
+  const rows = rules.map((r) => ({ r, next: nextOccurrence(r), el: list.querySelector<HTMLElement>(`[data-cal="${r.id}"]`)! }));
+
+  for (const { next, el } of rows) {
+    if (!next) continue;
+    el.querySelector('[data-cal-day]')!.textContent = String(next.date.getDate());
+    el.querySelector('[data-cal-month]')!.textContent = monthShort(next.date);
+    el.querySelector('[data-cal-countdown]')!.textContent = countdown(next.days);
+    if (next.days <= 14) el.classList.add('is-soon');
+  }
+  // Soonest first, "any day" occasions last.
+  rows
+    .sort((a, b) => (a.next?.days ?? 9999) - (b.next?.days ?? 9999))
+    .forEach(({ el }) => list.appendChild(el));
+</script>
+
+<style>
+  .calendar {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  @media (min-width: 800px) {
+    .calendar {
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 16px;
+    }
+  }
+  .cal-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 14px 10px 10px;
+    border-radius: var(--r);
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+    transition:
+      transform 0.2s var(--ease),
+      box-shadow 0.2s;
+  }
+  .cal-row:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 0 0 1px var(--line),
+      var(--shadow);
+  }
+  .cal-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: color-mix(in oklab, var(--c) 14%, var(--surface));
+    color: var(--c);
+    line-height: 1;
+  }
+  .cal-date strong {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+  }
+  .cal-date small {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 3px;
+  }
+  .cal-any {
+    font-size: 1.6rem;
+  }
+  .cal-main {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .cal-main strong {
+    font-family: var(--font-display);
+    font-size: 1.12rem;
+  }
+  .cal-sub {
+    font-size: 0.82rem;
+    color: var(--ink-3);
+  }
+  .dot {
+    margin: 0 4px;
+  }
+  :global(.is-soon) .cal-date {
+    background: var(--c);
+    color: #fff;
+  }
+  :global(.is-soon) [data-cal-countdown] {
+    color: var(--c);
+    font-weight: 700;
+  }
+  .cal-row :global(.cal-chev) {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    color: var(--ink-3);
+    flex-shrink: 0;
+  }
+</style>

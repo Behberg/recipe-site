@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 // Nomaini uz savu domēnu, kad tas ir piesaistīts Netlify.
-const SITE_URL = process.env.URL || 'https://garsigi.netlify.app';
+const SITE_URL = process.env.URL || 'https://dzervene.netlify.app';
 
 export default defineConfig({
   site: SITE_URL,

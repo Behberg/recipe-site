@@ -48,11 +48,12 @@ steps:
   - "Kad masa ir remdena, iemaisa olas un apelsīna miziņu."
   - "Miltus sajauc ar sodu un pakāpeniski iemīca mīklā. Mīkla būs mīksta."
   - "Ietin plēvē un liek ledusskapī vismaz uz nakti. Tā garšvielas atklāsies pilnībā."
-  - "Mīklu plāni izrullē (2 līdz 3 mm) un izspiež formiņas."
+  - "Mīklu plāni izrullē (2 līdz 3 mm) un ar formiņām izspiež piparkūkas."
   - "Cep 200 °C krāsnī 6 līdz 8 minūtes. Atdzesē un rotā ar glazūru."
 tips:
   - "Mīkla ledusskapī glabājas līdz 2 nedēļām, tāpēc to var gatavot laikus."
 tags: ["Ziemassvētki", "cepumi", "bērniem"]
+occasions: [ziemassvetki]
 featured: false
 date: 2025-12-01
 draft: false

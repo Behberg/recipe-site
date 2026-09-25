@@ -35,6 +35,7 @@ steps:
   - "Karsto masu liek marlē, savelk apaļā ritulī un novieto zem svara (piemēram, dēlis ar ūdens burku)."
   - "Ļauj atdzist ledusskapī vismaz 6 stundas vai pa nakti."
 tags: ["Jāņi", "tradicionāls", "veģetārs"]
+occasions: [ligo]
 featured: false
 date: 2026-06-15
 draft: false

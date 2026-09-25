@@ -36,9 +36,10 @@ steps:
   - "Cep apmēram 1 minūti, apgriež un cep vēl 30 sekundes."
   - "Pasniedz ar ievārījumu, šokolādes krēmu vai šķiņķi un sieru."
 tags: ["Francija", "brokastis", "veģetārs"]
+occasions: [meteni, mates-diena]
 featured: false
 date: 2026-02-10
 draft: false
 ---
 
-Parīzes ielu klasika, kas lieliski der ar mājās vārītu zemeņu ievārījumu.
+Parīzes ielu klasika. Lieliski garšo ar mājās vārītu zemeņu ievārījumu.

@@ -1,0 +1,10 @@
+{
+  "name": "Lieldienas",
+  "emoji": "🐣",
+  "color": "#b8912a",
+  "dateType": "lieldienas",
+  "easterOffset": 0,
+  "leadDays": 21,
+  "order": 5,
+  "description": "Krāsotas olas, pīrāgi, biezpiena deserts un pavasara galds."
+}

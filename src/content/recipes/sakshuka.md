@@ -50,4 +50,4 @@ date: 2026-03-28
 draft: false
 ---
 
-Viena panna, maz trauku mazgāšanas un maksimāla garša.
+Viena panna, maz netīru trauku un daudz garšas.

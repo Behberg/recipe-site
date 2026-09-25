@@ -30,6 +30,7 @@ steps:
   - "Atdzisušo masu putina ar mikseri 10 līdz 15 minūtes, līdz tā ir gaisīga, gaiši rozā un dubultojusies."
   - "Pasniedz bļodiņās ar aukstu pienu."
 tags: ["deserts", "bērniem", "tradicionāls"]
+occasions: [18-novembris]
 featured: false
 date: 2026-03-12
 draft: false

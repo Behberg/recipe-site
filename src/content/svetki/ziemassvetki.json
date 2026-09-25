@@ -1,0 +1,11 @@
+{
+  "name": "Ziemassvētki",
+  "emoji": "🎄",
+  "color": "#2f6b4f",
+  "dateType": "fiksets",
+  "month": 12,
+  "day": 24,
+  "leadDays": 30,
+  "order": 1,
+  "description": "Pelēkie zirņi, pīrāgi, cepetis un piparkūkas. Viss, kas vajadzīgs siltam Ziemassvētku vakaram."
+}

@@ -52,6 +52,7 @@ function detectTimer(text: string): number | null {
   const secs = Math.round(value * (m[3].toLowerCase().startsWith('stund') ? 3600 : 60));
   return secs > 0 && secs <= 6 * 3600 ? secs : null;
 }
+let ingIndex = 0;
 const steps = d.steps.map((text) => ({ text, timer: detectTimer(text) }));
 
 const ingredientText = (i: (typeof d.ingredients)[number]) =>
@@ -176,32 +177,51 @@ const useMultiplier = Boolean(d.yield);
               )
             }
           </div>
-          {d.yield && <p class="yield"><Icon name="users" /> Daudzums: {d.yield}</p>}
+          {d.yield && <p class="yield"><Icon name="users" /> Daudzums: {d.yield}<span data-yield-factor></span></p>}
+
+          <p class="adjust-hint no-print" data-adjust-hint>
+            <Icon name="scale" />
+            <span>Pieskaries daudzumam, lai pielāgotu recepti tam, kas tev ir. Piemēram, „man ir 650 g zemeņu”.</span>
+          </p>
+          <div class="adjusted no-print" data-adjusted hidden>
+            <span>Pārrēķināts: <strong data-factor-out>×1</strong></span>
+            <button type="button" class="reset-factor" data-factor-reset><Icon name="refresh" /> Sākotnējais</button>
+          </div>
 
           {
             groups.map((g) => (
               <div class="ing-group">
                 {g.name && <h3>{g.name}</h3>}
                 <ul>
-                  {g.items.map((i) => (
-                    <li>
-                      <label class="ing">
-                        <input type="checkbox" />
-                        <span class="tick" aria-hidden="true"><Icon name="check" /></span>
+                  {g.items.map((i) => {
+                    const id = `ing-${ingIndex++}`;
+                    return (
+                      <li class="ing">
+                        <input type="checkbox" id={id} />
+                        <label for={id} class="tick" aria-hidden="true">
+                          <Icon name="check" />
+                        </label>
                         <span class="ing-text">
                           {i.amount ? (
-                            <b class="qty" data-amount={i.amount}>
+                            <button
+                              type="button"
+                              class="qty qty-btn"
+                              data-amount={i.amount}
+                              data-unit={i.unit ?? ''}
+                              data-name={i.name}
+                              aria-label={`${formatAmount(i.amount)} ${i.unit ?? ''} ${i.name}: norādīt, cik tev ir`}
+                            >
                               {formatAmount(i.amount)}
                               {i.unit ? ` ${i.unit}` : ''}
-                            </b>
+                            </button>
                           ) : (
                             i.unit && <b class="qty">{i.unit}</b>
                           )}{' '}
-                          {i.name}
+                          <label for={id}>{i.name}</label>
                         </span>
-                      </label>
-                    </li>
-                  ))}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))
@@ -223,7 +243,7 @@ const useMultiplier = Boolean(d.yield);
                 <div class="step-body">
                   <p>{s.text}</p>
                   {s.timer && (
-                    <button type="button" class="timer-chip no-print" data-timer={s.timer} data-timer-label={`${i + 1}. solis`}>
+                    <button type="button" class="timer-chip no-print" data-timer={s.timer} data-timer-label={`${i + 1}. solis`} data-timer-recipe={d.title}>
                       <Icon name="timer" /> Taimeris {formatMinutes(Math.round(s.timer / 60))}
                     </button>
                   )}
@@ -279,15 +299,6 @@ const useMultiplier = Boolean(d.yield);
       <Icon name="play" /> Sākt gatavot
     </button>
 
-    <!-- Running timer pill -->
-    <div class="timer-pill no-print" data-timer-pill hidden>
-      <Icon name="timer" />
-      <span data-timer-label-out></span>
-      <strong data-timer-out>0:00</strong>
-      <button type="button" data-timer-toggle aria-label="Pauze"><Icon name="pause" /></button>
-      <button type="button" data-timer-cancel aria-label="Atcelt taimeri"><Icon name="x" /></button>
-    </div>
-
     <!-- Cooking mode -->
     <dialog class="cook" data-cook aria-label={`Gatavošanas režīms: ${d.title}`}>
       <div class="cook-inner">
@@ -308,7 +319,7 @@ const useMultiplier = Boolean(d.yield);
                 <span class="cook-step-n">Solis {i + 1}</span>
                 <p>{s.text}</p>
                 {s.timer && (
-                  <button type="button" class="btn btn-ghost cook-timer" data-timer={s.timer} data-timer-label={`${i + 1}. solis`}>
+                  <button type="button" class="btn btn-ghost cook-timer" data-timer={s.timer} data-timer-label={`${i + 1}. solis`} data-timer-recipe={d.title}>
                     <Icon name="timer" /> Sākt taimeri: {formatMinutes(Math.round(s.timer / 60))}
                   </button>
                 )}
@@ -329,7 +340,19 @@ const useMultiplier = Boolean(d.yield);
         <aside class="cook-ing" data-cook-ing-panel hidden>
           <h3>Sastāvdaļas</h3>
           <ul>
-            {d.ingredients.map((i) => <li>{ingredientText(i)}</li>)}
+            {d.ingredients.map((i) => (
+              <li>
+                {i.amount ? (
+                  <b class="qty" data-amount={i.amount} data-unit={i.unit ?? ''}>
+                    {formatAmount(i.amount)}
+                    {i.unit ? ` ${i.unit}` : ''}
+                  </b>
+                ) : (
+                  i.unit && <b>{i.unit}</b>
+                )}{' '}
+                {i.name}
+              </li>
+            ))}
           </ul>
         </aside>
 
@@ -338,6 +361,26 @@ const useMultiplier = Boolean(d.yield);
           <button type="button" class="btn btn-primary" data-cook-next>Tālāk <Icon name="chevron-right" /></button>
         </footer>
       </div>
+    </dialog>
+
+    <!-- "Cik tev ir?" sheet -->
+    <dialog class="sheet amount-sheet" data-amount-sheet aria-labelledby="amount-title">
+      <div class="sheet-grip" aria-hidden="true"></div>
+      <h2 id="amount-title">Cik tev ir?</h2>
+      <p class="amount-name" data-amount-name></p>
+      <form method="dialog" class="amount-form" data-amount-form>
+        <div class="amount-row">
+          <input type="number" inputmode="decimal" step="any" min="0" required data-amount-input aria-label="Daudzums" />
+          <select data-amount-unit aria-label="Mērvienība"></select>
+          <span class="amount-unit-fixed" data-amount-unit-fixed></span>
+        </div>
+        <p class="amount-preview" data-amount-preview></p>
+        <div class="amount-actions">
+          <button type="button" class="btn btn-ghost" data-amount-cancel>Atcelt</button>
+          <button type="submit" class="btn btn-primary" value="ok">Pielāgot recepti</button>
+        </div>
+      </form>
+      <button type="button" class="icon-btn sheet-close" data-amount-cancel aria-label="Aizvērt"><Icon name="x" /></button>
     </dialog>
   </article>
 </Base>
@@ -349,41 +392,118 @@ const useMultiplier = Boolean(d.yield);
   const page = document.querySelector<HTMLElement>('[data-recipe-page]')!;
   const baseServings = Number(page.dataset.servings) || 1;
 
-  /* ---------- Serving scaler ---------- */
+  /* ---------- Scaling: servings, ½× to 3×, or "man ir 650 g zemeņu" ---------- */
   const qtys = Array.from(page.querySelectorAll<HTMLElement>('.qty[data-amount]'));
-  const units = qtys.map((q) => q.textContent!.replace(/^[\d¼⅓½⅔¾,]+/, '').trim());
-  // When scaling up, 1500 g reads better as 1,5 kg and 1000 ml as 1 l.
+  // When scaling, 1500 g reads better as 1,5 kg and 0,3 kg better as 300 g.
   const BIGGER: Record<string, [string, number]> = { g: ['kg', 1000], ml: ['l', 1000] };
-  function scale(factor: number) {
-    qtys.forEach((q, i) => {
+  const SMALLER: Record<string, [string, number]> = { kg: ['g', 1000], l: ['ml', 1000] };
+  const toBase: Record<string, number> = { g: 1, kg: 1000, ml: 1, l: 1000 };
+  const pretty = (n: number) => String(Math.round(n * 100) / 100).replace('.', ',');
+
+  let factor = 1;
+  const stepper = page.querySelector<HTMLElement>('[data-stepper]');
+  const servingsOut = stepper?.querySelector<HTMLElement>('[data-servings-out]');
+  const mult = page.querySelector<HTMLElement>('[data-multiplier]');
+  const adjusted = page.querySelector<HTMLElement>('[data-adjusted]')!;
+  const hint = page.querySelector<HTMLElement>('[data-adjust-hint]');
+  const factorOut = page.querySelector<HTMLElement>('[data-factor-out]')!;
+  const yieldFactor = page.querySelector<HTMLElement>('[data-yield-factor]');
+
+  function setFactor(f: number, fromCustom = false) {
+    factor = Math.max(0.05, Math.min(50, f));
+    qtys.forEach((q) => {
       let amount = Number(q.dataset.amount) * factor;
-      let unit = units[i];
+      let unit = q.dataset.unit ?? '';
       const up = BIGGER[unit];
+      const down = SMALLER[unit];
       if (up && amount >= up[1]) {
         amount /= up[1];
         unit = up[0];
+      } else if (down && amount < 1) {
+        amount *= down[1];
+        unit = down[0];
       }
       q.textContent = formatAmount(amount) + (unit ? ' ' + unit : '');
     });
+    if (servingsOut) servingsOut.textContent = pretty(baseServings * factor);
+    mult?.querySelectorAll<HTMLButtonElement>('button').forEach((b) => b.setAttribute('aria-pressed', String(!fromCustom && Number(b.dataset.factor) === factor)));
+    const isOne = Math.abs(factor - 1) < 0.001;
+    adjusted.hidden = !fromCustom || isOne;
+    if (hint) hint.hidden = fromCustom && !isOne;
+    factorOut.textContent = `×${pretty(factor)}`;
+    if (yieldFactor) yieldFactor.textContent = isOne ? '' : ` (×${pretty(factor)})`;
   }
-  const stepper = page.querySelector<HTMLElement>('[data-stepper]');
-  if (stepper) {
-    let servings = baseServings;
-    const out = stepper.querySelector<HTMLElement>('[data-servings-out]')!;
-    stepper.addEventListener('click', (e) => {
-      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-step]');
-      if (!btn) return;
-      servings = Math.min(50, Math.max(1, servings + Number(btn.dataset.step)));
-      out.textContent = String(servings);
-      scale(servings / baseServings);
-    });
-  }
-  const mult = page.querySelector<HTMLElement>('[data-multiplier]');
+
+  stepper?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-step]');
+    if (!btn) return;
+    const current = Math.round(baseServings * factor);
+    const next = Math.min(50, Math.max(1, current + Number(btn.dataset.step)));
+    setFactor(next / baseServings);
+  });
   mult?.addEventListener('click', (e) => {
     const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-factor]');
+    if (btn) setFactor(Number(btn.dataset.factor));
+  });
+  page.querySelector('[data-factor-reset]')!.addEventListener('click', () => setFactor(1));
+
+  // "Cik tev ir?" sheet
+  const sheet = page.querySelector<HTMLDialogElement>('[data-amount-sheet]')!;
+  const form = sheet.querySelector<HTMLFormElement>('[data-amount-form]')!;
+  const input = sheet.querySelector<HTMLInputElement>('[data-amount-input]')!;
+  const unitSelect = sheet.querySelector<HTMLSelectElement>('[data-amount-unit]')!;
+  const unitFixed = sheet.querySelector<HTMLElement>('[data-amount-unit-fixed]')!;
+  const nameOut = sheet.querySelector<HTMLElement>('[data-amount-name]')!;
+  const preview = sheet.querySelector<HTMLElement>('[data-amount-preview]')!;
+  let target: HTMLElement | null = null;
+
+  const readBase = () => {
+    const v = parseFloat(input.value.replace(',', '.'));
+    if (!target || !(v > 0)) return null;
+    const unit = target.dataset.unit ?? '';
+    const chosen = unitSelect.hidden ? unit : unitSelect.value;
+    const entered = toBase[chosen] ? v * toBase[chosen] : v;
+    const original = toBase[unit] ? Number(target.dataset.amount) * toBase[unit] : Number(target.dataset.amount);
+    return entered / original;
+  };
+  const updatePreview = () => {
+    const f = readBase();
+    preview.textContent = f ? `Visas sastāvdaļas tiks pārrēķinātas: ×${pretty(f)}` : 'Ievadi daudzumu, kas tev ir.';
+  };
+
+  page.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLElement>('.qty-btn');
     if (!btn) return;
-    mult.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
-    scale(Number(btn.dataset.factor));
+    target = btn;
+    const unit = btn.dataset.unit ?? '';
+    nameOut.textContent = btn.dataset.name ?? '';
+    const family = unit === 'g' || unit === 'kg' ? ['g', 'kg'] : unit === 'ml' || unit === 'l' ? ['ml', 'l'] : null;
+    unitSelect.hidden = !family;
+    unitFixed.hidden = !!family;
+    unitFixed.textContent = unit;
+    if (family) {
+      unitSelect.replaceChildren(...family.map((u) => new Option(u, u)));
+      unitSelect.value = unit;
+    }
+    const current = Number(btn.dataset.amount) * factor;
+    input.value = String(Math.round(current * 100) / 100);
+    updatePreview();
+    sheet.showModal();
+    input.select();
+  });
+  input.addEventListener('input', updatePreview);
+  unitSelect.addEventListener('change', updatePreview);
+  sheet.querySelectorAll('[data-amount-cancel]').forEach((b) => b.addEventListener('click', () => sheet.close()));
+  sheet.addEventListener('click', (e) => e.target === sheet && sheet.close());
+  form.addEventListener('submit', (e) => {
+    const f = readBase();
+    if (!f) {
+      e.preventDefault();
+      input.focus();
+      return;
+    }
+    setFactor(f, true);
+    toast(`Recepte pielāgota: ×${pretty(f)}`);
   });
 
   /* ---------- Step progress (tap the number to mark as done) ---------- */
@@ -414,80 +534,6 @@ const useMultiplier = Boolean(d.yield);
       heroActions,
     );
   }
-
-  /* ---------- Timer ---------- */
-  const pill = page.querySelector<HTMLElement>('[data-timer-pill]')!;
-  const pillOut = pill.querySelector<HTMLElement>('[data-timer-out]')!;
-  const pillLabel = pill.querySelector<HTMLElement>('[data-timer-label-out]')!;
-  const pillToggle = pill.querySelector<HTMLButtonElement>('[data-timer-toggle]')!;
-  let endAt = 0;
-  let remaining = 0;
-  let tick: number | undefined;
-  const fmt = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
-
-  function beep() {
-    try {
-      const Ctx = window.AudioContext || (window as any).webkitAudioContext;
-      const ctx = new Ctx();
-      [0, 0.35, 0.7].forEach((t) => {
-        const o = ctx.createOscillator();
-        const g = ctx.createGain();
-        o.frequency.value = 880;
-        g.gain.setValueAtTime(0.0001, ctx.currentTime + t);
-        g.gain.exponentialRampToValueAtTime(0.3, ctx.currentTime + t + 0.02);
-        g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + t + 0.3);
-        o.connect(g).connect(ctx.destination);
-        o.start(ctx.currentTime + t);
-        o.stop(ctx.currentTime + t + 0.32);
-      });
-    } catch {
-      /* audio not available */
-    }
-  }
-  function render() {
-    const left = Math.max(0, Math.round((endAt - Date.now()) / 1000));
-    pillOut.textContent = fmt(left);
-    if (left <= 0) {
-      window.clearInterval(tick);
-      tick = undefined;
-      pill.classList.add('done');
-      pillOut.textContent = 'Gatavs!';
-      beep();
-      navigator.vibrate?.([200, 100, 200, 100, 400]);
-      toast('⏰ Laiks beidzies!');
-    }
-  }
-  function startTimer(seconds: number, label: string) {
-    window.clearInterval(tick);
-    endAt = Date.now() + seconds * 1000;
-    pill.hidden = false;
-    pill.classList.remove('done', 'paused');
-    pillLabel.textContent = label;
-    render();
-    tick = window.setInterval(render, 250);
-  }
-  document.addEventListener('click', (e) => {
-    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-timer]');
-    if (btn) startTimer(Number(btn.dataset.timer), btn.dataset.timerLabel || '');
-  });
-  pillToggle.addEventListener('click', () => {
-    if (pill.classList.contains('done')) return;
-    if (tick) {
-      remaining = endAt - Date.now();
-      window.clearInterval(tick);
-      tick = undefined;
-      pill.classList.add('paused');
-    } else {
-      endAt = Date.now() + remaining;
-      pill.classList.remove('paused');
-      tick = window.setInterval(render, 250);
-    }
-  });
-  pill.querySelector('[data-timer-cancel]')!.addEventListener('click', () => {
-    window.clearInterval(tick);
-    tick = undefined;
-    pill.hidden = true;
-  });
 
   /* ---------- Cooking mode ---------- */
   const dialog = page.querySelector<HTMLDialogElement>('[data-cook]')!;
@@ -530,20 +576,26 @@ const useMultiplier = Boolean(d.yield);
   page.querySelectorAll('[data-cook-open]').forEach((b) =>
     b.addEventListener('click', () => {
       dialog.showModal();
+      document.dispatchEvent(new CustomEvent('timers:host', { detail: dialog }));
       document.documentElement.classList.add('cook-open');
       show(0);
       lockScreen();
     }),
   );
-  function closeCook() {
-    dialog.close();
-  }
-  dialog.addEventListener('close', () => {
+  // Runs both from our close buttons and from the dialog's own close event (Esc key, back
+  // gesture). The event can arrive late, so cleanup must not depend on it alone.
+  function onCookClosed() {
+    document.dispatchEvent(new CustomEvent('timers:host', { detail: null }));
     document.documentElement.classList.remove('cook-open');
     wakeLock?.release?.();
     wakeLock = null;
     ingPanel.hidden = true;
-  });
+  }
+  function closeCook() {
+    dialog.close();
+    onCookClosed();
+  }
+  dialog.addEventListener('close', onCookClosed);
   document.addEventListener('visibilitychange', () => {
     if (dialog.open && document.visibilityState === 'visible') lockScreen();
   });
@@ -575,6 +627,7 @@ const useMultiplier = Boolean(d.yield);
   /* ---------- Hero ---------- */
   .r-hero {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0;
     padding-inline: 0;
   }
@@ -607,7 +660,7 @@ const useMultiplier = Boolean(d.yield);
   }
   @media (min-width: 900px) {
     .r-hero {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap: 56px;
       align-items: center;
       padding: 32px var(--gutter) 16px;
@@ -654,7 +707,7 @@ const useMultiplier = Boolean(d.yield);
   }
   .r-stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr) minmax(0, 0.9fr) minmax(0, 0.9fr);
     margin-top: 22px;
     border-radius: var(--r);
     background: var(--surface);
@@ -662,24 +715,32 @@ const useMultiplier = Boolean(d.yield);
     overflow: hidden;
   }
   .r-stats div {
-    padding: 12px 8px;
+    min-width: 0;
+    padding: 12px 4px;
     text-align: center;
   }
   .r-stats div + div {
     border-left: 1px solid var(--line);
   }
   .r-stats dt {
-    font-size: 0.66rem;
+    font-size: clamp(0.56rem, 2.3vw, 0.66rem);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: var(--ink-3);
   }
   .r-stats dd {
     margin: 4px 0 0;
     font-weight: 700;
     font-size: clamp(0.8rem, 3.3vw, 0.95rem);
-    white-space: nowrap;
+  }
+  @media (min-width: 360px) {
+    .r-stats dd {
+      white-space: nowrap;
+    }
   }
   .cap {
     text-transform: capitalize;
@@ -881,6 +942,119 @@ const useMultiplier = Boolean(d.yield);
   .qty {
     font-weight: 700;
   }
+  .qty-btn {
+    padding: 0 1px;
+    border-radius: 4px;
+    text-decoration: underline dashed color-mix(in oklab, var(--brand) 55%, transparent);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+    transition: background 0.2s;
+  }
+  .qty-btn:hover {
+    background: var(--brand-soft);
+  }
+  .ing label {
+    cursor: pointer;
+  }
+  .adjust-hint {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: var(--r-sm);
+    background: var(--surface-2);
+    color: var(--ink-2);
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  .adjust-hint :global(svg) {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: var(--brand);
+  }
+  .adjusted {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 8px 8px 14px;
+    border-radius: var(--pill);
+    background: var(--brand-soft);
+    color: var(--brand);
+    font-size: 0.85rem;
+  }
+  .reset-factor {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: var(--pill);
+    background: var(--surface);
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .reset-factor :global(svg) {
+    width: 15px;
+    height: 15px;
+  }
+  .amount-name {
+    margin-top: -6px;
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  .amount-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .amount-row input,
+  .amount-row select {
+    height: 60px;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line-strong);
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .amount-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 0 16px;
+  }
+  .amount-row select {
+    width: 96px;
+    padding: 0 12px;
+    font-size: 1.1rem;
+  }
+  .amount-row input:focus,
+  .amount-row select:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--brand);
+  }
+  .amount-unit-fixed {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    padding: 0 6px;
+  }
+  .amount-preview {
+    margin-top: 10px;
+    min-height: 1.4em;
+    color: var(--ink-3);
+    font-size: 0.88rem;
+  }
+  .amount-actions {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
 
   /* ---------- Steps ---------- */
   .steps {
@@ -1019,66 +1193,11 @@ const useMultiplier = Boolean(d.yield);
     transform: translate(-50%, 0);
     pointer-events: auto;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 960px) {
     .float-cta {
       display: none;
     }
   }
-  .timer-pill {
-    position: fixed;
-    z-index: 1000;
-    top: calc(var(--header-h) + 10px);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 6px 6px 14px;
-    border-radius: var(--pill);
-    background: var(--ink);
-    color: var(--bg);
-    box-shadow: var(--shadow-lg);
-    font-size: 0.85rem;
-    animation: reveal 0.35s var(--ease);
-  }
-  .timer-pill > :global(svg) {
-    width: 18px;
-    height: 18px;
-  }
-  .timer-pill strong {
-    font-variant-numeric: tabular-nums;
-    font-size: 1.05rem;
-    min-width: 52px;
-  }
-  .timer-pill button {
-    display: grid;
-    place-items: center;
-    width: 34px;
-    height: 34px;
-    border-radius: var(--pill);
-    background: rgb(255 255 255 / 0.12);
-  }
-  .timer-pill button :global(svg) {
-    width: 16px;
-    height: 16px;
-  }
-  .timer-pill.paused strong {
-    opacity: 0.5;
-  }
-  .timer-pill.done {
-    background: var(--brand);
-    color: var(--brand-ink);
-    animation: pulse 1s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    50% {
-      transform: translateX(-50%) scale(1.06);
-    }
-  }
-  :global(html.cook-open) .timer-pill {
-    top: calc(env(safe-area-inset-top) + 76px);
-  }
-
   /* ---------- Cooking mode ---------- */
   .cook {
     width: 100%;

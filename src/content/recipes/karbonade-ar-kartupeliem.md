@@ -1,6 +1,6 @@
 ---
 title: "Karbonāde ar ceptiem kartupeļiem"
-description: "Plāna, sulīga cūkgaļas karbonāde paniņās ar ceptiem kartupeļiem un skābētiem kāpostiem."
+description: "Plāna, sulīga cūkgaļas karbonāde panējumā ar ceptiem kartupeļiem un skābētiem kāpostiem."
 cuisine: latviesu
 category: pamatedieni
 emoji: "🥩"
@@ -39,6 +39,7 @@ steps:
   - "Citā pannā apcep kartupeļus, līdz tie ir kraukšķīgi. Pārkaisa ar dillēm."
   - "Pasniedz ar skābētiem kāpostiem vai svaigiem salātiem."
 tags: ["klasika", "ģimenei"]
+occasions: [tevu-diena]
 featured: false
 date: 2026-04-02
 draft: false

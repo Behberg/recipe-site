@@ -2,7 +2,7 @@
  * Vietnes galvenie iestatījumi. Šeit maini nosaukumu, aprakstu un reklāmas.
  */
 export const SITE = {
-  name: 'Garšīgi',
+  name: 'Dzērvene',
   tagline: 'Latviešu receptes un pasaules virtuves',
   description:
     'Latviešu receptes un gardākie ēdieni no visas pasaules: zupas, pamatēdieni, saldie ēdieni, ievārījumi un konservēšana. Vienkārši, skaisti, ērti telefonā.',

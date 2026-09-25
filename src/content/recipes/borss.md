@@ -1,6 +1,6 @@
 ---
 title: "Boršs"
-description: "Bagātīga biešu zupa ar liellopu gaļu, kāpostiem un krējumu. Austrumeiropas sirds."
+description: "Bagātīga biešu zupa ar liellopu gaļu, kāpostiem un krējumu. To mīl visā Austrumeiropā."
 cuisine: austrumeiropas
 category: zupas
 emoji: "🍲"
