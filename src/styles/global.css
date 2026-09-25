@@ -1316,3 +1316,8 @@ p {
     transform: scale(1.04);
   }
 }
+.ktimer-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}

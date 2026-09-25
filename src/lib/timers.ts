@@ -106,37 +106,59 @@ function stopAlarm() {
   document.title = baseTitle;
 }
 
+const ICON_PLAY =
+  '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M8 5.2v13.6a.8.8 0 0 0 1.2.7l10.5-6.8a.8.8 0 0 0 0-1.4L9.2 4.5a.8.8 0 0 0-1.2.7z" fill="currentColor"/></svg>';
+const ICON_PAUSE =
+  '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 5v14M16 5v14"/></svg>';
+const ICON_X =
+  '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+
+const els = new Map<string, HTMLElement>();
+
+/**
+ * Updates timers in place. Elements are created once per timer and only their text and
+ * progress change on each tick, so the entry animation plays once and nothing flickers.
+ */
 function render() {
   root.hidden = timers.length === 0;
-  root.replaceChildren(
-    ...timers.map((t) => {
-      const el = document.createElement('div');
-      el.className = 'ktimer' + (t.done ? ' is-done' : '') + (t.left != null && !t.done ? ' is-paused' : '');
+  const alive = new Set(timers.map((t) => t.id));
+  for (const [id, el] of els) {
+    if (!alive.has(id)) {
+      el.remove();
+      els.delete(id);
+    }
+  }
+  timers.forEach((t, i) => {
+    let el = els.get(t.id);
+    if (!el) {
+      el = document.createElement('div');
       el.dataset.id = t.id;
-      const left = remaining(t);
-      const pct = t.done ? 100 : Math.min(100, Math.max(0, 100 - (left / (t.total * 1000)) * 100));
-      el.style.setProperty('--p', `${pct}%`);
-      el.innerHTML = `
-        <span class="ktimer-ring" aria-hidden="true"></span>
-        <span class="ktimer-text">
-          <span class="ktimer-label"></span>
-          <strong class="ktimer-time">${t.done ? 'Gatavs!' : fmt(left)}</strong>
-        </span>
-        ${
-          t.done
-            ? `<button type="button" class="ktimer-btn ktimer-ok" data-act="dismiss">Labi</button>`
-            : `<button type="button" class="ktimer-btn" data-act="toggle" aria-label="${t.left != null ? 'Turpināt' : 'Pauze'}">${
-                t.left != null
-                  ? '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M8 5.2v13.6a.8.8 0 0 0 1.2.7l10.5-6.8a.8.8 0 0 0 0-1.4L9.2 4.5a.8.8 0 0 0-1.2.7z" fill="currentColor"/></svg>'
-                  : '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 5v14M16 5v14"/></svg>'
-              }</button>
-               <button type="button" class="ktimer-btn" data-act="cancel" aria-label="Atcelt taimeri"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>`
-        }`;
+      el.innerHTML = `<span class="ktimer-ring" aria-hidden="true"></span>
+        <span class="ktimer-text"><span class="ktimer-label"></span><strong class="ktimer-time"></strong></span>
+        <span class="ktimer-actions"></span>`;
       // Text via textContent so recipe titles can never inject markup.
       el.querySelector('.ktimer-label')!.textContent = t.recipe ? `${t.label} · ${t.recipe}` : t.label;
-      return el;
-    }),
-  );
+      els.set(t.id, el);
+    }
+    if (root.children[i] !== el) root.insertBefore(el, root.children[i] ?? null);
+
+    const state = t.done ? 'done' : t.left != null ? 'paused' : 'running';
+    if (el.dataset.state !== state) {
+      el.dataset.state = state;
+      el.className = 'ktimer' + (t.done ? ' is-done' : '') + (state === 'paused' ? ' is-paused' : '');
+      el.querySelector('.ktimer-actions')!.innerHTML = t.done
+        ? '<button type="button" class="ktimer-btn ktimer-ok" data-act="dismiss">Labi</button>'
+        : `<button type="button" class="ktimer-btn" data-act="toggle" aria-label="${state === 'paused' ? 'Turpināt' : 'Pauze'}">${
+            state === 'paused' ? ICON_PLAY : ICON_PAUSE
+          }</button><button type="button" class="ktimer-btn" data-act="cancel" aria-label="Atcelt taimeri">${ICON_X}</button>`;
+    }
+    const left = remaining(t);
+    const pct = t.done ? 100 : Math.min(100, Math.max(0, 100 - (left / (t.total * 1000)) * 100));
+    el.style.setProperty('--p', `${pct.toFixed(1)}%`);
+    const time = el.querySelector<HTMLElement>('.ktimer-time')!;
+    const text = t.done ? 'Gatavs!' : fmt(left);
+    if (time.textContent !== text) time.textContent = text;
+  });
 }
 
 function update() {
