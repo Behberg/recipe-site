@@ -1,0 +1,184 @@
+# Administrēšanas panelis: https://tava-vietne.lv/admin/
+# Katra saglabātā izmaiņa tiek ierakstīta GitHub repozitorijā, un Netlify automātiski
+# pārbūvē vietni (parasti 1 līdz 2 minūtēs).
+
+backend:
+  name: github
+  repo: Behberg/recipe-site
+  branch: main
+  commit_messages:
+    create: 'Pievienots: {{collection}} "{{slug}}"'
+    update: 'Atjaunots: {{collection}} "{{slug}}"'
+    delete: 'Dzēsts: {{collection}} "{{slug}}"'
+    uploadMedia: 'Augšupielādēts attēls "{{path}}"'
+    deleteMedia: 'Dzēsts attēls "{{path}}"'
+
+site_url: /
+display_url: /
+logo_url: /favicon.svg
+
+media_folder: public/images/recipes
+public_folder: /images/recipes
+
+# Faila nosaukums no virsraksta: "Pelēkie zirņi" kļūst par "pelekie-zirni".
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  # ---------------------------------------------------------------- Receptes
+  - name: recipes
+    label: Receptes
+    label_singular: Recepte
+    description: Visas vietnes receptes.
+    folder: src/content/recipes
+    extension: md
+    format: frontmatter
+    create: true
+    delete: true
+    slug: '{{title}}'
+    identifier_field: title
+    summary: '{{title}}'
+    sortable_fields: [date, title]
+    view_filters:
+      - { label: 'Ieteiktās', field: featured, pattern: true }
+      - { label: 'Melnraksti', field: draft, pattern: true }
+    view_groups:
+      - { label: 'Virtuve', field: cuisine }
+      - { label: 'Kategorija', field: category }
+    fields:
+      - { label: 'Nosaukums', name: title, widget: string }
+      - label: 'Īss apraksts'
+        name: description
+        widget: text
+        hint: 'Viens vai divi teikumi. Redzams zem virsraksta un Google meklēšanā.'
+      - label: 'Virtuve'
+        name: cuisine
+        widget: relation
+        collection: cuisines
+        value_field: '{{slug}}'
+        search_fields: [name]
+        display_fields: ['{{emoji}} {{name}}']
+      - label: 'Kategorija'
+        name: category
+        widget: relation
+        collection: categories
+        value_field: '{{slug}}'
+        search_fields: [name]
+        display_fields: ['{{emoji}} {{name}}']
+      - label: 'Foto'
+        name: image
+        widget: image
+        required: false
+        hint: 'Vēlams horizontāls vai kvadrātveida foto, vismaz 1200 px plats. Ja foto nav, tiek rādīta emocijzīme.'
+      - label: 'Emocijzīme (ja nav foto)'
+        name: emoji
+        widget: string
+        required: false
+        hint: 'Piemēram 🍓 vai 🥧. Ja atstāj tukšu, tiek izmantota kategorijas emocijzīme.'
+      - { label: 'Sagatavošanas laiks (min)', name: prepTime, widget: number, value_type: int, min: 0, default: 15 }
+      - { label: 'Gatavošanas laiks (min)', name: cookTime, widget: number, value_type: int, min: 0, default: 30 }
+      - { label: 'Porcijas', name: servings, widget: number, value_type: int, min: 1, default: 4 }
+      - label: 'Daudzums (nav obligāts)'
+        name: yield
+        widget: string
+        required: false
+        hint: 'Ievārījumiem un cepumiem, piem. "4 burkām pa 0,5 l" vai "apm. 40 pīrāgiem". Tad porciju vietā rāda ½×, 1×, 2×, 3× pogas.'
+      - label: 'Grūtība'
+        name: difficulty
+        widget: select
+        default: viegli
+        options:
+          - { label: 'Viegli', value: viegli }
+          - { label: 'Vidēji', value: vidēji }
+          - { label: 'Sarežģīti', value: sarežģīti }
+      - label: 'Sastāvdaļas'
+        name: ingredients
+        widget: list
+        summary: '{{fields.amount}} {{fields.unit}} {{fields.name}}'
+        hint: 'Daudzums tiek automātiski pārrēķināts, kad lietotājs maina porciju skaitu.'
+        fields:
+          - { label: 'Sastāvdaļa', name: name, widget: string, hint: 'piem. "kviešu milti" vai "sāls pēc garšas"' }
+          - { label: 'Daudzums', name: amount, widget: number, value_type: float, required: false, hint: 'Tikai skaitlis. 0.5 tiks parādīts kā ½' }
+          - label: 'Mērvienība'
+            name: unit
+            widget: string
+            required: false
+            hint: 'g, kg, ml, l, ēd. k., tējk., gab., daiv., šķipsna, saujiņa'
+          - label: 'Grupa (nav obligāta)'
+            name: group
+            widget: string
+            required: false
+            hint: 'piem. "Mīklai" vai "Pildījumam". Sastāvdaļas ar vienādu grupu tiek rādītas kopā.'
+      - label: 'Pagatavošanas soļi'
+        name: steps
+        widget: list
+        hint: 'Viens solis = viena darbība. Ja solī ir laiks (piem. "vāra 10 minūtes"), lapā parādās taimera poga.'
+        field: { label: 'Solis', name: step, widget: text }
+      - label: 'Padomi'
+        name: tips
+        widget: list
+        required: false
+        field: { label: 'Padoms', name: tip, widget: text }
+      - label: 'Birkas'
+        name: tags
+        widget: list
+        required: false
+        hint: 'piem. vasara, veģetārs, Ziemassvētki'
+      - { label: 'Izcelt sākumlapā', name: featured, widget: boolean, default: false }
+      - label: 'Publicēšanas datums'
+        name: date
+        widget: datetime
+        format: 'YYYY-MM-DD'
+        date_format: 'DD.MM.YYYY'
+        time_format: false
+      - { label: 'Melnraksts (nerādīt vietnē)', name: draft, widget: boolean, default: false }
+      - label: 'Ievads / stāsts'
+        name: body
+        widget: markdown
+        required: false
+        hint: 'Neliels ievads par recepti. Rādīts virs sastāvdaļām.'
+
+  # ---------------------------------------------------------------- Virtuves
+  - name: cuisines
+    label: Virtuves
+    label_singular: Virtuve
+    description: Pasaules virtuvju katalogs.
+    folder: src/content/cuisines
+    extension: json
+    format: json
+    create: true
+    delete: false
+    slug: '{{name}}'
+    identifier_field: name
+    summary: '{{emoji}} {{name}}'
+    sortable_fields: [order, name]
+    fields:
+      - { label: 'Nosaukums', name: name, widget: string, hint: 'piem. "Itāļu" (lapā: "Itāļu virtuve")' }
+      - { label: 'Reģions', name: region, widget: string, required: false, hint: 'piem. "Itālija, Sicīlija"' }
+      - { label: 'Emocijzīme', name: emoji, widget: string, hint: 'piem. 🍕 vai karogs 🇮🇹' }
+      - { label: 'Krāsa', name: color, widget: color, default: '#9e3039' }
+      - { label: 'Apraksts', name: description, widget: text }
+      - { label: 'Secība', name: order, widget: number, value_type: int, default: 100, hint: 'Mazāks skaitlis = augstāk sarakstā' }
+
+  # ---------------------------------------------------------------- Kategorijas
+  - name: categories
+    label: Kategorijas
+    label_singular: Kategorija
+    description: Ēdienu veidi, piemēram zupas, saldie ēdieni, ievārījumi.
+    folder: src/content/categories
+    extension: json
+    format: json
+    create: true
+    delete: false
+    slug: '{{name}}'
+    identifier_field: name
+    summary: '{{emoji}} {{name}}'
+    sortable_fields: [order, name]
+    fields:
+      - { label: 'Nosaukums', name: name, widget: string }
+      - { label: 'Emocijzīme', name: emoji, widget: string }
+      - { label: 'Krāsa', name: color, widget: color, default: '#c8773a' }
+      - { label: 'Apraksts', name: description, widget: text }
+      - { label: 'Secība', name: order, widget: number, value_type: int, default: 100 }

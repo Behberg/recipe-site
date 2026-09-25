@@ -1,0 +1,81 @@
+---
+import { plural } from '../lib/format';
+
+interface Props {
+  name: string;
+  emoji: string;
+  color: string;
+  description: string;
+  count: number;
+  parent: { href: string; label: string };
+}
+const { name, emoji, color, description, count, parent } = Astro.props;
+---
+
+<section class="container tax-hero-wrap">
+  <nav class="breadcrumbs" aria-label="Navigācijas ceļš">
+    <a href="/">Sākums</a><span aria-hidden="true">/</span><a href={parent.href}>{parent.label}</a>
+  </nav>
+  <div class="tax-hero" style={`--c:${color}`}>
+    <div class="tax-copy">
+      <span class="tax-count">{count} {plural(count, 'recepte', 'receptes')}</span>
+      <h1>{name}</h1>
+      <p>{description}</p>
+    </div>
+    <span class="tax-emoji" aria-hidden="true">{emoji}</span>
+  </div>
+</section>
+
+<style>
+  .tax-hero-wrap {
+    padding-top: 16px;
+  }
+  .tax-hero {
+    --c: var(--brand);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    padding: 28px 22px 30px;
+    border-radius: var(--r-lg);
+    color: #fff;
+    background:
+      radial-gradient(circle at 100% 0%, rgb(255 255 255 / 0.22), transparent 55%),
+      linear-gradient(150deg, color-mix(in oklab, var(--c) 85%, #fff 15%), color-mix(in oklab, var(--c) 85%, #000 15%));
+    box-shadow: 0 20px 40px -24px var(--c);
+  }
+  @media (min-width: 768px) {
+    .tax-hero {
+      padding: 48px 44px;
+    }
+  }
+  .tax-copy {
+    max-width: min(34rem, 72%);
+  }
+  .tax-count {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: var(--pill);
+    background: rgb(255 255 255 / 0.2);
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+  .tax-hero h1 {
+    color: #fff;
+    font-size: clamp(2rem, 1.4rem + 3vw, 3.4rem);
+    margin-top: 12px;
+  }
+  .tax-hero p {
+    margin-top: 10px;
+    opacity: 0.92;
+  }
+  .tax-emoji {
+    position: absolute;
+    right: -12px;
+    bottom: -22px;
+    font-size: clamp(7rem, 30vw, 13rem);
+    line-height: 1;
+    transform: rotate(-12deg);
+    filter: drop-shadow(0 18px 24px rgb(0 0 0 / 0.3));
+    z-index: -1;
+  }
+</style>

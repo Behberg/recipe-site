@@ -1,0 +1,1266 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import RecipeArt from '../../components/RecipeArt.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import FavButton from '../../components/FavButton.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { SITE } from '../../site.config';
+import {
+  getCatalog,
+  getRecipes,
+  formatMinutes,
+  formatAmount,
+  totalTime,
+  cuisineUrl,
+  categoryUrl,
+  imageUrl,
+  type Recipe,
+} from '../../lib/recipes';
+
+export async function getStaticPaths() {
+  const recipes = await getRecipes();
+  return recipes.map((recipe) => ({ params: { slug: recipe.id }, props: { recipe } }));
+}
+
+const { recipe } = Astro.props as { recipe: Recipe };
+const d = recipe.data;
+const { recipes, cuisineById, categoryById } = await getCatalog();
+const cuisine = cuisineById.get(d.cuisine.id);
+const category = categoryById.get(d.category.id);
+const { Content } = await render(recipe);
+const hasStory = recipe.body?.trim().length;
+
+const emoji = d.emoji || category?.data.emoji || '🍽️';
+const color = category?.data.color || cuisine?.data.color || '#9e3039';
+const total = totalTime(recipe);
+
+// Group ingredients by their optional "group" field, keeping the original order.
+const groups: { name?: string; items: typeof d.ingredients }[] = [];
+for (const ing of d.ingredients) {
+  const last = groups[groups.length - 1];
+  if (last && last.name === ing.group) last.items.push(ing);
+  else groups.push({ name: ing.group, items: [ing] });
+}
+
+/** Finds "10 minūtes", "3 līdz 4 minūtes" or "1,5 stundas" in a step and returns seconds. */
+function detectTimer(text: string): number | null {
+  const m = text.match(/(\d+(?:[.,]\d+)?)(?:\s*(?:līdz|-)\s*(\d+(?:[.,]\d+)?))?\s*(minūt|min\b|stund)/i);
+  if (!m) return null;
+  const value = parseFloat((m[2] || m[1]).replace(',', '.'));
+  const secs = Math.round(value * (m[3].toLowerCase().startsWith('stund') ? 3600 : 60));
+  return secs > 0 && secs <= 6 * 3600 ? secs : null;
+}
+const steps = d.steps.map((text) => ({ text, timer: detectTimer(text) }));
+
+const ingredientText = (i: (typeof d.ingredients)[number]) =>
+  [i.amount ? formatAmount(i.amount) : '', i.unit, i.name].filter(Boolean).join(' ');
+
+// Related: same category first, then same cuisine.
+const related = recipes
+  .filter((r) => r.id !== recipe.id)
+  .map((r) => ({
+    r,
+    score: (r.data.category.id === d.category.id ? 2 : 0) + (r.data.cuisine.id === d.cuisine.id ? 1 : 0) + (r.data.tags.some((t) => d.tags.includes(t)) ? 1 : 0),
+  }))
+  .filter((x) => x.score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 8)
+  .map((x) => x.r);
+
+const iso = (min: number) => `PT${min}M`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Recipe',
+  name: d.title,
+  description: d.description,
+  image: d.image ? [new URL(d.image, Astro.site).href] : undefined,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: d.date.toISOString().slice(0, 10),
+  inLanguage: 'lv',
+  prepTime: iso(d.prepTime),
+  cookTime: iso(d.cookTime),
+  totalTime: iso(total),
+  recipeYield: d.yield || `${d.servings} porcijas`,
+  recipeCategory: category?.data.name,
+  recipeCuisine: cuisine?.data.name,
+  keywords: d.tags.join(', '),
+  recipeIngredient: d.ingredients.map(ingredientText),
+  recipeInstructions: d.steps.map((text, i) => ({ '@type': 'HowToStep', position: i + 1, text })),
+};
+
+const useMultiplier = Boolean(d.yield);
+---
+
+<Base
+  title={d.title}
+  description={d.description}
+  image={d.image ? imageUrl(d.image, 1200) : undefined}
+  type="article"
+  jsonLd={jsonLd}
+>
+  <article class="recipe" data-recipe-page data-servings={d.servings}>
+    <!-- Hero -->
+    <header class="r-hero container">
+      <div class="r-media">
+        <RecipeArt image={d.image} emoji={emoji} color={color} alt={d.title} sizes="(min-width: 900px) 560px, 100vw" large eager />
+        <div class="r-media-actions no-print">
+          <a class="fav-btn" href={categoryUrl(d.category.id)} aria-label={`Atpakaļ uz: ${category?.data.name}`}>
+            <Icon name="chevron-left" />
+          </a>
+          <FavButton id={recipe.id} title={d.title} />
+        </div>
+      </div>
+
+      <div class="r-head">
+        <nav class="r-tags" aria-label="Virtuve un kategorija">
+          {cuisine && <a class="chip" href={cuisineUrl(cuisine.id)}><span aria-hidden="true">{cuisine.data.emoji}</span>{cuisine.data.name}</a>}
+          {category && <a class="chip" href={categoryUrl(category.id)}><span aria-hidden="true">{category.data.emoji}</span>{category.data.name}</a>}
+        </nav>
+        <h1>{d.title}</h1>
+        <p class="r-desc">{d.description}</p>
+
+        <dl class="r-stats">
+          <div><dt>Sagatavošana</dt><dd>{formatMinutes(d.prepTime)}</dd></div>
+          <div><dt>Gatavošana</dt><dd>{formatMinutes(d.cookTime)}</dd></div>
+          <div><dt>Kopā</dt><dd>{formatMinutes(total)}</dd></div>
+          <div><dt>Grūtība</dt><dd class="cap">{d.difficulty}</dd></div>
+        </dl>
+
+        <div class="r-actions no-print" data-hero-actions>
+          <button type="button" class="btn btn-primary" data-cook-open>
+            <Icon name="play" /> Sākt gatavot
+          </button>
+          <button type="button" class="icon-btn outline" data-share aria-label="Dalīties">
+            <Icon name="share" />
+          </button>
+          <button type="button" class="icon-btn outline" data-print aria-label="Drukāt">
+            <Icon name="printer" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    {
+      hasStory && (
+        <section class="container r-story">
+          <Content />
+        </section>
+      )
+    }
+
+    <div class="container"><AdSlot slot="recipeTop" /></div>
+
+    <div class="container r-body">
+      <!-- Ingredients -->
+      <section class="r-ingredients" aria-labelledby="ing-title">
+        <div class="panel">
+          <div class="panel-head">
+            <h2 id="ing-title">Sastāvdaļas</h2>
+            {
+              useMultiplier ? (
+                <div class="seg no-print" role="group" aria-label="Daudzums" data-multiplier>
+                  {[0.5, 1, 2, 3].map((m) => (
+                    <button type="button" data-factor={m} aria-pressed={m === 1 ? 'true' : 'false'}>
+                      {m === 0.5 ? '½' : m}×
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div class="stepper no-print" data-stepper>
+                  <button type="button" class="icon-btn" data-step="-1" aria-label="Mazāk porciju"><Icon name="minus" /></button>
+                  <span><strong data-servings-out>{d.servings}</strong> porc.</span>
+                  <button type="button" class="icon-btn" data-step="1" aria-label="Vairāk porciju"><Icon name="plus" /></button>
+                </div>
+              )
+            }
+          </div>
+          {d.yield && <p class="yield"><Icon name="users" /> Daudzums: {d.yield}</p>}
+
+          {
+            groups.map((g) => (
+              <div class="ing-group">
+                {g.name && <h3>{g.name}</h3>}
+                <ul>
+                  {g.items.map((i) => (
+                    <li>
+                      <label class="ing">
+                        <input type="checkbox" />
+                        <span class="tick" aria-hidden="true"><Icon name="check" /></span>
+                        <span class="ing-text">
+                          {i.amount ? (
+                            <b class="qty" data-amount={i.amount}>
+                              {formatAmount(i.amount)}
+                              {i.unit ? ` ${i.unit}` : ''}
+                            </b>
+                          ) : (
+                            i.unit && <b class="qty">{i.unit}</b>
+                          )}{' '}
+                          {i.name}
+                        </span>
+                      </label>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Steps -->
+      <section class="r-steps" aria-labelledby="steps-title">
+        <h2 id="steps-title">Pagatavošana</h2>
+        <ol class="steps">
+          {
+            steps.map((s, i) => (
+              <li class="step" data-step-index={i}>
+                <button type="button" class="step-num" aria-label={`Atzīmēt ${i + 1}. soli kā paveiktu`}>
+                  <span class="n">{i + 1}</span>
+                  <Icon name="check" class="c" />
+                </button>
+                <div class="step-body">
+                  <p>{s.text}</p>
+                  {s.timer && (
+                    <button type="button" class="timer-chip no-print" data-timer={s.timer} data-timer-label={`${i + 1}. solis`}>
+                      <Icon name="timer" /> Taimeris {formatMinutes(Math.round(s.timer / 60))}
+                    </button>
+                  )}
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+
+        {
+          d.tips.length > 0 && (
+            <aside class="tips">
+              <h3><Icon name="bulb" /> Padomi</h3>
+              <ul>
+                {d.tips.map((t) => <li>{t}</li>)}
+              </ul>
+            </aside>
+          )
+        }
+
+        {
+          d.tags.length > 0 && (
+            <div class="r-tagcloud">
+              {d.tags.map((t) => <a class="chip" href={`/receptes/?q=${encodeURIComponent(t)}`}>#{t}</a>)}
+            </div>
+          )
+        }
+      </section>
+    </div>
+
+    <div class="container"><AdSlot slot="recipeBottom" /></div>
+
+    {
+      related.length > 0 && (
+        <section class="section container no-print">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Tev varētu garšot</span>
+              <h2>Līdzīgas receptes</h2>
+            </div>
+          </div>
+          <div class="rail">
+            {related.map((r) => (
+              <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide />
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <!-- Floating CTA (mobile) -->
+    <button type="button" class="float-cta btn btn-primary no-print" data-cook-open data-float-cta>
+      <Icon name="play" /> Sākt gatavot
+    </button>
+
+    <!-- Running timer pill -->
+    <div class="timer-pill no-print" data-timer-pill hidden>
+      <Icon name="timer" />
+      <span data-timer-label-out></span>
+      <strong data-timer-out>0:00</strong>
+      <button type="button" data-timer-toggle aria-label="Pauze"><Icon name="pause" /></button>
+      <button type="button" data-timer-cancel aria-label="Atcelt taimeri"><Icon name="x" /></button>
+    </div>
+
+    <!-- Cooking mode -->
+    <dialog class="cook" data-cook aria-label={`Gatavošanas režīms: ${d.title}`}>
+      <div class="cook-inner">
+        <header class="cook-top">
+          <button type="button" class="icon-btn" data-cook-close aria-label="Aizvērt gatavošanas režīmu"><Icon name="x" /></button>
+          <div class="cook-title">
+            <span data-cook-count>1 / {steps.length}</span>
+            <strong>{d.title}</strong>
+          </div>
+          <button type="button" class="icon-btn" data-cook-ing aria-label="Rādīt sastāvdaļas"><Icon name="list" /></button>
+        </header>
+        <div class="cook-progress"><span data-cook-bar></span></div>
+
+        <div class="cook-stage" data-cook-stage>
+          {
+            steps.map((s, i) => (
+              <section class="cook-step" data-cook-step={i} hidden={i !== 0}>
+                <span class="cook-step-n">Solis {i + 1}</span>
+                <p>{s.text}</p>
+                {s.timer && (
+                  <button type="button" class="btn btn-ghost cook-timer" data-timer={s.timer} data-timer-label={`${i + 1}. solis`}>
+                    <Icon name="timer" /> Sākt taimeri: {formatMinutes(Math.round(s.timer / 60))}
+                  </button>
+                )}
+              </section>
+            ))
+          }
+          <section class="cook-step cook-done" data-cook-step={steps.length} hidden>
+            <span class="big" aria-hidden="true">🎉</span>
+            <h2>Labu apetīti!</h2>
+            <p>Gatavs! Ja recepte izdevās, saglabā to izlasē.</p>
+            <div class="cook-done-actions">
+              <FavButton id={recipe.id} title={d.title} class="cook-fav" />
+              <button type="button" class="btn btn-primary" data-cook-close>Pabeigt</button>
+            </div>
+          </section>
+        </div>
+
+        <aside class="cook-ing" data-cook-ing-panel hidden>
+          <h3>Sastāvdaļas</h3>
+          <ul>
+            {d.ingredients.map((i) => <li>{ingredientText(i)}</li>)}
+          </ul>
+        </aside>
+
+        <footer class="cook-nav">
+          <button type="button" class="btn btn-ghost" data-cook-prev><Icon name="chevron-left" /> Atpakaļ</button>
+          <button type="button" class="btn btn-primary" data-cook-next>Tālāk <Icon name="chevron-right" /></button>
+        </footer>
+      </div>
+    </dialog>
+  </article>
+</Base>
+
+<script>
+  import { formatAmount } from '../../lib/format';
+  import { toast } from '../../lib/favorites';
+
+  const page = document.querySelector<HTMLElement>('[data-recipe-page]')!;
+  const baseServings = Number(page.dataset.servings) || 1;
+
+  /* ---------- Serving scaler ---------- */
+  const qtys = Array.from(page.querySelectorAll<HTMLElement>('.qty[data-amount]'));
+  const units = qtys.map((q) => q.textContent!.replace(/^[\d¼⅓½⅔¾,]+/, '').trim());
+  // When scaling up, 1500 g reads better as 1,5 kg and 1000 ml as 1 l.
+  const BIGGER: Record<string, [string, number]> = { g: ['kg', 1000], ml: ['l', 1000] };
+  function scale(factor: number) {
+    qtys.forEach((q, i) => {
+      let amount = Number(q.dataset.amount) * factor;
+      let unit = units[i];
+      const up = BIGGER[unit];
+      if (up && amount >= up[1]) {
+        amount /= up[1];
+        unit = up[0];
+      }
+      q.textContent = formatAmount(amount) + (unit ? ' ' + unit : '');
+    });
+  }
+  const stepper = page.querySelector<HTMLElement>('[data-stepper]');
+  if (stepper) {
+    let servings = baseServings;
+    const out = stepper.querySelector<HTMLElement>('[data-servings-out]')!;
+    stepper.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-step]');
+      if (!btn) return;
+      servings = Math.min(50, Math.max(1, servings + Number(btn.dataset.step)));
+      out.textContent = String(servings);
+      scale(servings / baseServings);
+    });
+  }
+  const mult = page.querySelector<HTMLElement>('[data-multiplier]');
+  mult?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-factor]');
+    if (!btn) return;
+    mult.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    scale(Number(btn.dataset.factor));
+  });
+
+  /* ---------- Step progress (tap the number to mark as done) ---------- */
+  page.querySelectorAll<HTMLElement>('.step').forEach((step) => {
+    step.querySelector('.step-num')!.addEventListener('click', () => step.classList.toggle('is-done'));
+  });
+
+  /* ---------- Share & print ---------- */
+  page.querySelector('[data-share]')?.addEventListener('click', async () => {
+    const data = { title: document.title, url: location.href };
+    try {
+      if (navigator.share) await navigator.share(data);
+      else {
+        await navigator.clipboard.writeText(location.href);
+        toast('Saite nokopēta 🔗');
+      }
+    } catch {
+      /* user cancelled the share sheet */
+    }
+  });
+  page.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+
+  /* ---------- Floating CTA appears once the hero button is off screen ---------- */
+  const heroActions = page.querySelector('[data-hero-actions]');
+  const floatCta = page.querySelector<HTMLElement>('[data-float-cta]')!;
+  if (heroActions && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => floatCta.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0)).observe(
+      heroActions,
+    );
+  }
+
+  /* ---------- Timer ---------- */
+  const pill = page.querySelector<HTMLElement>('[data-timer-pill]')!;
+  const pillOut = pill.querySelector<HTMLElement>('[data-timer-out]')!;
+  const pillLabel = pill.querySelector<HTMLElement>('[data-timer-label-out]')!;
+  const pillToggle = pill.querySelector<HTMLButtonElement>('[data-timer-toggle]')!;
+  let endAt = 0;
+  let remaining = 0;
+  let tick: number | undefined;
+  const fmt = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+
+  function beep() {
+    try {
+      const Ctx = window.AudioContext || (window as any).webkitAudioContext;
+      const ctx = new Ctx();
+      [0, 0.35, 0.7].forEach((t) => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.frequency.value = 880;
+        g.gain.setValueAtTime(0.0001, ctx.currentTime + t);
+        g.gain.exponentialRampToValueAtTime(0.3, ctx.currentTime + t + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + t + 0.3);
+        o.connect(g).connect(ctx.destination);
+        o.start(ctx.currentTime + t);
+        o.stop(ctx.currentTime + t + 0.32);
+      });
+    } catch {
+      /* audio not available */
+    }
+  }
+  function render() {
+    const left = Math.max(0, Math.round((endAt - Date.now()) / 1000));
+    pillOut.textContent = fmt(left);
+    if (left <= 0) {
+      window.clearInterval(tick);
+      tick = undefined;
+      pill.classList.add('done');
+      pillOut.textContent = 'Gatavs!';
+      beep();
+      navigator.vibrate?.([200, 100, 200, 100, 400]);
+      toast('⏰ Laiks beidzies!');
+    }
+  }
+  function startTimer(seconds: number, label: string) {
+    window.clearInterval(tick);
+    endAt = Date.now() + seconds * 1000;
+    pill.hidden = false;
+    pill.classList.remove('done', 'paused');
+    pillLabel.textContent = label;
+    render();
+    tick = window.setInterval(render, 250);
+  }
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-timer]');
+    if (btn) startTimer(Number(btn.dataset.timer), btn.dataset.timerLabel || '');
+  });
+  pillToggle.addEventListener('click', () => {
+    if (pill.classList.contains('done')) return;
+    if (tick) {
+      remaining = endAt - Date.now();
+      window.clearInterval(tick);
+      tick = undefined;
+      pill.classList.add('paused');
+    } else {
+      endAt = Date.now() + remaining;
+      pill.classList.remove('paused');
+      tick = window.setInterval(render, 250);
+    }
+  });
+  pill.querySelector('[data-timer-cancel]')!.addEventListener('click', () => {
+    window.clearInterval(tick);
+    tick = undefined;
+    pill.hidden = true;
+  });
+
+  /* ---------- Cooking mode ---------- */
+  const dialog = page.querySelector<HTMLDialogElement>('[data-cook]')!;
+  const cookSteps = Array.from(dialog.querySelectorAll<HTMLElement>('[data-cook-step]'));
+  const total = cookSteps.length - 1; // last one is the "done" screen
+  const bar = dialog.querySelector<HTMLElement>('[data-cook-bar]')!;
+  const counter = dialog.querySelector<HTMLElement>('[data-cook-count]')!;
+  const prev = dialog.querySelector<HTMLButtonElement>('[data-cook-prev]')!;
+  const next = dialog.querySelector<HTMLButtonElement>('[data-cook-next]')!;
+  const ingPanel = dialog.querySelector<HTMLElement>('[data-cook-ing-panel]')!;
+  let current = 0;
+  let wakeLock: any = null;
+
+  function show(i: number, dir = 1) {
+    current = Math.max(0, Math.min(total, i));
+    cookSteps.forEach((s, idx) => {
+      s.hidden = idx !== current;
+      if (idx === current) {
+        s.style.setProperty('--dir', String(dir));
+        s.classList.remove('enter');
+        void s.offsetWidth;
+        s.classList.add('enter');
+      }
+    });
+    bar.style.width = `${(Math.min(current + 1, total) / total) * 100}%`;
+    counter.textContent = current < total ? `${current + 1} / ${total}` : 'Gatavs';
+    prev.disabled = current === 0;
+    next.hidden = current === total;
+    next.innerHTML = current === total - 1 ? 'Pabeigt ✓' : 'Tālāk <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
+  }
+
+  async function lockScreen() {
+    try {
+      wakeLock = await (navigator as any).wakeLock?.request('screen');
+    } catch {
+      /* not supported or denied */
+    }
+  }
+
+  page.querySelectorAll('[data-cook-open]').forEach((b) =>
+    b.addEventListener('click', () => {
+      dialog.showModal();
+      document.documentElement.classList.add('cook-open');
+      show(0);
+      lockScreen();
+    }),
+  );
+  function closeCook() {
+    dialog.close();
+  }
+  dialog.addEventListener('close', () => {
+    document.documentElement.classList.remove('cook-open');
+    wakeLock?.release?.();
+    wakeLock = null;
+    ingPanel.hidden = true;
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (dialog.open && document.visibilityState === 'visible') lockScreen();
+  });
+  dialog.querySelectorAll('[data-cook-close]').forEach((b) => b.addEventListener('click', closeCook));
+  prev.addEventListener('click', () => show(current - 1, -1));
+  next.addEventListener('click', () => show(current + 1, 1));
+  dialog.querySelector('[data-cook-ing]')!.addEventListener('click', () => (ingPanel.hidden = !ingPanel.hidden));
+  dialog.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') show(current + 1, 1);
+    if (e.key === 'ArrowLeft') show(current - 1, -1);
+  });
+
+  // Swipe left / right between steps.
+  let sx = 0;
+  let sy = 0;
+  const stage = dialog.querySelector<HTMLElement>('[data-cook-stage]')!;
+  stage.addEventListener('touchstart', (e) => {
+    sx = e.touches[0].clientX;
+    sy = e.touches[0].clientY;
+  }, { passive: true });
+  stage.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - sx;
+    const dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) show(current + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
+  }, { passive: true });
+</script>
+
+<style>
+  /* ---------- Hero ---------- */
+  .r-hero {
+    display: grid;
+    gap: 0;
+    padding-inline: 0;
+  }
+  .r-media {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    max-height: 62vh;
+    width: 100%;
+    overflow: hidden;
+    background: var(--surface-2);
+  }
+  .r-media :global(img),
+  .r-media :global(.art) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .r-media-actions {
+    position: absolute;
+    inset: 12px 12px auto 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .r-head {
+    position: relative;
+    margin-top: -28px;
+    padding: 24px var(--gutter) 8px;
+    background: var(--bg);
+    border-radius: var(--r-lg) var(--r-lg) 0 0;
+  }
+  @media (min-width: 900px) {
+    .r-hero {
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      padding: 32px var(--gutter) 16px;
+    }
+    .r-media {
+      order: 2;
+      border-radius: var(--r-lg);
+      aspect-ratio: 4 / 4.2;
+      max-height: none;
+      box-shadow: var(--shadow-lg);
+    }
+    .r-media-actions {
+      justify-content: flex-end;
+    }
+    .r-media-actions > a {
+      display: none;
+    }
+    .r-head {
+      margin: 0;
+      padding: 0;
+      background: none;
+    }
+  }
+  .r-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .r-tags .chip {
+    height: 34px;
+    font-size: 0.82rem;
+  }
+  .r-head h1 {
+    font-size: clamp(2.1rem, 1.5rem + 3.2vw, 3.8rem);
+    line-height: 1.02;
+    letter-spacing: -0.028em;
+    margin-top: 16px;
+  }
+  .r-desc {
+    margin-top: 12px;
+    color: var(--ink-2);
+    font-size: 1.06rem;
+    max-width: 52ch;
+  }
+  .r-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 22px;
+    border-radius: var(--r);
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+    overflow: hidden;
+  }
+  .r-stats div {
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .r-stats div + div {
+    border-left: 1px solid var(--line);
+  }
+  .r-stats dt {
+    font-size: 0.66rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-3);
+  }
+  .r-stats dd {
+    margin: 4px 0 0;
+    font-weight: 700;
+    font-size: clamp(0.8rem, 3.3vw, 0.95rem);
+    white-space: nowrap;
+  }
+  .cap {
+    text-transform: capitalize;
+  }
+  .r-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .r-actions .btn {
+    flex: 1;
+    max-width: 280px;
+    min-height: 52px;
+  }
+  .icon-btn.outline {
+    width: 52px;
+    height: 52px;
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line-strong);
+  }
+
+  /* ---------- Story ---------- */
+  .r-story {
+    margin-top: 24px;
+  }
+  .r-story :global(p) {
+    font-family: var(--font-display);
+    font-size: 1.18rem;
+    line-height: 1.55;
+    color: var(--ink-2);
+    max-width: 62ch;
+  }
+  .r-story :global(p + p) {
+    margin-top: 12px;
+  }
+
+  /* ---------- Body layout ---------- */
+  .r-body {
+    display: grid;
+    gap: 32px;
+    margin-top: 24px;
+  }
+  @media (min-width: 900px) {
+    .r-body {
+      grid-template-columns: minmax(300px, 380px) 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .r-ingredients {
+      position: sticky;
+      top: calc(var(--header-h) + 16px);
+    }
+  }
+  .r-body h2 {
+    font-size: 1.7rem;
+  }
+
+  /* ---------- Ingredients ---------- */
+  .panel {
+    padding: 20px 18px;
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow:
+      inset 0 0 0 1px var(--line),
+      var(--shadow-sm);
+  }
+  .panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .yield {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    color: var(--ink-3);
+    font-size: 0.85rem;
+  }
+  .yield :global(svg) {
+    width: 16px;
+    height: 16px;
+  }
+  .stepper {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px;
+    border-radius: var(--pill);
+    background: var(--surface-2);
+    font-size: 0.88rem;
+  }
+  .stepper span {
+    min-width: 64px;
+    text-align: center;
+  }
+  .stepper .icon-btn {
+    width: 38px;
+    height: 38px;
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+  .stepper .icon-btn :global(svg) {
+    width: 18px;
+    height: 18px;
+  }
+  .seg {
+    display: flex;
+    padding: 3px;
+    border-radius: var(--pill);
+    background: var(--surface-2);
+  }
+  .seg button {
+    min-width: 44px;
+    height: 36px;
+    padding: 0 10px;
+    border-radius: var(--pill);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--ink-2);
+    transition: background 0.2s, color 0.2s;
+  }
+  .seg button[aria-pressed='true'] {
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: var(--shadow-sm);
+  }
+  .ing-group {
+    margin-top: 14px;
+  }
+  .ing-group h3 {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand);
+    margin: 18px 0 4px;
+  }
+  .ing-group ul {
+    list-style: none;
+    padding: 0;
+  }
+  .ing-group li + li {
+    border-top: 1px dashed var(--line-strong);
+  }
+  .ing {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 11px 2px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .ing input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .tick {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    margin-top: 1px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 2px var(--line-strong);
+    color: transparent;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s var(--ease);
+  }
+  .tick :global(svg) {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2.6;
+  }
+  .ing:active .tick {
+    transform: scale(0.88);
+  }
+  .ing input:checked + .tick {
+    background: var(--ok);
+    box-shadow: none;
+    color: #fff;
+  }
+  .ing input:focus-visible + .tick {
+    outline: 3px solid color-mix(in oklab, var(--brand) 60%, transparent);
+    outline-offset: 2px;
+  }
+  .ing-text {
+    transition: opacity 0.2s, color 0.2s;
+  }
+  .ing input:checked ~ .ing-text {
+    opacity: 0.45;
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+  }
+  .qty {
+    font-weight: 700;
+  }
+
+  /* ---------- Steps ---------- */
+  .steps {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+    display: grid;
+    gap: 6px;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 14px;
+    padding: 14px 0 18px;
+  }
+  .step + .step {
+    border-top: 1px solid var(--line);
+  }
+  .step-num {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    background: var(--brand-soft);
+    color: var(--brand);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    transition: background 0.2s, color 0.2s, transform 0.15s var(--ease);
+  }
+  .step-num:active {
+    transform: scale(0.9);
+  }
+  .step-num :global(.c) {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.6;
+    opacity: 0;
+  }
+  .step.is-done .step-num {
+    background: var(--ok);
+    color: #fff;
+  }
+  .step.is-done .step-num .n {
+    opacity: 0;
+  }
+  .step.is-done .step-num :global(.c) {
+    opacity: 1;
+  }
+  .step.is-done .step-body p {
+    opacity: 0.5;
+  }
+  .step-body p {
+    font-size: 1.06rem;
+    line-height: 1.6;
+    padding-top: 6px;
+    transition: opacity 0.2s;
+  }
+  .timer-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: var(--pill);
+    background: color-mix(in oklab, var(--honey) 16%, var(--surface));
+    color: color-mix(in oklab, var(--honey) 70%, var(--ink));
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: transform 0.15s var(--ease);
+  }
+  .timer-chip:active {
+    transform: scale(0.95);
+  }
+  .timer-chip :global(svg) {
+    width: 17px;
+    height: 17px;
+  }
+  .tips {
+    margin-top: 24px;
+    padding: 18px 20px;
+    border-radius: var(--r);
+    background: color-mix(in oklab, var(--honey) 12%, var(--surface));
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--honey) 25%, transparent);
+  }
+  .tips h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.15rem;
+  }
+  .tips h3 :global(svg) {
+    width: 20px;
+    height: 20px;
+    color: var(--honey);
+  }
+  .tips ul {
+    margin-top: 8px;
+    padding-left: 20px;
+    display: grid;
+    gap: 6px;
+    color: var(--ink-2);
+  }
+  .r-tagcloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .r-tagcloud .chip {
+    height: 32px;
+    font-size: 0.8rem;
+    color: var(--ink-2);
+  }
+
+  /* ---------- Floating CTA & timer ---------- */
+  .float-cta {
+    position: fixed;
+    z-index: 45;
+    left: 50%;
+    bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 12px);
+    transform: translate(-50%, 24px);
+    opacity: 0;
+    pointer-events: none;
+    min-height: 52px;
+    padding: 0 26px;
+    box-shadow: var(--shadow-lg);
+    transition: opacity 0.25s, transform 0.3s var(--ease);
+  }
+  .float-cta.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+  }
+  @media (min-width: 900px) {
+    .float-cta {
+      display: none;
+    }
+  }
+  .timer-pill {
+    position: fixed;
+    z-index: 1000;
+    top: calc(var(--header-h) + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 6px 6px 14px;
+    border-radius: var(--pill);
+    background: var(--ink);
+    color: var(--bg);
+    box-shadow: var(--shadow-lg);
+    font-size: 0.85rem;
+    animation: reveal 0.35s var(--ease);
+  }
+  .timer-pill > :global(svg) {
+    width: 18px;
+    height: 18px;
+  }
+  .timer-pill strong {
+    font-variant-numeric: tabular-nums;
+    font-size: 1.05rem;
+    min-width: 52px;
+  }
+  .timer-pill button {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: var(--pill);
+    background: rgb(255 255 255 / 0.12);
+  }
+  .timer-pill button :global(svg) {
+    width: 16px;
+    height: 16px;
+  }
+  .timer-pill.paused strong {
+    opacity: 0.5;
+  }
+  .timer-pill.done {
+    background: var(--brand);
+    color: var(--brand-ink);
+    animation: pulse 1s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    50% {
+      transform: translateX(-50%) scale(1.06);
+    }
+  }
+  :global(html.cook-open) .timer-pill {
+    top: calc(env(safe-area-inset-top) + 76px);
+  }
+
+  /* ---------- Cooking mode ---------- */
+  .cook {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  .cook::backdrop {
+    background: rgb(0 0 0 / 0.5);
+  }
+  @media (min-width: 900px) {
+    .cook {
+      width: min(760px, 92vw);
+      height: min(760px, 90vh);
+      margin: auto;
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow-lg);
+    }
+  }
+  :global(html.cook-open) {
+    overflow: hidden;
+  }
+  .cook-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+  }
+  .cook-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px 8px;
+  }
+  .cook-title {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+  .cook-title span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .cook-title strong {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cook-progress {
+    height: 4px;
+    margin: 0 16px;
+    border-radius: var(--pill);
+    background: var(--surface-3);
+    overflow: hidden;
+  }
+  .cook-progress span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--brand);
+    border-radius: inherit;
+    transition: width 0.4s var(--ease);
+  }
+  .cook-stage {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    padding: 24px 24px;
+  }
+  .cook-step {
+    margin: auto 0;
+    width: 100%;
+  }
+  .cook-step.enter {
+    animation: slideIn 0.35s var(--ease);
+  }
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(calc(var(--dir, 1) * 36px));
+    }
+  }
+  .cook-step-n {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brand);
+  }
+  .cook-step p {
+    font-variant-numeric: lining-nums;
+    margin-top: 12px;
+    font-family: var(--font-display);
+    font-size: clamp(1.55rem, 1.1rem + 2.4vw, 2.3rem);
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .cook-timer {
+    margin-top: 24px;
+  }
+  .cook-done {
+    text-align: center;
+  }
+  .cook-done .big {
+    font-size: 4.5rem;
+    display: block;
+  }
+  .cook-done h2 {
+    font-size: 2.4rem;
+    margin-top: 8px;
+  }
+  .cook-done p {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    color: var(--ink-2);
+  }
+  .cook-done-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .cook-done-actions :global(.cook-fav) {
+    width: 52px;
+    height: 52px;
+    box-shadow: inset 0 0 0 1px var(--line-strong);
+  }
+  .cook-ing {
+    position: absolute;
+    inset: 64px 12px auto 12px;
+    max-height: 60%;
+    overflow-y: auto;
+    padding: 18px 20px;
+    border-radius: var(--r);
+    background: var(--surface);
+    box-shadow: var(--shadow-lg), inset 0 0 0 1px var(--line);
+    z-index: 2;
+    animation: reveal 0.25s var(--ease);
+  }
+  .cook-ing h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .cook-ing ul {
+    padding-left: 18px;
+    display: grid;
+    gap: 6px;
+  }
+  .cook-nav {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 10px;
+    padding: 12px 16px 16px;
+  }
+  .cook-nav .btn {
+    min-height: 56px;
+    font-size: 1rem;
+  }
+  .cook-nav .btn:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  .cook-nav [hidden] {
+    display: none;
+  }
+  .cook-nav:has([data-cook-next][hidden]) {
+    grid-template-columns: 1fr;
+  }
+</style>

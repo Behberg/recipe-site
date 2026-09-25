@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import RecipeBrowser from '../../components/RecipeBrowser.astro';
+import { getCatalog } from '../../lib/recipes';
+
+const { recipes, cuisines, categories } = await getCatalog();
+---
+
+<Base title="Visas receptes" description="Meklē un filtrē receptes pēc virtuves, kategorijas, laika un grūtības.">
+  <section class="page-hero container">
+    <span class="eyebrow">Recepšu grāmata</span>
+    <h1>Visas receptes</h1>
+    <p>Meklē pēc nosaukuma vai sastāvdaļas, kas ir ledusskapī. Filtrē pēc virtuves, laika un grūtības.</p>
+  </section>
+  <section class="container" style="padding-top:16px">
+    <RecipeBrowser recipes={recipes} cuisines={cuisines} categories={categories} />
+  </section>
+</Base>

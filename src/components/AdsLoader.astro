@@ -1,0 +1,54 @@
+---
+import { ADS, adsEnabled } from '../site.config';
+const client = adsEnabled() ? ADS.client : '';
+---
+
+{
+  client && (
+    <script is:inline define:vars={{ client }}>
+      (function () {
+        var slots = Array.prototype.slice.call(document.querySelectorAll('ins.adsbygoogle'));
+        if (!slots.length) return;
+        var loaded = false;
+        function loadScript() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.crossOrigin = 'anonymous';
+          s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + client;
+          document.head.appendChild(s);
+        }
+        function fill(ins) {
+          loadScript();
+          try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+          } catch (e) {}
+          // Hide the frame if Google has nothing to show, so no empty boxes remain.
+          setTimeout(function () {
+            if (ins.getAttribute('data-ad-status') === 'unfilled') ins.closest('.ad').classList.add('is-empty');
+          }, 4000);
+        }
+        function start() {
+          if (!('IntersectionObserver' in window)) return slots.forEach(fill);
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                  io.unobserve(e.target);
+                  fill(e.target);
+                }
+              });
+            },
+            { rootMargin: '600px 0px' }
+          );
+          slots.forEach(function (s) {
+            if (s.offsetParent !== null) io.observe(s);
+          });
+        }
+        if (document.readyState === 'complete') setTimeout(start, 800);
+        else window.addEventListener('load', function () { setTimeout(start, 800); });
+      })();
+    </script>
+  )
+}

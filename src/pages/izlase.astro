@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import { getCatalog } from '../lib/recipes';
+
+const { recipes, cuisineById, categoryById } = await getCatalog();
+---
+
+<Base title="Mana izlase" description="Tavas saglabātās receptes." noindex>
+  <section class="page-hero container">
+    <span class="eyebrow">❤️ Saglabātās</span>
+    <h1>Mana izlase</h1>
+    <p>Receptes, kurām nospiedi sirsniņu. Tās glabājas tikai šajā ierīcē, bez reģistrēšanās.</p>
+  </section>
+
+  <section class="section container">
+    <p class="fav-count" data-fav-count></p>
+    <div class="grid" data-fav-grid>
+      {recipes.map((r) => <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} />)}
+    </div>
+    <div class="empty" data-fav-empty hidden>
+      <div class="big">🤍</div>
+      <h3>Izlase pagaidām ir tukša</h3>
+      <p>Nospied sirsniņu uz jebkuras receptes, un tā parādīsies šeit.</p>
+      <a class="btn btn-primary" href="/receptes/" style="margin-top:18px">Atrast receptes</a>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import { getFavorites } from '../lib/favorites';
+  import { plural } from '../lib/format';
+
+  const grid = document.querySelector<HTMLElement>('[data-fav-grid]')!;
+  const empty = document.querySelector<HTMLElement>('[data-fav-empty]')!;
+  const count = document.querySelector<HTMLElement>('[data-fav-count]')!;
+  const cards = new Map(Array.from(grid.querySelectorAll<HTMLElement>('[data-recipe]')).map((c) => [c.dataset.recipe!, c]));
+
+  function render() {
+    const favs = getFavorites().filter((id) => cards.has(id));
+    cards.forEach((c) => (c.hidden = true));
+    // Show in the order they were saved, newest first.
+    favs.forEach((id) => {
+      const card = cards.get(id)!;
+      card.hidden = false;
+      grid.appendChild(card);
+    });
+    empty.hidden = favs.length > 0;
+    count.textContent = favs.length ? `${favs.length} ${plural(favs.length, 'saglabāta recepte', 'saglabātas receptes')}` : '';
+  }
+  render();
+  document.addEventListener('favorites:change', () => setTimeout(render, 350));
+  window.addEventListener('pageshow', render);
+</script>
+
+<style>
+  .fav-count {
+    color: var(--ink-3);
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .fav-count:empty {
+    display: none;
+  }
+  [data-fav-grid] :global([data-recipe]) {
+    animation: reveal 0.4s var(--ease) both;
+  }
+</style>

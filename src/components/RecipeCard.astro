@@ -1,0 +1,56 @@
+---
+import Icon from './Icon.astro';
+import RecipeArt from './RecipeArt.astro';
+import FavButton from './FavButton.astro';
+import { formatMinutes, recipeUrl, totalTime, type Recipe, type Cuisine, type Category } from '../lib/recipes';
+
+interface Props {
+  recipe: Recipe;
+  cuisine?: Cuisine;
+  category?: Category;
+  wide?: boolean;
+  eager?: boolean;
+  showBadge?: boolean;
+}
+
+const { recipe, cuisine, category, wide = false, eager = false, showBadge = true } = Astro.props;
+const d = recipe.data;
+const emoji = d.emoji || category?.data.emoji || '🍽️';
+const color = category?.data.color || cuisine?.data.color || '#9e3039';
+const total = totalTime(recipe);
+const search = [d.title, d.description, cuisine?.data.name, category?.data.name, ...d.tags, ...d.ingredients.map((i) => i.name)]
+  .join(' ')
+  .toLowerCase();
+---
+
+<article
+  class:list={['card', { 'card--wide': wide }]}
+  data-recipe={recipe.id}
+  data-cuisine={d.cuisine.id}
+  data-category={d.category.id}
+  data-time={total}
+  data-difficulty={d.difficulty}
+  data-search={search}
+>
+  <div class="card-media">
+    <RecipeArt image={d.image} emoji={emoji} color={color} alt={d.title} eager={eager} />
+    {
+      showBadge && cuisine && (
+        <span class="card-badge">
+          <span aria-hidden="true">{cuisine.data.emoji}</span>
+          {cuisine.data.name}
+        </span>
+      )
+    }
+    <FavButton id={recipe.id} title={d.title} />
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">
+      <a class="card-link" href={recipeUrl(recipe.id)}>{d.title}</a>
+    </h3>
+    <div class="card-meta">
+      <span><Icon name="clock" />{formatMinutes(total)}</span>
+      <span><Icon name="bars" />{d.difficulty}</span>
+    </div>
+  </div>
+</article>

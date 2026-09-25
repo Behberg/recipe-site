@@ -1,0 +1,457 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import RecipeArt from '../components/RecipeArt.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { SITE } from '../site.config';
+import { getCatalog, cuisineUrl, categoryUrl, recipeUrl, plural, formatMinutes, totalTime } from '../lib/recipes';
+
+const { recipes, cuisines, categories, cuisineById, categoryById } = await getCatalog();
+
+const featured = recipes.filter((r) => r.data.featured).slice(0, 8);
+const latest = recipes.slice(0, 8);
+const latvian = recipes.filter((r) => r.data.cuisine.id === 'latviesu').slice(0, 10);
+const hero = featured[0] ?? recipes[0];
+
+const countBy = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key].id === id).length;
+const promo = ['saldie-edieni', 'ievarijumi-un-konservi']
+  .map((id) => categoryById.get(id))
+  .filter((c) => c !== undefined);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.name,
+  url: Astro.site?.href,
+  inLanguage: 'lv',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: new URL('/receptes/?q={search_term_string}', Astro.site).href.replace('%7B', '{').replace('%7D', '}'),
+    'query-input': 'required name=search_term_string',
+  },
+};
+---
+
+<Base jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="hero container">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Latviešu receptes un pasaules virtuves</span>
+      <h1>Ko šodien <em>gatavosim?</em></h1>
+      <p>Pārbaudītas receptes no vecmāmiņas pavārgrāmatas līdz Tokijai. Skaidri soļi, ērti telefonā, bez liekiem vārdiem.</p>
+      <form class="search-field hero-search" action="/receptes/" method="get" role="search">
+        <Icon name="search" />
+        <input type="search" name="q" placeholder="Piem. zirņi, pankūkas, ievārījums..." aria-label="Meklēt receptes" enterkeyhint="search" />
+      </form>
+      <div class="hero-chips">
+        <a class="chip" href="/receptes/?laiks=30">⚡ Līdz 30 min</a>
+        <a class="chip" href={cuisineUrl('latviesu')}>🇱🇻 Latviešu</a>
+        <a class="chip" href={categoryUrl('saldie-edieni')}>🍰 Saldie</a>
+        <a class="chip" href={categoryUrl('ievarijumi-un-konservi')}>🍓 Ievārījumi</a>
+        <a class="chip" href={categoryUrl('zupas')}>🍲 Zupas</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>Receptes</dt><dd>{recipes.length}</dd></div>
+        <div><dt>Virtuves</dt><dd>{cuisines.length}</dd></div>
+        <div><dt>Kategorijas</dt><dd>{categories.length}</dd></div>
+      </dl>
+    </div>
+
+    {
+      hero && (
+        <a class="hero-feature reveal" href={recipeUrl(hero.id)} style="animation-delay:.08s">
+          <div class="hero-feature-media">
+            <RecipeArt
+              image={hero.data.image}
+              emoji={hero.data.emoji || categoryById.get(hero.data.category.id)?.data.emoji || '🍽️'}
+              color={categoryById.get(hero.data.category.id)?.data.color || '#9e3039'}
+              alt={hero.data.title}
+              sizes="(min-width: 900px) 520px, 100vw"
+              large
+              eager
+            />
+          </div>
+          <div class="hero-feature-card">
+            <span class="eyebrow">Šodienas ieteikums</span>
+            <h2>{hero.data.title}</h2>
+            <span class="hero-feature-meta">
+              <Icon name="clock" />
+              {formatMinutes(totalTime(hero))}
+              <span class="dot">·</span>
+              {cuisineById.get(hero.data.cuisine.id)?.data.name}
+            </span>
+          </div>
+        </a>
+      )
+    }
+  </section>
+
+  <!-- Featured -->
+  {
+    featured.length > 0 && (
+      <section class="section container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Redakcijas izvēle</span>
+            <h2>Ieteiktās receptes</h2>
+          </div>
+          <a class="link-more" href="/receptes/">
+            Visas <Icon name="arrow-right" />
+          </a>
+        </div>
+        <div class="rail">
+          {featured.map((r, i) => (
+            <RecipeCard
+              recipe={r}
+              cuisine={cuisineById.get(r.data.cuisine.id)}
+              category={categoryById.get(r.data.category.id)}
+              wide
+              eager={i < 2}
+            />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Categories -->
+  <section class="section container" aria-labelledby="cat-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Pēc ēdiena veida</span>
+        <h2 id="cat-title">Kategorijas</h2>
+      </div>
+    </div>
+    <div class="rail cat-rail">
+      {
+        categories.map((c) => (
+          <a class="cat-bubble" href={categoryUrl(c.id)} style={`--c:${c.data.color}`}>
+            <span class="bubble" aria-hidden="true">
+              {c.data.emoji}
+            </span>
+            {c.data.name}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Cuisines directory -->
+  <section class="section container" aria-labelledby="cuisine-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Ceļojums pa pasauli</span>
+        <h2 id="cuisine-title">Pasaules virtuves</h2>
+      </div>
+      <a class="link-more" href="/virtuves/">
+        Visas <Icon name="arrow-right" />
+      </a>
+    </div>
+    <div class="cuisine-grid">
+      {
+        cuisines.map((c, i) => {
+          const n = countBy('cuisine', c.id);
+          return (
+            <a class:list={['cuisine-tile', { 'cuisine-tile--featured': i === 0 }]} href={cuisineUrl(c.id)} style={`--c:${c.data.color}`}>
+              <div>
+                <h3>{c.data.name}</h3>
+                {c.data.region && <p class="region">{c.data.region}</p>}
+              </div>
+              <span class="count">
+                {n} {plural(n, 'recepte', 'receptes')}
+              </span>
+              <span class="emoji" aria-hidden="true">
+                {c.data.emoji}
+              </span>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <!-- Sweets & preserves promo -->
+  <section class="section container promo-wrap">
+    {
+      promo.map((c) => {
+        const n = countBy('category', c.id);
+        return (
+          <a class="promo" href={categoryUrl(c.id)} style={`--c:${c.data.color}`}>
+            <div>
+              <span class="eyebrow">{n} {plural(n, 'recepte', 'receptes')}</span>
+              <h2>{c.data.name}</h2>
+              <p>{c.data.description}</p>
+              <span class="btn btn-ghost promo-btn">
+                Skatīt <Icon name="arrow-right" />
+              </span>
+            </div>
+            <span class="promo-emoji" aria-hidden="true">
+              {c.data.emoji}
+            </span>
+          </a>
+        );
+      })
+    }
+  </section>
+
+  <div class="container">
+    <AdSlot slot="inFeed" />
+  </div>
+
+  <!-- Latvian classics -->
+  {
+    latvian.length > 0 && (
+      <section class="section container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">🇱🇻 No mūsu virtuves</span>
+            <h2>Latviešu klasika</h2>
+          </div>
+          <a class="link-more" href={cuisineUrl('latviesu')}>
+            Visas <Icon name="arrow-right" />
+          </a>
+        </div>
+        <div class="rail">
+          {latvian.map((r) => (
+            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide showBadge={false} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Latest -->
+  <section class="section container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Svaigi no virtuves</span>
+        <h2>Jaunākās receptes</h2>
+      </div>
+      <a class="link-more" href="/receptes/">
+        Visas <Icon name="arrow-right" />
+      </a>
+    </div>
+    <div class="grid">
+      {latest.map((r) => <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} />)}
+    </div>
+    <div class="more-cta">
+      <a class="btn btn-primary" href="/receptes/">
+        Skatīt visas {recipes.length} receptes <Icon name="arrow-right" />
+      </a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
+  @media (min-width: 900px) {
+    .hero {
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      align-items: center;
+      gap: 56px;
+      padding-top: 48px;
+      padding-bottom: 32px;
+    }
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 1.6rem + 5vw, 4.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+    margin-top: 10px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--brand);
+  }
+  .hero-copy > p {
+    margin-top: 14px;
+    color: var(--ink-2);
+    font-size: 1.05rem;
+    max-width: 46ch;
+  }
+  .hero-search {
+    margin-top: 22px;
+    max-width: 520px;
+  }
+  .hero-chips {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+    padding-bottom: 2px;
+  }
+  .hero-chips::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: 900px) {
+    .hero-chips {
+      flex-wrap: wrap;
+      margin-inline: 0;
+      padding-inline: 0;
+    }
+  }
+  .hero-stats {
+    display: flex;
+    gap: 28px;
+    margin-top: 26px;
+  }
+  .hero-stats div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-stats dd {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+  }
+  .hero-stats dt {
+    font-size: 0.78rem;
+    color: var(--ink-3);
+    margin-top: 4px;
+  }
+
+  .hero-feature {
+    position: relative;
+    display: block;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    aspect-ratio: 16 / 12;
+    box-shadow: var(--shadow-lg);
+    isolation: isolate;
+  }
+  @media (min-width: 900px) {
+    .hero-feature {
+      aspect-ratio: 4 / 4.6;
+      transform: rotate(1.5deg);
+      transition: transform 0.5s var(--ease);
+    }
+    .hero-feature:hover {
+      transform: rotate(0deg) scale(1.01);
+    }
+  }
+  .hero-feature-media,
+  .hero-feature-media :global(img),
+  .hero-feature-media :global(.art) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-feature-card {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 16px 18px;
+    border-radius: var(--r);
+    background: var(--glass);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    box-shadow: var(--shadow);
+  }
+  .hero-feature-card h2 {
+    font-size: 1.45rem;
+    margin-top: 4px;
+  }
+  .hero-feature-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--ink-2);
+  }
+  .hero-feature-meta :global(svg) {
+    width: 16px;
+    height: 16px;
+  }
+  .dot {
+    opacity: 0.5;
+  }
+
+  .cat-rail {
+    gap: 6px;
+  }
+
+  .promo-wrap {
+    display: grid;
+    gap: 14px;
+  }
+  @media (min-width: 760px) {
+    .promo-wrap {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+  .promo {
+    --c: var(--brand);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    min-height: 200px;
+    padding: 24px;
+    border-radius: var(--r-lg);
+    background:
+      radial-gradient(circle at 100% 100%, color-mix(in oklab, var(--c) 30%, transparent), transparent 60%),
+      color-mix(in oklab, var(--c) 12%, var(--surface));
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--c) 20%, transparent);
+    isolation: isolate;
+    transition: transform 0.25s var(--ease);
+  }
+  .promo:hover {
+    transform: translateY(-3px);
+  }
+  .promo > div {
+    max-width: 62%;
+  }
+  .promo .eyebrow {
+    color: var(--c);
+  }
+  .promo h2 {
+    font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.2rem);
+    margin-top: 6px;
+  }
+  .promo p {
+    margin-top: 8px;
+    color: var(--ink-2);
+    font-size: 0.92rem;
+  }
+  .promo-btn {
+    margin-top: 16px;
+    min-height: 42px;
+    padding: 0 18px;
+  }
+  .promo-emoji {
+    position: absolute;
+    right: -10px;
+    bottom: -18px;
+    font-size: clamp(7rem, 26vw, 10rem);
+    line-height: 1;
+    transform: rotate(-10deg);
+    filter: drop-shadow(0 18px 20px rgb(0 0 0 / 0.2));
+    z-index: -1;
+    transition: transform 0.5s var(--ease);
+  }
+  .promo:hover .promo-emoji {
+    transform: rotate(0deg) scale(1.06);
+  }
+
+  .more-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+</style>

@@ -1,0 +1,177 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import AdsLoader from '../components/AdsLoader.astro';
+import { SITE } from '../site.config';
+import { getCuisines, getCategories, cuisineUrl, categoryUrl } from '../lib/recipes';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const { title, description = SITE.description, image, type = 'website', noindex = false, jsonLd } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${SITE.tagline}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image || '/og-image.png', Astro.site);
+const path = Astro.url.pathname;
+
+const [cuisines, categories] = await Promise.all([getCuisines(), getCategories()]);
+
+const tabs = [
+  { href: '/', label: 'Sākums', icon: 'home', match: (p: string) => p === '/' },
+  {
+    href: '/receptes/',
+    label: 'Receptes',
+    icon: 'book',
+    match: (p: string) => p.startsWith('/receptes') || p.startsWith('/recepte/') || p.startsWith('/kategorijas'),
+  },
+  { href: '/virtuves/', label: 'Virtuves', icon: 'globe', match: (p: string) => p.startsWith('/virtuves') },
+  { href: '/izlase/', label: 'Izlase', icon: 'heart', match: (p: string) => p.startsWith('/izlase') },
+] as const;
+---
+
+<!doctype html>
+<html lang={SITE.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:title" content={title || SITE.name} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#faf6f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content={SITE.name} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..800;1,500..800&family=Inter:wght@400..700&family=Noto+Color+Emoji&display=swap"
+    />
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pāriet uz saturu</a>
+
+    <header class="site-header" id="site-header">
+      <div class="container">
+        <a class="logo" href="/" aria-label={`${SITE.name}, sākumlapa`}>
+          <span class="logo-mark"><Icon name="utensils" /></span>
+          {SITE.name}
+        </a>
+        <nav class="main-nav" aria-label="Galvenā navigācija">
+          {
+            tabs.map((t) => (
+              <a href={t.href} aria-current={t.match(path) ? 'page' : undefined}>
+                {t.label}
+              </a>
+            ))
+          }
+        </nav>
+        <div class="header-actions">
+          <a class="header-search" href="/receptes/#meklet">
+            <Icon name="search" />
+            Meklēt receptes...
+          </a>
+          <a class="icon-btn header-search-mobile" href="/receptes/#meklet" aria-label="Meklēt receptes">
+            <Icon name="search" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="about">
+            <a class="logo" href="/">
+              <span class="logo-mark"><Icon name="utensils" /></span>
+              {SITE.name}
+            </a>
+            <p class="footer-about">{SITE.description}</p>
+          </div>
+          <div>
+            <h4>Virtuves</h4>
+            <ul>
+              {cuisines.map((c) => <li><a href={cuisineUrl(c.id)}>{c.data.name}</a></li>)}
+            </ul>
+          </div>
+          <div>
+            <h4>Kategorijas</h4>
+            <ul>
+              {categories.map((c) => <li><a href={categoryUrl(c.id)}>{c.data.name}</a></li>)}
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© {new Date().getFullYear()} {SITE.name}. Gatavots ar mīlestību Latvijā.</span>
+          <a href="/privatums/">Privātuma politika</a>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="tabbar" aria-label="Apakšējā navigācija">
+      <ul>
+        {
+          tabs.map((t) => (
+            <li>
+              <a href={t.href} aria-current={t.match(path) ? 'page' : undefined}>
+                <span class="tab-icon">
+                  <Icon name={t.icon} />
+                </span>
+                {t.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      import { initFavorites } from '../lib/favorites';
+
+      initFavorites();
+
+      const header = document.getElementById('site-header');
+      const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 4);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    </script>
+    <AdsLoader />
+  </body>
+</html>
+
+<style>
+  .footer-about {
+    margin-top: 12px;
+    max-width: 40ch;
+  }
+</style>

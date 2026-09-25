@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCatalog, cuisineUrl, plural } from '../../lib/recipes';
+
+const { recipes, cuisines } = await getCatalog();
+const count = (id: string) => recipes.filter((r) => r.data.cuisine.id === id).length;
+---
+
+<Base title="Pasaules virtuves" description="Latviešu, Eiropas, Āzijas, Tuvo Austrumu, Amerikas un citu pasaules virtuvju receptes.">
+  <section class="page-hero container">
+    <span class="eyebrow">Ceļojums pa pasauli</span>
+    <h1>Pasaules virtuves</h1>
+    <p>Sāc ar mājām un dodies tālāk. Katrai virtuvei savas garšas, tradīcijas un iecienītākie ēdieni.</p>
+  </section>
+  <section class="section container">
+    <div class="cuisine-grid cuisines-page">
+      {
+        cuisines.map((c, i) => {
+          const n = count(c.id);
+          return (
+            <a class:list={['cuisine-tile', { 'cuisine-tile--featured': i === 0 }]} href={cuisineUrl(c.id)} style={`--c:${c.data.color}`}>
+              <div>
+                <h3>{c.data.name}</h3>
+                <p class="region">{c.data.description}</p>
+              </div>
+              <span class="count">
+                {n} {plural(n, 'recepte', 'receptes')}
+              </span>
+              <span class="emoji" aria-hidden="true">
+                {c.data.emoji}
+              </span>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+</Base>
+
+<style>
+  .cuisines-page :global(.cuisine-tile) {
+    min-height: 180px;
+  }
+  .cuisines-page :global(.region) {
+    max-width: 78%;
+  }
+</style>

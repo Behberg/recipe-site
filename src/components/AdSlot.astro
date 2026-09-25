@@ -1,0 +1,44 @@
+---
+import { ADS, adsEnabled } from '../site.config';
+
+/**
+ * A single Google AdSense unit.
+ *
+ * Design rules so ads never feel intrusive:
+ * - always clearly labelled "Reklāma" and visually separated from the recipe,
+ * - space is reserved up front, so the page never jumps when an ad loads,
+ * - the AdSense script loads only after the page itself has finished loading,
+ * - units are filled only when they are about to scroll into view,
+ * - no pop-ups, no sticky or overlay ads, nothing inside the cooking mode.
+ *
+ * When no AdSense client ID is configured nothing is rendered (in dev a placeholder shows where ads go).
+ */
+interface Props {
+  slot: keyof typeof ADS.slots;
+  class?: string;
+}
+
+const { slot, class: className } = Astro.props;
+const enabled = adsEnabled() && ADS.slots[slot];
+const showPlaceholder = !enabled && import.meta.env.DEV;
+---
+
+{
+  enabled ? (
+    <aside class:list={['ad', className]} aria-label="Reklāma">
+      <span class="ad-label">Reklāma</span>
+      <ins
+        class="adsbygoogle ad-slot"
+        data-ad-client={ADS.client}
+        data-ad-slot={ADS.slots[slot]}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+    </aside>
+  ) : showPlaceholder ? (
+    <aside class:list={['ad', className]} aria-hidden="true">
+      <span class="ad-label">Reklāma</span>
+      <div class="ad-placeholder">Reklāmas vieta ({slot}), redzama tikai izstrādes režīmā</div>
+    </aside>
+  ) : null
+}

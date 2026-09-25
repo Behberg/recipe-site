@@ -1,0 +1,294 @@
+---
+import Icon from './Icon.astro';
+import RecipeCard from './RecipeCard.astro';
+import AdSlot from './AdSlot.astro';
+import { ADS } from '../site.config';
+import type { Recipe, Cuisine, Category } from '../lib/recipes';
+
+/**
+ * Filterable recipe grid. All filtering happens in the browser, so it is instant
+ * and works on a fully static Netlify deploy. Filters are mirrored in the URL,
+ * so a filtered view can be shared or bookmarked.
+ */
+interface Props {
+  recipes: Recipe[];
+  cuisines: Cuisine[];
+  categories: Category[];
+  search?: boolean;
+  cuisineFilter?: boolean;
+  categoryFilter?: boolean;
+}
+
+const { recipes, cuisines, categories, search = true, cuisineFilter = true, categoryFilter = true } = Astro.props;
+const cuisineById = new Map(cuisines.map((c) => [c.id, c]));
+const categoryById = new Map(categories.map((c) => [c.id, c]));
+
+const count = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key].id === id).length;
+const usedCuisines = cuisines.filter((c) => count('cuisine', c.id) > 0);
+const usedCategories = categories.filter((c) => count('category', c.id) > 0);
+---
+
+<div class="browser" data-browser>
+  <div class="filters">
+    {
+      search && (
+        <div class="search-field" id="meklet">
+          <Icon name="search" />
+          <input
+            type="search"
+            data-filter-q
+            placeholder="Meklē pēc nosaukuma vai sastāvdaļas..."
+            aria-label="Meklēt receptes"
+            enterkeyhint="search"
+            autocomplete="off"
+          />
+          <button type="button" class="icon-btn clear" data-clear-q aria-label="Notīrīt meklēšanu" hidden>
+            <Icon name="x" />
+          </button>
+        </div>
+      )
+    }
+
+    {
+      categoryFilter && usedCategories.length > 1 && (
+        <div class="chip-row" role="group" aria-label="Kategorija" data-group="kategorija">
+          {usedCategories.map((c) => (
+            <button type="button" class="chip" data-value={c.id} aria-pressed="false">
+              <span aria-hidden="true">{c.data.emoji}</span>
+              {c.data.name}
+              <span class="count">{count('category', c.id)}</span>
+            </button>
+          ))}
+        </div>
+      )
+    }
+
+    {
+      cuisineFilter && usedCuisines.length > 1 && (
+        <div class="chip-row" role="group" aria-label="Virtuve" data-group="virtuve">
+          {usedCuisines.map((c) => (
+            <button type="button" class="chip" data-value={c.id} aria-pressed="false">
+              <span aria-hidden="true">{c.data.emoji}</span>
+              {c.data.name}
+              <span class="count">{count('cuisine', c.id)}</span>
+            </button>
+          ))}
+        </div>
+      )
+    }
+
+    <div class="chip-row" role="group" aria-label="Laiks un grūtība">
+      <div class="chip-group" data-group="laiks">
+        <button type="button" class="chip" data-value="30" aria-pressed="false">⚡ Līdz 30 min</button>
+        <button type="button" class="chip" data-value="60" aria-pressed="false">⏱️ Līdz 1 h</button>
+      </div>
+      <span class="chip-sep" aria-hidden="true"></span>
+      <div class="chip-group" data-group="grutiba">
+        <button type="button" class="chip" data-value="viegli" aria-pressed="false">Viegli</button>
+        <button type="button" class="chip" data-value="vidēji" aria-pressed="false">Vidēji</button>
+        <button type="button" class="chip" data-value="sarežģīti" aria-pressed="false">Sarežģīti</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="result-bar">
+    <p data-result-count aria-live="polite">{recipes.length} receptes</p>
+    <button type="button" class="reset" data-reset data-reset-bar hidden>
+      <Icon name="refresh" /> Notīrīt filtrus
+    </button>
+  </div>
+
+  <div class="grid" data-grid>
+    {
+      recipes.map((r, i) => (
+        <>
+          <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} eager={i < 4} />
+          {(i + 1) % ADS.feedEvery === 0 && i < recipes.length - 1 && (
+            <div class="full ad-feed">
+              <AdSlot slot="inFeed" />
+            </div>
+          )}
+        </>
+      ))
+    }
+  </div>
+
+  <div class="empty" data-empty hidden>
+    <div class="big">🥄</div>
+    <h3>Nekas netika atrasts</h3>
+    <p>Pamēģini citu vārdu vai notīri filtrus.</p>
+    <button type="button" class="btn btn-ghost" data-reset style="margin-top:16px">Notīrīt filtrus</button>
+  </div>
+</div>
+
+<script>
+  import { plural } from '../lib/format';
+
+  const normalize = (s: string) =>
+    s
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/\p{Diacritic}/gu, '');
+
+  document.querySelectorAll<HTMLElement>('[data-browser]').forEach((root) => {
+    const input = root.querySelector<HTMLInputElement>('[data-filter-q]');
+    const clearBtn = root.querySelector<HTMLButtonElement>('[data-clear-q]');
+    const grid = root.querySelector<HTMLElement>('[data-grid]')!;
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-recipe]'));
+    const countEl = root.querySelector<HTMLElement>('[data-result-count]')!;
+    const emptyEl = root.querySelector<HTMLElement>('[data-empty]')!;
+    const resetBtns = root.querySelectorAll<HTMLButtonElement>('[data-reset]');
+    const groups = Array.from(root.querySelectorAll<HTMLElement>('[data-group]'));
+
+    const index = cards.map((el) => ({ el, text: normalize(el.dataset.search || '') }));
+    const state: Record<string, string> = {};
+
+    const params = new URLSearchParams(location.search);
+    if (input && params.get('q')) input.value = params.get('q')!;
+    groups.forEach((g) => {
+      const v = params.get(g.dataset.group!);
+      if (v && g.querySelector(`[data-value="${CSS.escape(v)}"]`)) state[g.dataset.group!] = v;
+    });
+
+    function apply() {
+      const q = normalize(input?.value.trim() || '');
+      const terms = q.split(/\s+/).filter(Boolean);
+      let shown = 0;
+      for (const { el, text } of index) {
+        const d = el.dataset;
+        const ok =
+          terms.every((t) => text.includes(t)) &&
+          (!state.kategorija || d.category === state.kategorija) &&
+          (!state.virtuve || d.cuisine === state.virtuve) &&
+          (!state.laiks || Number(d.time) <= Number(state.laiks)) &&
+          (!state.grutiba || d.difficulty === state.grutiba);
+        el.hidden = !ok;
+        if (ok) shown++;
+      }
+      const filtered = terms.length > 0 || Object.values(state).some(Boolean);
+      grid.classList.toggle('is-filtered', filtered);
+      emptyEl.hidden = shown > 0;
+      countEl.textContent = `${shown} ${plural(shown, 'recepte', 'receptes')}`;
+      root.querySelector<HTMLElement>('[data-reset-bar]')!.hidden = !filtered;
+      if (clearBtn) clearBtn.hidden = !input?.value;
+
+      groups.forEach((g) =>
+        g.querySelectorAll<HTMLButtonElement>('.chip').forEach((c) => {
+          c.setAttribute('aria-pressed', String(state[g.dataset.group!] === c.dataset.value));
+        }),
+      );
+
+      const url = new URL(location.href);
+      ['q', ...groups.map((g) => g.dataset.group!)].forEach((k) => url.searchParams.delete(k));
+      if (input?.value.trim()) url.searchParams.set('q', input.value.trim());
+      Object.entries(state).forEach(([k, v]) => v && url.searchParams.set(k, v));
+      history.replaceState(null, '', url);
+    }
+
+    groups.forEach((g) =>
+      g.addEventListener('click', (e) => {
+        const chip = (e.target as HTMLElement).closest<HTMLButtonElement>('.chip');
+        if (!chip) return;
+        const key = g.dataset.group!;
+        state[key] = state[key] === chip.dataset.value ? '' : chip.dataset.value!;
+        apply();
+      }),
+    );
+
+    let t: number | undefined;
+    input?.addEventListener('input', () => {
+      window.clearTimeout(t);
+      t = window.setTimeout(apply, 80);
+    });
+    input?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') input.blur();
+    });
+    clearBtn?.addEventListener('click', () => {
+      input!.value = '';
+      input!.focus();
+      apply();
+    });
+    resetBtns.forEach((b) =>
+      b.addEventListener('click', () => {
+        if (input) input.value = '';
+        Object.keys(state).forEach((k) => (state[k] = ''));
+        apply();
+      }),
+    );
+
+    apply();
+
+    // The header search icon links to #meklet: focus the field straight away.
+    if (location.hash === '#meklet' && input) {
+      input.focus({ preventScroll: true });
+    }
+  });
+</script>
+
+<style>
+  .filters {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .chip-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding: 2px var(--gutter);
+    overscroll-behavior-x: contain;
+  }
+  .chip-row::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: 900px) {
+    .chip-row {
+      flex-wrap: wrap;
+      margin-inline: 0;
+      padding-inline: 0;
+    }
+  }
+  .chip-group {
+    display: flex;
+    gap: 8px;
+  }
+  .chip-sep {
+    flex-shrink: 0;
+    width: 1px;
+    height: 24px;
+    background: var(--line-strong);
+    margin-inline: 2px;
+  }
+  .result-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 44px;
+    margin-block: 8px 12px;
+    color: var(--ink-3);
+    font-size: 0.88rem;
+    font-weight: 500;
+  }
+  .reset {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--brand);
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 8px 0;
+  }
+  .reset :global(svg) {
+    width: 16px;
+    height: 16px;
+  }
+  .grid.is-filtered :global(.ad-feed) {
+    display: none;
+  }
+  [hidden] {
+    display: none !important;
+  }
+</style>
