@@ -33,7 +33,7 @@ ingredients:
   - name: "piparmētras"
     amount: 1
     unit: "saujiņa"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
     group: "Mērcei"

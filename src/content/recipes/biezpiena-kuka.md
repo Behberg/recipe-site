@@ -45,7 +45,7 @@ ingredients:
     amount: 2
     unit: "ēd. k."
     group: "Pildījumam"
-  - name: "citrona miziņa"
+  - name: "citrons (miziņai)"
     amount: 1
     unit: "gab."
     group: "Pildījumam"

@@ -15,7 +15,7 @@ ingredients:
   - name: "olīveļļa"
     amount: 80
     unit: "ml"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 2
     unit: "gab."
   - name: "ķiploki"

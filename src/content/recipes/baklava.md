@@ -37,7 +37,7 @@ ingredients:
     amount: 100
     unit: "g"
     group: "Sīrupam"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
     group: "Sīrupam"

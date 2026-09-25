@@ -21,7 +21,7 @@ ingredients:
   - name: "rozīnes"
     amount: 60
     unit: "g"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
   - name: "rīvmaize"

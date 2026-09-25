@@ -18,6 +18,7 @@ import {
   imageUrl,
   type Recipe,
 } from '../../lib/recipes';
+import { unitFor } from '../../lib/format';
 
 export async function getStaticPaths() {
   const recipes = await getRecipes();
@@ -55,8 +56,12 @@ function detectTimer(text: string): number | null {
 let ingIndex = 0;
 const steps = d.steps.map((text) => ({ text, timer: detectTimer(text) }));
 
-const ingredientText = (i: (typeof d.ingredients)[number]) =>
-  [i.amount ? formatAmount(i.amount) : '', i.unit, i.name].filter(Boolean).join(' ');
+// Name first, amount after: "Kviešu milti: 500 g". With the amount first Latvian would need the
+// genitive ("500 g kviešu miltu"), so this keeps the names grammatical in their normal form.
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const amountText = (i: (typeof d.ingredients)[number]) =>
+  [i.amount ? formatAmount(i.amount) : '', i.unit && i.amount ? unitFor(i.unit, i.amount) : i.unit].filter(Boolean).join(' ');
+const ingredientText = (i: (typeof d.ingredients)[number]) => (amountText(i) ? `${cap(i.name)}: ${amountText(i)}` : cap(i.name));
 
 // Related: same category first, then same cuisine.
 const related = recipes
@@ -202,22 +207,21 @@ const useMultiplier = Boolean(d.yield);
                           <Icon name="check" />
                         </label>
                         <span class="ing-text">
+                          <label for={id} class="ing-name">{cap(i.name)}</label>
                           {i.amount ? (
                             <button
                               type="button"
                               class="qty qty-btn"
                               data-amount={i.amount}
                               data-unit={i.unit ?? ''}
-                              data-name={i.name}
-                              aria-label={`${formatAmount(i.amount)} ${i.unit ?? ''} ${i.name}: norādīt, cik tev ir`}
+                              data-name={cap(i.name)}
+                              aria-label={`${cap(i.name)}: ${amountText(i)}. Norādīt, cik tev ir`}
                             >
-                              {formatAmount(i.amount)}
-                              {i.unit ? ` ${i.unit}` : ''}
+                              {amountText(i)}
                             </button>
                           ) : (
                             i.unit && <b class="qty">{i.unit}</b>
-                          )}{' '}
-                          <label for={id}>{i.name}</label>
+                          )}
                         </span>
                       </li>
                     );
@@ -244,7 +248,7 @@ const useMultiplier = Boolean(d.yield);
                   <p>{s.text}</p>
                   {s.timer && (
                     <button type="button" class="timer-chip no-print" data-timer={s.timer} data-timer-label={`${i + 1}. solis`} data-timer-recipe={d.title}>
-                      <Icon name="timer" /> Taimeris {formatMinutes(Math.round(s.timer / 60))}
+                      <Icon name="timer" /> <span data-timer-text>Taimeris {formatMinutes(Math.round(s.timer / 60))}</span>
                     </button>
                   )}
                 </div>
@@ -320,7 +324,7 @@ const useMultiplier = Boolean(d.yield);
                 <p>{s.text}</p>
                 {s.timer && (
                   <button type="button" class="btn btn-ghost cook-timer" data-timer={s.timer} data-timer-label={`${i + 1}. solis`} data-timer-recipe={d.title}>
-                    <Icon name="timer" /> Sākt taimeri: {formatMinutes(Math.round(s.timer / 60))}
+                    <Icon name="timer" /> <span data-timer-text>Sākt taimeri: {formatMinutes(Math.round(s.timer / 60))}</span>
                   </button>
                 )}
               </section>
@@ -342,15 +346,14 @@ const useMultiplier = Boolean(d.yield);
           <ul>
             {d.ingredients.map((i) => (
               <li>
+                <span>{cap(i.name)}</span>
                 {i.amount ? (
                   <b class="qty" data-amount={i.amount} data-unit={i.unit ?? ''}>
-                    {formatAmount(i.amount)}
-                    {i.unit ? ` ${i.unit}` : ''}
+                    {amountText(i)}
                   </b>
                 ) : (
                   i.unit && <b>{i.unit}</b>
-                )}{' '}
-                {i.name}
+                )}
               </li>
             ))}
           </ul>
@@ -386,7 +389,7 @@ const useMultiplier = Boolean(d.yield);
 </Base>
 
 <script>
-  import { formatAmount } from '../../lib/format';
+  import { formatAmount, unitFor } from '../../lib/format';
   import { toast } from '../../lib/favorites';
 
   const page = document.querySelector<HTMLElement>('[data-recipe-page]')!;
@@ -423,7 +426,7 @@ const useMultiplier = Boolean(d.yield);
         amount *= down[1];
         unit = down[0];
       }
-      q.textContent = formatAmount(amount) + (unit ? ' ' + unit : '');
+      q.textContent = formatAmount(amount) + (unit ? ' ' + unitFor(unit, amount) : '');
     });
     if (servingsOut) servingsOut.textContent = pretty(baseServings * factor);
     mult?.querySelectorAll<HTMLButtonElement>('button').forEach((b) => b.setAttribute('aria-pressed', String(!fromCustom && Number(b.dataset.factor) === factor)));
@@ -480,7 +483,7 @@ const useMultiplier = Boolean(d.yield);
     const family = unit === 'g' || unit === 'kg' ? ['g', 'kg'] : unit === 'ml' || unit === 'l' ? ['ml', 'l'] : null;
     unitSelect.hidden = !family;
     unitFixed.hidden = !!family;
-    unitFixed.textContent = unit;
+    unitFixed.textContent = unitFor(unit, Number(btn.dataset.amount) * factor);
     if (family) {
       unitSelect.replaceChildren(...family.map((u) => new Option(u, u)));
       unitSelect.value = unit;
@@ -932,6 +935,12 @@ const useMultiplier = Boolean(d.yield);
     outline-offset: 2px;
   }
   .ing-text {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
     transition: opacity 0.2s, color 0.2s;
   }
   .ing input:checked ~ .ing-text {
@@ -940,7 +949,13 @@ const useMultiplier = Boolean(d.yield);
     text-decoration-thickness: 1.5px;
   }
   .qty {
+    flex-shrink: 0;
     font-weight: 700;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .ing-name {
+    min-width: 0;
   }
   .qty-btn {
     padding: 0 1px;
@@ -1129,6 +1144,12 @@ const useMultiplier = Boolean(d.yield);
     font-weight: 600;
     font-size: 0.85rem;
     transition: transform 0.15s var(--ease);
+  }
+  .timer-chip.is-running,
+  .cook-timer.is-running {
+    background: var(--brand);
+    color: var(--brand-ink);
+    box-shadow: none;
   }
   .timer-chip:active {
     transform: scale(0.95);
@@ -1358,9 +1379,21 @@ const useMultiplier = Boolean(d.yield);
     margin-bottom: 8px;
   }
   .cook-ing ul {
-    padding-left: 18px;
+    list-style: none;
+    padding: 0;
     display: grid;
-    gap: 6px;
+    gap: 0;
+  }
+  .cook-ing li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--line-strong);
+  }
+  .cook-ing li b {
+    flex-shrink: 0;
+    white-space: nowrap;
   }
   .cook-nav {
     display: grid;

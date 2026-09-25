@@ -39,7 +39,7 @@ ingredients:
   - name: "eļļa"
     amount: 3
     unit: "ēd. k."
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
   - name: "sāls, koriandrs, rīsi"

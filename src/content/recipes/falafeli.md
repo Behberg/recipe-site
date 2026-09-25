@@ -42,7 +42,7 @@ ingredients:
     amount: 4
     unit: "ēd. k."
     group: "Mērcei"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
     group: "Mērcei"

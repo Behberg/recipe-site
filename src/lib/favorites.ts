@@ -19,13 +19,26 @@ function save(ids: string[]) {
 }
 
 let toastTimer: number | undefined;
-export function toast(message: string) {
+/** Short message at the bottom of the screen, optionally with one action button (e.g. "Atcelt"). */
+export function toast(message: string, action?: { label: string; onClick: () => void }) {
   const el = document.getElementById('toast');
   if (!el) return;
   el.textContent = message;
+  el.classList.toggle('has-action', !!action);
+  if (action) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'toast-action';
+    btn.textContent = action.label;
+    btn.addEventListener('click', () => {
+      action.onClick();
+      el.classList.remove('show');
+    });
+    el.append(btn);
+  }
   el.classList.add('show');
   window.clearTimeout(toastTimer);
-  toastTimer = window.setTimeout(() => el.classList.remove('show'), 2200);
+  toastTimer = window.setTimeout(() => el.classList.remove('show'), action ? 5000 : 2200);
 }
 
 export function syncFavorites() {

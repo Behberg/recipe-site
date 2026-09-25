@@ -32,3 +32,28 @@ export function formatAmount(n: number): string {
   for (const [v, s] of FRACTIONS) if (Math.abs(frac - v) < 0.04) return (whole ? String(whole) : '') + s;
   return String(Math.round(n * 10) / 10).replace('.', ',');
 }
+
+// Written-out units agree with the number: 1 saujiņa, 2 saujiņas; 1 zariņš, 3 zariņi.
+// Abbreviations (g, ml, ēd. k., tējk., gab., daiv.) never change.
+const UNIT_FORMS: [string, string][] = [
+  ['saujiņa', 'saujiņas'],
+  ['šķēle', 'šķēles'],
+  ['kāts', 'kāti'],
+  ['zariņš', 'zariņi'],
+  ['loksne', 'loksnes'],
+  ['lapiņa', 'lapiņas'],
+  ['lapa', 'lapas'],
+  ['tase', 'tases'],
+  ['bumbiņa', 'bumbiņas'],
+  ['bundža', 'bundžas'],
+  ['šķipsna', 'šķipsnas'],
+  ['galviņa', 'galviņas'],
+];
+
+export function unitFor(unit: string, amount: number): string {
+  const pair = UNIT_FORMS.find(([one, many]) => unit === one || unit === many);
+  if (!pair) return unit;
+  const whole = Number.isInteger(Math.round(amount * 100) / 100) ? Math.round(amount) : NaN;
+  const singular = whole % 10 === 1 && whole % 100 !== 11;
+  return singular ? pair[0] : pair[1];
+}

@@ -1229,8 +1229,8 @@ p {
   left: 50%;
   transform: translateX(-50%);
   display: grid;
-  gap: 8px;
-  width: min(360px, calc(100vw - 24px));
+  gap: 6px;
+  width: min(290px, calc(100vw - 24px));
   pointer-events: none;
 }
 .ktimers.in-dialog {
@@ -1240,8 +1240,8 @@ p {
   pointer-events: auto;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px 8px 8px 10px;
+  gap: 8px;
+  padding: 4px 4px 4px 8px;
   border-radius: var(--pill);
   background: var(--ink);
   color: var(--bg);
@@ -1250,12 +1250,12 @@ p {
 }
 .ktimer-ring {
   flex-shrink: 0;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: conic-gradient(var(--honey) var(--p, 0%), rgb(255 255 255 / 0.18) 0);
-  -webkit-mask: radial-gradient(circle, transparent 9px, #000 10px);
-  mask: radial-gradient(circle, transparent 9px, #000 10px);
+  -webkit-mask: radial-gradient(circle, transparent 6px, #000 7px);
+  mask: radial-gradient(circle, transparent 6px, #000 7px);
 }
 .ktimer-text {
   flex: 1;
@@ -1265,14 +1265,14 @@ p {
   line-height: 1.15;
 }
 .ktimer-label {
-  font-size: 0.72rem;
+  font-size: 0.66rem;
   opacity: 0.75;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .ktimer-time {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.01em;
 }
@@ -1280,9 +1280,9 @@ p {
   flex-shrink: 0;
   display: grid;
   place-items: center;
-  min-width: 38px;
-  height: 38px;
-  padding: 0 10px;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
   border-radius: var(--pill);
   background: rgb(255 255 255 / 0.14);
   font-weight: 700;
@@ -1305,7 +1305,32 @@ p {
 .ktimer-ok {
   background: var(--brand-ink);
   color: var(--brand);
-  padding: 0 16px;
+  padding: 0 14px;
+}
+.ktimer-btn svg {
+  width: 14px;
+  height: 14px;
+}
+.ktimer-btn[data-act='cancel'] {
+  background: rgb(255 255 255 / 0.22);
+}
+.toast.has-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 6px 6px 16px;
+}
+/* Only clickable while visible, so a hidden toast never blocks the page. */
+.toast.has-action.show {
+  pointer-events: auto;
+}
+.toast-action {
+  padding: 8px 14px;
+  border-radius: var(--pill);
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 @keyframes timer-ring {
   0%,

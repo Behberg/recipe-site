@@ -24,7 +24,7 @@ ingredients:
   - name: "kanēlis"
     amount: 1
     unit: "tējk."
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
   - name: "saldais krējums pasniegšanai"

@@ -16,7 +16,7 @@ ingredients:
   - name: "cukurs"
     amount: 700
     unit: "g"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
 steps:

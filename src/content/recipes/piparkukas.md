@@ -40,7 +40,7 @@ ingredients:
   - name: "malts kardamons"
     amount: 0.5
     unit: "tējk."
-  - name: "apelsīna miziņa"
+  - name: "apelsīns (miziņai)"
     amount: 1
     unit: "gab."
 steps:

@@ -15,7 +15,7 @@ ingredients:
   - name: "tahini (sezama pasta)"
     amount: 80
     unit: "g"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
   - name: "ķiploks"

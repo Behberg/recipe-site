@@ -24,7 +24,7 @@ ingredients:
   - name: "loki"
     amount: 4
     unit: "gab."
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 2
     unit: "gab."
   - name: "olīveļļa"

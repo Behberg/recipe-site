@@ -12,7 +12,7 @@ ingredients:
   - name: "piens"
     amount: 500
     unit: "ml"
-  - name: "citrona miziņa"
+  - name: "citrons (miziņai)"
     amount: 1
     unit: "gab."
   - name: "kanēļa standziņa"

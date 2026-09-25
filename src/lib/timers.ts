@@ -174,6 +174,7 @@ function update() {
   if (timers.some((t) => t.done)) startAlarm();
   else stopAlarm();
   render();
+  syncStarters();
   const running = timers.some((t) => !t.done && t.left == null);
   if (!running) {
     window.clearInterval(tick);
@@ -183,10 +184,45 @@ function update() {
   }
 }
 
+const keyOf = (label?: string, recipe?: string) => `${label ?? ''}|${recipe ?? ''}`;
+let lastRunningKeys = '';
+
+/**
+ * Timer buttons in the recipe show whether their timer is running. A running one reads
+ * "Izslēgt taimeri", and tapping it again switches the timer off.
+ */
+function syncStarters() {
+  const running = timers.filter((t) => !t.done).map((t) => keyOf(t.label, t.recipe));
+  const keys = running.join(',');
+  if (keys === lastRunningKeys) return;
+  lastRunningKeys = keys;
+  const set = new Set(running);
+  document.querySelectorAll<HTMLElement>('[data-timer]').forEach((b) => {
+    const on = set.has(keyOf(b.dataset.timerLabel, b.dataset.timerRecipe));
+    b.classList.toggle('is-running', on);
+    b.setAttribute('aria-pressed', String(on));
+    const text = b.querySelector<HTMLElement>('[data-timer-text]');
+    if (text) {
+      text.dataset.orig ??= text.textContent ?? '';
+      text.textContent = on ? 'Izslēgt taimeri' : text.dataset.orig;
+    }
+  });
+}
+
+function removeTimer(id: string, message = 'Taimeris izslēgts') {
+  const before = timers.length;
+  timers = timers.filter((t) => t.id !== id);
+  if (timers.length === before) return;
+  save();
+  update();
+  toast(message);
+}
+
 export function startTimer(seconds: number, label: string, recipe?: string) {
   unlockAudio();
+  const id = Math.random().toString(36).slice(2);
   timers.push({
-    id: Math.random().toString(36).slice(2),
+    id,
     label,
     recipe,
     url: location.pathname,
@@ -197,7 +233,7 @@ export function startTimer(seconds: number, label: string, recipe?: string) {
   if (timers.length > 4) timers.shift();
   save();
   update();
-  toast(`⏱️ Taimeris palaists: ${Math.round(seconds / 60)} min`);
+  toast(`⏱️ Taimeris palaists: ${Math.round(seconds / 60)} min`, { label: 'Atcelt', onClick: () => removeTimer(id) });
 }
 
 /** Moves the timer stack into an open modal dialog (or back to <body> with null). */
@@ -220,7 +256,10 @@ export function initTimers() {
     const target = e.target as HTMLElement;
     const starter = target.closest<HTMLElement>('[data-timer]');
     if (starter) {
-      startTimer(Number(starter.dataset.timer), starter.dataset.timerLabel || 'Taimeris', starter.dataset.timerRecipe);
+      const label = starter.dataset.timerLabel || 'Taimeris';
+      const running = timers.find((t) => !t.done && keyOf(t.label, t.recipe) === keyOf(label, starter.dataset.timerRecipe));
+      if (running) removeTimer(running.id);
+      else startTimer(Number(starter.dataset.timer), label, starter.dataset.timerRecipe);
       return;
     }
     const btn = target.closest<HTMLButtonElement>('.ktimer [data-act]');

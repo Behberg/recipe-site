@@ -21,7 +21,7 @@ ingredients:
   - name: "olas"
     amount: 3
     unit: "gab."
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 2
     unit: "gab."
   - name: "sāls, pipari, dilles"

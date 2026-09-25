@@ -15,7 +15,7 @@ ingredients:
   - name: "grieķu jogurts"
     amount: 150
     unit: "g"
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
   - name: "ķiploki"

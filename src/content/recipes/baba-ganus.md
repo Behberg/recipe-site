@@ -18,7 +18,7 @@ ingredients:
   - name: "ķiploks"
     amount: 1
     unit: "daiv."
-  - name: "citrona sula"
+  - name: "citrons (sulai)"
     amount: 1
     unit: "gab."
   - name: "olīveļļa"

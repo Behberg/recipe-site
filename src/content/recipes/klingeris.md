@@ -39,7 +39,7 @@ ingredients:
   - name: "sukādes"
     amount: 50
     unit: "g"
-  - name: "citrona miziņa"
+  - name: "citrons (miziņai)"
     amount: 1
     unit: "gab."
   - name: "mandeļu šķēlītes rotāšanai"
