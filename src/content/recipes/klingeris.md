@@ -4,6 +4,9 @@ description: "Svētku rauga kliņģeris ar rozīnēm, mandelēm un kardamonu. Ne
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🥨"
+icon: loaf
+iconColors: "#d9913a"
+iconExtra: "sugar"
 prepTime: 40
 cookTime: 40
 servings: 16

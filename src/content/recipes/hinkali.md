@@ -4,6 +4,9 @@ description: "Lieli gruzīnu pelmeņi ar sulīgu gaļas pildījumu un buljonu ie
 cuisine: gruzinu
 category: pamatedieni
 emoji: "🥟"
+icon: plate
+iconColors: "#efe6d0, #f3efe6"
+iconExtra: "dumplings"
 prepTime: 60
 cookTime: 15
 servings: 5

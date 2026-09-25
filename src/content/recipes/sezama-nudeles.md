@@ -4,6 +4,9 @@ description: "Ātras ķīniešu nūdeles riekstainā sezama un sojas mērcē ar 
 cuisine: kiniesu
 category: pamatedieni
 emoji: "🍜"
+icon: soup
+iconColors: "#c9a050, #7fb04a"
+iconExtra: "noodles seeds"
 prepTime: 10
 cookTime: 10
 servings: 2

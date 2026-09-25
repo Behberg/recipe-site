@@ -4,6 +4,9 @@ description: "Plānas, elastīgas krepi pankūkas saldam vai sāļam pildījumam
 cuisine: francu
 category: brokastis
 emoji: "🥞"
+icon: plate
+iconColors: "#e8c07a, #b3122e"
+iconExtra: "rolls jam"
 prepTime: 10
 cookTime: 20
 servings: 4

@@ -4,6 +4,9 @@ description: "Divreiz cepti, ļoti kraukšķīgi vistas spārniņi saldā un as�
 cuisine: korejiesu
 category: salati-un-uzkodas
 emoji: "🍗"
+icon: plate
+iconColors: "#b8421f, #f3efe6"
+iconExtra: "nuggets seeds"
 prepTime: 20
 cookTime: 30
 servings: 4

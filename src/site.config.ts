@@ -31,3 +31,13 @@ export const ADS = {
 };
 
 export const adsEnabled = () => ADS.client.trim().length > 0;
+
+/**
+ * Meklētājprogrammu pārbaudes kodi.
+ * Google Search Console: pievieno vietni kā "URL prefix", izvēlies "HTML tag" un ieraksti
+ * content="..." vērtību šeit. Tas pats ar Bing Webmaster Tools.
+ */
+export const SEARCH_VERIFICATION = {
+  google: '',
+  bing: '',
+};

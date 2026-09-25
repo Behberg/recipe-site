@@ -2,6 +2,10 @@
 // Counted words use "one|few|many" forms, picked by count() in ./index.ts.
 
 const lv = {
+  'seo.recipeTitle': '{title}: recepte',
+  'seo.recipesSuffix': 'receptes',
+  'seo.recipeDesc': '{desc} Pagatavošanas laiks: {time}. {amount}.',
+  'seo.imageAlt': '{title}: ilustrācija',
   'site.tagline': 'Latviešu receptes un pasaules virtuves',
   'site.description':
     'Latviešu receptes un gardākie ēdieni no visas pasaules: zupas, pamatēdieni, saldie ēdieni, ievārījumi un konservēšana.',
@@ -312,6 +316,10 @@ export type UIKey = keyof typeof lv;
 type Dict = Record<UIKey, string>;
 
 const en: Dict = {
+  'seo.recipeTitle': '{title} recipe',
+  'seo.recipesSuffix': 'recipes',
+  'seo.recipeDesc': '{desc} Ready in {time}. {amount}.',
+  'seo.imageAlt': '{title}: illustration',
   'site.tagline': 'Latvian recipes and world cuisines',
   'site.description': 'Latvian recipes and the best dishes from around the world: soups, mains, desserts, jams and preserves.',
 
@@ -618,6 +626,10 @@ const en: Dict = {
 };
 
 const ru: Dict = {
+  'seo.recipeTitle': '{title}: рецепт',
+  'seo.recipesSuffix': 'рецепты',
+  'seo.recipeDesc': '{desc} Время приготовления: {time}. {amount}.',
+  'seo.imageAlt': '{title}: иллюстрация',
   'site.tagline': 'Латышские рецепты и кухни мира',
   'site.description': 'Латышские рецепты и лучшие блюда со всего мира: супы, основные блюда, десерты, варенье и заготовки.',
 
@@ -924,6 +936,10 @@ const ru: Dict = {
 };
 
 const lt: Dict = {
+  'seo.recipeTitle': '{title}: receptas',
+  'seo.recipesSuffix': 'receptai',
+  'seo.recipeDesc': '{desc} Gaminimo laikas: {time}. {amount}.',
+  'seo.imageAlt': '{title}: iliustracija',
   'site.tagline': 'Latvių receptai ir pasaulio virtuvės',
   'site.description': 'Latvių receptai ir skaniausi viso pasaulio patiekalai: sriubos, pagrindiniai patiekalai, desertai, uogienės ir konservai.',
 
@@ -981,7 +997,7 @@ const lt: Dict = {
   'count.servings': 'porcija|porcijos|porcijų',
 
   'diff.viegli': 'Lengva',
-  'diff.vidēji': 'Vidutiniška',
+  'diff.vidēji': 'Vidutinė',
   'diff.sarežģīti': 'Sudėtinga',
 
   'home.eyebrow': 'Latvių receptai ir pasaulio virtuvės',
@@ -1048,7 +1064,7 @@ const lt: Dict = {
   'recipe.prep': 'Paruošimas',
   'recipe.cook': 'Gaminimas',
   'recipe.total': 'Iš viso',
-  'recipe.difficulty': 'Sudėtingumas',
+  'recipe.difficulty': 'Sunkumas',
   'recipe.start': 'Pradėti gaminti',
   'recipe.share': 'Dalintis',
   'recipe.print': 'Spausdinti',

@@ -4,6 +4,9 @@ description: "Mazi, sulīgi gaļas pelmeņi plānā mīklā. Pasniedz ar krējum
 cuisine: austrumeiropas
 category: pamatedieni
 emoji: "🥟"
+icon: plate
+iconColors: "#efe6d0, #f3efe6"
+iconExtra: "dumplings cream"
 prepTime: 90
 cookTime: 10
 servings: 6

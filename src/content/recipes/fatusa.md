@@ -4,6 +4,9 @@ description: "Libānas dārzeņu salāti ar kraukšķīgiem pitas gabaliņiem, p
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#8bb04a, #d9443a"
+iconExtra: "croutons herbs"
 prepTime: 20
 cookTime: 5
 servings: 4

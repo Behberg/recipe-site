@@ -4,6 +4,9 @@ description: "Svaiga avokado mērce ar laimu, koriandru, sīpolu un čili. Gatav
 cuisine: meksikas
 category: salati-un-uzkodas
 emoji: "🥑"
+icon: soup
+iconColors: "#8bb04a"
+iconExtra: "dip"
 prepTime: 10
 cookTime: 0
 servings: 4

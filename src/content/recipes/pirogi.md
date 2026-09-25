@@ -4,6 +4,9 @@ description: "Poļu pusmēness pelmeņi ar kartupeļu, biezpiena un cepta sīpol
 cuisine: polu
 category: pamatedieni
 emoji: "🥟"
+icon: plate
+iconColors: "#efe0c0, #f3efe6"
+iconExtra: "dumplings cream"
 prepTime: 60
 cookTime: 15
 servings: 6

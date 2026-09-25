@@ -4,6 +4,9 @@ description: "Ātrs ķīniešu vokā gatavots ēdiens no vakardienas rīsiem ar 
 cuisine: kiniesu
 category: pamatedieni
 emoji: "🍚"
+icon: skillet
+iconColors: "#f0d890, #8bb04a"
+iconExtra: "egg herbs"
 prepTime: 10
 cookTime: 10
 servings: 2

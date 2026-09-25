@@ -4,6 +4,9 @@ description: "Mājas suši ruļļi ar lasi, avokado un gurķi nori lapās. Pasni
 cuisine: japanu
 category: pamatedieni
 emoji: "🍣"
+icon: plate
+iconColors: "#1f2a1f, #fbf7ef"
+iconExtra: "rolls"
 prepTime: 45
 cookTime: 20
 servings: 4

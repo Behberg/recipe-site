@@ -4,6 +4,9 @@ description: "Sātīga nūdeļu zupa ar bagātīgu buljonu, marinētu olu, šamp
 cuisine: japanu
 category: zupas
 emoji: "🍜"
+icon: soup
+iconColors: "#c98a4a, #f7f2ea"
+iconExtra: "noodles egg herbs"
 prepTime: 15
 cookTime: 25
 servings: 2

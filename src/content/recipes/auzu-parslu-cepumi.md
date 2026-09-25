@@ -4,6 +4,9 @@ description: "Kraukšķīgi maliņās, mīksti vidū auzu pārslu cepumi ar roz�
 cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🍪"
+icon: sweets
+iconColors: "#c8904a"
+iconExtra: "round"
 prepTime: 15
 cookTime: 12
 servings: 20

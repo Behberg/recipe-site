@@ -4,6 +4,9 @@ description: "Taizemes deserts: kokosriekstu pienā vārīti lipīgie rīsi ar g
 cuisine: taizemes
 category: saldie-edieni
 emoji: "🥭"
+icon: plate
+iconColors: "#f5b82a, #fbf7ef"
+iconExtra: "slices seeds"
 prepTime: 10
 cookTime: 30
 servings: 4

@@ -4,6 +4,9 @@ description: "Kraukšķīgs speķis, ceptas olas un tomāti vienā pannā. Sāt�
 cuisine: latviesu
 category: brokastis
 emoji: "🍳"
+icon: skillet
+iconColors: "#fbf7ef, #f3cf5a"
+iconExtra: "eggs bacon"
 prepTime: 5
 cookTime: 10
 servings: 2

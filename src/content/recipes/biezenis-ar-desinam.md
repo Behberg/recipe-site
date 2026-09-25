@@ -4,6 +4,9 @@ description: "Krēmīgs kartupeļu biezenis ar zeltaini apceptām desiņām, sī
 cuisine: latviesu
 category: pamatedieni
 emoji: "🌭"
+icon: plate
+iconColors: "#b8662e, #f7ecd0"
+iconExtra: "sticks potatoes"
 prepTime: 10
 cookTime: 25
 servings: 4

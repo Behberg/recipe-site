@@ -4,6 +4,9 @@ description: "Kraukšķīgas aunazirņu bumbiņas ar zaļumiem un garšvielām. 
 cuisine: tuvo-austrumu
 category: pamatedieni
 emoji: "🧆"
+icon: skillet
+iconColors: "#8a6a2a, #3a2a1a"
+iconExtra: "balls herbs"
 prepTime: 20
 cookTime: 20
 servings: 4

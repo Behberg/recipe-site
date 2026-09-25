@@ -4,6 +4,9 @@ description: "Tomāti, gurķi, sarkanie sīpoli, olīvas un feta ar olīveļļu 
 cuisine: grieku
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#d9443a, #8bb04a"
+iconExtra: "cheese olives"
 prepTime: 15
 cookTime: 0
 servings: 4

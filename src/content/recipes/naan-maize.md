@@ -4,6 +4,9 @@ description: "Mīkstas indiešu plāceņu maizītes ar jogurtu, ceptas pannā un
 cuisine: indiesu
 category: maize-un-cepumi
 emoji: "🫓"
+icon: flatbread
+iconColors: "#e0b86a"
+iconExtra: "dimples herbs"
 prepTime: 20
 cookTime: 20
 servings: 8

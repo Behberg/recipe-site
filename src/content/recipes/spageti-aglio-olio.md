@@ -4,6 +4,9 @@ description: "Vienkāršākā itāļu pasta: spageti ar ķiploku, olīveļļu, �
 cuisine: italu
 category: pamatedieni
 emoji: "🍝"
+icon: soup
+iconColors: "#e8d07a, #f7f2ea"
+iconExtra: "noodles herbs"
 prepTime: 5
 cookTime: 10
 servings: 2

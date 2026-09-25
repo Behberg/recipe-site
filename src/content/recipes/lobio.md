@@ -4,6 +4,9 @@ description: "Gruzīnu sarkano pupiņu sautējums ar valriekstiem, koriandru un 
 cuisine: gruzinu
 category: pamatedieni
 emoji: "🫘"
+icon: soup
+iconColors: "#7a2a1a"
+iconExtra: "herbs"
 prepTime: 10
 cookTime: 30
 servings: 4

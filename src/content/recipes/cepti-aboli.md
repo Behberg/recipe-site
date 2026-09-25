@@ -4,6 +4,9 @@ description: "Krāsnī cepti āboli, pildīti ar riekstiem, rozīnēm, medu un k
 cuisine: latviesu
 category: saldie-edieni
 emoji: "🍎"
+icon: sweets
+iconColors: "#c83a2a"
+iconExtra: "round"
 prepTime: 10
 cookTime: 30
 servings: 4

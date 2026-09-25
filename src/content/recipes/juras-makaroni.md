@@ -4,6 +4,9 @@ description: "Makaroni ar apceptu malto gaļu un sīpoliem. Ātrs, lēts un ļot
 cuisine: austrumeiropas
 category: pamatedieni
 emoji: "🍝"
+icon: skillet
+iconColors: "#e0c070, #7a3e22"
+iconExtra: "noodles chunks"
 prepTime: 5
 cookTime: 20
 servings: 4

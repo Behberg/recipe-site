@@ -4,6 +4,9 @@ description: "Liellopa steiks ar tumšu garoziņu un kūstošu ķiploku un zaļu
 cuisine: amerikas
 category: pamatedieni
 emoji: "🥩"
+icon: plate
+iconColors: "#6b2a1a, #f3cf5a"
+iconExtra: "cutlet butter"
 prepTime: 15
 cookTime: 15
 servings: 2

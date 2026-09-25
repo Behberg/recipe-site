@@ -4,6 +4,9 @@ description: "Glazēti vistas šķiņķīši spīdīgā, saldsāļā teriyaki m�
 cuisine: japanu
 category: pamatedieni
 emoji: "🍗"
+icon: skillet
+iconColors: "#8a3a1a, #3a2a1a"
+iconExtra: "chunks seeds"
 prepTime: 10
 cookTime: 20
 servings: 4

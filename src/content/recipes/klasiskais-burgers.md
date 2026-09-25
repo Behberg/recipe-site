@@ -4,6 +4,9 @@ description: "Sulīga liellopu gaļas kotlete ar čedaru, salātiem, tomātu un 
 cuisine: amerikas
 category: pamatedieni
 emoji: "🍔"
+icon: plate
+iconColors: "#8a5230, #f0cf6a"
+iconExtra: "patty potatoes"
 prepTime: 15
 cookTime: 10
 servings: 4

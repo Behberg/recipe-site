@@ -4,6 +4,9 @@ description: "Franču karstā sviestmaize ar šķiņķi, sieru un bešamela mēr
 cuisine: francu
 category: brokastis
 emoji: "🥪"
+icon: flatbread
+iconColors: "#d9a052, #f3cf5a"
+iconExtra: "toast cheese"
 prepTime: 10
 cookTime: 15
 servings: 2

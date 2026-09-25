@@ -4,6 +4,9 @@ description: "Lēni ceptas cūkas ribiņas ar garšvielām un lipīgu barbekjū 
 cuisine: amerikas
 category: pamatedieni
 emoji: "🍖"
+icon: roast
+iconColors: "#8a3a1a"
+iconExtra: "herbs"
 prepTime: 20
 cookTime: 180
 servings: 4

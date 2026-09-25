@@ -4,6 +4,8 @@ description: "Tomāti un paprikas, pildīti ar rīsiem, zaļumiem un tomātu mī
 cuisine: grieku
 category: pamatedieni
 emoji: "🫑"
+icon: casserole
+iconColors: "#d9443a"
 prepTime: 30
 cookTime: 70
 servings: 6

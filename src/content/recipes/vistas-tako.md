@@ -4,6 +4,9 @@ description: "Mīkstas kukurūzas tortiljas ar garšvielu vistu, piko de galjo, 
 cuisine: meksikas
 category: pamatedieni
 emoji: "🌮"
+icon: flatbread
+iconColors: "#f0d890, #8bb04a"
+iconExtra: "boat herbs"
 prepTime: 20
 cookTime: 15
 servings: 4

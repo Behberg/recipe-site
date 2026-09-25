@@ -4,6 +4,9 @@ description: "Indiešu vista maigā tomātu, sviesta un krējuma mērcē ar gara
 cuisine: indiesu
 category: pamatedieni
 emoji: "🍛"
+icon: soup
+iconColors: "#d9702a"
+iconExtra: "chunks cream"
 prepTime: 20
 cookTime: 30
 servings: 4

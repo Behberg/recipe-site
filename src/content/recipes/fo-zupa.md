@@ -4,6 +4,9 @@ description: "Vjetnamiešu nūdeļu zupa smaržīgā buljonā ar anīsu, plāni 
 cuisine: vjetnamiesu
 category: zupas
 emoji: "🍜"
+icon: soup
+iconColors: "#b8844a, #f7f2ea"
+iconExtra: "noodles herbs"
 prepTime: 20
 cookTime: 60
 servings: 4

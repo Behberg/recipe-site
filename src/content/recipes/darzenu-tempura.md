@@ -4,6 +4,9 @@ description: "Viegli un kraukšķīgi mīklā cepti dārzeņi ar sojas un ingver
 cuisine: japanu
 category: salati-un-uzkodas
 emoji: "🍤"
+icon: plate
+iconColors: "#e8b84a, #f3efe6"
+iconExtra: "sticks dip"
 prepTime: 20
 cookTime: 20
 servings: 4

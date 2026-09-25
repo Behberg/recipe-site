@@ -3,15 +3,17 @@ import Base from '../../../layouts/Base.astro';
 import RecipeBrowser from '../../../components/RecipeBrowser.astro';
 import { getCatalog } from '../../../lib/recipes';
 import { langFromPath, langPaths, href, t } from '../../../i18n';
+import { itemListLd } from '../../../lib/seo';
 
 export const getStaticPaths = langPaths;
 
 const lang = langFromPath(Astro.url.pathname);
 const u = (p: string) => href(lang, p);
 const { recipes, cuisines, categories } = await getCatalog(lang);
+const jsonLd = itemListLd(t(lang, 'recipes.title'), recipes.map((r) => href(lang, `/recepte/${r.id}/`)), Astro.site);
 ---
 
-<Base title={t(lang, 'recipes.metaTitle')} description={t(lang, 'recipes.metaDesc')}>
+<Base title={t(lang, 'recipes.metaTitle')} description={t(lang, 'recipes.metaDesc')} jsonLd={jsonLd}>
   <section class="page-hero container">
     <span class="eyebrow">{t(lang, 'recipes.eyebrow')}</span>
     <h1>{t(lang, 'recipes.title')}</h1>

@@ -4,6 +4,9 @@ description: "Liela kviešu tortilja ar garšvielu gaļu, rīsiem, pupiņām, si
 cuisine: meksikas
 category: pamatedieni
 emoji: "🌯"
+icon: flatbread
+iconColors: "#e8c878, #8a3a22"
+iconExtra: "lines"
 prepTime: 20
 cookTime: 25
 servings: 4

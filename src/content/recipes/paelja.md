@@ -4,6 +4,9 @@ description: "Spāņu safrāna rīsi ar garnelēm, mīdijām, vistu un papriku. 
 cuisine: spanu
 category: pamatedieni
 emoji: "🥘"
+icon: skillet
+iconColors: "#e8b830, #e87a5a"
+iconExtra: "shrimp lemon"
 prepTime: 25
 cookTime: 40
 servings: 6

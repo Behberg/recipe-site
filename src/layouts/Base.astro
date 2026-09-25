@@ -3,7 +3,7 @@ import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import LogoMark from '../components/LogoMark.astro';
 import AdsLoader from '../components/AdsLoader.astro';
-import { SITE } from '../site.config';
+import { SITE, SEARCH_VERIFICATION } from '../site.config';
 import { getCuisines, getCategories, getOccasions, getRecipes, cuisineUrl, categoryUrl, occasionUrl } from '../lib/recipes';
 import { LANGS, LANG_META, langFromPath, stripLang, href, t, clientDict } from '../i18n';
 
@@ -11,13 +11,28 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  /** Pixel size of `image`, so link previews can reserve space. */
+  imageSize?: [number, number];
+  imageAlt?: string;
+  /** ISO date for article pages. */
+  published?: string;
   type?: 'website' | 'article';
   noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const lang = langFromPath(Astro.url.pathname);
-const { title, description = t(lang, 'site.description'), image, type = 'website', noindex = false, jsonLd } = Astro.props;
+const {
+  title,
+  description = t(lang, 'site.description'),
+  image,
+  imageSize,
+  imageAlt,
+  published,
+  type = 'website',
+  noindex = false,
+  jsonLd,
+} = Astro.props;
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${t(lang, 'site.tagline')}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image || '/og-image.png', Astro.site);
@@ -25,6 +40,8 @@ const ogImage = new URL(image || '/og-image.png', Astro.site);
 const path = stripLang(Astro.url.pathname);
 const alternates = LANGS.map((l) => ({ lang: l, url: href(l, path) }));
 const u = (p: string) => href(lang, p);
+const FONTS =
+  'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..800;1,500..800&family=Inter:wght@400..700&family=Noto+Color+Emoji&display=swap';
 
 const [cuisines, categories, occasions, recipes] = await Promise.all([
   getCuisines(lang),
@@ -64,7 +81,9 @@ const nav = [
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+    {SEARCH_VERIFICATION.google && <meta name="google-site-verification" content={SEARCH_VERIFICATION.google} />}
+    {SEARCH_VERIFICATION.bing && <meta name="msvalidate.01" content={SEARCH_VERIFICATION.bing} />}
     {!noindex && alternates.map((a) => <link rel="alternate" hreflang={a.lang} href={new URL(a.url, Astro.site)} />)}
     {!noindex && <link rel="alternate" hreflang="x-default" href={new URL(path, Astro.site)} />}
 
@@ -76,7 +95,14 @@ const nav = [
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    {imageSize && <meta property="og:image:width" content={String(imageSize[0])} />}
+    {imageSize && <meta property="og:image:height" content={String(imageSize[1])} />}
+    <meta property="og:image:alt" content={imageAlt || title || SITE.name} />
+    {published && <meta property="article:published_time" content={published} />}
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title || SITE.name} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <meta name="theme-color" content="#faf6f0" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)" />
@@ -89,10 +115,10 @@ const nav = [
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..800;1,500..800&family=Inter:wght@400..700&family=Noto+Color+Emoji&display=swap"
-    />
+    <!-- Fonts load without blocking the first paint (faster pages rank better). -->
+    <link rel="preload" as="style" href={FONTS} />
+    <link rel="stylesheet" href={FONTS} media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href={FONTS} /></noscript>
 
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>

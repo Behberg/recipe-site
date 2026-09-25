@@ -4,6 +4,9 @@ description: "Vjetnamiešu bagete ar marinētu cūkgaļu, ātri marinētiem dār
 cuisine: vjetnamiesu
 category: pamatedieni
 emoji: "🥖"
+icon: flatbread
+iconColors: "#d9a557, #8bb04a"
+iconExtra: "lines herbs"
 prepTime: 30
 cookTime: 15
 servings: 4

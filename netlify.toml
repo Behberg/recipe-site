@@ -46,3 +46,9 @@
   from = "/lt/*"
   to = "/lt/404/"
   status = 404
+
+# Generated recipe images change only when a recipe's illustration changes.
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

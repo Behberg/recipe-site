@@ -4,6 +4,9 @@ description: "Klasiskas latviešu plānās pankūkas ar pienu. Ideālas ar ievā
 cuisine: latviesu
 category: brokastis
 emoji: "🥞"
+icon: plate
+iconColors: "#e8c07a, #b3122e"
+iconExtra: "rolls jam"
 prepTime: 10
 cookTime: 25
 servings: 4

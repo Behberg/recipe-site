@@ -4,6 +4,9 @@ description: "Romiešu salāti ar grilētu vistu, grauzdiņiem, parmezānu un kr
 cuisine: amerikas
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#8bb04a, #f7ecd0"
+iconExtra: "croutons cheese"
 prepTime: 20
 cookTime: 15
 servings: 2

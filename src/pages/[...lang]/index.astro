@@ -9,6 +9,7 @@ import { SITE } from '../../site.config';
 import { getCatalog, cuisineUrl, categoryUrl, recipeUrl, formatMinutes, totalTime } from '../../lib/recipes';
 import { langFromPath, langPaths, href, t, count } from '../../i18n';
 import { trTag } from '../../i18n/data';
+import { organizationLd } from '../../lib/seo';
 
 export const getStaticPaths = langPaths;
 
@@ -30,10 +31,14 @@ const promo = ['saldie-edieni', 'ievarijumi-un-konservi']
   .map((id) => categoryById.get(id))
   .filter((c) => c !== undefined);
 
-const jsonLd = {
+const jsonLd = [organizationLd(Astro.site), {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': new URL('/#website', Astro.site).href,
   name: SITE.name,
+  alternateName: t(lang, 'site.tagline'),
+  description: t(lang, 'site.description'),
+  publisher: { '@id': new URL('/#organization', Astro.site).href },
   url: new URL(u('/'), Astro.site).href,
   inLanguage: lang,
   potentialAction: {
@@ -41,7 +46,7 @@ const jsonLd = {
     target: new URL(u('/receptes/?q={search_term_string}'), Astro.site).href.replace('%7B', '{').replace('%7D', '}'),
     'query-input': 'required name=search_term_string',
   },
-};
+}];
 ---
 
 <Base jsonLd={jsonLd}>

@@ -4,6 +4,9 @@ description: "Vienkāršas pankūkas no banāna, olām un auzu pārslām. Bez cu
 cuisine: amerikas
 category: brokastis
 emoji: "🥞"
+icon: plate
+iconColors: "#d9a052, #f3cf5a"
+iconExtra: "rounds berries"
 prepTime: 5
 cookTime: 10
 servings: 2

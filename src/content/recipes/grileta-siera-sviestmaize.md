@@ -4,6 +4,9 @@ description: "Zeltaina, sviestā cepta sviestmaize ar stiepīgu, kūstošu sieru
 cuisine: amerikas
 category: brokastis
 emoji: "🥪"
+icon: flatbread
+iconColors: "#d9a052, #f3cf5a"
+iconExtra: "toast cheese"
 prepTime: 3
 cookTime: 8
 servings: 1

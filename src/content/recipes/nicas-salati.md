@@ -4,6 +4,9 @@ description: "Sātīgi salāti ar tunci, kartupeļiem, zaļajām pupiņām, olā
 cuisine: francu
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#8bb04a, #f3cf5a"
+iconExtra: "egg olives"
 prepTime: 20
 cookTime: 15
 servings: 4

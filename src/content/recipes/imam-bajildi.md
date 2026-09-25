@@ -4,6 +4,9 @@ description: "Olīveļļā sautēti baklažāni ar sīpolu, tomātu un ķiploku 
 cuisine: turku
 category: pamatedieni
 emoji: "🍆"
+icon: plate
+iconColors: "#4a2a5a, #d9443a"
+iconExtra: "slices herbs"
 prepTime: 20
 cookTime: 50
 servings: 4

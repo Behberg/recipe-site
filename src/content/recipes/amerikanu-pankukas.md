@@ -4,6 +4,9 @@ description: "Biezas, gaisīgas pankūkas ar kļavu sīrupu un ogām. Īstas sv�
 cuisine: amerikas
 category: brokastis
 emoji: "🥞"
+icon: plate
+iconColors: "#d9a052, #f3cf5a"
+iconExtra: "rounds berries"
 prepTime: 10
 cookTime: 15
 servings: 4

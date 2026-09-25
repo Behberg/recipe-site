@@ -4,6 +4,9 @@ description: "Smaržīgi basmati rīsi kārtās ar garšvielu vistu, ceptiem sī
 cuisine: indiesu
 category: pamatedieni
 emoji: "🍛"
+icon: skillet
+iconColors: "#e8a83a, #c8702a"
+iconExtra: "chunks herbs"
 prepTime: 40
 cookTime: 60
 servings: 6

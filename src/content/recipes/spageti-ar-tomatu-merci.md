@@ -4,6 +4,9 @@ description: "Ātra itāļu tomātu mērce ar ķiploku, olīveļļu un baziliku.
 cuisine: italu
 category: pamatedieni
 emoji: "🍝"
+icon: soup
+iconColors: "#d9443a, #f7f2ea"
+iconExtra: "noodles herbs"
 prepTime: 5
 cookTime: 20
 servings: 4

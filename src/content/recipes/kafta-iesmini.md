@@ -4,6 +4,9 @@ description: "Tuvo Austrumu maltās gaļas iesmiņi ar pētersīļiem, sīpolu u
 cuisine: tuvo-austrumu
 category: pamatedieni
 emoji: "🍢"
+icon: plate
+iconColors: "#8a4a24, #f3efe6"
+iconExtra: "sticks herbs"
 prepTime: 20
 cookTime: 12
 servings: 4

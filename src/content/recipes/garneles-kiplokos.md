@@ -4,6 +4,9 @@ description: "Garneles, kas šņāc karstā olīveļļā ar ķiploku un čili. P
 cuisine: spanu
 category: salati-un-uzkodas
 emoji: "🦐"
+icon: skillet
+iconColors: "#e87a5a, #f0cf6a"
+iconExtra: "shrimp herbs"
 prepTime: 10
 cookTime: 8
 servings: 4

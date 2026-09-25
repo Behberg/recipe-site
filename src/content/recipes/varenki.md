@@ -4,6 +4,9 @@ description: "Ukraiņu pusmēness pelmeņi ar kartupeļu un sīpolu pildījumu u
 cuisine: ukrainu
 category: pamatedieni
 emoji: "🥟"
+icon: plate
+iconColors: "#efe0c0, #f3efe6"
+iconExtra: "dumplings cream"
 prepTime: 60
 cookTime: 15
 servings: 6

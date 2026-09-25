@@ -1,7 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getCatalog, cuisineUrl } from '../../../lib/recipes';
-import { langFromPath, langPaths, t, count as countText, type UIKey } from '../../../i18n';
+import { langFromPath, langPaths, href, t, count as countText, type UIKey } from '../../../i18n';
+import { itemListLd } from '../../../lib/seo';
 
 export const getStaticPaths = langPaths;
 
@@ -19,7 +20,11 @@ const continents = [
   .filter((c) => c.cuisines.length);
 ---
 
-<Base title={t(lang, 'cuisines.title')} description={t(lang, 'cuisines.metaDesc')}>
+<Base
+  title={t(lang, 'cuisines.title')}
+  description={t(lang, 'cuisines.metaDesc')}
+  jsonLd={itemListLd(t(lang, 'cuisines.title'), continents.flatMap((c) => c.cuisines.map((x) => href(lang, `/virtuves/${x.id}/`))), Astro.site)}
+>
   <section class="page-hero container">
     <span class="eyebrow">{t(lang, 'cuisines.eyebrow')}</span>
     <h1>{t(lang, 'cuisines.title')}</h1>

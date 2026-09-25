@@ -4,6 +4,9 @@ description: "Maigs, salds taju karijs ar liellopa gaļu, kartupeļiem un zemesr
 cuisine: taizemes
 category: pamatedieni
 emoji: "🍛"
+icon: soup
+iconColors: "#c8702a"
+iconExtra: "chunks potatoes"
 prepTime: 20
 cookTime: 120
 servings: 6

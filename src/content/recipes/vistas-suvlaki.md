@@ -4,6 +4,9 @@ description: "Marinētas vistas iesmiņi ar citronu un oregano, pasniegti ar pit
 cuisine: grieku
 category: pamatedieni
 emoji: "🍢"
+icon: plate
+iconColors: "#c8702a, #f3efe6"
+iconExtra: "sticks dip"
 prepTime: 20
 cookTime: 15
 servings: 4

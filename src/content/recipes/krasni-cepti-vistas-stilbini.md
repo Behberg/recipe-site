@@ -4,6 +4,9 @@ description: "Vistas stilbiņi un kartupeļi vienā pannā ar ķiploku un paprik
 cuisine: latviesu
 category: pamatedieni
 emoji: "🍗"
+icon: plate
+iconColors: "#c8702a, #f0cf6a"
+iconExtra: "nuggets potatoes"
 prepTime: 10
 cookTime: 50
 servings: 4

@@ -4,6 +4,9 @@ description: "Klasiski amerikāņu cepumi: kraukšķīgas maliņas, mīksts vidu
 cuisine: amerikas
 category: maize-un-cepumi
 emoji: "🍪"
+icon: sweets
+iconColors: "#b8733a"
+iconExtra: "round"
 prepTime: 15
 cookTime: 12
 servings: 20

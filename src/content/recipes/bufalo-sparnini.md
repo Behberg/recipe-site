@@ -4,6 +4,9 @@ description: "Krāsnī cepti kraukšķīgi spārniņi asā sviesta mērcē ar zi
 cuisine: amerikas
 category: salati-un-uzkodas
 emoji: "🍗"
+icon: plate
+iconColors: "#c8502a, #f3efe6"
+iconExtra: "nuggets dip"
 prepTime: 10
 cookTime: 50
 servings: 4

@@ -4,6 +4,9 @@ description: "Bagātīga, lēni sautēta gaļas un tomātu mērce ar spageti un 
 cuisine: italu
 category: pamatedieni
 emoji: "🍝"
+icon: soup
+iconColors: "#a8401e, #f7f2ea"
+iconExtra: "noodles cheese"
 prepTime: 15
 cookTime: 60
 servings: 6

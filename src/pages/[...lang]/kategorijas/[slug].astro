@@ -3,7 +3,9 @@ import Base from '../../../layouts/Base.astro';
 import TaxonomyHero from '../../../components/TaxonomyHero.astro';
 import RecipeBrowser from '../../../components/RecipeBrowser.astro';
 import { getCatalog, getCategories } from '../../../lib/recipes';
-import { LANGS, langParam, href, t, type Lang } from '../../../i18n';
+import { LANGS, langParam, href, t, count, type Lang } from '../../../i18n';
+import { SITE } from '../../../site.config';
+import { breadcrumbLd, itemListLd } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const categories = await getCategories();
@@ -14,9 +16,24 @@ const { lang } = Astro.props as { lang: Lang };
 const { recipes: all, cuisines, categories, categoryById } = await getCatalog(lang);
 const category = categoryById.get(Astro.params.slug!)!;
 const recipes = all.filter((r) => r.data.category.id === category.id);
+const jsonLd = [
+  breadcrumbLd(
+    [
+      { name: SITE.name, path: href(lang, '/') },
+      { name: t(lang, 'nav.recipes'), path: href(lang, '/receptes/') },
+      { name: category.data.name, path: href(lang, `/kategorijas/${category.id}/`) },
+    ],
+    Astro.site,
+  ),
+  itemListLd(category.data.name, recipes.map((r) => href(lang, `/recepte/${r.id}/`)), Astro.site),
+];
 ---
 
-<Base title={category.data.name} description={category.data.description}>
+<Base
+  title={`${category.data.name}: ${t(lang, 'seo.recipesSuffix')}`}
+  description={`${category.data.description} ${count(lang, recipes.length, 'count.recipes')}.`}
+  jsonLd={jsonLd}
+>
   <TaxonomyHero
     name={category.data.name}
     emoji={category.data.emoji}

@@ -4,6 +4,9 @@ description: "Taizemes rīsu nūdeles ar garnelēm vai vistu, olu, pupiņu asnie
 cuisine: taizemes
 category: pamatedieni
 emoji: "🍜"
+icon: skillet
+iconColors: "#e0a050, #8bb04a"
+iconExtra: "noodles shrimp"
 prepTime: 20
 cookTime: 10
 servings: 2

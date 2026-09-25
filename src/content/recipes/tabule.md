@@ -4,6 +4,9 @@ description: "Libānas zaļumu salāti ar bulguru, pētersīļiem, piparmētrām
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
 emoji: "🥗"
+icon: soup
+iconColors: "#6b9a3a, #d9443a"
+iconExtra: "herbs"
 prepTime: 20
 cookTime: 0
 servings: 4

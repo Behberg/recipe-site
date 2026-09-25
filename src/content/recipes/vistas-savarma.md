@@ -4,6 +4,9 @@ description: "Garšvielās marinēta vista lavašā ar dārzeņiem un ķiploku m
 cuisine: tuvo-austrumu
 category: pamatedieni
 emoji: "🌯"
+icon: flatbread
+iconColors: "#e8d3a8, #c8702a"
+iconExtra: "lines herbs"
 prepTime: 20
 cookTime: 20
 servings: 4

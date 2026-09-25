@@ -4,6 +4,9 @@ description: "Īsta romiešu karbonāra ar olu dzeltenumiem, pekorino sieru un k
 cuisine: italu
 category: pamatedieni
 emoji: "🍝"
+icon: soup
+iconColors: "#f0d890, #f7f2ea"
+iconExtra: "noodles bacon"
 prepTime: 10
 cookTime: 15
 servings: 2

@@ -4,6 +4,9 @@ description: "Japāņu pelmeņi ar cūkgaļas un kāpostu pildījumu. No apakša
 cuisine: japanu
 category: salati-un-uzkodas
 emoji: "🥟"
+icon: plate
+iconColors: "#e8d3a8, #f3efe6"
+iconExtra: "dumplings dip"
 prepTime: 45
 cookTime: 15
 servings: 4

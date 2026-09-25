@@ -4,6 +4,9 @@ description: "Mājās gatavots zaļais pesto ar baziliku, priežu riekstiem, par
 cuisine: italu
 category: pamatedieni
 emoji: "🍝"
+icon: soup
+iconColors: "#6b9a3a, #f7f2ea"
+iconExtra: "noodles cheese"
 prepTime: 10
 cookTime: 10
 servings: 4

@@ -3,7 +3,9 @@ import Base from '../../../layouts/Base.astro';
 import TaxonomyHero from '../../../components/TaxonomyHero.astro';
 import RecipeBrowser from '../../../components/RecipeBrowser.astro';
 import { getCatalog, getOccasions } from '../../../lib/recipes';
-import { LANGS, langParam, href, t, type Lang } from '../../../i18n';
+import { LANGS, langParam, href, t, count, type Lang } from '../../../i18n';
+import { SITE } from '../../../site.config';
+import { breadcrumbLd, itemListLd } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const occasions = await getOccasions();
@@ -16,9 +18,24 @@ const occasion = occasions.find((o) => o.id === Astro.params.slug)!;
 const recipes = all.filter((r) => r.data.occasions.some((o) => o.id === occasion.id));
 const { dateType, month, day, easterOffset, weekday, nth, leadDays } = occasion.data;
 const rule = { id: occasion.id, dateType, month, day, easterOffset, weekday, nth, leadDays };
+const jsonLd = [
+  breadcrumbLd(
+    [
+      { name: SITE.name, path: href(lang, '/') },
+      { name: t(lang, 'nav.occasions'), path: href(lang, '/svetki/') },
+      { name: occasion.data.name, path: href(lang, `/svetki/${occasion.id}/`) },
+    ],
+    Astro.site,
+  ),
+  itemListLd(occasion.data.name, recipes.map((r) => href(lang, `/recepte/${r.id}/`)), Astro.site),
+];
 ---
 
-<Base title={t(lang, 'occ.pageTitle', { name: occasion.data.name })} description={occasion.data.description}>
+<Base
+  title={t(lang, 'occ.pageTitle', { name: occasion.data.name })}
+  description={`${occasion.data.description} ${count(lang, recipes.length, 'count.recipes')}.`}
+  jsonLd={jsonLd}
+>
   <TaxonomyHero
     name={occasion.data.name}
     emoji={occasion.data.emoji}

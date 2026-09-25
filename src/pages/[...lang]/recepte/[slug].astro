@@ -18,6 +18,8 @@ import {
   imageUrl,
 } from '../../../lib/recipes';
 import { unitFor } from '../../../lib/format';
+import { IMAGE_RATIOS, recipeImagePath } from '../../../lib/recipeImage';
+import { absolute, breadcrumbLd, dietsFor } from '../../../lib/seo';
 import { LANGS, langParam, href, t, count, type Lang, type UIKey } from '../../../i18n';
 
 export async function getStaticPaths() {
@@ -81,34 +83,67 @@ const related = recipes
   .map((x) => x.r);
 
 const iso = (min: number) => `PT${min}M`;
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Recipe',
-  name: d.title,
-  description: d.description,
-  image: d.image ? [new URL(d.image, Astro.site).href] : undefined,
-  author: { '@type': 'Organization', name: SITE.name },
-  datePublished: d.date.toISOString().slice(0, 10),
-  inLanguage: lang,
-  url: new URL(u(`/recepte/${recipe.id}/`), Astro.site).href,
-  prepTime: iso(d.prepTime),
-  cookTime: iso(d.cookTime),
-  totalTime: iso(total),
-  recipeYield: d.yield || count(lang, d.servings, 'count.servings'),
-  recipeCategory: category?.data.name,
-  recipeCuisine: cuisine?.data.name,
-  keywords: d.tags.join(', '),
-  recipeIngredient: d.ingredients.map(ingredientText),
-  recipeInstructions: d.steps.map((text, i) => ({ '@type': 'HowToStep', position: i + 1, text })),
-};
+const pageUrl = absolute(u(`/recepte/${recipe.id}/`), Astro.site);
+// Google needs an image for recipe rich results. An uploaded photo wins; otherwise the
+// generated illustration in the three aspect ratios Google recommends.
+const images = d.image
+  ? [new URL(imageUrl(d.image, 1200), Astro.site).href]
+  : (Object.keys(IMAGE_RATIOS) as (keyof typeof IMAGE_RATIOS)[]).map((r) => absolute(recipeImagePath(recipe.id, r), Astro.site));
+const shareImage = d.image ? imageUrl(d.image, 1200) : recipeImagePath(recipe.id, '16x9');
+const amountSentence = cap(d.yield ? t(lang, 'recipe.yield', { y: d.yield }) : count(lang, d.servings, 'count.servings'));
+const metaDescription = t(lang, 'seo.recipeDesc', { desc: d.description, time: formatMinutes(total, lang), amount: amountSentence }).replace(/\.\.$/, '.');
+const diets = dietsFor(recipe.lv.tags);
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    '@id': `${pageUrl}#recipe`,
+    mainEntityOfPage: pageUrl,
+    url: pageUrl,
+    name: d.title,
+    description: d.description,
+    image: images,
+    author: { '@type': 'Organization', name: SITE.name, url: absolute('/', Astro.site) },
+    publisher: { '@id': absolute('/#organization', Astro.site) },
+    datePublished: d.date.toISOString().slice(0, 10),
+    inLanguage: lang,
+    prepTime: iso(d.prepTime),
+    cookTime: iso(d.cookTime),
+    totalTime: iso(total),
+    recipeYield: d.yield ? d.yield : [String(d.servings), count(lang, d.servings, 'count.servings')],
+    recipeCategory: category?.data.name,
+    recipeCuisine: cuisine?.data.name,
+    keywords: [d.title, cuisine && t(lang, 'cuisine.title', { name: cuisine.data.name }), category?.data.name, ...d.tags].filter(Boolean).join(', '),
+    suitableForDiet: diets.length ? diets : undefined,
+    recipeIngredient: d.ingredients.map(ingredientText),
+    recipeInstructions: d.steps.map((text, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: t(lang, 'recipe.stepLabel', { n: i + 1 }),
+      text,
+      url: `${pageUrl}#solis-${i + 1}`,
+    })),
+  },
+  breadcrumbLd(
+    [
+      { name: SITE.name, path: u('/') },
+      ...(category ? [{ name: category.data.name, path: categoryUrl(category.id, lang) }] : []),
+      { name: d.title, path: u(`/recepte/${recipe.id}/`) },
+    ],
+    Astro.site,
+  ),
+];
 
 const useMultiplier = Boolean(d.yield);
 ---
 
 <Base
-  title={d.title}
-  description={d.description}
-  image={d.image ? imageUrl(d.image, 1200) : undefined}
+  title={t(lang, 'seo.recipeTitle', { title: d.title })}
+  description={metaDescription}
+  image={shareImage}
+  imageSize={d.image ? undefined : [...IMAGE_RATIOS['16x9']]}
+  imageAlt={d.title}
+  published={d.date.toISOString().slice(0, 10)}
   type="article"
   jsonLd={jsonLd}
 >
@@ -246,7 +281,7 @@ const useMultiplier = Boolean(d.yield);
         <ol class="steps">
           {
             steps.map((s, i) => (
-              <li class="step" data-step-index={i}>
+              <li class="step" id={`solis-${i + 1}`} data-step-index={i}>
                 <button type="button" class="step-num" aria-label={t(lang, 'recipe.markStep', { n: i + 1 })}>
                   <span class="n">{i + 1}</span>
                   <Icon name="check" class="c" />

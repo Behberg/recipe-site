@@ -4,6 +4,9 @@ description: "Klasiskā neapoliešu pica ar tomātu mērci, mocarellu un svaigu 
 cuisine: italu
 category: pamatedieni
 emoji: "🍕"
+icon: flatbread
+iconColors: "#e0a050, #d9443a, #fbf7ef"
+iconExtra: "round cheese herbs"
 prepTime: 20
 cookTime: 12
 servings: 4

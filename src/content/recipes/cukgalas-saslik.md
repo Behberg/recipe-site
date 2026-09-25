@@ -4,6 +4,9 @@ description: "Sīpolos un etiķī marinēts cūkgaļas šašliks uz oglēm. Līg
 cuisine: austrumeiropas
 category: pamatedieni
 emoji: "🍢"
+icon: plate
+iconColors: "#a8582a, #f3efe6"
+iconExtra: "sticks herbs"
 prepTime: 20
 cookTime: 20
 servings: 6

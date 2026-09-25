@@ -4,6 +4,9 @@ description: "Meksikāņu ielu kukurūza ar majonēzi, sieru, čili un laimu."
 cuisine: meksikas
 category: salati-un-uzkodas
 emoji: "🌽"
+icon: plate
+iconColors: "#f2c230, #f3efe6"
+iconExtra: "sticks cheese"
 prepTime: 10
 cookTime: 15
 servings: 4
