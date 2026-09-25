@@ -7,5 +7,19 @@
   "day": 4,
   "leadDays": 10,
   "order": 6,
-  "description": "4. maijā klājam baltu galdautu un cienājam ģimeni un kaimiņus."
+  "description": "4. maijā klājam baltu galdautu un cienājam ģimeni un kaimiņus.",
+  "translations": {
+    "en": {
+      "name": "White Tablecloth Day",
+      "description": "On 4 May we lay a white tablecloth and treat family and neighbours."
+    },
+    "ru": {
+      "name": "Праздник белой скатерти",
+      "description": "4 мая мы стелим белую скатерть и угощаем семью и соседей."
+    },
+    "lt": {
+      "name": "Baltosios staltiesės šventė",
+      "description": "Gegužės 4-ąją tiesiame baltą staltiesę ir vaišiname šeimą bei kaimynus."
+    }
+  }
 }

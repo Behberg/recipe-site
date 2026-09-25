@@ -1,16 +1,27 @@
 ---
-import Base from '../layouts/Base.astro';
-import Icon from '../components/Icon.astro';
-import RecipeCard from '../components/RecipeCard.astro';
-import pantryData from '../data/ledusskapis.json';
-import { createMatcher, type Pantry } from '../lib/fridge';
-import { getCatalog } from '../lib/recipes';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import pantryData from '../../data/ledusskapis.json';
+import { createMatcher, type Pantry } from '../../lib/fridge';
+import { getCatalog } from '../../lib/recipes';
+import { langFromPath, langPaths, t } from '../../i18n';
+import { trPantryGroup, trPantryItem } from '../../i18n/data';
 
-const pantry = pantryData as Pantry;
-const match = createMatcher(pantry);
-const { recipes, cuisineById, categoryById } = await getCatalog();
+export const getStaticPaths = langPaths;
 
-const recipeNeeds = recipes.map((r) => ({ id: r.id, req: match(r.data.ingredients).requirements }));
+const lang = langFromPath(Astro.url.pathname);
+const raw = pantryData as Pantry;
+// Matching always runs on the Latvian ingredient names; only the labels are translated.
+const match = createMatcher(raw);
+const pantry: Pantry = {
+  ...raw,
+  groups: raw.groups.map((g) => ({ ...g, name: trPantryGroup(lang, g.id, g.name) })),
+  items: raw.items.map((i) => ({ ...i, name: trPantryItem(lang, i.id, i.name) })),
+};
+const { recipes, cuisineById, categoryById } = await getCatalog(lang);
+
+const recipeNeeds = recipes.map((r) => ({ id: r.id, req: match(r.lv.ingredients).requirements }));
 
 // Most used ingredients first inside every group, so the likely ones are on top.
 const usage = new Map<string, number>();
@@ -33,27 +44,27 @@ const data = {
 };
 ---
 
-<Base title="Kas ir ledusskapī?" description="Atzīmē produktus, kas tev ir mājās, un atrodi receptes, ko vari pagatavot uzreiz.">
+<Base title={t(lang, 'fridge.title')} description={t(lang, 'fridge.metaDesc')}>
   <section class="page-hero container">
-    <span class="eyebrow">🧊 Ledusskapis</span>
-    <h1>Kas ir ledusskapī?</h1>
-    <p>Atzīmē produktus, kas tev ir mājās. Mēs parādīsim, ko vari pagatavot uzreiz un kam pietrūkst tikai viena vai divu lietu.</p>
+    <span class="eyebrow">{t(lang, 'fridge.eyebrow')}</span>
+    <h1>{t(lang, 'fridge.title')}</h1>
+    <p>{t(lang, 'fridge.lead')}</p>
   </section>
 
   <div class="container fridge" data-fridge>
     <!-- Picker -->
     <section class="picker" aria-labelledby="picker-title">
-      <h2 id="picker-title" class="sr-only">Produkti</h2>
+      <h2 id="picker-title" class="sr-only">{t(lang, 'fridge.products')}</h2>
 
       <div class="search-field">
         <Icon name="search" />
-        <input type="search" placeholder="Meklē produktu, piem. biezpiens" aria-label="Meklēt produktu" data-item-search autocomplete="off" />
+        <input type="search" placeholder={t(lang, 'fridge.searchPlaceholder')} aria-label={t(lang, 'fridge.searchAria')} data-item-search autocomplete="off" />
       </div>
 
       <div class="selected" data-selected-wrap hidden>
         <div class="selected-head">
-          <strong>Tev ir: <span data-selected-count>0</span></strong>
-          <button type="button" class="link-btn" data-clear>Notīrīt visu</button>
+          <strong>{t(lang, 'fridge.have')} <span data-selected-count>0</span></strong>
+          <button type="button" class="link-btn" data-clear>{t(lang, 'fridge.clearAll')}</button>
         </div>
         <div class="selected-list" data-selected></div>
       </div>
@@ -62,13 +73,13 @@ const data = {
         <input type="checkbox" data-staples checked />
         <span class="switch" aria-hidden="true"></span>
         <span>
-          <strong>Pamatprodukti ir mājās</strong>
+          <strong>{t(lang, 'fridge.staples')}</strong>
           <small>{staples.map((s) => s.name.toLowerCase()).join(', ')}</small>
         </span>
       </label>
 
       <div class="quick" data-quick>
-        <span class="quick-label">Biežāk:</span>
+        <span class="quick-label">{t(lang, 'fridge.frequent')}</span>
         {
           quickPicks.map((id) => {
             const it = pantry.items.find((i) => i.id === id);
@@ -102,31 +113,31 @@ const data = {
           </details>
         ))
       }
-      <p class="empty-search" data-empty-search hidden>Šāds produkts nav atrasts.</p>
+      <p class="empty-search" data-empty-search hidden>{t(lang, 'fridge.notFound')}</p>
     </section>
 
     <!-- Results -->
     <section class="results" id="rezultati" aria-labelledby="results-title" aria-live="polite">
-      <h2 id="results-title" class="results-title" data-results-title>Izvēlies produktus</h2>
+      <h2 id="results-title" class="results-title" data-results-title>{t(lang, 'fridge.choose')}</h2>
       <div class="results-empty" data-results-empty>
         <div class="big" aria-hidden="true">🥕🥚🧀</div>
-        <p>Pieskaries produktiem kreisajā pusē vai augstāk. Receptes parādīsies šeit uzreiz.</p>
+        <p>{t(lang, 'fridge.emptyText')}</p>
       </div>
       <div class="results-none" data-results-none hidden>
         <div class="big" aria-hidden="true">🤔</div>
-        <p>Ar šiem produktiem vēl nekas nesanāk. Pievieno vēl kādu produktu vai ieslēdz pamatproduktus.</p>
+        <p>{t(lang, 'fridge.noneText')}</p>
       </div>
 
       <div data-bucket="0" hidden>
-        <h3 class="bucket-title">✅ Vari gatavot tūlīt</h3>
+        <h3 class="bucket-title">{t(lang, 'fridge.bucket0')}</h3>
         <div class="grid" data-bucket-grid></div>
       </div>
       <div data-bucket="1" hidden>
-        <h3 class="bucket-title">🛒 Trūkst tikai viena produkta</h3>
+        <h3 class="bucket-title">{t(lang, 'fridge.bucket1')}</h3>
         <div class="grid" data-bucket-grid></div>
       </div>
       <div data-bucket="2" hidden>
-        <h3 class="bucket-title">🛍️ Trūkst divu produktu</h3>
+        <h3 class="bucket-title">{t(lang, 'fridge.bucket2')}</h3>
         <div class="grid" data-bucket-grid></div>
       </div>
 
@@ -144,7 +155,7 @@ const data = {
 
     <a class="fridge-bar" href="#rezultati" data-fridge-bar hidden>
       <span data-bar-text></span>
-      <strong>Skatīt <Icon name="arrow-right" /></strong>
+      <strong>{t(lang, 'fridge.see')} <Icon name="arrow-right" /></strong>
     </a>
   </div>
 
@@ -152,8 +163,8 @@ const data = {
 </Base>
 
 <script>
-  import { plural } from '../lib/format';
-  import { syncFavorites } from '../lib/favorites';
+  import { ct, ccount } from '../../i18n/client';
+  import { syncFavorites } from '../../lib/favorites';
 
   type Data = {
     items: Record<string, { n: string; e: string; s: boolean }>;
@@ -218,7 +229,7 @@ const data = {
         b.type = 'button';
         b.className = 'chip sel';
         b.dataset.item = id;
-        b.setAttribute('aria-label', `Noņemt: ${data.items[id].n}`);
+        b.setAttribute('aria-label', ct('fridge.remove', { name: data.items[id].n }));
         b.textContent = `${data.items[id].e} ${data.items[id].n} ✕`;
         return b;
       }),
@@ -236,8 +247,8 @@ const data = {
           const note = el.querySelector<HTMLElement>('.fr-note')!;
           note.className = 'fr-note' + (r.missing.length ? ' is-missing' : ' is-ok');
           note.textContent = r.missing.length
-            ? `Trūkst: ${r.missing.map((id) => `${data.items[id].e} ${data.items[id].n}`).join(', ')}`
-            : `Tev ir viss vajadzīgais`;
+            ? ct('fridge.missing', { list: r.missing.map((id) => `${data.items[id].e} ${data.items[id].n}`).join(', ') })
+            : ct('fridge.haveAll');
           return el;
         }),
       );
@@ -246,12 +257,12 @@ const data = {
     root.querySelector<HTMLElement>('[data-results-none]')!.hidden = selected.size === 0 || results.length > 0;
     const ready = results.filter((r) => r.missing.length === 0).length;
     root.querySelector('[data-results-title]')!.textContent = selected.size
-      ? `${results.length} ${plural(results.length, 'recepte', 'receptes')}${ready ? `, ${ready} gatavas uzreiz` : ''}`
-      : 'Izvēlies produktus';
+      ? `${ccount(results.length, 'count.recipes')}${ready ? `, ${ct('fridge.readyNow', { n: ready })}` : ''}`
+      : ct('fridge.choose');
 
     const bar = root.querySelector<HTMLElement>('[data-fridge-bar]')!;
     bar.hidden = selected.size === 0;
-    bar.querySelector('[data-bar-text]')!.textContent = `${selected.size} ${plural(selected.size, 'produkts', 'produkti')} · ${results.length} ${plural(results.length, 'recepte', 'receptes')}`;
+    bar.querySelector('[data-bar-text]')!.textContent = `${ccount(selected.size, 'count.products')} · ${ccount(results.length, 'count.recipes')}`;
     // Favourite hearts inside freshly inserted cards
     syncFavorites();
     persist();

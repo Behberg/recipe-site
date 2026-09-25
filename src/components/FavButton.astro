@@ -1,12 +1,14 @@
 ---
 import Icon from './Icon.astro';
+import { t, type Lang } from '../i18n';
 
 interface Props {
   id: string;
   title: string;
   class?: string;
+  lang: Lang;
 }
-const { id, title, class: className } = Astro.props;
+const { id, title, class: className, lang } = Astro.props;
 ---
 
 <button
@@ -14,7 +16,7 @@ const { id, title, class: className } = Astro.props;
   class:list={['fav-btn', className]}
   data-fav={id}
   aria-pressed="false"
-  aria-label={`Saglabāt izlasē: ${title}`}
+  aria-label={t(lang, 'card.save', { title })}
 >
   <Icon name="heart" />
 </button>

@@ -7,5 +7,19 @@
   "day": 18,
   "leadDays": 14,
   "order": 13,
-  "description": "Latvijas dzimšanas dienā galdā latviešu klasika."
+  "description": "Latvijas dzimšanas dienā galdā latviešu klasika.",
+  "translations": {
+    "en": {
+      "name": "18 November",
+      "description": "Latvian classics on the table for Latvia’s birthday."
+    },
+    "ru": {
+      "name": "18 ноября",
+      "description": "Латышская классика на столе в день рождения Латвии."
+    },
+    "lt": {
+      "name": "Lapkričio 18-oji",
+      "description": "Latvijos gimtadienio proga ant stalo latvių klasika."
+    }
+  }
 }

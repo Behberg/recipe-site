@@ -7,5 +7,19 @@
   "day": 31,
   "leadDays": 10,
   "order": 2,
-  "description": "Uzkodas, salāti un dzērieni, ar kuriem sagaidīt pusnakti."
+  "description": "Uzkodas, salāti un dzērieni, ar kuriem sagaidīt pusnakti.",
+  "translations": {
+    "en": {
+      "name": "New Year",
+      "description": "Nibbles, salads and drinks to see in midnight."
+    },
+    "ru": {
+      "name": "Новый год",
+      "description": "Закуски, салаты и напитки, чтобы встретить полночь."
+    },
+    "lt": {
+      "name": "Naujieji metai",
+      "description": "Užkandžiai, salotos ir gėrimai vidurnakčiui sutikti."
+    }
+  }
 }

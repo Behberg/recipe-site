@@ -5,5 +5,22 @@
   "emoji": "🇵🇱",
   "color": "#b8324a",
   "order": 10,
-  "description": "Pīrogi, žureks un bigoss. Sirsnīga virtuve ar skābiem un kūpinātiem akcentiem."
+  "description": "Pīrogi, žureks un bigoss. Sirsnīga virtuve ar skābiem un kūpinātiem akcentiem.",
+  "translations": {
+    "en": {
+      "name": "Polish",
+      "region": "Poland",
+      "description": "Pierogi, żurek and bigos. Hearty cooking with sour and smoky notes."
+    },
+    "ru": {
+      "name": "Польская",
+      "region": "Польша",
+      "description": "Пероги, журек и бигос. Душевная кухня с кислыми и копчёными нотками."
+    },
+    "lt": {
+      "name": "Lenkų",
+      "region": "Lenkija",
+      "description": "Virtiniai, žurekas ir bigosas. Soti virtuvė su rūgščiais ir rūkytais akcentais."
+    }
+  }
 }

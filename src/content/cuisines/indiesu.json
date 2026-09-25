@@ -5,5 +5,22 @@
   "emoji": "🇮🇳",
   "color": "#d0761d",
   "order": 23,
-  "description": "Kariji, dāls, naan un garšvielu bagātība, kas silda no iekšpuses."
+  "description": "Kariji, dāls, naan un garšvielu bagātība, kas silda no iekšpuses.",
+  "translations": {
+    "en": {
+      "name": "Indian",
+      "region": "India",
+      "description": "Curries, dal, naan and a wealth of spices that warm you from the inside."
+    },
+    "ru": {
+      "name": "Индийская",
+      "region": "Индия",
+      "description": "Карри, дал, наан и богатство специй, которые согревают изнутри."
+    },
+    "lt": {
+      "name": "Indų",
+      "region": "Indija",
+      "description": "Kariai, dalas, naanas ir prieskonių gausa, kuri šildo iš vidaus."
+    }
+  }
 }

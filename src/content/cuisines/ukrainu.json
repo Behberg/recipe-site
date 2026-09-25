@@ -5,5 +5,22 @@
   "emoji": "🇺🇦",
   "color": "#2f63b0",
   "order": 11,
-  "description": "Boršs, vareņiki un pampuški ar ķiploku. Dāsns un sātīgs galds."
+  "description": "Boršs, vareņiki un pampuški ar ķiploku. Dāsns un sātīgs galds.",
+  "translations": {
+    "en": {
+      "name": "Ukrainian",
+      "region": "Ukraine",
+      "description": "Borscht, varenyky and pampushky with garlic. A generous and hearty table."
+    },
+    "ru": {
+      "name": "Украинская",
+      "region": "Украина",
+      "description": "Борщ, вареники и пампушки с чесноком. Щедрый и сытный стол."
+    },
+    "lt": {
+      "name": "Ukrainiečių",
+      "region": "Ukraina",
+      "description": "Barščiai, varenikai ir pampuškos su česnakais. Dosnus ir sotus stalas."
+    }
+  }
 }

@@ -1,0 +1,8 @@
+---
+import NotFound from '../../components/NotFound.astro';
+import { PREFIXED_LANGS } from '../../i18n';
+
+export const getStaticPaths = () => PREFIXED_LANGS.map((lang) => ({ params: { lang } }));
+---
+
+<NotFound />

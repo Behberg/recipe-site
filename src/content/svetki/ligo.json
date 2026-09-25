@@ -7,5 +7,19 @@
   "day": 23,
   "leadDays": 21,
   "order": 8,
-  "description": "Jāņu siers, pīrāgi, šašliks un kvass īsākajai naktij gadā."
+  "description": "Jāņu siers, pīrāgi, šašliks un kvass īsākajai naktij gadā.",
+  "translations": {
+    "en": {
+      "name": "Midsummer (Līgo and Jāņi)",
+      "description": "Jāņi cheese, pīrāgi, shashlik and kvass for the shortest night of the year."
+    },
+    "ru": {
+      "name": "Лиго и Янов день",
+      "description": "Янов сыр, пирожки, шашлык и квас для самой короткой ночи в году."
+    },
+    "lt": {
+      "name": "Līgo ir Joninės",
+      "description": "Joninių sūris, pyragėliai, šašlykai ir gira trumpiausiai metų nakčiai."
+    }
+  }
 }

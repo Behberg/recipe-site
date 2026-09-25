@@ -3,6 +3,7 @@ import Icon from './Icon.astro';
 import RecipeArt from './RecipeArt.astro';
 import FavButton from './FavButton.astro';
 import { formatMinutes, recipeUrl, totalTime, type Recipe, type Cuisine, type Category } from '../lib/recipes';
+import { langFromPath, t } from '../i18n';
 
 interface Props {
   recipe: Recipe;
@@ -14,11 +15,14 @@ interface Props {
 }
 
 const { recipe, cuisine, category, wide = false, eager = false, showBadge = true } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
 const d = recipe.data;
 const emoji = d.emoji || category?.data.emoji || '🍽️';
 const color = category?.data.color || cuisine?.data.color || '#9e3039';
 const total = totalTime(recipe);
-const search = [d.title, d.description, cuisine?.data.name, category?.data.name, ...d.tags, ...d.ingredients.map((i) => i.name)]
+// Other languages also match the Latvian title, so "pelmeņi" finds pelmeni on /en/ too.
+const search = [d.title, lang !== 'lv' && recipe.lv.title, d.description, cuisine?.data.name, category?.data.name, ...d.tags, ...d.ingredients.map((i) => i.name)]
+  .filter(Boolean)
   .join(' ')
   .toLowerCase();
 ---
@@ -42,15 +46,15 @@ const search = [d.title, d.description, cuisine?.data.name, category?.data.name,
         </span>
       )
     }
-    <FavButton id={recipe.id} title={d.title} />
+    <FavButton id={recipe.id} title={d.title} lang={lang} />
   </div>
   <div class="card-body">
     <h3 class="card-title">
-      <a class="card-link" href={recipeUrl(recipe.id)}>{d.title}</a>
+      <a class="card-link" href={recipeUrl(recipe.id, lang)}>{d.title}</a>
     </h3>
     <div class="card-meta">
-      <span><Icon name="clock" />{formatMinutes(total)}</span>
-      <span><Icon name="bars" />{d.difficulty}</span>
+      <span><Icon name="clock" />{formatMinutes(total, lang)}</span>
+      <span><Icon name="bars" />{t(lang, `diff.${d.difficulty}`)}</span>
     </div>
   </div>
 </article>

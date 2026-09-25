@@ -5,5 +5,22 @@
   "emoji": "🇹🇭",
   "color": "#2f8a6a",
   "order": 22,
-  "description": "Kariji, zupas un nūdeles, kur satiekas salds, skābs, sāļš un ass."
+  "description": "Kariji, zupas un nūdeles, kur satiekas salds, skābs, sāļš un ass.",
+  "translations": {
+    "en": {
+      "name": "Thai",
+      "region": "Thailand",
+      "description": "Curries, soups and noodles where sweet, sour, salty and hot meet."
+    },
+    "ru": {
+      "name": "Тайская",
+      "region": "Таиланд",
+      "description": "Карри, супы и лапша, где встречаются сладкое, кислое, солёное и острое."
+    },
+    "lt": {
+      "name": "Tailando",
+      "region": "Tailandas",
+      "description": "Kariai, sriubos ir makaronai, kur susitinka saldus, rūgštus, sūrus ir aštrus skonis."
+    }
+  }
 }

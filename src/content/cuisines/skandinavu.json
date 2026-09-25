@@ -5,5 +5,22 @@
   "emoji": "🐟",
   "color": "#4a7c9c",
   "order": 9,
-  "description": "Lasis, ogas, kardamons un rudzi. Tīras garšas no ziemeļiem."
+  "description": "Lasis, ogas, kardamons un rudzi. Tīras garšas no ziemeļiem.",
+  "translations": {
+    "en": {
+      "name": "Scandinavian",
+      "region": "Sweden, Norway, Denmark, Finland",
+      "description": "Salmon, berries, cardamom and rye. Clean flavours from the north."
+    },
+    "ru": {
+      "name": "Скандинавская",
+      "region": "Швеция, Норвегия, Дания, Финляндия",
+      "description": "Лосось, ягоды, кардамон и рожь. Чистые вкусы севера."
+    },
+    "lt": {
+      "name": "Skandinavų",
+      "region": "Švedija, Norvegija, Danija, Suomija",
+      "description": "Lašiša, uogos, kardamonas ir rugiai. Švarūs šiaurės skoniai."
+    }
+  }
 }

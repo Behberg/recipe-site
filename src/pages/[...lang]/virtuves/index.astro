@@ -1,8 +1,12 @@
 ---
-import Base from '../../layouts/Base.astro';
-import { getCatalog, cuisineUrl, plural } from '../../lib/recipes';
+import Base from '../../../layouts/Base.astro';
+import { getCatalog, cuisineUrl } from '../../../lib/recipes';
+import { langFromPath, langPaths, t, count as countText, type UIKey } from '../../../i18n';
 
-const { recipes, cuisines } = await getCatalog();
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const { recipes, cuisines } = await getCatalog(lang);
 const count = (id: string) => recipes.filter((r) => r.data.cuisine.id === id).length;
 
 const continents = [
@@ -11,20 +15,20 @@ const continents = [
   { id: 'Tuvie Austrumi un Āfrika', emoji: '🕌' },
   { id: 'Amerika', emoji: '🗽' },
 ]
-  .map((c) => ({ ...c, cuisines: cuisines.filter((x) => x.data.continent === c.id && count(x.id) > 0) }))
+  .map((c) => ({ ...c, name: t(lang, `continent.${c.id}` as UIKey), cuisines: cuisines.filter((x) => x.data.continent === c.id && count(x.id) > 0) }))
   .filter((c) => c.cuisines.length);
 ---
 
-<Base title="Pasaules virtuves" description="Latviešu, itāļu, franču, japāņu, indiešu, meksikāņu un citu pasaules virtuvju receptes.">
+<Base title={t(lang, 'cuisines.title')} description={t(lang, 'cuisines.metaDesc')}>
   <section class="page-hero container">
-    <span class="eyebrow">Ceļojums pa pasauli</span>
-    <h1>Pasaules virtuves</h1>
-    <p>Sāc ar mājām un dodies tālāk. {cuisines.length} virtuves, katrai savas garšas, tradīcijas un iecienītākie ēdieni.</p>
-    <nav class="jump" aria-label="Kontinenti">
+    <span class="eyebrow">{t(lang, 'cuisines.eyebrow')}</span>
+    <h1>{t(lang, 'cuisines.title')}</h1>
+    <p>{t(lang, 'cuisines.lead')}</p>
+    <nav class="jump" aria-label={t(lang, 'cuisines.continents')}>
       {
         continents.map((c) => (
           <a class="chip" href={`#${c.id.toLowerCase().replace(/\s+/g, '-')}`}>
-            <span aria-hidden="true">{c.emoji}</span> {c.id}
+            <span aria-hidden="true">{c.emoji}</span> {c.name}
           </a>
         ))
       }
@@ -37,10 +41,10 @@ const continents = [
         <div class="section-head">
           <div>
             <span class="eyebrow">
-              {c.cuisines.length} {plural(c.cuisines.length, 'virtuve', 'virtuves')}
+              {countText(lang, c.cuisines.length, 'count.cuisines')}
             </span>
             <h2 id={`h-${c.id}`}>
-              <span aria-hidden="true">{c.emoji}</span> {c.id}
+              <span aria-hidden="true">{c.emoji}</span> {c.name}
             </h2>
           </div>
         </div>
@@ -48,13 +52,13 @@ const continents = [
           {c.cuisines.map((x) => {
             const n = count(x.id);
             return (
-              <a class:list={['cuisine-tile', { 'cuisine-tile--featured': x.id === 'latviesu' }]} href={cuisineUrl(x.id)} style={`--c:${x.data.color}`}>
+              <a class:list={['cuisine-tile', { 'cuisine-tile--featured': x.id === 'latviesu' }]} href={cuisineUrl(x.id, lang)} style={`--c:${x.data.color}`}>
                 <div>
                   <h3>{x.data.name}</h3>
                   <p class="region">{x.data.description}</p>
                 </div>
                 <span class="count">
-                  {n} {plural(n, 'recepte', 'receptes')}
+                  {countText(lang, n, 'count.recipes')}
                 </span>
                 <span class="emoji" aria-hidden="true">
                   {x.data.emoji}

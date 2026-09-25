@@ -5,5 +5,22 @@
   "emoji": "🇬🇪",
   "color": "#a8323c",
   "order": 13,
-  "description": "Hačapuri, hinkali un riekstu mērces. Viena no dāsnākajām virtuvēm pasaulē."
+  "description": "Hačapuri, hinkali un riekstu mērces. Viena no dāsnākajām virtuvēm pasaulē.",
+  "translations": {
+    "en": {
+      "name": "Georgian",
+      "region": "Georgia",
+      "description": "Khachapuri, khinkali and walnut sauces. One of the most generous cuisines in the world."
+    },
+    "ru": {
+      "name": "Грузинская",
+      "region": "Грузия",
+      "description": "Хачапури, хинкали и ореховые соусы. Одна из самых щедрых кухонь мира."
+    },
+    "lt": {
+      "name": "Gruzinų",
+      "region": "Sakartvelas",
+      "description": "Chačapuris, chinkaliai ir riešutų padažai. Viena dosniausių virtuvių pasaulyje."
+    }
+  }
 }

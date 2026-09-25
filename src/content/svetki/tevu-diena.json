@@ -8,5 +8,19 @@
   "nth": 2,
   "leadDays": 10,
   "order": 9,
-  "description": "Grils, steiki un sātīgi ēdieni tētim."
+  "description": "Grils, steiki un sātīgi ēdieni tētim.",
+  "translations": {
+    "en": {
+      "name": "Father’s Day",
+      "description": "Barbecue, steaks and hearty food for dad."
+    },
+    "ru": {
+      "name": "День отца",
+      "description": "Гриль, стейки и сытные блюда для папы."
+    },
+    "lt": {
+      "name": "Tėvo diena",
+      "description": "Kepsninė, kepsniai ir sotūs patiekalai tėčiui."
+    }
+  }
 }

@@ -1,10 +1,14 @@
 ---
-import Base from '../layouts/Base.astro';
-import Icon from '../components/Icon.astro';
-import { getCatalog, totalTime, formatMinutes, imageUrl } from '../lib/recipes';
-import { dishIconSvg, parseIcon } from '../lib/dishIcons';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { getCatalog, totalTime, formatMinutes, imageUrl } from '../../lib/recipes';
+import { dishIconSvg, parseIcon } from '../../lib/dishIcons';
+import { langFromPath, langPaths, t, type UIKey } from '../../i18n';
 
-const { recipes, cuisineById, categoryById } = await getCatalog();
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const { recipes, cuisineById, categoryById } = await getCatalog(lang);
 
 const deck = recipes.map((r) => {
   const cat = categoryById.get(r.data.category.id);
@@ -18,41 +22,35 @@ const deck = recipes.map((r) => {
     i: r.data.image ? imageUrl(r.data.image, 700) : '',
     s: r.data.image ? '' : dishIconSvg(parseIcon(r.data.icon, r.data.iconColors, r.data.iconExtra), r.data.title),
     m: totalTime(r),
-    time: formatMinutes(totalTime(r)),
-    diff: r.data.difficulty,
+    time: formatMinutes(totalTime(r), lang),
+    diff: t(lang, `diff.${r.data.difficulty}` as UIKey),
     cu: r.data.cuisine.id,
     cun: cui ? `${cui.data.emoji} ${cui.data.name}` : '',
     ca: r.data.category.id,
-    tg: r.data.tags,
+    tg: r.lv.tags,
   };
 });
 
-const moods = [
-  { id: 'viss', label: '🎲 Jebkas' },
-  { id: 'majigi', label: '🏠 Kaut kas mājīgs' },
-  { id: 'satigs', label: '🍲 Kaut kas sātīgs' },
-  { id: 'saldais', label: '🍰 Kaut kas salds' },
-  { id: 'atri', label: '⚡ Ātri, līdz 30 min' },
-  { id: 'latviesu', label: '🇱🇻 Latviešu' },
-  { id: 'brokastis', label: '🍳 Brokastis' },
-  { id: 'pasaule', label: '🌍 Kaut kas eksotisks' },
-];
+const moods = ['viss', 'majigi', 'satigs', 'saldais', 'atri', 'latviesu', 'brokastis', 'pasaule'].map((id) => ({
+  id,
+  label: t(lang, `mood.${id}` as UIKey),
+}));
 ---
 
-<Base title="Recepšu Tinderis" description="Nevari izlemt, ko gatavot? Velc receptes pa labi vai pa kreisi, līdz paliek viens uzvarētājs.">
+<Base title={t(lang, 'ideas.tinderTitle')} description={t(lang, 'tinder.metaDesc')}>
   <div class="tinder container" data-tinder>
     <!-- Start -->
     <section class="stage start" data-screen="start">
-      <span class="eyebrow">🔥 Recepšu Tinderis</span>
-      <h1>Nevari izlemt, ko gatavot?</h1>
-      <p class="lead">Tev parādīsim 12 receptes. <strong>Pa labi</strong>, ja gribas, <strong>pa kreisi</strong>, ja ne. Patikušās cīnīsies finālā, līdz paliek viena.</p>
+      <span class="eyebrow">{t(lang, 'tinder.eyebrow')}</span>
+      <h1>{t(lang, 'tinder.title')}</h1>
+      <p class="lead" set:html={t(lang, 'tinder.lead')} />
       <div class="how" aria-hidden="true">
-        <span class="how-card how-l">👈 Nē</span>
+        <span class="how-card how-l">{t(lang, 'tinder.no')}</span>
         <span class="how-card how-c">🍽️</span>
-        <span class="how-card how-r">Jā 👉</span>
+        <span class="how-card how-r">{t(lang, 'tinder.yes')}</span>
       </div>
-      <h2 class="mood-title">Kas šodien garšotu?</h2>
-      <div class="moods" role="radiogroup" aria-label="Noskaņojums">
+      <h2 class="mood-title">{t(lang, 'tinder.moodTitle')}</h2>
+      <div class="moods" role="radiogroup" aria-label={t(lang, 'tinder.moodAria')}>
         {
           moods.map((m, i) => (
             <button type="button" class="chip mood" role="radio" aria-checked={i === 0 ? 'true' : 'false'} data-mood={m.id}>
@@ -62,7 +60,7 @@ const moods = [
         }
       </div>
       <button type="button" class="btn btn-primary start-btn" data-start>
-        <Icon name="flame" /> Sākam!
+        <Icon name="flame" /> {t(lang, 'tinder.start')}
       </button>
     </section>
 
@@ -74,41 +72,41 @@ const moods = [
       </div>
       <div class="deck" data-deck aria-live="polite"></div>
       <div class="swipe-actions">
-        <button type="button" class="round nope" data-nope aria-label="Nē, nākamā"><Icon name="x" /></button>
-        <button type="button" class="round undo" data-undo aria-label="Atsaukt"><Icon name="refresh" /></button>
-        <button type="button" class="round like" data-like aria-label="Jā, patīk"><Icon name="heart" /></button>
+        <button type="button" class="round nope" data-nope aria-label={t(lang, 'tinder.nope')}><Icon name="x" /></button>
+        <button type="button" class="round undo" data-undo aria-label={t(lang, 'tinder.undo')}><Icon name="refresh" /></button>
+        <button type="button" class="round like" data-like aria-label={t(lang, 'tinder.like')}><Icon name="heart" /></button>
       </div>
-      <p class="swipe-hint">Velc karti vai izmanto pogas. Uz datora strādā arī ← un → taustiņi.</p>
+      <p class="swipe-hint">{t(lang, 'tinder.hint')}</p>
     </section>
 
     <!-- Duel -->
     <section class="stage duel" data-screen="duel" hidden>
-      <span class="eyebrow" data-duel-round>Fināls</span>
-      <h2>Kura labāk?</h2>
-      <p class="lead">Pieskaries receptei, ko gribi vairāk.</p>
+      <span class="eyebrow" data-duel-round>{t(lang, 'tinder.final')}</span>
+      <h2>{t(lang, 'tinder.which')}</h2>
+      <p class="lead">{t(lang, 'tinder.pick')}</p>
       <div class="duel-cards" data-duel></div>
     </section>
 
     <!-- No likes -->
     <section class="stage nolike" data-screen="nolike" hidden>
       <div class="big" aria-hidden="true">🙈</div>
-      <h2>Nekas neiekrita acīs?</h2>
-      <p class="lead">Nekas traks, izmēģini citu noskaņojumu vai jaunu kavu.</p>
+      <h2>{t(lang, 'tinder.noneTitle')}</h2>
+      <p class="lead">{t(lang, 'tinder.noneText')}</p>
       <div class="end-actions">
-        <button type="button" class="btn btn-primary" data-again>Jauna kava</button>
-        <button type="button" class="btn btn-ghost" data-restart>Mainīt noskaņojumu</button>
+        <button type="button" class="btn btn-primary" data-again>{t(lang, 'tinder.newDeck')}</button>
+        <button type="button" class="btn btn-ghost" data-restart>{t(lang, 'tinder.changeMood')}</button>
       </div>
     </section>
 
     <!-- Winner -->
     <section class="stage winner" data-screen="winner" hidden>
       <canvas class="confetti" data-confetti aria-hidden="true"></canvas>
-      <span class="eyebrow">🏆 Mums ir uzvarētājs</span>
-      <h2>Šodien gatavosim:</h2>
+      <span class="eyebrow">{t(lang, 'tinder.winnerEyebrow')}</span>
+      <h2>{t(lang, 'tinder.today')}</h2>
       <div class="winner-card" data-winner></div>
       <div class="end-actions">
-        <a class="btn btn-primary" data-winner-link href="#">Uz recepti <Icon name="arrow-right" /></a>
-        <button type="button" class="btn btn-ghost" data-restart>Spēlēt vēlreiz</button>
+        <a class="btn btn-primary" data-winner-link href="#">{t(lang, 'tinder.toRecipe')} <Icon name="arrow-right" /></a>
+        <button type="button" class="btn btn-ghost" data-restart>{t(lang, 'tinder.again')}</button>
       </div>
     </section>
   </div>
@@ -117,6 +115,8 @@ const moods = [
 </Base>
 
 <script>
+  import { ct, chref } from '../../i18n/client';
+
   type R = {
     id: string; t: string; d: string; e: string; c: string; i: string; s: string; m: number;
     time: string; diff: string; cu: string; cun: string; ca: string; tg: string[];
@@ -208,10 +208,10 @@ const moods = [
     el.append(body);
     const yes = document.createElement('span');
     yes.className = 'stamp stamp-yes';
-    yes.textContent = 'GRIBU!';
+    yes.textContent = ct('tinder.stampYes');
     const no = document.createElement('span');
     no.className = 'stamp stamp-no';
-    no.textContent = 'NĒ';
+    no.textContent = ct('tinder.stampNo');
     el.append(yes, no);
     return el;
   }
@@ -333,7 +333,7 @@ const moods = [
     const box = $('[data-duel]');
     const round = () => {
       const challenger = contenders[i];
-      $('[data-duel-round]').textContent = `Fināls · ${i} / ${contenders.length - 1}`;
+      $('[data-duel-round]').textContent = ct('tinder.finalRound', { i, n: contenders.length - 1 });
       const a = cardEl(champion, 'duel-card');
       const b = cardEl(challenger, 'duel-card');
       const vs = document.createElement('span');
@@ -361,7 +361,7 @@ const moods = [
     show('winner');
     const box = $('[data-winner]');
     box.replaceChildren(cardEl(r, 'win-card'));
-    ($('[data-winner-link]') as HTMLAnchorElement).href = `/recepte/${r.id}/`;
+    ($('[data-winner-link]') as HTMLAnchorElement).href = chref(`/recepte/${r.id}/`);
     confetti();
   }
 

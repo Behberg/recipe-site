@@ -1,5 +1,6 @@
 ---
 import { ADS, adsEnabled } from '../site.config';
+import { langFromPath, t } from '../i18n';
 
 /**
  * A single Google AdSense unit.
@@ -19,14 +20,15 @@ interface Props {
 }
 
 const { slot, class: className } = Astro.props;
+const label = t(langFromPath(Astro.url.pathname), 'common.ad');
 const enabled = adsEnabled() && ADS.slots[slot];
 const showPlaceholder = !enabled && import.meta.env.DEV;
 ---
 
 {
   enabled ? (
-    <aside class:list={['ad', className]} aria-label="Reklāma">
-      <span class="ad-label">Reklāma</span>
+    <aside class:list={['ad', className]} aria-label={label}>
+      <span class="ad-label">{label}</span>
       <ins
         class="adsbygoogle ad-slot"
         data-ad-client={ADS.client}
@@ -37,7 +39,7 @@ const showPlaceholder = !enabled && import.meta.env.DEV;
     </aside>
   ) : showPlaceholder ? (
     <aside class:list={['ad', className]} aria-hidden="true">
-      <span class="ad-label">Reklāma</span>
+      <span class="ad-label">{label}</span>
       <div class="ad-placeholder">Reklāmas vieta ({slot}), redzama tikai izstrādes režīmā</div>
     </aside>
   ) : null

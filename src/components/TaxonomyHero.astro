@@ -1,5 +1,5 @@
 ---
-import { plural } from '../lib/format';
+import { langFromPath, href, t, count as countText } from '../i18n';
 
 interface Props {
   name: string;
@@ -10,15 +10,16 @@ interface Props {
   parent: { href: string; label: string };
 }
 const { name, emoji, color, description, count, parent } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
 ---
 
 <section class="container tax-hero-wrap">
-  <nav class="breadcrumbs" aria-label="Navigācijas ceļš">
-    <a href="/">Sākums</a><span aria-hidden="true">/</span><a href={parent.href}>{parent.label}</a>
+  <nav class="breadcrumbs" aria-label={t(lang, 'common.breadcrumbs')}>
+    <a href={href(lang, '/')}>{t(lang, 'common.home')}</a><span aria-hidden="true">/</span><a href={parent.href}>{parent.label}</a>
   </nav>
   <div class="tax-hero" style={`--c:${color}`}>
     <div class="tax-copy">
-      <span class="tax-count">{count} {plural(count, 'recepte', 'receptes')}</span>
+      <span class="tax-count">{countText(lang, count, 'count.recipes')}</span>
       <h1>{name}</h1>
       <p>{description}</p>
     </div>

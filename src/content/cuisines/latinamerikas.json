@@ -5,5 +5,22 @@
   "emoji": "🌎",
   "color": "#3f8a3a",
   "order": 42,
-  "description": "Seviče, empanadas un brigadeiro. Kontinents ar ļoti daudzveidīgām garšām."
+  "description": "Seviče, empanadas un brigadeiro. Kontinents ar ļoti daudzveidīgām garšām.",
+  "translations": {
+    "en": {
+      "name": "Latin American",
+      "region": "Peru, Brazil, Argentina",
+      "description": "Ceviche, empanadas and brigadeiros. A continent of wonderfully varied flavours."
+    },
+    "ru": {
+      "name": "Латиноамериканская",
+      "region": "Перу, Бразилия, Аргентина",
+      "description": "Севиче, эмпанадас и бригадейро. Континент с очень разнообразными вкусами."
+    },
+    "lt": {
+      "name": "Lotynų Amerikos",
+      "region": "Peru, Brazilija, Argentina",
+      "description": "Sevičė, empanados ir brigadeirai. Žemynas, kuriame labai įvairūs skoniai."
+    }
+  }
 }

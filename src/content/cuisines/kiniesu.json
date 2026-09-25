@@ -5,5 +5,22 @@
   "emoji": "🇨🇳",
   "color": "#c8322a",
   "order": 21,
-  "description": "Vokā cepti ēdieni, pelmeņi un saldskābas mērces."
+  "description": "Vokā cepti ēdieni, pelmeņi un saldskābas mērces.",
+  "translations": {
+    "en": {
+      "name": "Chinese",
+      "region": "China",
+      "description": "Wok stir fries, dumplings and sweet and sour sauces."
+    },
+    "ru": {
+      "name": "Китайская",
+      "region": "Китай",
+      "description": "Блюда из вока, пельмени и кисло-сладкие соусы."
+    },
+    "lt": {
+      "name": "Kinų",
+      "region": "Kinija",
+      "description": "Voke kepti patiekalai, virtinukai ir saldžiarūgščiai padažai."
+    }
+  }
 }

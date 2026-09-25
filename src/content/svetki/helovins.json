@@ -7,5 +7,19 @@
   "day": 31,
   "leadDays": 14,
   "order": 11,
-  "description": "Ķirbju zupa, ķirbju pīrāgs un šokolādes kārumi."
+  "description": "Ķirbju zupa, ķirbju pīrāgs un šokolādes kārumi.",
+  "translations": {
+    "en": {
+      "name": "Halloween",
+      "description": "Pumpkin soup, pumpkin pie and chocolate treats."
+    },
+    "ru": {
+      "name": "Хэллоуин",
+      "description": "Тыквенный суп, тыквенный пирог и шоколадные лакомства."
+    },
+    "lt": {
+      "name": "Helovinas",
+      "description": "Moliūgų sriuba, moliūgų pyragas ir šokoladiniai skanėstai."
+    }
+  }
 }

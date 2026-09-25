@@ -7,6 +7,18 @@ const empty = (v: unknown) => (v === '' || v === null ? undefined : v);
 const optString = z.preprocess(empty, z.string().optional());
 const optNumber = z.preprocess(empty, z.coerce.number().optional());
 
+/** Name and description in English, Russian and Lithuanian. Missing ones fall back to Latvian. */
+const nameTranslations = z.preprocess(
+  empty,
+  z
+    .object({
+      en: z.object({ name: optString, description: optString, region: optString }).optional(),
+      ru: z.object({ name: optString, description: optString, region: optString }).optional(),
+      lt: z.object({ name: optString, description: optString, region: optString }).optional(),
+    })
+    .optional(),
+);
+
 const cuisines = defineCollection({
   loader: glob({ pattern: '*.json', base: './src/content/cuisines' }),
   schema: z.object({
@@ -17,6 +29,7 @@ const cuisines = defineCollection({
     color: z.string().default('#9e3039'),
     description: z.string(),
     order: z.coerce.number().default(100),
+    translations: nameTranslations,
   }),
 });
 
@@ -28,6 +41,7 @@ const categories = defineCollection({
     color: z.string().default('#c8773a'),
     description: z.string(),
     order: z.coerce.number().default(100),
+    translations: nameTranslations,
   }),
 });
 
@@ -49,11 +63,13 @@ const svetki = defineCollection({
     /** How many days before the occasion the site starts suggesting its recipes. */
     leadDays: z.coerce.number().default(14),
     order: z.coerce.number().default(100),
+    translations: nameTranslations,
   }),
 });
 
 const recipes = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/recipes' }),
+  // Translations live next to the recipe as name.en.md, name.ru.md, name.lt.md.
+  loader: glob({ pattern: ['**/*.md', '!**/*.*.md'], base: './src/content/recipes' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -89,4 +105,25 @@ const recipes = defineCollection({
   }),
 });
 
-export const collections = { cuisines, categories, svetki, recipes };
+/**
+ * Recipe translations (recipe-id.en.md and so on). Only the text is translated: amounts, times and
+ * everything else come from the Latvian recipe. Ingredient names missing here fall back to the
+ * shared dictionary in src/i18n/data, then to Latvian.
+ */
+const recipeTranslations = defineCollection({
+  loader: glob({
+    pattern: '**/*.{en,ru,lt}.md',
+    base: './src/content/recipes',
+    generateId: ({ entry }) => entry.replace(/.md$/, ''),
+  }),
+  schema: z.object({
+    title: optString,
+    description: optString,
+    yield: optString,
+    ingredients: z.preprocess(empty, z.array(z.looseObject({ name: optString, group: optString })).default([])),
+    steps: z.preprocess(empty, z.array(z.string()).default([])),
+    tips: z.preprocess(empty, z.array(z.string()).default([])),
+  }),
+});
+
+export const collections = { cuisines, categories, svetki, recipes, recipeTranslations };

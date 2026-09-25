@@ -1,5 +1,7 @@
 // Occasion date rules. Pure functions, used both at build time and in the browser
 // (the browser always knows today's date, the static build does not).
+import { ct, pageLang } from '../i18n/client';
+import { pickForm } from '../i18n/core';
 
 export interface OccasionRule {
   id: string;
@@ -8,7 +10,7 @@ export interface OccasionRule {
   day?: number;
   easterOffset?: number;
   weekday?: number; // 0 = Sunday
-  nth?: number; // 1..5, or -1 for "last"
+  nth?: number; // 1..5, or -1 for 'last'
   leadDays: number;
 }
 
@@ -42,7 +44,7 @@ function nthWeekday(year: number, month: number, weekday: number, nth: number): 
   return new Date(year, month - 1, 1 + diff + (nth - 1) * 7);
 }
 
-/** The occasion's date in a given year, or null for "any day" occasions. */
+/** The occasion's date in a given year, or null for 'any day' occasions. */
 export function occasionDate(rule: OccasionRule, year: number): Date | null {
   switch (rule.dateType) {
     case 'fiksets':
@@ -71,15 +73,16 @@ export function nextOccurrence(rule: OccasionRule, today = new Date()): { date: 
   return null;
 }
 
-const MONTHS = ['janvārī', 'februārī', 'martā', 'aprīlī', 'maijā', 'jūnijā', 'jūlijā', 'augustā', 'septembrī', 'oktobrī', 'novembrī', 'decembrī'];
-const MONTHS_SHORT = ['janv.', 'febr.', 'marts', 'apr.', 'maijs', 'jūn.', 'jūl.', 'aug.', 'sept.', 'okt.', 'nov.', 'dec.'];
+// Date words come from the page dictionary (browser only: the build does not know today's date).
+const months = (short = false) => ct(short ? 'cal.monthsShort' : 'cal.months').split('|');
 
-export const formatDateLong = (d: Date) => `${d.getDate()}. ${MONTHS[d.getMonth()]}`;
-export const monthShort = (d: Date) => MONTHS_SHORT[d.getMonth()];
+/** '23. jūnijā', '23 June', '23 июня', 'birželio 23 d.' */
+export const formatDateLong = (d: Date) => ct('cal.dateFormat', { d: d.getDate(), month: months()[d.getMonth()] });
+export const monthShort = (d: Date) => months(true)[d.getMonth()];
 
-/** "šodien", "rīt", "pēc 5 dienām", "pēc 21 dienas". */
+/** 'šodien', 'rīt', 'pēc 5 dienām', 'pēc 21 dienas'. */
 export function countdown(days: number): string {
-  if (days === 0) return 'šodien';
-  if (days === 1) return 'rīt';
-  return `pēc ${days} ${days % 10 === 1 && days % 100 !== 11 ? 'dienas' : 'dienām'}`;
+  if (days === 0) return ct('cal.today');
+  if (days === 1) return ct('cal.tomorrow');
+  return ct('cal.inDays', { n: days, days: pickForm(pageLang(), days, ct('cal.days')) });
 }

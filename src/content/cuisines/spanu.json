@@ -5,5 +5,22 @@
   "emoji": "🇪🇸",
   "color": "#c2412f",
   "order": 5,
-  "description": "Paelja, tapas un gaspačo. Saules, olīveļļas un ķiploku garša."
+  "description": "Paelja, tapas un gaspačo. Saules, olīveļļas un ķiploku garša.",
+  "translations": {
+    "en": {
+      "name": "Spanish",
+      "region": "Spain",
+      "description": "Paella, tapas and gazpacho. The taste of sun, olive oil and garlic."
+    },
+    "ru": {
+      "name": "Испанская",
+      "region": "Испания",
+      "description": "Паэлья, тапас и гаспачо. Вкус солнца, оливкового масла и чеснока."
+    },
+    "lt": {
+      "name": "Ispanų",
+      "region": "Ispanija",
+      "description": "Paelija, tapas ir gaspačas. Saulės, alyvuogių aliejaus ir česnakų skonis."
+    }
+  }
 }

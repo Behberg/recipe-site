@@ -7,5 +7,19 @@
   "day": 24,
   "leadDays": 30,
   "order": 1,
-  "description": "Pelēkie zirņi, pīrāgi, cepetis un piparkūkas. Viss, kas vajadzīgs siltam Ziemassvētku vakaram."
+  "description": "Pelēkie zirņi, pīrāgi, cepetis un piparkūkas. Viss, kas vajadzīgs siltam Ziemassvētku vakaram.",
+  "translations": {
+    "en": {
+      "name": "Christmas",
+      "description": "Grey peas, pīrāgi, a roast and gingerbread. Everything for a warm Christmas Eve."
+    },
+    "ru": {
+      "name": "Рождество",
+      "description": "Серый горох, пирожки, жаркое и пряники. Всё для тёплого рождественского вечера."
+    },
+    "lt": {
+      "name": "Kalėdos",
+      "description": "Pilkieji žirniai, pyragėliai, kepsnys ir meduoliai. Viskas jaukiam Kalėdų vakarui."
+    }
+  }
 }

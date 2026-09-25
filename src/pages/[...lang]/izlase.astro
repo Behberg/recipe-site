@@ -1,16 +1,20 @@
 ---
-import Base from '../layouts/Base.astro';
-import RecipeCard from '../components/RecipeCard.astro';
-import { getCatalog } from '../lib/recipes';
+import Base from '../../layouts/Base.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import { getCatalog } from '../../lib/recipes';
+import { langFromPath, langPaths, href, t } from '../../i18n';
 
-const { recipes, cuisineById, categoryById } = await getCatalog();
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const { recipes, cuisineById, categoryById } = await getCatalog(lang);
 ---
 
-<Base title="Mana izlase" description="Tavas saglabātās receptes." noindex>
+<Base title={t(lang, 'fav.metaTitle')} description={t(lang, 'fav.metaDesc')} noindex>
   <section class="page-hero container">
-    <span class="eyebrow">❤️ Saglabātās</span>
-    <h1>Mana izlase</h1>
-    <p>Receptes, kurām nospiedi sirsniņu. Tās glabājas tikai šajā ierīcē, bez reģistrēšanās.</p>
+    <span class="eyebrow">{t(lang, 'fav.eyebrow')}</span>
+    <h1>{t(lang, 'fav.title')}</h1>
+    <p>{t(lang, 'fav.lead')}</p>
   </section>
 
   <section class="section container">
@@ -20,16 +24,16 @@ const { recipes, cuisineById, categoryById } = await getCatalog();
     </div>
     <div class="empty" data-fav-empty hidden>
       <div class="big">🤍</div>
-      <h3>Izlase pagaidām ir tukša</h3>
-      <p>Nospied sirsniņu uz jebkuras receptes, un tā parādīsies šeit.</p>
-      <a class="btn btn-primary" href="/receptes/" style="margin-top:18px">Atrast receptes</a>
+      <h3>{t(lang, 'fav.emptyTitle')}</h3>
+      <p>{t(lang, 'fav.emptyText')}</p>
+      <a class="btn btn-primary" href={href(lang, '/receptes/')} style="margin-top:18px">{t(lang, 'fav.find')}</a>
     </div>
   </section>
 </Base>
 
 <script>
-  import { getFavorites } from '../lib/favorites';
-  import { plural } from '../lib/format';
+  import { getFavorites } from '../../lib/favorites';
+  import { ccount } from '../../i18n/client';
 
   const grid = document.querySelector<HTMLElement>('[data-fav-grid]')!;
   const empty = document.querySelector<HTMLElement>('[data-fav-empty]')!;
@@ -46,7 +50,7 @@ const { recipes, cuisineById, categoryById } = await getCatalog();
       grid.appendChild(card);
     });
     empty.hidden = favs.length > 0;
-    count.textContent = favs.length ? `${favs.length} ${plural(favs.length, 'saglabāta recepte', 'saglabātas receptes')}` : '';
+    count.textContent = favs.length ? ccount(favs.length, 'count.saved') : '';
   }
   render();
   document.addEventListener('favorites:change', () => setTimeout(render, 350));

@@ -6,5 +6,19 @@
   "easterOffset": 0,
   "leadDays": 21,
   "order": 5,
-  "description": "Krāsotas olas, pīrāgi, biezpiena deserts un pavasara galds."
+  "description": "Krāsotas olas, pīrāgi, biezpiena deserts un pavasara galds.",
+  "translations": {
+    "en": {
+      "name": "Easter",
+      "description": "Dyed eggs, pīrāgi, a cottage cheese dessert and a spring table."
+    },
+    "ru": {
+      "name": "Пасха",
+      "description": "Крашеные яйца, пирожки, творожный десерт и весенний стол."
+    },
+    "lt": {
+      "name": "Velykos",
+      "description": "Margučiai, pyragėliai, varškės desertas ir pavasariškas stalas."
+    }
+  }
 }

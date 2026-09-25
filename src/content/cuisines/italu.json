@@ -5,5 +5,22 @@
   "emoji": "🇮🇹",
   "color": "#2e8a4f",
   "order": 3,
-  "description": "Pasta, pica, risoto un tiramisu. Vienkāršas sastāvdaļas, no kurām top lieliski ēdieni."
+  "description": "Pasta, pica, risoto un tiramisu. Vienkāršas sastāvdaļas, no kurām top lieliski ēdieni.",
+  "translations": {
+    "en": {
+      "name": "Italian",
+      "region": "Italy",
+      "description": "Pasta, pizza, risotto and tiramisu. Simple ingredients that make wonderful food."
+    },
+    "ru": {
+      "name": "Итальянская",
+      "region": "Италия",
+      "description": "Паста, пицца, ризотто и тирамису. Простые продукты, из которых получаются прекрасные блюда."
+    },
+    "lt": {
+      "name": "Italų",
+      "region": "Italija",
+      "description": "Makaronai, pica, rizotas ir tiramisu. Paprasti produktai, iš kurių gimsta puikūs patiekalai."
+    }
+  }
 }

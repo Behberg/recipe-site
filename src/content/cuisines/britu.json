@@ -5,5 +5,22 @@
   "emoji": "🇬🇧",
   "color": "#3a4f7a",
   "order": 8,
-  "description": "Zivs ar kartupeļiem, pīrāgi, skones un pēcpusdienas tēja."
+  "description": "Zivs ar kartupeļiem, pīrāgi, skones un pēcpusdienas tēja.",
+  "translations": {
+    "en": {
+      "name": "British",
+      "region": "England, Scotland, Ireland",
+      "description": "Fish and chips, pies, scones and afternoon tea."
+    },
+    "ru": {
+      "name": "Британская",
+      "region": "Англия, Шотландия, Ирландия",
+      "description": "Рыба с картошкой, пироги, сконы и послеобеденный чай."
+    },
+    "lt": {
+      "name": "Britų",
+      "region": "Anglija, Škotija, Airija",
+      "description": "Žuvis su bulvytėmis, pyragai, bandelės ir popietės arbata."
+    }
+  }
 }

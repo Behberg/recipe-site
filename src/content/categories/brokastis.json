@@ -3,5 +3,19 @@
   "emoji": "🍳",
   "color": "#e0a526",
   "order": 1,
-  "description": "Labs rīts sākas ar gardām brokastīm."
+  "description": "Labs rīts sākas ar gardām brokastīm.",
+  "translations": {
+    "en": {
+      "name": "Breakfast",
+      "description": "A good morning starts with a tasty breakfast."
+    },
+    "ru": {
+      "name": "Завтраки",
+      "description": "Хорошее утро начинается с вкусного завтрака."
+    },
+    "lt": {
+      "name": "Pusryčiai",
+      "description": "Geras rytas prasideda nuo skanių pusryčių."
+    }
+  }
 }

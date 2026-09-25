@@ -3,5 +3,19 @@
   "emoji": "🥗",
   "color": "#5b8c3a",
   "order": 4,
-  "description": "Svaigi salāti, mērces un galda uzkodas."
+  "description": "Svaigi salāti, mērces un galda uzkodas.",
+  "translations": {
+    "en": {
+      "name": "Salads and starters",
+      "description": "Fresh salads, dips and party nibbles."
+    },
+    "ru": {
+      "name": "Салаты и закуски",
+      "description": "Свежие салаты, соусы и закуски к столу."
+    },
+    "lt": {
+      "name": "Salotos ir užkandžiai",
+      "description": "Šviežios salotos, padažai ir užkandžiai prie stalo."
+    }
+  }
 }

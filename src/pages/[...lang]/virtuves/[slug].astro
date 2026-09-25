@@ -1,0 +1,43 @@
+---
+import Base from '../../../layouts/Base.astro';
+import TaxonomyHero from '../../../components/TaxonomyHero.astro';
+import RecipeBrowser from '../../../components/RecipeBrowser.astro';
+import { getCatalog, getCuisines } from '../../../lib/recipes';
+import { LANGS, langParam, href, t, type Lang } from '../../../i18n';
+
+export async function getStaticPaths() {
+  const cuisines = await getCuisines();
+  return LANGS.flatMap((lang) => cuisines.map((c) => ({ params: { lang: langParam(lang), slug: c.id }, props: { lang } })));
+}
+
+const { lang } = Astro.props as { lang: Lang };
+const { recipes: all, cuisines, categories, cuisineById } = await getCatalog(lang);
+const cuisine = cuisineById.get(Astro.params.slug!)!;
+const recipes = all.filter((r) => r.data.cuisine.id === cuisine.id);
+const title = t(lang, 'cuisine.title', { name: cuisine.data.name });
+---
+
+<Base title={title} description={cuisine.data.description}>
+  <TaxonomyHero
+    name={title}
+    emoji={cuisine.data.emoji}
+    color={cuisine.data.color}
+    description={cuisine.data.description}
+    count={recipes.length}
+    parent={{ href: href(lang, '/virtuves/'), label: t(lang, 'nav.cuisines') }}
+  />
+
+  <section class="container" style="padding-top:20px">
+    {
+      recipes.length ? (
+        <RecipeBrowser recipes={recipes} cuisines={cuisines} categories={categories} cuisineFilter={false} />
+      ) : (
+        <div class="empty">
+          <div class="big">{cuisine.data.emoji}</div>
+          <h3>{t(lang, 'taxonomy.soonTitle')}</h3>
+          <p>{t(lang, 'taxonomy.soonText')}</p>
+        </div>
+      )
+    }
+  </section>
+</Base>

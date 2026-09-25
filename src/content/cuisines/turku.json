@@ -5,5 +5,22 @@
   "emoji": "🇹🇷",
   "color": "#c2332d",
   "order": 31,
-  "description": "Kebabi, baklava un menemens. Virtuve starp Eiropu un Āziju."
+  "description": "Kebabi, baklava un menemens. Virtuve starp Eiropu un Āziju.",
+  "translations": {
+    "en": {
+      "name": "Turkish",
+      "region": "Turkey",
+      "description": "Kebabs, baklava and menemen. A cuisine between Europe and Asia."
+    },
+    "ru": {
+      "name": "Турецкая",
+      "region": "Турция",
+      "description": "Кебабы, пахлава и менемен. Кухня между Европой и Азией."
+    },
+    "lt": {
+      "name": "Turkų",
+      "region": "Turkija",
+      "description": "Kebabai, baklava ir menemenas. Virtuvė tarp Europos ir Azijos."
+    }
+  }
 }

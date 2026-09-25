@@ -3,5 +3,19 @@
   "emoji": "🍰",
   "color": "#c24d7a",
   "order": 6,
-  "description": "Kūkas, deserti un saldie kārumi."
+  "description": "Kūkas, deserti un saldie kārumi.",
+  "translations": {
+    "en": {
+      "name": "Desserts",
+      "description": "Cakes, desserts and sweet treats."
+    },
+    "ru": {
+      "name": "Десерты",
+      "description": "Торты, десерты и сладости."
+    },
+    "lt": {
+      "name": "Desertai",
+      "description": "Pyragai, desertai ir saldumynai."
+    }
+  }
 }

@@ -5,5 +5,22 @@
   "emoji": "🇯🇵",
   "color": "#c23a4a",
   "order": 20,
-  "description": "Suši, rāmens un teriyaki. Precizitāte, umami un sezonas garšas."
+  "description": "Suši, rāmens un teriyaki. Precizitāte, umami un sezonas garšas.",
+  "translations": {
+    "en": {
+      "name": "Japanese",
+      "region": "Japan",
+      "description": "Sushi, ramen and teriyaki. Precision, umami and seasonal flavours."
+    },
+    "ru": {
+      "name": "Японская",
+      "region": "Япония",
+      "description": "Суши, рамен и терияки. Точность, умами и сезонные вкусы."
+    },
+    "lt": {
+      "name": "Japonų",
+      "region": "Japonija",
+      "description": "Suši, ramenas ir teriyaki. Tikslumas, umami ir sezoniniai skoniai."
+    }
+  }
 }

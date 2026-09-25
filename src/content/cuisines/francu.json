@@ -5,5 +5,22 @@
   "emoji": "🇫🇷",
   "color": "#3b5b8c",
   "order": 4,
-  "description": "No Parīzes bistro līdz Provansas virtuvei: sautējumi, pīrāgi un izsmalcināti deserti."
+  "description": "No Parīzes bistro līdz Provansas virtuvei: sautējumi, pīrāgi un izsmalcināti deserti.",
+  "translations": {
+    "en": {
+      "name": "French",
+      "region": "France",
+      "description": "From Paris bistros to Provence: stews, tarts and elegant desserts."
+    },
+    "ru": {
+      "name": "Французская",
+      "region": "Франция",
+      "description": "От парижских бистро до Прованса: рагу, пироги и изысканные десерты."
+    },
+    "lt": {
+      "name": "Prancūzų",
+      "region": "Prancūzija",
+      "description": "Nuo Paryžiaus bistro iki Provanso: troškiniai, pyragai ir rafinuoti desertai."
+    }
+  }
 }

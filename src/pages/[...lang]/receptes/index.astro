@@ -1,0 +1,44 @@
+---
+import Base from '../../../layouts/Base.astro';
+import RecipeBrowser from '../../../components/RecipeBrowser.astro';
+import { getCatalog } from '../../../lib/recipes';
+import { langFromPath, langPaths, href, t } from '../../../i18n';
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const u = (p: string) => href(lang, p);
+const { recipes, cuisines, categories } = await getCatalog(lang);
+---
+
+<Base title={t(lang, 'recipes.metaTitle')} description={t(lang, 'recipes.metaDesc')}>
+  <section class="page-hero container">
+    <span class="eyebrow">{t(lang, 'recipes.eyebrow')}</span>
+    <h1>{t(lang, 'recipes.title')}</h1>
+    <p>{t(lang, 'recipes.lead')}</p>
+    <nav class="shortcuts" aria-label={t(lang, 'recipes.shortcuts')}>
+      <a class="chip" href={u('/virtuves/')}>{t(lang, 'recipes.scCuisines')}</a>
+      <a class="chip" href={u('/svetki/')}>{t(lang, 'recipes.scOccasions')}</a>
+      <a class="chip" href={u('/ledusskapis/')}>{t(lang, 'recipes.scFridge')}</a>
+      <a class="chip" href={u('/tinderis/')}>{t(lang, 'recipes.scTinder')}</a>
+    </nav>
+  </section>
+  <section class="container" style="padding-top:16px">
+    <RecipeBrowser recipes={recipes} cuisines={cuisines} categories={categories} />
+  </section>
+</Base>
+
+<style>
+  .shortcuts {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+  }
+  .shortcuts::-webkit-scrollbar {
+    display: none;
+  }
+</style>

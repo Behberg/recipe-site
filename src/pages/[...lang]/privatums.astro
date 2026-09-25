@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../site.config';
+import { langFromPath, langPaths, t } from '../../i18n';
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+---
+
+<Base title={t(lang, 'privacy.title')} description={`${SITE.name}: ${t(lang, 'privacy.title')}`}>
+  <article class="container prose">
+    <span class="eyebrow">{t(lang, 'privacy.eyebrow')}</span>
+    <h1>{t(lang, 'privacy.title')}</h1>
+
+    <h2>{t(lang, 'privacy.h1')}</h2>
+    <p>{t(lang, 'privacy.p1', { site: SITE.name })}</p>
+
+    <h2>{t(lang, 'privacy.h2')}</h2>
+    <p>{t(lang, 'privacy.p2')}</p>
+    <p>
+      {t(lang, 'privacy.p3')}
+      <a href={`https://policies.google.com/technologies/partner-sites?hl=${lang}`} rel="noopener" target="_blank">policies.google.com</a>.
+      {t(lang, 'privacy.p3b')}
+      <a href="https://adssettings.google.com" rel="noopener" target="_blank">{t(lang, 'privacy.adsSettings')}</a>.
+    </p>
+
+    <h2>{t(lang, 'privacy.h3')}</h2>
+    <p>{t(lang, 'privacy.p4')}</p>
+
+    <h2>{t(lang, 'privacy.h4')}</h2>
+    <p>{t(lang, 'privacy.p5')}</p>
+  </article>
+</Base>
+
+<style>
+  .prose {
+    max-width: 760px;
+    padding-top: 28px;
+  }
+  .prose h1 {
+    font-size: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+    margin: 8px 0 20px;
+  }
+  .prose h2 {
+    font-size: 1.4rem;
+    margin: 28px 0 8px;
+  }
+  .prose p {
+    color: var(--ink-2);
+    margin-top: 10px;
+  }
+  .prose a {
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

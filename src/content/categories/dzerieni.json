@@ -3,5 +3,19 @@
   "emoji": "🍹",
   "color": "#3a8c86",
   "order": 8,
-  "description": "Kvass, sulas, morsi un siltie dzērieni."
+  "description": "Kvass, sulas, morsi un siltie dzērieni.",
+  "translations": {
+    "en": {
+      "name": "Drinks",
+      "description": "Kvass, juices, berry drinks and hot drinks."
+    },
+    "ru": {
+      "name": "Напитки",
+      "description": "Квас, соки, морсы и горячие напитки."
+    },
+    "lt": {
+      "name": "Gėrimai",
+      "description": "Gira, sultys, uogų gėrimai ir karšti gėrimai."
+    }
+  }
 }

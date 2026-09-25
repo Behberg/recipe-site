@@ -5,5 +5,22 @@
   "emoji": "🥟",
   "color": "#7a4e9c",
   "order": 14,
-  "description": "Pelmeņi, soļanka, plovs un medus kūka. Ēdieni, kas pazīstami visā reģionā."
+  "description": "Pelmeņi, soļanka, plovs un medus kūka. Ēdieni, kas pazīstami visā reģionā.",
+  "translations": {
+    "en": {
+      "name": "Eastern European",
+      "region": "Belarus, Moldova, Central Asia",
+      "description": "Pelmeni, solyanka, plov and honey cake. Dishes known across the whole region."
+    },
+    "ru": {
+      "name": "Восточноевропейская",
+      "region": "Беларусь, Молдова, Средняя Азия",
+      "description": "Пельмени, солянка, плов и медовик. Блюда, знакомые во всём регионе."
+    },
+    "lt": {
+      "name": "Rytų Europos",
+      "region": "Baltarusija, Moldova, Vidurinė Azija",
+      "description": "Pelmenai, solianka, plovas ir medaus tortas. Patiekalai, žinomi visame regione."
+    }
+  }
 }

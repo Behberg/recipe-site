@@ -30,3 +30,19 @@
     X-Robots-Tag = "noindex, nofollow"
     Cache-Control = "no-cache"
 
+
+# Language-specific "page not found" pages. Only used when no real file matches.
+[[redirects]]
+  from = "/en/*"
+  to = "/en/404/"
+  status = 404
+
+[[redirects]]
+  from = "/ru/*"
+  to = "/ru/404/"
+  status = 404
+
+[[redirects]]
+  from = "/lt/*"
+  to = "/lt/404/"
+  status = 404

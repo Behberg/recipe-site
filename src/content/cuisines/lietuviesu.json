@@ -5,5 +5,22 @@
   "emoji": "🇱🇹",
   "color": "#c89a1e",
   "order": 2,
-  "description": "Cepelīni, kugelis un kibinai. Sātīgi kaimiņu ēdieni, kas mums ir tik pazīstami."
+  "description": "Cepelīni, kugelis un kibinai. Sātīgi kaimiņu ēdieni, kas mums ir tik pazīstami.",
+  "translations": {
+    "en": {
+      "name": "Lithuanian",
+      "region": "Lithuania",
+      "description": "Cepelinai, kugelis and kibinai. Hearty food from our neighbours that feels so familiar."
+    },
+    "ru": {
+      "name": "Литовская",
+      "region": "Литва",
+      "description": "Цеппелины, кугелис и кибинай. Сытные блюда соседей, которые нам так знакомы."
+    },
+    "lt": {
+      "name": "Lietuvių",
+      "region": "Lietuva",
+      "description": "Cepelinai, kugelis ir kibinai. Sotūs kaimynų patiekalai, kurie mums tokie pažįstami."
+    }
+  }
 }

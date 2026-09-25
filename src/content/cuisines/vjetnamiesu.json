@@ -5,5 +5,22 @@
   "emoji": "🇻🇳",
   "color": "#b83a2a",
   "order": 25,
-  "description": "Fo zupa, svaigie rullīši un bahnmi. Viegli ēdieni ar daudz zaļumu."
+  "description": "Fo zupa, svaigie rullīši un bahnmi. Viegli ēdieni ar daudz zaļumu.",
+  "translations": {
+    "en": {
+      "name": "Vietnamese",
+      "region": "Vietnam",
+      "description": "Pho, fresh spring rolls and banh mi. Light dishes with lots of herbs."
+    },
+    "ru": {
+      "name": "Вьетнамская",
+      "region": "Вьетнам",
+      "description": "Суп фо, свежие роллы и банми. Лёгкие блюда с большим количеством зелени."
+    },
+    "lt": {
+      "name": "Vietnamiečių",
+      "region": "Vietnamas",
+      "description": "Fo sriuba, švieži suktinukai ir banh mi. Lengvi patiekalai su gausybe žalumynų."
+    }
+  }
 }

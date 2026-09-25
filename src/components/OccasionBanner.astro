@@ -1,7 +1,8 @@
 ---
 import Icon from './Icon.astro';
 import RecipeCard from './RecipeCard.astro';
-import { getCatalog, getOccasions, occasionUrl, plural } from '../lib/recipes';
+import { getCatalog, getOccasions, occasionUrl } from '../lib/recipes';
+import { langFromPath, t, count } from '../i18n';
 
 /**
  * Seasonal suggestion driven by the built-in calendar. The static build does not know
@@ -17,9 +18,10 @@ interface Props {
 }
 const { mode = 'home' } = Astro.props;
 
-const [occasions, { recipes, cuisineById, categoryById }] = await Promise.all([getOccasions(), getCatalog()]);
+const lang = langFromPath(Astro.url.pathname);
+const [occasions, { recipes, cuisineById, categoryById }] = await Promise.all([getOccasions(lang), getCatalog(lang)]);
 const dated = occasions.filter((o) => o.data.dateType !== 'nav');
-const rules = dated.map((o) => ({ id: o.id, ...o.data }));
+const rules = dated.map(({ id, data: { dateType, month, day, easterOffset, weekday, nth, leadDays } }) => ({ id, dateType, month, day, easterOffset, weekday, nth, leadDays }));
 ---
 
 <section class="occ-banner container" data-occ-banner data-mode={mode} hidden>
@@ -38,8 +40,8 @@ const rules = dated.map((o) => ({ id: o.id, ...o.data }));
                 {o.data.name} <span aria-hidden="true">{o.data.emoji}</span>
               </h2>
               <p>{o.data.description}</p>
-              <a class="btn occ-btn" href={occasionUrl(o.id)}>
-                Visas svētku receptes <Icon name="arrow-right" />
+              <a class="btn occ-btn" href={occasionUrl(o.id, lang)}>
+                {t(lang, 'occ.allRecipes')} <Icon name="arrow-right" />
               </a>
             </div>
             <span class="occ-emoji" aria-hidden="true">
@@ -62,17 +64,17 @@ const rules = dated.map((o) => ({ id: o.id, ...o.data }));
       const n = recipes.filter((r) => r.data.occasions.some((x) => x.id === o.id)).length;
       return (
         <template data-occ-teaser={o.id}>
-          <a class="occ-teaser" href={occasionUrl(o.id)} style={`--c:${o.data.color}`}>
+          <a class="occ-teaser" href={occasionUrl(o.id, lang)} style={`--c:${o.data.color}`}>
             <span class="occ-teaser-emoji" aria-hidden="true">
               {o.data.emoji}
             </span>
             <span class="occ-teaser-text">
-              <small>Nākamie svētki</small>
+              <small>{t(lang, 'occ.nextOccasion')}</small>
               <strong>{o.data.name}</strong>
               <span data-when />
             </span>
             <span class="occ-teaser-count">
-              {n} {plural(n, 'recepte', 'receptes')} <Icon name="arrow-right" />
+              {count(lang, n, 'count.recipes')} <Icon name="arrow-right" />
             </span>
           </a>
         </template>

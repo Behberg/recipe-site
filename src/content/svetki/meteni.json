@@ -6,5 +6,19 @@
   "easterOffset": -47,
   "leadDays": 10,
   "order": 3,
-  "description": "Ziemas izvadīšana ar pankūkām, pīrāgiem un sātīgiem ēdieniem."
+  "description": "Ziemas izvadīšana ar pankūkām, pīrāgiem un sātīgiem ēdieniem.",
+  "translations": {
+    "en": {
+      "name": "Shrovetide (Meteņi)",
+      "description": "Seeing off winter with pancakes, pīrāgi and hearty food."
+    },
+    "ru": {
+      "name": "Масленица (Метени)",
+      "description": "Проводы зимы с блинами, пирожками и сытными блюдами."
+    },
+    "lt": {
+      "name": "Užgavėnės",
+      "description": "Žiemos išvarymas su blynais, pyragėliais ir sočiais patiekalais."
+    }
+  }
 }

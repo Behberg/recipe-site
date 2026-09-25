@@ -1,0 +1,72 @@
+---
+import Base from '../../../layouts/Base.astro';
+import TaxonomyHero from '../../../components/TaxonomyHero.astro';
+import RecipeBrowser from '../../../components/RecipeBrowser.astro';
+import { getCatalog, getOccasions } from '../../../lib/recipes';
+import { LANGS, langParam, href, t, type Lang } from '../../../i18n';
+
+export async function getStaticPaths() {
+  const occasions = await getOccasions();
+  return LANGS.flatMap((lang) => occasions.map((o) => ({ params: { lang: langParam(lang), slug: o.id }, props: { lang } })));
+}
+
+const { lang } = Astro.props as { lang: Lang };
+const [occasions, { recipes: all, cuisines, categories }] = await Promise.all([getOccasions(lang), getCatalog(lang)]);
+const occasion = occasions.find((o) => o.id === Astro.params.slug)!;
+const recipes = all.filter((r) => r.data.occasions.some((o) => o.id === occasion.id));
+const { dateType, month, day, easterOffset, weekday, nth, leadDays } = occasion.data;
+const rule = { id: occasion.id, dateType, month, day, easterOffset, weekday, nth, leadDays };
+---
+
+<Base title={t(lang, 'occ.pageTitle', { name: occasion.data.name })} description={occasion.data.description}>
+  <TaxonomyHero
+    name={occasion.data.name}
+    emoji={occasion.data.emoji}
+    color={occasion.data.color}
+    description={occasion.data.description}
+    count={recipes.length}
+    parent={{ href: href(lang, '/svetki/'), label: t(lang, 'nav.occasions') }}
+  />
+  <div class="container">
+    <p class="next-date" data-next-date hidden></p>
+  </div>
+  <section class="container" style="padding-top:16px">
+    {
+      recipes.length ? (
+        <RecipeBrowser recipes={recipes} cuisines={cuisines} categories={categories} />
+      ) : (
+        <div class="empty">
+          <div class="big">{occasion.data.emoji}</div>
+          <h3>{t(lang, 'taxonomy.soonTitle')}</h3>
+          <p>{t(lang, 'taxonomy.soonText')}</p>
+        </div>
+      )
+    }
+  </section>
+  <script is:inline type="application/json" id="occ-rule" set:html={JSON.stringify(rule)} />
+</Base>
+
+<script>
+  import { nextOccurrence, formatDateLong, countdown, type OccasionRule } from '../../../lib/calendar';
+  import { ct } from '../../../i18n/client';
+
+  const rule: OccasionRule = JSON.parse(document.getElementById('occ-rule')!.textContent!);
+  const next = nextOccurrence(rule);
+  const el = document.querySelector<HTMLElement>('[data-next-date]')!;
+  if (next) {
+    el.textContent = ct('occ.next', { date: `${formatDateLong(next.date)} ${next.date.getFullYear()}`, countdown: countdown(next.days) });
+    el.hidden = false;
+  }
+</script>
+
+<style>
+  .next-date {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 14px;
+    border-radius: var(--pill);
+    background: var(--surface-2);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+</style>

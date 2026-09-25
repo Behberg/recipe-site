@@ -5,5 +5,22 @@
   "emoji": "🇩🇪",
   "color": "#7a5a2e",
   "order": 7,
-  "description": "Šniceles, štrūdele, kartupeļu salāti un kūkas ar putukrējumu."
+  "description": "Šniceles, štrūdele, kartupeļu salāti un kūkas ar putukrējumu.",
+  "translations": {
+    "en": {
+      "name": "German",
+      "region": "Germany, Austria, Switzerland",
+      "description": "Schnitzels, strudel, potato salad and cakes with whipped cream."
+    },
+    "ru": {
+      "name": "Немецкая",
+      "region": "Германия, Австрия, Швейцария",
+      "description": "Шницели, штрудель, картофельный салат и торты со взбитыми сливками."
+    },
+    "lt": {
+      "name": "Vokiečių",
+      "region": "Vokietija, Austrija, Šveicarija",
+      "description": "Šnicelis, štrudelis, bulvių salotos ir pyragai su plakta grietinėle."
+    }
+  }
 }

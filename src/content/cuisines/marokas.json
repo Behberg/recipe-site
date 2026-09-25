@@ -5,5 +5,22 @@
   "emoji": "🇲🇦",
   "color": "#b5552a",
   "order": 32,
-  "description": "Tadžini, kuskuss un smaržīgas garšvielas no Marakešas tirgiem."
+  "description": "Tadžini, kuskuss un smaržīgas garšvielas no Marakešas tirgiem.",
+  "translations": {
+    "en": {
+      "name": "Moroccan",
+      "region": "Morocco",
+      "description": "Tagines, couscous and fragrant spices from the markets of Marrakesh."
+    },
+    "ru": {
+      "name": "Марокканская",
+      "region": "Марокко",
+      "description": "Тажины, кускус и ароматные специи с рынков Марракеша."
+    },
+    "lt": {
+      "name": "Maroko",
+      "region": "Marokas",
+      "description": "Tažinai, kuskusas ir kvapnūs prieskoniai iš Marakešo turgų."
+    }
+  }
 }

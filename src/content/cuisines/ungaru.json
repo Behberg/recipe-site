@@ -5,5 +5,22 @@
   "emoji": "🇭🇺",
   "color": "#b5452a",
   "order": 12,
-  "description": "Gulašs, paprikašs un lečo. Saldā paprika ir šīs virtuves dvēsele."
+  "description": "Gulašs, paprikašs un lečo. Saldā paprika ir šīs virtuves dvēsele.",
+  "translations": {
+    "en": {
+      "name": "Hungarian",
+      "region": "Hungary",
+      "description": "Goulash, paprikash and lecsó. Sweet paprika is the soul of this cuisine."
+    },
+    "ru": {
+      "name": "Венгерская",
+      "region": "Венгрия",
+      "description": "Гуляш, паприкаш и лечо. Душа этой кухни: сладкая паприка."
+    },
+    "lt": {
+      "name": "Vengrų",
+      "region": "Vengrija",
+      "description": "Guliašas, paprikašas ir lečo. Saldžioji paprika yra šios virtuvės siela."
+    }
+  }
 }

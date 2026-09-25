@@ -5,5 +5,22 @@
   "emoji": "🇱🇻",
   "color": "#9e3039",
   "order": 1,
-  "description": "Rupjmaize, pelēkie zirņi, skābeņu zupa un vecmāmiņas pīrāgi. Ēdieni, kas smaržo pēc mājām."
+  "description": "Rupjmaize, pelēkie zirņi, skābeņu zupa un vecmāmiņas pīrāgi. Ēdieni, kas smaržo pēc mājām.",
+  "translations": {
+    "en": {
+      "name": "Latvian",
+      "region": "Latvia",
+      "description": "Rye bread, grey peas, sorrel soup and grandma’s pīrāgi. Food that smells like home."
+    },
+    "ru": {
+      "name": "Латышская",
+      "region": "Латвия",
+      "description": "Ржаной хлеб, серый горох, щавелевый суп и бабушкины пирожки. Блюда, которые пахнут домом."
+    },
+    "lt": {
+      "name": "Latvių",
+      "region": "Latvija",
+      "description": "Ruginė duona, pilkieji žirniai, rūgštynių sriuba ir močiutės pyragėliai. Patiekalai, kurie kvepia namais."
+    }
+  }
 }

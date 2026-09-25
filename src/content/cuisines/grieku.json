@@ -5,5 +5,22 @@
   "emoji": "🇬🇷",
   "color": "#2f7fb8",
   "order": 6,
-  "description": "Feta, olīvas, citroni un oregano. Vienkārši un svaigi Vidusjūras ēdieni."
+  "description": "Feta, olīvas, citroni un oregano. Vienkārši un svaigi Vidusjūras ēdieni.",
+  "translations": {
+    "en": {
+      "name": "Greek",
+      "region": "Greece",
+      "description": "Feta, olives, lemon and oregano. Simple, fresh Mediterranean food."
+    },
+    "ru": {
+      "name": "Греческая",
+      "region": "Греция",
+      "description": "Фета, оливки, лимон и орегано. Простые и свежие средиземноморские блюда."
+    },
+    "lt": {
+      "name": "Graikų",
+      "region": "Graikija",
+      "description": "Feta, alyvuogės, citrinos ir raudonėlis. Paprasti ir švieži Viduržemio jūros patiekalai."
+    }
+  }
 }

@@ -3,5 +3,19 @@
   "emoji": "🍲",
   "color": "#c8773a",
   "order": 2,
-  "description": "Siltas, aukstas, sātīgas un vieglas."
+  "description": "Siltas, aukstas, sātīgas un vieglas.",
+  "translations": {
+    "en": {
+      "name": "Soups",
+      "description": "Hot and cold, hearty and light."
+    },
+    "ru": {
+      "name": "Супы",
+      "description": "Горячие и холодные, сытные и лёгкие."
+    },
+    "lt": {
+      "name": "Sriubos",
+      "description": "Karštos ir šaltos, sočios ir lengvos."
+    }
+  }
 }

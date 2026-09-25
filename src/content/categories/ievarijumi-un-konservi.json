@@ -3,5 +3,19 @@
   "emoji": "🍓",
   "color": "#b5283c",
   "order": 7,
-  "description": "Ievārījumi, sīrupi, marinējumi un ziemas krājumi."
+  "description": "Ievārījumi, sīrupi, marinējumi un ziemas krājumi.",
+  "translations": {
+    "en": {
+      "name": "Jams and preserves",
+      "description": "Jams, syrups, pickles and stores for winter."
+    },
+    "ru": {
+      "name": "Варенье и заготовки",
+      "description": "Варенье, сиропы, маринады и запасы на зиму."
+    },
+    "lt": {
+      "name": "Uogienės ir konservai",
+      "description": "Uogienės, sirupai, marinatai ir atsargos žiemai."
+    }
+  }
 }

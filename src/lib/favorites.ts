@@ -1,3 +1,5 @@
+import { ct } from '../i18n/client';
+
 const KEY = 'dzervene:izlase';
 
 export function getFavorites(): string[] {
@@ -63,7 +65,7 @@ export function initFavorites() {
     void btn.offsetWidth;
     btn.classList.add('pop');
     if (navigator.vibrate) navigator.vibrate(on ? 12 : 6);
-    toast(on ? 'Saglabāts izlasē ❤️' : 'Izņemts no izlases');
+    toast(ct(on ? 'fav.added' : 'fav.removed'));
   });
   // Keep buttons in sync when favourites change in another tab or on back navigation.
   window.addEventListener('storage', (e) => e.key === KEY && syncFavorites());

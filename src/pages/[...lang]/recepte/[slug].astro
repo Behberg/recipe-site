@@ -1,12 +1,12 @@
 ---
 import { render } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import Icon from '../../components/Icon.astro';
-import RecipeArt from '../../components/RecipeArt.astro';
-import RecipeCard from '../../components/RecipeCard.astro';
-import FavButton from '../../components/FavButton.astro';
-import AdSlot from '../../components/AdSlot.astro';
-import { SITE } from '../../site.config';
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import RecipeArt from '../../../components/RecipeArt.astro';
+import RecipeCard from '../../../components/RecipeCard.astro';
+import FavButton from '../../../components/FavButton.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import { SITE } from '../../../site.config';
 import {
   getCatalog,
   getRecipes,
@@ -16,22 +16,24 @@ import {
   cuisineUrl,
   categoryUrl,
   imageUrl,
-  type Recipe,
-} from '../../lib/recipes';
-import { unitFor } from '../../lib/format';
+} from '../../../lib/recipes';
+import { unitFor } from '../../../lib/format';
+import { LANGS, langParam, href, t, count, type Lang, type UIKey } from '../../../i18n';
 
 export async function getStaticPaths() {
   const recipes = await getRecipes();
-  return recipes.map((recipe) => ({ params: { slug: recipe.id }, props: { recipe } }));
+  return LANGS.flatMap((lang) => recipes.map((r) => ({ params: { lang: langParam(lang), slug: r.id }, props: { lang } })));
 }
 
-const { recipe } = Astro.props as { recipe: Recipe };
+const { lang } = Astro.props as { lang: Lang };
+const u = (p: string) => href(lang, p);
+const { recipes, cuisineById, categoryById } = await getCatalog(lang);
+const recipe = recipes.find((r) => r.id === Astro.params.slug)!;
 const d = recipe.data;
-const { recipes, cuisineById, categoryById } = await getCatalog();
 const cuisine = cuisineById.get(d.cuisine.id);
 const category = categoryById.get(d.category.id);
-const { Content } = await render(recipe);
-const hasStory = recipe.body?.trim().length;
+const { Content } = await render(recipe.story);
+const hasStory = recipe.story.body?.trim().length;
 
 const emoji = d.emoji || category?.data.emoji || '🍽️';
 const color = category?.data.color || cuisine?.data.color || '#9e3039';
@@ -54,13 +56,16 @@ function detectTimer(text: string): number | null {
   return secs > 0 && secs <= 6 * 3600 ? secs : null;
 }
 let ingIndex = 0;
-const steps = d.steps.map((text) => ({ text, timer: detectTimer(text) }));
+// Timers are read from the Latvian steps, so every translation gets the same timers.
+const steps = d.steps.map((text, i) => ({ text, timer: detectTimer(recipe.lv.steps[i] ?? text) }));
+const minutes = (secs: number) => formatMinutes(Math.round(secs / 60), lang);
 
-// Name first, amount after: "Kviešu milti: 500 g". With the amount first Latvian would need the
-// genitive ("500 g kviešu miltu"), so this keeps the names grammatical in their normal form.
+// Name first, amount after: "Kviešu milti: 500 g". With the amount first Latvian (and Russian,
+// Lithuanian) would need the genitive ("500 g kviešu miltu"), so names stay in their normal form.
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const unitText = (unit: string | undefined, amount?: number) => (unit ? unitFor(unit, amount ?? 1, lang) : '');
 const amountText = (i: (typeof d.ingredients)[number]) =>
-  [i.amount ? formatAmount(i.amount) : '', i.unit && i.amount ? unitFor(i.unit, i.amount) : i.unit].filter(Boolean).join(' ');
+  [i.amount ? formatAmount(i.amount, lang) : '', unitText(i.unit, i.amount)].filter(Boolean).join(' ');
 const ingredientText = (i: (typeof d.ingredients)[number]) => (amountText(i) ? `${cap(i.name)}: ${amountText(i)}` : cap(i.name));
 
 // Related: same category first, then same cuisine.
@@ -84,11 +89,12 @@ const jsonLd = {
   image: d.image ? [new URL(d.image, Astro.site).href] : undefined,
   author: { '@type': 'Organization', name: SITE.name },
   datePublished: d.date.toISOString().slice(0, 10),
-  inLanguage: 'lv',
+  inLanguage: lang,
+  url: new URL(u(`/recepte/${recipe.id}/`), Astro.site).href,
   prepTime: iso(d.prepTime),
   cookTime: iso(d.cookTime),
   totalTime: iso(total),
-  recipeYield: d.yield || `${d.servings} porcijas`,
+  recipeYield: d.yield || count(lang, d.servings, 'count.servings'),
   recipeCategory: category?.data.name,
   recipeCuisine: cuisine?.data.name,
   keywords: d.tags.join(', '),
@@ -112,36 +118,37 @@ const useMultiplier = Boolean(d.yield);
       <div class="r-media">
         <RecipeArt image={d.image} emoji={emoji} icon={d.icon} iconColors={d.iconColors} iconExtra={d.iconExtra} color={color} alt={d.title} sizes="(min-width: 900px) 560px, 100vw" large eager />
         <div class="r-media-actions no-print">
-          <a class="fav-btn" href={categoryUrl(d.category.id)} aria-label={`Atpakaļ uz: ${category?.data.name}`}>
+          <a class="fav-btn" href={categoryUrl(d.category.id, lang)} aria-label={t(lang, 'recipe.backTo', { name: category?.data.name ?? '' })}>
             <Icon name="chevron-left" />
           </a>
-          <FavButton id={recipe.id} title={d.title} />
+          <FavButton id={recipe.id} title={d.title} lang={lang} />
         </div>
       </div>
 
       <div class="r-head">
-        <nav class="r-tags" aria-label="Virtuve un kategorija">
-          {cuisine && <a class="chip" href={cuisineUrl(cuisine.id)}><span aria-hidden="true">{cuisine.data.emoji}</span>{cuisine.data.name}</a>}
-          {category && <a class="chip" href={categoryUrl(category.id)}><span aria-hidden="true">{category.data.emoji}</span>{category.data.name}</a>}
+        <nav class="r-tags" aria-label={t(lang, 'recipe.tagsNav')}>
+          {cuisine && <a class="chip" href={cuisineUrl(cuisine.id, lang)}><span aria-hidden="true">{cuisine.data.emoji}</span>{cuisine.data.name}</a>}
+          {category && <a class="chip" href={categoryUrl(category.id, lang)}><span aria-hidden="true">{category.data.emoji}</span>{category.data.name}</a>}
         </nav>
         <h1>{d.title}</h1>
         <p class="r-desc">{d.description}</p>
+        {!recipe.translated && <p class="r-untranslated">{t(lang, 'recipe.untranslated')}</p>}
 
         <dl class="r-stats">
-          <div><dt>Sagatavošana</dt><dd>{formatMinutes(d.prepTime)}</dd></div>
-          <div><dt>Gatavošana</dt><dd>{formatMinutes(d.cookTime)}</dd></div>
-          <div><dt>Kopā</dt><dd>{formatMinutes(total)}</dd></div>
-          <div><dt>Grūtība</dt><dd class="cap">{d.difficulty}</dd></div>
+          <div><dt>{t(lang, 'recipe.prep')}</dt><dd>{formatMinutes(d.prepTime, lang)}</dd></div>
+          <div><dt>{t(lang, 'recipe.cook')}</dt><dd>{formatMinutes(d.cookTime, lang)}</dd></div>
+          <div><dt>{t(lang, 'recipe.total')}</dt><dd>{formatMinutes(total, lang)}</dd></div>
+          <div><dt>{t(lang, 'recipe.difficulty')}</dt><dd>{t(lang, `diff.${d.difficulty}` as UIKey)}</dd></div>
         </dl>
 
         <div class="r-actions no-print" data-hero-actions>
           <button type="button" class="btn btn-primary" data-cook-open>
-            <Icon name="play" /> Sākt gatavot
+            <Icon name="play" /> {t(lang, 'recipe.start')}
           </button>
-          <button type="button" class="icon-btn outline" data-share aria-label="Dalīties">
+          <button type="button" class="icon-btn outline" data-share aria-label={t(lang, 'recipe.share')}>
             <Icon name="share" />
           </button>
-          <button type="button" class="icon-btn outline" data-print aria-label="Drukāt">
+          <button type="button" class="icon-btn outline" data-print aria-label={t(lang, 'recipe.print')}>
             <Icon name="printer" />
           </button>
         </div>
@@ -163,10 +170,10 @@ const useMultiplier = Boolean(d.yield);
       <section class="r-ingredients" aria-labelledby="ing-title">
         <div class="panel">
           <div class="panel-head">
-            <h2 id="ing-title">Sastāvdaļas</h2>
+            <h2 id="ing-title">{t(lang, 'recipe.ingredients')}</h2>
             {
               useMultiplier ? (
-                <div class="seg no-print" role="group" aria-label="Daudzums" data-multiplier>
+                <div class="seg no-print" role="group" aria-label={t(lang, 'recipe.amount')} data-multiplier>
                   {[0.5, 1, 2, 3].map((m) => (
                     <button type="button" data-factor={m} aria-pressed={m === 1 ? 'true' : 'false'}>
                       {m === 0.5 ? '½' : m}×
@@ -175,22 +182,22 @@ const useMultiplier = Boolean(d.yield);
                 </div>
               ) : (
                 <div class="stepper no-print" data-stepper>
-                  <button type="button" class="icon-btn" data-step="-1" aria-label="Mazāk porciju"><Icon name="minus" /></button>
-                  <span><strong data-servings-out>{d.servings}</strong> porc.</span>
-                  <button type="button" class="icon-btn" data-step="1" aria-label="Vairāk porciju"><Icon name="plus" /></button>
+                  <button type="button" class="icon-btn" data-step="-1" aria-label={t(lang, 'recipe.fewer')}><Icon name="minus" /></button>
+                  <span><strong data-servings-out>{d.servings}</strong> {t(lang, 'recipe.servingsShort')}</span>
+                  <button type="button" class="icon-btn" data-step="1" aria-label={t(lang, 'recipe.more')}><Icon name="plus" /></button>
                 </div>
               )
             }
           </div>
-          {d.yield && <p class="yield"><Icon name="users" /> Daudzums: {d.yield}<span data-yield-factor></span></p>}
+          {d.yield && <p class="yield"><Icon name="users" /> {t(lang, 'recipe.yield', { y: d.yield })}<span data-yield-factor></span></p>}
 
           <p class="adjust-hint no-print" data-adjust-hint>
             <Icon name="scale" />
-            <span>Pieskaries daudzumam, lai pielāgotu recepti tam, kas tev ir. Piemēram, „man ir 650 g zemeņu”.</span>
+            <span>{t(lang, 'recipe.adjustHint')}</span>
           </p>
           <div class="adjusted no-print" data-adjusted hidden>
-            <span>Pārrēķināts: <strong data-factor-out>×1</strong></span>
-            <button type="button" class="reset-factor" data-factor-reset><Icon name="refresh" /> Sākotnējais</button>
+            <span>{t(lang, 'recipe.adjusted')} <strong data-factor-out>×1</strong></span>
+            <button type="button" class="reset-factor" data-factor-reset><Icon name="refresh" /> {t(lang, 'recipe.reset')}</button>
           </div>
 
           {
@@ -215,12 +222,12 @@ const useMultiplier = Boolean(d.yield);
                               data-amount={i.amount}
                               data-unit={i.unit ?? ''}
                               data-name={cap(i.name)}
-                              aria-label={`${cap(i.name)}: ${amountText(i)}. Norādīt, cik tev ir`}
+                              aria-label={t(lang, 'recipe.qtyAria', { name: cap(i.name), amount: amountText(i) })}
                             >
                               {amountText(i)}
                             </button>
                           ) : (
-                            i.unit && <b class="qty">{i.unit}</b>
+                            i.unit && <b class="qty">{unitText(i.unit)}</b>
                           )}
                         </span>
                       </li>
@@ -235,20 +242,20 @@ const useMultiplier = Boolean(d.yield);
 
       <!-- Steps -->
       <section class="r-steps" aria-labelledby="steps-title">
-        <h2 id="steps-title">Pagatavošana</h2>
+        <h2 id="steps-title">{t(lang, 'recipe.steps')}</h2>
         <ol class="steps">
           {
             steps.map((s, i) => (
               <li class="step" data-step-index={i}>
-                <button type="button" class="step-num" aria-label={`Atzīmēt ${i + 1}. soli kā paveiktu`}>
+                <button type="button" class="step-num" aria-label={t(lang, 'recipe.markStep', { n: i + 1 })}>
                   <span class="n">{i + 1}</span>
                   <Icon name="check" class="c" />
                 </button>
                 <div class="step-body">
                   <p>{s.text}</p>
                   {s.timer && (
-                    <button type="button" class="timer-chip no-print" data-timer={s.timer} data-timer-label={`${i + 1}. solis`} data-timer-recipe={d.title}>
-                      <Icon name="timer" /> <span data-timer-text>Taimeris {formatMinutes(Math.round(s.timer / 60))}</span>
+                    <button type="button" class="timer-chip no-print" data-timer={s.timer} data-timer-label={t(lang, 'recipe.stepLabel', { n: i + 1 })} data-timer-recipe={d.title}>
+                      <Icon name="timer" /> <span data-timer-text>{t(lang, 'recipe.timer', { time: minutes(s.timer) })}</span>
                     </button>
                   )}
                 </div>
@@ -260,7 +267,7 @@ const useMultiplier = Boolean(d.yield);
         {
           d.tips.length > 0 && (
             <aside class="tips">
-              <h3><Icon name="bulb" /> Padomi</h3>
+              <h3><Icon name="bulb" /> {t(lang, 'recipe.tips')}</h3>
               <ul>
                 {d.tips.map((t) => <li>{t}</li>)}
               </ul>
@@ -271,7 +278,7 @@ const useMultiplier = Boolean(d.yield);
         {
           d.tags.length > 0 && (
             <div class="r-tagcloud">
-              {d.tags.map((t) => <a class="chip" href={`/receptes/?q=${encodeURIComponent(t)}`}>#{t}</a>)}
+              {d.tags.map((tag) => <a class="chip" href={u(`/receptes/?q=${encodeURIComponent(tag)}`)}>#{tag}</a>)}
             </div>
           )
         }
@@ -285,8 +292,8 @@ const useMultiplier = Boolean(d.yield);
         <section class="section container no-print">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Tev varētu garšot</span>
-              <h2>Līdzīgas receptes</h2>
+              <span class="eyebrow">{t(lang, 'recipe.relatedEyebrow')}</span>
+              <h2>{t(lang, 'recipe.relatedTitle')}</h2>
             </div>
           </div>
           <div class="rail">
@@ -300,19 +307,19 @@ const useMultiplier = Boolean(d.yield);
 
     <!-- Floating CTA (mobile) -->
     <button type="button" class="float-cta btn btn-primary no-print" data-cook-open data-float-cta>
-      <Icon name="play" /> Sākt gatavot
+      <Icon name="play" /> {t(lang, 'recipe.start')}
     </button>
 
     <!-- Cooking mode -->
-    <dialog class="cook" data-cook aria-label={`Gatavošanas režīms: ${d.title}`}>
+    <dialog class="cook" data-cook aria-label={t(lang, 'cook.aria', { title: d.title })}>
       <div class="cook-inner">
         <header class="cook-top">
-          <button type="button" class="icon-btn" data-cook-close aria-label="Aizvērt gatavošanas režīmu"><Icon name="x" /></button>
+          <button type="button" class="icon-btn" data-cook-close aria-label={t(lang, 'cook.close')}><Icon name="x" /></button>
           <div class="cook-title">
             <span data-cook-count>1 / {steps.length}</span>
             <strong>{d.title}</strong>
           </div>
-          <button type="button" class="icon-btn" data-cook-ing aria-label="Rādīt sastāvdaļas"><Icon name="list" /></button>
+          <button type="button" class="icon-btn" data-cook-ing aria-label={t(lang, 'cook.showIngredients')}><Icon name="list" /></button>
         </header>
         <div class="cook-progress"><span data-cook-bar></span></div>
 
@@ -320,11 +327,11 @@ const useMultiplier = Boolean(d.yield);
           {
             steps.map((s, i) => (
               <section class="cook-step" data-cook-step={i} hidden={i !== 0}>
-                <span class="cook-step-n">Solis {i + 1}</span>
+                <span class="cook-step-n">{t(lang, 'cook.step', { n: i + 1 })}</span>
                 <p>{s.text}</p>
                 {s.timer && (
-                  <button type="button" class="btn btn-ghost cook-timer" data-timer={s.timer} data-timer-label={`${i + 1}. solis`} data-timer-recipe={d.title}>
-                    <Icon name="timer" /> <span data-timer-text>Sākt taimeri: {formatMinutes(Math.round(s.timer / 60))}</span>
+                  <button type="button" class="btn btn-ghost cook-timer" data-timer={s.timer} data-timer-label={t(lang, 'recipe.stepLabel', { n: i + 1 })} data-timer-recipe={d.title}>
+                    <Icon name="timer" /> <span data-timer-text>{t(lang, 'recipe.startTimer', { time: minutes(s.timer) })}</span>
                   </button>
                 )}
               </section>
@@ -332,17 +339,17 @@ const useMultiplier = Boolean(d.yield);
           }
           <section class="cook-step cook-done" data-cook-step={steps.length} hidden>
             <span class="big" aria-hidden="true">🎉</span>
-            <h2>Labu apetīti!</h2>
-            <p>Gatavs! Ja recepte izdevās, saglabā to izlasē.</p>
+            <h2>{t(lang, 'cook.doneTitle')}</h2>
+            <p>{t(lang, 'cook.doneText')}</p>
             <div class="cook-done-actions">
-              <FavButton id={recipe.id} title={d.title} class="cook-fav" />
-              <button type="button" class="btn btn-primary" data-cook-close>Pabeigt</button>
+              <FavButton id={recipe.id} title={d.title} class="cook-fav" lang={lang} />
+              <button type="button" class="btn btn-primary" data-cook-close>{t(lang, 'cook.finish')}</button>
             </div>
           </section>
         </div>
 
         <aside class="cook-ing" data-cook-ing-panel hidden>
-          <h3>Sastāvdaļas</h3>
+          <h3>{t(lang, 'recipe.ingredients')}</h3>
           <ul>
             {d.ingredients.map((i) => (
               <li>
@@ -352,7 +359,7 @@ const useMultiplier = Boolean(d.yield);
                     {amountText(i)}
                   </b>
                 ) : (
-                  i.unit && <b>{i.unit}</b>
+                  i.unit && <b>{unitText(i.unit)}</b>
                 )}
               </li>
             ))}
@@ -360,8 +367,8 @@ const useMultiplier = Boolean(d.yield);
         </aside>
 
         <footer class="cook-nav">
-          <button type="button" class="btn btn-ghost" data-cook-prev><Icon name="chevron-left" /> Atpakaļ</button>
-          <button type="button" class="btn btn-primary" data-cook-next>Tālāk <Icon name="chevron-right" /></button>
+          <button type="button" class="btn btn-ghost" data-cook-prev><Icon name="chevron-left" /> {t(lang, 'cook.back')}</button>
+          <button type="button" class="btn btn-primary" data-cook-next>{t(lang, 'cook.next')} <Icon name="chevron-right" /></button>
         </footer>
       </div>
     </dialog>
@@ -369,28 +376,31 @@ const useMultiplier = Boolean(d.yield);
     <!-- "Cik tev ir?" sheet -->
     <dialog class="sheet amount-sheet" data-amount-sheet aria-labelledby="amount-title">
       <div class="sheet-grip" aria-hidden="true"></div>
-      <h2 id="amount-title">Cik tev ir?</h2>
+      <h2 id="amount-title">{t(lang, 'amount.title')}</h2>
       <p class="amount-name" data-amount-name></p>
       <form method="dialog" class="amount-form" data-amount-form>
         <div class="amount-row">
-          <input type="number" inputmode="decimal" step="any" min="0" required data-amount-input aria-label="Daudzums" />
-          <select data-amount-unit aria-label="Mērvienība"></select>
+          <input type="number" inputmode="decimal" step="any" min="0" required data-amount-input aria-label={t(lang, 'recipe.amount')} />
+          <select data-amount-unit aria-label={t(lang, 'amount.unit')}></select>
           <span class="amount-unit-fixed" data-amount-unit-fixed></span>
         </div>
         <p class="amount-preview" data-amount-preview></p>
         <div class="amount-actions">
-          <button type="button" class="btn btn-ghost" data-amount-cancel>Atcelt</button>
-          <button type="submit" class="btn btn-primary" value="ok">Pielāgot recepti</button>
+          <button type="button" class="btn btn-ghost" data-amount-cancel>{t(lang, 'common.cancel')}</button>
+          <button type="submit" class="btn btn-primary" value="ok">{t(lang, 'amount.apply')}</button>
         </div>
       </form>
-      <button type="button" class="icon-btn sheet-close" data-amount-cancel aria-label="Aizvērt"><Icon name="x" /></button>
+      <button type="button" class="icon-btn sheet-close" data-amount-cancel aria-label={t(lang, 'common.close')}><Icon name="x" /></button>
     </dialog>
   </article>
 </Base>
 
 <script>
-  import { formatAmount, unitFor } from '../../lib/format';
-  import { toast } from '../../lib/favorites';
+  import { formatAmount, unitFor, decimal } from '../../../lib/format';
+  import { toast } from '../../../lib/favorites';
+  import { ct, pageLang } from '../../../i18n/client';
+
+  const lang = pageLang();
 
   const page = document.querySelector<HTMLElement>('[data-recipe-page]')!;
   const baseServings = Number(page.dataset.servings) || 1;
@@ -401,7 +411,7 @@ const useMultiplier = Boolean(d.yield);
   const BIGGER: Record<string, [string, number]> = { g: ['kg', 1000], ml: ['l', 1000] };
   const SMALLER: Record<string, [string, number]> = { kg: ['g', 1000], l: ['ml', 1000] };
   const toBase: Record<string, number> = { g: 1, kg: 1000, ml: 1, l: 1000 };
-  const pretty = (n: number) => String(Math.round(n * 100) / 100).replace('.', ',');
+  const pretty = (n: number) => decimal(n, lang);
 
   let factor = 1;
   const stepper = page.querySelector<HTMLElement>('[data-stepper]');
@@ -426,7 +436,8 @@ const useMultiplier = Boolean(d.yield);
         amount *= down[1];
         unit = down[0];
       }
-      q.textContent = formatAmount(amount) + (unit ? ' ' + unitFor(unit, amount) : '');
+      const unitLabel = unit ? unitFor(unit, amount, lang) : '';
+      q.textContent = formatAmount(amount, lang) + (unitLabel ? ' ' + unitLabel : '');
     });
     if (servingsOut) servingsOut.textContent = pretty(baseServings * factor);
     mult?.querySelectorAll<HTMLButtonElement>('button').forEach((b) => b.setAttribute('aria-pressed', String(!fromCustom && Number(b.dataset.factor) === factor)));
@@ -471,7 +482,7 @@ const useMultiplier = Boolean(d.yield);
   };
   const updatePreview = () => {
     const f = readBase();
-    preview.textContent = f ? `Visas sastāvdaļas tiks pārrēķinātas: ×${pretty(f)}` : 'Ievadi daudzumu, kas tev ir.';
+    preview.textContent = f ? ct('amount.preview', { f: pretty(f) }) : ct('amount.enter');
   };
 
   page.addEventListener('click', (e) => {
@@ -483,9 +494,9 @@ const useMultiplier = Boolean(d.yield);
     const family = unit === 'g' || unit === 'kg' ? ['g', 'kg'] : unit === 'ml' || unit === 'l' ? ['ml', 'l'] : null;
     unitSelect.hidden = !family;
     unitFixed.hidden = !!family;
-    unitFixed.textContent = unitFor(unit, Number(btn.dataset.amount) * factor);
+    unitFixed.textContent = unitFor(unit, Number(btn.dataset.amount) * factor, lang);
     if (family) {
-      unitSelect.replaceChildren(...family.map((u) => new Option(u, u)));
+      unitSelect.replaceChildren(...family.map((u) => new Option(unitFor(u, 2, lang), u)));
       unitSelect.value = unit;
     }
     const current = Number(btn.dataset.amount) * factor;
@@ -506,7 +517,7 @@ const useMultiplier = Boolean(d.yield);
       return;
     }
     setFactor(f, true);
-    toast(`Recepte pielāgota: ×${pretty(f)}`);
+    toast(ct('amount.toast', { f: pretty(f) }));
   });
 
   /* ---------- Step progress (tap the number to mark as done) ---------- */
@@ -521,7 +532,7 @@ const useMultiplier = Boolean(d.yield);
       if (navigator.share) await navigator.share(data);
       else {
         await navigator.clipboard.writeText(location.href);
-        toast('Saite nokopēta 🔗');
+        toast(ct('share.copied'));
       }
     } catch {
       /* user cancelled the share sheet */
@@ -562,10 +573,10 @@ const useMultiplier = Boolean(d.yield);
       }
     });
     bar.style.width = `${(Math.min(current + 1, total) / total) * 100}%`;
-    counter.textContent = current < total ? `${current + 1} / ${total}` : 'Gatavs';
+    counter.textContent = current < total ? `${current + 1} / ${total}` : ct('cook.done');
     prev.disabled = current === 0;
     next.hidden = current === total;
-    next.innerHTML = current === total - 1 ? 'Pabeigt ✓' : 'Tālāk <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
+    next.innerHTML = current === total - 1 ? ct('cook.finishCheck') : ct('cook.next') + ' <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
   }
 
   async function lockScreen() {
@@ -686,6 +697,14 @@ const useMultiplier = Boolean(d.yield);
       padding: 0;
       background: none;
     }
+  }
+  .r-untranslated {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: var(--surface-2);
+    color: var(--ink-3);
+    font-size: 0.82rem;
   }
   .r-tags {
     display: flex;

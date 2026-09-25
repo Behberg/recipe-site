@@ -7,5 +7,19 @@
   "day": 14,
   "leadDays": 12,
   "order": 4,
-  "description": "Romantiskas vakariņas divatā un deserti, kas kūst mutē."
+  "description": "Romantiskas vakariņas divatā un deserti, kas kūst mutē.",
+  "translations": {
+    "en": {
+      "name": "Valentine’s Day",
+      "description": "A romantic dinner for two and desserts that melt in the mouth."
+    },
+    "ru": {
+      "name": "День святого Валентина",
+      "description": "Романтический ужин на двоих и десерты, которые тают во рту."
+    },
+    "lt": {
+      "name": "Valentino diena",
+      "description": "Romantiška vakarienė dviese ir desertai, kurie tirpsta burnoje."
+    }
+  }
 }

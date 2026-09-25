@@ -5,6 +5,7 @@ import LogoMark from '../components/LogoMark.astro';
 import AdsLoader from '../components/AdsLoader.astro';
 import { SITE } from '../site.config';
 import { getCuisines, getCategories, getOccasions, getRecipes, cuisineUrl, categoryUrl, occasionUrl } from '../lib/recipes';
+import { LANGS, LANG_META, langFromPath, stripLang, href, t, clientDict } from '../i18n';
 
 interface Props {
   title?: string;
@@ -15,13 +16,22 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description = SITE.description, image, type = 'website', noindex = false, jsonLd } = Astro.props;
-const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${SITE.tagline}`;
+const lang = langFromPath(Astro.url.pathname);
+const { title, description = t(lang, 'site.description'), image, type = 'website', noindex = false, jsonLd } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${t(lang, 'site.tagline')}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image || '/og-image.png', Astro.site);
-const path = Astro.url.pathname;
+// The same page in every language: /recepte/x/, /en/recepte/x/, /ru/recepte/x/, /lt/recepte/x/.
+const path = stripLang(Astro.url.pathname);
+const alternates = LANGS.map((l) => ({ lang: l, url: href(l, path) }));
+const u = (p: string) => href(lang, p);
 
-const [cuisines, categories, occasions, recipes] = await Promise.all([getCuisines(), getCategories(), getOccasions(), getRecipes()]);
+const [cuisines, categories, occasions, recipes] = await Promise.all([
+  getCuisines(lang),
+  getCategories(lang),
+  getOccasions(lang),
+  getRecipes(lang),
+]);
 const recipeIds = recipes.map((r) => r.id);
 const footerCuisines = [...cuisines]
   .sort((a, b) => recipes.filter((r) => r.data.cuisine.id === b.id).length - recipes.filter((r) => r.data.cuisine.id === a.id).length)
@@ -38,16 +48,16 @@ const is = {
 };
 
 const nav = [
-  { href: '/receptes/', label: 'Receptes', on: is.recipes },
-  { href: '/virtuves/', label: 'Virtuves', on: is.cuisines },
-  { href: '/svetki/', label: 'Svētku galds', on: is.occasions },
-  { href: '/ledusskapis/', label: 'Ledusskapis', on: is.fridge },
-  { href: '/tinderis/', label: 'Tinderis', on: is.tinder },
+  { href: u('/receptes/'), label: t(lang, 'nav.recipes'), on: is.recipes },
+  { href: u('/virtuves/'), label: t(lang, 'nav.cuisines'), on: is.cuisines },
+  { href: u('/svetki/'), label: t(lang, 'nav.occasions'), on: is.occasions },
+  { href: u('/ledusskapis/'), label: t(lang, 'nav.fridge'), on: is.fridge },
+  { href: u('/tinderis/'), label: t(lang, 'nav.tinder'), on: is.tinder },
 ];
 ---
 
 <!doctype html>
-<html lang={SITE.lang}>
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -55,10 +65,13 @@ const nav = [
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex" />}
+    {!noindex && alternates.map((a) => <link rel="alternate" hreflang={a.lang} href={new URL(a.url, Astro.site)} />)}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={new URL(path, Astro.site)} />}
 
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={SITE.name} />
-    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:locale" content={LANG_META[lang].ogLocale} />
+    {LANGS.filter((l) => l !== lang).map((l) => <meta property="og:locale:alternate" content={LANG_META[l].ogLocale} />)}
     <meta property="og:title" content={title || SITE.name} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -84,34 +97,52 @@ const nav = [
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
-    <a class="skip-link" href="#main">Pāriet uz saturu</a>
+    <a class="skip-link" href="#main">{t(lang, 'nav.skip')}</a>
 
     <header class="site-header" id="site-header">
       <div class="container">
-        <a class="logo" href="/" aria-label={`${SITE.name}, sākumlapa`}>
+        <a class="logo" href={u('/')} aria-label={t(lang, 'nav.homeAria', { site: SITE.name })}>
           <span class="logo-mark"><LogoMark /></span>
           {SITE.name}
         </a>
-        <nav class="main-nav" aria-label="Galvenā navigācija">
+        <nav class="main-nav" aria-label={t(lang, 'nav.main')}>
           {
-            nav.map((t) => (
-              <a href={t.href} aria-current={t.on ? 'page' : undefined}>
-                {t.label}
+            nav.map((item) => (
+              <a href={item.href} aria-current={item.on ? 'page' : undefined}>
+                {item.label}
               </a>
             ))
           }
         </nav>
         <div class="header-actions">
-          <a class="header-search" href="/receptes/#meklet">
+          <a class="header-search" href={u('/receptes/#meklet')}>
             <Icon name="search" />
-            Meklēt receptes...
+            {t(lang, 'nav.searchPlaceholder')}
           </a>
-          <a class="icon-btn header-search-mobile" href="/receptes/#meklet" aria-label="Meklēt receptes">
+          <a class="icon-btn header-search-mobile" href={u('/receptes/#meklet')} aria-label={t(lang, 'nav.search')}>
             <Icon name="search" />
           </a>
-          <a class="icon-btn" href="/izlase/" aria-label="Mana izlase" aria-current={is.favorites ? 'page' : undefined}>
+          <a class="icon-btn" href={u('/izlase/')} aria-label={t(lang, 'nav.myFavorites')} aria-current={is.favorites ? 'page' : undefined}>
             <Icon name="heart" />
           </a>
+          <details class="lang-switch" data-lang-switch>
+            <summary aria-label={`${t(lang, 'nav.language')}: ${LANG_META[lang].name}`}>
+              <Icon name="globe" />
+              <span>{LANG_META[lang].label}</span>
+            </summary>
+            <ul class="lang-menu" role="list">
+              {
+                alternates.map((a) => (
+                  <li>
+                    <a href={a.url} hreflang={a.lang} lang={a.lang} aria-current={a.lang === lang ? 'true' : undefined} data-lang-link={a.lang}>
+                      <b>{LANG_META[a.lang].label}</b>
+                      {LANG_META[a.lang].name}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </details>
         </div>
       </div>
     </header>
@@ -124,113 +155,116 @@ const nav = [
       <div class="container">
         <div class="footer-grid">
           <div class="about">
-            <a class="logo" href="/">
+            <a class="logo" href={u('/')}>
               <span class="logo-mark"><LogoMark /></span>
               {SITE.name}
             </a>
-            <p class="footer-about">{SITE.description}</p>
+            <p class="footer-about">{t(lang, 'site.description')}</p>
             <ul class="footer-tools">
-              <li><a href="/ledusskapis/">🧊 Kas ir ledusskapī?</a></li>
-              <li><a href="/tinderis/">🔥 Recepšu Tinderis</a></li>
-              <li><a href="/svetki/">🎉 Svētku galds un kalendārs</a></li>
+              <li><a href={u('/ledusskapis/')}>{t(lang, 'footer.fridge')}</a></li>
+              <li><a href={u('/tinderis/')}>{t(lang, 'footer.tinder')}</a></li>
+              <li><a href={u('/svetki/')}>{t(lang, 'footer.occasionsCal')}</a></li>
             </ul>
           </div>
           <div>
-            <h4>Virtuves</h4>
+            <h4>{t(lang, 'footer.cuisines')}</h4>
             <ul>
-              {footerCuisines.map((c) => <li><a href={cuisineUrl(c.id)}>{c.data.name}</a></li>)}
-              <li><a href="/virtuves/" class="more">Visas {cuisines.length} virtuves</a></li>
+              {footerCuisines.map((c) => <li><a href={cuisineUrl(c.id, lang)}>{c.data.name}</a></li>)}
+              <li><a href={u('/virtuves/')} class="more">{t(lang, 'footer.allCuisines')} ({cuisines.length})</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kategorijas</h4>
+            <h4>{t(lang, 'footer.categories')}</h4>
             <ul>
-              {categories.map((c) => <li><a href={categoryUrl(c.id)}>{c.data.name}</a></li>)}
+              {categories.map((c) => <li><a href={categoryUrl(c.id, lang)}>{c.data.name}</a></li>)}
             </ul>
           </div>
           <div>
-            <h4>Svētku galds</h4>
+            <h4>{t(lang, 'footer.occasions')}</h4>
             <ul>
-              {occasions.map((o) => <li><a href={occasionUrl(o.id)}>{o.data.name}</a></li>)}
+              {occasions.map((o) => <li><a href={occasionUrl(o.id, lang)}>{o.data.name}</a></li>)}
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>© {new Date().getFullYear()} {SITE.name}. Gatavots ar mīlestību Latvijā.</span>
-          <a href="/privatums/">Privātuma politika</a>
+          <span>© {new Date().getFullYear()} {SITE.name}. {t(lang, 'footer.madeWith')}</span>
+          <a href={u('/privatums/')}>{t(lang, 'footer.privacy')}</a>
         </div>
       </div>
     </footer>
 
-    <nav class="tabbar" aria-label="Apakšējā navigācija">
+    <nav class="tabbar" aria-label={t(lang, 'nav.bottom')}>
       <ul>
         <li>
-          <a href="/" aria-current={is.home ? 'page' : undefined}>
-            <span class="tab-icon"><Icon name="home" /></span>Sākums
+          <a href={u('/')} aria-current={is.home ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="home" /></span>{t(lang, 'nav.home')}
           </a>
         </li>
         <li>
-          <a href="/receptes/" aria-current={is.recipes || is.cuisines ? 'page' : undefined}>
-            <span class="tab-icon"><Icon name="book" /></span>Receptes
+          <a href={u('/receptes/')} aria-current={is.recipes || is.cuisines ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="book" /></span>{t(lang, 'nav.recipes')}
           </a>
         </li>
         <li class="tab-center">
           <button type="button" data-ideas-open aria-haspopup="dialog" aria-current={is.fridge || is.tinder ? 'page' : undefined}>
-            <span class="tab-fab"><Icon name="sparkle" /></span>Ko gatavot?
+            <span class="tab-fab"><Icon name="sparkle" /></span>{t(lang, 'nav.whatToCook')}
           </button>
         </li>
         <li>
-          <a href="/svetki/" aria-current={is.occasions ? 'page' : undefined}>
-            <span class="tab-icon"><Icon name="gift" /></span>Svētki
+          <a href={u('/svetki/')} aria-current={is.occasions ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="gift" /></span>{t(lang, 'nav.occasionsShort')}
           </a>
         </li>
         <li>
-          <a href="/izlase/" aria-current={is.favorites ? 'page' : undefined}>
-            <span class="tab-icon"><Icon name="heart" /></span>Izlase
+          <a href={u('/izlase/')} aria-current={is.favorites ? 'page' : undefined}>
+            <span class="tab-icon"><Icon name="heart" /></span>{t(lang, 'nav.favorites')}
           </a>
         </li>
       </ul>
     </nav>
 
-    <!-- "Ko gatavot?" sheet -->
-    <dialog class="sheet ideas" data-ideas aria-label="Ko gatavot?">
+    <!-- "What to cook?" sheet -->
+    <dialog class="sheet ideas" data-ideas aria-label={t(lang, 'nav.whatToCook')}>
       <div class="sheet-grip" aria-hidden="true"></div>
-      <h2>Ko šodien gatavot?</h2>
+      <h2>{t(lang, 'ideas.title')}</h2>
       <div class="ideas-grid">
-        <a class="idea" href="/ledusskapis/" style="--c:#2f7f86">
+        <a class="idea" href={u('/ledusskapis/')} style="--c:#2f7f86">
           <span class="idea-emoji" aria-hidden="true">🧊</span>
-          <strong>Kas ir ledusskapī?</strong>
-          <span>Atzīmē produktus, un mēs atradīsim receptes</span>
+          <strong>{t(lang, 'ideas.fridgeTitle')}</strong>
+          <span>{t(lang, 'ideas.fridgeText')}</span>
         </a>
-        <a class="idea" href="/tinderis/" style="--c:#c2334d">
+        <a class="idea" href={u('/tinderis/')} style="--c:#c2334d">
           <span class="idea-emoji" aria-hidden="true">🔥</span>
-          <strong>Recepšu Tinderis</strong>
-          <span>Velc pa labi vai pa kreisi, līdz ir uzvarētājs</span>
+          <strong>{t(lang, 'ideas.tinderTitle')}</strong>
+          <span>{t(lang, 'ideas.tinderText')}</span>
         </a>
-        <a class="idea" href="/svetki/" style="--c:#b8912a">
+        <a class="idea" href={u('/svetki/')} style="--c:#b8912a">
           <span class="idea-emoji" aria-hidden="true">🎉</span>
-          <strong>Svētku galds</strong>
-          <span>Receptes tuvākajiem svētkiem</span>
+          <strong>{t(lang, 'ideas.occasionsTitle')}</strong>
+          <span>{t(lang, 'ideas.occasionsText')}</span>
         </a>
-        <a class="idea" href="/virtuves/" style="--c:#3b5b8c">
+        <a class="idea" href={u('/virtuves/')} style="--c:#3b5b8c">
           <span class="idea-emoji" aria-hidden="true">🌍</span>
-          <strong>Pasaules virtuves</strong>
-          <span>No Latvijas līdz Meksikai</span>
+          <strong>{t(lang, 'ideas.cuisinesTitle')}</strong>
+          <span>{t(lang, 'ideas.cuisinesText')}</span>
         </a>
       </div>
       <button type="button" class="btn btn-ghost ideas-random" data-random>
-        <Icon name="dice" /> Pārsteidz mani ar nejaušu recepti
+        <Icon name="dice" />
+        {t(lang, 'ideas.random')}
       </button>
-      <button type="button" class="icon-btn sheet-close" data-ideas-close aria-label="Aizvērt"><Icon name="x" /></button>
+      <button type="button" class="icon-btn sheet-close" data-ideas-close aria-label={t(lang, 'common.close')}><Icon name="x" /></button>
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script is:inline type="application/json" id="recipe-ids" set:html={JSON.stringify(recipeIds)} />
+    <script is:inline type="application/json" id="i18n" set:html={JSON.stringify(clientDict(lang))} />
 
     <script>
       import { initFavorites } from '../lib/favorites';
       import { initTimers } from '../lib/timers';
+      import { chref } from '../i18n/client';
 
       initFavorites();
       initTimers();
@@ -244,16 +278,32 @@ const nav = [
       onScroll();
       window.addEventListener('scroll', onScroll, { passive: true });
 
-      // "Ko gatavot?" sheet
+      // "What to cook?" sheet
       const sheet = document.querySelector<HTMLDialogElement>('[data-ideas]')!;
       document.querySelector('[data-ideas-open]')?.addEventListener('click', () => sheet.showModal());
       sheet.querySelector('[data-ideas-close]')!.addEventListener('click', () => sheet.close());
       sheet.addEventListener('click', (e) => e.target === sheet && sheet.close());
 
+      // Language menu: closes on an outside tap or Esc. Switching keeps the search and filters.
+      const langSwitch = document.querySelector<HTMLDetailsElement>('[data-lang-switch]');
+      document.addEventListener('click', (e) => {
+        if (langSwitch?.open && !langSwitch.contains(e.target as Node)) langSwitch.open = false;
+      });
+      langSwitch?.addEventListener('keydown', (e) => {
+        if (e.key !== 'Escape') return;
+        langSwitch.open = false;
+        langSwitch.querySelector('summary')?.focus();
+      });
+      langSwitch?.querySelectorAll<HTMLAnchorElement>('[data-lang-link]').forEach((a) =>
+        a.addEventListener('click', () => {
+          a.href = a.pathname + location.search + location.hash;
+        }),
+      );
+
       document.addEventListener('click', (e) => {
         if (!(e.target as HTMLElement).closest('[data-random]')) return;
         const ids: string[] = JSON.parse(document.getElementById('recipe-ids')!.textContent || '[]');
-        if (ids.length) location.href = `/recepte/${ids[Math.floor(Math.random() * ids.length)]}/`;
+        if (ids.length) location.href = chref(`/recepte/${ids[Math.floor(Math.random() * ids.length)]}/`);
       });
     </script>
     <AdsLoader />
@@ -261,6 +311,87 @@ const nav = [
 </html>
 
 <style>
+  .lang-switch {
+    position: relative;
+  }
+  .lang-switch summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 34px;
+    padding: 0 10px 0 8px;
+    margin-left: 4px;
+    border-radius: var(--pill);
+    box-shadow: inset 0 0 0 1px var(--line-strong);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--ink-2);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background 0.2s;
+  }
+  .lang-switch summary::-webkit-details-marker {
+    display: none;
+  }
+  .lang-switch summary:hover,
+  .lang-switch[open] summary {
+    background: var(--surface-2);
+    color: var(--ink);
+  }
+  .lang-switch summary :global(svg) {
+    width: 16px;
+    height: 16px;
+  }
+  .lang-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    min-width: 176px;
+    padding: 6px;
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow:
+      0 0 0 1px var(--line),
+      0 18px 40px -12px rgb(0 0 0 / 0.3);
+    z-index: 60;
+    transform-origin: top right;
+    animation: lang-pop 0.16s var(--ease);
+  }
+  @keyframes lang-pop {
+    from {
+      opacity: 0;
+      transform: scale(0.96) translateY(-4px);
+    }
+  }
+  .lang-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 12px;
+    border-radius: 10px;
+    font-size: 0.93rem;
+    color: var(--ink-2);
+  }
+  .lang-menu a:hover {
+    background: var(--surface-2);
+    color: var(--ink);
+  }
+  .lang-menu a[aria-current] {
+    color: var(--brand);
+    font-weight: 600;
+  }
+  .lang-menu b {
+    width: 22px;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: var(--ink-3);
+  }
+  .lang-menu a[aria-current] b {
+    color: var(--brand);
+  }
   .footer-about {
     margin-top: 12px;
     max-width: 40ch;

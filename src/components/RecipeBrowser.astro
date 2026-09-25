@@ -4,6 +4,7 @@ import RecipeCard from './RecipeCard.astro';
 import AdSlot from './AdSlot.astro';
 import { ADS } from '../site.config';
 import type { Recipe, Cuisine, Category } from '../lib/recipes';
+import { langFromPath, t, count as countText } from '../i18n';
 
 /**
  * Filterable recipe grid. All filtering happens in the browser, so it is instant
@@ -20,6 +21,7 @@ interface Props {
 }
 
 const { recipes, cuisines, categories, search = true, cuisineFilter = true, categoryFilter = true } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
 const cuisineById = new Map(cuisines.map((c) => [c.id, c]));
 const categoryById = new Map(categories.map((c) => [c.id, c]));
 
@@ -37,12 +39,12 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
           <input
             type="search"
             data-filter-q
-            placeholder="Meklē pēc nosaukuma vai sastāvdaļas..."
-            aria-label="Meklēt receptes"
+            placeholder={t(lang, 'browser.placeholder')}
+            aria-label={t(lang, 'nav.search')}
             enterkeyhint="search"
             autocomplete="off"
           />
-          <button type="button" class="icon-btn clear" data-clear-q aria-label="Notīrīt meklēšanu" hidden>
+          <button type="button" class="icon-btn clear" data-clear-q aria-label={t(lang, 'browser.clear')} hidden>
             <Icon name="x" />
           </button>
         </div>
@@ -51,7 +53,7 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
 
     {
       categoryFilter && usedCategories.length > 1 && (
-        <div class="chip-row" role="group" aria-label="Kategorija" data-group="kategorija">
+        <div class="chip-row" role="group" aria-label={t(lang, 'browser.category')} data-group="kategorija">
           {usedCategories.map((c) => (
             <button type="button" class="chip" data-value={c.id} aria-pressed="false">
               <span aria-hidden="true">{c.data.emoji}</span>
@@ -65,7 +67,7 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
 
     {
       cuisineFilter && usedCuisines.length > 1 && (
-        <div class="chip-row" role="group" aria-label="Virtuve" data-group="virtuve">
+        <div class="chip-row" role="group" aria-label={t(lang, 'browser.cuisine')} data-group="virtuve">
           {usedCuisines.map((c) => (
             <button type="button" class="chip" data-value={c.id} aria-pressed="false">
               <span aria-hidden="true">{c.data.emoji}</span>
@@ -77,24 +79,24 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
       )
     }
 
-    <div class="chip-row" role="group" aria-label="Laiks un grūtība">
+    <div class="chip-row" role="group" aria-label={t(lang, 'browser.timeDiff')}>
       <div class="chip-group" data-group="laiks">
-        <button type="button" class="chip" data-value="30" aria-pressed="false">⚡ Līdz 30 min</button>
-        <button type="button" class="chip" data-value="60" aria-pressed="false">⏱️ Līdz 1 h</button>
+        <button type="button" class="chip" data-value="30" aria-pressed="false">{t(lang, 'browser.under30')}</button>
+        <button type="button" class="chip" data-value="60" aria-pressed="false">{t(lang, 'browser.under60')}</button>
       </div>
       <span class="chip-sep" aria-hidden="true"></span>
       <div class="chip-group" data-group="grutiba">
-        <button type="button" class="chip" data-value="viegli" aria-pressed="false">Viegli</button>
-        <button type="button" class="chip" data-value="vidēji" aria-pressed="false">Vidēji</button>
-        <button type="button" class="chip" data-value="sarežģīti" aria-pressed="false">Sarežģīti</button>
+        <button type="button" class="chip" data-value="viegli" aria-pressed="false">{t(lang, 'diff.viegli')}</button>
+        <button type="button" class="chip" data-value="vidēji" aria-pressed="false">{t(lang, 'diff.vidēji')}</button>
+        <button type="button" class="chip" data-value="sarežģīti" aria-pressed="false">{t(lang, 'diff.sarežģīti')}</button>
       </div>
     </div>
   </div>
 
   <div class="result-bar">
-    <p data-result-count aria-live="polite">{recipes.length} receptes</p>
+    <p data-result-count aria-live="polite">{countText(lang, recipes.length, 'count.recipes')}</p>
     <button type="button" class="reset" data-reset data-reset-bar hidden>
-      <Icon name="refresh" /> Notīrīt filtrus
+      <Icon name="refresh" /> {t(lang, 'browser.reset')}
     </button>
   </div>
 
@@ -115,14 +117,14 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
 
   <div class="empty" data-empty hidden>
     <div class="big">🥄</div>
-    <h3>Nekas netika atrasts</h3>
-    <p>Pamēģini citu vārdu vai notīri filtrus.</p>
-    <button type="button" class="btn btn-ghost" data-reset style="margin-top:16px">Notīrīt filtrus</button>
+    <h3>{t(lang, 'browser.emptyTitle')}</h3>
+    <p>{t(lang, 'browser.emptyText')}</p>
+    <button type="button" class="btn btn-ghost" data-reset style="margin-top:16px">{t(lang, 'browser.reset')}</button>
   </div>
 </div>
 
 <script>
-  import { plural } from '../lib/format';
+  import { ccount } from '../i18n/client';
 
   const normalize = (s: string) =>
     s
@@ -168,7 +170,7 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
       const filtered = terms.length > 0 || Object.values(state).some(Boolean);
       grid.classList.toggle('is-filtered', filtered);
       emptyEl.hidden = shown > 0;
-      countEl.textContent = `${shown} ${plural(shown, 'recepte', 'receptes')}`;
+      countEl.textContent = ccount(shown, 'count.recipes');
       root.querySelector<HTMLElement>('[data-reset-bar]')!.hidden = !filtered;
       if (clearBtn) clearBtn.hidden = !input?.value;
 

@@ -1,22 +1,23 @@
 ---
-import Base from '../../layouts/Base.astro';
-import Icon from '../../components/Icon.astro';
-import OccasionBanner from '../../components/OccasionBanner.astro';
-import { getOccasions, getRecipes, occasionUrl, plural } from '../../lib/recipes';
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import OccasionBanner from '../../../components/OccasionBanner.astro';
+import { getOccasions, getRecipes, occasionUrl } from '../../../lib/recipes';
+import { langFromPath, langPaths, t, count as countText } from '../../../i18n';
 
-const [occasions, recipes] = await Promise.all([getOccasions(), getRecipes()]);
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const [occasions, recipes] = await Promise.all([getOccasions(lang), getRecipes(lang)]);
 const count = (id: string) => recipes.filter((r) => r.data.occasions.some((o) => o.id === id)).length;
-const rules = occasions.map((o) => ({ id: o.id, ...o.data }));
+const rules = occasions.map(({ id, data: { dateType, month, day, easterOffset, weekday, nth, leadDays } }) => ({ id, dateType, month, day, easterOffset, weekday, nth, leadDays }));
 ---
 
-<Base
-  title="Svētku galds un kalendārs"
-  description="Receptes Ziemassvētkiem, Jaunajam gadam, Lieldienām, Jāņiem, 18. novembrim un citiem svētkiem. Kalendārs parāda, kuri svētki tuvojas."
->
+<Base title={t(lang, 'occ.metaTitle')} description={t(lang, 'occ.metaDesc')}>
   <section class="page-hero container">
-    <span class="eyebrow">🎉 Svētku galds</span>
-    <h1>Ko likt galdā svētkos?</h1>
-    <p>No Meteņiem līdz Ziemassvētkiem. Kalendārs pats zina, kuri svētki tuvojas, un piedāvā piemērotas receptes.</p>
+    <span class="eyebrow">{t(lang, 'occ.eyebrow')}</span>
+    <h1>{t(lang, 'occ.title')}</h1>
+    <p>{t(lang, 'occ.lead')}</p>
   </section>
 
   <OccasionBanner mode="page" />
@@ -24,8 +25,8 @@ const rules = occasions.map((o) => ({ id: o.id, ...o.data }));
   <section class="section container" aria-labelledby="cal-title">
     <div class="section-head">
       <div>
-        <span class="eyebrow">Svētku kalendārs</span>
-        <h2 id="cal-title">Tuvākie svētki</h2>
+        <span class="eyebrow">{t(lang, 'occ.calEyebrow')}</span>
+        <h2 id="cal-title">{t(lang, 'occ.calTitle')}</h2>
       </div>
     </div>
 
@@ -35,7 +36,7 @@ const rules = occasions.map((o) => ({ id: o.id, ...o.data }));
           const n = count(o.id);
           return (
             <li data-cal={o.id} style={`--c:${o.data.color}`}>
-              <a href={occasionUrl(o.id)} class="cal-row">
+              <a href={occasionUrl(o.id, lang)} class="cal-row">
                 <span class="cal-date" data-cal-date>
                   {o.data.dateType === 'nav' ? (
                     <span class="cal-any" aria-hidden="true">
@@ -53,11 +54,11 @@ const rules = occasions.map((o) => ({ id: o.id, ...o.data }));
                     {o.data.name} <span aria-hidden="true">{o.data.emoji}</span>
                   </strong>
                   <span class="cal-sub">
-                    <span data-cal-countdown>{o.data.dateType === 'nav' ? 'Jebkurā dienā' : ''}</span>
+                    <span data-cal-countdown>{o.data.dateType === 'nav' ? t(lang, 'occ.anyDay') : ''}</span>
                     <span class="dot" aria-hidden="true">
                       ·
                     </span>
-                    {n} {plural(n, 'recepte', 'receptes')}
+                    {countText(lang, n, 'count.recipes')}
                   </span>
                 </span>
                 <Icon name="chevron-right" class="cal-chev" />
@@ -73,7 +74,7 @@ const rules = occasions.map((o) => ({ id: o.id, ...o.data }));
 </Base>
 
 <script>
-  import { nextOccurrence, countdown, monthShort, type OccasionRule } from '../../lib/calendar';
+  import { nextOccurrence, countdown, monthShort, type OccasionRule } from '../../../lib/calendar';
 
   const rules: OccasionRule[] = JSON.parse(document.getElementById('cal-rules')!.textContent!);
   const list = document.querySelector<HTMLElement>('[data-calendar]')!;

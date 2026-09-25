@@ -3,5 +3,19 @@
   "emoji": "🥖",
   "color": "#a0673a",
   "order": 5,
-  "description": "Pīrāgi, maizes, plātsmaizes un cepumi."
+  "description": "Pīrāgi, maizes, plātsmaizes un cepumi.",
+  "translations": {
+    "en": {
+      "name": "Breads and bakes",
+      "description": "Pīrāgi, breads, tray bakes and cookies."
+    },
+    "ru": {
+      "name": "Хлеб и выпечка",
+      "description": "Пирожки, хлеб, пироги на противне и печенье."
+    },
+    "lt": {
+      "name": "Duona ir kepiniai",
+      "description": "Pyragėliai, duona, skardos pyragai ir sausainiai."
+    }
+  }
 }

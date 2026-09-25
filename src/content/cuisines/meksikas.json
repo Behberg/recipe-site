@@ -5,5 +5,22 @@
   "emoji": "🇲🇽",
   "color": "#d1602a",
   "order": 41,
-  "description": "Tako, burito un gvakamole. Laima, čili, avokado un kukurūza."
+  "description": "Tako, burito un gvakamole. Laima, čili, avokado un kukurūza.",
+  "translations": {
+    "en": {
+      "name": "Mexican",
+      "region": "Mexico",
+      "description": "Tacos, burritos and guacamole. Lime, chilli, avocado and corn."
+    },
+    "ru": {
+      "name": "Мексиканская",
+      "region": "Мексика",
+      "description": "Тако, буррито и гуакамоле. Лайм, чили, авокадо и кукуруза."
+    },
+    "lt": {
+      "name": "Meksikiečių",
+      "region": "Meksika",
+      "description": "Tako, buritai ir gvakamolė. Laimas, čili, avokadas ir kukurūzai."
+    }
+  }
 }

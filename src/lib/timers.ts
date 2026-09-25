@@ -8,6 +8,7 @@
 // - When time is up: repeating chime, vibration and a blinking tab title until dismissed.
 
 import { toast } from './favorites';
+import { ct } from '../i18n/client';
 
 interface Timer {
   id: string;
@@ -92,7 +93,7 @@ function startAlarm() {
   const ring = () => {
     chime();
     navigator.vibrate?.([250, 120, 250]);
-    document.title = n++ % 2 ? baseTitle : '⏰ Gatavs!';
+    document.title = n++ % 2 ? baseTitle : `⏰ ${ct('timer.ready')}`;
     // Stop ringing after about a minute even if nobody reacts.
     if (n > 30) stopAlarm();
   };
@@ -147,16 +148,16 @@ function render() {
       el.dataset.state = state;
       el.className = 'ktimer' + (t.done ? ' is-done' : '') + (state === 'paused' ? ' is-paused' : '');
       el.querySelector('.ktimer-actions')!.innerHTML = t.done
-        ? '<button type="button" class="ktimer-btn ktimer-ok" data-act="dismiss">Labi</button>'
-        : `<button type="button" class="ktimer-btn" data-act="toggle" aria-label="${state === 'paused' ? 'Turpināt' : 'Pauze'}">${
+        ? `<button type="button" class="ktimer-btn ktimer-ok" data-act="dismiss">${ct('timer.ok')}</button>`
+        : `<button type="button" class="ktimer-btn" data-act="toggle" aria-label="${ct(state === 'paused' ? 'timer.resume' : 'timer.pause')}">${
             state === 'paused' ? ICON_PLAY : ICON_PAUSE
-          }</button><button type="button" class="ktimer-btn" data-act="cancel" aria-label="Atcelt taimeri">${ICON_X}</button>`;
+          }</button><button type="button" class="ktimer-btn" data-act="cancel" aria-label="${ct('timer.cancel')}">${ICON_X}</button>`;
     }
     const left = remaining(t);
     const pct = t.done ? 100 : Math.min(100, Math.max(0, 100 - (left / (t.total * 1000)) * 100));
     el.style.setProperty('--p', `${pct.toFixed(1)}%`);
     const time = el.querySelector<HTMLElement>('.ktimer-time')!;
-    const text = t.done ? 'Gatavs!' : fmt(left);
+    const text = t.done ? ct('timer.ready') : fmt(left);
     if (time.textContent !== text) time.textContent = text;
   });
 }
@@ -167,7 +168,7 @@ function update() {
     if (!t.done && t.left == null && t.endAt <= Date.now()) {
       t.done = true;
       changed = true;
-      toast(`⏰ ${t.label}: laiks beidzies!`);
+      toast(ct('timer.finished', { label: t.label }));
     }
   }
   if (changed) save();
@@ -204,12 +205,12 @@ function syncStarters() {
     const text = b.querySelector<HTMLElement>('[data-timer-text]');
     if (text) {
       text.dataset.orig ??= text.textContent ?? '';
-      text.textContent = on ? 'Izslēgt taimeri' : text.dataset.orig;
+      text.textContent = on ? ct('timer.stop') : text.dataset.orig;
     }
   });
 }
 
-function removeTimer(id: string, message = 'Taimeris izslēgts') {
+function removeTimer(id: string, message = ct('timer.off')) {
   const before = timers.length;
   timers = timers.filter((t) => t.id !== id);
   if (timers.length === before) return;
@@ -233,7 +234,7 @@ export function startTimer(seconds: number, label: string, recipe?: string) {
   if (timers.length > 4) timers.shift();
   save();
   update();
-  toast(`⏱️ Taimeris palaists: ${Math.round(seconds / 60)} min`, { label: 'Atcelt', onClick: () => removeTimer(id) });
+  toast(ct('timer.started', { min: Math.round(seconds / 60) }), { label: ct('common.cancel'), onClick: () => removeTimer(id) });
 }
 
 /** Moves the timer stack into an open modal dialog (or back to <body> with null). */

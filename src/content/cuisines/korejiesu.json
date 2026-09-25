@@ -5,5 +5,22 @@
   "emoji": "🇰🇷",
   "color": "#3a5aa8",
   "order": 24,
-  "description": "Kimči, bibimbaps un bulgogi. Raudzētas, pikantas un spilgtas garšas."
+  "description": "Kimči, bibimbaps un bulgogi. Raudzētas, pikantas un spilgtas garšas.",
+  "translations": {
+    "en": {
+      "name": "Korean",
+      "region": "South Korea",
+      "description": "Kimchi, bibimbap and bulgogi. Fermented, spicy and vivid flavours."
+    },
+    "ru": {
+      "name": "Корейская",
+      "region": "Южная Корея",
+      "description": "Кимчи, пибимпап и пулькоги. Квашеные, острые и яркие вкусы."
+    },
+    "lt": {
+      "name": "Korėjiečių",
+      "region": "Pietų Korėja",
+      "description": "Kimči, bibimbapas ir bulgogi. Fermentuoti, aštrūs ir ryškūs skoniai."
+    }
+  }
 }

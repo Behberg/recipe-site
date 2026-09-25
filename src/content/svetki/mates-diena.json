@@ -8,5 +8,19 @@
   "nth": 2,
   "leadDays": 14,
   "order": 7,
-  "description": "Brokastis gultā, kūka un maigi deserti, ar kuriem pateikt paldies mammai."
+  "description": "Brokastis gultā, kūka un maigi deserti, ar kuriem pateikt paldies mammai.",
+  "translations": {
+    "en": {
+      "name": "Mother’s Day",
+      "description": "Breakfast in bed, cake and gentle desserts to say thank you to mum."
+    },
+    "ru": {
+      "name": "День матери",
+      "description": "Завтрак в постель, торт и нежные десерты, чтобы сказать маме спасибо."
+    },
+    "lt": {
+      "name": "Motinos diena",
+      "description": "Pusryčiai į lovą, tortas ir švelnūs desertai, kad padėkotumėte mamai."
+    }
+  }
 }

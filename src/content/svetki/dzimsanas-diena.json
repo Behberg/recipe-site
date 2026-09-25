@@ -5,5 +5,19 @@
   "dateType": "nav",
   "leadDays": 0,
   "order": 14,
-  "description": "Kliņģeris, kūkas un ēdieni lielai svinību kompānijai."
+  "description": "Kliņģeris, kūkas un ēdieni lielai svinību kompānijai.",
+  "translations": {
+    "en": {
+      "name": "Birthday",
+      "description": "Kliņģeris, cakes and food for a big celebration."
+    },
+    "ru": {
+      "name": "День рождения",
+      "description": "Крендель, торты и угощения для большой праздничной компании."
+    },
+    "lt": {
+      "name": "Gimtadienis",
+      "description": "Kringelis, tortai ir patiekalai didelei šventinei kompanijai."
+    }
+  }
 }

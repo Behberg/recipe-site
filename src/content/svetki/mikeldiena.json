@@ -7,5 +7,19 @@
   "day": 29,
   "leadDays": 14,
   "order": 10,
-  "description": "Rudens ražas svētki: āboli, ķirbji, sēnes un ziemas krājumi."
+  "description": "Rudens ražas svētki: āboli, ķirbji, sēnes un ziemas krājumi.",
+  "translations": {
+    "en": {
+      "name": "Michaelmas",
+      "description": "The autumn harvest festival: apples, pumpkins, mushrooms and winter stores."
+    },
+    "ru": {
+      "name": "Михайлов день",
+      "description": "Праздник осеннего урожая: яблоки, тыквы, грибы и запасы на зиму."
+    },
+    "lt": {
+      "name": "Mykolinės",
+      "description": "Rudens derliaus šventė: obuoliai, moliūgai, grybai ir atsargos žiemai."
+    }
+  }
 }

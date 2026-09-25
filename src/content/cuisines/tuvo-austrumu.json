@@ -5,5 +5,22 @@
   "emoji": "🧆",
   "color": "#c07a1e",
   "order": 30,
-  "description": "Humuss, falafeļi un svaigi salāti ar daudz zaļumu un citronu."
+  "description": "Humuss, falafeļi un svaigi salāti ar daudz zaļumu un citronu.",
+  "translations": {
+    "en": {
+      "name": "Middle Eastern",
+      "region": "Lebanon, Israel, Syria",
+      "description": "Hummus, falafel and fresh salads with plenty of herbs and lemon."
+    },
+    "ru": {
+      "name": "Ближневосточная",
+      "region": "Ливан, Израиль, Сирия",
+      "description": "Хумус, фалафель и свежие салаты с большим количеством зелени и лимона."
+    },
+    "lt": {
+      "name": "Artimųjų Rytų",
+      "region": "Libanas, Izraelis, Sirija",
+      "description": "Humusas, falafeliai ir šviežios salotos su gausybe žalumynų ir citrinų."
+    }
+  }
 }
