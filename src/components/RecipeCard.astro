@@ -30,7 +30,7 @@ const search = [d.title, lang !== 'lv' && recipe.lv.title, d.description, cuisin
 <article
   class:list={['card', { 'card--wide': wide }]}
   data-recipe={recipe.id}
-  data-cuisine={d.cuisine.id}
+  data-cuisine={d.cuisine?.id}
   data-category={d.category.id}
   data-time={total}
   data-difficulty={d.difficulty}

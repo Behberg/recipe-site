@@ -67,6 +67,8 @@ collections:
       - label: 'Virtuve'
         name: cuisine
         widget: relation
+        required: false
+        hint: 'Atstāj tukšu ikdienas ēdieniem, kas nepieder kādas valsts virtuvei.'
         collection: cuisines
         value_field: '{{slug}}'
         search_fields: [name]

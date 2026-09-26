@@ -28,7 +28,9 @@
     "Biskvītam": ["For the sponge", "Для бисквита", "Biskvitui"],
     "Rotāšanai": ["To decorate", "Для украшения", "Papuošimui"],
     "Tzatziki": ["Tzatziki", "Дзадзики", "Tzatziki"],
-    "Piko de galjo": ["Pico de gallo", "Пико де гальо", "Pico de gallo"]
+    "Piko de galjo": ["Pico de gallo", "Пико де гальо", "Pico de gallo"],
+    "Klimpām": ["For the dumplings", "Для клёцек", "Kukuliams"],
+    "Karamelei": ["For the caramel", "Для карамели", "Karamelei"]
   },
   "tags": {
     "vienkārši": ["simple", "просто", "paprasta"],
@@ -153,6 +155,16 @@
     "Valentīndiena": ["Valentine’s Day", "День святого Валентина", "Valentino diena"],
     "pēc svētkiem": ["after the holidays", "после праздников", "po švenčių"],
     "Somija": ["Finland", "Финляндия", "Suomija"],
-    "pasta": ["pasta", "паста", "makaronai"]
+    "pasta": ["pasta", "паста", "makaronai"],
+    "ātras vakariņas": ["quick dinner", "быстрый ужин", "greita vakarienė"],
+    "vistas gaļa": ["chicken", "курица", "vištiena"],
+    "majonēzes salāti": ["mayonnaise salad", "салат с майонезом", "salotos su majonezu"],
+    "veselīgas brokastis": ["healthy breakfast", "полезный завтрак", "sveiki pusryčiai"],
+    "olbaltumvielām bagāts": ["high protein", "много белка", "daug baltymų"],
+    "kafijas galdam": ["for the coffee table", "к кофе", "prie kavos"],
+    "bez miltiem": ["flourless", "без муки", "be miltų"],
+    "atspirdzinošs": ["refreshing", "освежающий", "gaivus"],
+    "marinēts": ["pickled", "маринованный", "marinuotas"],
+    "krēmzupa": ["cream soup", "крем-суп", "trinta sriuba"]
   }
 }

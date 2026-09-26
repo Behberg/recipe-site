@@ -73,7 +73,8 @@ const recipes = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    cuisine: reference('cuisines'),
+    // Optional: everyday dishes that belong to no particular country have no cuisine.
+    cuisine: z.preprocess(empty, reference('cuisines').optional()),
     category: reference('categories'),
     image: optString,
     emoji: optString,

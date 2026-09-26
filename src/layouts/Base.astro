@@ -51,7 +51,7 @@ const [cuisines, categories, occasions, recipes] = await Promise.all([
 ]);
 const recipeIds = recipes.map((r) => r.id);
 const footerCuisines = [...cuisines]
-  .sort((a, b) => recipes.filter((r) => r.data.cuisine.id === b.id).length - recipes.filter((r) => r.data.cuisine.id === a.id).length)
+  .sort((a, b) => recipes.filter((r) => r.data.cuisine?.id === b.id).length - recipes.filter((r) => r.data.cuisine?.id === a.id).length)
   .slice(0, 10);
 
 const is = {

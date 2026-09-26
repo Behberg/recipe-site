@@ -12,7 +12,7 @@ const { recipes, cuisineById, categoryById } = await getCatalog(lang);
 
 const deck = recipes.map((r) => {
   const cat = categoryById.get(r.data.category.id);
-  const cui = cuisineById.get(r.data.cuisine.id);
+  const cui = cuisineById.get(r.data.cuisine?.id ?? "");
   return {
     id: r.id,
     t: r.data.title,
@@ -24,7 +24,7 @@ const deck = recipes.map((r) => {
     m: totalTime(r),
     time: formatMinutes(totalTime(r), lang),
     diff: t(lang, `diff.${r.data.difficulty}` as UIKey),
-    cu: r.data.cuisine.id,
+    cu: r.data.cuisine?.id ?? '',
     cun: cui ? `${cui.data.emoji} ${cui.data.name}` : '',
     ca: r.data.category.id,
     tg: r.lv.tags,
@@ -134,7 +134,7 @@ const moods = ['viss', 'majigi', 'satigs', 'saldais', 'atri', 'latviesu', 'broka
     atri: (r) => r.m <= 30 && r.ca !== 'ievarijumi-un-konservi',
     latviesu: (r) => r.cu === 'latviesu' && r.ca !== 'ievarijumi-un-konservi',
     brokastis: (r) => r.ca === 'brokastis' || (r.m <= 20 && r.ca !== 'ievarijumi-un-konservi'),
-    pasaule: (r) => r.cu !== 'latviesu' && r.ca !== 'ievarijumi-un-konservi',
+    pasaule: (r) => !!r.cu && r.cu !== 'latviesu' && r.ca !== 'ievarijumi-un-konservi',
   };
 
   let mood = 'viss';

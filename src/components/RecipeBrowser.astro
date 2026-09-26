@@ -25,7 +25,7 @@ const lang = langFromPath(Astro.url.pathname);
 const cuisineById = new Map(cuisines.map((c) => [c.id, c]));
 const categoryById = new Map(categories.map((c) => [c.id, c]));
 
-const count = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key].id === id).length;
+const count = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key]?.id === id).length;
 const usedCuisines = cuisines.filter((c) => count('cuisine', c.id) > 0);
 const usedCategories = categories.filter((c) => count('category', c.id) > 0);
 ---
@@ -104,7 +104,7 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
     {
       recipes.map((r, i) => (
         <>
-          <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} eager={i < 4} />
+          <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} eager={i < 4} />
           {(i + 1) % ADS.feedEvery === 0 && i < recipes.length - 1 && (
             <div class="full ad-feed">
               <AdSlot slot="inFeed" />

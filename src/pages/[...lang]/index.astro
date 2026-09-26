@@ -20,11 +20,11 @@ const cozyQuery = u(`/receptes/?q=${encodeURIComponent(trTag(lang, 'mājīgi'))}
 
 const featured = recipes.filter((r) => r.data.featured).slice(0, 8);
 const latest = recipes.slice(0, 8);
-const latvian = recipes.filter((r) => r.data.cuisine.id === 'latviesu').slice(0, 10);
+const latvian = recipes.filter((r) => r.data.cuisine?.id === 'latviesu').slice(0, 10);
 const comfort = recipes.filter((r) => r.lv.tags.includes('mājīgi')).slice(0, 12);
 const hero = featured[0] ?? recipes[0];
 
-const countBy = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key].id === id).length;
+const countBy = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key]?.id === id).length;
 // Latvian first, then the cuisines with the most recipes.
 const topCuisines = [...cuisines].sort((a, b) => Number(b.id === 'latviesu') - Number(a.id === 'latviesu') || countBy('cuisine', b.id) - countBy('cuisine', a.id)).slice(0, 9);
 const promo = ['saldie-edieni', 'ievarijumi-un-konservi']
@@ -98,8 +98,12 @@ const jsonLd = [organizationLd(Astro.site), {
             <span class="hero-feature-meta">
               <Icon name="clock" />
               {formatMinutes(totalTime(hero), lang)}
-              <span class="dot">·</span>
-              {cuisineById.get(hero.data.cuisine.id)?.data.name}
+              {hero.data.cuisine && (
+                <>
+                  <span class="dot">·</span>
+                  {cuisineById.get(hero.data.cuisine.id)?.data.name}
+                </>
+              )}
             </span>
           </div>
         </a>
@@ -155,7 +159,7 @@ const jsonLd = [organizationLd(Astro.site), {
           {featured.map((r, i) => (
             <RecipeCard
               recipe={r}
-              cuisine={cuisineById.get(r.data.cuisine.id)}
+              cuisine={cuisineById.get(r.data.cuisine?.id ?? "")}
               category={categoryById.get(r.data.category.id)}
               wide
               eager={i < 2}
@@ -263,7 +267,7 @@ const jsonLd = [organizationLd(Astro.site), {
         </div>
         <div class="rail">
           {latvian.map((r) => (
-            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide showBadge={false} />
+            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} wide showBadge={false} />
           ))}
         </div>
       </section>
@@ -285,7 +289,7 @@ const jsonLd = [organizationLd(Astro.site), {
         </div>
         <div class="rail">
           {comfort.map((r) => (
-            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide />
+            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} wide />
           ))}
         </div>
       </section>
@@ -304,7 +308,7 @@ const jsonLd = [organizationLd(Astro.site), {
       </a>
     </div>
     <div class="grid">
-      {latest.map((r) => <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} />)}
+      {latest.map((r) => <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} />)}
     </div>
     <div class="more-cta">
       <a class="btn btn-primary" href={u('/receptes/')}>

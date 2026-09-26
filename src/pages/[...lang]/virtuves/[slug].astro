@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.props as { lang: Lang };
 const { recipes: all, cuisines, categories, cuisineById } = await getCatalog(lang);
 const cuisine = cuisineById.get(Astro.params.slug!)!;
-const recipes = all.filter((r) => r.data.cuisine.id === cuisine.id);
+const recipes = all.filter((r) => r.data.cuisine?.id === cuisine.id);
 const title = t(lang, 'cuisine.title', { name: cuisine.data.name });
 const jsonLd = [
   breadcrumbLd(

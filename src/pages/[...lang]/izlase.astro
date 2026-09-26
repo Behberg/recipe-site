@@ -20,7 +20,7 @@ const { recipes, cuisineById, categoryById } = await getCatalog(lang);
   <section class="section container">
     <p class="fav-count" data-fav-count></p>
     <div class="grid" data-fav-grid>
-      {recipes.map((r) => <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} />)}
+      {recipes.map((r) => <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} />)}
     </div>
     <div class="empty" data-fav-empty hidden>
       <div class="big">🤍</div>

@@ -32,7 +32,7 @@ const u = (p: string) => href(lang, p);
 const { recipes, cuisineById, categoryById } = await getCatalog(lang);
 const recipe = recipes.find((r) => r.id === Astro.params.slug)!;
 const d = recipe.data;
-const cuisine = cuisineById.get(d.cuisine.id);
+const cuisine = cuisineById.get(d.cuisine?.id ?? "");
 const category = categoryById.get(d.category.id);
 const { Content } = await render(recipe.story);
 const hasStory = recipe.story.body?.trim().length;
@@ -75,7 +75,7 @@ const related = recipes
   .filter((r) => r.id !== recipe.id)
   .map((r) => ({
     r,
-    score: (r.data.category.id === d.category.id ? 2 : 0) + (r.data.cuisine.id === d.cuisine.id ? 1 : 0) + (r.data.tags.some((t) => d.tags.includes(t)) ? 1 : 0),
+    score: (r.data.category.id === d.category.id ? 2 : 0) + (r.data.cuisine?.id === d.cuisine?.id ? 1 : 0) + (r.data.tags.some((t) => d.tags.includes(t)) ? 1 : 0),
   }))
   .filter((x) => x.score > 0)
   .sort((a, b) => b.score - a.score)
@@ -333,7 +333,7 @@ const useMultiplier = Boolean(d.yield);
           </div>
           <div class="rail">
             {related.map((r) => (
-              <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide />
+              <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} wide />
             ))}
           </div>
         </section>

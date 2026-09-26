@@ -12,7 +12,7 @@ export async function getStaticPaths() {
         icon: r.data.icon,
         iconColors: r.data.iconColors,
         iconExtra: r.data.iconExtra,
-        color: categoryById.get(r.data.category.id)?.data.color || cuisineById.get(r.data.cuisine.id)?.data.color || '#9e3039',
+        color: categoryById.get(r.data.category.id)?.data.color || cuisineById.get(r.data.cuisine?.id ?? "")?.data.color || '#9e3039',
       },
     })),
   );

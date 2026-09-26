@@ -51,7 +51,7 @@ const rules = dated.map(({ id, data: { dateType, month, day, easterOffset, weekd
           {list.length > 0 && (
             <div class="rail occ-rail">
               {list.map((r) => (
-                <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} wide />
+                <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} wide />
               ))}
             </div>
           )}

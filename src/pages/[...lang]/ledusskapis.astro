@@ -145,7 +145,7 @@ const data = {
         {
           recipes.map((r) => (
             <div class="fr" data-fr={r.id}>
-              <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine.id)} category={categoryById.get(r.data.category.id)} />
+              <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} />
               <p class="fr-note" />
             </div>
           ))

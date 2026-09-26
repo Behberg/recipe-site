@@ -8,7 +8,7 @@ export const getStaticPaths = langPaths;
 
 const lang = langFromPath(Astro.url.pathname);
 const { recipes, cuisines } = await getCatalog(lang);
-const count = (id: string) => recipes.filter((r) => r.data.cuisine.id === id).length;
+const count = (id: string) => recipes.filter((r) => r.data.cuisine?.id === id).length;
 
 const continents = [
   { id: 'Eiropa', emoji: '🏰' },
