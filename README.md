@@ -10,7 +10,7 @@ Built with [Astro](https://astro.build) as a fully static site for **Netlify**, 
 - **Cuisine directory**: 26 cuisines grouped by continent (Latviešu, Itāļu, Franču, Spāņu, Grieķu, Gruzīnu, Japāņu, Ķīniešu, Indiešu, Taizemes, Korejiešu, Meksikāņu and more). Admin can add more.
 - **Categories**: breakfasts, soups, mains, salads, breads and cookies, sweets, jams and preserves, drinks (admin can add more).
 - **Instant search and filters** (category, cuisine, time, difficulty), diacritic-insensitive, mirrored in the URL.
-- **270+ recipes** from 26 cuisines: savoury, simple everyday and comfort food, sweets, baking, jams, preserves and drinks.
+- **500+ recipes** in Latvian, English, Russian and Lithuanian: Latvian classics, everyday home cooking, sweets, baking, jams, preserves and drinks, plus dishes from 26 cuisines. Everyday dishes that belong to no particular country simply have no cuisine.
 - **Recipe page**: servings scaler (or ½×/1×/2×/3× for jars and batches), and "cik tev ir?": tap any amount, type what you actually have (e.g. 650 g strawberries) and the whole recipe is recalculated, with g/kg and ml/l conversion.
 - **Kitchen timers**: auto-detected from steps ("vāra 10 minūtes"), several at once, keep running across pages and reloads, repeating chime and vibration until dismissed, visible inside cooking mode.
 - **Cooking mode**: full-screen, one step at a time, swipe between steps, keeps the screen awake.
@@ -65,7 +65,7 @@ Pick one way to sign in:
 | What | Where | Format |
 | --- | --- | --- |
 | Recipes | `src/content/recipes/*.md` | YAML front matter + Markdown intro |
-| Cuisines | `src/content/cuisines/*.json` | JSON |
+| Cuisines | `src/content/cuisines/*.json` | JSON (a recipe's cuisine is optional) |
 | Categories | `src/content/categories/*.json` | JSON |
 | Occasions (Svētku galds) | `src/content/svetki/*.json` | JSON, with date rule and lead days |
 | Fridge products | `src/data/ledusskapis.json` | JSON (admin: Iestatījumi > Ledusskapja produkti) |
