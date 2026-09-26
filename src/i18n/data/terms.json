@@ -30,7 +30,8 @@
     "Tzatziki": ["Tzatziki", "Дзадзики", "Tzatziki"],
     "Piko de galjo": ["Pico de gallo", "Пико де гальо", "Pico de gallo"],
     "Klimpām": ["For the dumplings", "Для клёцек", "Kukuliams"],
-    "Karamelei": ["For the caramel", "Для карамели", "Karamelei"]
+    "Karamelei": ["For the caramel", "Для карамели", "Karamelei"],
+    "Kotletēm": ["For the patties", "Для котлет", "Kotletams"]
   },
   "tags": {
     "vienkārši": ["simple", "просто", "paprasta"],
@@ -165,6 +166,7 @@
     "bez miltiem": ["flourless", "без муки", "be miltų"],
     "atspirdzinošs": ["refreshing", "освежающий", "gaivus"],
     "marinēts": ["pickled", "маринованный", "marinuotas"],
-    "krēmzupa": ["cream soup", "крем-суп", "trinta sriuba"]
+    "krēmzupa": ["cream soup", "крем-суп", "trinta sriuba"],
+    "Latgale": ["Latgale", "Латгалия", "Latgala"]
   }
 }
