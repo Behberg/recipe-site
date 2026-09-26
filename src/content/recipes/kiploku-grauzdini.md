@@ -1,7 +1,6 @@
 ---
 title: "Ķiploku grauzdiņi ar siera mērci"
 description: "Kraukšķīgi rupjmaizes grauzdiņi ar ķiploku un krēmīgu siera mērci. Latvijas krogu klasika."
-cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🍞"
 icon: plate

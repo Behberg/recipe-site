@@ -1,7 +1,6 @@
 ---
 title: "Karbonāde ar ceptiem kartupeļiem"
 description: "Plāna, sulīga cūkgaļas karbonāde panējumā ar ceptiem kartupeļiem un skābētiem kāpostiem."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🥩"
 icon: plate

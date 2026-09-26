@@ -1,7 +1,6 @@
 ---
 title: "Rabarberu ķīselis"
 description: "Skābeni salds rabarberu ķīselis ar vaniļu. Pasniedz ar pienu vai putukrējumu."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🍧"
 icon: layers

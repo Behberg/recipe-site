@@ -1,7 +1,6 @@
 ---
 title: "Marinētas gailenes"
 description: "Mazas gailenes saldskābā marinādē ar sīpolu un garšvielām. Svētku galda uzkoda."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍄"
 icon: jar

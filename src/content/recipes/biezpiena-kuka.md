@@ -1,7 +1,6 @@
 ---
 title: "Biezpiena kūka"
 description: "Krēmīga biezpiena kūka ar kraukšķīgu smilšu mīklas pamatni un citrona aromātu."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🍰"
 icon: cake

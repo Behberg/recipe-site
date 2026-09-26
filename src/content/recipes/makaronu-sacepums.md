@@ -1,7 +1,6 @@
 ---
 title: "Makaronu sacepums ar desu un sieru"
 description: "Makaroni, desa un olu masa, cepti krāsnī zem siera kārtas. Lielisks veids, kā izmantot pāri palikušo."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🧀"
 icon: casserole

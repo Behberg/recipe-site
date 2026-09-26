@@ -1,7 +1,6 @@
 ---
 title: "Kartupeļu biezenis"
 description: "Gluds, krēmīgs kartupeļu biezenis ar sviestu un siltu pienu. Visvienkāršākais un mīļākais piedēvs."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🥔"
 icon: soup

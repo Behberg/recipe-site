@@ -1,7 +1,6 @@
 ---
 title: "Brūkleņu ievārījums ar āboliem"
 description: "Skābeni rūgtens brūkleņu ievārījums ar āboliem. Obligāts pie gaļas un kartupeļu pankūkām."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍒"
 icon: jar

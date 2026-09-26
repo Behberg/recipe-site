@@ -1,7 +1,6 @@
 ---
 title: "Rabarberu ievārījums ar ingveru"
 description: "Skābeni salds rabarberu ievārījums ar svaigu ingveru un apelsīnu."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🌱"
 icon: jar

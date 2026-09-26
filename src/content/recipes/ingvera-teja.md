@@ -1,7 +1,6 @@
 ---
 title: "Ingvera tēja ar citronu un medu"
 description: "Stipra, sildoša svaiga ingvera tēja ar citronu un medu. Pret saaukstēšanos un aukstumu."
-cuisine: latviesu
 category: dzerieni
 emoji: "🫖"
 icon: glass

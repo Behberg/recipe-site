@@ -1,7 +1,6 @@
 ---
 title: "Marmora kēkss"
 description: "Mitrs sviesta kēkss ar šokolādes un vaniļas rakstu. Kafijai un pēcpusdienas tējai."
-cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🍰"
 icon: loaf

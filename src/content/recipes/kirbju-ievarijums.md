@@ -1,7 +1,6 @@
 ---
 title: "Ķirbju ievārījums ar apelsīnu"
 description: "Saulains ķirbju ievārījums ar apelsīnu un citronu. Negaidīti gards un ļoti skaists."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🎃"
 icon: jar

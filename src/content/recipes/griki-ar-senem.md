@@ -1,7 +1,6 @@
 ---
 title: "Griķi ar sēnēm un sīpoliem"
 description: "Irdeni griķi ar apceptām sēnēm, sīpoliem un sviestu. Vienkāršs un sātīgs ēdiens."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🍄"
 icon: soup

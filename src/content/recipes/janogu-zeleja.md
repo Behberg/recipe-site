@@ -1,7 +1,6 @@
 ---
 title: "Sarkano jāņogu želeja"
 description: "Caurspīdīga, spīdīga jāņogu želeja bez sēkliņām. Pie gaļas un uz sviestmaizes."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🔴"
 icon: jar

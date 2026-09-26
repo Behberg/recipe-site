@@ -1,7 +1,6 @@
 ---
 title: "Zemeņu ievārījums"
 description: "Klasisks ievārījums ar veselām zemenēm un sīrupu, kas smaržo pēc jūnija."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍓"
 icon: jar

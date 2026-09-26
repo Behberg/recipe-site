@@ -1,7 +1,6 @@
 ---
 title: "Plānās pankūkas"
 description: "Klasiskas latviešu plānās pankūkas ar pienu. Ideālas ar ievārījumu, biezpienu vai krējumu."
-cuisine: latviesu
 category: brokastis
 emoji: "🥞"
 icon: plate

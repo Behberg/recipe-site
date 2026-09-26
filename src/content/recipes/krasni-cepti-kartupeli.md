@@ -1,7 +1,6 @@
 ---
 title: "Krāsnī cepti kartupeļi"
 description: "Kraukšķīgi zeltaini kartupeļi ar ķiploku un rozmarīnu. Vienkāršākais piedēvs jebkuram ēdienam."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🥔"
 icon: plate

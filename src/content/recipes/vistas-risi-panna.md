@@ -1,7 +1,6 @@
 ---
 title: "Vistas rīsi vienā pannā"
 description: "Vista, rīsi un dārzeņi, gatavoti vienā pannā ar paprikas pulveri un buljonu."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🍛"
 icon: skillet

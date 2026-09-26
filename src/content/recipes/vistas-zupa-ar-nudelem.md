@@ -1,7 +1,6 @@
 ---
 title: "Vistas zupa ar nūdelēm"
 description: "Dzidra vistas buljona zupa ar nūdelēm, burkāniem un dillēm. Labākās zāles pret saaukstēšanos."
-cuisine: latviesu
 category: zupas
 emoji: "🍜"
 icon: soup

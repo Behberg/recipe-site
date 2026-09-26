@@ -1,7 +1,6 @@
 ---
 title: "Biezpiena sacepums ar rozīnēm"
 description: "Maigs krāsnī cepts biezpiena sacepums ar mannu un rozīnēm. Garšo gan silts, gan auksts."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🍰"
 icon: casserole

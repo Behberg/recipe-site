@@ -1,7 +1,6 @@
 ---
 title: "Smiltsērkšķu sīrups"
 description: "Oranžs, skābens smiltsērkšķu sīrups bez vārīšanas. Īsta vitamīnu deva tējai un smūtijiem."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟠"
 icon: jar

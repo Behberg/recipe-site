@@ -1,7 +1,6 @@
 ---
 title: "Rabarberu pīrāgs ar kraukšķīgu virskārtu"
 description: "Skābeni salds rabarberu pīrāgs ar drupaču virskārtu. Vienkāršākā vasaras kūka."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🥧"
 icon: tart

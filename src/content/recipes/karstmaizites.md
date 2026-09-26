@@ -1,7 +1,6 @@
 ---
 title: "Karstmaizītes ar šķiņķi un sieru"
 description: "Krāsnī ceptas sviestmaizes ar šķiņķi, sieru un tomātu. Ātras vakariņas vai brokastis."
-cuisine: latviesu
 category: brokastis
 emoji: "🥪"
 icon: flatbread

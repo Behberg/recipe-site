@@ -1,7 +1,6 @@
 ---
 title: "Frikadeļu zupa"
 description: "Dzidra, sildoša zupa ar maltās gaļas bumbiņām, kartupeļiem, burkāniem un dillēm."
-cuisine: latviesu
 category: zupas
 emoji: "🍲"
 icon: soup

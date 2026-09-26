@@ -1,7 +1,6 @@
 ---
 title: "Rīsu putra ar pienu"
 description: "Krēmīga, lēni vārīta rīsu putra ar pienu, kanēli un sviestu."
-cuisine: latviesu
 category: brokastis
 emoji: "🍚"
 icon: soup

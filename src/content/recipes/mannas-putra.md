@@ -1,7 +1,6 @@
 ---
 title: "Mannas putra"
 description: "Maiga, gluda mannas putra ar pienu un sviestu. Bērnības brokastis bez neviena kunkuļa."
-cuisine: latviesu
 category: brokastis
 emoji: "🥣"
 icon: soup

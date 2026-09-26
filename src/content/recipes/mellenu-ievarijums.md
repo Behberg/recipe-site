@@ -1,7 +1,6 @@
 ---
 title: "Melleņu ievārījums"
 description: "Meža melleņu ievārījums ar citronu. Tumšs, biezs un bagāts ar vitamīniem."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🫐"
 icon: jar

@@ -1,7 +1,6 @@
 ---
 title: "Rabarberu limonāde"
 description: "Rozā, atspirdzinoša rabarberu limonāde ar citronu un piparmētru."
-cuisine: latviesu
 category: dzerieni
 emoji: "🍹"
 icon: glass

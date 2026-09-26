@@ -1,7 +1,6 @@
 ---
 title: "Vistas kotletes"
 description: "Mīkstas un sulīgas maltas vistas kotletes ar sīpolu un zaļumiem."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🍗"
 icon: plate

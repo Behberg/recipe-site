@@ -1,7 +1,6 @@
 ---
 title: "Zemeņu kūka ar putukrējumu"
 description: "Gaisīgs biskvīts ar svaigām zemenēm un vaniļas putukrējumu. Vasaras svētku kūka."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🍓"
 icon: cake

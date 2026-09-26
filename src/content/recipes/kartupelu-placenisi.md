@@ -1,7 +1,6 @@
 ---
 title: "Kartupeļu biezeņa plācenīši"
 description: "Zeltaini plācenīši no vakardienas kartupeļu biezeņa ar sieru un lokiem."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🥔"
 icon: plate

@@ -1,7 +1,6 @@
 ---
 title: "Marinēti gurķi ar dillēm"
 description: "Kraukšķīgi, saldskābi marinēti gurķi ar dillēm, ķiplokiem un mārrutkiem ziemas galdam."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🥒"
 icon: jar

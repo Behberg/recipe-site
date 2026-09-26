@@ -1,7 +1,6 @@
 ---
 title: "Cidoniju sīrups ar cukuru"
 description: "Neapstrādātas Japānas cidonijas ar cukuru: aromātisks vitamīnu sīrups tējai visai ziemai."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍋"
 icon: jar

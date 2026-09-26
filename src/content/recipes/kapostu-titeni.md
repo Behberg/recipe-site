@@ -1,7 +1,6 @@
 ---
 title: "Kāpostu tīteņi"
 description: "Kāpostu lapās ietīta gaļas un rīsu masa, lēni sautēta tomātu un krējuma mērcē."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🥬"
 icon: plate

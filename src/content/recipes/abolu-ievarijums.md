@@ -1,7 +1,6 @@
 ---
 title: "Ābolu ievārījums ar kanēli"
 description: "Dzintara krāsas ābolu ievārījums ar kanēli un citronu. Smaržo pēc ābolu pīrāga."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍏"
 icon: jar

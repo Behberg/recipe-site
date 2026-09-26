@@ -1,7 +1,6 @@
 ---
 title: "Pankūkas ar biezpiena pildījumu"
 description: "Plānās pankūkas, pildītas ar saldu vaniļas biezpienu un apceptas sviestā."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🥞"
 icon: plate

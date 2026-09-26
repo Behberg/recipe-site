@@ -1,7 +1,6 @@
 ---
 title: "Kartupeļu biezenis ar ceptām desiņām"
 description: "Krēmīgs kartupeļu biezenis ar zeltaini apceptām desiņām, sīpoliem un marinētiem gurķiem."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🌭"
 icon: plate

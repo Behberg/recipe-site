@@ -1,7 +1,6 @@
 ---
 title: "Ķiršu ievārījums"
 description: "Tumši sarkans ķiršu ievārījums ar veselām ogām. Brīnišķīgs ar saldējumu un biezpienu."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍒"
 icon: jar

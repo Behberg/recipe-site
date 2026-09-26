@@ -1,7 +1,6 @@
 ---
 title: "Laša zupa ar krējumu"
 description: "Maiga zivju zupa ar lasi, kartupeļiem, saldo krējumu un dillēm. Gatava 30 minūtēs."
-cuisine: latviesu
 category: zupas
 emoji: "🐟"
 icon: soup

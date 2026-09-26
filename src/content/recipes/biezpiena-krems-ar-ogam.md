@@ -1,7 +1,6 @@
 ---
 title: "Biezpiena krēms ar ogām"
 description: "Gaisīgs biezpiena un krējuma krēms ar ogām un medu. Deserts 5 minūtēs."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🍓"
 icon: layers

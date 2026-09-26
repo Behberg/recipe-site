@@ -1,7 +1,6 @@
 ---
 title: "Marinētas bietes"
 description: "Saldskābas marinētas bietes ar krustnagliņām. Gatavas salātiem un gaļai visu ziemu."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟥"
 icon: jar

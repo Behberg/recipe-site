@@ -1,7 +1,6 @@
 ---
 title: "Dzērveņu morss"
 description: "Skābens, atspirdzinošs dzērveņu dzēriens ar medu. Silts ziemā, auksts vasarā."
-cuisine: latviesu
 category: dzerieni
 emoji: "🧃"
 icon: glass

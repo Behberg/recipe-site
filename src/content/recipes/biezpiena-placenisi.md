@@ -1,7 +1,6 @@
 ---
 title: "Biezpiena plācenīši"
 description: "Maigi, zeltaini biezpiena plācenīši brokastīm ar krējumu un ievārījumu."
-cuisine: latviesu
 category: brokastis
 emoji: "🥞"
 icon: plate

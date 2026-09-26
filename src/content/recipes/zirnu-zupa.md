@@ -1,7 +1,6 @@
 ---
 title: "Zirņu zupa ar kūpinājumu"
 description: "Bieza, krēmīga dzelteno zirņu zupa ar kūpinātu gaļu un grauzdiņiem."
-cuisine: latviesu
 category: zupas
 emoji: "🥣"
 icon: soup

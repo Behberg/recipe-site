@@ -1,7 +1,6 @@
 ---
 title: "Kakao ar pienu"
 description: "Silts, krēmīgs kakao dzēriens ar pienu. Bērnības garša aukstā vakarā."
-cuisine: latviesu
 category: dzerieni
 emoji: "☕"
 icon: glass

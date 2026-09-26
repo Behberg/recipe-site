@@ -1,7 +1,6 @@
 ---
 title: "Plūmju biezenis (povidlo)"
 description: "Lēni vārīts, biezs plūmju biezenis ar nelielu cukura daudzumu. Pildījums pīrāgiem."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟣"
 icon: jar

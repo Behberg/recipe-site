@@ -1,7 +1,6 @@
 ---
 title: "Ceptas olas ar speķi un tomātiem"
 description: "Kraukšķīgs speķis, ceptas olas un tomāti vienā pannā. Sātīgas lauku brokastis."
-cuisine: latviesu
 category: brokastis
 emoji: "🍳"
 icon: skillet

@@ -1,7 +1,6 @@
 ---
 title: "Aveņu ievārījums"
 description: "Smaržīgs aveņu ievārījums ar spilgtu krāsu. Vislabāk garšo ar pankūkām un pie tējas."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍇"
 icon: jar

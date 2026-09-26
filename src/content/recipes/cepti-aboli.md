@@ -1,7 +1,6 @@
 ---
 title: "Cepti āboli ar medu un riekstiem"
 description: "Krāsnī cepti āboli, pildīti ar riekstiem, rozīnēm, medu un kanēli."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🍎"
 icon: sweets

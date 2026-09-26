@@ -1,7 +1,6 @@
 ---
 title: "Krāsnī cepti vistas stilbiņi ar kartupeļiem"
 description: "Vistas stilbiņi un kartupeļi vienā pannā ar ķiploku un paprikas pulveri. Pats cepas, kamēr tu atpūties."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🍗"
 icon: plate

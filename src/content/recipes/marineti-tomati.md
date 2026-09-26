@@ -1,7 +1,6 @@
 ---
 title: "Marinēti tomāti"
 description: "Veseli ķiršu tomāti saldskābā marinādē ar ķiplokiem un dillēm."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🍅"
 icon: jar

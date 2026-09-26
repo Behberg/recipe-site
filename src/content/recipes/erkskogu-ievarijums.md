@@ -1,7 +1,6 @@
 ---
 title: "Ērkšķogu ievārījums"
 description: "Dzintara krāsas ērkšķogu ievārījums ar veselām ogām. Vecmāmiņu dārza klasika."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🟢"
 icon: jar

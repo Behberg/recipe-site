@@ -1,7 +1,6 @@
 ---
 title: "Upeņu ievārījums"
 description: "Biezs, tumšs un vitamīniem bagāts upeņu ievārījums. Ātrākais ievārījums, kas vienmēr izdodas."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🫐"
 icon: jar

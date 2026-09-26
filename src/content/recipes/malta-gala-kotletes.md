@@ -1,7 +1,6 @@
 ---
 title: "Maltās gaļas kotletes"
 description: "Sulīgas mājas kotletes ar sīpoliem un maizi. Pasniedz ar kartupeļu biezeni un gurķiem."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🍖"
 icon: plate

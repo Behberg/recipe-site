@@ -1,7 +1,6 @@
 ---
 title: "Pieneņu medus"
 description: "Zeltains sīrups no pieneņu ziediem un citrona. Garšo pēc pavasara un saules."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🌼"
 icon: jar

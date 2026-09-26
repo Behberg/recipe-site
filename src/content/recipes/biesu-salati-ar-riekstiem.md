@@ -1,7 +1,6 @@
 ---
 title: "Biešu salāti ar ķiplokiem un riekstiem"
 description: "Vienkārši, sātīgi biešu salāti ar ķiploku, valriekstiem, žāvētām plūmēm un majonēzi."
-cuisine: latviesu
 category: salati-un-uzkodas
 emoji: "🥗"
 icon: soup

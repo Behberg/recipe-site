@@ -1,7 +1,6 @@
 ---
 title: "Sautēti skābie kāposti"
 description: "Saldskābi sautēti kāposti ar speķi un burkāniem. Ideāls piedēvs gaļai un desiņām."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🥬"
 icon: soup

@@ -1,7 +1,6 @@
 ---
 title: "Auzu pārslu cepumi"
 description: "Kraukšķīgi maliņās, mīksti vidū auzu pārslu cepumi ar rozīnēm un kanēli."
-cuisine: latviesu
 category: maize-un-cepumi
 emoji: "🍪"
 icon: sweets

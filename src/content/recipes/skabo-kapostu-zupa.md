@@ -1,7 +1,6 @@
 ---
 title: "Skābo kāpostu zupa"
 description: "Sātīga, skābena kāpostu zupa ar kūpinātu gaļu. Otrajā dienā tā ir vēl garšīgāka."
-cuisine: latviesu
 category: zupas
 emoji: "🥬"
 icon: soup

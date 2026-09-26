@@ -1,7 +1,6 @@
 ---
 title: "Gaļas mērce ar kartupeļiem"
 description: "Mīksti sautēti cūkgaļas gabaliņi krējuma mērcē ar sīpoliem. Pasniedz ar vārītiem kartupeļiem."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🍲"
 icon: skillet

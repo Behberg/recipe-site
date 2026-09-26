@@ -1,7 +1,6 @@
 ---
 title: "Mājas skābēti kāposti"
 description: "Dabīgi skābēti kāposti ar burkāniem un ķimenēm. Tikai kāposti, sāls un laiks."
-cuisine: latviesu
 category: ievarijumi-un-konservi
 emoji: "🥬"
 icon: jar

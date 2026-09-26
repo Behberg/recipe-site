@@ -1,7 +1,6 @@
 ---
 title: "Auzu putra ar ogām"
 description: "Krēmīga auzu pārslu putra ar pienu, sviesta piciņu un svaigām vai saldētām ogām."
-cuisine: latviesu
 category: brokastis
 emoji: "🥣"
 icon: soup

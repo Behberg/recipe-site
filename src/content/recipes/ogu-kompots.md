@@ -1,7 +1,6 @@
 ---
 title: "Ogu kompots burkās"
 description: "Dzidrs, salds ogu kompots ziemai no upenēm, jāņogām, ķiršiem vai citām dārza ogām."
-cuisine: latviesu
 category: dzerieni
 emoji: "🍷"
 icon: jar

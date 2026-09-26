@@ -1,7 +1,6 @@
 ---
 title: "Kartupeļu pankūkas"
 description: "Kraukšķīgas rīvētu kartupeļu pankūkas ar sīpolu. Pasniedz ar krējumu vai brūkleņu ievārījumu."
-cuisine: latviesu
 category: pamatedieni
 emoji: "🥔"
 icon: plate

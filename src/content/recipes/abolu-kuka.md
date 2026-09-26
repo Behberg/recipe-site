@@ -1,7 +1,6 @@
 ---
 title: "Ābolu kūka ar kanēli"
 description: "Vienkārša, sulīga ābolu kūka, kas izdodas vienmēr. Rudens smarža visā mājā."
-cuisine: latviesu
 category: saldie-edieni
 emoji: "🍎"
 icon: cake
