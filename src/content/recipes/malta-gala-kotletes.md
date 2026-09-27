@@ -4,7 +4,7 @@ description: "Sulīgas mājas kotletes ar sīpoliem un maizi. Pasniedz ar kartup
 category: pamatedieni
 emoji: "🍖"
 icon: plate
-iconColors: "#8a5230, #f0cf6a"
+iconColors: "#74421f, #e8c25a"
 iconExtra: "patty potatoes"
 prepTime: 15
 cookTime: 20

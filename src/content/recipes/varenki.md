@@ -5,7 +5,7 @@ cuisine: ukrainu
 category: pamatedieni
 emoji: "🥟"
 icon: plate
-iconColors: "#efe0c0, #f3efe6"
+iconColors: "#f3e6c4, #fbf6ea"
 iconExtra: "dumplings cream"
 prepTime: 60
 cookTime: 15

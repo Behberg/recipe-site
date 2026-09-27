@@ -5,7 +5,7 @@ cuisine: spanu
 category: saldie-edieni
 emoji: "🍮"
 icon: ramekin
-iconColors: "#c8842a"
+iconColors: "#b0682a"
 prepTime: 15
 cookTime: 15
 servings: 4

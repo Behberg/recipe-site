@@ -5,7 +5,7 @@ cuisine: francu
 category: brokastis
 emoji: "🥪"
 icon: flatbread
-iconColors: "#d9a052, #f3cf5a"
+iconColors: "#c98a3e, #f3d86a"
 iconExtra: "toast cheese"
 prepTime: 10
 cookTime: 15

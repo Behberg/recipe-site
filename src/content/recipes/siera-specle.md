@@ -5,7 +5,8 @@ cuisine: vacu
 category: pamatedieni
 emoji: "🧀"
 icon: casserole
-iconColors: "#f0c23a"
+iconColors: "#e8b030"
+iconExtra: "herbs"
 prepTime: 20
 cookTime: 20
 servings: 4
