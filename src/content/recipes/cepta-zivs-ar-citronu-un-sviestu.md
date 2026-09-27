@@ -2,6 +2,11 @@
 title: "Pannā cepta balta zivs ar citrona sviesta mērci"
 description: "Maiga balta zivs, apcepta sviestā līdz zeltainai, ar citronu, kaperiem un pētersīļiem. Vienkāršas un elegantas vakariņas 15 minūtēs."
 category: pamatedieni
+image: "/images/recipes/cepta-zivs-ar-citronu-un-sviestu.jpg"
+imageAuthor: "Armineaghayan"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pan-fried_white_fish_fillet_with_vegetables.jpg"
 emoji: "🐟"
 icon: plate
 iconColors: "#f3e6c8, #f3efe6"

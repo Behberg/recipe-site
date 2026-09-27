@@ -3,6 +3,11 @@ title: "Eklēri ar vaniļas krēmu un šokolādes glazūru"
 description: "Kraukšķīgi plaucētās mīklas eklēri ar maigu vaniļas krēmu un spīdīgu šokolādes glazūru. Konditorejas klasika, ko var pagatavot mājās."
 cuisine: francu
 category: saldie-edieni
+image: "/images/recipes/ekleri-ar-vanilas-kremu.jpg"
+imageAuthor: "LMDCWIKI"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Eclair_Chocolat_LMDC_2.png"
 emoji: "🥐"
 icon: plate
 iconColors: "#d9a054, #5a3020, #f5e8c8"

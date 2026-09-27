@@ -2,6 +2,11 @@
 title: "Vistas rīsi vienā pannā"
 description: "Vista, rīsi un dārzeņi, gatavoti vienā pannā ar paprikas pulveri un buljonu."
 category: pamatedieni
+image: "/images/recipes/vistas-risi-panna.jpg"
+imageAuthor: "Valeva1010"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:OnePanChili.png"
 emoji: "🍛"
 icon: skillet
 iconColors: "#e8c36a, #6f9a3a"

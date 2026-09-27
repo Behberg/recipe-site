@@ -2,6 +2,11 @@
 title: "Spageti ar tunci, tomātiem un olīvām"
 description: "Ātrie spageti ar tunci, tomātu mērci, olīvām, kaperiem un ķiplokiem. Vakariņas no skapja produktiem 25 minūtēs."
 category: pamatedieni
+image: "/images/recipes/spageti-ar-tunci-un-tomatiem.jpg"
+imageAuthor: "Popo le Chien"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pasta_Puttanesca.jpg"
 emoji: "🍝"
 icon: skillet
 iconColors: "#d8603a, #d9c8a8"

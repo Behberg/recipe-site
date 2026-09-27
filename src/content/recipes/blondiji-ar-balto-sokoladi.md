@@ -2,6 +2,11 @@
 title: "Blondiji ar balto šokolādi un valriekstiem"
 description: "Blondiji ir brauniju gaišā māsa ar karameles garšu no brūnā cukura, balto šokolādi un valriekstiem. Mitri, košļājami un ļoti vienkārši."
 category: saldie-edieni
+image: "/images/recipes/blondiji-ar-balto-sokoladi.jpg"
+imageAuthor: "Colin"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Hazelnut_blondie.jpg"
 emoji: "🍫"
 icon: cake
 iconColors: "#e8c878, #d9ab5c"

@@ -3,6 +3,11 @@ title: "Kugelis"
 description: "Lietuviešu kartupeļu sacepums ar speķi un sīpoliem. Kraukšķīgs virspusē, mīksts iekšpusē."
 cuisine: lietuviesu
 category: pamatedieni
+image: "/images/recipes/kugelis.jpg"
+imageAuthor: "Off-shell"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Noodle_Kugel.jpg"
 emoji: "🥔"
 icon: casserole
 iconColors: "#c98a3a"

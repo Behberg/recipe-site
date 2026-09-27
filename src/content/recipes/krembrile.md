@@ -3,6 +3,11 @@ title: "Krēmbrilē"
 description: "Zīdains vaniļas krēms ar kraukšķīgu karamelizēta cukura virskārtu."
 cuisine: francu
 category: saldie-edieni
+image: "/images/recipes/krembrile.jpg"
+imageAuthor: "Syced"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cr%C3%A8me_br%C3%BBl%C3%A9e_at_restaurant_in_Zushi.jpg"
 emoji: "🍮"
 icon: ramekin
 iconColors: "#c8842a"

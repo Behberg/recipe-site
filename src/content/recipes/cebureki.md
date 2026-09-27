@@ -3,6 +3,11 @@ title: "Čebureki ar gaļu (sulīgie gaļas pīrādziņi)"
 description: "Plāni, kraukšķīgi čebureki ar sulīgu maltās gaļas un sīpolu pildījumu, cepti eļļā. Tirgus un ceļmalas kafejnīcu klasika mājās."
 cuisine: austrumeiropas
 category: pamatedieni
+image: "/images/recipes/cebureki.jpg"
+imageAuthor: "N509FZ"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chebureki_at_Pushkin_Literature_Restaurant,_Zhong_Guan_Cun_No.1_(20210714185521).jpg"
 emoji: "🥟"
 icon: bun
 iconColors: "#e0a24a"

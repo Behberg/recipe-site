@@ -2,6 +2,11 @@
 title: "Mājas citronu limonāde ar piparmētru"
 description: "Atspirdzinoša mājas limonāde no svaigiem citroniem, cukura sīrupa un piparmētras ar gāzētu ūdeni. Labākais dzēriens karstā dienā."
 category: dzerieni
+image: "/images/recipes/citronu-piparmetru-limonade.jpg"
+imageAuthor: "Sadiikul"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mint_lemonade_(Homemade).jpg"
 emoji: "🍋"
 icon: glass
 iconColors: "#f3ea8a"

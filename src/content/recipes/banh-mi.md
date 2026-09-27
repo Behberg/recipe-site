@@ -3,6 +3,11 @@ title: "Bahnmi sviestmaize"
 description: "Vjetnamiešu bagete ar marinētu cūkgaļu, ātri marinētiem dārzeņiem, koriandru un čili."
 cuisine: vjetnamiesu
 category: pamatedieni
+image: "/images/recipes/banh-mi.jpg"
+imageAuthor: "Jimmy Chen"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Vietnamese_B%C3%A1nh_m%C3%AC_(Banh_Mi)_Sandwich.jpg"
 emoji: "🥖"
 icon: flatbread
 iconColors: "#d9a557, #8bb04a"

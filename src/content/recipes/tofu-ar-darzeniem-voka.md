@@ -2,6 +2,11 @@
 title: "Kraukšķīgs tofu ar dārzeņiem vokā"
 description: "Kraukšķīgi apcepti tofu kubiņi ar brokoļiem, papriku un burkāniem saldenā sojas un ingvera mērcē. Ātras, veselīgas vegānu vakariņas."
 category: pamatedieni
+image: "/images/recipes/tofu-ar-darzeniem-voka.jpg"
+imageAuthor: "NeoBatfreak"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Stir-fry_spinach_with_tofu_-_Golden_white_jade_and_Green_Parrot_(%E8%8F%A0%E8%8F%9C%E7%82%92%E8%B1%86%E8%85%90_-_%E9%87%91%E9%91%B2%E7%99%BD%E7%8E%89%E6%9D%BF%EF%BC%8C%E7%B4%85%E5%98%B4%E7%B6%A0%E9%B8%9A%E5%93%A5)(1).jpg"
 emoji: "🥢"
 icon: skillet
 iconColors: "#b8763a, #f3e6c8"

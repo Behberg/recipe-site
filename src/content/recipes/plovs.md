@@ -3,6 +3,11 @@ title: "Plovs"
 description: "Vidusāzijas rīsi, lēni gatavoti ar jēra vai liellopa gaļu, burkāniem, ķiplokiem un kuminu."
 cuisine: austrumeiropas
 category: pamatedieni
+image: "/images/recipes/plovs.jpg"
+imageAuthor: "Ji-Elle"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Urazmat-Plov.jpg"
 emoji: "🍚"
 icon: soup
 iconColors: "#e0a040, #f7f2ea, #e8801e"

@@ -3,6 +3,11 @@ title: "Fokača ar rozmarīnu"
 description: "Mīksta, gaisīga itāļu plātsmaize ar olīveļļu, rupjo sāli un rozmarīnu."
 cuisine: italu
 category: maize-un-cepumi
+image: "/images/recipes/fokaca.jpg"
+imageAuthor: "Fred Benenson"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Focaccia_with_Crumb.jpg"
 emoji: "🥖"
 icon: flatbread
 iconColors: "#e0a852, #e8b862"

@@ -3,6 +3,11 @@ title: "Kefta tadžins (Marokas gaļas bumbiņas tomātos ar olām)"
 description: "Marokas kefta tadžins: garšvielu gaļas bumbiņas biezā tomātu mērcē ar olām, kas sacepušās pa virsu. Vienā pannā, ar maizi mērces mērcēšanai."
 cuisine: marokas
 category: pamatedieni
+image: "/images/recipes/kefta-tadzins.jpg"
+imageAuthor: "Slothtysloth"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mtewemalgerois.jpg"
 emoji: "🍲"
 icon: skillet
 iconColors: "#c8402a, #8a4a2a"

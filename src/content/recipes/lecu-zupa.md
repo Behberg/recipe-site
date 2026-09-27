@@ -3,6 +3,11 @@ title: "Turku sarkano lēcu zupa"
 description: "Samtaina sarkano lēcu zupa ar kuminu, citronu un pikantu paprikas sviestu."
 cuisine: turku
 category: zupas
+image: "/images/recipes/lecu-zupa.jpg"
+imageAuthor: "Roland Unger"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:EgFoodLentilSoup.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#e0782a"

@@ -2,6 +2,11 @@
 title: "Pildītas vistas krūtiņas ar spinātiem un sieru"
 description: "Vistas krūtiņas ar kūstošu mocarellas, krēmsiera un spinātu pildījumu, ceptas krāsnī. Svētku izskats, darba dienas piepūle."
 category: pamatedieni
+image: "/images/recipes/pilditas-vistas-krutinas.jpg"
+imageAuthor: "Cullen328"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Home_cooked_Chicken_Florentine_in_2021.jpg"
 emoji: "🍗"
 icon: plate
 iconColors: "#e2b56a, #f0cf6a, #4f8a2c"

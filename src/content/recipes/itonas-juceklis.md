@@ -3,6 +3,11 @@ title: "Ītonas juceklis (Eton mess)"
 description: "Sadrupinātas bezē, putukrējums un zemenes vienā glāzē. Vasaras deserts bez cepšanas."
 cuisine: britu
 category: saldie-edieni
+image: "/images/recipes/itonas-juceklis.jpg"
+imageAuthor: "Acabashi"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Eton_mess_at_Black_Horse_Inn,_Nuthurst_West_Sussex_England_2_slightly_different_focus_point.jpg"
 emoji: "🍓"
 icon: layers
 iconColors: "#f7f0e0, #d6364a, #fbf7ef"

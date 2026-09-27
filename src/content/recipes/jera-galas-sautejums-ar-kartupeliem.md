@@ -2,6 +2,11 @@
 title: "Jēra gaļas sautējums ar kartupeļiem un burkāniem"
 description: "Lēni sautēta, mīksta jēra gaļa ar kartupeļiem, burkāniem un zaļumiem. Vienkāršs, sātīgs ēdiens Lieldienām un aukstiem vakariem."
 category: pamatedieni
+image: "/images/recipes/jera-galas-sautejums-ar-kartupeliem.jpg"
+imageAuthor: "jeffreyw"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/7927684@N03/13393166514"
 emoji: "🐑"
 icon: skillet
 iconColors: "#8a5a3a, #e8c890"

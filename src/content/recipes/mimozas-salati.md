@@ -2,6 +2,11 @@
 title: "Mimozas salāti ar tunci (kārtainie salāti)"
 description: "Kārtainie mimozas salāti ar tunci, kartupeļiem, burkāniem, sieru un olu dzeltenumu virskārtu, kas atgādina mimozas ziedus."
 category: salati-un-uzkodas
+image: "/images/recipes/mimozas-salati.jpg"
+imageAuthor: "Anna.verbitskaya"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:-salat-mimoza-klas-mimoza-salat-klassicheskii-s-syrom_1500855758_1_max.jpg"
 emoji: "🌼"
 icon: layers
 iconColors: "#e8d7a8, #f3efe6, #f0b35a, #fbf4e3, #f6c445"

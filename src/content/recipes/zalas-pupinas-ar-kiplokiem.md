@@ -2,6 +2,11 @@
 title: "Ceptas zaļās pupiņas ar ķiplokiem un mandelēm"
 description: "Kraukšķīgas zaļās pupiņas ar ķiplokiem, grauzdētām mandelēm un citronu. Veselīga piedeva, gatava 15 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/zalas-pupinas-ar-kiplokiem.jpg"
+imageAuthor: "FASTILY"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sauteed_Garlic_Green_Beans_1_2017-02-22.jpg"
 emoji: "🫛"
 icon: plate
 iconColors: "#6fa040, #f3efe6"

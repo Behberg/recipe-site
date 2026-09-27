@@ -2,6 +2,11 @@
 title: "Ziedkāpostu krēmzupa ar muskatriekstu"
 description: "Maiga, krēmīga ziedkāpostu zupa ar sviestu, krējumu un muskatriekstu. Viegla pusdienu zupa, pasniegta ar kraukšķīgiem grauzdiņiem."
 category: zupas
+image: "/images/recipes/ziedkapostu-kremzupa.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cauliflower_and_potato_soup_-_T_@_Hove_2023-10-22.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#f3ecd8, #eef1f4"

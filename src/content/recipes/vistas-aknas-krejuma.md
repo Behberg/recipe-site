@@ -2,6 +2,11 @@
 title: "Vistas aknas krējumā ar sīpoliem"
 description: "Maigas vistas aknas, sautētas krējumā ar zeltainiem sīpoliem. Lēts, dzelzi bagāts ēdiens, gatavs 25 minūtēs."
 category: pamatedieni
+image: "/images/recipes/vistas-aknas-krejuma.jpg"
+imageAuthor: "Joe Foodie"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_Livers.jpg"
 emoji: "🍳"
 icon: skillet
 iconColors: "#c8a070, #6a2e1e"

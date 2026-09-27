@@ -2,6 +2,11 @@
 title: "Vistas zupa ar nūdelēm"
 description: "Dzidra vistas buljona zupa ar nūdelēm, burkāniem un dillēm. Labākās zāles pret saaukstēšanos."
 category: zupas
+image: "/images/recipes/vistas-zupa-ar-nudelem.jpg"
+imageAuthor: "Nichijyou123"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_Noodle_Soup_US.jpg"
 emoji: "🍜"
 icon: soup
 iconColors: "#e8c36a"

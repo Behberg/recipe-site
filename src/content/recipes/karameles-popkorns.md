@@ -2,6 +2,11 @@
 title: "Karameles popkorns mājās"
 description: "Kraukšķīgs mājas karameles popkorns ar sviestu, brūno cukuru un šķipsnu sāls. Filmu vakara uzkoda, labāka par kino popkornu."
 category: saldie-edieni
+image: "/images/recipes/karameles-popkorns.jpg"
+imageAuthor: "Capvideo"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Popcorn_Confection.jpg"
 emoji: "🍿"
 icon: sweets
 iconColors: "#e0a040, #fbf9f5"

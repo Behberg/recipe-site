@@ -3,6 +3,11 @@ title: "Klasiskais burgers"
 description: "Sulīga liellopu gaļas kotlete ar čedaru, salātiem, tomātu un mājas mērci mīkstā maizītē."
 cuisine: amerikas
 category: pamatedieni
+image: "/images/recipes/klasiskais-burgers.jpg"
+imageAuthor: "Shreveport-Bossier Convention and Tourist Bureau"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Rollin%27_in_the_Dough_Classic_Burger,_Shreveport,_LA.jpg"
 emoji: "🍔"
 icon: plate
 iconColors: "#8a5230, #f0cf6a"

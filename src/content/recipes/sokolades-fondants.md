@@ -3,6 +3,11 @@ title: "Šokolādes fondants"
 description: "Mazas šokolādes kūciņas ar šķidru, karstu vidu. Romantisks deserts divatā."
 cuisine: francu
 category: saldie-edieni
+image: "/images/recipes/sokolades-fondants.jpg"
+imageAuthor: "Rogi.Official"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Fondant_au_Chocolat_1.jpg"
 emoji: "🍫"
 icon: ramekin
 iconColors: "#3a1f14, #5a3020"

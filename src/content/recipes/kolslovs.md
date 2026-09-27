@@ -3,6 +3,11 @@ title: "Kolslovs (kāpostu salāti)"
 description: "Kraukšķīgi kāpostu un burkānu salāti krēmīgā mērcē. Obligāts piedēvs grilam."
 cuisine: amerikas
 category: salati-un-uzkodas
+image: "/images/recipes/kolslovs.jpg"
+imageAuthor: "Anagoria"
+imageLicense: "CC BY 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:2015-12-20_Spitzkohlsalat_mit_M%C3%B6hren_anagoria.JPG"
 emoji: "🥬"
 icon: soup
 iconColors: "#f1ecd8, #f7f2ea, #e8801e"

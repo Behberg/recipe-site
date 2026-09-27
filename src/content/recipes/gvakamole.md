@@ -3,6 +3,11 @@ title: "Gvakamole"
 description: "Svaiga avokado mērce ar laimu, koriandru, sīpolu un čili. Gatava 10 minūtēs."
 cuisine: meksikas
 category: salati-un-uzkodas
+image: "/images/recipes/gvakamole.jpg"
+imageAuthor: "Nikodem Nijaki"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Guacamole_IMGP1271.jpg"
 emoji: "🥑"
 icon: soup
 iconColors: "#8bb04a"

@@ -3,6 +3,11 @@ title: "Korejiešu burkāni (asie burkānu salāti)"
 description: "Asi, kraukšķīgi korejiešu burkāni ar ķiplokiem, koriandru un karstu eļļu. Iemīļota uzkoda pie gaļas, kas ledusskapī stāv nedēļu."
 cuisine: korejiesu
 category: salati-un-uzkodas
+image: "/images/recipes/korejiesu-burkani.jpg"
+imageAuthor: "Off-shell"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Korean-style_carrot.jpg"
 emoji: "🥕"
 icon: soup
 iconColors: "#f08a2e, #eef1f4"

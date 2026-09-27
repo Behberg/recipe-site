@@ -2,6 +2,11 @@
 title: "Kartupeļu pankūkas"
 description: "Kraukšķīgas rīvētu kartupeļu pankūkas ar sīpolu. Pasniedz ar krējumu vai brūkleņu ievārījumu."
 category: pamatedieni
+image: "/images/recipes/kartupelu-pankukas.jpg"
+imageAuthor: "Photo made by Daniel Spils and uploaded to flickr.com"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Potato_pancakes.jpg"
 emoji: "🥔"
 icon: plate
 iconColors: "#d9913a, #f3efe6, #fbf7ef"

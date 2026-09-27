@@ -3,6 +3,11 @@ title: "Tzatziki (grieķu jogurta un gurķu mērce)"
 description: "Klasiskā grieķu tzatziki mērce ar biezu jogurtu, rīvētu gurķi, ķiploku un dillēm. Pie grila, girosa, kartupeļiem vai kā uzkoda ar pitu."
 cuisine: grieku
 category: salati-un-uzkodas
+image: "/images/recipes/tzatziki.jpg"
+imageAuthor: "Rainer Zenz"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cacik-1.jpg"
 emoji: "🥒"
 icon: ramekin
 iconColors: "#e8efe0, #efe4d6"

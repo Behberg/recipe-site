@@ -2,6 +2,11 @@
 title: "Mājas šokolādes pudiņš"
 description: "Biezs, zīdains mājas šokolādes pudiņš no piena, kakao un šokolādes. Gatavs 15 minūtēs un daudz labāks par veikala."
 category: saldie-edieni
+image: "/images/recipes/sokolades-pudins.jpg"
+imageAuthor: "E4024"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chocolate_pudding_with_a_butterfly.jpg"
 emoji: "🍫"
 icon: ramekin
 iconColors: "#5a3526, #efe4d6"

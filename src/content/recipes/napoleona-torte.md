@@ -3,6 +3,11 @@ title: "Napoleona torte ar olu krēmu"
 description: "Klasiskā Napoleona torte ar plānām, kārtainām kārtām un maigu vaniļas olu krēmu. Svētku kūka, kas pa nakti kļūst kūstoša."
 cuisine: austrumeiropas
 category: saldie-edieni
+image: "/images/recipes/napoleona-torte.jpg"
+imageAuthor: "austinevan"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/19762676@N00/3683640031"
 emoji: "🍰"
 icon: cake
 iconColors: "#e8c890, #fbf1dc, #e8c890, #fbf1dc, #e8c890"

@@ -3,6 +3,11 @@ title: "Burito ar liellopa gaļu un pupiņām"
 description: "Liela kviešu tortilja ar garšvielu gaļu, rīsiem, pupiņām, sieru un salsu."
 cuisine: meksikas
 category: pamatedieni
+image: "/images/recipes/burito.jpg"
+imageAuthor: "jeffreyw"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/7927684@N03/6247525003"
 emoji: "🌯"
 icon: flatbread
 iconColors: "#e8c878, #8a3a22"

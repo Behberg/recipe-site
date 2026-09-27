@@ -2,6 +2,11 @@
 title: "Dzērveņu mērce pie gaļas ar apelsīnu"
 description: "Saldskāba dzērveņu mērce ar apelsīnu un kanēli pie cepta putna, pīles un cūkgaļas. Gatava 20 minūtēs un glabājas 2 nedēļas."
 category: ievarijumi-un-konservi
+image: "/images/recipes/dzervenu-merce-pie-galas.jpg"
+imageAuthor: "Flushboy"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/"
+imageSource: "https://www.flickr.com/photos/56758924@N00/2062371355"
 emoji: "🔴"
 icon: jar
 iconColors: "#b3122e, #7a4a2a"

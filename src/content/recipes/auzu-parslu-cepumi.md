@@ -2,6 +2,11 @@
 title: "Auzu pārslu cepumi"
 description: "Kraukšķīgi maliņās, mīksti vidū auzu pārslu cepumi ar rozīnēm un kanēli."
 category: maize-un-cepumi
+image: "/images/recipes/auzu-parslu-cepumi.jpg"
+imageAuthor: "rawpixel"
+imageLicense: "CC0"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/"
+imageSource: "https://www.rawpixel.com/image/5901526/photo-image-background-public-domain-food"
 emoji: "🍪"
 icon: sweets
 iconColors: "#c8904a"

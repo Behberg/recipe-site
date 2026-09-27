@@ -3,6 +3,11 @@ title: "Sēņu risoto"
 description: "Krēmīgs itāļu risoto ar šampinjoniem vai meža sēnēm, parmezānu un sviestu."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/senu-risoto.jpg"
+imageAuthor: "Katrin Gilger"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mushroom_Risotto_(4790048714).jpg"
 emoji: "🍚"
 icon: soup
 iconColors: "#efe0bc, #f7f2ea, #b89a6a"

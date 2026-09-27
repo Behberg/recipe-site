@@ -2,6 +2,11 @@
 title: "Plānās pankūkas"
 description: "Klasiskas latviešu plānās pankūkas ar pienu. Ideālas ar ievārījumu, biezpienu vai krējumu."
 category: brokastis
+image: "/images/recipes/planas-pankukas.jpg"
+imageAuthor: "David Monniaux"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Crepes_dsc07085.jpg"
 emoji: "🥞"
 icon: plate
 iconColors: "#efd49a, #b3122e"

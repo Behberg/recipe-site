@@ -3,6 +3,11 @@ title: "Kabaču ikri"
 description: "Sautētu kabaču, burkānu un sīpolu pasta. Garšīgi uz maizes un ideāli konservēšanai."
 cuisine: austrumeiropas
 category: ievarijumi-un-konservi
+image: "/images/recipes/kabacu-ikri.jpg"
+imageAuthor: "Off-shell"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Squash_Caviar.jpg"
 emoji: "🥒"
 icon: jar
 iconColors: "#d98a3a"

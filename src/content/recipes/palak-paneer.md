@@ -3,6 +3,11 @@ title: "Palak paneer"
 description: "Siera kubiņi krēmīgā spinātu mērcē ar ķiploku, ingveru un garam masala."
 cuisine: indiesu
 category: pamatedieni
+image: "/images/recipes/palak-paneer.jpg"
+imageAuthor: "Koshur"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Palak_Paneer_at_WCI_2023.jpg"
 emoji: "🥬"
 icon: soup
 iconColors: "#4f7a2c"

@@ -3,6 +3,11 @@ title: "Kibinai"
 description: "Traķu karaīmu pīrādziņi ar jēra vai liellopu gaļas un sīpolu pildījumu."
 cuisine: lietuviesu
 category: maize-un-cepumi
+image: "/images/recipes/kibinai.jpg"
+imageAuthor: "Ke an"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lithuanian_cuisine_-_kibinai_-_2.jpg"
 emoji: "🥟"
 icon: bun
 iconColors: "#d68a34"

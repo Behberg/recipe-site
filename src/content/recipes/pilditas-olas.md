@@ -2,6 +2,11 @@
 title: "Pildītas olas ar majonēzi un sinepēm"
 description: "Klasiskās pildītās olas ar krēmīgu dzeltenumu, majonēzes un sinepju pildījumu. Vienkāršākā svētku uzkoda un Lieldienu galda obligātā sastāvdaļa."
 category: salati-un-uzkodas
+image: "/images/recipes/pilditas-olas.jpg"
+imageAuthor: "Marshall Astor from San Pedro, United States"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Deviled_Eggs_-_3-23-08.jpg"
 emoji: "🥚"
 icon: plate
 iconColors: "#fbf8ef, #f6c445, #e8703a"

@@ -2,6 +2,11 @@
 title: "Mājas vistas aknu pastēte"
 description: "Zīdaini gluda mājas vistas aknu pastēte ar sviestu, sīpolu un burkānu. Lēta, garšīga smēre sviestmaizēm un svētku galdam."
 category: salati-un-uzkodas
+image: "/images/recipes/vistas-aknu-pastete.jpg"
+imageAuthor: "TheCulinaryGeek"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_Liver_P%C3%A2t%C3%A9.jpg"
 emoji: "🍞"
 icon: ramekin
 iconColors: "#b88a6a, #efe4d6"

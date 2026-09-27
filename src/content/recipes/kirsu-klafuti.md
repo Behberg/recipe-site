@@ -3,6 +3,10 @@ title: "Ķiršu klafuti (franču ķiršu deserts)"
 description: "Franču klafuti: sulīgi ķirši maigā, pankūkām līdzīgā olu mīklā, cepti krāsnī. Vienkāršs vasaras deserts ar 15 minūšu darbu."
 cuisine: francu
 category: saldie-edieni
+image: "/images/recipes/kirsu-klafuti.jpg"
+imageAuthor: "Rotem Danzig"
+imageLicense: "Attribution"
+imageSource: "https://commons.wikimedia.org/wiki/File:Clafoutis3.jpg"
 emoji: "🍒"
 icon: tart
 iconColors: "#8a1a2e, #f0d890"

@@ -2,6 +2,11 @@
 title: "Kraukšķīgi vistas spārniņi medus un ķiploku glazūrā"
 description: "Krāsnī cepti kraukšķīgi vistas spārniņi, pārlieti ar lipīgu medus, ķiploku un sojas glazūru. Ballīšu un futbola vakaru favorīts."
 category: salati-un-uzkodas
+image: "/images/recipes/vistas-sparnini-medus-kiploku.jpg"
+imageAuthor: "Alpha from Melbourne, Australia"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_wings_with_honey-garlic_sauce.jpg"
 emoji: "🍗"
 icon: plate
 iconColors: "#b8561e, #f3efe6, #e0a030"

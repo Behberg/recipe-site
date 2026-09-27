@@ -3,6 +3,11 @@ title: "Ojakodons (vistas un olu rīsi)"
 description: "Vista un sīpoli saldsāļā buljonā ar maigi sarecējušu olu uz tvaicētiem rīsiem."
 cuisine: japanu
 category: pamatedieni
+image: "/images/recipes/ojakodons.jpg"
+imageAuthor: "Ocdp"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Oyakodon_003.jpg"
 emoji: "🍚"
 icon: soup
 iconColors: "#f2d47a, #f7f2ea, #c98a4a"

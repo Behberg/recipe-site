@@ -3,6 +3,11 @@ title: "Vinegrets"
 description: "Krāsaini biešu salāti ar kartupeļiem, burkāniem, marinētiem gurķiem, skābētiem kāpostiem un eļļu."
 cuisine: austrumeiropas
 category: salati-un-uzkodas
+image: "/images/recipes/vinegrets.jpg"
+imageAuthor: "Loyna (original image) ; processed by Off-shell"
+imageLicense: "CC BY-SA 2.5"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.5"
+imageSource: "https://commons.wikimedia.org/wiki/File:Vinegret_cleaned.jpg"
 emoji: "🥗"
 icon: soup
 iconColors: "#b0203a, #f7f2ea, #e8c070"

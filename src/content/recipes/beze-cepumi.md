@@ -2,6 +2,11 @@
 title: "Bezē cepumi (meringas)"
 description: "Sniegbalti, kraukšķīgi bezē cepumi no olu baltumiem un cukura. Veids, kā izlietot pāri palikušos baltumus, un lieliska kūku rotājuma bāze."
 category: saldie-edieni
+image: "/images/recipes/beze-cepumi.jpg"
+imageAuthor: "Benjamin Ikuta"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Meringue_cookies.jpg"
 emoji: "🤍"
 icon: sweets
 iconColors: "#fdf8f0, #efe4d6"

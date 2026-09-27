@@ -3,6 +3,11 @@ title: "Spanakopita"
 description: "Grieķu pīrāgs ar spinātiem, fetu un dillēm starp kraukšķīgām filo kārtām."
 cuisine: grieku
 category: maize-un-cepumi
+image: "/images/recipes/spanakopita.jpg"
+imageAuthor: "Gatimetradicionale"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Gatimetradicionale.jpg"
 emoji: "🥬"
 icon: cake
 iconColors: "#e8b85a, #4f7a2c, #e8b85a, #f0c46a"

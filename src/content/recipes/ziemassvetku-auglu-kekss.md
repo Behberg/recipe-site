@@ -2,6 +2,11 @@
 title: "Ziemassvētku augļu kēkss ar riekstiem un garšvielām"
 description: "Tumšs, mitrs Ziemassvētku kēkss ar žāvētiem augļiem, riekstiem, apelsīnu un piparkūku garšvielām. Glabājas nedēļām un kļūst tikai labāks."
 category: maize-un-cepumi
+image: "/images/recipes/ziemassvetku-auglu-kekss.jpg"
+imageAuthor: "zingyyellow...! from Wales Cymru UK"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Bara_Brith_(3320696816).jpg"
 emoji: "🎄"
 icon: loaf
 iconColors: "#6a3a1e, #d9a052"

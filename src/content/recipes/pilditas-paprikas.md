@@ -2,6 +2,11 @@
 title: "Pildītas paprikas ar gaļu un rīsiem"
 description: "Paprikas, pildītas ar malto gaļu un rīsiem, sautētas tomātu un krējuma mērcē. Vasaras beigu klasika, kas labi sasaldējas."
 category: pamatedieni
+image: "/images/recipes/pilditas-paprikas.jpg"
+imageAuthor: "Tess Mattew"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:2025.09.02_Stuffed_Peppers_Paprika_in_Belarus_by_Dina_Panayotis.jpg"
 emoji: "🫑"
 icon: casserole
 iconColors: "#d2472e, #e9e3d8"

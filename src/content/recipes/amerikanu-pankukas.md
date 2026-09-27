@@ -3,6 +3,11 @@ title: "Amerikāņu pankūkas"
 description: "Biezas, gaisīgas pankūkas ar kļavu sīrupu un ogām. Īstas svētdienas brokastis."
 cuisine: amerikas
 category: brokastis
+image: "/images/recipes/amerikanu-pankukas.jpg"
+imageAuthor: "Mae Mu"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg"
 emoji: "🥞"
 icon: plate
 iconColors: "#d9a052, #f3cf5a"

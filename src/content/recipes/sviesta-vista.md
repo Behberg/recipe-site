@@ -3,6 +3,11 @@ title: "Sviesta vista (butter chicken)"
 description: "Indiešu vista maigā tomātu, sviesta un krējuma mērcē ar garam masala. Pasniedz ar rīsiem vai naan maizi."
 cuisine: indiesu
 category: pamatedieni
+image: "/images/recipes/sviesta-vista.jpg"
+imageAuthor: "stu_spivack"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_makhani.jpg"
 emoji: "🍛"
 icon: soup
 iconColors: "#d9702a"

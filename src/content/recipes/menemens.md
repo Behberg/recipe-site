@@ -3,6 +3,11 @@ title: "Menemens"
 description: "Turku olu kultenis ar tomātiem, papriku un sīpoliem. Brokastis, ko ēd ar svaigu maizi."
 cuisine: turku
 category: brokastis
+image: "/images/recipes/menemens.jpg"
+imageAuthor: "Paul Keller"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/18259771@N00/5153426633"
 emoji: "🍳"
 icon: skillet
 iconColors: "#d6402a, #f6c445"

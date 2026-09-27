@@ -2,6 +2,11 @@
 title: "Mājas tomātu kečups ziemai"
 description: "Biezs mājas kečups no svaigiem tomātiem ar garšvielām, bez konservantiem un cietes. Tik labs, ka veikala kečups vairs negaršo."
 category: ievarijumi-un-konservi
+image: "/images/recipes/maja-kecups.jpg"
+imageAuthor: "Kim Holger Kelting"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Ketchup_20160918_181342_(cropped).jpg"
 emoji: "🍅"
 icon: jar
 iconColors: "#c8261e, #2f2f2f"

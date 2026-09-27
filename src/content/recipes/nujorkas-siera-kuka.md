@@ -3,6 +3,11 @@ title: "Ņujorkas siera kūka"
 description: "Blīva, krēmīga siera kūka ar cepumu pamatni. Ar ogām vai ievārījumu virsū."
 cuisine: amerikas
 category: saldie-edieni
+image: "/images/recipes/nujorkas-siera-kuka.jpg"
+imageAuthor: "zingyyellow"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Baked_cheesecake_with_raspberries_and_blueberries.jpg"
 emoji: "🍰"
 icon: cake
 iconColors: "#b8864a, #f7ecd0"

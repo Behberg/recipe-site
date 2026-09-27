@@ -3,6 +3,10 @@ title: "Grilēts steiks ar ķiploku sviestu"
 description: "Liellopa steiks ar tumšu garoziņu un kūstošu ķiploku un zaļumu sviestu."
 cuisine: amerikas
 category: pamatedieni
+image: "/images/recipes/grilets-steiks.jpg"
+imageAuthor: "Marubatsu"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sirloin_steak_with_garlic_butter_and_french_fries.JPG"
 emoji: "🥩"
 icon: plate
 iconColors: "#6b2a1a, #f3cf5a"

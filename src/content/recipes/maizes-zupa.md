@@ -3,6 +3,11 @@ title: "Maizes zupa ar putukrējumu"
 description: "Salda rupjmaizes zupa ar žāvētiem augļiem, kanēli un putukrējumu. Vecmāmiņas deserts."
 cuisine: latviesu
 category: saldie-edieni
+image: "/images/recipes/maizes-zupa.jpg"
+imageAuthor: "RhinoMind"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:%C3%98llebr%C3%B8d.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#5a2e1a"

@@ -2,6 +2,11 @@
 title: "Vistas salāti ar vīnogām, selerijām un riekstiem"
 description: "Krēmīgi vistas salāti ar saldām vīnogām, kraukšķīgām selerijām un valriekstiem vieglā jogurta mērcē. Lieliski sviestmaizēm un svētkiem."
 category: salati-un-uzkodas
+image: "/images/recipes/vistas-salati-ar-vinogam.jpg"
+imageAuthor: "Nillerdk"
+imageLicense: "CC BY 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Waldorfsalat.jpg"
 emoji: "🍇"
 icon: soup
 iconColors: "#f3e6c8, #eef1f4, #7a2a5a"

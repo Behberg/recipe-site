@@ -2,6 +2,11 @@
 title: "Rīsi ar dārzeņiem (krāsainā piedeva)"
 description: "Irdeni rīsi ar burkāniem, papriku, zirnīšiem un kukurūzu, gatavoti vienā katlā. Krāsaina, lēta piedeva pie vistas, zivs vai gaļas."
 category: salati-un-uzkodas
+image: "/images/recipes/risi-ar-darzeniem.jpg"
+imageAuthor: "safaritravelplus"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Vegetable_rice_image.jpg"
 emoji: "🍚"
 icon: skillet
 iconColors: "#f3e6c8, #f08a2e"

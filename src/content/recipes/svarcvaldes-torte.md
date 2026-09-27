@@ -3,6 +3,11 @@ title: "Švarcvaldes ķiršu torte"
 description: "Šokolādes biskvīts ar ķiršiem un putukrējumu. Slavenākā vācu konditoreju torte."
 cuisine: vacu
 category: saldie-edieni
+image: "/images/recipes/svarcvaldes-torte.jpg"
+imageAuthor: "Ewelina Podrez-Siama"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Black_Forest_Cake_with_cherries_(KETO,_LCHF,_Low_Carb,_Gluten_free,_FIT)_-_52774791229.jpg"
 emoji: "🍒"
 icon: cake
 iconColors: "#3a1f14, #fbf6ea, #3a1f14, #fbf6ea"

@@ -3,6 +3,11 @@ title: "Angļu brokastis (Full English breakfast)"
 description: "Pilnās angļu brokastis: desiņas, bekons, cepta ola, pupiņas tomātu mērcē, sēnes, grilēti tomāti un grauzdiņš. Sātīgas nedēļas nogales brokastis."
 cuisine: britu
 category: brokastis
+image: "/images/recipes/anglu-brokastis.jpg"
+imageAuthor: "Acabashi"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Full_English_breakfast_at_the_Chalet_Cafe,_Cowfold,_West_Sussex,_England.jpg"
 emoji: "🍳"
 icon: skillet
 iconColors: "#e0843a, #8a4a2a"

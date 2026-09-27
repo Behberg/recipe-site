@@ -3,6 +3,11 @@ title: "Katalāņu krēms"
 description: "Spāņu olu krēms ar citronu un kanēli un kraukšķīgu karameles virskārtu."
 cuisine: spanu
 category: saldie-edieni
+image: "/images/recipes/katalanu-kreems.jpg"
+imageAuthor: "Popo le Chien"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Creme_catalane.jpg"
 emoji: "🍮"
 icon: ramekin
 iconColors: "#b0682a"

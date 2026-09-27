@@ -3,6 +3,11 @@ title: "Falafeļi"
 description: "Kraukšķīgas aunazirņu bumbiņas ar zaļumiem un garšvielām. Pasniedz pitā ar tahini mērci."
 cuisine: tuvo-austrumu
 category: pamatedieni
+image: "/images/recipes/falafeli.jpg"
+imageAuthor: "Popo le Chien"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg"
 emoji: "🧆"
 icon: skillet
 iconColors: "#8a6a2a, #3a2a1a"

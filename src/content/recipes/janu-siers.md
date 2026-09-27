@@ -3,6 +3,11 @@ title: "Jāņu siers"
 description: "Dzeltenais ķimeņu siers, bez kura nav iedomājami Jāņi. Pagatavojams mājās ar pienu, biezpienu un olām."
 cuisine: latviesu
 category: salati-un-uzkodas
+image: "/images/recipes/janu-siers.jpg"
+imageAuthor: "Turaids"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:M%C4%81j%C4%81s_siets_J%C4%81%C5%86u_siers.jpg"
 emoji: "🧀"
 icon: wheel
 iconColors: "#f2c230"

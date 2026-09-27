@@ -3,6 +3,11 @@ title: "Vistas paprikašs"
 description: "Vista maigā paprikas un skābā krējuma mērcē. Pasniedz ar nūdelēm vai kartupeļiem."
 cuisine: ungaru
 category: pamatedieni
+image: "/images/recipes/vistas-paprikass.jpg"
+imageAuthor: "Atilla the Great"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_Paprikash_(Csirke_Paprik%C3%A1s).jpg"
 emoji: "🍗"
 icon: skillet
 iconColors: "#d8602a, #f0c89a"

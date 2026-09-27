@@ -2,6 +2,11 @@
 title: "Grūbu risoto ar sēnēm un parmezānu"
 description: "Krēmīgs risoto no pērļu grūbām ar sēnēm, timiānu un parmezānu. Vietēja, lētāka un sātīgāka versija itāļu klasikai."
 category: pamatedieni
+image: "/images/recipes/grubu-risoto-ar-senem.jpg"
+imageAuthor: "Ewan Munro from London, UK"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mon_Plaisir,_Covent_Garden,_London_(3717187589).jpg"
 emoji: "🍄"
 icon: soup
 iconColors: "#d8c09a, #eef1f4"

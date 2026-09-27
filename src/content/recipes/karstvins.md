@@ -3,6 +3,11 @@ title: "Karstvīns"
 description: "Silts, smaržīgs sarkanvīns ar apelsīnu, kanēli un krustnagliņām. Ziemas vakariem."
 cuisine: vacu
 category: dzerieni
+image: "/images/recipes/karstvins.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mulled_wine_-_Olea_2025-12-26.jpg"
 emoji: "🍷"
 icon: glass
 iconColors: "#7a1a2a, #c8583a"

@@ -2,6 +2,11 @@
 title: "Ceptas olas ar speķi un tomātiem"
 description: "Kraukšķīgs speķis, ceptas olas un tomāti vienā pannā. Sātīgas lauku brokastis."
 category: brokastis
+image: "/images/recipes/ceptas-olas-ar-speki.jpg"
+imageAuthor: "Acabashi"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Bacon_egg_sausage_beans_tomatoes_at_Starmugs_Cafe_on_Lordship_Lane_Tottenham_London_England.jpg"
 emoji: "🍳"
 icon: skillet
 iconColors: "#fbf7ef, #f3cf5a"

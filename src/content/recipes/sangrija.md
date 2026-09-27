@@ -3,6 +3,11 @@ title: "Sangrija"
 description: "Atspirdzinošs sarkanvīna dzēriens ar apelsīniem, āboliem un kanēli. Vasaras ballītēm."
 cuisine: spanu
 category: dzerieni
+image: "/images/recipes/sangrija.jpg"
+imageAuthor: "Arnaud 25"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sangria_001.jpg"
 emoji: "🍷"
 icon: glass
 iconColors: "#8a1a3a"

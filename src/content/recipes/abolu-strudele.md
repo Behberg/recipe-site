@@ -3,6 +3,11 @@ title: "Ābolu štrūdele"
 description: "Plāna mīkla ar āboliem, rozīnēm, kanēli un grauzdētu rīvmaizi. Vīnes kafejnīcu klasika."
 cuisine: vacu
 category: saldie-edieni
+image: "/images/recipes/abolu-strudele.jpg"
+imageAuthor: "Burkhard Mücke"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Wiener_Apfelstrudel.jpg"
 emoji: "🥐"
 icon: loaf
 iconColors: "#e3b567"

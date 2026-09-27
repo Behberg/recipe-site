@@ -3,6 +3,11 @@ title: "Kesadiljas ar sieru un pupiņām"
 description: "Kraukšķīgas tortiljas ar kūstošu sieru, pupiņām un kukurūzu. Gatavas 15 minūtēs."
 cuisine: meksikas
 category: pamatedieni
+image: "/images/recipes/kesadiljas.jpg"
+imageAuthor: "Daderot"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Quesadilla_with_cheese,_black_beans,_and_beef_brisket_-_Cambridge,_MA.jpg"
 emoji: "🧀"
 icon: plate
 iconColors: "#e8b25a, #f3efe6, #c8402a"

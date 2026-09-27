@@ -2,6 +2,11 @@
 title: "Veģetārais čili ar pupiņām un kukurūzu"
 description: "Biezs, pikants veģetārais čili ar divu veidu pupiņām, paprikām un kukurūzu. Vegānisks, lēts, sātīgs un vēl labāks nākamajā dienā."
 category: pamatedieni
+image: "/images/recipes/vegetarais-cili-ar-pupinam.jpg"
+imageAuthor: "Benreis"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chilli_sine_carne_Zur_Tanne_Harsdorf.jpg"
 emoji: "🌶️"
 icon: skillet
 iconColors: "#a0301e, #6a3a2a"

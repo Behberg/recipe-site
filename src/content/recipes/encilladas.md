@@ -3,6 +3,10 @@ title: "Enčiladas ar vistu"
 description: "Tortiljas ar vistas un siera pildījumu, ceptas pikantā tomātu mērcē zem kausēta siera."
 cuisine: meksikas
 category: pamatedieni
+image: "/images/recipes/encilladas.jpg"
+imageAuthor: "Jon Sullivan"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Enchilada_Rice_Beans.jpg"
 emoji: "🌮"
 icon: casserole
 iconColors: "#c8402a"

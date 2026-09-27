@@ -3,6 +3,11 @@ title: "Bufalo vistas spārniņi"
 description: "Krāsnī cepti kraukšķīgi spārniņi asā sviesta mērcē ar zilā siera mērci un selerijām."
 cuisine: amerikas
 category: salati-un-uzkodas
+image: "/images/recipes/bufalo-sparnini.jpg"
+imageAuthor: "Willis Lam"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Buffalo_Burgers_Buffalo_Chicken_Wings_(36082467922).jpg"
 emoji: "🍗"
 icon: plate
 iconColors: "#c8502a, #f3efe6"

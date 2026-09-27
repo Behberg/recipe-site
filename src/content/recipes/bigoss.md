@@ -3,6 +3,11 @@ title: "Bigoss"
 description: "Poļu mednieku sautējums ar skābētiem kāpostiem, dažādām gaļām, desu un žāvētām plūmēm."
 cuisine: polu
 category: pamatedieni
+image: "/images/recipes/bigoss.jpg"
+imageAuthor: "Colin Cameron from Edinburgh, Scotland"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Bigos_in_a_cafe_at_Wawel_Castle.jpg"
 emoji: "🥘"
 icon: skillet
 iconColors: "#b89a5a, #8a3a22"

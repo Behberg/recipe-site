@@ -3,6 +3,11 @@ title: "Ceptie pavasara rullīši"
 description: "Kraukšķīgi rullīši ar kāpostiem, burkāniem, šampinjoniem un stikla nūdelēm."
 cuisine: kiniesu
 category: salati-un-uzkodas
+image: "/images/recipes/pavasara-rullisi.jpg"
+imageAuthor: "Hiroooooo"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Deep_Fried_Spring_Roll.jpg"
 emoji: "🥢"
 icon: plate
 iconColors: "#d9a052, #f3efe6, #d6402a"

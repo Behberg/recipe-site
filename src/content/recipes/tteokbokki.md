@@ -3,6 +3,11 @@ title: "Tteokbokki (korejiešu asās rīsu kūkas)"
 description: "Korejas ielu ēdiens tteokbokki: košļājamas rīsu kūkas asā, saldenā gočudžanas mērcē ar olām un lokiem. Gatavs 25 minūtēs."
 cuisine: korejiesu
 category: pamatedieni
+image: "/images/recipes/tteokbokki.jpg"
+imageAuthor: "Popo le Chien"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tteokbokki.JPG"
 emoji: "🌶️"
 icon: skillet
 iconColors: "#d8301e, #f5f0e0"

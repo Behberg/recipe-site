@@ -2,6 +2,11 @@
 title: "Olas Benedikts ar šķiņķi un holandes mērci"
 description: "Vēlo brokastu klasika: grauzdiņš, šķiņķis, noplūkta ola un sviestaina holandes mērce. Izskatās kā kafejnīcā, bet top mājās."
 category: brokastis
+image: "/images/recipes/olas-benedikts.jpg"
+imageAuthor: "Mark Miller"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Traditional_Eggs_Benedict.jpg"
 emoji: "🍳"
 icon: flatbread
 iconColors: "#e9c07a, #f3e6c8, #f6c445"

@@ -3,6 +3,11 @@ title: "Mājas zivju pirkstiņi"
 description: "Kraukšķīgi mencas pirkstiņi rīvmaizē, cepti krāsnī. Ar kartupeļiem un ātro mērci."
 cuisine: britu
 category: pamatedieni
+image: "/images/recipes/zivju-pirkstini.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Fish_Fingers_-_RYBKA_2024-01-25.jpg"
 emoji: "🐟"
 icon: plate
 iconColors: "#e0a64a, #f3efe6, #fbf7ef"

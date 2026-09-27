@@ -3,6 +3,11 @@ title: "Marinēta siļķe ar sīpoliem"
 description: "Maiga, saldskāba marinēta siļķe ar sīpolu gredzeniem un garšvielām. Klasiska uzkoda pie kartupeļiem un rupjmaizes, gatava pēc dienas."
 cuisine: latviesu
 category: salati-un-uzkodas
+image: "/images/recipes/marineta-silke-ar-sipoliem.jpg"
+imageAuthor: "Kagor"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Aringa-marinato.jpg"
 emoji: "🐟"
 icon: plate
 iconColors: "#8a9aa8, #f3efe6"

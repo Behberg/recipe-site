@@ -2,6 +2,11 @@
 title: "Brieža gaļas sautējums ar sarkanvīnu un brūklenēm"
 description: "Bagātīgs brieža gaļas sautējums ar meža sēnēm, sarkanvīnu, kadiķogām un brūklenēm. Meža garša Ziemassvētku un rudens svētku galdam."
 category: pamatedieni
+image: "/images/recipes/brieza-galas-sautejums.jpg"
+imageAuthor: "Benreis"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Rehragout_Kn%C3%B6del_Drei_Lillien.jpg"
 emoji: "🦌"
 icon: skillet
 iconColors: "#5a2a1a, #8a1a3a"

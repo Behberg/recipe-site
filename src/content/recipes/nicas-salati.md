@@ -3,6 +3,11 @@ title: "Nicas salāti"
 description: "Sātīgi salāti ar tunci, kartupeļiem, zaļajām pupiņām, olām, olīvām un tomātiem."
 cuisine: francu
 category: salati-un-uzkodas
+image: "/images/recipes/nicas-salati.jpg"
+imageAuthor: "cyclonebill from Copenhagen, Denmark"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Salade_ni%C3%A7oise_(7545098258).jpg"
 emoji: "🥗"
 icon: soup
 iconColors: "#8bb04a, #f3cf5a"

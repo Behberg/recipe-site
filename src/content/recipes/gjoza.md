@@ -3,6 +3,11 @@ title: "Gjoza"
 description: "Japāņu pelmeņi ar cūkgaļas un kāpostu pildījumu. No apakšas kraukšķīgi, no augšas tvaicēti."
 cuisine: japanu
 category: salati-un-uzkodas
+image: "/images/recipes/gjoza.jpg"
+imageAuthor: "Francesc Fort"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Gyoza_-_Tora.jpg"
 emoji: "🥟"
 icon: plate
 iconColors: "#e8d3a8, #f3efe6"

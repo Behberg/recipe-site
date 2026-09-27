@@ -3,6 +3,11 @@ title: "Gulaša zupa"
 description: "Ungāru liellopa gaļas zupa ar saldo papriku, kartupeļiem un ķimenēm."
 cuisine: ungaru
 category: zupas
+image: "/images/recipes/gulasa-zupa.jpg"
+imageAuthor: "Tiia Monto"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Goulash_soup_2.jpg"
 emoji: "🍲"
 icon: soup
 iconColors: "#b8421f"

@@ -3,6 +3,11 @@ title: "Medus kūka"
 description: "Plānas medus kārtas ar skābā krējuma krēmu. Pēc nakts ledusskapī tā kūst mutē."
 cuisine: austrumeiropas
 category: saldie-edieni
+image: "/images/recipes/medus-kuka.jpg"
+imageAuthor: "insatiablemunch @ Flickr ; cropped by Off-shell"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Honey_cake_Medovik.jpg"
 emoji: "🍯"
 icon: cake
 iconColors: "#c98a3a, #f3e6c8, #c98a3a, #f3e6c8, #c98a3a, #f3e6c8"

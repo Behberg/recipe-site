@@ -3,6 +3,11 @@ title: "Ganu pīrāgs"
 description: "Maltās gaļas un dārzeņu sautējums zem kartupeļu biezeņa segas, cepts krāsnī."
 cuisine: britu
 category: pamatedieni
+image: "/images/recipes/ganu-pirags.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Shepherds_pie_-_The_Kew_Greenhouse_Cafe_2025-05-14.jpg"
 emoji: "🥧"
 icon: casserole
 iconColors: "#f0d48a"

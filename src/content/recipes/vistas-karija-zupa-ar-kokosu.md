@@ -2,6 +2,11 @@
 title: "Vistas karija zupa ar kokosriekstu pienu un nūdelēm"
 description: "Smaržīga, maigi pikanta vistas zupa ar kokosriekstu pienu, kariju, rīsu nūdelēm un laimu. Sasilda un ir gatava pusstundā."
 category: zupas
+image: "/images/recipes/vistas-karija-zupa-ar-kokosu.jpg"
+imageAuthor: "Alpha from Melbourne, Australia"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Curry_Laksa_-_Laksa_King_(2597729514).jpg"
 emoji: "🍜"
 icon: soup
 iconColors: "#e8b04a, #f7f2ea, #c8402a"

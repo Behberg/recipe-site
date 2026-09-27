@@ -2,6 +2,11 @@
 title: "Dateļu un valriekstu maize"
 description: "Tumša, mitra un saldena dateļu maize ar valriekstiem. Lieliska ar sviestu pie tējas un ilgi paliek svaiga."
 category: maize-un-cepumi
+image: "/images/recipes/datelu-riekstu-maize.jpg"
+imageAuthor: "transcendancing"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Walnut,_coffee_and_chocolate_loaf!_Melt_and_mix,_didn%27t_even_get_to_break_out_my_kitchenaid!_-mycookingadventures_-vegcookingadventures_(50070423708).jpg"
 emoji: "🌴"
 icon: loaf
 iconColors: "#8a5a30, #c89858"

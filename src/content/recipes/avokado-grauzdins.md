@@ -3,6 +3,11 @@ title: "Avokado grauzdiņš ar olu"
 description: "Kraukšķīga grauzdēta maize ar saspaidītu avokado, citronu, čili un maigi vārītu olu."
 cuisine: amerikas
 category: brokastis
+image: "/images/recipes/avokado-grauzdins.jpg"
+imageAuthor: "Luca Nebuloni from Milan, Italy"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Avocado_toast_with_eggs_(28508171495).jpg"
 emoji: "🥑"
 icon: flatbread
 iconColors: "#d9a557, #8bb04a"

@@ -3,6 +3,11 @@ title: "Bibimbaps"
 description: "Korejiešu rīsu bļoda ar dārzeņiem, gaļu, ceptu olu un aso gočudžanas mērci."
 cuisine: korejiesu
 category: pamatedieni
+image: "/images/recipes/bibimbaps.jpg"
+imageAuthor: "Sous Chef"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Dolsot-bibimbap.jpg"
 emoji: "🍲"
 icon: soup
 iconColors: "#f3efe6, #f7f2ea, #c8402a"

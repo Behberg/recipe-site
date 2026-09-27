@@ -2,6 +2,11 @@
 title: "Gaļas maize ar vārītām olām (maltās gaļas rulete)"
 description: "Sulīga maltās gaļas rulete ar vārītu olu vidū un kečupa glazūru. Lēts ēdiens, kas pabaro lielu ģimeni un der arī auksts."
 category: pamatedieni
+image: "/images/recipes/galas-maize.jpg"
+imageAuthor: "Viktorija N. Ivanov"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%BE%D0%BB%D0%B0%D1%82_%D0%BE%D0%B4_%D0%BC%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE_%D0%BC%D0%B5%D1%81%D0%BE_%D1%81%D0%BE_%D1%98%D0%B0%D1%98%D1%86%D0%B5.jpg"
 emoji: "🍖"
 icon: loaf
 iconColors: "#7d4526, #f3e2b0"

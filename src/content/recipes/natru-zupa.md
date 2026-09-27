@@ -2,6 +2,11 @@
 title: "Nātru zupa ar olu un krējumu"
 description: "Pavasara nātru zupa no jaunām nātrēm ar kartupeļiem, vārītu olu un krējumu. Zaļa, lēta un pilna ar vitamīniem."
 category: zupas
+image: "/images/recipes/natru-zupa.jpg"
+imageAuthor: "Abuluntu"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Abuluntu_nettle_soup.jpg"
 emoji: "🌿"
 icon: soup
 iconColors: "#6f9a3a, #f7f2ea"

@@ -2,6 +2,11 @@
 title: "Burkānu un ingvera krēmzupa ar kokosriekstu pienu"
 description: "Spilgti oranža burkānu krēmzupa ar ingveru un kokosriekstu pienu. Silda, ir vegāniska un bagāta ar vitamīniem."
 category: zupas
+image: "/images/recipes/burkanu-ingvera-kremzupa.jpg"
+imageAuthor: "jules / stone soup"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Carrot_soup.jpg"
 emoji: "🥕"
 icon: soup
 iconColors: "#f08a2e, #f7f2ea"

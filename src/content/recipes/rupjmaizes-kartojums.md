@@ -3,6 +3,11 @@ title: "Rupjmaizes kārtojums"
 description: "Leģendārais latviešu deserts: kārtas ar saldu rupjmaizes drupatu, putukrējumu un dzērveņu vai brūkleņu ievārījumu."
 cuisine: latviesu
 category: saldie-edieni
+image: "/images/recipes/rupjmaizes-kartojums.jpg"
+imageAuthor: "Krists Luhaers"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Rupjmaizes_k%C4%81rtojums.jpg"
 emoji: "🍨"
 icon: layers
 iconColors: "#4a2c1a, #f7f0e0, #b3122e, #4a2c1a, #f7f0e0"

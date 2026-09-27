@@ -2,6 +2,11 @@
 title: "Zemeņu kūka ar putukrējumu"
 description: "Gaisīgs biskvīts ar svaigām zemenēm un vaniļas putukrējumu. Vasaras svētku kūka."
 category: saldie-edieni
+image: "/images/recipes/zemenu-kuka.jpg"
+imageAuthor: "Dennis Sylvester Hurd"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Strawberry_layer_cake.jpg"
 emoji: "🍓"
 icon: cake
 iconColors: "#e8c078, #fbf6ea, #e8c078, #fbf6ea"

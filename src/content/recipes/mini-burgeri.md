@@ -2,6 +2,11 @@
 title: "Mini burgeri ballītei"
 description: "Mazi, sulīgi liellopa gaļas burgeri ar čedaru, gurķi un tomātu mazās maizītēs. Ballīšu un dzimšanas dienu hīts, kas der divos kumosos."
 category: pamatedieni
+image: "/images/recipes/mini-burgeri.jpg"
+imageAuthor: "Prayitno / Thank you for (8 millions +) views from Los Angeles, USA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:A_party_tray_of_sliders_at_a_restaurant.jpg"
 emoji: "🍔"
 icon: bun
 iconColors: "#c98a3a"

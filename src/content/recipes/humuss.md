@@ -3,6 +3,11 @@ title: "Krēmīgais humuss"
 description: "Zīdaini gluds humuss ar tahini, citronu un ķiploku. Pasniedz ar pitu un dārzeņiem."
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
+image: "/images/recipes/humuss.jpg"
+imageAuthor: "Beyrouthhh at English Wikipedia"
+imageLicense: "CC BY 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lebanese_style_hummus.jpg"
 emoji: "🧆"
 icon: soup
 iconColors: "#e3cfa4"

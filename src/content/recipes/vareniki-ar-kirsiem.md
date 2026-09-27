@@ -3,6 +3,11 @@ title: "Vareniki ar ķiršiem"
 description: "Maigi vārīti vareniki ar sulīgiem ķiršiem un cukuru, pasniegti ar krējumu. Vasaras saldais ēdiens, kas labi sasaldējas."
 cuisine: ukrainu
 category: saldie-edieni
+image: "/images/recipes/vareniki-ar-kirsiem.jpg"
+imageAuthor: "Kagor"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kapersy_027.jpg"
 emoji: "🍒"
 icon: plate
 iconColors: "#f3e6c8, #fbf8ef, #8a1a2e"

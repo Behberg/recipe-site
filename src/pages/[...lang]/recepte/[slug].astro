@@ -6,6 +6,9 @@ import RecipeArt from '../../../components/RecipeArt.astro';
 import RecipeCard from '../../../components/RecipeCard.astro';
 import FavButton from '../../../components/FavButton.astro';
 import AdSlot from '../../../components/AdSlot.astro';
+import RecipeRating from '../../../components/RecipeRating.astro';
+import { nutritionPerServing } from '../../../lib/nutrition';
+import { ratingFor } from '../../../lib/ratings';
 import { SITE } from '../../../site.config';
 import {
   getCatalog,
@@ -17,7 +20,7 @@ import {
   categoryUrl,
   imageUrl,
 } from '../../../lib/recipes';
-import { unitFor } from '../../../lib/format';
+import { unitFor, decimal } from '../../../lib/format';
 import { IMAGE_RATIOS, recipeImagePath } from '../../../lib/recipeImage';
 import { absolute, breadcrumbLd, dietsFor } from '../../../lib/seo';
 import { LANGS, langParam, href, t, count, type Lang, type UIKey } from '../../../i18n';
@@ -84,12 +87,29 @@ const related = recipes
 
 const iso = (min: number) => `PT${min}M`;
 const pageUrl = absolute(u(`/recepte/${recipe.id}/`), Astro.site);
-// Google needs an image for recipe rich results. An uploaded photo wins; otherwise the
-// generated illustration in the three aspect ratios Google recommends.
-const images = d.image
-  ? [new URL(imageUrl(d.image, 1200), Astro.site).href]
-  : (Object.keys(IMAGE_RATIOS) as (keyof typeof IMAGE_RATIOS)[]).map((r) => absolute(recipeImagePath(recipe.id, r), Astro.site));
-const shareImage = d.image ? imageUrl(d.image, 1200) : recipeImagePath(recipe.id, '16x9');
+// Google needs an image for recipe rich results, ideally in the three aspect ratios it recommends.
+// The image route crops the recipe photo to each ratio, or draws the illustration when there is none.
+// Photos from open licence sources carry their author and licence, as Google's image metadata.
+const ratios = Object.keys(IMAGE_RATIOS) as (keyof typeof IMAGE_RATIOS)[];
+const images = ratios.map((r) => {
+  const url = absolute(recipeImagePath(recipe.id, r), Astro.site);
+  if (!d.image) return url;
+  const [width, height] = IMAGE_RATIOS[r];
+  return {
+    '@type': 'ImageObject',
+    url,
+    width,
+    height,
+    creditText: d.imageAuthor,
+    creator: d.imageAuthor ? { '@type': 'Person', name: d.imageAuthor } : undefined,
+    license: d.imageLicenseUrl,
+    acquireLicensePage: d.imageSource,
+  };
+});
+const shareImage = recipeImagePath(recipe.id, '16x9');
+const nutrition = nutritionPerServing(recipe.lv.ingredients, d.servings);
+const rating = await ratingFor(recipe.id);
+const grams = (v: number) => `${decimal(v, lang)} g`;
 const amountSentence = cap(d.yield ? t(lang, 'recipe.yield', { y: d.yield }) : count(lang, d.servings, 'count.servings'));
 const metaDescription = t(lang, 'seo.recipeDesc', { desc: d.description, time: formatMinutes(total, lang), amount: amountSentence }).replace(/\.\.$/, '.');
 const diets = dietsFor(recipe.lv.tags);
@@ -116,6 +136,19 @@ const jsonLd = [
     keywords: [d.title, cuisine && t(lang, 'cuisine.title', { name: cuisine.data.name }), category?.data.name, ...d.tags].filter(Boolean).join(', '),
     suitableForDiet: diets.length ? diets : undefined,
     recipeIngredient: d.ingredients.map(ingredientText),
+    nutrition: nutrition
+      ? {
+          '@type': 'NutritionInformation',
+          servingSize: t(lang, 'recipe.servingSize'),
+          calories: `${nutrition.calories} kcal`,
+          proteinContent: grams(nutrition.protein),
+          fatContent: grams(nutrition.fat),
+          carbohydrateContent: grams(nutrition.carbs),
+        }
+      : undefined,
+    aggregateRating: rating
+      ? { '@type': 'AggregateRating', ratingValue: rating.value, ratingCount: rating.count, bestRating: 5, worstRating: 1 }
+      : undefined,
     recipeInstructions: d.steps.map((text, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
@@ -141,7 +174,7 @@ const useMultiplier = Boolean(d.yield);
   title={t(lang, 'seo.recipeTitle', { title: d.title })}
   description={metaDescription}
   image={shareImage}
-  imageSize={d.image ? undefined : [...IMAGE_RATIOS['16x9']]}
+  imageSize={[...IMAGE_RATIOS['16x9']]}
   imageAlt={d.title}
   published={d.date.toISOString().slice(0, 10)}
   type="article"
@@ -158,6 +191,19 @@ const useMultiplier = Boolean(d.yield);
           </a>
           <FavButton id={recipe.id} title={d.title} lang={lang} />
         </div>
+        {
+          d.image && d.imageAuthor && (
+            <p class="r-credit">
+              {d.imageSource ? <a href={d.imageSource} rel="noopener nofollow" target="_blank">{t(lang, 'recipe.photoBy', { author: d.imageAuthor })}</a> : t(lang, 'recipe.photoBy', { author: d.imageAuthor })}
+              {d.imageLicense && (
+                <>
+                  {', '}
+                  {d.imageLicenseUrl ? <a href={d.imageLicenseUrl} rel="license noopener nofollow" target="_blank">{d.imageLicense}</a> : d.imageLicense}
+                </>
+              )}
+            </p>
+          )
+        }
       </div>
 
       <div class="r-head">
@@ -273,6 +319,20 @@ const useMultiplier = Boolean(d.yield);
             ))
           }
         </div>
+        {
+          nutrition && (
+            <div class="panel nutrition">
+              <h2>{t(lang, 'recipe.nutrition')}</h2>
+              <dl>
+                <div><dt>{t(lang, 'recipe.kcal')}</dt><dd>{nutrition.calories} kcal</dd></div>
+                <div><dt>{t(lang, 'recipe.protein')}</dt><dd>{grams(nutrition.protein)}</dd></div>
+                <div><dt>{t(lang, 'recipe.fat')}</dt><dd>{grams(nutrition.fat)}</dd></div>
+                <div><dt>{t(lang, 'recipe.carbs')}</dt><dd>{grams(nutrition.carbs)}</dd></div>
+              </dl>
+              <p class="nutrition-note">{t(lang, 'recipe.nutritionNote')}</p>
+            </div>
+          )
+        }
       </section>
 
       <!-- Steps -->
@@ -309,6 +369,8 @@ const useMultiplier = Boolean(d.yield);
             </aside>
           )
         }
+
+        <RecipeRating id={recipe.id} lang={lang} rating={rating} />
 
         {
           d.tags.length > 0 && (
@@ -699,6 +761,64 @@ const useMultiplier = Boolean(d.yield);
     inset: 12px 12px auto 12px;
     display: flex;
     justify-content: space-between;
+  }
+  /* Photo credit, required by the photo's licence. Sits above the sheet that overlaps the photo on phones. */
+  .r-credit {
+    position: absolute;
+    right: 10px;
+    bottom: 38px;
+    max-width: calc(100% - 20px);
+    margin: 0;
+    padding: 3px 9px;
+    border-radius: var(--pill);
+    background: rgb(0 0 0 / 0.45);
+    color: #fff;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .r-credit a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgb(255 255 255 / 0.5);
+  }
+  @media (min-width: 900px) {
+    .r-credit {
+      bottom: 10px;
+    }
+  }
+  .nutrition {
+    margin-top: 16px;
+  }
+  .nutrition h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+  }
+  .nutrition dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0;
+  }
+  .nutrition dl div {
+    padding: 8px 10px;
+    border-radius: var(--r-sm);
+    background: var(--surface-2);
+  }
+  .nutrition dt {
+    font-size: 0.78rem;
+    color: var(--ink-2);
+  }
+  .nutrition dd {
+    margin: 2px 0 0;
+    font-weight: 700;
+  }
+  .nutrition-note {
+    margin: 10px 0 0;
+    font-size: 0.8rem;
+    color: var(--ink-3);
   }
   .r-head {
     position: relative;

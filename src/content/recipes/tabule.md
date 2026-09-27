@@ -3,6 +3,11 @@ title: "Tabule"
 description: "Libānas zaļumu salāti ar bulguru, pētersīļiem, piparmētrām, tomātiem un citronu."
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
+image: "/images/recipes/tabule.jpg"
+imageAuthor: "cyclonebill"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Flickr_-_cyclonebill_-_Tabbouleh.jpg"
 emoji: "🥗"
 icon: soup
 iconColors: "#6b9a3a, #d9443a"

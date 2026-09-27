@@ -3,6 +3,11 @@ title: "Apgrieztais ābolu pīrāgs (tarte Tatin)"
 description: "Karamelizēti āboli zem kraukšķīgas kārtainās mīklas. Pēc cepšanas pīrāgu apgriež otrādi."
 cuisine: francu
 category: saldie-edieni
+image: "/images/recipes/tarte-tatin.jpg"
+imageAuthor: "Djenghisz"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Franse_tarte_tatin.jpg"
 emoji: "🍎"
 icon: tart
 iconColors: "#c8702a, #d9a14e"

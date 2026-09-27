@@ -2,6 +2,11 @@
 title: "Skābo kāpostu zupa"
 description: "Sātīga, skābena kāpostu zupa ar kūpinātu gaļu. Otrajā dienā tā ir vēl garšīgāka."
 category: zupas
+image: "/images/recipes/skabo-kapostu-zupa.jpg"
+imageAuthor: "Auctor quaerendae"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:020260320_Sauerkraut_soup.jpg"
 emoji: "🥬"
 icon: soup
 iconColors: "#d9b86a"

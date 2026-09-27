@@ -2,6 +2,11 @@
 title: "Kabaču plācenīši ar sieru un dillēm"
 description: "Zeltaini kabaču plācenīši ar sieru, ķiploku un dillēm. Lielisks veids, kā izlietot kabaču ražu, ar ķiploku krējumu."
 category: brokastis
+image: "/images/recipes/kabacu-placenisi.jpg"
+imageAuthor: "William Neuheisel from DC, US"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Zucchini_Fritters_-_Lunch_at_Yanyali_Fehmi_Lokantasi_(6421047753).jpg"
 emoji: "🥒"
 icon: plate
 iconColors: "#a8b85a, #f3efe6, #f8f4ea"

@@ -3,6 +3,11 @@ title: "Šakšuka"
 description: "Olas, kas lēni sautētas pikantā tomātu un paprikas mērcē. Ideālas nedēļas nogales brokastis."
 cuisine: tuvo-austrumu
 category: brokastis
+image: "/images/recipes/sakshuka.jpg"
+imageAuthor: "Junbinhuang"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Shakshuka_Dish.jpg"
 emoji: "🍳"
 icon: skillet
 iconColors: "#c8402a, #f6a71c"

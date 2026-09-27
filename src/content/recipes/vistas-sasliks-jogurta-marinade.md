@@ -2,6 +2,11 @@
 title: "Vistas šašliks jogurta un citrona marinādē"
 description: "Sulīgs vistas šašliks jogurta, ķiploku un citrona marinādē, cepts uz grila vai pannā. Nekad neizžūst un ir gatavs 15 minūtēs."
 category: pamatedieni
+image: "/images/recipes/vistas-sasliks-jogurta-marinade.jpg"
+imageAuthor: "cattan2011"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Dak-kkochi_4.jpg"
 emoji: "🍢"
 icon: plate
 iconColors: "#d9a052, #f3efe6, #f5f0e0"

@@ -3,6 +3,11 @@ title: "Cūkgaļas cepetis ar ķimenēm"
 description: "Sulīgs cūkgaļas cepetis ar kraukšķīgu garoziņu, ķimenēm un ķiploku. Latviešu svētku galda galvenais ēdiens."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/cukgalas-cepetis.jpg"
+imageAuthor: "Benreis"
+imageLicense: "CC BY 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Schweineschulter_Klo%C3%9F_K%C3%BCmmelso%C3%9Fe.jpg"
 emoji: "🍖"
 icon: roast
 iconColors: "#a8582a"

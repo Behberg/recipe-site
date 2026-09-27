@@ -2,6 +2,11 @@
 title: "Pildīti šampinjoni ar krēmsieru un ķiplokiem"
 description: "Krāsnī cepti pildīti šampinjoni ar krēmsiera, ķiploku un parmezāna pildījumu un kraukšķīgu virsu. Svētku uzkoda, gatava 35 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/pilditi-sampinjoni-ar-sieru.jpg"
+imageAuthor: "Key West Wedding Photography"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/58003213@N00/5296675517"
 emoji: "🍄"
 icon: plate
 iconColors: "#c9ae8a, #f3efe6"

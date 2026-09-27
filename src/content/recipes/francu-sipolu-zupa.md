@@ -3,6 +3,11 @@ title: "Franču sīpolu zupa"
 description: "Lēni karamelizēti sīpoli bagātīgā buljonā ar siera grauzdiņu virsū."
 cuisine: francu
 category: zupas
+image: "/images/recipes/francu-sipolu-zupa.jpg"
+imageAuthor: "jeffreyw"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mmm...onion_soup_(5344349906).jpg"
 emoji: "🧅"
 icon: soup
 iconColors: "#8a5a2b"

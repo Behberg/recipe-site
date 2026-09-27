@@ -2,6 +2,11 @@
 title: "Vistas karijs ar kokosriekstu pienu"
 description: "Maigs, krēmīgs vistas karijs ar kokosriekstu pienu, ingveru un spinātiem. Ātras vakariņas vienā pannā ar rīsiem 35 minūtēs."
 category: pamatedieni
+image: "/images/recipes/vistas-karijs-ar-kokosriekstu-pienu.jpg"
+imageAuthor: "Francesc Fort"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Taj_Mahal_-_Lamb_Curry_Madras.jpg"
 emoji: "🍛"
 icon: skillet
 iconColors: "#e8a83a, #f3e6c8"

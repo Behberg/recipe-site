@@ -2,6 +2,11 @@
 title: "Ķiploku krēmzupa ar grauzdiņiem"
 description: "Maiga, krēmīga ķiploku zupa, kurā ķiploki kļūst saldi un riekstaini. Pārsteidzoši smalka ziemas zupa ar kraukšķīgiem grauzdiņiem."
 category: zupas
+image: "/images/recipes/kiploku-kremzupa.jpg"
+imageAuthor: "Ceeseven"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cream_Soup_with_Garlic_Bread.jpg"
 emoji: "🧄"
 icon: soup
 iconColors: "#f3ecd0, #eef1f4"

@@ -3,6 +3,11 @@ title: "Samosas ar kartupeļiem un zirnīšiem"
 description: "Kraukšķīgas Indijas samosas ar pikantu kartupeļu, zirnīšu un garšvielu pildījumu. Vegāniska uzkoda, lieliska ar jogurta vai čatnija mērci."
 cuisine: indiesu
 category: salati-un-uzkodas
+image: "/images/recipes/samosas-ar-kartupeliem.jpg"
+imageAuthor: "Vara Prasad Reddy Thallapalli"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Samosa_kadapa.jpg"
 emoji: "🥟"
 icon: bun
 iconColors: "#d9a050"

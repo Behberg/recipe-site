@@ -2,6 +2,11 @@
 title: "Plūmju biezenis (povidlo)"
 description: "Lēni vārīts, biezs plūmju biezenis ar nelielu cukura daudzumu. Pildījums pīrāgiem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/plumju-ievarijums.jpg"
+imageAuthor: "Albertus teolog"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Powidla.jpg"
 emoji: "🟣"
 icon: jar
 iconColors: "#4a1a3a"

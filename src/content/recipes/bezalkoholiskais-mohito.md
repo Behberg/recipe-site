@@ -2,6 +2,11 @@
 title: "Bezalkoholiskais mohito ar laimu un piparmētru"
 description: "Atspirdzinošs bezalkoholiskais mohito ar laimu, piparmētru un gāzētu ūdeni. Vasaras ballīšu dzēriens, ko var dzert visi."
 category: dzerieni
+image: "/images/recipes/bezalkoholiskais-mohito.jpg"
+imageAuthor: "Ralf Roletschek"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:15-09-26-RalfR-WLC-0072.jpg"
 emoji: "🍹"
 icon: glass
 iconColors: "#cfe8b0"

@@ -3,6 +3,11 @@ title: "Kijevas kotletes"
 description: "Vistas fileja ar zaļumu sviesta pildījumu kraukšķīgā panējumā. Pārgriežot izplūst sviests."
 cuisine: ukrainu
 category: pamatedieni
+image: "/images/recipes/kijevas-kotletes.jpg"
+imageAuthor: "Bev Sykes from Davis, CA, USA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_Kiev_Flickr.jpg"
 emoji: "🍗"
 icon: plate
 iconColors: "#d6933a, #f3efe6"

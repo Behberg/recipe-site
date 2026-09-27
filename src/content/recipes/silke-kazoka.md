@@ -3,6 +3,10 @@ title: "Siļķe kažokā"
 description: "Svētku kārtainie salāti ar siļķi, kartupeļiem, burkāniem, olām un bietēm."
 cuisine: austrumeiropas
 category: salati-un-uzkodas
+image: "/images/recipes/silke-kazoka.jpg"
+imageAuthor: "User:Zserghei"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Selidi_pod_shuboi.jpg"
 emoji: "🐟"
 icon: cake
 iconColors: "#f3ecd6, #e8a64a, #f7f0e0, #e8801e, #7a1a4a"

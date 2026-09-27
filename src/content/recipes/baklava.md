@@ -3,6 +3,10 @@ title: "Baklava"
 description: "Kraukšķīgas filo kārtas ar valriekstiem un pistācijām, pārlietas ar medus sīrupu."
 cuisine: turku
 category: saldie-edieni
+image: "/images/recipes/baklava.jpg"
+imageAuthor: "Kultigin"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Baklava_-_Turkish_special,_80-ply.JPEG"
 emoji: "🥮"
 icon: cake
 iconColors: "#d99a3a, #f0c46a, #d99a3a, #f0c46a, #d99a3a"

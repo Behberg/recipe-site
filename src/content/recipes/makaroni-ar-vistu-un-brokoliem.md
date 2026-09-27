@@ -2,6 +2,11 @@
 title: "Makaroni ar vistu un brokoļiem siera mērcē"
 description: "Sātīgi makaroni ar vistas fileju, brokoļiem un krēmīgu siera mērci. Ātras ģimenes vakariņas, ko bērni ēd bez runāšanas."
 category: pamatedieni
+image: "/images/recipes/makaroni-ar-vistu-un-brokoliem.jpg"
+imageAuthor: "Famartin"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:2020-08-30_06_00_51_A_serving_of_Healthy_Choice_Cafe_Steamers_Grilled_Chicken_Marinara_with_Parmesan_(Grilled_Chicken_Breast_with_Penne_Pasta_%26_Broccoli)_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg"
 emoji: "🥦"
 icon: skillet
 iconColors: "#f3e6c8, #6f9a3a"

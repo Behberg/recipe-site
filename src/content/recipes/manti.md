@@ -3,6 +3,11 @@ title: "Manti ar gaļu un sīpoliem (tvaicēti)"
 description: "Lieli, tvaicēti Vidusāzijas pelmeņi manti ar sulīgu gaļas un sīpolu pildījumu un kuminu. Pasniedz ar krējumu vai jogurtu."
 cuisine: austrumeiropas
 category: pamatedieni
+image: "/images/recipes/manti.jpg"
+imageAuthor: "Kızılkum"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_(cropped).jpg"
 emoji: "🥟"
 icon: plate
 iconColors: "#f3e6c8, #f5efe6"

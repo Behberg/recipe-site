@@ -3,6 +3,11 @@ title: "Dateļu pudiņš ar karameles mērci"
 description: "Mitrs, silts dateļu kūkas pudiņš, pārliets ar karsto sviesta karameles mērci."
 cuisine: britu
 category: saldie-edieni
+image: "/images/recipes/datelu-karamelu-pudins.jpg"
+imageAuthor: "Sarah Stierch"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sticky_toffee_pudding_at_the_Black_Swan_-_Stierch.jpg"
 emoji: "🍯"
 icon: cake
 iconColors: "#6b3a1f, #8a4a24"

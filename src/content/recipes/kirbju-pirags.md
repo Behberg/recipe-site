@@ -3,6 +3,11 @@ title: "Ķirbju pīrāgs"
 description: "Amerikāņu ķirbju pīrāgs ar kanēli, ingveru un muskatriekstu uz kraukšķīgas pamatnes."
 cuisine: amerikas
 category: saldie-edieni
+image: "/images/recipes/kirbju-pirags.jpg"
+imageAuthor: "Evan-Amos"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pumpkin-Pie-Whole-Slice.jpg"
 emoji: "🥧"
 icon: tart
 iconColors: "#d9722a, #d9a14e"

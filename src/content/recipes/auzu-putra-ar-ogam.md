@@ -2,6 +2,11 @@
 title: "Auzu putra ar ogām"
 description: "Krēmīga auzu pārslu putra ar pienu, sviesta piciņu un svaigām vai saldētām ogām."
 category: brokastis
+image: "/images/recipes/auzu-putra-ar-ogam.jpg"
+imageAuthor: "FitTasteTic"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Healthy_Oatmeal_with_Berries_-_49859913257.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#e9dcc0"

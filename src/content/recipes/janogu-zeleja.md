@@ -2,6 +2,11 @@
 title: "Sarkano jāņogu želeja"
 description: "Caurspīdīga, spīdīga jāņogu želeja bez sēkliņām. Pie gaļas un uz sviestmaizes."
 category: ievarijumi-un-konservi
+image: "/images/recipes/janogu-zeleja.jpg"
+imageAuthor: "Amanda Slater from Coventry, West Midlands, UK"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Redcurrant_jelly_(2699068744).jpg"
 emoji: "🔴"
 icon: jar
 iconColors: "#d0101e"

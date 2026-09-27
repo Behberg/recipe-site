@@ -3,6 +3,11 @@ title: "Kēnigsbergas klopsi"
 description: "Maigas gaļas bumbiņas baltā krējuma mērcē ar kaperiem un citronu."
 cuisine: vacu
 category: pamatedieni
+image: "/images/recipes/kenigsbergas-klopsi.jpg"
+imageAuthor: "Benreis"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsberger_Klopse_J%C3%B6rgs_Kantine.jpg"
 emoji: "🍖"
 icon: skillet
 iconColors: "#efe4c8, #b8844a"

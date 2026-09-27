@@ -3,6 +3,10 @@ title: "Lieldienu pasha"
 description: "Svinīgs biezpiena deserts ar sviestu, krējumu, rozīnēm un sukādēm. Bez cepšanas."
 cuisine: austrumeiropas
 category: saldie-edieni
+image: "/images/recipes/lieldienu-pasha.jpg"
+imageAuthor: "Mitrius"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Paskha2.jpg"
 emoji: "🐣"
 icon: cake
 iconColors: "#f7f0e0, #fbf6ea"

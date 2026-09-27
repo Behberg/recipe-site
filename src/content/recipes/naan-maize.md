@@ -3,6 +3,11 @@ title: "Naan maize"
 description: "Mīkstas indiešu plāceņu maizītes ar jogurtu, ceptas pannā un apziestas ar ķiploku sviestu."
 cuisine: indiesu
 category: maize-un-cepumi
+image: "/images/recipes/naan-maize.jpg"
+imageAuthor: "snowpea&amp;bokchoi"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Annapurna_Naan.jpg"
 emoji: "🫓"
 icon: flatbread
 iconColors: "#e0b86a"

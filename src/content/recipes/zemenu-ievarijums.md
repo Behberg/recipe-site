@@ -2,6 +2,11 @@
 title: "Zemeņu ievārījums"
 description: "Klasisks ievārījums ar veselām zemenēm un sīrupu, kas smaržo pēc jūnija."
 category: ievarijumi-un-konservi
+image: "/images/recipes/zemenu-ievarijums.jpg"
+imageAuthor: "Nutrition, Food Safety &amp; Health"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Strawberry_jam_(home_preservation).jpg"
 emoji: "🍓"
 icon: jar
 iconColors: "#c8102e"

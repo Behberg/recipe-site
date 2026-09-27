@@ -2,6 +2,11 @@
 title: "Mājas granola ar riekstiem un medu"
 description: "Kraukšķīga mājas granola ar auzu pārslām, mandelēm, sēklām un medu. Veselīgākas un lētākas brokastis nekā no veikala, glabājas 3 nedēļas."
 category: brokastis
+image: "/images/recipes/maja-granola.jpg"
+imageAuthor: "Bajinra"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Granola_Honey_and_Vanilla_Top.jpg"
 emoji: "🥣"
 icon: jar
 iconColors: "#c8914a, #d9b36a"

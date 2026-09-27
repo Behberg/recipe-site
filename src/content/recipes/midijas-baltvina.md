@@ -3,6 +3,11 @@ title: "Mīdijas baltvīnā ar ķiplokiem (moules marinières)"
 description: "Franču klasika moules marinières: mīdijas, tvaicētas baltvīnā ar šalotēm, ķiplokiem un pētersīļiem. Gatavas 25 minūtēs, pasniedz ar bageti."
 cuisine: francu
 category: pamatedieni
+image: "/images/recipes/midijas-baltvina.jpg"
+imageAuthor: "Benoît Prieur"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Moules_marini%C3%A8res_%C3%A0_La_Rose_Blanche_(Bruxelles).jpg"
 emoji: "🦪"
 icon: soup
 iconColors: "#2a2a3a, #f7f2ea, #f0d890"

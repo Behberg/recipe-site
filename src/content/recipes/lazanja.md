@@ -3,6 +3,11 @@ title: "Lazanja"
 description: "Klasiska itāļu lazanja ar gaļas mērci, bešamela mērci un kausētu sieru."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/lazanja.jpg"
+imageAuthor: "Breville USA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Meaty_Lasagna_8of8_(8736299782).jpg"
 emoji: "🍝"
 icon: cake
 iconColors: "#e8c36a, #b8401f, #f3e6c8, #b8401f, #e8c36a"

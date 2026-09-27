@@ -77,6 +77,11 @@ const recipes = defineCollection({
     cuisine: z.preprocess(empty, reference('cuisines').optional()),
     category: reference('categories'),
     image: optString,
+    // Credit for a photo taken from an open licence source (Wikimedia Commons and similar).
+    imageAuthor: optString,
+    imageLicense: optString,
+    imageLicenseUrl: optString,
+    imageSource: optString,
     emoji: optString,
     icon: optString,
     iconColors: optString,

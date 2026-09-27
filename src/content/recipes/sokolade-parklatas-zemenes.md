@@ -2,6 +2,11 @@
 title: "Šokolādē mērcētas zemenes"
 description: "Svaigas zemenes, iemērktas kūstošā tumšajā šokolādē un rotātas ar baltās šokolādes svītrām. Romantisks Valentīndienas deserts 20 minūtēs."
 category: saldie-edieni
+image: "/images/recipes/sokolade-parklatas-zemenes.jpg"
+imageAuthor: "James Petts from London, England"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chocolate_covered_strawberries_(13498474903).jpg"
 emoji: "🍓"
 icon: sweets
 iconColors: "#5a3020, #f8e8ec"

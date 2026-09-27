@@ -2,6 +2,11 @@
 title: "Marinēti tomāti"
 description: "Veseli ķiršu tomāti saldskābā marinādē ar ķiplokiem un dillēm."
 category: ievarijumi-un-konservi
+image: "/images/recipes/marineti-tomati.jpg"
+imageAuthor: "Off-shell"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pickled_Tomatoes6.jpg"
 emoji: "🍅"
 icon: jar
 iconColors: "#d6402a"

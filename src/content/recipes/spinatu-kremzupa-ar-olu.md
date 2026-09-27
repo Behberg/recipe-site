@@ -2,6 +2,11 @@
 title: "Spinātu krēmzupa ar vārītu olu"
 description: "Spilgti zaļa spinātu krēmzupa ar krējumu un muskatriekstu, pasniegta ar pusītē pārgrieztu olu. Pavasarīga un gatava 30 minūtēs."
 category: zupas
+image: "/images/recipes/spinatu-kremzupa-ar-olu.jpg"
+imageAuthor: "Amelia Crook"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Watercress_and_spinach_soup_2.jpg"
 emoji: "🥬"
 icon: soup
 iconColors: "#4f8a2c, #f7f2ea"

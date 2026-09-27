@@ -3,6 +3,11 @@ title: "Burkānu kūka ar krēmsiera glazūru"
 description: "Mitra, garšvielām bagāta burkānu kūka ar valriekstiem un saldu krēmsiera glazūru."
 cuisine: amerikas
 category: saldie-edieni
+image: "/images/recipes/burkanu-kuka.jpg"
+imageAuthor: "Elitre"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Carrot_cake_at_America_Graffiti_(cropped).jpg"
 emoji: "🥕"
 icon: cake
 iconColors: "#c8783a, #f7f0e0"

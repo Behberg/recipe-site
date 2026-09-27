@@ -2,6 +2,11 @@
 title: "Zaļais smūtijs ar spinātiem, kivi un ābolu"
 description: "Svaigs zaļais smūtijs ar spinātiem, banānu, kivi un ābolu. Saldens, vegānisks un bez pievienota cukura."
 category: dzerieni
+image: "/images/recipes/zalais-smutijs.jpg"
+imageAuthor: "Simon Bodzioch"
+imageLicense: "CC BY 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:L%C3%B6wenzahn-Smoothie.jpg"
 emoji: "🥝"
 icon: glass
 iconColors: "#8fbf4a"

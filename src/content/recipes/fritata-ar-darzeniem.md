@@ -2,6 +2,11 @@
 title: "Fritata ar dārzeņiem un fetu"
 description: "Bieza, sulīga olu fritata ar papriku, spinātiem un fetu, cepta pannā un krāsnī. Lieliskas vēlās brokastis visai ģimenei."
 category: brokastis
+image: "/images/recipes/fritata-ar-darzeniem.jpg"
+imageAuthor: "jeffreyw"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/7927684@N03/5182567699"
 emoji: "🍳"
 icon: skillet
 iconColors: "#f2cf62, #e0842f"

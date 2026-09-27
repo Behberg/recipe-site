@@ -3,6 +3,11 @@ title: "Adžāru hačapuri"
 description: "Laivas formas gruzīnu siera maize ar kausētu sieru, olas dzeltenumu un sviestu."
 cuisine: gruzinu
 category: maize-un-cepumi
+image: "/images/recipes/adzaru-hacapuri.jpg"
+imageAuthor: "Eugene Krasnaok"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Khachapuri_Adjaruli_with_egg_and_butter_2016.jpg"
 emoji: "🧀"
 icon: flatbread
 iconColors: "#e3a857, #f3cf5a"

@@ -2,6 +2,10 @@
 title: "Banānu mafini ar riekstiem vai šokolādi"
 description: "Mitri, smaržīgi banānu mafini no pārgatavojušiem banāniem ar kanēli un riekstiem vai šokolādi. Viena bļoda, 30 minūtes."
 category: maize-un-cepumi
+image: "/images/recipes/bananu-mafini.jpg"
+imageAuthor: "Unknown photographer/artist"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:NCI_Visuals_Food_Muffins.jpg"
 emoji: "🍌"
 icon: bun
 iconColors: "#d9a854"

@@ -2,6 +2,11 @@
 title: "Mājas adžika no tomātiem un paprikas ziemai"
 description: "Asa, smaržīga mājas adžika no tomātiem, paprikas, ķiplokiem un čili, iekonservēta ziemai. Lieliska pie gaļas, makaroniem un uz maizes."
 category: ievarijumi-un-konservi
+image: "/images/recipes/maja-adzika.jpg"
+imageAuthor: "Moonsun1981"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Adjika_e-citizen.jpg"
 emoji: "🌶️"
 icon: jar
 iconColors: "#b8261e, #c9a227"

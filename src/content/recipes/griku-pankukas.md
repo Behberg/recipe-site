@@ -2,6 +2,11 @@
 title: "Griķu miltu pankūkas"
 description: "Plānas, riekstainas griķu miltu pankūkas bez glutēna. Lieliskas ar krējumu, kūpinātu lasi, sēnēm vai medu."
 category: brokastis
+image: "/images/recipes/griku-pankukas.jpg"
+imageAuthor: "Shisma"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Stack_of_buckwheat_pancakes.jpg"
 emoji: "🥞"
 icon: plate
 iconColors: "#8a6a4a, #f3efe6, #f5ead0"

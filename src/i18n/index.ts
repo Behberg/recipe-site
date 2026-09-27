@@ -15,7 +15,7 @@ export function count(lang: Lang, n: number, key: UIKey): string {
 }
 
 /** Dictionary subset for browser scripts: only the key groups they use. */
-const CLIENT_PREFIXES = ['timer.', 'fav.', 'cal.', 'amount.', 'share.', 'cook.', 'fridge.', 'tinder.', 'count.', 'diff.', 'common.'];
+const CLIENT_PREFIXES = ['timer.', 'rating.', 'fav.', 'cal.', 'amount.', 'share.', 'cook.', 'fridge.', 'tinder.', 'count.', 'diff.', 'common.'];
 export function clientDict(lang: Lang): Partial<Record<UIKey, string>> {
   const out: Partial<Record<UIKey, string>> = {};
   for (const key of Object.keys(UI.lv) as UIKey[]) {

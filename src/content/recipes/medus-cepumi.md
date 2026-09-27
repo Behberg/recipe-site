@@ -2,6 +2,11 @@
 title: "Medus cepumi ar kanēli un ingveru"
 description: "Mīksti, smaržīgi medus cepumi ar kanēli un ingveru, izgriezti ar formiņām. Vienkāršāki par piparkūkām un lieliski rotāšanai kopā ar bērniem."
 category: maize-un-cepumi
+image: "/images/recipes/medus-cepumi.jpg"
+imageAuthor: "Peteravivangel"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:DuvshaniotCookies.jpg"
 emoji: "🍯"
 icon: sweets
 iconColors: "#c8843a, #fbf9f5"

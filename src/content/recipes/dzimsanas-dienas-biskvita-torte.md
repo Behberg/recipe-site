@@ -2,6 +2,11 @@
 title: "Dzimšanas dienas biskvīta torte ar ogām un krēmu"
 description: "Gaisīga biskvīta torte ar maskarpones un putukrējuma krēmu un svaigām ogām. Skaista, viegla un ne pārāk salda svētku torte."
 category: saldie-edieni
+image: "/images/recipes/dzimsanas-dienas-biskvita-torte.jpg"
+imageAuthor: "Happy birth day"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Birthday_cake,_Downpatrick,_April_2010_(01).JPG"
 emoji: "🎂"
 icon: cake
 iconColors: "#f5ecd7, #fbf4e3, #f5ecd7, #d8456a"

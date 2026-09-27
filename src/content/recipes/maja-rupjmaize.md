@@ -3,6 +3,11 @@ title: "Mājas rupjmaize"
 description: "Īsta rudzu ieraugā raudzēta rupjmaize ar ķimenēm. Lēns process, bet rezultāts ir neatkārtojams."
 cuisine: latviesu
 category: maize-un-cepumi
+image: "/images/recipes/maja-rupjmaize.jpg"
+imageAuthor: "Glane23"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Dark_rye_bread.JPG"
 emoji: "🍞"
 icon: loaf
 iconColors: "#4a2c1a"

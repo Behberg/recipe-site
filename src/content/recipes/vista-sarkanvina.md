@@ -3,6 +3,11 @@ title: "Vista sarkanvīnā (coq au vin)"
 description: "Burgundijas klasika: vista lēni sautēta sarkanvīnā ar bekonu, šampinjoniem un sīpoliem."
 cuisine: francu
 category: pamatedieni
+image: "/images/recipes/vista-sarkanvina.jpg"
+imageAuthor: "Beck from East Midlands, United Kingdon"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Gourmet_coq_au_vin.jpg"
 emoji: "🍷"
 icon: soup
 iconColors: "#6b1a2a, #f7f2ea, #c98a4a"

@@ -3,6 +3,11 @@ title: "Zivs ar frī kartupeļiem (fish and chips)"
 description: "Mencas fileja kraukšķīgā alus mīklā ar frī kartupeļiem un zaļo zirnīšu biezeni."
 cuisine: britu
 category: pamatedieni
+image: "/images/recipes/zivs-ar-kartupeliem.jpg"
+imageAuthor: "Grendelkhan"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Fish_and_chips_plate_with_peas.jpg"
 emoji: "🐟"
 icon: plate
 iconColors: "#e0b060, #f0cf6a"

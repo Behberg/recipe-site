@@ -3,6 +3,11 @@ title: "Vareņiki ar kartupeļiem"
 description: "Ukraiņu pusmēness pelmeņi ar kartupeļu un sīpolu pildījumu un krējumu."
 cuisine: ukrainu
 category: pamatedieni
+image: "/images/recipes/varenki.jpg"
+imageAuthor: "DemieK07"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Varenyky_with_Potatoes_-_2026_-03.jpg"
 emoji: "🥟"
 icon: plate
 iconColors: "#f3e6c4, #fbf6ea"

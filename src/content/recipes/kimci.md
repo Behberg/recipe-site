@@ -3,6 +3,11 @@ title: "Kimči"
 description: "Korejiešu raudzēti Pekinas kāposti ar čili, ķiploku un ingveru. Pikanti un veselīgi."
 cuisine: korejiesu
 category: ievarijumi-un-konservi
+image: "/images/recipes/kimci.jpg"
+imageAuthor: "AhmadElq"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Korean_Kimchi.jpg"
 emoji: "🌶️"
 icon: jar
 iconColors: "#d8402a"

@@ -3,6 +3,11 @@ title: "Tom yum zupa ar garnelēm"
 description: "Skāba un asa taju zupa ar garnelēm, citronzāli, laimu un šampinjoniem."
 cuisine: taizemes
 category: zupas
+image: "/images/recipes/tom-yum.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tom_Yum_Goong_Noodle_Soup_-_Nok_Nok_Kitchen_at_The_Cow_2024-03-28.jpg"
 emoji: "🍤"
 icon: soup
 iconColors: "#e8702a"

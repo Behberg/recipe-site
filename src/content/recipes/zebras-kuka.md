@@ -2,6 +2,11 @@
 title: "Zebras kūka ar krējumu"
 description: "Svītraina gaišā un šokolādes kūka ar krējumu, kas pārsteidz, kad to pārgriež. Vienkārša mīkla un jautrs cepšanas triks."
 category: saldie-edieni
+image: "/images/recipes/zebras-kuka.jpg"
+imageAuthor: "axmai"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Zebra_pound_cake.jpg"
 emoji: "🦓"
 icon: cake
 iconColors: "#f3d9a0, #4a2a1a, #f3d9a0, #4a2a1a"

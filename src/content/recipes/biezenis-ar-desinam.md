@@ -2,6 +2,11 @@
 title: "Kartupeļu biezenis ar ceptām desiņām"
 description: "Krēmīgs kartupeļu biezenis ar zeltaini apceptām desiņām, sīpoliem un marinētiem gurķiem."
 category: pamatedieni
+image: "/images/recipes/biezenis-ar-desinam.jpg"
+imageAuthor: "anokarina"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sausage_and_mash_with_peas.jpg"
 emoji: "🌭"
 icon: plate
 iconColors: "#b8662e, #f7ecd0"

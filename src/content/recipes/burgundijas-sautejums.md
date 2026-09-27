@@ -3,6 +3,11 @@ title: "Burgundijas liellopa sautējums"
 description: "Liellopa gaļa, lēni sautēta sarkanvīnā ar burkāniem, sīpoliem un šampinjoniem, līdz tā kūst mutē."
 cuisine: francu
 category: pamatedieni
+image: "/images/recipes/burgundijas-sautejums.jpg"
+imageAuthor: "Slayschips"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Beef_bourguignon_NYT.jpg"
 emoji: "🥘"
 icon: soup
 iconColors: "#6b2a1f, #f7f2ea, #c86a3a"

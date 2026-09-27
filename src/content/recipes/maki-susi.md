@@ -3,6 +3,11 @@ title: "Maki suši ruļļi"
 description: "Mājas suši ruļļi ar lasi, avokado un gurķi nori lapās. Pasniedz ar sojas mērci un marinētu ingveru."
 cuisine: japanu
 category: pamatedieni
+image: "/images/recipes/maki-susi.jpg"
+imageAuthor: "Stacy"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Homemade_sushi_rolls,_2009_(2).jpg"
 emoji: "🍣"
 icon: plate
 iconColors: "#1f2a1f, #fbf7ef"

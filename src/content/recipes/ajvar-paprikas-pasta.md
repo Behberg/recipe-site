@@ -2,6 +2,11 @@
 title: "Ajvar (cepta paprikas pasta ziemai)"
 description: "Balkānu ajvar: saldena cepto paprikas un baklažānu pasta ar ķiplokiem, iekonservēta ziemai. Uz maizes, pie gaļas un grila ēdieniem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/ajvar-paprikas-pasta.jpg"
+imageAuthor: "Off-shell"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Ajvar1_bright.jpg"
 emoji: "🫑"
 icon: jar
 iconColors: "#c8301e, #5a5a5a"

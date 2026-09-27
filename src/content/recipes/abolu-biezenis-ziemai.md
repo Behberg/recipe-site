@@ -2,6 +2,11 @@
 title: "Ābolu biezenis ziemai burkās"
 description: "Maigs mājas ābolu biezenis ar mazu cukura daudzumu, iekonservēts burkās ziemai. Bērnu mīlulis pie pankūkām, biezpiena un putras."
 category: ievarijumi-un-konservi
+image: "/images/recipes/abolu-biezenis-ziemai.jpg"
+imageAuthor: "Taken"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Apple-sauce-544676.jpg"
 emoji: "🍏"
 icon: jar
 iconColors: "#e8d27a, #b8862e"

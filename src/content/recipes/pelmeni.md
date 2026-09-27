@@ -3,6 +3,11 @@ title: "Mājas pelmeņi"
 description: "Mazi, sulīgi gaļas pelmeņi plānā mīklā. Pasniedz ar krējumu, sviestu un dillēm."
 cuisine: austrumeiropas
 category: pamatedieni
+image: "/images/recipes/pelmeni.jpg"
+imageAuthor: "Eugene Kim @ Flickr"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pelmeni_Russian.jpg"
 emoji: "🥟"
 icon: plate
 iconColors: "#efe6d0, #f3efe6"

@@ -3,6 +3,11 @@ title: "Aperol spritz kokteilis"
 description: "Itāļu vasaras kokteilis Aperol spritz ar prosecco, Aperol, gāzētu ūdeni un apelsīna ripiņu. Viegls, rūgtens un atspirdzinošs, gatavs 3 minūtēs."
 cuisine: italu
 category: dzerieni
+image: "/images/recipes/aperol-spritz.jpg"
+imageAuthor: "Missvain"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Aperol_Spritz_-_Santa_Ynez_Kitchen_-_Sarah_Stierch.jpg"
 emoji: "🍹"
 icon: glass
 iconColors: "#f06a1e"

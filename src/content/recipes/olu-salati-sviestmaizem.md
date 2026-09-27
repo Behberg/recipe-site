@@ -2,6 +2,11 @@
 title: "Olu salāti ar lokiem sviestmaizēm"
 description: "Krēmīgi olu salāti ar majonēzi, sinepēm un lokiem. Vienkāršākā smēre sviestmaizēm, brokastīm un Lieldienu galdam."
 category: salati-un-uzkodas
+image: "/images/recipes/olu-salati-sviestmaizem.jpg"
+imageAuthor: "Mushki Brichta"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Egg_salad_01.jpg"
 emoji: "🥚"
 icon: soup
 iconColors: "#f6dc7a, #f7f2ea"

@@ -2,6 +2,11 @@
 title: "Zemeņu piena kokteilis ar saldējumu"
 description: "Biezs, rozā zemeņu piena kokteilis ar vaniļas saldējumu, kā bērnības kafejnīcā. Gatavs 5 minūtēs."
 category: dzerieni
+image: "/images/recipes/zemenu-piena-kokteilis.jpg"
+imageAuthor: "Riti mishra"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Strawberry_love.jpg"
 emoji: "🍓"
 icon: glass
 iconColors: "#f5b8c8"

@@ -2,6 +2,11 @@
 title: "Vienkāršie sviesta cepumi"
 description: "Drupani, kūstoši sviesta cepumi no 5 sastāvdaļām. Tos var izspiest, izgriezt ar formiņām un rotāt kopā ar bērniem."
 category: maize-un-cepumi
+image: "/images/recipes/sviesta-cepumi.jpg"
+imageAuthor: "Constantin Barbu"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Danish_butter_cookies_in_container_with_wrappers,_December_2009.jpg"
 emoji: "🍪"
 icon: sweets
 iconColors: "#e3b56a, #fbf9f5"

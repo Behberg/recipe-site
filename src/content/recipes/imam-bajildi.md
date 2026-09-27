@@ -3,6 +3,11 @@ title: "Imam bajildi (pildīti baklažāni)"
 description: "Olīveļļā sautēti baklažāni ar sīpolu, tomātu un ķiploku pildījumu. Garšo remdeni."
 cuisine: turku
 category: pamatedieni
+image: "/images/recipes/imam-bajildi.jpg"
+imageAuthor: "E4024"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Imam_bay%C4%B1ld%C4%B1.jpg"
 emoji: "🍆"
 icon: plate
 iconColors: "#4a2a5a, #d9443a"

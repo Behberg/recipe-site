@@ -3,6 +3,11 @@ title: "Franču pankūkas (krepi)"
 description: "Plānas, elastīgas krepi pankūkas saldam vai sāļam pildījumam."
 cuisine: francu
 category: brokastis
+image: "/images/recipes/francu-pankukas.jpg"
+imageAuthor: "Kgbo"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cr%C3%AApes_of_France_on_Brisbane,_Australia.jpg"
 emoji: "🥞"
 icon: plate
 iconColors: "#e8c07a, #b3122e"

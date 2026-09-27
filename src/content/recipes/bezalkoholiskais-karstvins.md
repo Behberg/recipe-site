@@ -2,6 +2,11 @@
 title: "Bezalkoholiskais karstvīns ar garšvielām"
 description: "Aromātisks bezalkoholiskais karstvīns no vīnogu vai upeņu sulas ar apelsīnu, kanēli un krustnagliņām. Svētku dzēriens visai ģimenei."
 category: dzerieni
+image: "/images/recipes/bezalkoholiskais-karstvins.jpg"
+imageAuthor: "Ірина Бучнєва"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Non-alcoholic_mulled_wine.jpg"
 emoji: "🍷"
 icon: glass
 iconColors: "#8a1a2e, #e9dccf"

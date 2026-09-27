@@ -2,6 +2,11 @@
 title: "Krēmīgs olu kultenis ar sieru un tomātiem"
 description: "Mīksts, krēmīgs olu kultenis ar kūstošu sieru, ķiršu tomātiem un lokiem. Pareizās brokastis 10 minūtēs, kā labā kafejnīcā."
 category: brokastis
+image: "/images/recipes/olu-kultenis-ar-sieru-un-tomatiem.jpg"
+imageAuthor: "Takeaway"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Scrambed_eggs.jpg"
 emoji: "🍳"
 icon: skillet
 iconColors: "#f6d45a, #d9453a"

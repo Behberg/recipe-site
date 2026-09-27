@@ -3,6 +3,11 @@ title: "Sēkeju gulašs (cūkgaļa ar skābētiem kāpostiem)"
 description: "Ungāru sēkeju gulašs: cūkgaļa, sautēta ar skābētiem kāpostiem, papriku un ķimenēm, ar krējumu un dillēm. Silda aukstā ziemas dienā."
 cuisine: ungaru
 category: pamatedieni
+image: "/images/recipes/szekely-gulass.jpg"
+imageAuthor: "Rkolarsky"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Szeged_goulash_from_pork.jpg"
 emoji: "🥬"
 icon: skillet
 iconColors: "#d8903a, #e8d8a0"

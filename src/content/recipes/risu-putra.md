@@ -2,6 +2,11 @@
 title: "Rīsu putra ar pienu"
 description: "Krēmīga, lēni vārīta rīsu putra ar pienu, kanēli un sviestu."
 category: brokastis
+image: "/images/recipes/risu-putra.jpg"
+imageAuthor: "Shivangisj"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kheer_with_condensed_milk..JPG"
 emoji: "🍚"
 icon: soup
 iconColors: "#f6f0e0"

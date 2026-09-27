@@ -3,6 +3,11 @@ title: "Tonkatsu (japāņu panētā cūkgaļa)"
 description: "Japāņu tonkatsu: sulīga cūkgaļas karbonāde ļoti kraukšķīgā panko apvalkā ar saldskābu mērci, svaigiem kāpostiem un rīsiem."
 cuisine: japanu
 category: pamatedieni
+image: "/images/recipes/tonkatsu.jpg"
+imageAuthor: "ayustety from Tokyo, Japan"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tonkatsu_by_ayustety_in_Tokyo.jpg"
 emoji: "🍱"
 icon: plate
 iconColors: "#d08a3a, #f0cf6a, #5a3020"

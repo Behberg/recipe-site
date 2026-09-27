@@ -2,6 +2,11 @@
 title: "Pavlova ar putukrējumu un svaigām ogām"
 description: "Kraukšķīga no ārpuses un mīksta kā zefīrs iekšpusē bezē torte ar putukrējumu un vasaras ogām. Iespaidīgs deserts svētkiem."
 category: saldie-edieni
+image: "/images/recipes/pavlova-ar-ogam.jpg"
+imageAuthor: "brett jordan"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pavlova_garnished_with_cream_and_strawberries.jpg"
 emoji: "🍓"
 icon: tart
 iconColors: "#fffaf0, #f0e6d2"

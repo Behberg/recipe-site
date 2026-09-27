@@ -2,6 +2,11 @@
 title: "Mājas olu liķieris (egnogs)"
 description: "Krēmīgs mājas olu liķieris ar vaniļu, muskatriekstu un rumu. Ziemassvētku dzēriens, ko var pagatavot arī bez alkohola."
 category: dzerieni
+image: "/images/recipes/olu-likieris.jpg"
+imageAuthor: "Missvain"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Eggnog_at_Patrona_-_December_2023_-_Sarah_Stierch_01.jpg"
 emoji: "🥚"
 icon: glass
 iconColors: "#f6e7a0, #f5efe6"

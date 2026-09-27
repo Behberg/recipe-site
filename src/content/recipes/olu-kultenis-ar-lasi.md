@@ -3,6 +3,11 @@ title: "Olu kultenis ar kūpinātu lasi"
 description: "Krēmīgs olu kultenis ar kūpinātu lasi, lokiem un grauzdētu maizi. Svētku brokastis gultā."
 cuisine: britu
 category: brokastis
+image: "/images/recipes/olu-kultenis-ar-lasi.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Smoked_Salmon_%26_Avo_-_The_Boudica_2025-05-15.jpg"
 emoji: "🍳"
 icon: flatbread
 iconColors: "#d9a557, #f6d56a, #f28b5a"

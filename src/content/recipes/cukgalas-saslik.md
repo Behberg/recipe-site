@@ -3,6 +3,11 @@ title: "Cūkgaļas šašliks"
 description: "Sīpolos un etiķī marinēts cūkgaļas šašliks uz oglēm. Līgo nakts un vasaras grila klasika."
 cuisine: austrumeiropas
 category: pamatedieni
+image: "/images/recipes/cukgalas-saslik.jpg"
+imageAuthor: "Berser25"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:%D0%A8%D0%B0%D1%88%D0%BB%D0%B8%D0%BA_%D0%B7_%D1%81%D0%B2%D0%B8%D0%BD%D0%B8%D0%BD%D0%B8.jpg"
 emoji: "🍢"
 icon: plate
 iconColors: "#a8582a, #f3efe6"

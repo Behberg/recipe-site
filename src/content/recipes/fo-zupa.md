@@ -3,6 +3,11 @@ title: "Fo zupa ar liellopu gaļu"
 description: "Vjetnamiešu nūdeļu zupa smaržīgā buljonā ar anīsu, plāni sagrieztu gaļu un svaigiem zaļumiem."
 cuisine: vjetnamiesu
 category: zupas
+image: "/images/recipes/fo-zupa.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Beef_Pho_(M)_-_Milk_No_Sugar.jpg"
 emoji: "🍜"
 icon: soup
 iconColors: "#b8844a, #f7f2ea"

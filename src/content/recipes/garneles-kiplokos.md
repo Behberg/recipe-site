@@ -3,6 +3,11 @@ title: "Garneles ķiplokos (gambas al ajillo)"
 description: "Garneles, kas šņāc karstā olīveļļā ar ķiploku un čili. Pasniedz ar maizi, ar ko savākt eļļu."
 cuisine: spanu
 category: salati-un-uzkodas
+image: "/images/recipes/garneles-kiplokos.jpg"
+imageAuthor: "rovingI"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Spicy_fried_King_Prawns.jpg"
 emoji: "🦐"
 icon: skillet
 iconColors: "#e87a5a, #f0cf6a"

@@ -2,6 +2,11 @@
 title: "Brokastu sviestmaize ar olu, bekonu un sieru"
 description: "Karsta brokastu sviestmaize ar ceptu olu, kraukšķīgu bekonu, kūstošu sieru un salātiem grauzdētā maizē. 15 minūtes līdz laimei."
 category: brokastis
+image: "/images/recipes/brokastu-sviestmaize-ar-olu-un-bekonu.jpg"
+imageAuthor: "jeffreyw"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Bacon,_egg,_and_cheese_on_bread.jpg"
 emoji: "🥪"
 icon: flatbread
 iconColors: "#e0b070, #f3e6c8, #c8664a"

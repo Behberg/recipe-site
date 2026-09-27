@@ -2,6 +2,11 @@
 title: "Marinētas bietes"
 description: "Saldskābas marinētas bietes ar krustnagliņām. Gatavas salātiem un gaļai visu ziemu."
 category: ievarijumi-un-konservi
+image: "/images/recipes/marinetas-bietes.jpg"
+imageAuthor: "Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use this picture out of the Wik"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:-2018-12-14_Jar_of_pickled_Beetroot_and_Scallions,_Cromer_(1).JPG"
 emoji: "🟥"
 icon: jar
 iconColors: "#8a1638"

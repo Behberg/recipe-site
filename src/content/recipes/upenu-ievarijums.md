@@ -2,6 +2,11 @@
 title: "Upeņu ievārījums"
 description: "Biezs, tumšs un vitamīniem bagāts upeņu ievārījums. Ātrākais ievārījums, kas vienmēr izdodas."
 category: ievarijumi-un-konservi
+image: "/images/recipes/upenu-ievarijums.jpg"
+imageAuthor: "Mx. Granger"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Hartley%27s_blackcurrant_jam.jpg"
 emoji: "🫐"
 icon: jar
 iconColors: "#2a1030"

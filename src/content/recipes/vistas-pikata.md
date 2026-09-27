@@ -3,6 +3,11 @@ title: "Vistas pikata ar citronu un kaperiem"
 description: "Itāļu vistas pikata: plānas vistas šniceles sviesta, citrona, baltvīna un kaperu mērcē. Elegantas vakariņas 25 minūtēs."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/vistas-pikata.jpg"
+imageAuthor: "Infrogmation of New Orleans"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_piccata_made_with_fresh_lemons_and_jarred_capers.jpg"
 emoji: "🍋"
 icon: plate
 iconColors: "#e8c07a, #f3efe6, #f0e090"

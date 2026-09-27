@@ -3,6 +3,11 @@ title: "Čimičuri mērce"
 description: "Argentīnas zaļā mērce ar pētersīļiem, ķiploku, oregano un etiķi. Obligāta pie grilētas gaļas."
 cuisine: latinamerikas
 category: salati-un-uzkodas
+image: "/images/recipes/cimicuri-merce.jpg"
+imageAuthor: "Dominic Lockyer"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chimichurri_Sauce_Recipe_(13294466363).jpg"
 emoji: "🌿"
 icon: soup
 iconColors: "#5f8a2c"

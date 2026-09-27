@@ -3,6 +3,11 @@ title: "Cēzara salāti ar vistu"
 description: "Romiešu salāti ar grilētu vistu, grauzdiņiem, parmezānu un krēmīgu Cēzara mērci."
 cuisine: amerikas
 category: salati-un-uzkodas
+image: "/images/recipes/cezara-salati.jpg"
+imageAuthor: "Geoff Peters from Vancouver, BC, Canada"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Caesar_salad_(2).jpg"
 emoji: "🥗"
 icon: soup
 iconColors: "#8bb04a, #f7ecd0"

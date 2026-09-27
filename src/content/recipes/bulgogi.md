@@ -3,6 +3,11 @@ title: "Bulgogi"
 description: "Korejiešu marinēta liellopa gaļa, ātri apcepta ar sīpoliem. Saldena, sulīga un aromātiska."
 cuisine: korejiesu
 category: pamatedieni
+image: "/images/recipes/bulgogi.jpg"
+imageAuthor: "국립국어원"
+imageLicense: "CC BY-SA 2.0 kr"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Bulgogi_2.jpg"
 emoji: "🥩"
 icon: skillet
 iconColors: "#7a3e22, #3a2a1a"

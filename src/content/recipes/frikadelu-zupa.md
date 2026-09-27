@@ -2,6 +2,11 @@
 title: "Frikadeļu zupa"
 description: "Dzidra, sildoša zupa ar maltās gaļas bumbiņām, kartupeļiem, burkāniem un dillēm."
 category: zupas
+image: "/images/recipes/frikadelu-zupa.jpg"
+imageAuthor: "Key West Wedding Photography"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/58003213@N00/52367784392"
 emoji: "🍲"
 icon: soup
 iconColors: "#e8c36a"

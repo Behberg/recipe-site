@@ -3,6 +3,11 @@ title: "Bruskete ar tomātiem un baziliku"
 description: "Grauzdēta maize ar ķiploku, sulīgiem tomātiem, baziliku un olīveļļu."
 cuisine: italu
 category: salati-un-uzkodas
+image: "/images/recipes/bruskete.jpg"
+imageAuthor: "Abi Porter"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tomato_and_basil_bruschetta_(4925749658).jpg"
 emoji: "🍅"
 icon: flatbread
 iconColors: "#d9a557, #d6402a"

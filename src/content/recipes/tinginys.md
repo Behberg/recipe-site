@@ -3,6 +3,11 @@ title: "Tinginys (slinkais pīrāgs)"
 description: "Šokolādes un cepumu deserts ar iebiezināto pienu. Bez cepšanas, gatavs pēc nakts ledusskapī."
 cuisine: lietuviesu
 category: saldie-edieni
+image: "/images/recipes/tinginys.jpg"
+imageAuthor: "Bearas"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tinginys_Anglijoje.JPG"
 emoji: "🍫"
 icon: loaf
 iconColors: "#4a2a1a, #e8d3a8"

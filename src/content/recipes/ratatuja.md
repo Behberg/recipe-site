@@ -3,6 +3,11 @@ title: "Ratatuja"
 description: "Provansas dārzeņu sautējums ar baklažāniem, kabačiem, papriku un tomātiem."
 cuisine: francu
 category: pamatedieni
+image: "/images/recipes/ratatuja.jpg"
+imageAuthor: "Jack145945"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Ratatouille_home_cooked.jpg"
 emoji: "🍆"
 icon: skillet
 iconColors: "#c8402a, #6f3a8a"

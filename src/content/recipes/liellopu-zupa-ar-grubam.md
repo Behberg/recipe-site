@@ -2,6 +2,10 @@
 title: "Liellopu gaļas zupa ar grūbām un dārzeņiem"
 description: "Bagātīga liellopu gaļas zupa ar pērļu grūbām, kartupeļiem, burkāniem un selerijām. Sātīga kā pusdienas, silda kā krāsns."
 category: zupas
+image: "/images/recipes/liellopu-zupa-ar-grubam.jpg"
+imageAuthor: "Photographer: Peggy Greb, Original uploader: Fredrik"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Vegetable_beef_barley_soup.jpg"
 emoji: "🍲"
 icon: soup
 iconColors: "#b8763a, #f7f2ea"

@@ -2,6 +2,11 @@
 title: "Mandeļu kūka bez miltiem (bezglutēna)"
 description: "Mitra, riekstaina mandeļu kūka bez kviešu miltiem ar citrona miziņu un grauzdētām mandelēm. Vienkārša un bezglutēna."
 category: saldie-edieni
+image: "/images/recipes/mandelu-kuka.jpg"
+imageAuthor: "avlxyz"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/"
+imageSource: "https://www.flickr.com/photos/10559879@N00/4602836149"
 emoji: "🌰"
 icon: cake
 iconColors: "#e8c890, #d9a86a"

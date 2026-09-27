@@ -3,6 +3,11 @@ title: "Rasolņiks ar grūbām un marinētiem gurķiem"
 description: "Sātīgā rasolņika zupa ar liellopu gaļu, pērļu grūbām un marinētiem gurķiem. Viegli skāba, sildoša un ideāla aukstā dienā."
 cuisine: austrumeiropas
 category: zupas
+image: "/images/recipes/rasolniks.jpg"
+imageAuthor: "Kagor"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Rozsolnyk.jpg"
 emoji: "🥒"
 icon: soup
 iconColors: "#e2c98a, #f7f2ea"

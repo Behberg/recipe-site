@@ -2,6 +2,11 @@
 title: "Ingvera tēja ar citronu un medu"
 description: "Stipra, sildoša svaiga ingvera tēja ar citronu un medu. Pret saaukstēšanos un aukstumu."
 category: dzerieni
+image: "/images/recipes/ingvera-teja.jpg"
+imageAuthor: "congerdesign"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Ginger_tea.jpg"
 emoji: "🫖"
 icon: glass
 iconColors: "#e8b84a, #6f9a4a"

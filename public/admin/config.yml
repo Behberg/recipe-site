@@ -84,7 +84,11 @@ collections:
         name: image
         widget: image
         required: false
-        hint: 'Vēlams horizontāls vai kvadrātveida foto, vismaz 1200 px plats. Ja foto nav, tiek rādīta emocijzīme.'
+        hint: 'Vēlams horizontāls vai kvadrātveida foto, vismaz 1200 px plats. Ja foto nav, tiek rādīta ilustrācija.'
+      - { label: 'Foto autors', name: imageAuthor, widget: string, required: false, hint: 'Obligāti, ja foto ņemts no atvērtas licences avota (piemēram Wikimedia Commons vai Flickr).' }
+      - { label: 'Foto licence', name: imageLicense, widget: string, required: false, hint: 'Piemēram CC BY 2.0 vai CC0.' }
+      - { label: 'Licences saite', name: imageLicenseUrl, widget: string, required: false }
+      - { label: 'Foto avota saite', name: imageSource, widget: string, required: false }
       - label: 'Emocijzīme (ja nav foto)'
         name: emoji
         widget: string

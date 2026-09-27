@@ -3,6 +3,11 @@ title: "Lobio"
 description: "Gruzīnu sarkano pupiņu sautējums ar valriekstiem, koriandru un garšvielām."
 cuisine: gruzinu
 category: pamatedieni
+image: "/images/recipes/lobio.jpg"
+imageAuthor: "Georgian Recipes at Georgia About"
+imageLicense: "CC BY 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lobio_with_nuts.jpg"
 emoji: "🫘"
 icon: soup
 iconColors: "#7a2a1a"

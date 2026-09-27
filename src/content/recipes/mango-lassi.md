@@ -3,6 +3,11 @@ title: "Mango lasi"
 description: "Krēmīgs indiešu jogurta dzēriens ar mango un kardamonu."
 cuisine: indiesu
 category: dzerieni
+image: "/images/recipes/mango-lassi.jpg"
+imageAuthor: "Nithyasrm"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tasty_Mango_lassi_picture.JPG"
 emoji: "🥭"
 icon: glass
 iconColors: "#f2b33a"

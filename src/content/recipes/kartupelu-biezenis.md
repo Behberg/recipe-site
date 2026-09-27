@@ -2,6 +2,11 @@
 title: "Kartupeļu biezenis"
 description: "Gluds, krēmīgs kartupeļu biezenis ar sviestu un siltu pienu. Visvienkāršākais un mīļākais piedēvs."
 category: pamatedieni
+image: "/images/recipes/kartupelu-biezenis.jpg"
+imageAuthor: "sousvideguy"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sous_vide_mashed_potatoes.jpg"
 emoji: "🥔"
 icon: soup
 iconColors: "#f3e2a8"

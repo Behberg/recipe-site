@@ -3,6 +3,11 @@ title: "Meksikāņu tomātu rīsi"
 description: "Irdeni rīsi, sautēti ar tomātiem, sīpolu, ķiploku un kuminu. Piedēvs tako un burito."
 cuisine: meksikas
 category: pamatedieni
+image: "/images/recipes/meksikanu-risi.jpg"
+imageAuthor: "Maryam S."
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mexican_rice_and_beans.jpg"
 emoji: "🍚"
 icon: soup
 iconColors: "#e0782a, #f7f2ea, #6f9a3a"

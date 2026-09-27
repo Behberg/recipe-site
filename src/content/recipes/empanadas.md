@@ -3,6 +3,11 @@ title: "Argentīnas empanadas"
 description: "Cepti pīrādziņi ar liellopa gaļu, sīpoliem, olīvām un olu. Argentīnas svētku galda klasika."
 cuisine: latinamerikas
 category: maize-un-cepumi
+image: "/images/recipes/empanadas.jpg"
+imageAuthor: "jthetzel"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/97132917@N00/14800668181"
 emoji: "🥟"
 icon: bun
 iconColors: "#d9913a"

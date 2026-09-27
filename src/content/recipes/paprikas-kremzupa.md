@@ -2,6 +2,11 @@
 title: "Ceptu paprikas un tomātu krēmzupa"
 description: "Salda, dūmakaina krāsnī ceptu papriku un tomātu krēmzupa ar ķiplokiem un baziliku. Vegāniska un krāsaina."
 category: zupas
+image: "/images/recipes/paprikas-kremzupa.jpg"
+imageAuthor: "Andy / Andrew Fogg from near Cambridge, UK"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Roast_red_pepper_and_tomato_soup_(9329225756).jpg"
 emoji: "🫑"
 icon: soup
 iconColors: "#d9452e, #f7f2ea"

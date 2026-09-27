@@ -2,6 +2,11 @@
 title: "Pankūku rullīši ar gaļas pildījumu"
 description: "Plānas pankūkas ar sulīgu maltās gaļas un sīpolu pildījumu, saritinātas aploksnītēs un apceptas sviestā. Sasaldējas un uzsildās lieliski."
 category: pamatedieni
+image: "/images/recipes/pankuku-rullisi-ar-galu.jpg"
+imageAuthor: "Boonlert"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mini_Pancake_Rolls_with_Salted_Egg_Yolk_Coconut_Custard.jpg"
 emoji: "🥞"
 icon: plate
 iconColors: "#e8c07a, #f3efe6, #f5ead0"

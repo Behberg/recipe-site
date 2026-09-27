@@ -3,6 +3,11 @@ title: "Hinkali"
 description: "Lieli gruzīnu pelmeņi ar sulīgu gaļas pildījumu un buljonu iekšā. Ēd ar rokām."
 cuisine: gruzinu
 category: pamatedieni
+image: "/images/recipes/hinkali.jpg"
+imageAuthor: "Francesc Fort"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Khinkali_-_Batumi.jpg"
 emoji: "🥟"
 icon: plate
 iconColors: "#efe6d0, #f3efe6"

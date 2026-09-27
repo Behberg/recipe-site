@@ -3,6 +3,11 @@ title: "Soļanka"
 description: "Bagātīga, skābena gaļas zupa ar kūpinājumiem, marinētiem gurķiem, olīvām un citronu."
 cuisine: austrumeiropas
 category: zupas
+image: "/images/recipes/solanka.jpg"
+imageAuthor: "Pannet"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Soljanka_food_05.jpg"
 emoji: "🍲"
 icon: soup
 iconColors: "#b8421f"

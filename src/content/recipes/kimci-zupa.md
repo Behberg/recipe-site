@@ -3,6 +3,11 @@ title: "Kimči zupa ar tofu"
 description: "Sildoša un sātīga korejiešu zupa ar nobriedušu kimči, cūkgaļu un tofu."
 cuisine: korejiesu
 category: zupas
+image: "/images/recipes/kimci-zupa.jpg"
+imageAuthor: "by miyagawa"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Korean_stew-Kimchi_jjigae-01.jpg"
 emoji: "🌶️"
 icon: soup
 iconColors: "#d8402a"

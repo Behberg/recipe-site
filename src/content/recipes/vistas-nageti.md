@@ -3,6 +3,11 @@ title: "Krāsnī cepti vistas nageti"
 description: "Kraukšķīgi vistas gabaliņi kukurūzas pārslu panējumā, cepti krāsnī, nevis eļļā."
 cuisine: amerikas
 category: pamatedieni
+image: "/images/recipes/vistas-nageti.jpg"
+imageAuthor: "HaJunkiyada"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Dinosaur_Shaped_Chicken_Nuggets_with_Fresh_Salad.jpg"
 emoji: "🍗"
 icon: plate
 iconColors: "#d9a045, #f3efe6, #c8402a"

@@ -2,6 +2,11 @@
 title: "Mājas bageļi ar sezamu"
 description: "Blīvi, košļājami bageļi, kurus pirms cepšanas ievāra ūdenī ar medu. Tieši tādi kā Ņujorkas beķereju bageļi, tikai no jūsu krāsns."
 category: maize-un-cepumi
+image: "/images/recipes/majas-bageli.jpg"
+imageAuthor: "Shisma"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Bagel_with_sesame_3.jpg"
 emoji: "🥯"
 icon: bun
 iconColors: "#c8883a"

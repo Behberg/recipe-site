@@ -3,6 +3,10 @@ title: "Masala čajs (Indijas garšvielu tēja ar pienu)"
 description: "Smaržīga Indijas masala tēja ar pienu, ingveru, kardamonu, kanēli un krustnagliņām. Silda no iekšpuses aukstā dienā."
 cuisine: indiesu
 category: dzerieni
+image: "/images/recipes/masala-cajs.jpg"
+imageAuthor: "Miansari66"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Masala_Chai.JPG"
 emoji: "☕"
 icon: glass
 iconColors: "#b8844a, #f5efe6"

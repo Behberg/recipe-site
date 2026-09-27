@@ -3,6 +3,11 @@ title: "Brazīlijas siera maizītes (pão de queijo)"
 description: "Mazas, lipīgas siera maizītes no cietes mīklas. Iekšā tukšas un stiepīgas, ārā kraukšķīgas."
 cuisine: latinamerikas
 category: maize-un-cepumi
+image: "/images/recipes/siera-maizites.jpg"
+imageAuthor: "Murilo manzini"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cheesebread.jpg"
 emoji: "🧀"
 icon: bun
 iconColors: "#e3b04a"

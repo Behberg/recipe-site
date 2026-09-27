@@ -3,6 +3,11 @@ title: "Musaka"
 description: "Grieķu baklažānu kārtojums ar jēra vai liellopu gaļas mērci un bešamelu."
 cuisine: grieku
 category: pamatedieni
+image: "/images/recipes/musaka.jpg"
+imageAuthor: "Robert Kindermann aka RobertK"
+imageLicense: "CC BY-SA 2.5"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.5"
+imageSource: "https://commons.wikimedia.org/wiki/File:MussakasMeMelitsanesKePatates01.JPG"
 emoji: "🍆"
 icon: casserole
 iconColors: "#e8c878"

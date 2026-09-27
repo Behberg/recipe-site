@@ -2,6 +2,11 @@
 title: "Karstmaizītes ar šķiņķi un sieru"
 description: "Krāsnī ceptas sviestmaizes ar šķiņķi, sieru un tomātu. Ātras vakariņas vai brokastis."
 category: brokastis
+image: "/images/recipes/karstmaizites.jpg"
+imageAuthor: "jeffreyw"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mmm...hot_ham_and_cheese_with_homemade_mustard_(4970848133).jpg"
 emoji: "🥪"
 icon: flatbread
 iconColors: "#d9a557, #f3cf5a, #f28b8a"

@@ -2,6 +2,11 @@
 title: "Vaniļas kapkeiki ar krēmsiera krēmu"
 description: "Mīksti vaniļas kapkeiki ar gaisīgu krēmsiera krēma cepurīti un krāsainām skaidiņām. Dzimšanas dienu un bērnu svētku zvaigzne."
 category: maize-un-cepumi
+image: "/images/recipes/kapkeiki-ar-krema-cepurites.jpg"
+imageAuthor: "Kristin Ausk"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mardi_Gras_cinnamon_vanilla_crumb_cupcake.jpg"
 emoji: "🧁"
 icon: bun
 iconColors: "#f3c0c8"

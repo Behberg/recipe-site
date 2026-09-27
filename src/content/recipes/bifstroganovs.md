@@ -3,6 +3,11 @@ title: "Bifstroganovs"
 description: "Maigas liellopu gaļas strēmeles krējuma un sēņu mērcē. Ātri un ļoti garšīgi."
 cuisine: austrumeiropas
 category: pamatedieni
+image: "/images/recipes/bifstroganovs.jpg"
+imageAuthor: "Pittaya Sroilong (original file) ; cropped and retouched by Off-shell"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Beef_Stroganoff-02_cropped.jpg"
 emoji: "🥩"
 icon: skillet
 iconColors: "#d9b98a, #7a3e22"

@@ -3,6 +3,11 @@ title: "Brigadeiro"
 description: "Brazīlijas šokolādes karameļu bumbiņas no kondensētā piena. Tikai 4 sastāvdaļas."
 cuisine: latinamerikas
 category: saldie-edieni
+image: "/images/recipes/brigadeiro.jpg"
+imageAuthor: "User Mayra (Maych) on Flickr"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Brigadeiro.jpg"
 emoji: "🍬"
 icon: sweets
 iconColors: "#4a2a1a"

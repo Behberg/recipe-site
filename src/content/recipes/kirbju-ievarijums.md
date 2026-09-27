@@ -2,6 +2,11 @@
 title: "Ķirbju ievārījums ar apelsīnu"
 description: "Saulains ķirbju ievārījums ar apelsīnu un citronu. Negaidīti gards un ļoti skaists."
 category: ievarijumi-un-konservi
+image: "/images/recipes/kirbju-ievarijums.jpg"
+imageAuthor: "Shisma"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pumpkin_jam_and_pumpkins.jpg"
 emoji: "🎃"
 icon: jar
 iconColors: "#e8801e"

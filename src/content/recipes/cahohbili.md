@@ -3,6 +3,11 @@ title: "Čahohbili"
 description: "Gruzīnu vistas sautējums tomātos ar sīpoliem, ķiploku un daudz svaigu zaļumu."
 cuisine: gruzinu
 category: pamatedieni
+image: "/images/recipes/cahohbili.jpg"
+imageAuthor: "Victor Vizu"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:%D0%A7%D0%B0%D1%85%D0%BE%D1%85%D0%B1%D0%B8%D0%BB%D0%B8.JPG"
 emoji: "🍗"
 icon: skillet
 iconColors: "#c8402a, #d9913a"

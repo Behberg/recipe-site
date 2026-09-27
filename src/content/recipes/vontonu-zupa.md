@@ -3,6 +3,11 @@ title: "Vontonu zupa"
 description: "Dzidra buljona zupa ar maigiem gaļas un garneļu pelmeņiem, pak choi un lokiem."
 cuisine: kiniesu
 category: zupas
+image: "/images/recipes/vontonu-zupa.jpg"
+imageAuthor: "Gadium irggvbobjv"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:HK_SW_%E4%B8%8A%E7%92%B0_Sheung_Wan_%E7%9A%87%E5%90%8E%E5%A4%A7%E9%81%93%E4%B8%AD_303_Queen%27s_Road_Central_%E6%AC%8A%E8%A8%98%E9%9B%B2%E5%90%9E%E9%BA%B5_Wonton_noodle_soup_shop_June_2020_SS2_10.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#e8c890"

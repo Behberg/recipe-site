@@ -3,6 +3,11 @@ title: "Vācu kartupeļu salāti"
 description: "Siltie kartupeļu salāti ar sīpolu, bekonu un etiķa mērci. Bez majonēzes."
 cuisine: vacu
 category: salati-un-uzkodas
+image: "/images/recipes/vacu-kartupelu-salati.jpg"
+imageAuthor: "jules"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:German_potato_salad.jpg"
 emoji: "🥔"
 icon: soup
 iconColors: "#e8d08a, #f7f2ea, #c8664a"

@@ -3,6 +3,11 @@ title: "Miso zupa"
 description: "Viegla japāņu zupa ar miso pastu, tofu, jūras aļģēm un lokiem. Gatava 10 minūtēs."
 cuisine: japanu
 category: zupas
+image: "/images/recipes/miso-zupa.jpg"
+imageAuthor: "Ocdp"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Miso_Soup_001.jpg"
 emoji: "🍵"
 icon: soup
 iconColors: "#d9b87a"

@@ -3,6 +3,11 @@ title: "Skones"
 description: "Mīkstas britu tējas maizītes, ko pasniedz ar ievārījumu un saldo krējumu."
 cuisine: britu
 category: maize-un-cepumi
+image: "/images/recipes/skones.jpg"
+imageAuthor: "Benson Kua from Toronto, Canada"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lemon_Scones_(6849625315).jpg"
 emoji: "🫖"
 icon: bun
 iconColors: "#e3b567"

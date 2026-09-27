@@ -2,6 +2,11 @@
 title: "Ķiršu ievārījums"
 description: "Tumši sarkans ķiršu ievārījums ar veselām ogām. Brīnišķīgs ar saldējumu un biezpienu."
 category: ievarijumi-un-konservi
+image: "/images/recipes/kirsu-ievarijums.jpg"
+imageAuthor: "Kolforn"
+imageLicense: "CC BY 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:11-06-2017_Making_Black_cherry_jam_(10).JPG"
 emoji: "🍒"
 icon: jar
 iconColors: "#7a0f24"

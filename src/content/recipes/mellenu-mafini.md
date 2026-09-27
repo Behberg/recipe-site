@@ -2,6 +2,11 @@
 title: "Melleņu mafini ar jogurtu un citronu"
 description: "Pūkaini, mitri melleņu mafini ar jogurtu un citrona miziņu. Ar svaigām vai saldētām mellenēm visu gadu."
 category: maize-un-cepumi
+image: "/images/recipes/mellenu-mafini.jpg"
+imageAuthor: "SKopp"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Blueberry_muffins,_whole_and_partial.jpg"
 emoji: "🫐"
 icon: bun
 iconColors: "#d9a46a"

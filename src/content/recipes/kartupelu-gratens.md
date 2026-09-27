@@ -3,6 +3,11 @@ title: "Kartupeļu gratēns"
 description: "Plānās kartupeļu šķēlēs krējumā ar ķiploku, cepti krāsnī līdz zeltainai garoziņai."
 cuisine: francu
 category: pamatedieni
+image: "/images/recipes/kartupelu-gratens.jpg"
+imageAuthor: "Ludovic Péron"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Gratin_dauphinois.jpg"
 emoji: "🥔"
 icon: casserole
 iconColors: "#efd28a"

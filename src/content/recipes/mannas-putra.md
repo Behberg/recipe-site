@@ -2,6 +2,11 @@
 title: "Mannas putra"
 description: "Maiga, gluda mannas putra ar pienu un sviestu. Bērnības brokastis bez neviena kunkuļa."
 category: brokastis
+image: "/images/recipes/mannas-putra.jpg"
+imageAuthor: "Alice Wiegand"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Griessbrei.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#f6efdc"

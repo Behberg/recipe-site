@@ -3,6 +3,11 @@ title: "Čili kon karne"
 description: "Pikants liellopu gaļas un pupiņu sautējums ar tomātiem un garšvielām."
 cuisine: amerikas
 category: pamatedieni
+image: "/images/recipes/cili-kon-karne.jpg"
+imageAuthor: "Carstor"
+imageLicense: "CC BY-SA 2.5"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.5"
+imageSource: "https://commons.wikimedia.org/wiki/File:Bowl_of_chili.jpg"
 emoji: "🌶️"
 icon: soup
 iconColors: "#9a2a1c"

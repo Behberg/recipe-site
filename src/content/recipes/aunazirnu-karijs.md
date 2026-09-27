@@ -3,6 +3,11 @@ title: "Aunazirņu karijs (chana masala)"
 description: "Aunazirņi pikantā tomātu un sīpolu mērcē ar indiešu garšvielām. Vegānisks un sātīgs."
 cuisine: indiesu
 category: pamatedieni
+image: "/images/recipes/aunazirnu-karijs.jpg"
+imageAuthor: "Simon Law (sfllaw) from Montréal, QC, Canada"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chana_masala.jpg"
 emoji: "🫘"
 icon: soup
 iconColors: "#d9822b"

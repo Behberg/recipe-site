@@ -2,6 +2,11 @@
 title: "Šampinjonu krēmzupa ar timiānu"
 description: "Bieza, krēmīga šampinjonu zupa ar apceptām sēnēm, timiānu un saldo krējumu. Restorāna garša no vienkāršām sastāvdaļām."
 category: zupas
+image: "/images/recipes/sampinjonu-kremzupa.jpg"
+imageAuthor: "MichalPL"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cream_of_mushroom_soup.jpg"
 emoji: "🍄"
 icon: soup
 iconColors: "#c9ae8a, #f7f2ea"

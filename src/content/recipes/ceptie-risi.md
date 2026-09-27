@@ -3,6 +3,11 @@ title: "Ceptie rīsi ar olu un dārzeņiem"
 description: "Ātrs ķīniešu vokā gatavots ēdiens no vakardienas rīsiem ar olu, zirnīšiem, burkāniem un sojas mērci."
 cuisine: kiniesu
 category: pamatedieni
+image: "/images/recipes/ceptie-risi.jpg"
+imageAuthor: "Gary Dee"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Fried_Rice_1_(Eggs_%26_Vegetables).jpg"
 emoji: "🍚"
 icon: skillet
 iconColors: "#f0d890, #8bb04a"

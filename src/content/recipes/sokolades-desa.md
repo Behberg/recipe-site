@@ -2,6 +2,11 @@
 title: "Šokolādes desa no cepumiem ar riekstiem"
 description: "Bērnības klasika: šokolādes desa no drupinātiem cepumiem, kakao, sviesta un riekstiem. Bez cepšanas, gatava ledusskapī."
 category: saldie-edieni
+image: "/images/recipes/sokolades-desa.jpg"
+imageAuthor: "jppaguilar"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Salame_de_chocolate_-_Chocolat_Salami.jpg"
 emoji: "🍫"
 icon: sweets
 iconColors: "#4a2a1a, #fbf9f5"

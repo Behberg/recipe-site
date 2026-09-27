@@ -3,6 +3,11 @@ title: "Lahmadžuns"
 description: "Plāna turku pica ar pikantu maltās gaļas, tomātu un pētersīļu virskārtu. Ēd, ietinot ar salātiem."
 cuisine: turku
 category: maize-un-cepumi
+image: "/images/recipes/lahmadzuns.jpg"
+imageAuthor: "Rainer Zenz"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lahmacun.jpg"
 emoji: "🫓"
 icon: flatbread
 iconColors: "#e0a852, #b8421f"

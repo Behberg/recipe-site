@@ -3,6 +3,11 @@ title: "Čilbirs (olas jogurtā)"
 description: "Atdzītas olas uz ķiploku jogurta, pārlietas ar karstu paprikas sviestu. Turku brokastu gardums."
 cuisine: turku
 category: brokastis
+image: "/images/recipes/cilbirs.jpg"
+imageAuthor: "Premshree Pillai from Brooklyn, NY, US"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:%C3%87%C4%B1lb%C4%B1r_with_duck-fat_saut%C3%A9ed_Ramps_(14826584557).jpg"
 emoji: "🥚"
 icon: soup
 iconColors: "#f4efe4"

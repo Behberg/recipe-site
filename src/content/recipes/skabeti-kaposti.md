@@ -2,6 +2,11 @@
 title: "Mājas skābēti kāposti"
 description: "Dabīgi skābēti kāposti ar burkāniem un ķimenēm. Tikai kāposti, sāls un laiks."
 category: ievarijumi-un-konservi
+image: "/images/recipes/skabeti-kaposti.jpg"
+imageAuthor: "Gandydancer"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Saurkraut.JPG"
 emoji: "🥬"
 icon: jar
 iconColors: "#d9cf8a"

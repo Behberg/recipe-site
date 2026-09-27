@@ -2,6 +2,11 @@
 title: "Liellopu gaļas sautējums ar burkāniem un kartupeļiem"
 description: "Lēni sautēta, mīksta liellopu gaļa ar burkāniem, kartupeļiem un timiānu biezā mērcē. Sātīgs ziemas ēdiens, kas sasildās pats."
 category: pamatedieni
+image: "/images/recipes/liellopu-sautejums-ar-burkaniem.jpg"
+imageAuthor: "A Healthier Michigan from Detroit, United States"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Irish_Beef_Stew_(34046928633).jpg"
 emoji: "🍲"
 icon: skillet
 iconColors: "#7a3a1a, #f08a2e"

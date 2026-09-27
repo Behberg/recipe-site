@@ -3,6 +3,11 @@ title: "Skābeņu zupa"
 description: "Viegli skābena pavasara zupa ar svaigām skābenēm, kartupeļiem, olu un krējumu."
 cuisine: latviesu
 category: zupas
+image: "/images/recipes/skabenu-zupa.jpg"
+imageAuthor: "Mariusz Zuberski"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Zupa_szczawiowa_(sorrel_soup).jpg"
 emoji: "🌿"
 icon: soup
 iconColors: "#8aa33a"

@@ -3,6 +3,11 @@ title: "Baba ganušs"
 description: "Baklažānu pasta ar dūmu aromātu, tahini, ķiploku un citronu."
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
+image: "/images/recipes/baba-ganus.jpg"
+imageAuthor: "takaokun"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Baba_ganoush_and_pita.jpg"
 emoji: "🍆"
 icon: soup
 iconColors: "#cdb89a"

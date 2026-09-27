@@ -3,6 +3,11 @@ title: "Vistas šavarma"
 description: "Garšvielās marinēta vista lavašā ar dārzeņiem un ķiploku mērci. Labāka nekā kioskā."
 cuisine: tuvo-austrumu
 category: pamatedieni
+image: "/images/recipes/vistas-savarma.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_Shawarma_Wrap_-_Lavash_2024-09-11.jpg"
 emoji: "🌯"
 icon: flatbread
 iconColors: "#e8d3a8, #c8702a"

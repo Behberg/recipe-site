@@ -3,6 +3,11 @@ title: "Onigiri (japāņu rīsu bumbiņas ar tunci)"
 description: "Japāņu onigiri: rīsu trijstūri ar tunča un majonēzes pildījumu, ietīti nori. Ideāla uzkoda pusdienu kārbiņā un pikniku somā."
 cuisine: japanu
 category: salati-un-uzkodas
+image: "/images/recipes/onigiri.jpg"
+imageAuthor: "tednmiki"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Japanese_rice_balls_(onigiri).jpg"
 emoji: "🍙"
 icon: sweets
 iconColors: "#f5f0e0, #fbf9f5"

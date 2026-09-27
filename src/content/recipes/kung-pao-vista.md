@@ -3,6 +3,11 @@ title: "Kung pao vista"
 description: "Pikanta Sičuaņas vista vokā ar zemesriekstiem, čili un saldskābu sojas mērci."
 cuisine: kiniesu
 category: pamatedieni
+image: "/images/recipes/kung-pao-vista.jpg"
+imageAuthor: "N509FZ"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kung_Pao_Chicken_at_Yujiayan_Restaurant_(20230510123120).jpg"
 emoji: "🌶️"
 icon: skillet
 iconColors: "#b8521f, #c98a4a"

@@ -2,6 +2,11 @@
 title: "Kartupeļu biezeņa plācenīši"
 description: "Zeltaini plācenīši no vakardienas kartupeļu biezeņa ar sieru un lokiem."
 category: pamatedieni
+image: "/images/recipes/kartupelu-placenisi.jpg"
+imageAuthor: "Oo Uui"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Potato_cakes.jpg"
 emoji: "🥔"
 icon: plate
 iconColors: "#e0a04a, #f3efe6, #fbf7ef"

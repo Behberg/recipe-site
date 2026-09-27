@@ -3,6 +3,11 @@ title: "Saldskābā vista"
 description: "Kraukšķīgi vistas gabaliņi spīdīgā saldskābā mērcē ar papriku un ananasu."
 cuisine: kiniesu
 category: pamatedieni
+image: "/images/recipes/saldskaba-vista.jpg"
+imageAuthor: "Evan Joshua Swigart (TheCulinaryGeek) from Chicago, Illinois, USA; hometown of Ames, Iowa, USA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Flickr_preppybyday_4786746354--Orange_chicken.jpg"
 emoji: "🍍"
 icon: soup
 iconColors: "#e0602a, #f7f2ea, #f2c230"

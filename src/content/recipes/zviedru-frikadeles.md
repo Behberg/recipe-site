@@ -3,6 +3,11 @@ title: "Zviedru gaļas bumbiņas"
 description: "Mazas gaļas bumbiņas krējuma mērcē ar brūkleņu ievārījumu un kartupeļu biezeni."
 cuisine: skandinavu
 category: pamatedieni
+image: "/images/recipes/zviedru-frikadeles.jpg"
+imageAuthor: "Vincenty846"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Swedish_Meatballs_IKEA_Kota_Baru_Parahyangan.jpg"
 emoji: "🍖"
 icon: skillet
 iconColors: "#e8d3a8, #8a5230"

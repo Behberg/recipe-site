@@ -3,6 +3,11 @@ title: "Kaprēzes salāti"
 description: "Nogatavojušies tomāti, maiga mocarella un svaigs baziliks ar olīveļļu. Vasaras salāti 5 minūtēs."
 cuisine: italu
 category: salati-un-uzkodas
+image: "/images/recipes/kaprezes-salati.jpg"
+imageAuthor: "Rainer Zenz"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Caprese-1_(tigher_crop).jpg"
 emoji: "🍅"
 icon: plate
 iconColors: "#d6402a, #f3efe6"

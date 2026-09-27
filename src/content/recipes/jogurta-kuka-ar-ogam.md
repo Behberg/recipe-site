@@ -2,6 +2,11 @@
 title: "Jogurta kūka ar ogām"
 description: "Mitra, pūkaina jogurta kūka ar ogām un citrona miziņu, sajaukta vienā bļodā. Vienkāršākā vasaras kūka ar svaigām vai saldētām ogām."
 category: saldie-edieni
+image: "/images/recipes/jogurta-kuka-ar-ogam.jpg"
+imageAuthor: "dichohecho"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/8978957@N07/3792816989"
 emoji: "🍓"
 icon: cake
 iconColors: "#f3e3b8, #f7ecd5"

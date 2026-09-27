@@ -3,6 +3,11 @@ title: "Mango ar lipīgajiem rīsiem"
 description: "Taizemes deserts: kokosriekstu pienā vārīti lipīgie rīsi ar gatavu mango un sezamu."
 cuisine: taizemes
 category: saldie-edieni
+image: "/images/recipes/mango-lipigie-risi.jpg"
+imageAuthor: "Dennis Wong from Hong Kong, Hong Kong"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mango_sticy_rice_(3859549574).jpg"
 emoji: "🥭"
 icon: plate
 iconColors: "#f5b82a, #fbf7ef"

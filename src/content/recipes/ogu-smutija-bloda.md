@@ -2,6 +2,11 @@
 title: "Ogu smūtija bļoda ar granolu"
 description: "Biezs ogu un banānu smūtijs bļodā ar granolu, svaigām ogām un čia sēklām. Krāsainas, vitamīniem bagātas brokastis 10 minūtēs."
 category: brokastis
+image: "/images/recipes/ogu-smutija-bloda.jpg"
+imageAuthor: "Miscellaneous contributor"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Green_smoothie_bowl_with_berries_and_seeds.jpg"
 emoji: "🫐"
 icon: soup
 iconColors: "#9b4a8e, #f7f2ea, #3a3a8c"

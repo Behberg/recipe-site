@@ -3,6 +3,11 @@ title: "Grieķu salāti"
 description: "Tomāti, gurķi, sarkanie sīpoli, olīvas un feta ar olīveļļu un oregano."
 cuisine: grieku
 category: salati-un-uzkodas
+image: "/images/recipes/grieku-salati.jpg"
+imageAuthor: "rawpixel"
+imageLicense: "CC0"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/"
+imageSource: "https://www.rawpixel.com/image/5911961/image-white-background-public-domain-food"
 emoji: "🥗"
 icon: soup
 iconColors: "#d9443a, #8bb04a"

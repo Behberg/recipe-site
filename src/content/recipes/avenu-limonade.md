@@ -2,6 +2,11 @@
 title: "Aveņu limonāde ar citronu"
 description: "Spilgti rozā mājas aveņu limonāde ar citronu un piparmētru. Atspirdzinošs vasaras dzēriens no svaigām vai saldētām avenēm."
 category: dzerieni
+image: "/images/recipes/avenu-limonade.jpg"
+imageAuthor: "Artem Beliaikin from Moscow, Russia"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Raspberry_lemonade_on_a_wooden_table._Iced_summer_drink._(43108065435).jpg"
 emoji: "🍓"
 icon: glass
 iconColors: "#e8506a"

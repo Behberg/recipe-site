@@ -3,6 +3,11 @@ title: "Cepumi ar šokolādes gabaliņiem"
 description: "Klasiski amerikāņu cepumi: kraukšķīgas maliņas, mīksts vidus un daudz šokolādes."
 cuisine: amerikas
 category: maize-un-cepumi
+image: "/images/recipes/sokolades-cepumi.jpg"
+imageAuthor: "Mshuang2"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chocolate_chip_cookies_on_cutting_board.jpg"
 emoji: "🍪"
 icon: sweets
 iconColors: "#b8733a"

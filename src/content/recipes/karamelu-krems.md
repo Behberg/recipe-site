@@ -2,6 +2,11 @@
 title: "Karameļu krēms (krēmkaramele)"
 description: "Zīdaini maigs karameļu krēms ar šķidru karameli, cepts ūdens vannā. Klasisks deserts no olām, piena un cukura."
 category: saldie-edieni
+image: "/images/recipes/karamelu-krems.jpg"
+imageAuthor: "BokuAlec"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Italian_Creme_Caramel.JPG"
 emoji: "🍮"
 icon: ramekin
 iconColors: "#b8661e, #f6e2b0"

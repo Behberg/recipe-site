@@ -2,6 +2,11 @@
 title: "Kartupeļu un puravu krēmzupa"
 description: "Maiga, sātīga kartupeļu un puravu zupa ar sviestu un pienu. Viena no lētākajām un mīlīgākajām zupām, ko var pagatavot."
 category: zupas
+image: "/images/recipes/kartupelu-puravu-zupa.jpg"
+imageAuthor: "Ewan Munro from London, UK"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mon_Plaisir,_Covent_Garden,_London_(3717184145).jpg"
 emoji: "🥔"
 icon: soup
 iconColors: "#ece2c0, #f7f2ea"

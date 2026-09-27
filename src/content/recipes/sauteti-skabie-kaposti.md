@@ -2,6 +2,11 @@
 title: "Sautēti skābie kāposti"
 description: "Saldskābi sautēti kāposti ar speķi un burkāniem. Ideāls piedēvs gaļai un desiņām."
 category: pamatedieni
+image: "/images/recipes/sauteti-skabie-kaposti.jpg"
+imageAuthor: "MOs810"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kapusta_z_grzybami_2013.jpg"
 emoji: "🥬"
 icon: soup
 iconColors: "#d9c98a, #f7f2ea, #c8664a"

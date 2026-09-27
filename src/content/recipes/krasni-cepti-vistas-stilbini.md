@@ -2,6 +2,11 @@
 title: "Krāsnī cepti vistas stilbiņi ar kartupeļiem"
 description: "Vistas stilbiņi un kartupeļi vienā pannā ar ķiploku un paprikas pulveri. Pats cepas, kamēr tu atpūties."
 category: pamatedieni
+image: "/images/recipes/krasni-cepti-vistas-stilbini.jpg"
+imageAuthor: "Diana from Pennsylvania USA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Barbecued_chicken_drumsticks-01.jpg"
 emoji: "🍗"
 icon: plate
 iconColors: "#c8702a, #f0cf6a"

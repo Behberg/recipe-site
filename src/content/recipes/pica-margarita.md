@@ -3,6 +3,11 @@ title: "Pica Margarita"
 description: "Klasiskā neapoliešu pica ar tomātu mērci, mocarellu un svaigu baziliku uz plānas, kraukšķīgas pamatnes."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/pica-margarita.jpg"
+imageAuthor: "Fabryx98"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pizza-napoletana.jpg"
 emoji: "🍕"
 icon: flatbread
 iconColors: "#e0a050, #d9443a, #fbf7ef"

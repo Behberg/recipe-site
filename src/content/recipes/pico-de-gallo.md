@@ -3,6 +3,11 @@ title: "Pico de gallo (svaigā tomātu salsa)"
 description: "Svaiga meksikāņu tomātu salsa pico de gallo ar sīpolu, čili, koriandru un laimu. Pie tako, načos, grilētas gaļas un zivīm."
 cuisine: meksikas
 category: salati-un-uzkodas
+image: "/images/recipes/pico-de-gallo.jpg"
+imageAuthor: "jeffreyw"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mmm..._Pico_de_Gallo_(5923456035).jpg"
 emoji: "🍅"
 icon: ramekin
 iconColors: "#d9452e, #efe4d6"

@@ -2,6 +2,11 @@
 title: "Mājas kviešu baltmaize"
 description: "Vienkārša mājas baltmaize ar kraukšķīgu garozu un mīkstu vidu. Tikai 6 sastāvdaļas, bez maizes krāsns."
 category: maize-un-cepumi
+image: "/images/recipes/maja-kviesu-baltmaize.jpg"
+imageAuthor: "FranHogan"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Fresh_made_bread_06.jpg"
 emoji: "🍞"
 icon: loaf
 iconColors: "#d9a052"

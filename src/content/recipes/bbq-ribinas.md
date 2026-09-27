@@ -3,6 +3,11 @@ title: "BBQ cūkas ribiņas"
 description: "Lēni ceptas cūkas ribiņas ar garšvielām un lipīgu barbekjū mērci, kas atdalās no kaula."
 cuisine: amerikas
 category: pamatedieni
+image: "/images/recipes/bbq-ribinas.jpg"
+imageAuthor: "WordRidden from Brighton, United Kingdom"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Glacier_Brewhouse_-_BBQ_ribs_(2855239227).jpg"
 emoji: "🍖"
 icon: roast
 iconColors: "#8a3a1a"

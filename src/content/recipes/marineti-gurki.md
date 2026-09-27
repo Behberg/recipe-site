@@ -2,6 +2,11 @@
 title: "Marinēti gurķi ar dillēm"
 description: "Kraukšķīgi, saldskābi marinēti gurķi ar dillēm, ķiplokiem un mārrutkiem ziemas galdam."
 category: ievarijumi-un-konservi
+image: "/images/recipes/marineti-gurki.jpg"
+imageAuthor: "Nikodem Nijaki"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Polish_style_pickled_cucumbers_IMGP0464.jpg"
 emoji: "🥒"
 icon: jar
 iconColors: "#7a9a3a"

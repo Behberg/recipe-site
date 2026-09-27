@@ -3,6 +3,11 @@ title: "Pildīti tomāti un paprikas (gemista)"
 description: "Tomāti un paprikas, pildīti ar rīsiem, zaļumiem un tomātu mīkstumu, cepti ar kartupeļiem."
 cuisine: grieku
 category: pamatedieni
+image: "/images/recipes/gemista.jpg"
+imageAuthor: "Mark Bonica"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Quinoa_stuffed_peppers.jpg"
 emoji: "🫑"
 icon: casserole
 iconColors: "#d9443a"

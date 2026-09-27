@@ -3,6 +3,11 @@ title: "Somu melleņu pīrāgs"
 description: "Plāns smilšu mīklas pīrāgs ar mellenēm un krējuma pildījumu. Ātri pagatavojams un ļoti sulīgs."
 cuisine: skandinavu
 category: saldie-edieni
+image: "/images/recipes/somu-mellenu-pirags.jpg"
+imageAuthor: "Anneli Salo"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mustikkapiirakka_2,_kyps%C3%A4_C_IMG_7763.jpg"
 emoji: "🫐"
 icon: tart
 iconColors: "#3a2a6a, #d9a14e"

@@ -3,6 +3,11 @@ title: "Patatas bravas"
 description: "Kraukšķīgi cepti kartupeļu kubiņi ar pikantu tomātu mērci un ķiploku majonēzi."
 cuisine: spanu
 category: salati-un-uzkodas
+image: "/images/recipes/patatas-bravas.jpg"
+imageAuthor: "Krista"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Patatas_bravas_madrid.jpg"
 emoji: "🥔"
 icon: plate
 iconColors: "#e0a64a, #f3efe6, #c8402a"

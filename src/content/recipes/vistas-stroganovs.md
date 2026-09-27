@@ -2,6 +2,11 @@
 title: "Vistas stroganovs ar sēnēm krējumā"
 description: "Ātrs vistas stroganovs: vistas strēmelītes ar sēnēm un sīpoliem krējuma un sinepju mērcē. Gatavs 30 minūtēs, lielisks ar kartupeļu biezeni."
 category: pamatedieni
+image: "/images/recipes/vistas-stroganovs.jpg"
+imageAuthor: "V 2"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Beef_Stroganoff-04.jpg"
 emoji: "🍗"
 icon: skillet
 iconColors: "#f0d8a8, #c98a4a"

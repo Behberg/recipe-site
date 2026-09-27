@@ -3,6 +3,11 @@ title: "Korejiešu ceptā vista"
 description: "Divreiz cepti, ļoti kraukšķīgi vistas spārniņi saldā un asā gočudžanas glazūrā."
 cuisine: korejiesu
 category: salati-un-uzkodas
+image: "/images/recipes/korejiesu-cepta-vista.jpg"
+imageAuthor: "Francesc Fort"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Korean_Fried_Chicken_-_Chikin.jpg"
 emoji: "🍗"
 icon: plate
 iconColors: "#b8421f, #f3efe6"

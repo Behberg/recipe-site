@@ -2,6 +2,11 @@
 title: "Rabarberu kūka ar bezē virskārtu"
 description: "Smilšu mīklas kūka ar skābeniem rabarberiem un saldu, kraukšķīgu bezē virskārtu. Pavasara kafijas galda zvaigzne."
 category: saldie-edieni
+image: "/images/recipes/rabarberu-kuka-ar-beze.jpg"
+imageAuthor: "Stephen A'Court"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:WikiCon_Wellington_2023_SAC_3543_(cropped).jpg"
 emoji: "🌿"
 icon: tart
 iconColors: "#e8a0a8, #d9a14e"

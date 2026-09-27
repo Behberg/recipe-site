@@ -3,6 +3,11 @@ title: "Spāņu tortilja"
 description: "Bieza kartupeļu un olu omlete ar sīpoliem. Spāņu bāru klasika, kas garšo gan silta, gan auksta."
 cuisine: spanu
 category: brokastis
+image: "/images/recipes/spanu-tortilja.jpg"
+imageAuthor: "Kent Wang"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tortilla_de_patata_-_San_Sebasti%C3%A1n.jpg"
 emoji: "🍳"
 icon: cake
 iconColors: "#f0c85a, #f3d26a"

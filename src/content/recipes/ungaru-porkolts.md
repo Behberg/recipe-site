@@ -3,6 +3,11 @@ title: "Ungāru gulašs pērkelts (biezais liellopu sautējums)"
 description: "Īstais ungāru pērkelts: liellopu gaļa, lēni sautēta ar daudz sīpolu un saldās paprikas biezā, sarkanā mērcē. Ar nūdelēm vai kartupeļiem."
 cuisine: ungaru
 category: pamatedieni
+image: "/images/recipes/ungaru-porkolts.jpg"
+imageAuthor: "RitaE"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Goulash_hungarian.jpg"
 emoji: "🌶️"
 icon: skillet
 iconColors: "#a8301e, #7a3a1a"

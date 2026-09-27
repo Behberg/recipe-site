@@ -2,6 +2,11 @@
 title: "Siera fondī ar maizi un dārzeņiem"
 description: "Šveices siera fondī no Gruyère un Emmental siera ar baltvīnu, kurā mērc maizes kubiņus un dārzeņus. Jautras ziemas vakariņas kompānijā."
 category: pamatedieni
+image: "/images/recipes/siera-fondi.jpg"
+imageAuthor: "Cheese_fondue-01.jpg: the_junes derivative work: Hic et nunc"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cheese_fondue-01-2.jpg"
 emoji: "🧀"
 icon: ramekin
 iconColors: "#f3d060, #8a3a2a"

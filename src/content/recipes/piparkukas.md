@@ -3,6 +3,11 @@ title: "Piparkūkas"
 description: "Smaržīgas Ziemassvētku piparkūkas ar ingveru, kanēli, krustnagliņām un apelsīna miziņu."
 cuisine: latviesu
 category: maize-un-cepumi
+image: "/images/recipes/piparkukas.jpg"
+imageAuthor: "Gaetan Lee"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Gingerbread_men.jpg"
 emoji: "🍪"
 icon: sweets
 iconColors: "#b8733a"

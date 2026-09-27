@@ -2,6 +2,11 @@
 title: "Krāsnī cepta uzpūstā pankūka (Dutch baby)"
 description: "Krāsnī cepta pankūka, kas uzpūšas kā mākonis ar kraukšķīgām malām. Pasniedz ar ogām un pūdercukuru. Iespaidīgas brokastis 25 minūtēs."
 category: brokastis
+image: "/images/recipes/holandes-pankuka.jpg"
+imageAuthor: "Syced"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Dutch_baby,_rosemary.jpg"
 emoji: "🥞"
 icon: skillet
 iconColors: "#e8b04a, #f3cf5a"

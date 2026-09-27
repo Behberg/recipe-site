@@ -3,6 +3,11 @@ title: "Ķirbju krēmzupa"
 description: "Samtaina, oranža ķirbju zupa ar ingveru, kokosriekstu pienu un grauzdētām ķirbju sēkliņām."
 cuisine: francu
 category: zupas
+image: "/images/recipes/kirbju-kremzupa.jpg"
+imageAuthor: "PattayaPatrol"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:DSC_7126_Creamy_pumpkin_soup_garnished_with_a_swirl_of_cream_and_chopped_herbs_served_in_a_white_soup_cup.jpg"
 emoji: "🎃"
 icon: soup
 iconColors: "#e8801e"

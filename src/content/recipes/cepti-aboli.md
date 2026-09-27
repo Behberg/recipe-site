@@ -2,6 +2,11 @@
 title: "Cepti āboli ar medu un riekstiem"
 description: "Krāsnī cepti āboli, pildīti ar riekstiem, rozīnēm, medu un kanēli."
 category: saldie-edieni
+image: "/images/recipes/cepti-aboli.jpg"
+imageAuthor: "Alabama Extension"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Hot_and_Sweet_Baked_Apples_-_50495578482.jpg"
 emoji: "🍎"
 icon: sweets
 iconColors: "#c83a2a"

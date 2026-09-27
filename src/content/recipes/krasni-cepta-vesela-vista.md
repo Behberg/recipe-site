@@ -2,6 +2,11 @@
 title: "Krāsnī cepta vesela vista ar citronu un ķiplokiem"
 description: "Zeltaina, kraukšķīga vesela vista ar citronu, ķiplokiem un timiānu, cepta uz kartupeļu gultas. Svētdienas pusdienas bez liekas steigas."
 category: pamatedieni
+image: "/images/recipes/krasni-cepta-vesela-vista.jpg"
+imageAuthor: "Cajsa Lilliehook from Portland"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lemon_%26_Garlic_Roasted_Chicken_(8733072162).jpg"
 emoji: "🐔"
 icon: roast
 iconColors: "#c47a36"

@@ -3,6 +3,11 @@ title: "Alfahores"
 description: "Maigi kukurūzas cietes cepumi, salīmēti ar karamelizētu kondensēto pienu un apviļāti kokosā."
 cuisine: latinamerikas
 category: maize-un-cepumi
+image: "/images/recipes/alfahores.jpg"
+imageAuthor: "קרלוס הגדול"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Alfajorartes.JPG"
 emoji: "🍪"
 icon: sweets
 iconColors: "#e8c998, #fbf9f5"

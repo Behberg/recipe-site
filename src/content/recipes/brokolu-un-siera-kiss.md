@@ -2,6 +2,11 @@
 title: "Brokoļu un siera kišs (sāļais pīrāgs)"
 description: "Kraukšķīgs smilšu mīklas pīrāgs ar brokoļiem un krēmīgu olu un siera pildījumu. Veģetārs ēdiens, kas der gan siltā, gan aukstā veidā."
 category: pamatedieni
+image: "/images/recipes/brokolu-un-siera-kiss.jpg"
+imageAuthor: "Karen and Brad Emerson"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Broccoli_and_cheese_quiche_(4069724145).jpg"
 emoji: "🥦"
 icon: tart
 iconColors: "#f3d77a, #d9a14e"

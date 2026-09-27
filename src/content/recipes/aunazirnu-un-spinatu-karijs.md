@@ -2,6 +2,11 @@
 title: "Aunazirņu un spinātu karijs ar kokosriekstu pienu"
 description: "Krēmīgs aunazirņu karijs ar spinātiem, tomātiem un kokosriekstu pienu. Vegānisks, sātīgs un gatavs no skapja produktiem 35 minūtēs."
 category: pamatedieni
+image: "/images/recipes/aunazirnu-un-spinatu-karijs.jpg"
+imageAuthor: "Kari Sullivan from Austin, TX"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Spinach-Chickpea_Curry_(3117324894).jpg"
 emoji: "🍛"
 icon: skillet
 iconColors: "#d9a03a, #e8c890"

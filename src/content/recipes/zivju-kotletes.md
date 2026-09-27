@@ -2,6 +2,10 @@
 title: "Zivju kotletes no mencas ar dillēm"
 description: "Mīkstas, sulīgas zivju kotletes no mencas ar dillēm un kraukšķīgu rīvmaizes apvalku. Bērni tās ēd labprāt, un tās labi sasaldējas."
 category: pamatedieni
+image: "/images/recipes/zivju-kotletes.jpg"
+imageAuthor: "Jon Sullivan"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Fish_cakes_food_dinner.jpg"
 emoji: "🐟"
 icon: plate
 iconColors: "#e9cf9a, #f0cf6a"

@@ -3,6 +3,11 @@ title: "Paelja ar jūras veltēm"
 description: "Spāņu safrāna rīsi ar garnelēm, mīdijām, vistu un papriku. Ēdiens lielai kompānijai."
 cuisine: spanu
 category: pamatedieni
+image: "/images/recipes/paelja.jpg"
+imageAuthor: "Kgbo"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Seafood_paella,_Brisbane,_12.2023.jpg"
 emoji: "🥘"
 icon: skillet
 iconColors: "#e8b830, #e87a5a"

@@ -3,6 +3,11 @@ title: "Kuskuss ar dārzeņiem un aunazirņiem"
 description: "Irdens kuskuss ar ceptiem dārzeņiem, aunazirņiem, rozīnēm un garšvielām."
 cuisine: marokas
 category: pamatedieni
+image: "/images/recipes/kuskuss-ar-darzeniem.jpg"
+imageAuthor: "HaJunkiyada"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Algerian_Couscous_with_Vegetables.jpg"
 emoji: "🥘"
 icon: soup
 iconColors: "#e8cf8a, #f7f2ea, #c8402a"

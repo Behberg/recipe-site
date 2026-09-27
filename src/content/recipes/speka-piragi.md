@@ -3,6 +3,11 @@ title: "Speķa pīrāgi"
 description: "Mīksti rauga pīrādziņi ar kūpinātu speķi un sīpoliem. Neatņemami svētku galdā un Jāņu naktī."
 cuisine: latviesu
 category: maize-un-cepumi
+image: "/images/recipes/speka-piragi.jpg"
+imageAuthor: "Sara McCleary"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Latvian_piragi_(bacon_buns).jpg"
 emoji: "🥐"
 icon: bun
 iconColors: "#d9913a"

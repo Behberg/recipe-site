@@ -3,6 +3,11 @@ title: "Kroks mesjē"
 description: "Franču karstā sviestmaize ar šķiņķi, sieru un bešamela mērci, cepta krāsnī līdz zeltainai."
 cuisine: francu
 category: brokastis
+image: "/images/recipes/kroks-mesje.jpg"
+imageAuthor: "Michael Brewer"
+imageLicense: "CC BY-SA 2.5"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.5"
+imageSource: "https://commons.wikimedia.org/wiki/File:Croque_monsieur.jpg"
 emoji: "🥪"
 icon: flatbread
 iconColors: "#c98a3e, #f3d86a"

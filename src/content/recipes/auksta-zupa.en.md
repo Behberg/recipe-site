@@ -1,5 +1,5 @@
 ---
-title: Cold beetroot soup
+title: "Pink soup (Latvian cold beetroot soup)"
 description: A bright pink summer soup with beetroot, kefir, cucumber, dill and egg. Refreshing on the hottest day.
 steps:
   - Boil the beetroot in their skins until tender (about 40 minutes), cool and peel. Ready cooked beetroot from the shop is quicker.
@@ -12,4 +12,4 @@ tips:
   - The colder the soup, the better. On a hot day you can add a couple of ice cubes.
 ---
 
-Cold beetroot soup is a symbol of the Latvian summer. It does not need an exact recipe: every family makes it a little differently, and that is how it should be.
+Pink soup is a symbol of the Latvian summer. It does not need an exact recipe: every family makes it a little differently, and that is how it should be.

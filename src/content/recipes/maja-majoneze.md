@@ -2,6 +2,11 @@
 title: "Mājas majonēze 10 minūtēs"
 description: "Krēmīga mājas majonēze no olas dzeltenuma, sinepēm, citrona un eļļas. Bez konservantiem, garšīgāka par veikala un gatava 10 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/maja-majoneze.jpg"
+imageAuthor: "jules"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mayonnaise_(1).jpg"
 emoji: "🥚"
 icon: ramekin
 iconColors: "#f6e7a0, #efe4d6"

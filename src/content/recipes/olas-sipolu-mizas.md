@@ -3,6 +3,11 @@ title: "Lieldienu olas sīpolu mizās"
 description: "Tradicionāli krāsotas olas ar sīpolu mizām un augu rakstiem. Dabīgi, skaisti un bez ķīmijas."
 cuisine: latviesu
 category: salati-un-uzkodas
+image: "/images/recipes/olas-sipolu-mizas.jpg"
+imageAuthor: "Մարի Ավետիսյան"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Easter_eggs_dyed_with_onion_skins.jpg"
 emoji: "🥚"
 icon: sweets
 iconColors: "#a0401e"

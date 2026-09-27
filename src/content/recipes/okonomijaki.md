@@ -3,6 +3,11 @@ title: "Okonomijaki"
 description: "Japāņu kāpostu pankūka ar bekonu, majonēzi un saldsāļu mērci. Osakas ielu ēdiens."
 cuisine: japanu
 category: pamatedieni
+image: "/images/recipes/okonomijaki.jpg"
+imageAuthor: "ume-y"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Okonomiyaki_001.jpg"
 emoji: "🥞"
 icon: flatbread
 iconColors: "#c98a3a, #7a3e22"

@@ -3,6 +3,11 @@ title: "Plūktā cūkgaļa (pulled pork) krāsnī"
 description: "Lēni cepta, maiga cūkgaļa ar kūpināto papriku, ko saplūc ar dakšām un sajauc ar BBQ mērci. Burgeriem un ballītēm."
 cuisine: amerikas
 category: pamatedieni
+image: "/images/recipes/pulled-pork.jpg"
+imageAuthor: "Thogru"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pulled_pork_while_pulling.JPG"
 emoji: "🍔"
 icon: plate
 iconColors: "#a0502a, #f0c070, #5a2a14"

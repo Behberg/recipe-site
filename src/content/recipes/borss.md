@@ -3,6 +3,11 @@ title: "Boršs"
 description: "Bagātīga biešu zupa ar liellopu gaļu, kāpostiem un krējumu. To mīl visā Austrumeiropā."
 cuisine: ukrainu
 category: zupas
+image: "/images/recipes/borss.jpg"
+imageAuthor: "liz west from Boxborough, MA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Borscht_served.jpg"
 emoji: "🍲"
 icon: soup
 iconColors: "#b0203a"

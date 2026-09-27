@@ -3,6 +3,11 @@ title: "Omlete ar sieru un tomātiem"
 description: "Maiga, kupla omlete ar sieru, tomātiem un lokiem. Brokastis 10 minūtēs."
 cuisine: francu
 category: brokastis
+image: "/images/recipes/omlete-ar-sieru.jpg"
+imageAuthor: "Ruocaled"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/54063325@N07/9755629992"
 emoji: "🍳"
 icon: plate
 iconColors: "#f3cf5a, #f3efe6"

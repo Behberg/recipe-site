@@ -3,6 +3,11 @@ title: "Spageti ar ķiploku un čili (aglio e olio)"
 description: "Vienkāršākā itāļu pasta: spageti ar ķiploku, olīveļļu, čili un pētersīļiem. Gatava 15 minūtēs."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/spageti-aglio-olio.jpg"
+imageAuthor: "matsuyuki"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Spaghetti_aglio_olio_e_peperoncino_by_matsuyuki.jpg"
 emoji: "🍝"
 icon: soup
 iconColors: "#e8d07a, #f7f2ea"

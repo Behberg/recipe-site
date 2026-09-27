@@ -3,6 +3,11 @@ title: "Pad kra pao (taizemiešu vista ar baziliku)"
 description: "Taizemes ielu virtuves hīts: asa malta vista ar ķiplokiem, čili un baziliku, pasniegta ar rīsiem un kraukšķīgu ceptu olu. Gatava 20 minūtēs."
 cuisine: taizemes
 category: pamatedieni
+image: "/images/recipes/pad-kra-pao.jpg"
+imageAuthor: "Asturio Cantabrio"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Siam_Garden_Phat_kaphrao_ac.jpg"
 emoji: "🌶️"
 icon: skillet
 iconColors: "#8a4a2a, #4f8a2c"

@@ -3,6 +3,11 @@ title: "Cūkgaļas galerts (aukstā gaļa)"
 description: "Dzidrs mājas cūkgaļas galerts no cūkas kājām un pleca gaļas ar burkāniem un ķiplokiem. Svētku uzkoda ar mārrutkiem un sinepēm bez želatīna."
 cuisine: latviesu
 category: salati-un-uzkodas
+image: "/images/recipes/cukgalas-galerts.jpg"
+imageAuthor: "Wolf Gang"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/"
+imageSource: "https://www.flickr.com/photos/81669195@N00/128293986"
 emoji: "🍖"
 icon: layers
 iconColors: "#e3cfa0, #c9a070, #e3cfa0"

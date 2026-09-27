@@ -2,6 +2,11 @@
 title: "Mitrā šokolādes kūka ar ķiršiem"
 description: "Mitra, bagātīga šokolādes kūka ar sulīgiem ķiršiem, kas atgādina brauniju. Vienkārša recepte ar saldētiem vai konservētiem ķiršiem."
 category: saldie-edieni
+image: "/images/recipes/kirsu-sokolades-kuka.jpg"
+imageAuthor: "Tracy Hunter from Kabul,, Afghanistan"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chocolate_fudge_cake.jpg"
 emoji: "🍒"
 icon: cake
 iconColors: "#4a2a1a, #8a1a2e"

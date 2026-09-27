@@ -2,6 +2,11 @@
 title: "Pīles krūtiņa ar brūkleņu mērci"
 description: "Rozā, sulīga pīles krūtiņa ar kraukšķīgu ādu un saldskābu brūkleņu un sarkanvīna mērci. Restorāna līmeņa romantiskas vakariņas diviem."
 category: pamatedieni
+image: "/images/recipes/piles-krutina-ar-ogu-merci.jpg"
+imageAuthor: "Daderot"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Duck_breast_on_vegetables_-_Massachusetts.jpg"
 emoji: "🦆"
 icon: plate
 iconColors: "#b85a3a, #f3efe6, #6a1a3a"

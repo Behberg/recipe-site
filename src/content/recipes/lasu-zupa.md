@@ -2,6 +2,11 @@
 title: "Laša zupa ar krējumu"
 description: "Maiga zivju zupa ar lasi, kartupeļiem, saldo krējumu un dillēm. Gatava 30 minūtēs."
 category: zupas
+image: "/images/recipes/lasu-zupa.jpg"
+imageAuthor: "Tuijasal"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lohikeitto.jpg"
 emoji: "🐟"
 icon: soup
 iconColors: "#f1dcc0, #f7f2ea, #f28b5a"

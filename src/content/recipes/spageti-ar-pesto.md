@@ -3,6 +3,11 @@ title: "Spageti ar baziliku pesto"
 description: "Mājās gatavots zaļais pesto ar baziliku, priežu riekstiem, parmezānu un ķiploku. Pusdienas 15 minūtēs."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/spageti-ar-pesto.jpg"
+imageAuthor: "Sungmin Yun"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Basil_pesto_spaghetti_and_tomato_juice.jpg"
 emoji: "🍝"
 icon: soup
 iconColors: "#6b9a3a, #f7f2ea"

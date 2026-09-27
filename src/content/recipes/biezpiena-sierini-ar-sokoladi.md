@@ -3,6 +3,11 @@ title: "Mājas biezpiena sieriņi šokolādē"
 description: "Mājās gatavoti biezpiena sieriņi ar vaniļu, glazēti tumšajā šokolādē, kā Latvijas iemīļotākais saldais kārums. Bez konservantiem."
 cuisine: latviesu
 category: saldie-edieni
+image: "/images/recipes/biezpiena-sierini-ar-sokoladi.jpg"
+imageAuthor: "Sokolikmawwer0"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:A_curd_bar_cut_in_half_on_a_wooden_board..jpg"
 emoji: "🍫"
 icon: sweets
 iconColors: "#5a3526, #f3efe6"

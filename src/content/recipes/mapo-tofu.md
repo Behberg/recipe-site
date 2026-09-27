@@ -3,6 +3,11 @@ title: "Mapo tofu"
 description: "Mīksts tofu pikantā mērcē ar malto gaļu, ķiploku un čili. Sičuaņas mājas virtuves klasika."
 cuisine: kiniesu
 category: pamatedieni
+image: "/images/recipes/mapo-tofu.jpg"
+imageAuthor: "pelican from Tokyo, Japan"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mapo_Tofu_(8840681150).jpg"
 emoji: "🥘"
 icon: soup
 iconColors: "#b8321f"

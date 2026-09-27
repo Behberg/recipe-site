@@ -3,6 +3,11 @@ title: "Vistas tako"
 description: "Mīkstas kukurūzas tortiljas ar garšvielu vistu, piko de galjo, avokado un laimu."
 cuisine: meksikas
 category: pamatedieni
+image: "/images/recipes/vistas-tako.jpg"
+imageAuthor: "Larry Miller"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg"
 emoji: "🌮"
 icon: flatbread
 iconColors: "#f0d890, #8bb04a"

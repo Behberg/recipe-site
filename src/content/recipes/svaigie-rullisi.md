@@ -3,6 +3,11 @@ title: "Svaigie rīsu papīra rullīši"
 description: "Caurspīdīgi rīsu papīra rullīši ar garnelēm, nūdelēm, dārzeņiem un zemesriekstu mērci."
 cuisine: vjetnamiesu
 category: salati-un-uzkodas
+image: "/images/recipes/svaigie-rullisi.jpg"
+imageAuthor: "pelican from Tokyo, Japan"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Homemade_spring_rolls_(7010969349).jpg"
 emoji: "🥬"
 icon: plate
 iconColors: "#eef2e0, #f3efe6, #c98a4a"

@@ -2,6 +2,11 @@
 title: "Avokado un garneļu salāti ar laimu"
 description: "Svaigi avokado un garneļu salāti ar ķiršu tomātiem, koriandru un laimas mērci. Viegls un svinīgs ēdiens 15 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/avokado-garnelu-salati.jpg"
+imageAuthor: "Marie from Malang, East Java, Indonesia"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Avocado,_Shrimp,_and_Mango_Salad_(16199246763).jpg"
 emoji: "🦐"
 icon: soup
 iconColors: "#9ac850, #f7f2ea, #f08a5a"

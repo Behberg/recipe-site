@@ -3,6 +3,11 @@ title: "Pīrogi ar kartupeļiem un biezpienu"
 description: "Poļu pusmēness pelmeņi ar kartupeļu, biezpiena un cepta sīpola pildījumu."
 cuisine: polu
 category: pamatedieni
+image: "/images/recipes/pirogi.jpg"
+imageAuthor: "Aw58"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pierogi_z_mas%C5%82em_-_2023.03.31.jpg"
 emoji: "🥟"
 icon: plate
 iconColors: "#efe0c0, #f3efe6"

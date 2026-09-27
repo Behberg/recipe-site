@@ -2,6 +2,11 @@
 title: "Griķu putra ar pienu un sviestu"
 description: "Irdena griķu putra ar karstu pienu, sviestu un medu. Sātīgas, bezglutēna brokastis, ko daudzi atceras no bērnības."
 category: brokastis
+image: "/images/recipes/griku-putra-ar-pienu.jpg"
+imageAuthor: "Laitr Keiows"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:%D0%93%D1%80%D0%B5%D1%87%D0%BD%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BA%D0%B0%D1%88%D0%B0.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#8a5a3a, #f7f2ea"

@@ -2,6 +2,11 @@
 title: "Tortilju ruļļi ar vistu un dārzeņiem"
 description: "Ātrie tortilju ruļļi ar vistu, svaigiem dārzeņiem, sieru un ķiploku jogurta mērci. Pusdienas līdzņemšanai 15 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/tortilju-rulli-ar-vistu.jpg"
+imageAuthor: "Luca Nebuloni from Milan, Italy"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_roll_with_vegetables_%26_goat_cheese_(5742199145).jpg"
 emoji: "🌯"
 icon: plate
 iconColors: "#f1dfb8, #7aa844"

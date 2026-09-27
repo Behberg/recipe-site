@@ -2,6 +2,11 @@
 title: "Marmora kēkss"
 description: "Mitrs sviesta kēkss ar šokolādes un vaniļas rakstu. Kafijai un pēcpusdienas tējai."
 category: maize-un-cepumi
+image: "/images/recipes/marmora-kekss.jpg"
+imageAuthor: "WhatamIdoing"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Coffee-flavored_marble_loaf_cake.png"
 emoji: "🍰"
 icon: loaf
 iconColors: "#e0b86a, #5a3420"

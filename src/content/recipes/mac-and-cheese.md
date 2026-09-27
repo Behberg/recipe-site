@@ -3,6 +3,11 @@ title: "Makaroni ar sieru (mac and cheese)"
 description: "Krēmīgi makaroni bagātīgā čedaras siera mērcē ar kraukšķīgu virskārtu."
 cuisine: amerikas
 category: pamatedieni
+image: "/images/recipes/mac-and-cheese.jpg"
+imageAuthor: "Texasfoodgawker"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Original_Mac_n_Cheese_.jpg"
 emoji: "🧀"
 icon: casserole
 iconColors: "#f0c23a"

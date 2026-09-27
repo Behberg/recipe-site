@@ -3,6 +3,11 @@ title: "Šokolādes muss"
 description: "Gaisīgs franču šokolādes deserts no tikai trim sastāvdaļām: šokolādes, olām un cukura."
 cuisine: francu
 category: saldie-edieni
+image: "/images/recipes/sokolades-muss.jpg"
+imageAuthor: "Lu from Seattle, USA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chocolate_coffee_mousse.jpg"
 emoji: "🍫"
 icon: layers
 iconColors: "#5a3020, #6b3e26"

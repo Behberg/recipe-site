@@ -3,6 +3,11 @@ title: "Massaman karijs ar liellopu gaļu"
 description: "Maigs, salds taju karijs ar liellopa gaļu, kartupeļiem un zemesriekstiem."
 cuisine: taizemes
 category: pamatedieni
+image: "/images/recipes/massaman-karijs.jpg"
+imageAuthor: "Takeaway"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kaeng_matsaman_kai.JPG"
 emoji: "🍛"
 icon: soup
 iconColors: "#c8702a"

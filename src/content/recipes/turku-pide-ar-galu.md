@@ -3,6 +3,11 @@ title: "Turku pide ar maltu gaļu un sieru"
 description: "Turku laiviņas maize pide ar maltās gaļas, tomātu un paprikas pildījumu un kūstošu sieru. Turcijas iecienītākais ielu ēdiens mājās."
 cuisine: turku
 category: maize-un-cepumi
+image: "/images/recipes/turku-pide-ar-galu.jpg"
+imageAuthor: "E4024"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Pide_(meal).jpg"
 emoji: "🥖"
 icon: flatbread
 iconColors: "#e3a857, #b8402a, #f3cf5a"

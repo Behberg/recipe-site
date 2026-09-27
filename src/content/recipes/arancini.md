@@ -3,6 +3,10 @@ title: "Arančini (itāļu rīsu bumbiņas ar mocarellu)"
 description: "Kraukšķīgas itāļu rīsu bumbiņas arančini ar kūstošu mocarellu vidū. Lielisks veids, kā izlietot pāri palikušu risoto."
 cuisine: italu
 category: salati-un-uzkodas
+image: "/images/recipes/arancini.jpg"
+imageAuthor: "Gmelfi"
+imageLicense: "Public domain"
+imageSource: "https://commons.wikimedia.org/wiki/File:Arancini_002.jpg"
 emoji: "🍙"
 icon: plate
 iconColors: "#e0a24a, #f3efe6, #c8402a"

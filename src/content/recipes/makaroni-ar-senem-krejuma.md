@@ -2,6 +2,11 @@
 title: "Makaroni ar sēnēm krējuma mērcē"
 description: "Krēmīgi makaroni ar apceptām sēnēm, ķiploku un parmezānu saldā krējuma mērcē. Vienkāršas, sātīgas vakariņas 30 minūtēs."
 category: pamatedieni
+image: "/images/recipes/makaroni-ar-senem-krejuma.jpg"
+imageAuthor: "Samizambak"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kremal%C4%B1_Mantarl%C4%B1_Tavuklu_Makarna.jpg"
 emoji: "🍝"
 icon: skillet
 iconColors: "#f1e0b8, #c9a26a"

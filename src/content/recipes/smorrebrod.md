@@ -3,6 +3,11 @@ title: "Dāņu atvērtās sviestmaizes (smørrebrød)"
 description: "Rudzu maize ar dažādiem virsējiem: siļķi, olām, garnelēm vai rostbifu. Skaistas un sātīgas."
 cuisine: skandinavu
 category: salati-un-uzkodas
+image: "/images/recipes/smorrebrod.jpg"
+imageAuthor: "by tuey"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Norwegian.open.sandwich-01.jpg"
 emoji: "🥪"
 icon: flatbread
 iconColors: "#4a2c1a, #f7f0e0, #f28b5a"

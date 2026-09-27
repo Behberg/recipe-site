@@ -3,6 +3,11 @@ title: "Ātrais rāmens ar olu"
 description: "Sātīga nūdeļu zupa ar bagātīgu buljonu, marinētu olu, šampinjoniem un lokiem."
 cuisine: japanu
 category: zupas
+image: "/images/recipes/atrais-ramens.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Soy_Milk_Ramen_and_Tonkotsu_Miso_Ramen_by_Goemon_Ramen_Bar.jpg"
 emoji: "🍜"
 icon: soup
 iconColors: "#c98a4a, #f7f2ea"

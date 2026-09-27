@@ -3,6 +3,11 @@ title: "Grilētā siera sviestmaize"
 description: "Zeltaina, sviestā cepta sviestmaize ar stiepīgu, kūstošu sieru. Ideāla ar tomātu zupu."
 cuisine: amerikas
 category: brokastis
+image: "/images/recipes/grileta-siera-sviestmaize.jpg"
+imageAuthor: "Willis Lam"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Classic_Grilled_Cheese_Sandwich_(25791331763)_(cropped).jpg"
 emoji: "🥪"
 icon: flatbread
 iconColors: "#d9a052, #f3cf5a"

@@ -3,6 +3,11 @@ title: "Kafta iesmiņi"
 description: "Tuvo Austrumu maltās gaļas iesmiņi ar pētersīļiem, sīpolu un garšvielām. Pasniedz ar tahini mērci."
 cuisine: tuvo-austrumu
 category: pamatedieni
+image: "/images/recipes/kafta-iesmini.jpg"
+imageAuthor: "charissglen"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+imageSource: "https://www.flickr.com/photos/34208312@N00/5500062615"
 emoji: "🍢"
 icon: plate
 iconColors: "#8a4a24, #f3efe6"

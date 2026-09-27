@@ -2,6 +2,11 @@
 title: "Pankūku torte ar krēmsiera krēmu"
 description: "Augsta torte no 15 plānām pankūkām ar gaisīgu krēmsiera un putukrējuma krēmu un svaigām ogām. Efektīga, bet bez cepšanas krāsnī."
 category: saldie-edieni
+image: "/images/recipes/pankuku-torte-ar-krema.jpg"
+imageAuthor: "Laitr Keiows"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mille_cr%C3%AApe.jpg"
 emoji: "🎂"
 icon: cake
 iconColors: "#f0d890, #fbf3e4, #f0d890, #fbf3e4, #f0d890"

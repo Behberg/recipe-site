@@ -2,6 +2,11 @@
 title: "Maizes pudiņš ar āboliem un kanēli"
 description: "Silts maizes pudiņš no vakardienas maizes ar āboliem, rozīnēm un kanēli olu un piena krēmā. Nekas neiet zudumā, un sanāk deserts."
 category: saldie-edieni
+image: "/images/recipes/maizes-pudins-ar-aboliem.jpg"
+imageAuthor: "star5112"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Banana_foster_bread_pudding_01.jpg"
 emoji: "🍞"
 icon: casserole
 iconColors: "#d9a052, #b0413e"

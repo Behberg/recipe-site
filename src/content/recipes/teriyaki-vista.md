@@ -3,6 +3,11 @@ title: "Teriyaki vista ar rīsiem"
 description: "Glazēti vistas šķiņķīši spīdīgā, saldsāļā teriyaki mērcē ar rīsiem un sezamu."
 cuisine: japanu
 category: pamatedieni
+image: "/images/recipes/teriyaki-vista.jpg"
+imageAuthor: "Murcotipton"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:22nd_June_2012_Teriyaki_Duck.jpg"
 emoji: "🍗"
 icon: skillet
 iconColors: "#8a3a1a, #3a2a1a"

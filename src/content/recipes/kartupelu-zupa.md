@@ -3,6 +3,11 @@ title: "Kartupeļu zupa ar desiņām"
 description: "Bieza kartupeļu zupa ar burkāniem, puravu un apceptām desiņām. Sātīgas pusdienas vienā katlā."
 cuisine: vacu
 category: zupas
+image: "/images/recipes/kartupelu-zupa.jpg"
+imageAuthor: "Benreis"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Kartoffelsuppe_Wiener_W%C3%BCrstchen.jpg"
 emoji: "🥔"
 icon: soup
 iconColors: "#e8cf8a"

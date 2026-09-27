@@ -3,6 +3,11 @@ title: "Dāņu rīsu pudiņš ar ķiršu mērci"
 description: "Krēmīgs vaniļas rīsu deserts ar mandelēm un siltu ķiršu mērci. Ziemassvētku tradīcija."
 cuisine: skandinavu
 category: saldie-edieni
+image: "/images/recipes/risu-pudins-ar-kirsiem.jpg"
+imageAuthor: "Lorie Shaull"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Risalamande,_a_Danish_Christmas_dessert.jpg"
 emoji: "🍚"
 icon: layers
 iconColors: "#fbf6ea, #fbf6ea, #7a0f24"

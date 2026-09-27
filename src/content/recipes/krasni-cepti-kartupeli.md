@@ -2,6 +2,11 @@
 title: "Krāsnī cepti kartupeļi"
 description: "Kraukšķīgi zeltaini kartupeļi ar ķiploku un rozmarīnu. Vienkāršākais piedēvs jebkuram ēdienam."
 category: pamatedieni
+image: "/images/recipes/krasni-cepti-kartupeli.jpg"
+imageAuthor: "Punker1999"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Roasted_potatoes_in_bowl.jpg"
 emoji: "🥔"
 icon: plate
 iconColors: "#e0a64a, #f3efe6"

@@ -2,6 +2,11 @@
 title: "Kakao ar pienu"
 description: "Silts, krēmīgs kakao dzēriens ar pienu. Bērnības garša aukstā vakarā."
 category: dzerieni
+image: "/images/recipes/kakao-ar-pienu.jpg"
+imageAuthor: "|| UggBoy♥UggGirl || PHOTO || WORLD || TRAVEL ||"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:After_The_St._Patrick%27s_Parade_Late_Lunch_@_Lemon,_Dawson_Street,_Dublin,_Rep._Of_Ireland_A_Fine_Tradition!_(6992614913).jpg"
 emoji: "☕"
 icon: glass
 iconColors: "#6b3e26, #4a78b0"

@@ -2,6 +2,11 @@
 title: "Brokoļu krēmzupa ar sieru"
 description: "Samtaina, spilgti zaļa brokoļu krēmzupa ar kausētu sieru un krējumu. Vienkārša, veselīga un gatava 35 minūtēs."
 category: zupas
+image: "/images/recipes/brokolu-kremzupa-ar-sieru.jpg"
+imageAuthor: "Alpha from Melbourne, Australia"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Cream_of_broccoli_soup.jpg"
 emoji: "🥦"
 icon: soup
 iconColors: "#7aa844, #f7f2ea"

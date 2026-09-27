@@ -3,6 +3,11 @@ title: "Zaļais karijs ar vistu"
 description: "Taju zaļais karijs kokosriekstu pienā ar vistu, baklažānu un baziliku."
 cuisine: taizemes
 category: pamatedieni
+image: "/images/recipes/zalais-karijs.jpg"
+imageAuthor: "Acabashi"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Thai_green_chicken_curry_at_Highgate_Cricket_Club,_Crouch_End,_London_3.jpg"
 emoji: "🍛"
 icon: soup
 iconColors: "#8aa33a"

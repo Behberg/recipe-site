@@ -3,6 +3,11 @@ title: "Banānu maize"
 description: "Sulīga, salda banānu maize no pārgatavojušiem banāniem. Brokastīm vai kafijai."
 cuisine: amerikas
 category: maize-un-cepumi
+image: "/images/recipes/banana-maize.jpg"
+imageAuthor: "Shisma"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Banana_bread_slices.jpg"
 emoji: "🍌"
 icon: loaf
 iconColors: "#a86a36"

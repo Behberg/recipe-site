@@ -2,6 +2,11 @@
 title: "Plūmju kūka ar kanēli"
 description: "Sulīga sviesta kūka ar biezu plūmju kārtu, kanēli un karamelizētu virsu. Vēlās vasaras un rudens kūka no dārza plūmēm."
 category: saldie-edieni
+image: "/images/recipes/plumju-kuka.jpg"
+imageAuthor: "Frank Vincentz"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/"
+imageSource: "https://commons.wikimedia.org/wiki/File:Plum_cake_08_ies.jpg"
 emoji: "🟣"
 icon: tart
 iconColors: "#6a2a5a, #d9a14e"

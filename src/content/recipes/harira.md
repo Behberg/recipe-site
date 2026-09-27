@@ -3,6 +3,11 @@ title: "Harira zupa"
 description: "Marokas tomātu, lēcu un aunazirņu zupa ar garšvielām un citronu. Sātīga un sildoša."
 cuisine: marokas
 category: zupas
+image: "/images/recipes/harira.jpg"
+imageAuthor: "Miansari66"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Harira..JPG"
 emoji: "🥣"
 icon: soup
 iconColors: "#c85a2a"

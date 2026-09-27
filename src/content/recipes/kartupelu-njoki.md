@@ -3,6 +3,11 @@ title: "Kartupeļu njoki ar sviestu un salviju"
 description: "Mīksti mājas kartupeļu njoki brūnā sviestā ar salviju un parmezānu."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/kartupelu-njoki.jpg"
+imageAuthor: "Joy"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sweet_potato_gnocchi_with_maple_sage_brown_butter_(4285979923).jpg"
 emoji: "🥔"
 icon: plate
 iconColors: "#efe2b0, #f3efe6, #e3b04a"

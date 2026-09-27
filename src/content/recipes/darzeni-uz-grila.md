@@ -2,6 +2,11 @@
 title: "Grilēti dārzeņi ar ķiploku un balzamiko"
 description: "Uz grila cepti kabači, baklažāni, paprikas, sīpoli un sēnes ar ķiploku un balzamiko marinādi. Krāsaina grila piedeva vai veģetāras vakariņas."
 category: salati-un-uzkodas
+image: "/images/recipes/darzeni-uz-grila.jpg"
+imageAuthor: "Karen and Brad Emerson"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Grilled_vegetables_(6373328369).jpg"
 emoji: "🔥"
 icon: plate
 iconColors: "#d86a3a, #f3efe6, #6fa040"

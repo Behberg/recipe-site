@@ -3,6 +3,11 @@ title: "Penne arrabbiata (asā tomātu pasta)"
 description: "Itāļu klasika penne arrabbiata: pasta asā tomātu mērcē ar ķiplokiem, čili un olīveļļu. No skapja sastāvdaļām 25 minūtēs."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/penne-arrabjata.jpg"
+imageAuthor: "Petar Milošević"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Penne_Arrabbiata.jpg"
 emoji: "🍝"
 icon: skillet
 iconColors: "#c8402a, #f3d27a"

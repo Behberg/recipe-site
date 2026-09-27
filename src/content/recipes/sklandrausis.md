@@ -3,6 +3,11 @@ title: "Sklandrauši"
 description: "Kurzemes lībiešu rausis ar rudzu mīklas pamatni, kartupeļu un burkānu pildījumu un kanēli."
 cuisine: latviesu
 category: maize-un-cepumi
+image: "/images/recipes/sklandrausis.jpg"
+imageAuthor: "Denis tarasov"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Sklandrausis.jpg"
 emoji: "🥧"
 icon: tart
 iconColors: "#e8801e, #b88a4e"

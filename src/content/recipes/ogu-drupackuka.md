@@ -2,6 +2,11 @@
 title: "Ogu drupačkūka ar auzu pārslām"
 description: "Silta ogu drupačkūka ar sulīgām mellenēm, avenēm vai jāņogām un kraukšķīgu auzu drupaču virskārtu. Lieliska ar vaniļas saldējumu."
 category: saldie-edieni
+image: "/images/recipes/ogu-drupackuka.jpg"
+imageAuthor: "Andy Li"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Mixed_berry_%26_apple_crumble,_vanilla_ice_cream_-_One_Kitchen.jpg"
 emoji: "🫐"
 icon: tart
 iconColors: "#7a2a5a, #e8c07a"

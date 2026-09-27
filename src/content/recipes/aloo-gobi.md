@@ -3,6 +3,11 @@ title: "Alu gobi (Indijas kartupeļi ar ziedkāpostiem)"
 description: "Indijas mājas ēdiens alu gobi: kartupeļi un ziedkāposti ar kurkumu, kuminu, ingveru un tomātiem. Vegānisks, sātīgs un smaržīgs."
 cuisine: indiesu
 category: pamatedieni
+image: "/images/recipes/aloo-gobi.jpg"
+imageAuthor: "Unknown author"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Aloo_gobi.jpg"
 emoji: "🥔"
 icon: skillet
 iconColors: "#e8b02a, #f3e6c8"

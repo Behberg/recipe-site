@@ -3,6 +3,11 @@ title: "Pad Thai"
 description: "Taizemes rīsu nūdeles ar garnelēm vai vistu, olu, pupiņu asniem un zemesriekstiem."
 cuisine: taizemes
 category: pamatedieni
+image: "/images/recipes/pad-thai.jpg"
+imageAuthor: "Takeaway"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Phat_Thai_kung_Chang_Khien_street_stall.jpg"
 emoji: "🍜"
 icon: skillet
 iconColors: "#e0a050, #8bb04a"

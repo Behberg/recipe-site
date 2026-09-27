@@ -2,6 +2,11 @@
 title: "Pupiņu zupa ar kūpinātu gaļu"
 description: "Bieza, sātīga pupiņu zupa ar kūpinātām ribiņām, kartupeļiem un tomātu. Sasilda ziemas vakarā un labi sasaldējas."
 category: zupas
+image: "/images/recipes/pupinu-zupa.jpg"
+imageAuthor: "Miansari66"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Fasolada.JPG"
 emoji: "🫘"
 icon: soup
 iconColors: "#c9763a, #f7f2ea"

@@ -3,6 +3,11 @@ title: "Vīnes šnicele"
 description: "Plāna, kraukšķīga teļa vai cūkgaļas šnicele ar citronu un kartupeļu salātiem."
 cuisine: vacu
 category: pamatedieni
+image: "/images/recipes/vines-snicele.jpg"
+imageAuthor: "Benreis"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Breitenlesau_Krug_Br%C3%A4u_Schnitzel.JPG"
 emoji: "🥩"
 icon: plate
 iconColors: "#d6933a, #f3efe6"

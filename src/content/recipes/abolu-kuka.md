@@ -2,6 +2,11 @@
 title: "Ābolu kūka ar kanēli"
 description: "Vienkārša, sulīga ābolu kūka, kas izdodas vienmēr. Rudens smarža visā mājā."
 category: saldie-edieni
+image: "/images/recipes/abolu-kuka.jpg"
+imageAuthor: "W.carter"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Apple_cake_with_vanilla_ice_cream_2.jpg"
 emoji: "🍎"
 icon: cake
 iconColors: "#e8c078, #f3dca0"

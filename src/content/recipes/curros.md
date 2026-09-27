@@ -3,6 +3,11 @@ title: "Čurros ar šokolādes mērci"
 description: "Kraukšķīgi cepti mīklas stienīši ar kanēļa cukuru un biezu karstās šokolādes mērci."
 cuisine: spanu
 category: saldie-edieni
+image: "/images/recipes/curros.jpg"
+imageAuthor: "Alpha"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Churros_for_two_with_Dark_Chocolate_and_Dulce_de_Leche_dipping_sauce_-_Chocolateria_San_Churro_AUD13.90_%2B_flash.jpg"
 emoji: "🥖"
 icon: plate
 iconColors: "#d9a557, #f3efe6, #5a3020"

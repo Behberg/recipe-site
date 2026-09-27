@@ -2,6 +2,11 @@
 title: "Šokolādes kūka krūzē mikroviļņu krāsnī"
 description: "Silta šokolādes kūka krūzē 5 minūtēs: sajauc tieši krūzē un cep mikroviļņu krāsnī. Bez olām, ideāla vakara kārumam."
 category: saldie-edieni
+image: "/images/recipes/sokolades-kuka-kruze.jpg"
+imageAuthor: "Mimschka"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tassenkuchen_.jpg"
 emoji: "☕"
 icon: glass
 iconColors: "#5a3020, #e8d9c4"

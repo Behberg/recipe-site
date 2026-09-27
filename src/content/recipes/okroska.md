@@ -3,6 +3,11 @@ title: "Okroška ar kvasu vai kefīru"
 description: "Aukstā vasaras zupa okroška ar kartupeļiem, olām, gurķiem, redīsiem un desu, uzlieta ar kvasu vai kefīru. Atspirdzina karstākajā dienā."
 cuisine: austrumeiropas
 category: zupas
+image: "/images/recipes/okroska.jpg"
+imageAuthor: "Pannet"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:%D0%93%D0%BE%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BE%D0%BA%D1%80%D0%BE%D1%88%D0%BA%D0%B0.jpg"
 emoji: "🥒"
 icon: soup
 iconColors: "#f2eee0, #eef1f4"

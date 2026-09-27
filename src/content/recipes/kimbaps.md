@@ -3,6 +3,11 @@ title: "Kimbaps (korejiešu rīsu ruļļi)"
 description: "Korejiešu kimbaps: nori ruļļi ar sezama rīsiem, olu omleti, burkāniem, spinātiem un gurķi. Krāsaina pikniku un pusdienu kārbu uzkoda."
 cuisine: korejiesu
 category: salati-un-uzkodas
+image: "/images/recipes/kimbaps.jpg"
+imageAuthor: "changupn"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Gimbap_(pixabay).jpg"
 emoji: "🍙"
 icon: plate
 iconColors: "#2f3f2a, #f5f0e0"

@@ -3,6 +3,11 @@ title: "Spageti karbonāra"
 description: "Īsta romiešu karbonāra ar olu dzeltenumiem, pekorino sieru un kraukšķīgu guančali. Bez krējuma."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/spageti-karbonara.jpg"
+imageAuthor: "Javier Somoza"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg"
 emoji: "🍝"
 icon: soup
 iconColors: "#f0d890, #f7f2ea"

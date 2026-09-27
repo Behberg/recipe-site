@@ -3,6 +3,11 @@ title: "Siera špecle"
 description: "Mīkstas mājas olu nūdeles ar kausētu sieru un kraukšķīgiem ceptiem sīpoliem."
 cuisine: vacu
 category: pamatedieni
+image: "/images/recipes/siera-specle.jpg"
+imageAuthor: "4028mdk09"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:K%C3%A4sesp%C3%A4tzle_mit_Zwiebeln_und_Beilagensalat.JPG"
 emoji: "🧀"
 icon: casserole
 iconColors: "#e8b030"

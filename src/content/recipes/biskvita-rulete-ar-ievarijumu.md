@@ -2,6 +2,11 @@
 title: "Biskvīta rulete ar ievārījumu"
 description: "Viegla un gaisīga biskvīta rulete ar aveņu ievārījumu. Klasiska kafijas galda kūka, kas izcepas tikai 12 minūtēs."
 category: saldie-edieni
+image: "/images/recipes/biskvita-rulete-ar-ievarijumu.jpg"
+imageAuthor: "Ocdp"
+imageLicense: "CC0"
+imageLicenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+imageSource: "https://commons.wikimedia.org/wiki/File:Swiss_roll_004.jpg"
 emoji: "🍥"
 icon: cake
 iconColors: "#f0d8a0, #c0304a"

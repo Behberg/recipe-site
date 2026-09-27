@@ -3,6 +3,11 @@ title: "Franču citronu tarte"
 description: "Klasiskā franču citronu tarte ar kraukšķīgu smilšu mīklas pamatni un zīdainu, skābenu citronu krēmu. Elegants deserts svētkiem."
 cuisine: francu
 category: saldie-edieni
+image: "/images/recipes/citronu-tarte.jpg"
+imageAuthor: "John"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Lemon_tart_-_star5112.jpg"
 emoji: "🍋"
 icon: tart
 iconColors: "#f6d44a, #d9a14e"

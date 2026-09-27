@@ -3,6 +3,11 @@ title: "Tom kha gai (kokosriekstu zupa ar vistu)"
 description: "Maiga taju kokosriekstu zupa ar vistu, ingveru, citronzāli un laimu."
 cuisine: taizemes
 category: zupas
+image: "/images/recipes/tom-kha-gai.jpg"
+imageAuthor: "lydiajoy1"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tom_kha_gai2.jpg"
 emoji: "🥥"
 icon: soup
 iconColors: "#f3e3c0"

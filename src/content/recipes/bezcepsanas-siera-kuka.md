@@ -2,6 +2,11 @@
 title: "Siera kūka bez cepšanas ar zemenēm"
 description: "Krēmīga siera kūka bez cepšanas un želatīna uz cepumu pamatnes ar svaigām zemenēm. Vasaras deserts, ko pagatavo iepriekšējā vakarā."
 category: saldie-edieni
+image: "/images/recipes/bezcepsanas-siera-kuka.jpg"
+imageAuthor: "Simone Coletta"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Strawberry_Cheesecake_(250677273).jpeg"
 emoji: "🍓"
 icon: cake
 iconColors: "#c98a4a, #fbf1dc, #c8102e"

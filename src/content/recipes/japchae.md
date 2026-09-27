@@ -3,6 +3,11 @@ title: "Džapčē (korejiešu stikla nūdeles ar dārzeņiem)"
 description: "Korejiešu svētku ēdiens džapčē: stikla nūdeles ar liellopu gaļu, spinātiem, sēnēm un dārzeņiem saldenā sojas un sezama mērcē."
 cuisine: korejiesu
 category: pamatedieni
+image: "/images/recipes/japchae.jpg"
+imageAuthor: "The original uploader was Appleby at English Wikipedia."
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Korean_cuisine_japchae_2.jpg"
 emoji: "🍜"
 icon: skillet
 iconColors: "#8a5a3a, #d86a3a"

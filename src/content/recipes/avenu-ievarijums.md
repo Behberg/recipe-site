@@ -2,6 +2,11 @@
 title: "Aveņu ievārījums"
 description: "Smaržīgs aveņu ievārījums ar spilgtu krāsu. Vislabāk garšo ar pankūkām un pie tējas."
 category: ievarijumi-un-konservi
+image: "/images/recipes/avenu-ievarijums.jpg"
+imageAuthor: "ginnerobot"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/"
+imageSource: "https://www.flickr.com/photos/78011127@N00/3966005634"
 emoji: "🍇"
 icon: jar
 iconColors: "#c2185b"

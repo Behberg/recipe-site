@@ -3,6 +3,11 @@ title: "Tomātu krēmzupa"
 description: "Samtaina tomātu zupa ar baziliku un krējumu. Pagatavojama no konservētiem tomātiem visu gadu."
 cuisine: amerikas
 category: zupas
+image: "/images/recipes/tomatu-zupa.jpg"
+imageAuthor: "E4024"
+imageLicense: "CC BY-SA 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tomato_soup,_Turkish_style.jpg"
 emoji: "🍅"
 icon: soup
 iconColors: "#d6402a"

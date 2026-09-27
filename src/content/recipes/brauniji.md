@@ -3,6 +3,11 @@ title: "Šokolādes brauniji"
 description: "Mitri, blīvi šokolādes brauniji ar kraukšķīgu virsu. Īsts prieks šokolādes cienītājiem."
 cuisine: amerikas
 category: saldie-edieni
+image: "/images/recipes/brauniji.jpg"
+imageAuthor: "Ɱ"
+imageLicense: "CC BY-SA 3.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chocolatebrownie.JPG"
 emoji: "🍫"
 icon: cake
 iconColors: "#4a2a1a, #5a3020"

@@ -3,6 +3,11 @@ title: "Tiramisu"
 description: "Klasisks itāļu deserts ar kafijā mērcētiem savojardi cepumiem un maskarpones krēmu."
 cuisine: italu
 category: saldie-edieni
+image: "/images/recipes/tiramisu.jpg"
+imageAuthor: "Raffaele Diomede from Pordenone, ITALIA"
+imageLicense: "CC BY 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Tiramisu_-_Raffaele_Diomede.jpg"
 emoji: "☕"
 icon: cake
 iconColors: "#c9a27a, #fbf6ea, #c9a27a, #fbf6ea, #6b4a3a"

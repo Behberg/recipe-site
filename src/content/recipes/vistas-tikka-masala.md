@@ -3,6 +3,11 @@ title: "Vistas tikka masala"
 description: "Populārākais Indijas restorānu ēdiens mājās: marinēta, apcepta vista maigā tomātu un krējuma mērcē ar garšvielām. Ar basmati rīsiem."
 cuisine: indiesu
 category: pamatedieni
+image: "/images/recipes/vistas-tikka-masala.jpg"
+imageAuthor: "Missvain"
+imageLicense: "CC BY 4.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by/4.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Chicken_tikka_masala_at_Yeti_in_Glen_Ellen_2015_-_Sarah_Stierch.jpg"
 emoji: "🍛"
 icon: skillet
 iconColors: "#d8602a, #f3d7a0"

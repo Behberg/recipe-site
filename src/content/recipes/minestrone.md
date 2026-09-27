@@ -3,6 +3,11 @@ title: "Minestrone"
 description: "Sātīga itāļu dārzeņu zupa ar pupiņām, mazajiem makaroniem un parmezānu."
 cuisine: italu
 category: zupas
+image: "/images/recipes/minestrone.jpg"
+imageAuthor: "Katrin Morenz from Aachen, Deutschland"
+imageLicense: "CC BY-SA 2.0"
+imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+imageSource: "https://commons.wikimedia.org/wiki/File:Minestrone_soup.jpg"
 emoji: "🥣"
 icon: soup
 iconColors: "#c8602a"
