@@ -1,0 +1,65 @@
+---
+import Base from '../../../layouts/Base.astro';
+import QuizCard from '../../../components/QuizCard.astro';
+import { getQuizzes, quizUrl, quizzesUrl } from '../../../lib/quizzes';
+import { breadcrumbLd, itemListLd } from '../../../lib/seo';
+import { langFromPath, langPaths, href, t } from '../../../i18n';
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const quizzes = await getQuizzes(lang);
+const title = t(lang, 'quiz.hubTitle');
+const jsonLd = [
+  breadcrumbLd([{ name: t(lang, 'nav.home'), path: href(lang, '/') }, { name: title, path: quizzesUrl(lang) }], Astro.site),
+  itemListLd(title, quizzes.map((q) => quizUrl(q.id, lang)), Astro.site),
+];
+---
+
+<Base title={title} description={t(lang, 'quiz.hubMeta')} jsonLd={jsonLd}>
+  <div class="container hub">
+    <header class="hub-head">
+      <span class="eyebrow">{t(lang, 'quiz.hubEyebrow')}</span>
+      <h1>{title}</h1>
+      <p class="lead">{t(lang, 'quiz.hubLead')}</p>
+    </header>
+    <div class="quiz-grid">
+      {quizzes.map((q) => <QuizCard quiz={q} />)}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .hub {
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  .hub-head {
+    max-width: 680px;
+    margin-bottom: 24px;
+  }
+  .hub-head h1 {
+    font-size: clamp(2.1rem, 1.5rem + 3vw, 3.4rem);
+    margin: 6px 0 10px;
+  }
+  .lead {
+    color: var(--ink-2);
+    font-size: 1.05rem;
+  }
+  .quiz-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 600px) {
+    .quiz-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1000px) {
+    .quiz-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+  }
+</style>

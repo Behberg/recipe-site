@@ -132,4 +132,74 @@ const recipeTranslations = defineCollection({
   }),
 });
 
-export const collections = { cuisines, categories, svetki, recipes, recipeTranslations };
+/**
+ * Personality quizzes ("Kāda maize esi tu?"). One file per quiz: the scoring structure plus the text
+ * in every language. Each answer gives points to one or more results; the highest total wins.
+ */
+const quizText = z.object({
+  title: z.string(),
+  /** One line under the title that sells the quiz. */
+  hook: z.string(),
+  /** A short paragraph for search engines and curious readers. */
+  intro: z.string(),
+  /** How a result is announced and shared, with {name}: "Es esmu {name}". */
+  resultLine: z.string(),
+  questions: z.array(z.object({ q: z.string(), a: z.array(z.string()) })),
+  results: z.record(
+    z.string(),
+    z.object({ name: z.string(), tagline: z.string(), description: z.string(), traits: z.array(z.string()) }),
+  ),
+});
+
+const quizzes = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/quizzes' }),
+  schema: z
+    .object({
+      order: z.coerce.number().default(100),
+      emoji: z.string(),
+      color: z.string(),
+      results: z.record(
+        z.string(),
+        z.object({
+          emoji: z.string(),
+          color: z.string(),
+          /** Another result of this quiz that goes well with this one ("tavs ideālais pāris"). */
+          match: z.string(),
+          /** Recipe ids shown with the result. The first one lends its illustration unless `icon` is set. */
+          recipes: z.array(z.string()).min(1),
+          cuisine: optString,
+          /** The name starts with a proper noun ("Jāņu siers"), so it keeps its capital inside a sentence. */
+          properName: z.boolean().default(false),
+          icon: optString,
+          iconColors: optString,
+          iconExtra: optString,
+        }),
+      ),
+      questions: z.array(
+        z.object({
+          answers: z.array(z.object({ emoji: z.string(), scores: z.record(z.string(), z.number()) })).min(2),
+        }),
+      ),
+      text: z.object({ lv: quizText, en: quizText, ru: quizText, lt: quizText }),
+    })
+    .superRefine((q, ctx) => {
+      const ids = Object.keys(q.results);
+      const issue = (message: string) => ctx.addIssue({ code: 'custom', message });
+      for (const [id, r] of Object.entries(q.results)) if (!ids.includes(r.match)) issue(`${id}: unknown match "${r.match}"`);
+      q.questions.forEach((qu, i) =>
+        qu.answers.forEach((a, j) => {
+          for (const id of Object.keys(a.scores)) if (!ids.includes(id)) issue(`question ${i + 1}, answer ${j + 1}: unknown result "${id}"`);
+        }),
+      );
+      for (const [lang, tx] of Object.entries(q.text)) {
+        if (tx.questions.length !== q.questions.length) issue(`${lang}: ${tx.questions.length} questions, expected ${q.questions.length}`);
+        tx.questions.forEach((qu, i) => {
+          const want = q.questions[i]?.answers.length;
+          if (qu.a.length !== want) issue(`${lang}: question ${i + 1} has ${qu.a.length} answers, expected ${want}`);
+        });
+        for (const id of ids) if (!tx.results[id]) issue(`${lang}: missing text for result "${id}"`);
+      }
+    }),
+});
+
+export const collections = { cuisines, categories, svetki, recipes, recipeTranslations, quizzes };

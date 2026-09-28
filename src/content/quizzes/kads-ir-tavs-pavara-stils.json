@@ -1,0 +1,819 @@
+{
+  "order": 6,
+  "emoji": "👩‍🍳",
+  "color": "#3f6fa0",
+  "results": {
+    "dzezs": {
+      "emoji": "🎷",
+      "color": "#6a4c9c",
+      "match": "laboratorija",
+      "recipes": [
+        "fritata-ar-darzeniem",
+        "ceptie-risi",
+        "sakshuka"
+      ]
+    },
+    "vecmamina": {
+      "emoji": "🥄",
+      "color": "#b5533c",
+      "match": "atri",
+      "recipes": [
+        "kapostu-titeni",
+        "speka-piragi",
+        "planas-pankukas"
+      ]
+    },
+    "laboratorija": {
+      "emoji": "⚖️",
+      "color": "#2f7d8c",
+      "match": "dzezs",
+      "recipes": [
+        "krembrile",
+        "ekleri-ar-vanilas-kremu",
+        "maja-rupjmaize"
+      ]
+    },
+    "atri": {
+      "emoji": "⚡",
+      "color": "#d98a1f",
+      "match": "vecmamina",
+      "recipes": [
+        "spageti-aglio-olio",
+        "omlete-ar-sieru",
+        "tomatu-makaroni-viena-kata"
+      ]
+    },
+    "sovs": {
+      "emoji": "🎬",
+      "color": "#b8324f",
+      "match": "uzkodas",
+      "recipes": [
+        "grilets-steiks",
+        "olas-benedikts",
+        "pavlova-ar-ogam"
+      ]
+    },
+    "uzkodas": {
+      "emoji": "🧀",
+      "color": "#7d8a3a",
+      "match": "sovs",
+      "recipes": [
+        "humuss",
+        "kanape-ar-sieru-un-vinogam",
+        "bruskete"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "📐",
+          "scores": {
+            "laboratorija": 2
+          }
+        },
+        {
+          "emoji": "👀",
+          "scores": {
+            "dzezs": 2,
+            "sovs": 1
+          }
+        },
+        {
+          "emoji": "⏱️",
+          "scores": {
+            "atri": 2,
+            "uzkodas": 1
+          }
+        },
+        {
+          "emoji": "🧠",
+          "scores": {
+            "vecmamina": 2,
+            "dzezs": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧀",
+          "scores": {
+            "uzkodas": 2,
+            "atri": 1
+          }
+        },
+        {
+          "emoji": "🔥",
+          "scores": {
+            "sovs": 2,
+            "vecmamina": 1
+          }
+        },
+        {
+          "emoji": "🍲",
+          "scores": {
+            "vecmamina": 2
+          }
+        },
+        {
+          "emoji": "🧊",
+          "scores": {
+            "dzezs": 2,
+            "atri": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "⚖️",
+          "scores": {
+            "laboratorija": 2,
+            "sovs": 1
+          }
+        },
+        {
+          "emoji": "🍳",
+          "scores": {
+            "atri": 2,
+            "dzezs": 1
+          }
+        },
+        {
+          "emoji": "🥄",
+          "scores": {
+            "vecmamina": 2
+          }
+        },
+        {
+          "emoji": "🔪",
+          "scores": {
+            "uzkodas": 2,
+            "dzezs": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "💥",
+          "scores": {
+            "dzezs": 2,
+            "sovs": 1
+          }
+        },
+        {
+          "emoji": "✨",
+          "scores": {
+            "laboratorija": 2,
+            "atri": 1
+          }
+        },
+        {
+          "emoji": "🧼",
+          "scores": {
+            "vecmamina": 2
+          }
+        },
+        {
+          "emoji": "🪵",
+          "scores": {
+            "uzkodas": 2
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "👁️",
+          "scores": {
+            "sovs": 2,
+            "laboratorija": 1
+          }
+        },
+        {
+          "emoji": "🎲",
+          "scores": {
+            "dzezs": 2,
+            "uzkodas": 1
+          }
+        },
+        {
+          "emoji": "🏃",
+          "scores": {
+            "atri": 2
+          }
+        },
+        {
+          "emoji": "❤️",
+          "scores": {
+            "vecmamina": 2,
+            "uzkodas": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "📸",
+          "scores": {
+            "sovs": 2
+          }
+        },
+        {
+          "emoji": "🗓️",
+          "scores": {
+            "laboratorija": 2,
+            "vecmamina": 1
+          }
+        },
+        {
+          "emoji": "🛒",
+          "scores": {
+            "atri": 2,
+            "dzezs": 1
+          }
+        },
+        {
+          "emoji": "😋",
+          "scores": {
+            "uzkodas": 2,
+            "dzezs": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧪",
+          "scores": {
+            "laboratorija": 2,
+            "sovs": 1
+          }
+        },
+        {
+          "emoji": "🧺",
+          "scores": {
+            "vecmamina": 2,
+            "uzkodas": 1
+          }
+        },
+        {
+          "emoji": "⚡",
+          "scores": {
+            "atri": 2
+          }
+        },
+        {
+          "emoji": "🎨",
+          "scores": {
+            "sovs": 2,
+            "uzkodas": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds ir tavs pavāra stils?",
+      "hook": "Pēc grama vai uz aci? 7 jautājumi atklās, kā tu gatavo patiesībā.",
+      "intro": "Katrā virtuvē valda savs stils. Kāds seko receptei līdz pēdējam gramam, kāds improvizē kā džeza mūziķis, bet kāds pabaro visu ciemu no viena katla. Atbildi uz septiņiem jautājumiem, uzzini savu pavāra stilu un saņem receptes, kas tam piestāv visvairāk.",
+      "resultLine": "Mans pavāra stils: {name}",
+      "questions": [
+        {
+          "q": "Tu atver recepti. Ko tu dari?",
+          "a": [
+            "Sekoju katram gramam",
+            "Izlasu un tad daru pa savam",
+            "Skatos tikai gatavošanas laiku",
+            "Kāda recepte? Man viss ir galvā"
+          ]
+        },
+        {
+          "q": "Ciemiņi ieradīsies pēc stundas. Tavs plāns?",
+          "a": [
+            "Siers, augļi, rieksti, un viss ir gatavs",
+            "Trīs ēdieni un deserts, paspēšu",
+            "Liels katls ar kaut ko sātīgu",
+            "Atvēršu ledusskapi, un tad redzēsim"
+          ]
+        },
+        {
+          "q": "Tavs mīļākais virtuves rīks?",
+          "a": [
+            "Virtuves svari",
+            "Viena panna visam",
+            "Liela koka karote",
+            "Dēlītis un labs nazis"
+          ]
+        },
+        {
+          "q": "Kā izskatās tava virtuve pēc gatavošanas?",
+          "a": [
+            "Kā pēc sprādziena",
+            "Tīra, jo uzkopju pa ceļam",
+            "Nomazgāju traukus, kamēr visi ēd",
+            "Kādi trauki? Visu ēdām no dēļa"
+          ]
+        },
+        {
+          "q": "Tavs virtuves sauklis?",
+          "a": [
+            "„Ēdam arī ar acīm”",
+            "„Kas gan var noiet greizi?”",
+            "„Ātrāk par piegādi”",
+            "„Vēl vienu šķīvīti?”"
+          ]
+        },
+        {
+          "q": "Kā tu izvēlies, ko gatavot?",
+          "a": [
+            "Pēc tā, kas izskatīsies skaisti",
+            "Nedēļas ēdienkarte jau uzrakstīta",
+            "Pēc tā, kas ir akcijā",
+            "Pēc noskaņojuma un kārumiem"
+          ]
+        },
+        {
+          "q": "Tava virtuves superspēja?",
+          "a": [
+            "Izcept perfektus makarūnus",
+            "Pabarot visu ciemu",
+            "Vakariņas 15 minūtēs",
+            "Parasts šķīvis izskatās kā restorānā"
+          ]
+        }
+      ],
+      "results": {
+        "dzezs": {
+          "name": "Virtuves džezs",
+          "tagline": "Recepte ir tikai ieteikums.",
+          "description": "Tu gatavo kā džeza mūziķis: ar sajūtu, improvizāciju un mazliet riska. Ledusskapja pārpalikumi tavās rokās kļūst par jaunu ēdienu, un katru reizi tas sanāk mazliet citādi. Dažreiz izcili, dažreiz interesanti, bet nekad garlaicīgi.",
+          "traits": [
+            "Radošums",
+            "Drosme",
+            "Intuīcija"
+          ]
+        },
+        "vecmamina": {
+          "name": "Vecmāmiņas sirds",
+          "tagline": "Neviens no tevis neaiziet izsalcis.",
+          "description": "Tev ēdiens ir mīlestības valoda. Tu gatavo lielos katlos, porcijas mēri ar sirdi, nevis svariem, un vienmēr piedāvā „vēl mazliet”. Tavā virtuvē smaržo pēc bērnības, un tur visi grib atgriezties.",
+          "traits": [
+            "Rūpes",
+            "Dāsnums",
+            "Tradīcijas"
+          ]
+        },
+        "laboratorija": {
+          "name": "Virtuves laboratorija",
+          "tagline": "Precizitāte līdz pēdējam gramam.",
+          "description": "Tev virtuve ir laboratorija, un recepte ir likums. Tu zini, kāpēc mīkla rūgst un kāpēc bezē krīt, un tavi rezultāti ir perfekti un atkārtojami. Citi to sauc par pedantismu, tu to sauc par cieņu pret ēdienu.",
+          "traits": [
+            "Precizitāte",
+            "Zināšanas",
+            "Pacietība"
+          ]
+        },
+        "atri": {
+          "name": "15 minūšu maģija",
+          "tagline": "Vakariņas ātrāk par piegādi.",
+          "description": "Tu glāb darbdienu vakarus. Viena panna, pieci produkti un piecpadsmit minūtes, un uz galda jau ir kaut kas garšīgs. Tev nevajag sarežģītas receptes, jo tu zini gudrākos īsceļus.",
+          "traits": [
+            "Ātrums",
+            "Praktiskums",
+            "Atjautība"
+          ]
+        },
+        "sovs": {
+          "name": "Šefpavāra šovs",
+          "tagline": "Katrs šķīvis ir mākslas darbs.",
+          "description": "Tev gatavošana ir izrāde, un šķīvis ir skatuve. Tu zini, kā noformēt, kur uzlikt zaļumus un kā uzņemt labāko foto. Ciemiņi pie tevis nāk ne tikai paēst, bet arī uz šovu.",
+          "traits": [
+            "Estētika",
+            "Vēriens",
+            "Šarms"
+          ]
+        },
+        "uzkodas": {
+          "name": "Uzkodu dēlis",
+          "tagline": "Kāpēc izvēlēties vienu, ja var visu pa druskai?",
+          "description": "Tev patīk daudz mazu garšu, nevis viens liels ēdiens. Siers, olīvas, humuss, vīnogas un laba maize, un vakars ir izdevies. Pie tava dēļa vienmēr sākas labākās sarunas, kas ievelkas līdz vēlai naktij.",
+          "traits": [
+            "Vieglums",
+            "Sabiedriskums",
+            "Gardēža gaume"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "What kind of cook are you?",
+      "hook": "To the gram or by eye? 7 questions will reveal how you really cook.",
+      "intro": "Every kitchen has its own style. Some follow the recipe to the last gram, some improvise like jazz musicians, and some feed the whole village from one pot. Answer seven questions to find your cooking style and get the recipes that suit it best.",
+      "resultLine": "My cooking style: {name}",
+      "questions": [
+        {
+          "q": "You open a recipe. What do you do?",
+          "a": [
+            "Follow every gram",
+            "Read it, then do my own thing",
+            "Only check the cooking time",
+            "What recipe? It's all in my head"
+          ]
+        },
+        {
+          "q": "Guests arrive in an hour. Your plan?",
+          "a": [
+            "Cheese, fruit, nuts and done",
+            "Three courses and dessert, I'll manage",
+            "A big pot of something hearty",
+            "Open the fridge and see what happens"
+          ]
+        },
+        {
+          "q": "Favourite kitchen tool?",
+          "a": [
+            "Kitchen scales",
+            "One pan for everything",
+            "A big wooden spoon",
+            "A board and a good knife"
+          ]
+        },
+        {
+          "q": "What does your kitchen look like after cooking?",
+          "a": [
+            "Like after an explosion",
+            "Clean, I tidy as I go",
+            "I wash up while everyone eats",
+            "What dishes? We ate off the board"
+          ]
+        },
+        {
+          "q": "Your kitchen motto?",
+          "a": [
+            "“We eat with our eyes too”",
+            "“What could possibly go wrong?”",
+            "“Faster than delivery”",
+            "“Another helping?”"
+          ]
+        },
+        {
+          "q": "How do you choose what to cook?",
+          "a": [
+            "Whatever will look beautiful",
+            "The weekly menu is already written",
+            "Whatever is on offer",
+            "My mood and my cravings"
+          ]
+        },
+        {
+          "q": "Your kitchen superpower?",
+          "a": [
+            "Baking perfect macarons",
+            "Feeding the whole village",
+            "Dinner in 15 minutes",
+            "Making any plate look like a restaurant's"
+          ]
+        }
+      ],
+      "results": {
+        "dzezs": {
+          "name": "Kitchen jazz",
+          "tagline": "Recipes are just suggestions.",
+          "description": "You cook like a jazz musician: with feeling, improvisation and a little risk. Fridge leftovers become a new dish in your hands, and it turns out a little different every time. Sometimes brilliant, sometimes interesting, never boring.",
+          "traits": [
+            "Creativity",
+            "Courage",
+            "Intuition"
+          ]
+        },
+        "vecmamina": {
+          "name": "Grandma's heart",
+          "tagline": "Nobody leaves your table hungry.",
+          "description": "For you food is a love language. You cook in big pots, measure portions with your heart rather than scales and always offer “just a little more”. Your kitchen smells of childhood, and everyone wants to come back.",
+          "traits": [
+            "Care",
+            "Generosity",
+            "Tradition"
+          ]
+        },
+        "laboratorija": {
+          "name": "Kitchen lab",
+          "tagline": "Precision down to the last gram.",
+          "description": "Your kitchen is a lab and the recipe is the law. You know why dough rises and why meringue collapses, and your results are perfect and repeatable. Others call it pedantry; you call it respect for food.",
+          "traits": [
+            "Precision",
+            "Knowledge",
+            "Patience"
+          ]
+        },
+        "atri": {
+          "name": "15-minute magic",
+          "tagline": "Dinner faster than delivery.",
+          "description": "You rescue weeknight dinners. One pan, five ingredients and fifteen minutes, and there is something tasty on the table. You don't need complicated recipes because you know the smartest shortcuts.",
+          "traits": [
+            "Speed",
+            "Practicality",
+            "Resourcefulness"
+          ]
+        },
+        "sovs": {
+          "name": "Chef's show",
+          "tagline": "Every plate is a work of art.",
+          "description": "For you cooking is a performance and the plate is the stage. You know how to plate, where to put the herbs and how to take the best photo. Guests come to you not just to eat, but for the show.",
+          "traits": [
+            "Aesthetics",
+            "Flair",
+            "Charm"
+          ]
+        },
+        "uzkodas": {
+          "name": "Snack board",
+          "tagline": "Why pick one when you can have a bit of everything?",
+          "description": "You love lots of small flavours rather than one big dish. Cheese, olives, hummus, grapes and good bread, and the evening is a success. The best conversations always start around your board, and the night goes on and on.",
+          "traits": [
+            "Ease",
+            "Sociability",
+            "Foodie taste"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какой у тебя кулинарный стиль?",
+      "hook": "По граммам или на глаз? 7 вопросов покажут, как ты готовишь на самом деле.",
+      "intro": "У каждой кухни свой стиль. Кто-то следует рецепту до последнего грамма, кто-то импровизирует, как джазовый музыкант, а кто-то кормит всю деревню из одной кастрюли. Ответь на семь вопросов, узнай свой кулинарный стиль и получи рецепты, которые подходят ему лучше всего.",
+      "resultLine": "Мой кулинарный стиль: {name}",
+      "questions": [
+        {
+          "q": "Ты открываешь рецепт. Что делаешь?",
+          "a": [
+            "Следую каждому грамму",
+            "Читаю и делаю по-своему",
+            "Смотрю только время готовки",
+            "Какой рецепт? Всё в голове"
+          ]
+        },
+        {
+          "q": "Гости придут через час. Твой план?",
+          "a": [
+            "Сыр, фрукты, орехи, и всё готово",
+            "Три блюда и десерт, успею",
+            "Большая кастрюля чего-то сытного",
+            "Открою холодильник, а там посмотрим"
+          ]
+        },
+        {
+          "q": "Любимый кухонный инструмент?",
+          "a": [
+            "Кухонные весы",
+            "Одна сковорода для всего",
+            "Большая деревянная ложка",
+            "Доска и хороший нож"
+          ]
+        },
+        {
+          "q": "Как выглядит твоя кухня после готовки?",
+          "a": [
+            "Как после взрыва",
+            "Чисто, убираю по ходу",
+            "Мою посуду, пока все едят",
+            "Какая посуда? Ели с доски"
+          ]
+        },
+        {
+          "q": "Твой кухонный девиз?",
+          "a": [
+            "«Едим и глазами»",
+            "«Что может пойти не так?»",
+            "«Быстрее доставки»",
+            "«Ещё тарелочку?»"
+          ]
+        },
+        {
+          "q": "Как ты выбираешь, что готовить?",
+          "a": [
+            "То, что будет красиво смотреться",
+            "Меню на неделю уже написано",
+            "То, что по акции",
+            "По настроению и желанию"
+          ]
+        },
+        {
+          "q": "Твоя кухонная суперсила?",
+          "a": [
+            "Испечь идеальные макаруны",
+            "Накормить всю деревню",
+            "Ужин за 15 минут",
+            "Любая тарелка выглядит как в ресторане"
+          ]
+        }
+      ],
+      "results": {
+        "dzezs": {
+          "name": "Кухонный джаз",
+          "tagline": "Рецепт — это просто совет.",
+          "description": "Ты готовишь как джазовый музыкант: с чувством, импровизацией и небольшим риском. Остатки из холодильника в твоих руках становятся новым блюдом, и каждый раз получается немного иначе. Иногда гениально, иногда интересно, но никогда не скучно.",
+          "traits": [
+            "Креативность",
+            "Смелость",
+            "Интуиция"
+          ]
+        },
+        "vecmamina": {
+          "name": "Бабушкино сердце",
+          "tagline": "От тебя никто не уходит голодным.",
+          "description": "Для тебя еда — это язык любви. Ты готовишь большими кастрюлями, отмеряешь порции сердцем, а не весами, и всегда предлагаешь «ещё немножко». На твоей кухне пахнет детством, и туда все хотят вернуться.",
+          "traits": [
+            "Забота",
+            "Щедрость",
+            "Традиции"
+          ]
+        },
+        "laboratorija": {
+          "name": "Кухонная лаборатория",
+          "tagline": "Точность до последнего грамма.",
+          "description": "Твоя кухня — лаборатория, а рецепт — закон. Ты знаешь, почему поднимается тесто и почему оседает безе, а твои результаты идеальны и повторяемы. Другие называют это педантизмом, ты называешь это уважением к еде.",
+          "traits": [
+            "Точность",
+            "Знания",
+            "Терпение"
+          ]
+        },
+        "atri": {
+          "name": "Магия 15 минут",
+          "tagline": "Ужин быстрее доставки.",
+          "description": "Ты спасаешь будние вечера. Одна сковорода, пять продуктов и пятнадцать минут, и на столе уже что-то вкусное. Тебе не нужны сложные рецепты, потому что ты знаешь самые умные короткие пути.",
+          "traits": [
+            "Скорость",
+            "Практичность",
+            "Находчивость"
+          ]
+        },
+        "sovs": {
+          "name": "Шоу шеф-повара",
+          "tagline": "Каждая тарелка — произведение искусства.",
+          "description": "Для тебя готовка — спектакль, а тарелка — сцена. Ты знаешь, как оформить блюдо, куда положить зелень и как сделать лучшее фото. Гости приходят к тебе не только поесть, но и на шоу.",
+          "traits": [
+            "Эстетика",
+            "Размах",
+            "Шарм"
+          ]
+        },
+        "uzkodas": {
+          "name": "Доска закусок",
+          "tagline": "Зачем выбирать одно, если можно всего понемногу?",
+          "description": "Ты любишь много маленьких вкусов вместо одного большого блюда. Сыр, оливки, хумус, виноград и хороший хлеб, и вечер удался. Вокруг твоей доски всегда начинаются лучшие разговоры, которые затягиваются до поздней ночи.",
+          "traits": [
+            "Лёгкость",
+            "Общительность",
+            "Вкус гурмана"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Koks tavo kulinarinis stilius?",
+      "hook": "Pagal gramus ar iš akies? 7 klausimai atskleis, kaip iš tikrųjų gamini.",
+      "intro": "Kiekviena virtuvė turi savo stilių. Vieni seka receptu iki paskutinio gramo, kiti improvizuoja kaip džiazo muzikantai, o dar kiti pamaitina visą kaimą iš vieno puodo. Atsakyk į septynis klausimus, sužinok savo kulinarinį stilių ir gauk receptų, kurie jam tinka labiausiai.",
+      "resultLine": "Mano kulinarinis stilius: {name}",
+      "questions": [
+        {
+          "q": "Atsiverti receptą. Ką darai?",
+          "a": [
+            "Laikausi kiekvieno gramo",
+            "Perskaitau ir darau savaip",
+            "Žiūriu tik gaminimo laiką",
+            "Koks receptas? Viskas galvoje"
+          ]
+        },
+        {
+          "q": "Svečiai atvyks po valandos. Tavo planas?",
+          "a": [
+            "Sūris, vaisiai, riešutai, ir viskas paruošta",
+            "Trys patiekalai ir desertas, spėsiu",
+            "Didelis puodas ko nors soties",
+            "Atidarysiu šaldytuvą, o ten pažiūrėsim"
+          ]
+        },
+        {
+          "q": "Mėgstamiausias virtuvės įrankis?",
+          "a": [
+            "Virtuvės svarstyklės",
+            "Viena keptuvė viskam",
+            "Didelis medinis šaukštas",
+            "Lentelė ir geras peilis"
+          ]
+        },
+        {
+          "q": "Kaip atrodo tavo virtuvė po gaminimo?",
+          "a": [
+            "Kaip po sprogimo",
+            "Švari, tvarkau pakeliui",
+            "Suplaunu indus, kol visi valgo",
+            "Kokie indai? Valgėme nuo lentos"
+          ]
+        },
+        {
+          "q": "Tavo virtuvės šūkis?",
+          "a": [
+            "„Valgome ir akimis“",
+            "„Kas gali nepavykti?“",
+            "„Greičiau nei pristatymas“",
+            "„Dar lėkštutę?“"
+          ]
+        },
+        {
+          "q": "Kaip renkiesi, ką gaminti?",
+          "a": [
+            "Pagal tai, kas gražiai atrodys",
+            "Savaitės meniu jau parašytas",
+            "Pagal tai, kas akcijoje",
+            "Pagal nuotaiką ir norus"
+          ]
+        },
+        {
+          "q": "Tavo virtuvės supergalia?",
+          "a": [
+            "Iškepti tobulus makarūnus",
+            "Pamaitinti visą kaimą",
+            "Vakarienė per 15 minučių",
+            "Bet kuri lėkštė atrodo kaip restorane"
+          ]
+        }
+      ],
+      "results": {
+        "dzezs": {
+          "name": "Virtuvės džiazas",
+          "tagline": "Receptas yra tik patarimas.",
+          "description": "Gamini kaip džiazo muzikantas: su jausmu, improvizacija ir trupučiu rizikos. Šaldytuvo likučiai tavo rankose virsta nauju patiekalu, ir kiekvieną kartą išeina šiek tiek kitaip. Kartais genialiai, kartais įdomiai, bet niekada nuobodžiai.",
+          "traits": [
+            "Kūrybiškumas",
+            "Drąsa",
+            "Intuicija"
+          ]
+        },
+        "vecmamina": {
+          "name": "Močiutės širdis",
+          "tagline": "Niekas nuo tavęs neišeina alkanas.",
+          "description": "Tau maistas yra meilės kalba. Gamini dideliais puodais, porcijas matuoji širdimi, o ne svarstyklėmis, ir visada siūlai „dar truputėlį“. Tavo virtuvėje kvepia vaikyste, ir ten visi nori sugrįžti.",
+          "traits": [
+            "Rūpestis",
+            "Dosnumas",
+            "Tradicijos"
+          ]
+        },
+        "laboratorija": {
+          "name": "Virtuvės laboratorija",
+          "tagline": "Tikslumas iki paskutinio gramo.",
+          "description": "Tavo virtuvė yra laboratorija, o receptas yra įstatymas. Žinai, kodėl kyla tešla ir kodėl krenta morengai, o tavo rezultatai tobuli ir pakartojami. Kiti tai vadina pedantiškumu, tu tai vadini pagarba maistui.",
+          "traits": [
+            "Tikslumas",
+            "Žinios",
+            "Kantrybė"
+          ]
+        },
+        "atri": {
+          "name": "15 minučių magija",
+          "tagline": "Vakarienė greičiau nei pristatymas.",
+          "description": "Tu gelbsti darbo dienų vakarus. Viena keptuvė, penki produktai ir penkiolika minučių, ir ant stalo jau kas nors skanaus. Tau nereikia sudėtingų receptų, nes žinai protingiausius trumpinius.",
+          "traits": [
+            "Greitis",
+            "Praktiškumas",
+            "Išradingumas"
+          ]
+        },
+        "sovs": {
+          "name": "Virtuvės šefo šou",
+          "tagline": "Kiekviena lėkštė yra meno kūrinys.",
+          "description": "Tau gaminimas yra spektaklis, o lėkštė yra scena. Žinai, kaip patiekti, kur padėti žalumynus ir kaip padaryti geriausią nuotrauką. Svečiai pas tave ateina ne tik pavalgyti, bet ir į šou.",
+          "traits": [
+            "Estetika",
+            "Užmojis",
+            "Žavesys"
+          ]
+        },
+        "uzkodas": {
+          "name": "Užkandžių lenta",
+          "tagline": "Kam rinktis vieną, jei galima visko po truputį?",
+          "description": "Mėgsti daug mažų skonių, o ne vieną didelį patiekalą. Sūris, alyvuogės, humusas, vynuogės ir gera duona, ir vakaras pavyko. Prie tavo lentos visada prasideda geriausi pokalbiai, kurie užsitęsia iki vėlyvos nakties.",
+          "traits": [
+            "Lengvumas",
+            "Bendruomeniškumas",
+            "Gurmano skonis"
+          ]
+        }
+      }
+    }
+  }
+}

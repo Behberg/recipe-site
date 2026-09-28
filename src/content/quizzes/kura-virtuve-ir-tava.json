@@ -1,0 +1,827 @@
+{
+  "order": 5,
+  "emoji": "🌍",
+  "color": "#2f7d6d",
+  "results": {
+    "itala": {
+      "emoji": "🇮🇹",
+      "color": "#c0392b",
+      "match": "gruzija",
+      "recipes": [
+        "spageti-karbonara",
+        "pica-margarita",
+        "tiramisu"
+      ],
+      "cuisine": "italu"
+    },
+    "japana": {
+      "emoji": "🇯🇵",
+      "color": "#b8323a",
+      "match": "latvija",
+      "recipes": [
+        "maki-susi",
+        "ojakodons",
+        "miso-zupa"
+      ],
+      "cuisine": "japanu"
+    },
+    "meksika": {
+      "emoji": "🇲🇽",
+      "color": "#2e8b57",
+      "match": "indija",
+      "recipes": [
+        "vistas-tako",
+        "gvakamole",
+        "elote"
+      ],
+      "cuisine": "meksikas"
+    },
+    "gruzija": {
+      "emoji": "🇬🇪",
+      "color": "#a8323e",
+      "match": "itala",
+      "recipes": [
+        "adzaru-hacapuri",
+        "hinkali",
+        "cahohbili"
+      ],
+      "cuisine": "gruzinu"
+    },
+    "indija": {
+      "emoji": "🇮🇳",
+      "color": "#e07b1f",
+      "match": "meksika",
+      "recipes": [
+        "sviesta-vista",
+        "dals",
+        "naan-maize"
+      ],
+      "cuisine": "indiesu"
+    },
+    "latvija": {
+      "emoji": "🇱🇻",
+      "color": "#9e3039",
+      "match": "japana",
+      "recipes": [
+        "pelekie-zirni-ar-speki",
+        "skabputra",
+        "sklandrausis"
+      ],
+      "cuisine": "latviesu"
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "👨‍👩‍👧‍👦",
+          "scores": {
+            "itala": 2,
+            "gruzija": 1
+          }
+        },
+        {
+          "emoji": "🍱",
+          "scores": {
+            "japana": 2
+          }
+        },
+        {
+          "emoji": "🙌",
+          "scores": {
+            "meksika": 2,
+            "indija": 1
+          }
+        },
+        {
+          "emoji": "🌿",
+          "scores": {
+            "latvija": 2,
+            "japana": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧊",
+          "scores": {
+            "latvija": 2,
+            "japana": 1
+          }
+        },
+        {
+          "emoji": "🫑",
+          "scores": {
+            "itala": 2,
+            "gruzija": 1
+          }
+        },
+        {
+          "emoji": "🔥",
+          "scores": {
+            "meksika": 2,
+            "indija": 1
+          }
+        },
+        {
+          "emoji": "🎼",
+          "scores": {
+            "indija": 2,
+            "gruzija": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎨",
+          "scores": {
+            "itala": 2,
+            "japana": 1
+          }
+        },
+        {
+          "emoji": "🧘",
+          "scores": {
+            "japana": 2,
+            "latvija": 1
+          }
+        },
+        {
+          "emoji": "💃",
+          "scores": {
+            "meksika": 2,
+            "gruzija": 1
+          }
+        },
+        {
+          "emoji": "📜",
+          "scores": {
+            "indija": 2,
+            "gruzija": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🥂",
+          "scores": {
+            "gruzija": 2,
+            "itala": 1
+          }
+        },
+        {
+          "emoji": "🍵",
+          "scores": {
+            "japana": 2,
+            "indija": 1
+          }
+        },
+        {
+          "emoji": "🎉",
+          "scores": {
+            "meksika": 2
+          }
+        },
+        {
+          "emoji": "🥒",
+          "scores": {
+            "latvija": 2,
+            "gruzija": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🗓️",
+          "scores": {
+            "japana": 2
+          }
+        },
+        {
+          "emoji": "🎒",
+          "scores": {
+            "meksika": 2,
+            "indija": 1
+          }
+        },
+        {
+          "emoji": "🏛️",
+          "scores": {
+            "itala": 2,
+            "gruzija": 1
+          }
+        },
+        {
+          "emoji": "🏕️",
+          "scores": {
+            "latvija": 2
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎁",
+          "scores": {
+            "indija": 2,
+            "meksika": 1
+          }
+        },
+        {
+          "emoji": "🍝",
+          "scores": {
+            "itala": 2,
+            "gruzija": 1
+          }
+        },
+        {
+          "emoji": "🤗",
+          "scores": {
+            "gruzija": 2,
+            "meksika": 1
+          }
+        },
+        {
+          "emoji": "🤲",
+          "scores": {
+            "latvija": 2,
+            "japana": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🥥",
+          "scores": {
+            "indija": 2,
+            "itala": 1
+          }
+        },
+        {
+          "emoji": "🍋",
+          "scores": {
+            "japana": 2,
+            "latvija": 1
+          }
+        },
+        {
+          "emoji": "🧄",
+          "scores": {
+            "gruzija": 2
+          }
+        },
+        {
+          "emoji": "🥑",
+          "scores": {
+            "meksika": 2
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kura pasaules virtuve ir tava?",
+      "hook": "Tava garša, raksturs un ceļojumu sapņi pateiks, kur tev jāpusdieno.",
+      "intro": "Dažiem cilvēkiem pase ir latviska, bet dvēsele itāliska, gruzīniska vai japāniska. Atbildi uz septiņiem jautājumiem par to, kā tu ēd, svini un ceļo, un uzzini, kura pasaules virtuve tev ir vistuvākā. Rezultātā atradīsi receptes un veselu šīs virtuves sadaļu mūsu vietnē.",
+      "resultLine": "Mana dvēseles virtuve: {name}",
+      "questions": [
+        {
+          "q": "Tavs ideālais svētdienas pusdienu galds?",
+          "a": [
+            "Liels galds, un visi runā reizē",
+            "Mazas, skaisti noformētas porcijas",
+            "Viss uz galda, ēdam ar rokām",
+            "Tas, kas izaudzis pašu dārzā"
+          ]
+        },
+        {
+          "q": "Cik asu tu ēd?",
+          "a": [
+            "Asu vispār neēdu",
+            "Mazliet, garšai",
+            "Jo asāk, jo labāk",
+            "Man vajag veselu garšvielu simfoniju"
+          ]
+        },
+        {
+          "q": "Kas tevi iedvesmo?",
+          "a": [
+            "Māksla un skaistums",
+            "Miers un kārtība",
+            "Mūzika un deja",
+            "Senas tradīcijas un stāsti"
+          ]
+        },
+        {
+          "q": "Kā tu uzņem ciemiņus?",
+          "a": [
+            "Tosti un dziesmas līdz rītam",
+            "Tēja un klusa saruna",
+            "Mūzika, krāsas, liela ballīte",
+            "Viss no pagraba: gurķi, ievārījumi, maize"
+          ]
+        },
+        {
+          "q": "Tavs ceļošanas stils?",
+          "a": [
+            "Viss izplānots līdz minūtei",
+            "Mugursoma un spontanitāte",
+            "Muzeji, vēsture, arhitektūra",
+            "Telts pie ezera"
+          ]
+        },
+        {
+          "q": "Kā tu parādi mīlestību?",
+          "a": [
+            "Ar dāvanām un pārsteigumiem",
+            "Ar mājās gatavotu ēdienu",
+            "Ar skaļiem komplimentiem un apskāvieniem",
+            "Ar klusu palīdzību darbos"
+          ]
+        },
+        {
+          "q": "Kura garša tev patīk visvairāk?",
+          "a": [
+            "Maiga un krēmīga",
+            "Svaiga un tīra",
+            "Ķiploki, rieksti un zaļumi",
+            "Laims un koriandrs"
+          ]
+        }
+      ],
+      "results": {
+        "itala": {
+          "name": "Itāļu virtuve",
+          "tagline": "La dolce vita ir tavs dienas plāns.",
+          "description": "Tu dzīvo ar kaislību: skaļi smejies, runā ar rokām un zini, ka labas pusdienas nedrīkst steigt. Tev patīk vienkāršas lietas augstākajā kvalitātē un cilvēki, kas ēd ar prieku. Mamma mia, cik ar tevi ir jautri!",
+          "traits": [
+            "Kaislība",
+            "Ģimene",
+            "Dzīves baudīšana"
+          ]
+        },
+        "japana": {
+          "name": "Japāņu virtuve",
+          "tagline": "Harmonija katrā kumosā.",
+          "description": "Tu novērtē kārtību, detaļas un mierīgu skaistumu. Tev nevajag daudz, bet visam jābūt tieši tā, kā pienākas. Tavā klātbūtnē cilvēki nomierinās, un tavs mājoklis droši vien ir kārtīgāks nekā vairumam.",
+          "traits": [
+            "Harmonija",
+            "Precizitāte",
+            "Miers"
+          ]
+        },
+        "meksika": {
+          "name": "Meksikāņu virtuve",
+          "tagline": "Krāsas, mūzika un mazliet čili.",
+          "description": "Tevī ir fiestas enerģija: tu mīli krāsas, mūziku un lielas kompānijas. Tu nebaidies no asuma ne ēdienā, ne dzīvē, un ar tevi jebkura otrdiena var pārvērsties svētkos. Viva la vida!",
+          "traits": [
+            "Enerģija",
+            "Drosme",
+            "Svētku gars"
+          ]
+        },
+        "gruzija": {
+          "name": "Gruzīnu virtuve",
+          "tagline": "Viesmīlība bez robežām.",
+          "description": "Tev ciemiņš ir svēts, un neviens no tava galda neaiziet izsalcis. Tu proti teikt tostus, kas aizkustina līdz asarām, un tavas mājas vienmēr ir atvērtas. Tev ir liela sirds, un tā vienmēr klāj galdu vēl vienam.",
+          "traits": [
+            "Viesmīlība",
+            "Dāsnums",
+            "Liela sirds"
+          ]
+        },
+        "indija": {
+          "name": "Indiešu virtuve",
+          "tagline": "Garšvielu simfonija un siltas krāsas.",
+          "description": "Tavā pasaulē ir daudz slāņu, krāsu un smaržu. Tu mīli dziļas garšas, senus stāstus un dzīvi, kurā nekas nav vienkārši melns vai balts. Tev piemīt siltums, kas cilvēkus sasilda kā masala čajs lietainā vakarā.",
+          "traits": [
+            "Dziļums",
+            "Siltums",
+            "Krāsainība"
+          ]
+        },
+        "latvija": {
+          "name": "Latviešu virtuve",
+          "tagline": "Mežs, pirts un rupjmaize tavās vēnās.",
+          "description": "Tu dzīvo dabas ritmā: pavasarī nātres, vasarā ogas, rudenī sēnes un ziemā skābi kāposti. Tu novērtē vienkāršu, godīgu ēdienu un klusumu, kurā var dzirdēt putnus. Tava superspēja: ievārījuma burkas, kas pietiek līdz pavasarim.",
+          "traits": [
+            "Dabas ritms",
+            "Saknes",
+            "Pašpietiekamība"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which world cuisine is yours?",
+      "hook": "Your taste, character and travel dreams will tell us where you should be at lunchtime.",
+      "intro": "Some people have a Latvian passport but an Italian, Georgian or Japanese soul. Answer seven questions about how you eat, celebrate and travel, and find out which world cuisine is closest to you. Your result comes with recipes and a whole section of that cuisine on our site.",
+      "resultLine": "My soul cuisine: {name}",
+      "questions": [
+        {
+          "q": "Your ideal Sunday lunch?",
+          "a": [
+            "A big table where everyone talks at once",
+            "Small, beautifully plated portions",
+            "Everything on the table, eaten with hands",
+            "Whatever grew in our own garden"
+          ]
+        },
+        {
+          "q": "How spicy do you eat?",
+          "a": [
+            "No spice at all",
+            "A little, for flavour",
+            "The hotter the better",
+            "I need a whole symphony of spices"
+          ]
+        },
+        {
+          "q": "What inspires you?",
+          "a": [
+            "Art and beauty",
+            "Calm and order",
+            "Music and dancing",
+            "Ancient traditions and stories"
+          ]
+        },
+        {
+          "q": "How do you host guests?",
+          "a": [
+            "Toasts and songs until morning",
+            "Tea and a quiet talk",
+            "Music, colours, a big party",
+            "Everything from the cellar: pickles, jams, bread"
+          ]
+        },
+        {
+          "q": "Your travel style?",
+          "a": [
+            "Planned to the minute",
+            "A backpack and spontaneity",
+            "Museums, history, architecture",
+            "A tent by a lake"
+          ]
+        },
+        {
+          "q": "How do you show love?",
+          "a": [
+            "With gifts and surprises",
+            "With home-cooked food",
+            "With loud compliments and hugs",
+            "By quietly helping out"
+          ]
+        },
+        {
+          "q": "Which flavour do you love most?",
+          "a": [
+            "Mild and creamy",
+            "Fresh and clean",
+            "Garlic, walnuts and herbs",
+            "Lime and coriander"
+          ]
+        }
+      ],
+      "results": {
+        "itala": {
+          "name": "Italian",
+          "tagline": "La dolce vita is your daily plan.",
+          "description": "You live with passion: you laugh loudly, talk with your hands and know that a good lunch must never be rushed. You love simple things of the highest quality and people who eat with joy. Mamma mia, you are fun to be around!",
+          "traits": [
+            "Passion",
+            "Family",
+            "Enjoying life"
+          ]
+        },
+        "japana": {
+          "name": "Japanese",
+          "tagline": "Harmony in every bite.",
+          "description": "You value order, detail and quiet beauty. You don't need much, but everything has to be just right. People calm down around you, and your home is probably tidier than most.",
+          "traits": [
+            "Harmony",
+            "Precision",
+            "Calm"
+          ]
+        },
+        "meksika": {
+          "name": "Mexican",
+          "tagline": "Colour, music and a little chilli.",
+          "description": "You have fiesta energy: you love colour, music and big crowds. You are not afraid of heat, on the plate or in life, and with you any Tuesday can turn into a celebration. Viva la vida!",
+          "traits": [
+            "Energy",
+            "Courage",
+            "Festive spirit"
+          ]
+        },
+        "gruzija": {
+          "name": "Georgian",
+          "tagline": "Hospitality without limits.",
+          "description": "For you a guest is sacred, and nobody leaves your table hungry. You can give toasts that move people to tears, and your door is always open. You have a big heart, and it always sets the table for one more.",
+          "traits": [
+            "Hospitality",
+            "Generosity",
+            "Big heart"
+          ]
+        },
+        "indija": {
+          "name": "Indian",
+          "tagline": "A symphony of spices and warm colours.",
+          "description": "Your world is full of layers, colours and scents. You love deep flavours, ancient stories and a life where nothing is simply black or white. You have a warmth that comforts people like masala chai on a rainy evening.",
+          "traits": [
+            "Depth",
+            "Warmth",
+            "Colour"
+          ]
+        },
+        "latvija": {
+          "name": "Latvian",
+          "tagline": "Forest, sauna and rye bread in your veins.",
+          "description": "You live by nature's rhythm: nettles in spring, berries in summer, mushrooms in autumn and sauerkraut in winter. You value simple, honest food and a silence where you can hear the birds. Your superpower: jars of jam that last until spring.",
+          "traits": [
+            "Nature's rhythm",
+            "Roots",
+            "Self-reliance"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какая кухня мира твоя?",
+      "hook": "Твой вкус, характер и мечты о путешествиях подскажут, где тебе стоит обедать.",
+      "intro": "У некоторых людей латвийский паспорт, но итальянская, грузинская или японская душа. Ответь на семь вопросов о том, как ты ешь, празднуешь и путешествуешь, и узнай, какая кухня мира тебе ближе всего. Вместе с результатом ты найдёшь рецепты и целый раздел этой кухни на нашем сайте.",
+      "resultLine": "Моя кухня души: {name}",
+      "questions": [
+        {
+          "q": "Твой идеальный воскресный обед?",
+          "a": [
+            "Большой стол, и все говорят одновременно",
+            "Маленькие, красиво оформленные порции",
+            "Всё на столе, едим руками",
+            "То, что выросло в своём огороде"
+          ]
+        },
+        {
+          "q": "Насколько остро ты ешь?",
+          "a": [
+            "Острое не ем совсем",
+            "Чуть-чуть, для вкуса",
+            "Чем острее, тем лучше",
+            "Мне нужна целая симфония специй"
+          ]
+        },
+        {
+          "q": "Что тебя вдохновляет?",
+          "a": [
+            "Искусство и красота",
+            "Покой и порядок",
+            "Музыка и танцы",
+            "Древние традиции и истории"
+          ]
+        },
+        {
+          "q": "Как ты принимаешь гостей?",
+          "a": [
+            "Тосты и песни до утра",
+            "Чай и тихий разговор",
+            "Музыка, краски, большая вечеринка",
+            "Всё из погреба: огурцы, варенье, хлеб"
+          ]
+        },
+        {
+          "q": "Твой стиль путешествий?",
+          "a": [
+            "Всё расписано по минутам",
+            "Рюкзак и спонтанность",
+            "Музеи, история, архитектура",
+            "Палатка у озера"
+          ]
+        },
+        {
+          "q": "Как ты проявляешь любовь?",
+          "a": [
+            "Подарками и сюрпризами",
+            "Домашней едой",
+            "Громкими комплиментами и объятиями",
+            "Тихой помощью в делах"
+          ]
+        },
+        {
+          "q": "Какой вкус тебе нравится больше всего?",
+          "a": [
+            "Мягкий и сливочный",
+            "Свежий и чистый",
+            "Чеснок, орехи и зелень",
+            "Лайм и кинза"
+          ]
+        }
+      ],
+      "results": {
+        "itala": {
+          "name": "Итальянская кухня",
+          "tagline": "Дольче вита — твой план на день.",
+          "description": "Ты живёшь со страстью: громко смеёшься, говоришь руками и знаешь, что хороший обед нельзя торопить. Ты любишь простые вещи высшего качества и людей, которые едят с удовольствием. Мамма миа, как с тобой весело!",
+          "traits": [
+            "Страсть",
+            "Семья",
+            "Наслаждение жизнью"
+          ]
+        },
+        "japana": {
+          "name": "Японская кухня",
+          "tagline": "Гармония в каждом кусочке.",
+          "description": "Ты ценишь порядок, детали и спокойную красоту. Тебе нужно немного, но всё должно быть именно так, как надо. Рядом с тобой люди успокаиваются, а твой дом наверняка аккуратнее, чем у большинства.",
+          "traits": [
+            "Гармония",
+            "Точность",
+            "Покой"
+          ]
+        },
+        "meksika": {
+          "name": "Мексиканская кухня",
+          "tagline": "Краски, музыка и немного чили.",
+          "description": "В тебе энергия фиесты: ты любишь краски, музыку и большие компании. Ты не боишься остроты ни в еде, ни в жизни, и с тобой любой вторник может превратиться в праздник. Вива ла вида!",
+          "traits": [
+            "Энергия",
+            "Смелость",
+            "Праздничный дух"
+          ]
+        },
+        "gruzija": {
+          "name": "Грузинская кухня",
+          "tagline": "Гостеприимство без границ.",
+          "description": "Для тебя гость — святое, и никто не уходит из-за твоего стола голодным. Ты умеешь говорить тосты, которые трогают до слёз, а двери твоего дома всегда открыты. У тебя большое сердце, и оно всегда накрывает стол ещё на одного.",
+          "traits": [
+            "Гостеприимство",
+            "Щедрость",
+            "Большое сердце"
+          ]
+        },
+        "indija": {
+          "name": "Индийская кухня",
+          "tagline": "Симфония специй и тёплых красок.",
+          "description": "Твой мир полон слоёв, красок и ароматов. Ты любишь глубокие вкусы, древние истории и жизнь, в которой ничто не бывает просто чёрным или белым. В тебе есть тепло, которое согревает людей, как масала-чай в дождливый вечер.",
+          "traits": [
+            "Глубина",
+            "Тепло",
+            "Яркость"
+          ]
+        },
+        "latvija": {
+          "name": "Латышская кухня",
+          "tagline": "Лес, баня и ржаной хлеб в крови.",
+          "description": "Ты живёшь в ритме природы: весной крапива, летом ягоды, осенью грибы, зимой квашеная капуста. Ты ценишь простую, честную еду и тишину, в которой слышно птиц. Твоя суперсила — банки с вареньем, которых хватает до весны.",
+          "traits": [
+            "Ритм природы",
+            "Корни",
+            "Самодостаточность"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Kuri pasaulio virtuvė yra tavo?",
+      "hook": "Tavo skonis, charakteris ir kelionių svajonės pasakys, kur turėtum pietauti.",
+      "intro": "Kai kurie žmonės turi latvišką pasą, bet itališką, gruzinišką ar japonišką sielą. Atsakyk į septynis klausimus apie tai, kaip valgai, švenčiai ir keliauji, ir sužinok, kuri pasaulio virtuvė tau artimiausia. Kartu su rezultatu rasi receptų ir visą šios virtuvės skyrių mūsų svetainėje.",
+      "resultLine": "Mano sielos virtuvė: {name}",
+      "questions": [
+        {
+          "q": "Tavo tobuli sekmadienio pietūs?",
+          "a": [
+            "Didelis stalas, ir visi kalba vienu metu",
+            "Mažos, gražiai patiektos porcijos",
+            "Viskas ant stalo, valgome rankomis",
+            "Tai, kas užaugo savo darže"
+          ]
+        },
+        {
+          "q": "Kiek aštriai valgai?",
+          "a": [
+            "Aštraus visai nevalgau",
+            "Truputį, dėl skonio",
+            "Kuo aštriau, tuo geriau",
+            "Man reikia visos prieskonių simfonijos"
+          ]
+        },
+        {
+          "q": "Kas tave įkvepia?",
+          "a": [
+            "Menas ir grožis",
+            "Ramybė ir tvarka",
+            "Muzika ir šokiai",
+            "Senos tradicijos ir istorijos"
+          ]
+        },
+        {
+          "q": "Kaip priimi svečius?",
+          "a": [
+            "Tostai ir dainos iki ryto",
+            "Arbata ir tylus pokalbis",
+            "Muzika, spalvos, didelis vakarėlis",
+            "Viskas iš rūsio: agurkai, uogienės, duona"
+          ]
+        },
+        {
+          "q": "Tavo keliavimo stilius?",
+          "a": [
+            "Viskas suplanuota iki minutės",
+            "Kuprinė ir spontaniškumas",
+            "Muziejai, istorija, architektūra",
+            "Palapinė prie ežero"
+          ]
+        },
+        {
+          "q": "Kaip parodai meilę?",
+          "a": [
+            "Dovanomis ir staigmenomis",
+            "Namuose gamintu maistu",
+            "Garsiais komplimentais ir apkabinimais",
+            "Tylia pagalba darbuose"
+          ]
+        },
+        {
+          "q": "Koks skonis tau patinka labiausiai?",
+          "a": [
+            "Švelnus ir kreminis",
+            "Gaivus ir švarus",
+            "Česnakai, riešutai ir žalumynai",
+            "Laimas ir kalendra"
+          ]
+        }
+      ],
+      "results": {
+        "itala": {
+          "name": "Itališka virtuvė",
+          "tagline": "La dolce vita yra tavo dienos planas.",
+          "description": "Gyveni su aistra: garsiai juokiesi, kalbi rankomis ir žinai, kad gerų pietų negalima skubinti. Mėgsti paprastus aukščiausios kokybės dalykus ir žmones, kurie valgo su malonumu. Mamma mia, kaip su tavimi linksma!",
+          "traits": [
+            "Aistra",
+            "Šeima",
+            "Gyvenimo malonumai"
+          ]
+        },
+        "japana": {
+          "name": "Japoniška virtuvė",
+          "tagline": "Harmonija kiekviename kąsnyje.",
+          "description": "Vertini tvarką, detales ir ramų grožį. Tau reikia nedaug, bet viskas turi būti būtent taip, kaip pridera. Šalia tavęs žmonės nurimsta, o tavo namai tikriausiai tvarkingesni nei daugumos.",
+          "traits": [
+            "Harmonija",
+            "Tikslumas",
+            "Ramybė"
+          ]
+        },
+        "meksika": {
+          "name": "Meksikietiška virtuvė",
+          "tagline": "Spalvos, muzika ir truputis čili.",
+          "description": "Tavyje yra fiestos energijos: mėgsti spalvas, muziką ir dideles kompanijas. Nebijai aštrumo nei maiste, nei gyvenime, ir su tavimi bet kuris antradienis gali virsti švente. Viva la vida!",
+          "traits": [
+            "Energija",
+            "Drąsa",
+            "Šventinė dvasia"
+          ]
+        },
+        "gruzija": {
+          "name": "Gruziniška virtuvė",
+          "tagline": "Svetingumas be ribų.",
+          "description": "Tau svečias yra šventas, ir niekas nuo tavo stalo neišeina alkanas. Moki sakyti tostus, kurie sujaudina iki ašarų, o tavo namų durys visada atviros. Turi didelę širdį, ir ji visada padengia stalą dar vienam.",
+          "traits": [
+            "Svetingumas",
+            "Dosnumas",
+            "Didelė širdis"
+          ]
+        },
+        "indija": {
+          "name": "Indiška virtuvė",
+          "tagline": "Prieskonių simfonija ir šiltos spalvos.",
+          "description": "Tavo pasaulis pilnas sluoksnių, spalvų ir kvapų. Mėgsti gilius skonius, senas istorijas ir gyvenimą, kuriame niekas nėra tiesiog juoda ar balta. Tavyje yra šilumos, kuri sušildo žmones kaip masala arbata lietingą vakarą.",
+          "traits": [
+            "Gylis",
+            "Šiluma",
+            "Spalvingumas"
+          ]
+        },
+        "latvija": {
+          "name": "Latviška virtuvė",
+          "tagline": "Miškas, pirtis ir ruginė duona tavo gyslose.",
+          "description": "Gyveni gamtos ritmu: pavasarį dilgėlės, vasarą uogos, rudenį grybai, žiemą rauginti kopūstai. Vertini paprastą, sąžiningą maistą ir tylą, kurioje girdėti paukščius. Tavo supergalia: uogienės stiklainiai, kurių užtenka iki pavasario.",
+          "traits": [
+            "Gamtos ritmas",
+            "Šaknys",
+            "Savarankiškumas"
+          ]
+        }
+      }
+    }
+  }
+}

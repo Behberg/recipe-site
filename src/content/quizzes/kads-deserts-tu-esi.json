@@ -1,0 +1,825 @@
+{
+  "order": 4,
+  "emoji": "🍰",
+  "color": "#c2507a",
+  "results": {
+    "rupjmaizes-kartojums": {
+      "emoji": "🍨",
+      "color": "#6b3f2a",
+      "match": "pavlova",
+      "recipes": [
+        "rupjmaizes-kartojums",
+        "maizes-zupa",
+        "buberts"
+      ]
+    },
+    "tiramisu": {
+      "emoji": "☕",
+      "color": "#8a5a3a",
+      "match": "debesmanna",
+      "recipes": [
+        "tiramisu",
+        "affogato",
+        "panna-cotta"
+      ]
+    },
+    "medus-kuka": {
+      "emoji": "🍯",
+      "color": "#c98a2a",
+      "match": "fondants",
+      "recipes": [
+        "medus-kuka",
+        "napoleona-torte",
+        "medus-cepumi"
+      ]
+    },
+    "fondants": {
+      "emoji": "🍫",
+      "color": "#4a2a1e",
+      "match": "medus-kuka",
+      "recipes": [
+        "sokolades-fondants",
+        "brauniji",
+        "sokolades-muss"
+      ]
+    },
+    "pavlova": {
+      "emoji": "🍓",
+      "color": "#d8344f",
+      "match": "rupjmaizes-kartojums",
+      "recipes": [
+        "pavlova-ar-ogam",
+        "beze-cepumi",
+        "itonas-juceklis"
+      ]
+    },
+    "debesmanna": {
+      "emoji": "💗",
+      "color": "#e0708f",
+      "match": "tiramisu",
+      "recipes": [
+        "debesmanna",
+        "mannas-pudins-ar-ogu-merci",
+        "rabarberu-kiselis"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🥳",
+          "scores": {
+            "pavlova": 2,
+            "debesmanna": 1
+          }
+        },
+        {
+          "emoji": "☕",
+          "scores": {
+            "tiramisu": 2,
+            "medus-kuka": 1
+          }
+        },
+        {
+          "emoji": "🕯️",
+          "scores": {
+            "medus-kuka": 2,
+            "fondants": 1
+          }
+        },
+        {
+          "emoji": "🤸",
+          "scores": {
+            "debesmanna": 2,
+            "pavlova": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "⏳",
+          "scores": {
+            "medus-kuka": 2,
+            "rupjmaizes-kartojums": 1
+          }
+        },
+        {
+          "emoji": "❤️‍🔥",
+          "scores": {
+            "fondants": 2
+          }
+        },
+        {
+          "emoji": "💎",
+          "scores": {
+            "tiramisu": 2,
+            "pavlova": 1
+          }
+        },
+        {
+          "emoji": "✨",
+          "scores": {
+            "rupjmaizes-kartojums": 2,
+            "fondants": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🍓",
+          "scores": {
+            "pavlova": 2
+          }
+        },
+        {
+          "emoji": "👵",
+          "scores": {
+            "rupjmaizes-kartojums": 2,
+            "medus-kuka": 1
+          }
+        },
+        {
+          "emoji": "🎠",
+          "scores": {
+            "debesmanna": 2,
+            "pavlova": 1
+          }
+        },
+        {
+          "emoji": "🔦",
+          "scores": {
+            "tiramisu": 2,
+            "fondants": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "😤",
+          "scores": {
+            "fondants": 2,
+            "tiramisu": 1
+          }
+        },
+        {
+          "emoji": "🧀",
+          "scores": {
+            "medus-kuka": 2,
+            "rupjmaizes-kartojums": 1
+          }
+        },
+        {
+          "emoji": "🎵",
+          "scores": {
+            "debesmanna": 2,
+            "pavlova": 1
+          }
+        },
+        {
+          "emoji": "📦",
+          "scores": {
+            "tiramisu": 2,
+            "pavlova": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "💐",
+          "scores": {
+            "pavlova": 2,
+            "debesmanna": 1
+          }
+        },
+        {
+          "emoji": "🍫",
+          "scores": {
+            "fondants": 2,
+            "debesmanna": 1
+          }
+        },
+        {
+          "emoji": "🧶",
+          "scores": {
+            "rupjmaizes-kartojums": 2,
+            "medus-kuka": 1
+          }
+        },
+        {
+          "emoji": "🎭",
+          "scores": {
+            "tiramisu": 2,
+            "pavlova": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "❤️",
+          "scores": {
+            "fondants": 2,
+            "pavlova": 1
+          }
+        },
+        {
+          "emoji": "🧠",
+          "scores": {
+            "medus-kuka": 2,
+            "tiramisu": 1
+          }
+        },
+        {
+          "emoji": "🪙",
+          "scores": {
+            "debesmanna": 2,
+            "fondants": 1
+          }
+        },
+        {
+          "emoji": "👵",
+          "scores": {
+            "rupjmaizes-kartojums": 2,
+            "medus-kuka": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🛶",
+          "scores": {
+            "tiramisu": 2,
+            "fondants": 1
+          }
+        },
+        {
+          "emoji": "🧖",
+          "scores": {
+            "rupjmaizes-kartojums": 2,
+            "medus-kuka": 1
+          }
+        },
+        {
+          "emoji": "🎡",
+          "scores": {
+            "debesmanna": 2,
+            "pavlova": 1
+          }
+        },
+        {
+          "emoji": "🏔️",
+          "scores": {
+            "pavlova": 2,
+            "tiramisu": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds deserts esi tu?",
+      "hook": "Dzīve ir par īsu, lai sāktu ar zupu. Uzzini, kāds saldums slēpjas tevī.",
+      "intro": "Katram raksturam ir savs deserts: viens ir kārtains un pacietīgs, cits kūstošs un kaislīgs, vēl cits viegls kā mākonis. Atbildi uz septiņiem jautājumiem, uzzini, kurš deserts esi tu, un saņem recepti, lai pārsteigtu arī citus.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Kā tu svini labas ziņas?",
+          "a": [
+            "Rīkoju ballīti ar draugiem",
+            "Kafija un kaut kas izsmalcināts",
+            "Klusi, kopā ar sev mīļu cilvēku",
+            "Lēkāju pa māju kā bērns"
+          ]
+        },
+        {
+          "q": "Kas tevi raksturo vislabāk?",
+          "a": [
+            "Pacietība",
+            "Kaislība",
+            "Izsmalcinātība",
+            "Nopietnība ar dzirksti"
+          ]
+        },
+        {
+          "q": "Tava mīļākā bērnības atmiņa?",
+          "a": [
+            "Zemenes tieši no dobes",
+            "Vecmāmiņas virtuve",
+            "Karuselis un rozā cukurvate",
+            "Grāmata zem segas ar lukturīti"
+          ]
+        },
+        {
+          "q": "Vakariņas kavējas. Tava reakcija?",
+          "a": [
+            "Mani labāk neaiztikt",
+            "Uzkožu kaut ko un mierīgi gaidu",
+            "Palīdzu un dziedu virtuvē",
+            "Pasūtu kaut ko smalku"
+          ]
+        },
+        {
+          "q": "Ideāla dāvana tev?",
+          "a": [
+            "Ziedi bez iemesla",
+            "Liela šokolādes kārba",
+            "Kaut kas ar rokām darināts",
+            "Biļetes uz operu"
+          ]
+        },
+        {
+          "q": "Kā tu pieņem lēmumus?",
+          "a": [
+            "Ar sirdi",
+            "Ilgi apdomāju",
+            "Metu monētu",
+            "Kā darītu vecmāmiņa"
+          ]
+        },
+        {
+          "q": "Kur tu pavadītu nedēļas nogali?",
+          "a": [
+            "Venēcijā",
+            "Lauku mājā ar pirti",
+            "Atrakciju parkā",
+            "Kalnos virs mākoņiem"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaizes-kartojums": {
+          "name": "Rupjmaizes kārtojums",
+          "tagline": "Vienkāršība ārēji, pārsteigums iekšā.",
+          "description": "Tev nevajag zelta lapiņas, lai izceltos. Tavu dziļumu citi atklāj ar laiku un pēc tam brīnās, kā to nepamanīja agrāk. Latviska pieticība, bet ar saldu un bagātu vidu.",
+          "traits": [
+            "Pieticība",
+            "Dziļums",
+            "Latviska dvēsele"
+          ]
+        },
+        "tiramisu": {
+          "name": "Tiramisu",
+          "tagline": "Izsmalcinātība ar kafijas enerģiju.",
+          "description": "Tu mīli skaistas lietas, labu kafiju un sarunas, kurās ir jēga. Tev ir itāliska elegance un spēja uzmundrināt citus ar vienu teikumu. Tiramisu nozīmē „pacel mani”, un tieši to tu dari ar cilvēkiem.",
+          "traits": [
+            "Elegance",
+            "Enerģija",
+            "Gaume"
+          ]
+        },
+        "medus-kuka": {
+          "name": "Medus kūka",
+          "tagline": "Pacietība, kas ir tā vērta.",
+          "description": "Tu zini, ka labākais prasa laiku. Tev ir daudz kārtu, katra no tām salda, un tu neskrien pa priekšu notikumiem. Cilvēki tevi novērtē ar katru gadu vairāk, un tavai draudzībai nav derīguma termiņa.",
+          "traits": [
+            "Pacietība",
+            "Uzticība",
+            "Saldums"
+          ]
+        },
+        "fondants": {
+          "name": "Šokolādes fondants",
+          "tagline": "Kūstoša sirds zem stingras garozas.",
+          "description": "No ārpuses tevī ir miers un kontrole, bet iekšā viss kūst un plūst. Tev ir spēcīgas emocijas, kaislīga daba un lieliska izjūta dramatiskam brīdim. Kas tevi nogaršo, tas aizmirst par visiem citiem desertiem.",
+          "traits": [
+            "Kaislība",
+            "Intensitāte",
+            "Noslēpums"
+          ]
+        },
+        "pavlova": {
+          "name": "Pavlova",
+          "tagline": "Mākoņa vieglums un svētku spožums.",
+          "description": "Tu esi dzirkstoša enerģija un skaistums vienkāršās lietās. Tev patīk svaigums, krāsas un cilvēki, kas smaida. Jā, tavu sirdi var viegli ievainot, bet tieši tas tev dod gaišumu, ko citi tik ļoti mīl.",
+          "traits": [
+            "Vieglums",
+            "Prieks",
+            "Jūtīgums"
+          ]
+        },
+        "debesmanna": {
+          "name": "Debesmanna",
+          "tagline": "Rozā bērnība, kas nekad nebeidzas.",
+          "description": "Tev izdevās saglabāt to, ko daudzi pieaugušie pazaudē: ziņkāri, rotaļīgumu un prieku par sīkumiem. Ar tevi var smieties līdz asarām un ēst desertu pirms vakariņām. Pasaule ar tevi ir rozā un mazliet putaina.",
+          "traits": [
+            "Rotaļīgums",
+            "Ziņkāre",
+            "Nostalģija"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which dessert are you?",
+      "hook": "Life is too short to start with soup. Find out what sweetness hides in you.",
+      "intro": "Every personality has its dessert: one is layered and patient, another molten and passionate, another light as a cloud. Answer seven questions to find out which dessert you are, and get the recipe to surprise others too.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "How do you celebrate good news?",
+          "a": [
+            "Throw a party with friends",
+            "Coffee and something refined",
+            "Quietly, with someone dear",
+            "Jump around the house like a kid"
+          ]
+        },
+        {
+          "q": "What describes you best?",
+          "a": [
+            "Patience",
+            "Passion",
+            "Refinement",
+            "Seriousness with a spark"
+          ]
+        },
+        {
+          "q": "Your favourite childhood memory?",
+          "a": [
+            "Strawberries straight from the garden",
+            "Grandma's kitchen",
+            "A carousel and pink candyfloss",
+            "A book under the covers with a torch"
+          ]
+        },
+        {
+          "q": "Dinner is late. Your reaction?",
+          "a": [
+            "Better not talk to me",
+            "I grab a snack and wait calmly",
+            "I help out and sing in the kitchen",
+            "I order something fancy"
+          ]
+        },
+        {
+          "q": "The perfect gift for you?",
+          "a": [
+            "Flowers for no reason",
+            "A big box of chocolates",
+            "Something handmade",
+            "Tickets to the opera"
+          ]
+        },
+        {
+          "q": "How do you make decisions?",
+          "a": [
+            "With my heart",
+            "I think it over for a long time",
+            "I toss a coin",
+            "The way my grandmother would"
+          ]
+        },
+        {
+          "q": "Where would you spend a weekend?",
+          "a": [
+            "In Venice",
+            "At a country house with a sauna",
+            "At an amusement park",
+            "In the mountains above the clouds"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaizes-kartojums": {
+          "name": "Rye bread trifle",
+          "tagline": "Simple on the outside, surprising within.",
+          "description": "You don't need gold leaf to stand out. Others discover your depth over time and then wonder how they ever missed it. Latvian modesty with a sweet and rich middle.",
+          "traits": [
+            "Modesty",
+            "Depth",
+            "Latvian soul"
+          ]
+        },
+        "tiramisu": {
+          "name": "Tiramisu",
+          "tagline": "Refinement with a coffee kick.",
+          "description": "You love beautiful things, good coffee and conversations that mean something. You have Italian elegance and the gift of lifting people up with a single sentence. Tiramisu means “pick me up”, and that is exactly what you do for people.",
+          "traits": [
+            "Elegance",
+            "Energy",
+            "Taste"
+          ]
+        },
+        "medus-kuka": {
+          "name": "Honey cake",
+          "tagline": "Patience that is worth it.",
+          "description": "You know the best things take time. You have many layers, each of them sweet, and you never rush ahead of events. People value you more every year, and your friendship has no expiry date.",
+          "traits": [
+            "Patience",
+            "Loyalty",
+            "Sweetness"
+          ]
+        },
+        "fondants": {
+          "name": "Chocolate fondant",
+          "tagline": "A molten heart under a firm crust.",
+          "description": "On the outside you are calm and in control, but inside everything melts and flows. You have strong emotions, a passionate nature and a great sense for a dramatic moment. Whoever tastes you forgets every other dessert.",
+          "traits": [
+            "Passion",
+            "Intensity",
+            "Mystery"
+          ]
+        },
+        "pavlova": {
+          "name": "Pavlova",
+          "tagline": "Light as a cloud, bright as a party.",
+          "description": "You are sparkling energy and beauty in simple things. You love freshness, colour and people who smile. Yes, your heart is easy to hurt, but that is exactly what gives you the brightness everyone loves.",
+          "traits": [
+            "Lightness",
+            "Joy",
+            "Sensitivity"
+          ]
+        },
+        "debesmanna": {
+          "name": "Pink semolina mousse",
+          "tagline": "A pink childhood that never ends.",
+          "description": "You kept what many grown-ups lose: curiosity, playfulness and joy in little things. With you people laugh until they cry and eat dessert before dinner. The world with you is pink and a little fluffy.",
+          "traits": [
+            "Playfulness",
+            "Curiosity",
+            "Nostalgia"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какой ты десерт?",
+      "hook": "Жизнь слишком коротка, чтобы начинать с супа. Узнай, какая сладость прячется в тебе.",
+      "intro": "У каждого характера есть свой десерт: один слоёный и терпеливый, другой тающий и страстный, третий лёгкий, как облако. Ответь на семь вопросов, узнай, какой ты десерт, и получи рецепт, чтобы удивить и других.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Как ты празднуешь хорошие новости?",
+          "a": [
+            "Устраиваю вечеринку с друзьями",
+            "Кофе и что-нибудь изысканное",
+            "Тихо, с близким человеком",
+            "Прыгаю по дому, как ребёнок"
+          ]
+        },
+        {
+          "q": "Что описывает тебя лучше всего?",
+          "a": [
+            "Терпение",
+            "Страсть",
+            "Изысканность",
+            "Серьёзность с искоркой"
+          ]
+        },
+        {
+          "q": "Твоё любимое детское воспоминание?",
+          "a": [
+            "Клубника прямо с грядки",
+            "Бабушкина кухня",
+            "Карусель и розовая сахарная вата",
+            "Книга под одеялом с фонариком"
+          ]
+        },
+        {
+          "q": "Ужин задерживается. Твоя реакция?",
+          "a": [
+            "Меня лучше не трогать",
+            "Перекусываю и спокойно жду",
+            "Помогаю и пою на кухне",
+            "Заказываю что-то изысканное"
+          ]
+        },
+        {
+          "q": "Идеальный подарок для тебя?",
+          "a": [
+            "Цветы без повода",
+            "Большая коробка шоколада",
+            "Что-то сделанное своими руками",
+            "Билеты в оперу"
+          ]
+        },
+        {
+          "q": "Как ты принимаешь решения?",
+          "a": [
+            "Сердцем",
+            "Долго обдумываю",
+            "Подбрасываю монетку",
+            "Как сделала бы бабушка"
+          ]
+        },
+        {
+          "q": "Где провести выходные?",
+          "a": [
+            "В Венеции",
+            "В деревенском доме с баней",
+            "В парке аттракционов",
+            "В горах над облаками"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaizes-kartojums": {
+          "name": "Десерт из ржаного хлеба",
+          "tagline": "Простота снаружи, сюрприз внутри.",
+          "description": "Тебе не нужна золотая фольга, чтобы выделяться. Другие открывают твою глубину со временем и потом удивляются, как не замечали её раньше. Латышская скромность со сладкой и богатой серединкой.",
+          "traits": [
+            "Скромность",
+            "Глубина",
+            "Латышская душа"
+          ]
+        },
+        "tiramisu": {
+          "name": "Тирамису",
+          "tagline": "Изысканность с кофейной энергией.",
+          "description": "Ты любишь красивые вещи, хороший кофе и разговоры со смыслом. В тебе есть итальянская элегантность и дар поднимать настроение одной фразой. Тирамису значит «подними меня», и именно это ты делаешь для людей.",
+          "traits": [
+            "Элегантность",
+            "Энергия",
+            "Вкус"
+          ]
+        },
+        "medus-kuka": {
+          "name": "Медовик",
+          "tagline": "Терпение, которое того стоит.",
+          "description": "Ты знаешь, что лучшее требует времени. В тебе много слоёв, и каждый сладкий, а забегать вперёд событий ты не любишь. Люди ценят тебя с каждым годом всё больше, и у твоей дружбы нет срока годности.",
+          "traits": [
+            "Терпение",
+            "Верность",
+            "Сладость"
+          ]
+        },
+        "fondants": {
+          "name": "Шоколадный фондан",
+          "tagline": "Тающее сердце под твёрдой корочкой.",
+          "description": "Снаружи в тебе спокойствие и контроль, но внутри всё тает и течёт. У тебя сильные эмоции, страстная натура и отличное чутьё на драматический момент. Кто попробует тебя, забудет обо всех других десертах.",
+          "traits": [
+            "Страсть",
+            "Интенсивность",
+            "Загадка"
+          ]
+        },
+        "pavlova": {
+          "name": "Павлова",
+          "tagline": "Лёгкость облака, блеск праздника.",
+          "description": "Ты — искрящаяся энергия и красота в простых вещах. Ты любишь свежесть, краски и улыбающихся людей. Да, твоё сердце легко ранить, но именно это даёт тебе тот свет, который все так любят.",
+          "traits": [
+            "Лёгкость",
+            "Радость",
+            "Чувствительность"
+          ]
+        },
+        "debesmanna": {
+          "name": "Розовый манный мусс",
+          "tagline": "Розовое детство, которое не кончается.",
+          "description": "Тебе удалось сохранить то, что теряют многие взрослые: любопытство, игривость и радость от мелочей. С тобой можно смеяться до слёз и есть десерт до ужина. Мир с тобой розовый и немного воздушный.",
+          "traits": [
+            "Игривость",
+            "Любопытство",
+            "Ностальгия"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Koks tu desertas?",
+      "hook": "Gyvenimas per trumpas, kad pradėtum nuo sriubos. Sužinok, koks saldumas slepiasi tavyje.",
+      "intro": "Kiekvienas charakteris turi savo desertą: vienas sluoksniuotas ir kantrus, kitas tirpstantis ir aistringas, dar kitas lengvas kaip debesis. Atsakyk į septynis klausimus, sužinok, koks desertas esi tu, ir gauk receptą, kad nustebintum ir kitus.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Kaip švenčiai geras naujienas?",
+          "a": [
+            "Rengiu vakarėlį su draugais",
+            "Kava ir kas nors rafinuoto",
+            "Tyliai, su brangiu žmogumi",
+            "Šokinėju po namus kaip vaikas"
+          ]
+        },
+        {
+          "q": "Kas tave apibūdina geriausiai?",
+          "a": [
+            "Kantrybė",
+            "Aistra",
+            "Rafinuotumas",
+            "Rimtumas su kibirkštėle"
+          ]
+        },
+        {
+          "q": "Tavo mėgstamiausias vaikystės prisiminimas?",
+          "a": [
+            "Braškės tiesiai iš lysvės",
+            "Močiutės virtuvė",
+            "Karuselė ir rožinė cukraus vata",
+            "Knyga po antklode su žibintuvėliu"
+          ]
+        },
+        {
+          "q": "Vakarienė vėluoja. Tavo reakcija?",
+          "a": [
+            "Manęs geriau neliesti",
+            "Užkandu ir ramiai laukiu",
+            "Padedu ir dainuoju virtuvėje",
+            "Užsisakau ką nors prabangaus"
+          ]
+        },
+        {
+          "q": "Tobula dovana tau?",
+          "a": [
+            "Gėlės be priežasties",
+            "Didelė saldainių dėžė",
+            "Kas nors rankų darbo",
+            "Bilietai į operą"
+          ]
+        },
+        {
+          "q": "Kaip priimi sprendimus?",
+          "a": [
+            "Širdimi",
+            "Ilgai apgalvoju",
+            "Metu monetą",
+            "Kaip darytų močiutė"
+          ]
+        },
+        {
+          "q": "Kur praleistum savaitgalį?",
+          "a": [
+            "Venecijoje",
+            "Kaimo sodyboje su pirtimi",
+            "Pramogų parke",
+            "Kalnuose virš debesų"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaizes-kartojums": {
+          "name": "Ruginės duonos desertas",
+          "tagline": "Paprastumas išorėje, staigmena viduje.",
+          "description": "Tau nereikia aukso lapelių, kad išsiskirtum. Kiti tavo gylį atranda su laiku ir paskui stebisi, kaip jo nepastebėjo anksčiau. Latviškas kuklumas su saldžia ir turtinga širdimi.",
+          "traits": [
+            "Kuklumas",
+            "Gylis",
+            "Latviška siela"
+          ]
+        },
+        "tiramisu": {
+          "name": "Tiramisu",
+          "tagline": "Rafinuotumas su kavos energija.",
+          "description": "Mėgsti gražius daiktus, gerą kavą ir prasmingus pokalbius. Tavyje yra itališkos elegancijos ir dovana pakelti nuotaiką vienu sakiniu. Tiramisu reiškia „pakelk mane“, ir būtent tai tu darai žmonėms.",
+          "traits": [
+            "Elegancija",
+            "Energija",
+            "Skonis"
+          ]
+        },
+        "medus-kuka": {
+          "name": "Medaus tortas",
+          "tagline": "Kantrybė, kuri to verta.",
+          "description": "Žinai, kad geriausi dalykai reikalauja laiko. Turi daug sluoksnių, kiekvienas jų saldus, ir niekada nebėgi įvykiams už akių. Žmonės tave vertina vis labiau su kiekvienais metais, o tavo draugystė neturi galiojimo termino.",
+          "traits": [
+            "Kantrybė",
+            "Ištikimybė",
+            "Saldumas"
+          ]
+        },
+        "fondants": {
+          "name": "Šokoladinis fondanas",
+          "tagline": "Tirpstanti širdis po tvirta pluta.",
+          "description": "Iš išorės tavyje ramybė ir kontrolė, bet viduje viskas tirpsta ir teka. Turi stiprias emocijas, aistringą prigimtį ir puikią dramatiškos akimirkos nuojautą. Kas tave paragauja, pamiršta visus kitus desertus.",
+          "traits": [
+            "Aistra",
+            "Intensyvumas",
+            "Paslaptis"
+          ]
+        },
+        "pavlova": {
+          "name": "Pavlova",
+          "tagline": "Debesies lengvumas ir šventės spindesys.",
+          "description": "Tu esi putojanti energija ir grožis paprastuose dalykuose. Mėgsti gaivumą, spalvas ir besišypsančius žmones. Taip, tavo širdį lengva įskaudinti, bet būtent tai tau suteikia šviesą, kurią visi taip myli.",
+          "traits": [
+            "Lengvumas",
+            "Džiaugsmas",
+            "Jautrumas"
+          ]
+        },
+        "debesmanna": {
+          "name": "Rožinis manų putėsis",
+          "tagline": "Rožinė vaikystė, kuri niekada nesibaigia.",
+          "description": "Tau pavyko išsaugoti tai, ką daugelis suaugusiųjų praranda: smalsumą, žaismingumą ir džiaugsmą smulkmenomis. Su tavimi galima juoktis iki ašarų ir valgyti desertą prieš vakarienę. Pasaulis su tavimi rožinis ir truputį putotas.",
+          "traits": [
+            "Žaismingumas",
+            "Smalsumas",
+            "Nostalgija"
+          ]
+        }
+      }
+    }
+  }
+}

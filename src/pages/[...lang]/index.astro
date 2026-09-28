@@ -5,6 +5,8 @@ import RecipeCard from '../../components/RecipeCard.astro';
 import RecipeArt from '../../components/RecipeArt.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import OccasionBanner from '../../components/OccasionBanner.astro';
+import QuizCard from '../../components/QuizCard.astro';
+import { getQuizzes, quizzesUrl } from '../../lib/quizzes';
 import { SITE } from '../../site.config';
 import { getCatalog, cuisineUrl, categoryUrl, recipeUrl, formatMinutes, totalTime } from '../../lib/recipes';
 import { langFromPath, langPaths, href, t, count } from '../../i18n';
@@ -23,6 +25,7 @@ const latest = recipes.slice(0, 8);
 const latvian = recipes.filter((r) => r.data.cuisine?.id === 'latviesu').slice(0, 10);
 const comfort = recipes.filter((r) => r.lv.tags.includes('mājīgi')).slice(0, 12);
 const hero = featured[0] ?? recipes[0];
+const quizzes = await getQuizzes(lang);
 
 const countBy = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key]?.id === id).length;
 // Latvian first, then the cuisines with the most recipes.
@@ -222,6 +225,21 @@ const jsonLd = [organizationLd(Astro.site), {
         })
       }
     </div>
+  </section>
+
+  <!-- Personality quizzes -->
+  <section class="section container" aria-labelledby="quiz-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{t(lang, 'quiz.homeEyebrow')}</span>
+        <h2 id="quiz-title">{t(lang, 'quiz.homeTitle')}</h2>
+        <p>{t(lang, 'quiz.homeLead')}</p>
+      </div>
+      <a class="link-more" href={quizzesUrl(lang)}>
+        {t(lang, 'quiz.allQuizzes')} <Icon name="arrow-right" />
+      </a>
+    </div>
+    <div class="quiz-row">{quizzes.slice(0, 3).map((q) => <QuizCard quiz={q} />)}</div>
   </section>
 
   <!-- Sweets & preserves promo -->
@@ -459,6 +477,17 @@ const jsonLd = [organizationLd(Astro.site), {
 
   .cat-rail {
     gap: 6px;
+  }
+
+  .quiz-row {
+    display: grid;
+    gap: 16px;
+  }
+  @media (min-width: 700px) {
+    .quiz-row {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
   }
 
   .promo-wrap {

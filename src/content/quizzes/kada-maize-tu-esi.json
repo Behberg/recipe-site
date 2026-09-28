@@ -1,0 +1,828 @@
+{
+  "order": 2,
+  "emoji": "🍞",
+  "color": "#8a5a2b",
+  "results": {
+    "rupjmaize": {
+      "emoji": "🍞",
+      "color": "#5b3a24",
+      "match": "kruasans",
+      "recipes": [
+        "maja-rupjmaize",
+        "rupjmaizes-kartojums",
+        "rupjmaizes-kvass"
+      ]
+    },
+    "kruasans": {
+      "emoji": "🥐",
+      "color": "#d08a2e",
+      "match": "rupjmaize",
+      "recipes": [
+        "karainas-miklas-abolu-kabatinas",
+        "karainas-miklas-siera-nujinas",
+        "skones"
+      ],
+      "icon": "bun",
+      "iconColors": "#d9973f"
+    },
+    "fokaca": {
+      "emoji": "🫒",
+      "color": "#7d8a3a",
+      "match": "klingeris",
+      "recipes": [
+        "fokaca",
+        "bruskete",
+        "kaprezes-salati"
+      ]
+    },
+    "bagete": {
+      "emoji": "🥖",
+      "color": "#b8762e",
+      "match": "banana-maize",
+      "recipes": [
+        "francu-sipolu-zupa",
+        "olivu-tapenade",
+        "kroks-mesje"
+      ],
+      "icon": "loaf",
+      "iconColors": "#d8a25a"
+    },
+    "banana-maize": {
+      "emoji": "🍌",
+      "color": "#8b5a2b",
+      "match": "bagete",
+      "recipes": [
+        "banana-maize",
+        "bananu-mafini",
+        "kirbju-maize-ar-kaneli"
+      ]
+    },
+    "klingeris": {
+      "emoji": "🥨",
+      "color": "#c0602e",
+      "match": "fokaca",
+      "recipes": [
+        "klingeris",
+        "kanelmaizites",
+        "dzimsanas-dienas-biskvita-torte"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🐓",
+          "scores": {
+            "bagete": 2,
+            "rupjmaize": 1
+          }
+        },
+        {
+          "emoji": "😴",
+          "scores": {
+            "banana-maize": 2,
+            "kruasans": 1
+          }
+        },
+        {
+          "emoji": "☕",
+          "scores": {
+            "kruasans": 2,
+            "bagete": 1
+          }
+        },
+        {
+          "emoji": "🎶",
+          "scores": {
+            "klingeris": 2,
+            "fokaca": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧥",
+          "scores": {
+            "rupjmaize": 2
+          }
+        },
+        {
+          "emoji": "👗",
+          "scores": {
+            "kruasans": 2,
+            "bagete": 1
+          }
+        },
+        {
+          "emoji": "👟",
+          "scores": {
+            "fokaca": 2,
+            "banana-maize": 1
+          }
+        },
+        {
+          "emoji": "✨",
+          "scores": {
+            "klingeris": 2,
+            "kruasans": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🍷",
+          "scores": {
+            "fokaca": 2,
+            "klingeris": 1
+          }
+        },
+        {
+          "emoji": "🗣️",
+          "scores": {
+            "klingeris": 2,
+            "fokaca": 1
+          }
+        },
+        {
+          "emoji": "🚪",
+          "scores": {
+            "bagete": 2,
+            "rupjmaize": 1
+          }
+        },
+        {
+          "emoji": "🐈",
+          "scores": {
+            "banana-maize": 2,
+            "kruasans": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧶",
+          "scores": {
+            "banana-maize": 2,
+            "klingeris": 1
+          }
+        },
+        {
+          "emoji": "🎨",
+          "scores": {
+            "kruasans": 2,
+            "bagete": 1
+          }
+        },
+        {
+          "emoji": "🌧️",
+          "scores": {
+            "rupjmaize": 2,
+            "fokaca": 1
+          }
+        },
+        {
+          "emoji": "👯",
+          "scores": {
+            "fokaca": 2,
+            "klingeris": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🛡️",
+          "scores": {
+            "rupjmaize": 2,
+            "bagete": 1
+          }
+        },
+        {
+          "emoji": "💅",
+          "scores": {
+            "kruasans": 2
+          }
+        },
+        {
+          "emoji": "🫶",
+          "scores": {
+            "fokaca": 2,
+            "banana-maize": 1
+          }
+        },
+        {
+          "emoji": "🎁",
+          "scores": {
+            "klingeris": 2,
+            "banana-maize": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🐌",
+          "scores": {
+            "bagete": 2,
+            "kruasans": 1
+          }
+        },
+        {
+          "emoji": "🎭",
+          "scores": {
+            "rupjmaize": 2,
+            "fokaca": 1
+          }
+        },
+        {
+          "emoji": "🍰",
+          "scores": {
+            "banana-maize": 2,
+            "klingeris": 1
+          }
+        },
+        {
+          "emoji": "🎂",
+          "scores": {
+            "klingeris": 2,
+            "kruasans": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🗼",
+          "scores": {
+            "bagete": 2,
+            "kruasans": 1
+          }
+        },
+        {
+          "emoji": "🏛️",
+          "scores": {
+            "fokaca": 2
+          }
+        },
+        {
+          "emoji": "🏖️",
+          "scores": {
+            "banana-maize": 2,
+            "rupjmaize": 1
+          }
+        },
+        {
+          "emoji": "🌾",
+          "scores": {
+            "rupjmaize": 2,
+            "banana-maize": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāda maize esi tu?",
+      "hook": "Rupjmaize, kruasāns vai banānu maize? Tavs raksturs jau zina atbildi.",
+      "intro": "Maize ir tikpat dažāda kā cilvēki: viena ir sīksta un uzticama, cita kārtaina un eleganta, vēl cita salda un mājīga. Septiņos jautājumos noskaidrosim, kura maize atbilst tavam raksturam, un iedosim receptes, lai to varētu izcept arī savā virtuvē.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Kā tu parasti pamosties?",
+          "a": [
+            "Pirms modinātāja un uzreiz ķeros pie darba",
+            "Ar trešo modinātāju",
+            "Tikai pēc pirmās kafijas",
+            "Jau dziedot"
+          ]
+        },
+        {
+          "q": "Kāds ir tavs apģērba stils?",
+          "a": [
+            "Praktisks, kalpo gadiem",
+            "Elegants, ar izsmalcinātām detaļām",
+            "Ērts un brīvs",
+            "Spilgts un svētku noskaņā"
+          ]
+        },
+        {
+          "q": "Tu ieej ballītē. Ko tu dari?",
+          "a": [
+            "Atrodu saimnieku un palīdzu ar ēdienu",
+            "Pēc minūtes jau runāju ar visiem",
+            "Pasēžu 20 minūtes un klusi aizeju",
+            "Atrodu mājas kaķi"
+          ]
+        },
+        {
+          "q": "Lietaina svētdiena. Tavs plāns?",
+          "a": [
+            "Kaut ko cepu vai daru ar rokām",
+            "Izstāde un kafejnīca",
+            "Pastaiga mežā, lietus netraucē",
+            "Saaicinu draugus ciemos"
+          ]
+        },
+        {
+          "q": "Tava superspēja?",
+          "a": [
+            "Izturība",
+            "Gaume",
+            "Viesmīlība",
+            "Prasme iepriecināt citus"
+          ]
+        },
+        {
+          "q": "Kas tevi kaitina visvairāk?",
+          "a": [
+            "Lēni cilvēki rindā",
+            "Liekulība",
+            "Kad kāds atsakās no deserta",
+            "Kad aizmirst manu dzimšanas dienu"
+          ]
+        },
+        {
+          "q": "Kur tu gribētu dzīvot?",
+          "a": [
+            "Parīzē",
+            "Romā",
+            "Mazpilsētā pie jūras",
+            "Viensētā Vidzemē"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaize": {
+          "name": "Rudzu rupjmaize",
+          "tagline": "Sīkstums ārpusē, sirsnība iekšā.",
+          "description": "Tev piemīt izturība, ko nevar nopirkt veikalā. Tu nesūdzies, bet dari, un tavs vārds ir labākā garantija. Tavs humors ir tumšs kā garoza, bet ar saldu pēcgaršu, un ar gadiem tu tikai iegūsti.",
+          "traits": [
+            "Izturība",
+            "Godīgums",
+            "Tumšs humors"
+          ]
+        },
+        "kruasans": {
+          "name": "Kruasāns",
+          "tagline": "Elegance, kārtas un mazliet drāmas.",
+          "description": "Tu zini, ka dzīve ir par īsu sliktai kafijai. Tev ir izsmalcināta gaume, daudz slāņu un talants no parasta rīta uztaisīt nelielu izrādi. Kas to nesaprot, tiem vienkārši trūkst stila.",
+          "traits": [
+            "Gaume",
+            "Šarms",
+            "Mazliet drāmas"
+          ]
+        },
+        "fokaca": {
+          "name": "Fokača",
+          "tagline": "Dāsnums kā Vidusjūras vakarā.",
+          "description": "Tev patīk dalīties: ar ēdienu, stāstiem un laiku. Pie tava galda vienmēr atradīsies vieta vēl vienam, un tavā klātbūtnē pat pirmdiena šķiet kā atvaļinājums. Tu esi siltums, ko var noplēst gabaliņos un padot tālāk.",
+          "traits": [
+            "Viesmīlība",
+            "Siltums",
+            "Dzīvesprieks"
+          ]
+        },
+        "bagete": {
+          "name": "Bagete",
+          "tagline": "Kraukšķīgs tiešums, maiga sirds.",
+          "description": "Tu nerunā ap karsto putru: pasaki, kā ir, un ej tālāk. Tev ir stils bez pūlēm, ātrs prāts un maiga sirds, ko redz tikai tuvākie. Jā, no ballītēm tu mēdz aiziet pa angliski. Precīzāk, pa franciski.",
+          "traits": [
+            "Tiešums",
+            "Stils",
+            "Ātrums"
+          ]
+        },
+        "banana-maize": {
+          "name": "Banānu maize",
+          "tagline": "No sliktas dienas tu izcep labu.",
+          "description": "Tu proti no pārgatavojušiem banāniem un sliktām dienām izcept kaut ko brīnišķīgu. Ar tevi ir mājīgi, silti un droši, un tavā virtuvē vienmēr smaržo pēc kanēļa. Tu esi apskāviens, ko var sagriezt šķēlēs.",
+          "traits": [
+            "Mājīgums",
+            "Atjautība",
+            "Maigums"
+          ]
+        },
+        "klingeris": {
+          "name": "Kliņģeris",
+          "tagline": "Tu esi iemesls svinēt.",
+          "description": "Tu atceries visas dzimšanas dienas, zini, kurš ko mīl, un vienmēr atrodi iemeslu svinībām. Kad tu ienāc istabā, kļūst gaišāks. Dzīve ar tevi ir mazliet saldāka un daudz jautrāka.",
+          "traits": [
+            "Svētku gars",
+            "Uzmanība",
+            "Prieks"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which bread are you?",
+      "hook": "Rye, croissant or banana bread? Your personality already knows.",
+      "intro": "Bread is as varied as people: one is tough and dependable, another flaky and elegant, another sweet and cosy. In seven questions we'll find out which bread matches your character, and give you the recipes to bake it in your own kitchen.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "How do you usually wake up?",
+          "a": [
+            "Before the alarm, straight to work",
+            "On the third alarm",
+            "Only after the first coffee",
+            "Already singing"
+          ]
+        },
+        {
+          "q": "How would you describe your style?",
+          "a": [
+            "Practical, lasts for years",
+            "Elegant, with refined details",
+            "Comfy and relaxed",
+            "Bright and festive"
+          ]
+        },
+        {
+          "q": "You walk into a party. What do you do?",
+          "a": [
+            "Find the host and help with the food",
+            "Talk to everyone within a minute",
+            "Stay 20 minutes and slip out quietly",
+            "Find the house cat"
+          ]
+        },
+        {
+          "q": "Rainy Sunday. Your plan?",
+          "a": [
+            "Baking or making something by hand",
+            "An exhibition and a café",
+            "A walk in the forest, rain or not",
+            "Invite friends over"
+          ]
+        },
+        {
+          "q": "Your superpower?",
+          "a": [
+            "Endurance",
+            "Taste",
+            "Hospitality",
+            "Making people happy"
+          ]
+        },
+        {
+          "q": "What annoys you most?",
+          "a": [
+            "Slow people in queues",
+            "Hypocrisy",
+            "When someone refuses dessert",
+            "When people forget my birthday"
+          ]
+        },
+        {
+          "q": "Where would you like to live?",
+          "a": [
+            "In Paris",
+            "In Rome",
+            "In a small town by the sea",
+            "On a farmstead in the Latvian countryside"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaize": {
+          "name": "Dark rye bread",
+          "tagline": "Tough on the outside, warm on the inside.",
+          "description": "You have a kind of resilience no shop can sell. You don't complain, you get things done, and your word is the best guarantee there is. Your humour is dark as the crust but has a sweet aftertaste, and you only get better with the years.",
+          "traits": [
+            "Resilience",
+            "Honesty",
+            "Dark humour"
+          ]
+        },
+        "kruasans": {
+          "name": "Croissant",
+          "tagline": "Elegant, flaky and a little dramatic.",
+          "description": "You know life is too short for bad coffee. You have refined taste, many layers and a talent for turning an ordinary morning into a small show. Those who don't get it simply lack style.",
+          "traits": [
+            "Taste",
+            "Charm",
+            "A little drama"
+          ]
+        },
+        "fokaca": {
+          "name": "Focaccia",
+          "tagline": "Generous as a Mediterranean evening.",
+          "description": "You love to share: food, stories and time. There is always room for one more at your table, and around you even a Monday feels like a holiday. You are warmth that can be torn off and passed around.",
+          "traits": [
+            "Hospitality",
+            "Warmth",
+            "Joie de vivre"
+          ]
+        },
+        "bagete": {
+          "name": "Baguette",
+          "tagline": "Crisp and direct, soft inside.",
+          "description": "You don't beat around the bush: you say how it is and move on. You have effortless style, a quick mind and a soft heart that only those closest to you get to see. And yes, you tend to leave parties without saying goodbye. The French way, of course.",
+          "traits": [
+            "Directness",
+            "Style",
+            "Speed"
+          ]
+        },
+        "banana-maize": {
+          "name": "Banana bread",
+          "tagline": "You bake good days out of bad ones.",
+          "description": "You can turn overripe bananas and bad days into something wonderful. Being around you feels cosy, warm and safe, and your kitchen always smells of cinnamon. You are a hug that comes in slices.",
+          "traits": [
+            "Cosiness",
+            "Resourcefulness",
+            "Gentleness"
+          ]
+        },
+        "klingeris": {
+          "name": "Birthday kliņģeris",
+          "tagline": "You are a reason to celebrate.",
+          "description": "You remember everyone's birthday, know who loves what and always find a reason to celebrate. When you walk into a room, it gets brighter. Life with you is a little sweeter and a lot more fun.",
+          "traits": [
+            "Festive spirit",
+            "Thoughtfulness",
+            "Joy"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какой ты хлеб?",
+      "hook": "Ржаной, круассан или банановый? Твой характер уже знает ответ.",
+      "intro": "Хлеб так же разнообразен, как люди: один крепкий и надёжный, другой слоёный и элегантный, третий сладкий и уютный. За семь вопросов мы узнаем, какой хлеб соответствует твоему характеру, и дадим рецепты, чтобы испечь его на своей кухне.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Как ты обычно просыпаешься?",
+          "a": [
+            "До будильника и сразу за дело",
+            "С третьего будильника",
+            "Только после первого кофе",
+            "Уже с песней"
+          ]
+        },
+        {
+          "q": "Твой стиль в одежде?",
+          "a": [
+            "Практичный, служит годами",
+            "Элегантный, с изысканными деталями",
+            "Удобный и свободный",
+            "Яркий и праздничный"
+          ]
+        },
+        {
+          "q": "Ты приходишь на вечеринку. Что делаешь?",
+          "a": [
+            "Нахожу хозяев и помогаю с едой",
+            "Через минуту уже говорю со всеми",
+            "Сижу 20 минут и тихо ухожу",
+            "Ищу хозяйского кота"
+          ]
+        },
+        {
+          "q": "Дождливое воскресенье. Твой план?",
+          "a": [
+            "Что-то пеку или мастерю",
+            "Выставка и кафе",
+            "Прогулка по лесу, дождь не помеха",
+            "Зову друзей в гости"
+          ]
+        },
+        {
+          "q": "Твоя суперсила?",
+          "a": [
+            "Выносливость",
+            "Вкус",
+            "Гостеприимство",
+            "Умение радовать других"
+          ]
+        },
+        {
+          "q": "Что тебя раздражает больше всего?",
+          "a": [
+            "Медленные люди в очереди",
+            "Лицемерие",
+            "Когда кто-то отказывается от десерта",
+            "Когда забывают про мой день рождения"
+          ]
+        },
+        {
+          "q": "Где тебе хотелось бы жить?",
+          "a": [
+            "В Париже",
+            "В Риме",
+            "В маленьком городке у моря",
+            "На хуторе в латвийской глубинке"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaize": {
+          "name": "Ржаной хлеб",
+          "tagline": "Крепость снаружи, душевность внутри.",
+          "description": "В тебе есть стойкость, которую не купишь в магазине. Ты не жалуешься, а делаешь, и твоё слово — лучшая гарантия. Юмор у тебя тёмный, как корочка, но со сладким послевкусием, и с годами всё становится только лучше.",
+          "traits": [
+            "Стойкость",
+            "Честность",
+            "Чёрный юмор"
+          ]
+        },
+        "kruasans": {
+          "name": "Круассан",
+          "tagline": "Элегантность, слои и немного драмы.",
+          "description": "Ты знаешь, что жизнь слишком коротка для плохого кофе. У тебя изысканный вкус, много слоёв и талант превращать обычное утро в маленькое шоу. Кто этого не понимает, тому просто не хватает стиля.",
+          "traits": [
+            "Вкус",
+            "Шарм",
+            "Немного драмы"
+          ]
+        },
+        "fokaca": {
+          "name": "Фокачча",
+          "tagline": "Щедрость средиземноморского вечера.",
+          "description": "Ты любишь делиться: едой, историями и временем. За твоим столом всегда найдётся место ещё для одного, а рядом с тобой даже понедельник похож на отпуск. Ты — тепло, которое можно разломить и передать по кругу.",
+          "traits": [
+            "Гостеприимство",
+            "Тепло",
+            "Жизнелюбие"
+          ]
+        },
+        "bagete": {
+          "name": "Багет",
+          "tagline": "Хрустящая прямота, мягкое сердце.",
+          "description": "Ты не ходишь вокруг да около: говоришь как есть и идёшь дальше. У тебя стиль без усилий, быстрый ум и мягкое сердце, которое видят только самые близкие. И да, с вечеринок ты любишь уходить по-английски. Точнее, по-французски.",
+          "traits": [
+            "Прямота",
+            "Стиль",
+            "Скорость"
+          ]
+        },
+        "banana-maize": {
+          "name": "Банановый хлеб",
+          "tagline": "Из плохого дня ты печёшь хороший.",
+          "description": "Ты умеешь превратить переспелые бананы и плохие дни во что-то чудесное. Рядом с тобой уютно, тепло и спокойно, а на твоей кухне всегда пахнет корицей. Ты — объятие, которое нарезают ломтиками.",
+          "traits": [
+            "Уют",
+            "Находчивость",
+            "Нежность"
+          ]
+        },
+        "klingeris": {
+          "name": "Праздничный крендель",
+          "tagline": "Ты — повод для праздника.",
+          "description": "Ты помнишь все дни рождения, знаешь, кто что любит, и всегда находишь повод отпраздновать. Когда ты входишь в комнату, становится светлее. Жизнь с тобой немного слаще и намного веселее.",
+          "traits": [
+            "Праздничный дух",
+            "Внимательность",
+            "Радость"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Kokia tu duona?",
+      "hook": "Ruginė, kruasanas ar bananų duona? Tavo charakteris jau žino atsakymą.",
+      "intro": "Duona tokia pat įvairi kaip žmonės: viena tvirta ir patikima, kita sluoksniuota ir elegantiška, dar kita saldi ir jauki. Per septynis klausimus išsiaiškinsime, kuri duona atitinka tavo charakterį, ir pasiūlysime receptų, kad galėtum ją išsikepti savo virtuvėje.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Kaip paprastai pabundi?",
+          "a": [
+            "Prieš žadintuvą ir iškart imuosi darbų",
+            "Nuo trečio žadintuvo",
+            "Tik po pirmos kavos",
+            "Jau su daina"
+          ]
+        },
+        {
+          "q": "Koks tavo aprangos stilius?",
+          "a": [
+            "Praktiškas, tarnauja metų metus",
+            "Elegantiškas, su rafinuotomis detalėmis",
+            "Patogus ir laisvas",
+            "Ryškus ir šventiškas"
+          ]
+        },
+        {
+          "q": "Ateini į vakarėlį. Ką darai?",
+          "a": [
+            "Surandu šeimininkus ir padedu su maistu",
+            "Po minutės jau kalbuosi su visais",
+            "Pasėdžiu 20 minučių ir tyliai išeinu",
+            "Surandu namų katiną"
+          ]
+        },
+        {
+          "q": "Lietingas sekmadienis. Tavo planas?",
+          "a": [
+            "Ką nors kepu ar darau rankomis",
+            "Paroda ir kavinė",
+            "Pasivaikščiojimas miške, lietus netrukdo",
+            "Pasikviečiu draugus"
+          ]
+        },
+        {
+          "q": "Tavo supergalia?",
+          "a": [
+            "Ištvermė",
+            "Skonis",
+            "Svetingumas",
+            "Mokėjimas pradžiuginti kitus"
+          ]
+        },
+        {
+          "q": "Kas tave labiausiai erzina?",
+          "a": [
+            "Lėti žmonės eilėje",
+            "Veidmainystė",
+            "Kai kas nors atsisako deserto",
+            "Kai pamiršta mano gimtadienį"
+          ]
+        },
+        {
+          "q": "Kur norėtum gyventi?",
+          "a": [
+            "Paryžiuje",
+            "Romoje",
+            "Mažame miestelyje prie jūros",
+            "Vienkiemyje Latvijos kaime"
+          ]
+        }
+      ],
+      "results": {
+        "rupjmaize": {
+          "name": "Ruginė duona",
+          "tagline": "Tvirtumas išorėje, nuoširdumas viduje.",
+          "description": "Turi ištvermės, kurios nenusipirksi parduotuvėje. Nesiskundi, o darai, ir tavo žodis yra geriausia garantija. Tavo humoras tamsus kaip pluta, bet su saldžiu poskoniu, o su metais viskas tik gerėja.",
+          "traits": [
+            "Ištvermė",
+            "Sąžiningumas",
+            "Juodas humoras"
+          ]
+        },
+        "kruasans": {
+          "name": "Kruasanas",
+          "tagline": "Elegancija, sluoksniai ir truputis dramos.",
+          "description": "Žinai, kad gyvenimas per trumpas blogai kavai. Turi rafinuotą skonį, daug sluoksnių ir talentą paprastą rytą paversti mažu šou. Kas to nesupranta, tiems tiesiog trūksta stiliaus.",
+          "traits": [
+            "Skonis",
+            "Žavesys",
+            "Truputis dramos"
+          ]
+        },
+        "fokaca": {
+          "name": "Fokača",
+          "tagline": "Viduržemio jūros vakaro dosnumas.",
+          "description": "Mėgsti dalintis: maistu, istorijomis ir laiku. Prie tavo stalo visada atsiras vietos dar vienam, o šalia tavęs net pirmadienis atrodo kaip atostogos. Tu esi šiluma, kurią galima laužyti ir dalinti.",
+          "traits": [
+            "Svetingumas",
+            "Šiluma",
+            "Gyvenimo džiaugsmas"
+          ]
+        },
+        "bagete": {
+          "name": "Bagetė",
+          "tagline": "Traškus tiesumas, minkšta širdis.",
+          "description": "Nesuki uodegos: pasakai, kaip yra, ir eini toliau. Turi stilių be pastangų, greitą protą ir švelnią širdį, kurią mato tik artimiausi. Ir taip, iš vakarėlių mėgsti išeiti angliškai. Tiksliau, prancūziškai.",
+          "traits": [
+            "Tiesumas",
+            "Stilius",
+            "Greitis"
+          ]
+        },
+        "banana-maize": {
+          "name": "Bananų duona",
+          "tagline": "Iš blogos dienos iškepi gerą.",
+          "description": "Moki pernokusius bananus ir blogas dienas paversti kuo nors nuostabiu. Šalia tavęs jauku, šilta ir saugu, o tavo virtuvėje visada kvepia cinamonu. Tu esi apkabinimas, kurį galima supjaustyti riekelėmis.",
+          "traits": [
+            "Jaukumas",
+            "Išradingumas",
+            "Švelnumas"
+          ]
+        },
+        "klingeris": {
+          "name": "Šventinis riestainis",
+          "tagline": "Tu esi priežastis švęsti.",
+          "description": "Prisimeni visų gimtadienius, žinai, kas ką mėgsta, ir visada randi progą švęsti. Kai įeini į kambarį, tampa šviesiau. Gyvenimas su tavimi šiek tiek saldesnis ir daug linksmesnis.",
+          "traits": [
+            "Šventinė dvasia",
+            "Dėmesingumas",
+            "Džiaugsmas"
+          ]
+        }
+      }
+    }
+  }
+}

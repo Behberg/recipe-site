@@ -1,0 +1,825 @@
+{
+  "order": 8,
+  "emoji": "🎄",
+  "color": "#2e6b4a",
+  "results": {
+    "piparkuka": {
+      "emoji": "🍪",
+      "color": "#b8692e",
+      "match": "karsta-sokolade",
+      "recipes": [
+        "piparkukas",
+        "medus-cepumi",
+        "ziemassvetku-auglu-kekss"
+      ]
+    },
+    "putraimu-desas": {
+      "emoji": "🪵",
+      "color": "#6b4a3a",
+      "match": "kaposti",
+      "recipes": [
+        "putraimu-desas",
+        "asinsdesas",
+        "pelekie-zirni-ar-speki"
+      ]
+    },
+    "kaposti": {
+      "emoji": "🥬",
+      "color": "#9a8a2e",
+      "match": "putraimu-desas",
+      "recipes": [
+        "sauteti-skabie-kaposti",
+        "skabeti-kaposti",
+        "cukas-ribinas-ar-skabetiem-kapostiem"
+      ]
+    },
+    "skinkis": {
+      "emoji": "🍖",
+      "color": "#a8452e",
+      "match": "rasols",
+      "recipes": [
+        "ziemassvetku-skinkis-medus-glazura",
+        "cepta-pile-ar-aboliem",
+        "cukgalas-cepetis"
+      ]
+    },
+    "karsta-sokolade": {
+      "emoji": "☕",
+      "color": "#5a3322",
+      "match": "piparkuka",
+      "recipes": [
+        "karsta-sokolade",
+        "kakao-ar-pienu",
+        "bezalkoholiskais-karstvins"
+      ]
+    },
+    "rasols": {
+      "emoji": "🥗",
+      "color": "#c25a7a",
+      "match": "skinkis",
+      "recipes": [
+        "rasols",
+        "silke-kazoka",
+        "pilditas-olas"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🎶",
+          "scores": {
+            "piparkuka": 2,
+            "karsta-sokolade": 1
+          }
+        },
+        {
+          "emoji": "📋",
+          "scores": {
+            "skinkis": 2,
+            "rasols": 1
+          }
+        },
+        {
+          "emoji": "🕯️",
+          "scores": {
+            "putraimu-desas": 2,
+            "karsta-sokolade": 1
+          }
+        },
+        {
+          "emoji": "🏃",
+          "scores": {
+            "kaposti": 2,
+            "rasols": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎅",
+          "scores": {
+            "piparkuka": 2,
+            "rasols": 1
+          }
+        },
+        {
+          "emoji": "🔪",
+          "scores": {
+            "skinkis": 2,
+            "putraimu-desas": 1
+          }
+        },
+        {
+          "emoji": "🎲",
+          "scores": {
+            "rasols": 2,
+            "piparkuka": 1
+          }
+        },
+        {
+          "emoji": "🛋️",
+          "scores": {
+            "karsta-sokolade": 2,
+            "kaposti": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "❄️",
+          "scores": {
+            "karsta-sokolade": 2,
+            "piparkuka": 1
+          }
+        },
+        {
+          "emoji": "☃️",
+          "scores": {
+            "rasols": 2,
+            "piparkuka": 1
+          }
+        },
+        {
+          "emoji": "🥶",
+          "scores": {
+            "putraimu-desas": 2,
+            "kaposti": 1
+          }
+        },
+        {
+          "emoji": "🪟",
+          "scores": {
+            "karsta-sokolade": 2
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎁",
+          "scores": {
+            "skinkis": 2,
+            "piparkuka": 1
+          }
+        },
+        {
+          "emoji": "✂️",
+          "scores": {
+            "piparkuka": 2,
+            "putraimu-desas": 1
+          }
+        },
+        {
+          "emoji": "🎟️",
+          "scores": {
+            "rasols": 2,
+            "karsta-sokolade": 1
+          }
+        },
+        {
+          "emoji": "🧦",
+          "scores": {
+            "kaposti": 2,
+            "putraimu-desas": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🪵",
+          "scores": {
+            "putraimu-desas": 2,
+            "kaposti": 1
+          }
+        },
+        {
+          "emoji": "🎵",
+          "scores": {
+            "piparkuka": 2,
+            "karsta-sokolade": 1
+          }
+        },
+        {
+          "emoji": "🍽️",
+          "scores": {
+            "skinkis": 2,
+            "rasols": 1
+          }
+        },
+        {
+          "emoji": "🎭",
+          "scores": {
+            "rasols": 2,
+            "kaposti": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "😴",
+          "scores": {
+            "kaposti": 2,
+            "skinkis": 1
+          }
+        },
+        {
+          "emoji": "🚶",
+          "scores": {
+            "putraimu-desas": 2,
+            "piparkuka": 1
+          }
+        },
+        {
+          "emoji": "🍫",
+          "scores": {
+            "karsta-sokolade": 2,
+            "piparkuka": 1
+          }
+        },
+        {
+          "emoji": "🥡",
+          "scores": {
+            "rasols": 2,
+            "kaposti": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧣",
+          "scores": {
+            "karsta-sokolade": 2
+          }
+        },
+        {
+          "emoji": "🧖",
+          "scores": {
+            "kaposti": 2,
+            "putraimu-desas": 1
+          }
+        },
+        {
+          "emoji": "✨",
+          "scores": {
+            "piparkuka": 2,
+            "skinkis": 1
+          }
+        },
+        {
+          "emoji": "🏡",
+          "scores": {
+            "skinkis": 2,
+            "rasols": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds Ziemassvētku ēdiens esi tu?",
+      "hook": "Piparkūka, šķiņķis vai rasols? Tavs svētku raksturs vairs nav noslēpums.",
+      "intro": "Ziemassvētku galds ir kā ģimene: katram ēdienam ir savs raksturs un sava vieta. Viens ir salds un dekoratīvs, cits sātīgs un tradicionāls, vēl cits apvieno visus. Atbildi uz septiņiem jautājumiem par to, kā tu svini ziemas svētkus, un uzzini, kurš ēdiens tu esi uz svētku galda. Klāt receptes, lai tas būtu arī uz tava galda.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Kad tu sāc gatavoties Ziemassvētkiem?",
+          "a": [
+            "Novembrī, ar dziesmām",
+            "Oktobrī, ar sarakstu",
+            "Adventē, lēnām un pamazām",
+            "23. decembrī"
+          ]
+        },
+        {
+          "q": "Tava loma svētku vakarā?",
+          "a": [
+            "Skaitu dzejoļus Ziemassvētku vecītim",
+            "Griežu cepeti un vadu galdu",
+            "Organizēju spēles",
+            "Sēžu pie kamīna zem segas"
+          ]
+        },
+        {
+          "q": "Kāds sniegs tev patīk?",
+          "a": [
+            "Pūkains un svētku noskaņā",
+            "Daudz, lai var mētāties ar pikām",
+            "Tāds, kas salā čīkst zem kājām",
+            "Labāk to vērot pa logu"
+          ]
+        },
+        {
+          "q": "Kā tu gādā dāvanas?",
+          "a": [
+            "Nopērku jau pusgadu iepriekš",
+            "Taisu ar savām rokām",
+            "Dāvinu piedzīvojumus",
+            "Zeķes. Vienmēr zeķes."
+          ]
+        },
+        {
+          "q": "Tava mīļākā svētku tradīcija?",
+          "a": [
+            "Bluķa vilkšana",
+            "Dziesmas un dzejoļi",
+            "Liels mielasts",
+            "Ķekatas un maskas"
+          ]
+        },
+        {
+          "q": "Ko tu dari pēc svētku mielasta?",
+          "a": [
+            "Aizmiegu uz dīvāna",
+            "Eju pastaigā pa sniegu",
+            "Man vēl ir vieta desertam",
+            "Ēdu vēl, kas palicis"
+          ]
+        },
+        {
+          "q": "Tava ziemas noskaņa?",
+          "a": [
+            "Silts džemperis un kakao",
+            "Pirts un lēciens sniegā",
+            "Lampiņas visur, kur vien var",
+            "Pilna māja viesu"
+          ]
+        }
+      ],
+      "results": {
+        "piparkuka": {
+          "name": "Piparkūka",
+          "tagline": "Saldums, pikantums un mūžīgi svētki.",
+          "description": "Tev Ziemassvētki sākas novembrī, un tu to nekaunies atzīt. Tevī ir saldums ar pikantu dzirksti, radošums un talants izrotāt jebko, sākot ar eglīti un beidzot ar parastu otrdienu. Ar tevi katrs vakars smaržo pēc kanēļa un krustnagliņām.",
+          "traits": [
+            "Svētku gars",
+            "Radošums",
+            "Pikanta dzirkste"
+          ]
+        },
+        "putraimu-desas": {
+          "name": "Putraimu desa",
+          "tagline": "Senču gudrība ar noslēpumainu pildījumu.",
+          "description": "Tevī dzīvo senču gudrība un tradīciju spēks. Ne visi uzreiz saprot tavu dziļumu, bet tie, kas saprot, novērtē tevi uz mūžu. Tu turi kopā ģimenes stāstus un zini, kāpēc jāvelk bluķis.",
+          "traits": [
+            "Tradīcijas",
+            "Dziļums",
+            "Noslēpums"
+          ]
+        },
+        "kaposti": {
+          "name": "Sautēti skābie kāposti",
+          "tagline": "Nākamajā dienā vēl labāki.",
+          "description": "Tev nav jāsteidzas, jo tavs laiks pienāk nedaudz vēlāk, un tad bez tevis vairs neiztikt. Tev ir skābs humors, silta sirds, un laika gaitā tu tikai iegūsti. Pēcsvētku rītā visi atceras tieši tevi.",
+          "traits": [
+            "Izturība",
+            "Humors",
+            "Pēcgarša"
+          ]
+        },
+        "skinkis": {
+          "name": "Svētku šķiņķis",
+          "tagline": "Galvenā zvaigzne uz galda.",
+          "description": "Tu mīli svētkus, kas izdodas lieli un krāšņi. Tu plāno, organizē un parūpējies, lai visiem ir labāk nekā gaidīts. Kad tu ienāc ar savu cepeti, visi sāk aplaudēt, un tas ir pelnīti.",
+          "traits": [
+            "Vēriens",
+            "Organizētība",
+            "Dāsnums"
+          ]
+        },
+        "karsta-sokolade": {
+          "name": "Karstā šokolāde",
+          "tagline": "Apskāviens krūzē.",
+          "description": "Tu esi ziemas miers un siltums. Tev patīk kamīns, sega un laba filma, un tavā sabiedrībā visi atslābst. Tu proti radīt mājīgumu jebkur, pat ja ārā plosās putenis.",
+          "traits": [
+            "Siltums",
+            "Miers",
+            "Mājīgums"
+          ]
+        },
+        "rasols": {
+          "name": "Rasols",
+          "tagline": "Tu savieno visus.",
+          "description": "Tev patīk, ja pie galda ir daudz cilvēku, un tu proti visus savest kopā kā labi samaisītus salātus. Tu organizē spēles, atceries jokus un vari runāt ar jebkuru. Svētki ar tevi ir jautri, skaļi un ļoti sātīgi.",
+          "traits": [
+            "Sabiedriskums",
+            "Humors",
+            "Vienotība"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which Christmas dish are you?",
+      "hook": "Gingerbread, ham or potato salad? Your festive character is no longer a secret.",
+      "intro": "A Christmas table is like a family: every dish has its own character and its own place. One is sweet and decorative, another hearty and traditional, another brings everyone together. Answer seven questions about how you celebrate the winter holidays and find out which dish you are on the festive table. The recipes are included, so it can be on yours too.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "When do you start getting ready for Christmas?",
+          "a": [
+            "In November, with carols",
+            "In October, with a list",
+            "During Advent, slowly",
+            "On 23 December"
+          ]
+        },
+        {
+          "q": "Your role on Christmas Eve?",
+          "a": [
+            "Reciting poems for Father Christmas",
+            "Carving the roast and running the table",
+            "Organising the games",
+            "Sitting by the fireplace under a blanket"
+          ]
+        },
+        {
+          "q": "What kind of snow do you like?",
+          "a": [
+            "Fluffy and festive",
+            "Lots of it, for snowball fights",
+            "The kind that crunches in the frost",
+            "I'd rather watch it through the window"
+          ]
+        },
+        {
+          "q": "How do you handle gifts?",
+          "a": [
+            "Bought half a year in advance",
+            "Handmade",
+            "I give experiences",
+            "Socks. Always socks."
+          ]
+        },
+        {
+          "q": "Your favourite holiday tradition?",
+          "a": [
+            "Dragging the Yule log",
+            "Carols and poems",
+            "A big feast",
+            "Mummers and masks"
+          ]
+        },
+        {
+          "q": "What do you do after the feast?",
+          "a": [
+            "Fall asleep on the sofa",
+            "Go for a walk in the snow",
+            "I still have room for dessert",
+            "Eat whatever is left"
+          ]
+        },
+        {
+          "q": "Your winter mood?",
+          "a": [
+            "A warm jumper and cocoa",
+            "Sauna and a jump in the snow",
+            "Fairy lights wherever possible",
+            "A house full of guests"
+          ]
+        }
+      ],
+      "results": {
+        "piparkuka": {
+          "name": "Gingerbread",
+          "tagline": "Sweet, spicy and always in holiday mode.",
+          "description": "For you Christmas starts in November, and you're not ashamed to admit it. You have sweetness with a spicy spark, creativity and a talent for decorating anything, from the tree to an ordinary Tuesday. With you every evening smells of cinnamon and cloves.",
+          "traits": [
+            "Festive spirit",
+            "Creativity",
+            "Spicy spark"
+          ]
+        },
+        "putraimu-desas": {
+          "name": "Barley sausage",
+          "tagline": "Ancestral wisdom with a mysterious filling.",
+          "description": "Ancestral wisdom and the strength of tradition live in you. Not everyone understands your depth right away, but those who do value you for life. You hold the family stories together and know why the Yule log must be dragged.",
+          "traits": [
+            "Tradition",
+            "Depth",
+            "Mystery"
+          ]
+        },
+        "kaposti": {
+          "name": "Braised sauerkraut",
+          "tagline": "Even better the next day.",
+          "description": "You don't need to rush, because your time comes a little later, and then nobody can do without you. You have tangy humour, a warm heart, and you only get better with time. The morning after the holidays, you're the one everyone remembers.",
+          "traits": [
+            "Stamina",
+            "Humour",
+            "Aftertaste"
+          ]
+        },
+        "skinkis": {
+          "name": "Christmas ham",
+          "tagline": "The star of the table.",
+          "description": "You love holidays that turn out big and glorious. You plan, organise and make sure everything is better than anyone expected. When you walk in with your roast, everyone applauds, and it's well deserved.",
+          "traits": [
+            "Flair",
+            "Organisation",
+            "Generosity"
+          ]
+        },
+        "karsta-sokolade": {
+          "name": "Hot chocolate",
+          "tagline": "A hug in a mug.",
+          "description": "You are winter calm and warmth. You love a fireplace, a blanket and a good film, and everyone relaxes around you. You can create cosiness anywhere, even when a blizzard rages outside.",
+          "traits": [
+            "Warmth",
+            "Calm",
+            "Cosiness"
+          ]
+        },
+        "rasols": {
+          "name": "Rasols potato salad",
+          "tagline": "You bring everyone together.",
+          "description": "You love a table full of people, and you can mix everyone together like a well-tossed salad. You organise games, remember the jokes and can talk to anyone. Holidays with you are fun, loud and very filling.",
+          "traits": [
+            "Sociability",
+            "Humour",
+            "Togetherness"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какое ты рождественское блюдо?",
+      "hook": "Пряник, окорок или салат? Твой праздничный характер больше не секрет.",
+      "intro": "Рождественский стол похож на семью: у каждого блюда свой характер и своё место. Одно сладкое и нарядное, другое сытное и традиционное, третье объединяет всех. Ответь на семь вопросов о том, как ты празднуешь зимние праздники, и узнай, какое ты блюдо на праздничном столе. Рецепты прилагаются, чтобы оно появилось и на твоём столе.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Когда ты начинаешь готовиться к Рождеству?",
+          "a": [
+            "В ноябре, с песнями",
+            "В октябре, со списком",
+            "В Адвент, потихоньку",
+            "23 декабря"
+          ]
+        },
+        {
+          "q": "Твоя роль в праздничный вечер?",
+          "a": [
+            "Читаю стихи Деду Морозу",
+            "Режу жаркое и веду стол",
+            "Организую игры",
+            "Сижу у камина под пледом"
+          ]
+        },
+        {
+          "q": "Какой снег тебе нравится?",
+          "a": [
+            "Пушистый и праздничный",
+            "Много, чтобы играть в снежки",
+            "Тот, что скрипит на морозе",
+            "Лучше смотреть на него из окна"
+          ]
+        },
+        {
+          "q": "Как у тебя с подарками?",
+          "a": [
+            "Куплены за полгода",
+            "Делаю своими руками",
+            "Дарю впечатления",
+            "Носки. Всегда носки."
+          ]
+        },
+        {
+          "q": "Твоя любимая праздничная традиция?",
+          "a": [
+            "Таскать рождественское бревно",
+            "Песни и стихи",
+            "Большое застолье",
+            "Ряженые и маски"
+          ]
+        },
+        {
+          "q": "Что ты делаешь после праздничного ужина?",
+          "a": [
+            "Засыпаю на диване",
+            "Иду гулять по снегу",
+            "У меня ещё есть место для десерта",
+            "Доедаю то, что осталось"
+          ]
+        },
+        {
+          "q": "Твоё зимнее настроение?",
+          "a": [
+            "Тёплый свитер и какао",
+            "Баня и прыжок в сугроб",
+            "Гирлянды везде, где только можно",
+            "Полный дом гостей"
+          ]
+        }
+      ],
+      "results": {
+        "piparkuka": {
+          "name": "Имбирный пряник",
+          "tagline": "Сладко, пряно и всегда празднично.",
+          "description": "Для тебя Рождество начинается в ноябре, и ты не стесняешься в этом признаться. В тебе есть сладость с пряной искоркой, творческая жилка и талант украсить что угодно — от ёлки до обычного вторника. С тобой каждый вечер пахнет корицей и гвоздикой.",
+          "traits": [
+            "Праздничный дух",
+            "Творчество",
+            "Пряная искорка"
+          ]
+        },
+        "putraimu-desas": {
+          "name": "Колбаса с перловкой",
+          "tagline": "Мудрость предков с загадочной начинкой.",
+          "description": "В тебе живёт мудрость предков и сила традиций. Не все сразу понимают твою глубину, но те, кто понимает, ценят тебя всю жизнь. Ты хранишь семейные истории и знаешь, зачем нужно таскать бревно.",
+          "traits": [
+            "Традиции",
+            "Глубина",
+            "Загадка"
+          ]
+        },
+        "kaposti": {
+          "name": "Тушёная квашеная капуста",
+          "tagline": "На следующий день ещё вкуснее.",
+          "description": "Тебе некуда спешить, ведь твоё время приходит чуть позже, и тогда без тебя уже не обойтись. У тебя кисловатый юмор, тёплое сердце, и со временем всё становится только лучше. Утром после праздника все вспоминают именно тебя.",
+          "traits": [
+            "Стойкость",
+            "Юмор",
+            "Послевкусие"
+          ]
+        },
+        "skinkis": {
+          "name": "Праздничный окорок",
+          "tagline": "Главная звезда стола.",
+          "description": "Ты любишь праздники с размахом. Ты планируешь, организуешь и следишь, чтобы всё получилось лучше, чем все ожидали. Когда ты выходишь с жарким, все аплодируют, и это заслуженно.",
+          "traits": [
+            "Размах",
+            "Организованность",
+            "Щедрость"
+          ]
+        },
+        "karsta-sokolade": {
+          "name": "Горячий шоколад",
+          "tagline": "Объятие в кружке.",
+          "description": "Ты — зимний покой и тепло. Ты любишь камин, плед и хороший фильм, и рядом с тобой все расслабляются. Ты умеешь создать уют где угодно, даже когда за окном бушует метель.",
+          "traits": [
+            "Тепло",
+            "Покой",
+            "Уют"
+          ]
+        },
+        "rasols": {
+          "name": "Салат расолс",
+          "tagline": "Ты объединяешь всех.",
+          "description": "Ты любишь, когда за столом много людей, и умеешь перемешать всех, как хорошо заправленный салат. Ты организуешь игры, помнишь шутки и можешь говорить с кем угодно. Праздники с тобой весёлые, шумные и очень сытные.",
+          "traits": [
+            "Общительность",
+            "Юмор",
+            "Единство"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Koks tu Kalėdų patiekalas?",
+      "hook": "Meduolis, kumpis ar mišrainė? Tavo šventinis charakteris nebėra paslaptis.",
+      "intro": "Kalėdų stalas panašus į šeimą: kiekvienas patiekalas turi savo charakterį ir savo vietą. Vienas saldus ir puošnus, kitas sotus ir tradicinis, dar kitas suburia visus. Atsakyk į septynis klausimus apie tai, kaip švenčiai žiemos šventes, ir sužinok, koks patiekalas esi ant šventinio stalo. Receptai pridedami, kad jis atsirastų ir ant tavo stalo.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Kada pradedi ruoštis Kalėdoms?",
+          "a": [
+            "Lapkritį, su dainomis",
+            "Spalį, su sąrašu",
+            "Advente, pamažu",
+            "Gruodžio 23-iąją"
+          ]
+        },
+        {
+          "q": "Tavo vaidmuo šventiniame vakare?",
+          "a": [
+            "Deklamuoju eilėraščius Kalėdų Seneliui",
+            "Pjaustau kepsnį ir vadovauju stalui",
+            "Organizuoju žaidimus",
+            "Sėdžiu prie židinio po pledu"
+          ]
+        },
+        {
+          "q": "Koks sniegas tau patinka?",
+          "a": [
+            "Purus ir šventiškas",
+            "Daug, kad galėtum mėtytis gniūžtėmis",
+            "Toks, kuris girgžda šaltyje",
+            "Geriau stebėti pro langą"
+          ]
+        },
+        {
+          "q": "Kaip tvarkaisi su dovanomis?",
+          "a": [
+            "Nuperku prieš pusmetį",
+            "Darau savo rankomis",
+            "Dovanoju įspūdžius",
+            "Kojinės. Visada kojinės."
+          ]
+        },
+        {
+          "q": "Tavo mėgstamiausia šventinė tradicija?",
+          "a": [
+            "Blukio vilkimas",
+            "Dainos ir eilėraščiai",
+            "Didelės vaišės",
+            "Persirengėliai ir kaukės"
+          ]
+        },
+        {
+          "q": "Ką darai po šventinės vakarienės?",
+          "a": [
+            "Užmiegu ant sofos",
+            "Einu pasivaikščioti sniegu",
+            "Dar turiu vietos desertui",
+            "Suvalgau tai, kas liko"
+          ]
+        },
+        {
+          "q": "Tavo žiemos nuotaika?",
+          "a": [
+            "Šiltas megztinis ir kakava",
+            "Pirtis ir šuolis į sniegą",
+            "Lemputės visur, kur tik galima",
+            "Pilni namai svečių"
+          ]
+        }
+      ],
+      "results": {
+        "piparkuka": {
+          "name": "Meduolis",
+          "tagline": "Saldu, aštroka ir visada šventiška.",
+          "description": "Tau Kalėdos prasideda lapkritį, ir tu nesigėdiji to pripažinti. Tavyje yra saldumo su aštria kibirkštėle, kūrybiškumo ir talento papuošti bet ką, nuo eglutės iki paprasto antradienio. Su tavimi kiekvienas vakaras kvepia cinamonu ir gvazdikėliais.",
+          "traits": [
+            "Šventinė dvasia",
+            "Kūrybiškumas",
+            "Aštri kibirkštėlė"
+          ]
+        },
+        "putraimu-desas": {
+          "name": "Kruopų dešra",
+          "tagline": "Protėvių išmintis su paslaptingu įdaru.",
+          "description": "Tavyje gyvena protėvių išmintis ir tradicijų galia. Ne visi iš karto supranta tavo gylį, bet tie, kurie supranta, vertina tave visą gyvenimą. Saugai šeimos istorijas ir žinai, kodėl reikia vilkti blukį.",
+          "traits": [
+            "Tradicijos",
+            "Gylis",
+            "Paslaptis"
+          ]
+        },
+        "kaposti": {
+          "name": "Troškinti rauginti kopūstai",
+          "tagline": "Kitą dieną dar skanesni.",
+          "description": "Tau nereikia skubėti, nes tavo laikas ateina šiek tiek vėliau, ir tada be tavęs jau neapsieinama. Turi rūgštoką humorą, šiltą širdį, ir su laiku viskas tik gerėja. Rytą po šventės visi prisimena būtent tave.",
+          "traits": [
+            "Ištvermė",
+            "Humoras",
+            "Poskonis"
+          ]
+        },
+        "skinkis": {
+          "name": "Šventinis kumpis",
+          "tagline": "Pagrindinė stalo žvaigždė.",
+          "description": "Mėgsti šventes su užmoju. Planuoji, organizuoji ir pasirūpini, kad viskas būtų geriau, nei kas nors tikėjosi. Kai įeini su savo kepsniu, visi ploja, ir tai pelnyta.",
+          "traits": [
+            "Užmojis",
+            "Organizuotumas",
+            "Dosnumas"
+          ]
+        },
+        "karsta-sokolade": {
+          "name": "Karštas šokoladas",
+          "tagline": "Apkabinimas puodelyje.",
+          "description": "Tu esi žiemos ramybė ir šiluma. Mėgsti židinį, pledą ir gerą filmą, o šalia tavęs visi atsipalaiduoja. Moki sukurti jaukumą bet kur, net kai lauke siaučia pūga.",
+          "traits": [
+            "Šiluma",
+            "Ramybė",
+            "Jaukumas"
+          ]
+        },
+        "rasols": {
+          "name": "Latviška mišrainė",
+          "tagline": "Tu suburi visus.",
+          "description": "Mėgsti, kai prie stalo daug žmonių, ir moki visus sumaišyti kaip gerai išmaišytą mišrainę. Organizuoji žaidimus, prisimeni juokelius ir gali kalbėtis su bet kuo. Šventės su tavimi linksmos, triukšmingos ir labai sočios.",
+          "traits": [
+            "Bendruomeniškumas",
+            "Humoras",
+            "Vienybė"
+          ]
+        }
+      }
+    }
+  }
+}

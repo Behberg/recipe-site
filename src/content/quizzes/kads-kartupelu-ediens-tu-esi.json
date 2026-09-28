@@ -1,0 +1,825 @@
+{
+  "order": 10,
+  "emoji": "🥔",
+  "color": "#a87a3a",
+  "results": {
+    "fri": {
+      "emoji": "🍟",
+      "color": "#e0a21f",
+      "match": "gratens",
+      "recipes": [
+        "majas-fri-kartupeli",
+        "zivs-ar-kartupeliem",
+        "klasiskais-burgers"
+      ]
+    },
+    "biezenis": {
+      "emoji": "🧈",
+      "color": "#d9b45a",
+      "match": "cepelini",
+      "recipes": [
+        "kartupelu-biezenis",
+        "biezenis-ar-desinam",
+        "malta-gala-kotletes"
+      ]
+    },
+    "cepelini": {
+      "emoji": "🥟",
+      "color": "#9a7a4a",
+      "match": "biezenis",
+      "recipes": [
+        "cepelini",
+        "kugelis",
+        "zemaiciu-blynai"
+      ]
+    },
+    "jaunie": {
+      "emoji": "🌿",
+      "color": "#5a8a3a",
+      "match": "pankukas",
+      "recipes": [
+        "jaunie-kartupeli-ar-dillem",
+        "gailenu-merce",
+        "ceptas-butes"
+      ]
+    },
+    "gratens": {
+      "emoji": "🧀",
+      "color": "#c98a3a",
+      "match": "fri",
+      "recipes": [
+        "kartupelu-gratens",
+        "gala-francu-gaume",
+        "kartupelu-sacepums-ar-maltu-galu"
+      ]
+    },
+    "pankukas": {
+      "emoji": "🥞",
+      "color": "#b8762e",
+      "match": "jaunie",
+      "recipes": [
+        "kartupelu-pankukas",
+        "kartupelu-placenisi",
+        "varenki"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🍿",
+          "scores": {
+            "fri": 2,
+            "pankukas": 1
+          }
+        },
+        {
+          "emoji": "🛋️",
+          "scores": {
+            "biezenis": 2,
+            "gratens": 1
+          }
+        },
+        {
+          "emoji": "🥂",
+          "scores": {
+            "gratens": 2
+          }
+        },
+        {
+          "emoji": "🌅",
+          "scores": {
+            "jaunie": 2,
+            "biezenis": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🐎",
+          "scores": {
+            "cepelini": 2,
+            "fri": 1
+          }
+        },
+        {
+          "emoji": "💗",
+          "scores": {
+            "biezenis": 2,
+            "pankukas": 1
+          }
+        },
+        {
+          "emoji": "🏄",
+          "scores": {
+            "fri": 2,
+            "jaunie": 1
+          }
+        },
+        {
+          "emoji": "🎩",
+          "scores": {
+            "gratens": 2,
+            "jaunie": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🍔",
+          "scores": {
+            "fri": 2
+          }
+        },
+        {
+          "emoji": "🍽️",
+          "scores": {
+            "gratens": 2,
+            "cepelini": 1
+          }
+        },
+        {
+          "emoji": "🥘",
+          "scores": {
+            "cepelini": 2,
+            "biezenis": 1
+          }
+        },
+        {
+          "emoji": "🥗",
+          "scores": {
+            "jaunie": 2,
+            "pankukas": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🔁",
+          "scores": {
+            "pankukas": 2,
+            "cepelini": 1
+          }
+        },
+        {
+          "emoji": "🤗",
+          "scores": {
+            "biezenis": 2,
+            "jaunie": 1
+          }
+        },
+        {
+          "emoji": "😎",
+          "scores": {
+            "fri": 2,
+            "jaunie": 1
+          }
+        },
+        {
+          "emoji": "💪",
+          "scores": {
+            "cepelini": 2,
+            "pankukas": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🌱",
+          "scores": {
+            "jaunie": 2,
+            "fri": 1
+          }
+        },
+        {
+          "emoji": "🍂",
+          "scores": {
+            "pankukas": 2,
+            "biezenis": 1
+          }
+        },
+        {
+          "emoji": "❄️",
+          "scores": {
+            "cepelini": 2,
+            "gratens": 1
+          }
+        },
+        {
+          "emoji": "🎪",
+          "scores": {
+            "fri": 2,
+            "jaunie": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎀",
+          "scores": {
+            "gratens": 2,
+            "fri": 1
+          }
+        },
+        {
+          "emoji": "🍲",
+          "scores": {
+            "biezenis": 2,
+            "cepelini": 1
+          }
+        },
+        {
+          "emoji": "💞",
+          "scores": {
+            "jaunie": 2,
+            "biezenis": 1
+          }
+        },
+        {
+          "emoji": "✨",
+          "scores": {
+            "pankukas": 2,
+            "fri": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🏙️",
+          "scores": {
+            "gratens": 2,
+            "fri": 1
+          }
+        },
+        {
+          "emoji": "🏠",
+          "scores": {
+            "jaunie": 2,
+            "biezenis": 1
+          }
+        },
+        {
+          "emoji": "🚜",
+          "scores": {
+            "cepelini": 2,
+            "pankukas": 1
+          }
+        },
+        {
+          "emoji": "🏡",
+          "scores": {
+            "pankukas": 2,
+            "biezenis": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds kartupeļu ēdiens esi tu?",
+      "hook": "Latvieši un kartupeļi: mīlestība uz mūžu. Uzzini, kura forma ir tava.",
+      "intro": "Kartupelis ir latviešu virtuves sirds: bez tā nav ne Jāņu, ne svētdienas pusdienu. Taču katrs kartupeļu ēdiens ir citāds: viens kraukšķīgs un jautrs, cits mīksts un mierinošs, vēl cits smalks kā franču restorānā. Atbildi uz septiņiem jautājumiem un uzzini, kurš kartupeļu ēdiens esi tu. Receptes vakariņām ir klāt.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Brīvs piektdienas vakars. Tavs plāns?",
+          "a": [
+            "Kino ar draugiem",
+            "Mājās zem segas",
+            "Vakariņas smalkā restorānā",
+            "Pastaiga saulrietā"
+          ]
+        },
+        {
+          "q": "Ko par tevi saka tuvākie?",
+          "a": [
+            "„Ar tevi var zirgus zagt”",
+            "„Tev ir mīkstākā sirds pasaulē”",
+            "„Tu vienmēr esi uz viļņa”",
+            "„Tev ir izsmalcināta gaume”"
+          ]
+        },
+        {
+          "q": "Tava ideālā maltīte?",
+          "a": [
+            "Ātra un jautra",
+            "Lēna, ar trim ēdieniem",
+            "Liela un sātīga",
+            "Viegla un svaiga"
+          ]
+        },
+        {
+          "q": "Ko tu dari, kad kaut kas neizdodas?",
+          "a": [
+            "Mēģinu vēlreiz, šoreiz kraukšķīgāk",
+            "Apskauju kādu un aizmirstu",
+            "Pasmejos un eju tālāk",
+            "Sakožu zobus un turos"
+          ]
+        },
+        {
+          "q": "Tavs gadalaiks?",
+          "a": [
+            "Vasaras sākums",
+            "Rudens",
+            "Ziema",
+            "Festivālu laiks vasaras vidū"
+          ]
+        },
+        {
+          "q": "Kas ēdienā ir pats svarīgākais?",
+          "a": [
+            "Noformējums",
+            "Porcijas lielums",
+            "Sajūta, ko tas rada",
+            "Kraukšķīga maliņa"
+          ]
+        },
+        {
+          "q": "Kur tu gribētu dzīvot?",
+          "a": [
+            "Pilsētas centrā",
+            "Mazā mājiņā ar dārzu",
+            "Lielā saimniecībā laukos",
+            "Vecvecāku lauku mājā"
+          ]
+        }
+      ],
+      "results": {
+        "fri": {
+          "name": "Frī kartupeļi",
+          "tagline": "Kraukšķīgs prieks, ko grib visi.",
+          "description": "Ar tevi ir jautri jebkurā vietā un jebkurā laikā. Tu nesarežģī lietas, zini, kas ir modē, un proti uzlabot garastāvokli acumirklī. Neviens nespēj tev pateikt „nē”, un, godīgi sakot, arī negrib.",
+          "traits": [
+            "Prieks",
+            "Vieglums",
+            "Popularitāte"
+          ]
+        },
+        "biezenis": {
+          "name": "Kartupeļu biezenis",
+          "tagline": "Mīkstākā sirds pasaulē.",
+          "description": "Tu esi mierinājums cilvēka izskatā. Tev piemīt maigums, siltums un spēja salabot jebkuru sliktu dienu. Kad kādam ir grūti, vispirms zvana tev, un tu vienmēr atrodi īstos vārdus.",
+          "traits": [
+            "Maigums",
+            "Mierinājums",
+            "Siltums"
+          ]
+        },
+        "cepelini": {
+          "name": "Cepelīni",
+          "tagline": "Liela sirds un vēl lielāks raksturs.",
+          "description": "Tevī ir spēks un izturība, ar ko var iet cauri ugunij un ūdenim. Tev var uzticēties jebkurā situācijā, un ar tevi var zirgus zagt. Tev ir liela sirds, stingrs raksturs un sātīgs humors, kas pietiek visai kompānijai.",
+          "traits": [
+            "Spēks",
+            "Uzticamība",
+            "Liela sirds"
+          ]
+        },
+        "jaunie": {
+          "name": "Jaunie kartupeļi ar dillēm",
+          "tagline": "Vienkāršība, kas ir izcila.",
+          "description": "Tu esi vasaras svaigums un dabiskums. Laimei tev pietiek ar saulainu dienu, labiem cilvēkiem un sviesta piciņu. Tevī nav nekā mākslota, un tieši tāpēc tevi tik ļoti mīl.",
+          "traits": [
+            "Dabiskums",
+            "Svaigums",
+            "Vienkāršība"
+          ]
+        },
+        "gratens": {
+          "name": "Kartupeļu gratēns",
+          "tagline": "Franču šiks ar krēmīgu vidu.",
+          "description": "Tev ir izsmalcināta gaume, un tu proti pat ikdienu padarīt elegantu. Tavā dzīvē ir kārtas, stils un mazliet siera katram gadījumam. Tu zini, ka labām lietām vajag laiku, un nekad nesteidzies.",
+          "traits": [
+            "Elegance",
+            "Gaume",
+            "Kārtas"
+          ]
+        },
+        "pankukas": {
+          "name": "Kartupeļu pankūkas",
+          "tagline": "Kraukšķīga ārpuse, mīksta sirds.",
+          "description": "Tu proti no vienkāršām lietām izveidot kaut ko brīnišķīgu. Ārēji tevī jūtama kraukšķīga apņēmība, bet iekšā ir mīksta sirds. Tev piemīt atjautība un vecmāmiņas virtuves siltums.",
+          "traits": [
+            "Atjautība",
+            "Apņēmība",
+            "Siltums"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which potato dish are you?",
+      "hook": "Latvians and potatoes: a love for life. Find out which shape is yours.",
+      "intro": "The potato is the heart of Latvian cooking: there's no Midsummer and no Sunday lunch without it. But every potato dish is different: one is crispy and fun, another soft and comforting, another as refined as a French restaurant. Answer seven questions to find out which potato dish you are. Dinner recipes included.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "A free Friday evening. Your plan?",
+          "a": [
+            "Cinema with friends",
+            "At home under a blanket",
+            "Dinner at a fancy restaurant",
+            "A walk at sunset"
+          ]
+        },
+        {
+          "q": "What do the people closest to you say about you?",
+          "a": [
+            "“You're up for anything”",
+            "“You have the softest heart in the world”",
+            "“You're always on trend”",
+            "“You have refined taste”"
+          ]
+        },
+        {
+          "q": "Your ideal meal?",
+          "a": [
+            "Fast and fun",
+            "Slow, with three courses",
+            "Big and hearty",
+            "Light and fresh"
+          ]
+        },
+        {
+          "q": "What do you do when something goes wrong?",
+          "a": [
+            "Try again, crispier this time",
+            "Hug someone and forget it",
+            "Laugh and move on",
+            "Grit my teeth and hold on"
+          ]
+        },
+        {
+          "q": "Your season?",
+          "a": [
+            "Early summer",
+            "Autumn",
+            "Winter",
+            "Festival season in midsummer"
+          ]
+        },
+        {
+          "q": "What matters most in food?",
+          "a": [
+            "Presentation",
+            "Portion size",
+            "The feeling it gives",
+            "A crispy edge"
+          ]
+        },
+        {
+          "q": "Where would you like to live?",
+          "a": [
+            "In the city centre",
+            "In a small house with a garden",
+            "On a big farm in the countryside",
+            "At my grandparents' country house"
+          ]
+        }
+      ],
+      "results": {
+        "fri": {
+          "name": "French fries",
+          "tagline": "Crispy joy everyone wants.",
+          "description": "Life with you is fun anywhere, any time. You don't overcomplicate things, you know what's trending and you can lift the mood in seconds. Nobody can say no to you, and honestly, nobody wants to.",
+          "traits": [
+            "Joy",
+            "Ease",
+            "Popularity"
+          ]
+        },
+        "biezenis": {
+          "name": "Mashed potatoes",
+          "tagline": "The softest heart in the world.",
+          "description": "You are comfort in human form. You have gentleness, warmth and the power to fix any bad day. When someone is having a hard time, you're the first one they call, and you always find the right words.",
+          "traits": [
+            "Gentleness",
+            "Comfort",
+            "Warmth"
+          ]
+        },
+        "cepelini": {
+          "name": "Cepelīni potato dumplings",
+          "tagline": "A big heart and an even bigger character.",
+          "description": "You have strength and stamina that could carry you through fire and water. People can trust you in any situation, and you're up for any adventure. You have a big heart, a firm character and hearty humour enough for the whole company.",
+          "traits": [
+            "Strength",
+            "Reliability",
+            "Big heart"
+          ]
+        },
+        "jaunie": {
+          "name": "New potatoes with dill",
+          "tagline": "Simplicity that's brilliant.",
+          "description": "You are summer freshness and naturalness. A sunny day, good people and a knob of butter are all you need to be happy. There's nothing artificial about you, and that's exactly why you're loved so much.",
+          "traits": [
+            "Naturalness",
+            "Freshness",
+            "Simplicity"
+          ]
+        },
+        "gratens": {
+          "name": "Potato gratin",
+          "tagline": "French chic with a creamy middle.",
+          "description": "You have refined taste and can make even an ordinary day elegant. Your life has layers, style and a little cheese just in case. You know good things take time, and you never rush.",
+          "traits": [
+            "Elegance",
+            "Taste",
+            "Layers"
+          ]
+        },
+        "pankukas": {
+          "name": "Potato pancakes",
+          "tagline": "Crispy outside, soft heart.",
+          "description": "You can turn simple things into something wonderful. On the outside there's a crispy determination, but inside there's a soft heart. You have resourcefulness and the warmth of grandma's kitchen.",
+          "traits": [
+            "Resourcefulness",
+            "Determination",
+            "Warmth"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какое ты блюдо из картошки?",
+      "hook": "Латыши и картошка — любовь на всю жизнь. Узнай, какая форма твоя.",
+      "intro": "Картошка — сердце латышской кухни: без неё не обходится ни Лиго, ни воскресный обед. Но все картофельные блюда разные: одно хрустящее и весёлое, другое мягкое и утешающее, третье изысканное, как во французском ресторане. Ответь на семь вопросов и узнай, какое ты блюдо из картошки. Рецепты на ужин прилагаются.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Свободный вечер пятницы. Твой план?",
+          "a": [
+            "Кино с друзьями",
+            "Дома под пледом",
+            "Ужин в изысканном ресторане",
+            "Прогулка на закате"
+          ]
+        },
+        {
+          "q": "Что говорят о тебе самые близкие?",
+          "a": [
+            "«С тобой хоть в разведку»",
+            "«У тебя самое мягкое сердце на свете»",
+            "«Ты всегда на волне»",
+            "«У тебя изысканный вкус»"
+          ]
+        },
+        {
+          "q": "Твоя идеальная трапеза?",
+          "a": [
+            "Быстрая и весёлая",
+            "Неспешная, из трёх блюд",
+            "Большая и сытная",
+            "Лёгкая и свежая"
+          ]
+        },
+        {
+          "q": "Что ты делаешь, когда что-то не получается?",
+          "a": [
+            "Пробую ещё раз, теперь с корочкой",
+            "Обнимаю кого-нибудь и забываю",
+            "Смеюсь и иду дальше",
+            "Стискиваю зубы и держусь"
+          ]
+        },
+        {
+          "q": "Твоё время года?",
+          "a": [
+            "Начало лета",
+            "Осень",
+            "Зима",
+            "Сезон фестивалей в разгар лета"
+          ]
+        },
+        {
+          "q": "Что в еде самое важное?",
+          "a": [
+            "Подача",
+            "Размер порции",
+            "Ощущение, которое она дарит",
+            "Хрустящая корочка"
+          ]
+        },
+        {
+          "q": "Где тебе хотелось бы жить?",
+          "a": [
+            "В центре города",
+            "В маленьком домике с садом",
+            "В большом хозяйстве в деревне",
+            "В деревенском доме бабушки и дедушки"
+          ]
+        }
+      ],
+      "results": {
+        "fri": {
+          "name": "Картошка фри",
+          "tagline": "Хрустящая радость, которую хотят все.",
+          "description": "С тобой весело где угодно и когда угодно. Ты ничего не усложняешь, знаешь, что в тренде, и умеешь поднять настроение за секунду. Никто не может сказать тебе «нет», и, честно говоря, никто и не хочет.",
+          "traits": [
+            "Радость",
+            "Лёгкость",
+            "Популярность"
+          ]
+        },
+        "biezenis": {
+          "name": "Картофельное пюре",
+          "tagline": "Самое мягкое сердце на свете.",
+          "description": "Ты — утешение в человеческом облике. В тебе есть нежность, тепло и способность исправить любой плохой день. Когда кому-то тяжело, первым делом звонят тебе, и ты всегда находишь нужные слова.",
+          "traits": [
+            "Нежность",
+            "Утешение",
+            "Тепло"
+          ]
+        },
+        "cepelini": {
+          "name": "Цепелины",
+          "tagline": "Большое сердце и ещё больший характер.",
+          "description": "В тебе есть сила и стойкость, с которыми можно пройти огонь и воду. На тебя можно положиться в любой ситуации, и с тобой хоть в разведку. У тебя большое сердце, твёрдый характер и сытный юмор, которого хватает на всю компанию.",
+          "traits": [
+            "Сила",
+            "Надёжность",
+            "Большое сердце"
+          ]
+        },
+        "jaunie": {
+          "name": "Молодая картошка с укропом",
+          "tagline": "Простота, которая гениальна.",
+          "description": "Ты — летняя свежесть и естественность. Для счастья тебе хватает солнечного дня, хороших людей и кусочка масла. В тебе нет ничего искусственного, и именно поэтому тебя так любят.",
+          "traits": [
+            "Естественность",
+            "Свежесть",
+            "Простота"
+          ]
+        },
+        "gratens": {
+          "name": "Картофельный гратен",
+          "tagline": "Французский шик со сливочной серединкой.",
+          "description": "У тебя изысканный вкус, и ты умеешь сделать элегантным даже обычный день. В твоей жизни есть слои, стиль и немного сыра на всякий случай. Ты знаешь, что хорошим вещам нужно время, и никогда не спешишь.",
+          "traits": [
+            "Элегантность",
+            "Вкус",
+            "Слои"
+          ]
+        },
+        "pankukas": {
+          "name": "Драники",
+          "tagline": "Хрустящая корочка, мягкое сердце.",
+          "description": "Ты умеешь превращать простые вещи во что-то чудесное. Снаружи в тебе чувствуется хрустящая решимость, но внутри — мягкое сердце. В тебе есть находчивость и тепло бабушкиной кухни.",
+          "traits": [
+            "Находчивость",
+            "Решимость",
+            "Тепло"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Koks tu bulvių patiekalas?",
+      "hook": "Baltai ir bulvės: meilė visam gyvenimui. Sužinok, kuri forma tavo.",
+      "intro": "Bulvė yra latviškos virtuvės širdis: be jos neapsieina nei Joninės, nei sekmadienio pietūs. Tačiau kiekvienas bulvių patiekalas kitoks: vienas traškus ir linksmas, kitas minkštas ir guodžiantis, dar kitas rafinuotas kaip prancūzų restorane. Atsakyk į septynis klausimus ir sužinok, koks bulvių patiekalas esi tu. Receptai vakarienei pridedami.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Laisvas penktadienio vakaras. Tavo planas?",
+          "a": [
+            "Kinas su draugais",
+            "Namuose po pledu",
+            "Vakarienė prabangiame restorane",
+            "Pasivaikščiojimas saulėlydyje"
+          ]
+        },
+        {
+          "q": "Ką apie tave sako artimiausi?",
+          "a": [
+            "„Su tavimi galima ir į žvalgybą“",
+            "„Tu turi minkščiausią širdį pasaulyje“",
+            "„Tu visada ant bangos“",
+            "„Tu turi rafinuotą skonį“"
+          ]
+        },
+        {
+          "q": "Tavo tobulas valgis?",
+          "a": [
+            "Greitas ir linksmas",
+            "Neskubus, iš trijų patiekalų",
+            "Didelis ir sotus",
+            "Lengvas ir gaivus"
+          ]
+        },
+        {
+          "q": "Ką darai, kai kas nors nepavyksta?",
+          "a": [
+            "Bandau dar kartą, šįkart traškiau",
+            "Apkabinu ką nors ir pamirštu",
+            "Nusijuokiu ir einu toliau",
+            "Sukandu dantis ir laikausi"
+          ]
+        },
+        {
+          "q": "Tavo metų laikas?",
+          "a": [
+            "Vasaros pradžia",
+            "Ruduo",
+            "Žiema",
+            "Festivalių metas vasaros viduryje"
+          ]
+        },
+        {
+          "q": "Kas maiste svarbiausia?",
+          "a": [
+            "Pateikimas",
+            "Porcijos dydis",
+            "Jausmas, kurį jis suteikia",
+            "Traški plutelė"
+          ]
+        },
+        {
+          "q": "Kur norėtum gyventi?",
+          "a": [
+            "Miesto centre",
+            "Mažame name su sodu",
+            "Dideliame ūkyje kaime",
+            "Senelių kaimo name"
+          ]
+        }
+      ],
+      "results": {
+        "fri": {
+          "name": "Bulvytės fri",
+          "tagline": "Traškus džiaugsmas, kurio nori visi.",
+          "description": "Su tavimi linksma bet kur ir bet kada. Neapsunkini dalykų, žinai, kas madinga, ir moki akimirksniu pakelti nuotaiką. Niekas negali tau pasakyti „ne“, ir, tiesą sakant, niekas ir nenori.",
+          "traits": [
+            "Džiaugsmas",
+            "Lengvumas",
+            "Populiarumas"
+          ]
+        },
+        "biezenis": {
+          "name": "Bulvių košė",
+          "tagline": "Minkščiausia širdis pasaulyje.",
+          "description": "Tu esi paguoda žmogaus pavidalu. Tavyje yra švelnumo, šilumos ir galios pataisyti bet kokią blogą dieną. Kai kam nors sunku, pirmiausia skambina tau, ir tu visada randi tinkamus žodžius.",
+          "traits": [
+            "Švelnumas",
+            "Paguoda",
+            "Šiluma"
+          ]
+        },
+        "cepelini": {
+          "name": "Cepelinai",
+          "tagline": "Didelė širdis ir dar didesnis charakteris.",
+          "description": "Tavyje yra jėgos ir ištvermės, su kuriomis galima pereiti ugnį ir vandenį. Tavimi galima pasikliauti bet kokioje situacijoje, ir su tavimi galima net į žvalgybą. Turi didelę širdį, tvirtą charakterį ir sotų humorą, kurio užtenka visai kompanijai.",
+          "traits": [
+            "Jėga",
+            "Patikimumas",
+            "Didelė širdis"
+          ]
+        },
+        "jaunie": {
+          "name": "Jaunos bulvės su krapais",
+          "tagline": "Paprastumas, kuris genialus.",
+          "description": "Tu esi vasaros gaivumas ir natūralumas. Laimei tau užtenka saulėtos dienos, gerų žmonių ir gabalėlio sviesto. Tavyje nėra nieko dirbtinio, ir būtent todėl tave taip myli.",
+          "traits": [
+            "Natūralumas",
+            "Gaivumas",
+            "Paprastumas"
+          ]
+        },
+        "gratens": {
+          "name": "Bulvių apkepas",
+          "tagline": "Prancūziškas šikas su kreminiu viduriu.",
+          "description": "Turi rafinuotą skonį ir moki net paprastą dieną paversti elegantiška. Tavo gyvenime yra sluoksnių, stiliaus ir truputį sūrio dėl viso pikto. Žinai, kad geriems dalykams reikia laiko, ir niekada neskubi.",
+          "traits": [
+            "Elegancija",
+            "Skonis",
+            "Sluoksniai"
+          ]
+        },
+        "pankukas": {
+          "name": "Bulviniai blynai",
+          "tagline": "Traški išorė, minkšta širdis.",
+          "description": "Moki iš paprastų dalykų sukurti ką nors nuostabaus. Iš išorės tavyje jaučiamas traškus ryžtas, bet viduje minkšta širdis. Tavyje yra išradingumo ir močiutės virtuvės šilumos.",
+          "traits": [
+            "Išradingumas",
+            "Ryžtas",
+            "Šiluma"
+          ]
+        }
+      }
+    }
+  }
+}

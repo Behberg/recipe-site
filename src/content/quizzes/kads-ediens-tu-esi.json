@@ -1,0 +1,822 @@
+{
+  "order": 1,
+  "emoji": "🍽️",
+  "color": "#9e3039",
+  "results": {
+    "pelekie-zirni": {
+      "emoji": "🫘",
+      "color": "#7a5c3e",
+      "match": "pankukas",
+      "recipes": [
+        "pelekie-zirni-ar-speki",
+        "skabputra",
+        "rasols"
+      ]
+    },
+    "lazanja": {
+      "emoji": "🍝",
+      "color": "#c0442b",
+      "match": "tako",
+      "recipes": [
+        "lazanja",
+        "spageti-bolonese",
+        "vistas-un-spinatu-lazanja"
+      ]
+    },
+    "susi": {
+      "emoji": "🍣",
+      "color": "#d9603b",
+      "match": "borss",
+      "recipes": [
+        "maki-susi",
+        "onigiri",
+        "lasa-poke-bloda"
+      ]
+    },
+    "tako": {
+      "emoji": "🌮",
+      "color": "#e0902b",
+      "match": "lazanja",
+      "recipes": [
+        "vistas-tako",
+        "burito",
+        "gvakamole"
+      ]
+    },
+    "borss": {
+      "emoji": "🍲",
+      "color": "#a4243b",
+      "match": "susi",
+      "recipes": [
+        "borss",
+        "solanka",
+        "pelmeni"
+      ]
+    },
+    "pankukas": {
+      "emoji": "🥞",
+      "color": "#d99a2b",
+      "match": "pelekie-zirni",
+      "recipes": [
+        "planas-pankukas",
+        "amerikanu-pankukas",
+        "pankukas-ar-biezpienu"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🌅",
+          "scores": {
+            "susi": 2,
+            "pelekie-zirni": 1
+          }
+        },
+        {
+          "emoji": "🛌",
+          "scores": {
+            "pankukas": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "👨‍👩‍👧",
+          "scores": {
+            "lazanja": 2,
+            "pelekie-zirni": 1
+          }
+        },
+        {
+          "emoji": "📖",
+          "scores": {
+            "borss": 2,
+            "susi": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎉",
+          "scores": {
+            "tako": 2,
+            "lazanja": 1
+          }
+        },
+        {
+          "emoji": "🕯️",
+          "scores": {
+            "borss": 2,
+            "susi": 1
+          }
+        },
+        {
+          "emoji": "🛋️",
+          "scores": {
+            "pankukas": 2,
+            "lazanja": 1
+          }
+        },
+        {
+          "emoji": "🔥",
+          "scores": {
+            "pelekie-zirni": 2,
+            "tako": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🪨",
+          "scores": {
+            "pelekie-zirni": 2,
+            "borss": 1
+          }
+        },
+        {
+          "emoji": "☀️",
+          "scores": {
+            "pankukas": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "🎯",
+          "scores": {
+            "susi": 2
+          }
+        },
+        {
+          "emoji": "🤗",
+          "scores": {
+            "lazanja": 2,
+            "pankukas": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🗾",
+          "scores": {
+            "susi": 2
+          }
+        },
+        {
+          "emoji": "🌵",
+          "scores": {
+            "tako": 2
+          }
+        },
+        {
+          "emoji": "🍷",
+          "scores": {
+            "lazanja": 2
+          }
+        },
+        {
+          "emoji": "🌲",
+          "scores": {
+            "pelekie-zirni": 2,
+            "borss": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🌶️",
+          "scores": {
+            "tako": 2,
+            "borss": 1
+          }
+        },
+        {
+          "emoji": "🍯",
+          "scores": {
+            "pankukas": 2
+          }
+        },
+        {
+          "emoji": "🧂",
+          "scores": {
+            "pelekie-zirni": 2,
+            "lazanja": 1
+          }
+        },
+        {
+          "emoji": "🍋",
+          "scores": {
+            "borss": 2,
+            "susi": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🚀",
+          "scores": {
+            "tako": 2,
+            "susi": 1
+          }
+        },
+        {
+          "emoji": "🧱",
+          "scores": {
+            "pelekie-zirni": 2,
+            "borss": 1
+          }
+        },
+        {
+          "emoji": "🌊",
+          "scores": {
+            "pankukas": 2,
+            "lazanja": 1
+          }
+        },
+        {
+          "emoji": "🗂️",
+          "scores": {
+            "susi": 2,
+            "lazanja": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎸",
+          "scores": {
+            "tako": 2,
+            "pankukas": 1
+          }
+        },
+        {
+          "emoji": "🔪",
+          "scores": {
+            "susi": 2,
+            "pelekie-zirni": 1
+          }
+        },
+        {
+          "emoji": "📷",
+          "scores": {
+            "lazanja": 2,
+            "borss": 1
+          }
+        },
+        {
+          "emoji": "🧣",
+          "scores": {
+            "borss": 2,
+            "pelekie-zirni": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds ēdiens esi tu?",
+      "hook": "7 jautājumi, 1 minūte un pilnīgi zinātniska atbilde. Nu, gandrīz.",
+      "intro": "Katrā cilvēkā slēpjas kāds ēdiens. Vieni ir sātīgi un uzticami kā pelēkie zirņi, citi asi un spontāni kā tako. Atbildi uz septiņiem jautājumiem par savu raksturu un ieradumiem un uzzini, kurš ēdiens ir tavs dvēseles spogulis. Rezultātam klāt saņemsi receptes, ko pagatavot vēl šovakar.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Sestdienas rīts. Kā tas sākas?",
+          "a": [
+            "Agri, ar kafiju un klusumu",
+            "Pēc desmitiem un bez jebkāda plāna",
+            "Pie liela galda ar visu ģimeni",
+            "Ar grāmatu un tasi tējas"
+          ]
+        },
+        {
+          "q": "Tavs ideālais vakars ir...",
+          "a": [
+            "Ballīte, mūzika un daudz cilvēku",
+            "Dziļa saruna ar vienu cilvēku",
+            "Dīvāns, sega un seriāls",
+            "Ugunskurs laukos līdz rītam"
+          ]
+        },
+        {
+          "q": "Ko draugi tevī novērtē visvairāk?",
+          "a": [
+            "Uzticamību",
+            "Saulaino noskaņojumu",
+            "Precizitāti un stilu",
+            "Prasmi visus savest kopā"
+          ]
+        },
+        {
+          "q": "Kurp tu dotos atvaļinājumā?",
+          "a": [
+            "Uz Tokiju",
+            "Uz Meksiku",
+            "Uz Toskānu",
+            "Uz laukiem, kur nav interneta"
+          ]
+        },
+        {
+          "q": "Kura garša tev tuvāka?",
+          "a": [
+            "Asa",
+            "Salda",
+            "Sāļa un sātīga",
+            "Skāba un svaiga"
+          ]
+        },
+        {
+          "q": "Kāda ir tava attieksme pret pārmaiņām?",
+          "a": [
+            "Jo vairāk, jo labāk",
+            "Vecais un pārbaudītais ir labākais",
+            "Pieņemu, kā nāk",
+            "Vispirms visu rūpīgi izplānoju"
+          ]
+        },
+        {
+          "q": "Ko tu ņemtu līdzi uz neapdzīvotu salu?",
+          "a": [
+            "Ģitāru",
+            "Labu nazi",
+            "Albumu ar ģimenes bildēm",
+            "Vecmāmiņas adītu šalli"
+          ]
+        }
+      ],
+      "results": {
+        "pelekie-zirni": {
+          "name": "Pelēkie zirņi ar speķi",
+          "tagline": "Vecā skola, zelta sirds.",
+          "description": "Uz tevi var paļauties jebkuros laikapstākļos. Tu nemaini principus modes dēļ, zini savas saknes, un tavā klātbūtnē visi jūtas kā mājās. Kāds varbūt nosauks tevi par vecmodīgu, bet tieši tevi visi meklē, kad kļūst grūti.",
+          "traits": [
+            "Uzticamība",
+            "Īstums",
+            "Sātīgs humors"
+          ]
+        },
+        "lazanja": {
+          "name": "Lazanja",
+          "tagline": "Daudz slāņu, un visi labi.",
+          "description": "Tava personība ir kārtaina, un to var iepazīt tikai slāni pa slānim. Tev patīk pilns galds, skaļas sarunas un viesi, kas paliek ilgāk, nekā bija plānots. Tieši tu saved kopā draugus un ģimeni.",
+          "traits": [
+            "Sirsnība",
+            "Dāsnums",
+            "Ģimenes centrs"
+          ]
+        },
+        "susi": {
+          "name": "Suši",
+          "tagline": "Precizitāte ir tava mīlestības valoda.",
+          "description": "Tu pamani detaļas, ko citi pat neredz. Viss, ko tu dari, ir pārdomāts, tīrs un mazliet mākslinieciski noformēts. Haoss tev nepatīk, toties kvalitāte gan, un tavs stils nekad neiziet no modes.",
+          "traits": [
+            "Precizitāte",
+            "Gaume",
+            "Miers"
+          ]
+        },
+        "tako": {
+          "name": "Tako",
+          "tagline": "Kur tu, tur ballīte.",
+          "description": "Tevī ir spontanitāte, krāsas un mazliet asuma. Plāni tev drīzāk ir ieteikumi, un labākie piedzīvojumi sākas ar tavu „aizbrauksim?”. Ar tevi nekad nav garlaicīgi, un tu to lieliski zini.",
+          "traits": [
+            "Spontanitāte",
+            "Enerģija",
+            "Mazliet asuma"
+          ]
+        },
+        "borss": {
+          "name": "Boršs",
+          "tagline": "Dziļums, kas nākamajā dienā ir vēl labāks.",
+          "description": "Tevi nevar iepazīt no pirmā acu uzmetiena, bet pēc tam no tevis vairs nevar atteikties. Tev ir bagāta iekšējā pasaule, spēcīgas emocijas un reta spēja patiešām uzklausīt.",
+          "traits": [
+            "Dziļums",
+            "Emocijas",
+            "Uzticība"
+          ]
+        },
+        "pankukas": {
+          "name": "Pankūkas",
+          "tagline": "Visu draugs un svētdienas rīta saule.",
+          "description": "Ar tevi ir viegli, silti un vienkārši labi. Laimei tev nevajag daudz, un tev piestāv gandrīz viss: ievārījums, krējums un pat slikta diena, ko tu ātri padari labu. Cilvēki pie tevis nāk paši.",
+          "traits": [
+            "Saule",
+            "Vieglums",
+            "Labs noskaņojums"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which dish are you?",
+      "hook": "7 questions, 1 minute and a completely scientific answer. Well, almost.",
+      "intro": "Every person has a dish hiding inside them. Some are hearty and dependable like Latvian grey peas, others spicy and spontaneous like tacos. Answer seven questions about your personality and habits and find out which dish mirrors your soul. Your result comes with recipes you can cook tonight.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "Saturday morning. How does it start?",
+          "a": [
+            "Early, with coffee and silence",
+            "After ten, with no plan at all",
+            "At a big table with the whole family",
+            "With a book and a cup of tea"
+          ]
+        },
+        {
+          "q": "Your perfect evening is...",
+          "a": [
+            "A party, music and lots of people",
+            "A deep talk with one person",
+            "Sofa, blanket and a series",
+            "A bonfire in the countryside until dawn"
+          ]
+        },
+        {
+          "q": "What do your friends value most in you?",
+          "a": [
+            "Your reliability",
+            "Your sunny mood",
+            "Your precision and style",
+            "How you bring everyone together"
+          ]
+        },
+        {
+          "q": "Where would you go on holiday?",
+          "a": [
+            "Tokyo",
+            "Mexico",
+            "Tuscany",
+            "A cabin with no phone signal"
+          ]
+        },
+        {
+          "q": "Which flavour feels most like you?",
+          "a": [
+            "Spicy",
+            "Sweet",
+            "Salty and hearty",
+            "Sour and fresh"
+          ]
+        },
+        {
+          "q": "How do you feel about change?",
+          "a": [
+            "The more, the better",
+            "Tried and tested is best",
+            "I take things as they come",
+            "I plan everything carefully first"
+          ]
+        },
+        {
+          "q": "What would you take to a desert island?",
+          "a": [
+            "A guitar",
+            "A good knife",
+            "An album of family photos",
+            "A scarf my grandmother knitted"
+          ]
+        }
+      ],
+      "results": {
+        "pelekie-zirni": {
+          "name": "Grey peas with bacon",
+          "tagline": "Old school, heart of gold.",
+          "description": "You are the one people can count on in any weather. You don't change your principles for fashion, you know where you come from, and everyone feels at home around you. Some call you old-fashioned, but you are exactly who they look for when things get hard.",
+          "traits": [
+            "Dependable",
+            "Genuine",
+            "Hearty humour"
+          ]
+        },
+        "lazanja": {
+          "name": "Lasagne",
+          "tagline": "Many layers, all of them good.",
+          "description": "You are a layered personality who has to be discovered one layer at a time. You love a full table, loud conversations and guests who stay longer than planned. You are the one who brings friends and family together.",
+          "traits": [
+            "Warm",
+            "Generous",
+            "Heart of the family"
+          ]
+        },
+        "susi": {
+          "name": "Sushi",
+          "tagline": "Precision is your love language.",
+          "description": "You notice details other people don't even see. Everything you do is thought through, clean and a little bit artistic. You don't like chaos, but you do like quality, and your style never goes out of fashion.",
+          "traits": [
+            "Precise",
+            "Aesthetic",
+            "Calm"
+          ]
+        },
+        "tako": {
+          "name": "Tacos",
+          "tagline": "Wherever you are, there's a party.",
+          "description": "You are spontaneous, colourful and a little spicy. Plans are more like suggestions to you, and the best adventures start with your “shall we go?”. Life with you is never boring, and you know it.",
+          "traits": [
+            "Spontaneous",
+            "Energetic",
+            "A bit spicy"
+          ]
+        },
+        "borss": {
+          "name": "Borscht",
+          "tagline": "Depth that tastes even better the next day.",
+          "description": "You are not a first-impression person: people have to get to know you, but after that they can't let you go. You have a rich inner world, strong emotions and a rare gift for really listening.",
+          "traits": [
+            "Deep",
+            "Emotional",
+            "Loyal"
+          ]
+        },
+        "pankukas": {
+          "name": "Pancakes",
+          "tagline": "Everyone's friend and Sunday morning sunshine.",
+          "description": "You are light, warm and simply lovely to be around. You don't need much to be happy, and almost anything suits you: jam, cream, even a bad day that you quickly turn into a good one. People are drawn to you naturally.",
+          "traits": [
+            "Sunny",
+            "Easy-going",
+            "Liked by all"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какое ты блюдо?",
+      "hook": "7 вопросов, 1 минута и абсолютно научный ответ. Ну, почти.",
+      "intro": "В каждом человеке прячется какое-то блюдо. Одни сытные и надёжные, как латышский серый горох, другие острые и спонтанные, как тако. Ответь на семь вопросов о своём характере и привычках и узнай, какое блюдо отражает твою душу. Вместе с результатом ты получишь рецепты, которые можно приготовить уже сегодня.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Субботнее утро. С чего оно начинается?",
+          "a": [
+            "Рано, с кофе и тишины",
+            "После десяти и без всякого плана",
+            "За большим столом со всей семьёй",
+            "С книгой и чашкой чая"
+          ]
+        },
+        {
+          "q": "Твой идеальный вечер — это...",
+          "a": [
+            "Вечеринка, музыка и много людей",
+            "Глубокий разговор с одним человеком",
+            "Диван, плед и сериал",
+            "Костёр за городом до рассвета"
+          ]
+        },
+        {
+          "q": "За что тебя больше всего ценят друзья?",
+          "a": [
+            "За надёжность",
+            "За солнечное настроение",
+            "За точность и стиль",
+            "За умение всех собрать вместе"
+          ]
+        },
+        {
+          "q": "Куда отправишься в отпуск?",
+          "a": [
+            "В Токио",
+            "В Мексику",
+            "В Тоскану",
+            "В деревню, где нет связи"
+          ]
+        },
+        {
+          "q": "Какой вкус тебе ближе?",
+          "a": [
+            "Острый",
+            "Сладкий",
+            "Солёный и сытный",
+            "Кислый и свежий"
+          ]
+        },
+        {
+          "q": "Как ты относишься к переменам?",
+          "a": [
+            "Чем больше, тем лучше",
+            "Старое и проверенное лучше всего",
+            "Принимаю всё как есть",
+            "Сначала всё тщательно планирую"
+          ]
+        },
+        {
+          "q": "Что ты возьмёшь с собой на необитаемый остров?",
+          "a": [
+            "Гитару",
+            "Хороший нож",
+            "Альбом с семейными фото",
+            "Бабушкин вязаный шарф"
+          ]
+        }
+      ],
+      "results": {
+        "pelekie-zirni": {
+          "name": "Серый горох со шпеком",
+          "tagline": "Старая школа, золотое сердце.",
+          "description": "На тебя можно положиться в любую погоду. Ты не меняешь принципы ради моды, помнишь свои корни, и рядом с тобой все чувствуют себя как дома. Кто-то скажет, что это старомодно, но именно тебя ищут, когда становится трудно.",
+          "traits": [
+            "Надёжность",
+            "Искренность",
+            "Сытный юмор"
+          ]
+        },
+        "lazanja": {
+          "name": "Лазанья",
+          "tagline": "Много слоёв, и все хороши.",
+          "description": "Твоя личность многослойна, и открывать её можно только слой за слоем. Ты любишь полный стол, громкие разговоры и гостей, которые остаются дольше, чем планировали. Именно ты собираешь вместе друзей и семью.",
+          "traits": [
+            "Душевность",
+            "Щедрость",
+            "Сердце семьи"
+          ]
+        },
+        "susi": {
+          "name": "Суши",
+          "tagline": "Точность — твой язык любви.",
+          "description": "Ты замечаешь детали, которых другие даже не видят. Всё, что ты делаешь, продумано, аккуратно и немного художественно. Хаос тебе не по душе, зато качество — да, и твой стиль никогда не выходит из моды.",
+          "traits": [
+            "Точность",
+            "Вкус",
+            "Спокойствие"
+          ]
+        },
+        "tako": {
+          "name": "Тако",
+          "tagline": "Где ты, там и вечеринка.",
+          "description": "В тебе есть спонтанность, яркость и немного остроты. Планы для тебя скорее рекомендации, а лучшие приключения начинаются с твоего «а поехали?». С тобой никогда не бывает скучно, и ты это прекрасно знаешь.",
+          "traits": [
+            "Спонтанность",
+            "Энергия",
+            "Перчинка"
+          ]
+        },
+        "borss": {
+          "name": "Борщ",
+          "tagline": "Глубина, которая на следующий день ещё лучше.",
+          "description": "Тебя не поймёшь с первого взгляда, но потом от тебя уже невозможно отказаться. У тебя богатый внутренний мир, сильные эмоции и редкий дар по-настоящему слушать.",
+          "traits": [
+            "Глубина",
+            "Эмоции",
+            "Преданность"
+          ]
+        },
+        "pankukas": {
+          "name": "Блины",
+          "tagline": "Друг для всех и солнце воскресного утра.",
+          "description": "С тобой легко, тепло и просто хорошо. Для счастья тебе нужно немного, и тебе идёт почти всё: варенье, сметана и даже плохой день, который ты быстро делаешь хорошим. Люди тянутся к тебе сами.",
+          "traits": [
+            "Солнце",
+            "Лёгкость",
+            "Хорошее настроение"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Koks tu patiekalas?",
+      "hook": "7 klausimai, 1 minutė ir visiškai mokslinis atsakymas. Na, beveik.",
+      "intro": "Kiekviename žmoguje slepiasi koks nors patiekalas. Vieni sotūs ir patikimi kaip latviški pilkieji žirniai, kiti aštrūs ir spontaniški kaip tako. Atsakyk į septynis klausimus apie savo charakterį bei įpročius ir sužinok, kuris patiekalas atspindi tavo sielą. Kartu su rezultatu gausi receptų, kuriuos gali pasigaminti dar šįvakar.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Šeštadienio rytas. Kaip jis prasideda?",
+          "a": [
+            "Anksti, su kava ir tyla",
+            "Po dešimtos ir be jokio plano",
+            "Prie didelio stalo su visa šeima",
+            "Su knyga ir puodeliu arbatos"
+          ]
+        },
+        {
+          "q": "Tavo tobulas vakaras yra...",
+          "a": [
+            "Vakarėlis, muzika ir daug žmonių",
+            "Gilus pokalbis su vienu žmogumi",
+            "Sofa, pledas ir serialas",
+            "Laužas kaime iki paryčių"
+          ]
+        },
+        {
+          "q": "Už ką tave labiausiai vertina draugai?",
+          "a": [
+            "Už patikimumą",
+            "Už saulėtą nuotaiką",
+            "Už tikslumą ir stilių",
+            "Už mokėjimą visus suburti"
+          ]
+        },
+        {
+          "q": "Kur vyktum atostogauti?",
+          "a": [
+            "Į Tokiją",
+            "Į Meksiką",
+            "Į Toskaną",
+            "Į kaimą, kur nėra ryšio"
+          ]
+        },
+        {
+          "q": "Koks skonis tau artimiausias?",
+          "a": [
+            "Aštrus",
+            "Saldus",
+            "Sūrus ir sotus",
+            "Rūgštus ir gaivus"
+          ]
+        },
+        {
+          "q": "Kaip vertini pokyčius?",
+          "a": [
+            "Kuo daugiau, tuo geriau",
+            "Sena ir patikrinta yra geriausia",
+            "Priimu, kaip yra",
+            "Pirma viską kruopščiai suplanuoju"
+          ]
+        },
+        {
+          "q": "Ką pasiimtum į negyvenamą salą?",
+          "a": [
+            "Gitarą",
+            "Gerą peilį",
+            "Albumą su šeimos nuotraukomis",
+            "Močiutės megztą šalikėlį"
+          ]
+        }
+      ],
+      "results": {
+        "pelekie-zirni": {
+          "name": "Pilkieji žirniai su lašiniais",
+          "tagline": "Senoji mokykla, auksinė širdis.",
+          "description": "Tavimi galima pasikliauti bet kokiu oru. Nekeiti principų dėl mados, žinai savo šaknis, ir šalia tavęs visi jaučiasi kaip namie. Kas nors pasakys, kad tai senamadiška, bet būtent tavęs visi ieško, kai tampa sunku.",
+          "traits": [
+            "Patikimumas",
+            "Nuoširdumas",
+            "Sotus humoras"
+          ]
+        },
+        "lazanja": {
+          "name": "Lazanija",
+          "tagline": "Daug sluoksnių, ir visi geri.",
+          "description": "Tavo asmenybė sluoksniuota, ir ją pažinti galima tik sluoksnis po sluoksnio. Mėgsti pilną stalą, garsius pokalbius ir svečius, kurie pasilieka ilgiau, nei planavo. Būtent tu suburi draugus ir šeimą.",
+          "traits": [
+            "Šiluma",
+            "Dosnumas",
+            "Šeimos širdis"
+          ]
+        },
+        "susi": {
+          "name": "Sušiai",
+          "tagline": "Tikslumas yra tavo meilės kalba.",
+          "description": "Pastebi detales, kurių kiti net nemato. Viskas, ką darai, yra apgalvota, tvarkinga ir truputį meniška. Chaoso nemėgsti, užtat mėgsti kokybę, o tavo stilius niekada neišeina iš mados.",
+          "traits": [
+            "Tikslumas",
+            "Skonis",
+            "Ramybė"
+          ]
+        },
+        "tako": {
+          "name": "Tako",
+          "tagline": "Kur tu, ten ir vakarėlis.",
+          "description": "Tavyje yra spontaniškumo, spalvų ir truputį aštrumo. Planai tau labiau rekomendacijos, o geriausi nuotykiai prasideda nuo tavo „važiuojam?“. Su tavimi niekada nebūna nuobodu, ir tu tai puikiai žinai.",
+          "traits": [
+            "Spontaniškumas",
+            "Energija",
+            "Aštrumas"
+          ]
+        },
+        "borss": {
+          "name": "Barščiai",
+          "tagline": "Gylis, kuris kitą dieną dar geresnis.",
+          "description": "Tavęs nepažinsi iš pirmo žvilgsnio, bet paskui be tavęs jau neįmanoma. Turi turtingą vidinį pasaulį, stiprias emocijas ir retą dovaną tikrai išklausyti.",
+          "traits": [
+            "Gylis",
+            "Emocijos",
+            "Ištikimybė"
+          ]
+        },
+        "pankukas": {
+          "name": "Blynai",
+          "tagline": "Visų draugas ir sekmadienio ryto saulė.",
+          "description": "Su tavimi lengva, šilta ir tiesiog gera. Laimei tau reikia nedaug, ir tau tinka beveik viskas: uogienė, grietinė ir net bloga diena, kurią greitai paverti gera. Žmonės prie tavęs traukia patys.",
+          "traits": [
+            "Saulė",
+            "Lengvumas",
+            "Gera nuotaika"
+          ]
+        }
+      }
+    }
+  }
+}

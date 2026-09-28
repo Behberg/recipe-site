@@ -1,0 +1,821 @@
+{
+  "order": 7,
+  "emoji": "🌼",
+  "color": "#d9a21f",
+  "results": {
+    "janu-siers": {
+      "emoji": "🧀",
+      "color": "#e0a81c",
+      "match": "kvass",
+      "recipes": [
+        "janu-siers",
+        "maja-rupjmaize",
+        "kanepju-sviests"
+      ],
+      "properName": true
+    },
+    "saslik": {
+      "emoji": "🔥",
+      "color": "#b8452a",
+      "match": "gurki",
+      "recipes": [
+        "cukgalas-saslik",
+        "vistas-sasliks-jogurta-marinade",
+        "kiploku-merce-grilam"
+      ]
+    },
+    "speka-piragi": {
+      "emoji": "🥐",
+      "color": "#c98a3a",
+      "match": "rabarberu-pirags",
+      "recipes": [
+        "speka-piragi",
+        "pirozki-ar-kapostiem",
+        "sklandrausis"
+      ]
+    },
+    "kvass": {
+      "emoji": "🍺",
+      "color": "#7a4a22",
+      "match": "janu-siers",
+      "recipes": [
+        "rupjmaizes-kvass",
+        "berzu-sulas-kvass",
+        "rabarberu-limonade"
+      ]
+    },
+    "rabarberu-pirags": {
+      "emoji": "🌸",
+      "color": "#c24a6a",
+      "match": "speka-piragi",
+      "recipes": [
+        "rabarberu-pirags",
+        "rabarberu-kuka-ar-beze",
+        "rabarberu-ievarijums"
+      ]
+    },
+    "gurki": {
+      "emoji": "🥒",
+      "color": "#4f8a2c",
+      "match": "saslik",
+      "recipes": [
+        "mazsaliti-gurki",
+        "jaunie-kartupeli-ar-dillem",
+        "gurku-salati-ar-krejumu"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🌼",
+          "scores": {
+            "janu-siers": 2,
+            "rabarberu-pirags": 1
+          }
+        },
+        {
+          "emoji": "🔥",
+          "scores": {
+            "saslik": 2,
+            "kvass": 1
+          }
+        },
+        {
+          "emoji": "🥣",
+          "scores": {
+            "speka-piragi": 2,
+            "janu-siers": 1
+          }
+        },
+        {
+          "emoji": "🏊",
+          "scores": {
+            "gurki": 2,
+            "kvass": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎤",
+          "scores": {
+            "kvass": 2,
+            "saslik": 1
+          }
+        },
+        {
+          "emoji": "🤸",
+          "scores": {
+            "saslik": 2,
+            "gurki": 1
+          }
+        },
+        {
+          "emoji": "🌿",
+          "scores": {
+            "rabarberu-pirags": 2,
+            "kvass": 1
+          }
+        },
+        {
+          "emoji": "🍽️",
+          "scores": {
+            "speka-piragi": 2,
+            "janu-siers": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎸",
+          "scores": {
+            "kvass": 2
+          }
+        },
+        {
+          "emoji": "🦟",
+          "scores": {
+            "gurki": 2,
+            "speka-piragi": 1
+          }
+        },
+        {
+          "emoji": "🧀",
+          "scores": {
+            "janu-siers": 2
+          }
+        },
+        {
+          "emoji": "🍢",
+          "scores": {
+            "saslik": 2
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧂",
+          "scores": {
+            "gurki": 2,
+            "saslik": 1
+          }
+        },
+        {
+          "emoji": "🍯",
+          "scores": {
+            "speka-piragi": 2,
+            "rabarberu-pirags": 1
+          }
+        },
+        {
+          "emoji": "🌶️",
+          "scores": {
+            "saslik": 2,
+            "kvass": 1
+          }
+        },
+        {
+          "emoji": "🌀",
+          "scores": {
+            "rabarberu-pirags": 2,
+            "janu-siers": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🌅",
+          "scores": {
+            "kvass": 2,
+            "saslik": 1
+          }
+        },
+        {
+          "emoji": "🌙",
+          "scores": {
+            "janu-siers": 2,
+            "gurki": 1
+          }
+        },
+        {
+          "emoji": "🛏️",
+          "scores": {
+            "speka-piragi": 2
+          }
+        },
+        {
+          "emoji": "🤫",
+          "scores": {
+            "rabarberu-pirags": 2,
+            "kvass": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "☀️",
+          "scores": {
+            "janu-siers": 2,
+            "rabarberu-pirags": 1
+          }
+        },
+        {
+          "emoji": "🔥",
+          "scores": {
+            "saslik": 2
+          }
+        },
+        {
+          "emoji": "💧",
+          "scores": {
+            "gurki": 2,
+            "kvass": 1
+          }
+        },
+        {
+          "emoji": "🌾",
+          "scores": {
+            "speka-piragi": 2,
+            "janu-siers": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🍯",
+          "scores": {
+            "gurki": 2
+          }
+        },
+        {
+          "emoji": "🍳",
+          "scores": {
+            "speka-piragi": 2,
+            "janu-siers": 1
+          }
+        },
+        {
+          "emoji": "🎶",
+          "scores": {
+            "kvass": 2,
+            "saslik": 1
+          }
+        },
+        {
+          "emoji": "✍️",
+          "scores": {
+            "rabarberu-pirags": 2
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds Jāņu galda ēdiens esi tu?",
+      "hook": "Siers, šašliks vai speķa pīrāgs? Līgo naktī patiesība nāk gaismā.",
+      "intro": "Jāņi ir gada garākā diena un gardākā nakts. Katrs uz Jāņu galda ienes kaut ko savu, un katrā no mums slēpjas kāds Jāņu ēdiens. Atbildi uz septiņiem jautājumiem par to, kā tu svini vasaras saulgriežus, un uzzini, vai esi Jāņu siers, šašliks vai rabarberu pīrāgs. Receptes galdam ir klāt.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Kā tu pavadi Jāņu dienu?",
+          "a": [
+            "Pinu vainagus un plūcu zāles",
+            "Kurinu ugunskuru un grilu",
+            "Cepu un klāju galdu",
+            "Peldos ezerā"
+          ]
+        },
+        {
+          "q": "Tava loma Jāņu naktī?",
+          "a": [
+            "Dziedu līgo dziesmas visskaļāk",
+            "Lecu pāri ugunskuram",
+            "Meklēju papardes ziedu",
+            "Rūpējos, lai visiem ir ko ēst"
+          ]
+        },
+        {
+          "q": "Ko tu nekad neaizmirsti paņemt uz laukiem?",
+          "a": [
+            "Ģitāru",
+            "Līdzekli pret odiem",
+            "Sieru un ķimenes",
+            "Grila rīkus"
+          ]
+        },
+        {
+          "q": "Kāds ir tavs humors?",
+          "a": [
+            "Sāļš un mazliet skābs",
+            "Silts un sirsnīgs",
+            "Ass un tiešs",
+            "Smalks, ne visi saprot"
+          ]
+        },
+        {
+          "q": "Kad tu ej gulēt Jāņu naktī?",
+          "a": [
+            "Sagaidu saullēktu",
+            "Ap pusnakti",
+            "Kad beidzas ēdiens",
+            "Klusi pazūdu kopā ar kādu īpašu"
+          ]
+        },
+        {
+          "q": "Tava stihija?",
+          "a": [
+            "Saule",
+            "Uguns",
+            "Ūdens",
+            "Zeme"
+          ]
+        },
+        {
+          "q": "Ko tu dari nākamajā rītā?",
+          "a": [
+            "Ēdu gurķus ar medu",
+            "Gatavoju brokastis visiem",
+            "Turpinu svinības",
+            "Rakstu dzejoli par nakti"
+          ]
+        }
+      ],
+      "results": {
+        "janu-siers": {
+          "name": "Jāņu siers",
+          "tagline": "Saule uz galda un tradīcija sirdī.",
+          "description": "Bez tevis nav īstu svētku. Tu turi godā tradīcijas, zini visas dziesmas, un tev piemīt saulains siltums, ap kuru pulcējas visi. Mazliet ķimeņu raksturā, un viss ir tieši tā, kā tam jābūt.",
+          "traits": [
+            "Tradīcijas",
+            "Saulainums",
+            "Ķimeņu raksturs"
+          ]
+        },
+        "saslik": {
+          "name": "Šašliks",
+          "tagline": "Kur dūmi, tur tu.",
+          "description": "Ugunskurs un grils ir tava karaliste. Tu zini ideālo marinādi, tava laika izjūta ir nevainojama, un visi pulcējas ap tevi, kad sāk izplatīties smarža. Enerģija, kaislība un mazliet dūmu.",
+          "traits": [
+            "Kaislība",
+            "Līderība",
+            "Grila maģija"
+          ]
+        },
+        "speka-piragi": {
+          "name": "Speķa pīrāgi",
+          "tagline": "Pirmie, kas pazūd no galda.",
+          "description": "Tevi mīl visi, un tas nav pārspīlējums. Tev piemīt mājīgums, rūpes un talants darīt cilvēkus laimīgus ar pavisam vienkāršām lietām. Tavā klātbūtnē visi jūtas kā pie vecmāmiņas laukos.",
+          "traits": [
+            "Mājīgums",
+            "Rūpes",
+            "Vienkāršība"
+          ]
+        },
+        "kvass": {
+          "name": "Rupjmaizes kvass",
+          "tagline": "Atsvaidzina un iedvesmo līdz saullēktam.",
+          "description": "Tevī ir enerģija, kas nebeidzas. Tu uzsāc dziesmas, uzmundrini nogurušos un pēkšņi saproti, ka jau aust. Ar tevi svētki nekad nebeidzas par agru.",
+          "traits": [
+            "Enerģija",
+            "Dziesmas",
+            "Izturība"
+          ]
+        },
+        "rabarberu-pirags": {
+          "name": "Rabarberu pīrāgs",
+          "tagline": "Saldskābs romantisms.",
+          "description": "Tevī ir romantika, sapņi un mazliet noslēpuma. Tu meklē papardes ziedu un, iespējams, pat atrodi. Tavs saldskābais raksturs ir līdzsvarots: pietiekami salds, lai mīlētu, un pietiekami skābs, lai nebūtu garlaicīgi.",
+          "traits": [
+            "Romantika",
+            "Līdzsvars",
+            "Noslēpums"
+          ]
+        },
+        "gurki": {
+          "name": "Mazsālītie gurķi",
+          "tagline": "Svaigs, kraukšķīgs un mazliet sāļš humors.",
+          "description": "Tu esi svaiga vēsma jebkurā kompānijā. Tev ir asprātīgs, mazliet sāļš humors, un tu zini, kas palīdz pēc garas nakts. Vienkāršība, bez kuras neviens galds nav pilnīgs.",
+          "traits": [
+            "Svaigums",
+            "Asprātība",
+            "Praktiskums"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which Midsummer dish are you?",
+      "hook": "Cheese, shashlik or bacon buns? On Midsummer night the truth comes out.",
+      "intro": "Jāņi, the Latvian Midsummer, is the longest day and the tastiest night of the year. Everyone brings something to the table, and each of us has a Midsummer dish hiding inside. Answer seven questions about how you celebrate the solstice and find out whether you are caraway cheese, shashlik or rhubarb pie. The recipes for the table are included.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "How do you spend Midsummer day?",
+          "a": [
+            "Weaving wreaths and picking herbs",
+            "Building the bonfire and lighting the grill",
+            "Baking and setting the table",
+            "Swimming in the lake"
+          ]
+        },
+        {
+          "q": "Your role on Midsummer night?",
+          "a": [
+            "Singing the līgo songs the loudest",
+            "Jumping over the bonfire",
+            "Searching for the fern flower",
+            "Making sure everyone has enough to eat"
+          ]
+        },
+        {
+          "q": "What do you never forget to take to the countryside?",
+          "a": [
+            "A guitar",
+            "Mosquito repellent",
+            "Cheese and caraway",
+            "Grilling tools"
+          ]
+        },
+        {
+          "q": "What is your humour like?",
+          "a": [
+            "Salty and a bit sour",
+            "Warm and kind",
+            "Sharp and direct",
+            "Subtle, not everyone gets it"
+          ]
+        },
+        {
+          "q": "When do you go to bed on Midsummer night?",
+          "a": [
+            "I wait for the sunrise",
+            "Around midnight",
+            "When the food runs out",
+            "I quietly disappear with someone special"
+          ]
+        },
+        {
+          "q": "Your element?",
+          "a": [
+            "Sun",
+            "Fire",
+            "Water",
+            "Earth"
+          ]
+        },
+        {
+          "q": "What do you do the next morning?",
+          "a": [
+            "Eat cucumbers with honey",
+            "Make breakfast for everyone",
+            "Keep the party going",
+            "Write a poem about the night"
+          ]
+        }
+      ],
+      "results": {
+        "janu-siers": {
+          "name": "Jāņi caraway cheese",
+          "tagline": "Sunshine on the table, tradition in your heart.",
+          "description": "There is no real celebration without you. You honour traditions, know all the songs, and you have a sunny warmth that everyone gathers around. A touch of caraway in your character, and everything is exactly as it should be.",
+          "traits": [
+            "Tradition",
+            "Sunniness",
+            "Caraway character"
+          ]
+        },
+        "saslik": {
+          "name": "Shashlik",
+          "tagline": "Where there's smoke, there's you.",
+          "description": "The bonfire and the grill are your kingdom. You know the perfect marinade, your timing is flawless, and everyone gathers around you when the smell starts to spread. Energy, passion and a little smoke.",
+          "traits": [
+            "Passion",
+            "Leadership",
+            "Grill magic"
+          ]
+        },
+        "speka-piragi": {
+          "name": "Bacon buns",
+          "tagline": "The first thing to vanish from the table.",
+          "description": "Everybody loves you, and that is no exaggeration. You have cosiness, care and a talent for making people happy with the simplest things. Around you everyone feels as if they were at grandma's in the countryside.",
+          "traits": [
+            "Cosiness",
+            "Care",
+            "Simplicity"
+          ]
+        },
+        "kvass": {
+          "name": "Rye bread kvass",
+          "tagline": "Refreshing and inspiring until sunrise.",
+          "description": "You have energy that never runs out. You start the songs, cheer up the tired and suddenly realise the sun is already rising. With you, the party never ends too early.",
+          "traits": [
+            "Energy",
+            "Songs",
+            "Stamina"
+          ]
+        },
+        "rabarberu-pirags": {
+          "name": "Rhubarb pie",
+          "tagline": "Sweet and sour romance.",
+          "description": "You carry romance, dreams and a little mystery. You go looking for the fern flower and might even find it. Your sweet and sour character is perfectly balanced: sweet enough to love, sour enough never to be boring.",
+          "traits": [
+            "Romance",
+            "Balance",
+            "Mystery"
+          ]
+        },
+        "gurki": {
+          "name": "Lightly salted cucumbers",
+          "tagline": "Fresh, crunchy and slightly salty humour.",
+          "description": "You are a breath of fresh air in any company. You have witty, slightly salty humour, and you know exactly what helps after a long night. The simple thing no table is complete without.",
+          "traits": [
+            "Freshness",
+            "Wit",
+            "Practicality"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какое ты блюдо праздника Лиго?",
+      "hook": "Сыр, шашлык или пирожки со шпеком? В ночь Лиго правда выходит наружу.",
+      "intro": "Лиго — самый длинный день и самая вкусная ночь года. Каждый приносит на праздничный стол что-то своё, и в каждом из нас прячется какое-то блюдо Лиго. Ответь на семь вопросов о том, как ты празднуешь летнее солнцестояние, и узнай, кто ты: Янов сыр, шашлык или ревеневый пирог. Рецепты для стола прилагаются.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Как ты проводишь день Лиго?",
+          "a": [
+            "Плету венки и собираю травы",
+            "Развожу костёр и разжигаю гриль",
+            "Пеку и накрываю стол",
+            "Купаюсь в озере"
+          ]
+        },
+        {
+          "q": "Твоя роль в ночь Лиго?",
+          "a": [
+            "Пою песни лиго громче всех",
+            "Прыгаю через костёр",
+            "Ищу цветок папоротника",
+            "Слежу, чтобы всем хватило еды"
+          ]
+        },
+        {
+          "q": "Что ты никогда не забываешь взять за город?",
+          "a": [
+            "Гитару",
+            "Средство от комаров",
+            "Сыр и тмин",
+            "Инструменты для гриля"
+          ]
+        },
+        {
+          "q": "Какой у тебя юмор?",
+          "a": [
+            "Солёный и немного кислый",
+            "Тёплый и добрый",
+            "Острый и прямой",
+            "Тонкий, не все понимают"
+          ]
+        },
+        {
+          "q": "Когда ты ложишься спать в ночь Лиго?",
+          "a": [
+            "Встречаю рассвет",
+            "Около полуночи",
+            "Когда заканчивается еда",
+            "Тихо исчезаю с кем-то особенным"
+          ]
+        },
+        {
+          "q": "Твоя стихия?",
+          "a": [
+            "Солнце",
+            "Огонь",
+            "Вода",
+            "Земля"
+          ]
+        },
+        {
+          "q": "Что ты делаешь на следующее утро?",
+          "a": [
+            "Ем огурцы с мёдом",
+            "Готовлю завтрак для всех",
+            "Продолжаю праздник",
+            "Пишу стихи о прошедшей ночи"
+          ]
+        }
+      ],
+      "results": {
+        "janu-siers": {
+          "name": "Янов сыр",
+          "tagline": "Солнце на столе, традиции в сердце.",
+          "description": "Без тебя нет настоящего праздника. Ты чтишь традиции, знаешь все песни, и в тебе есть солнечное тепло, вокруг которого собираются все. Немного тмина в характере, и всё именно так, как должно быть.",
+          "traits": [
+            "Традиции",
+            "Солнечность",
+            "Характер с тмином"
+          ]
+        },
+        "saslik": {
+          "name": "Шашлык",
+          "tagline": "Где дым, там и ты.",
+          "description": "Костёр и гриль — твоё королевство. Ты знаешь идеальный маринад, у тебя безупречное чувство времени, и все собираются вокруг тебя, когда начинает распространяться аромат. Энергия, страсть и немного дыма.",
+          "traits": [
+            "Страсть",
+            "Лидерство",
+            "Магия гриля"
+          ]
+        },
+        "speka-piragi": {
+          "name": "Пирожки со шпеком",
+          "tagline": "Первыми исчезают со стола.",
+          "description": "Тебя любят все, и это не преувеличение. В тебе есть уют, забота и талант делать людей счастливыми самыми простыми вещами. Рядом с тобой все чувствуют себя как у бабушки в деревне.",
+          "traits": [
+            "Уют",
+            "Забота",
+            "Простота"
+          ]
+        },
+        "kvass": {
+          "name": "Квас из ржаного хлеба",
+          "tagline": "Освежает и вдохновляет до рассвета.",
+          "description": "В тебе энергия, которая не кончается. Ты запеваешь песни, подбадриваешь уставших и вдруг понимаешь, что уже светает. С тобой праздник никогда не заканчивается слишком рано.",
+          "traits": [
+            "Энергия",
+            "Песни",
+            "Выносливость"
+          ]
+        },
+        "rabarberu-pirags": {
+          "name": "Ревеневый пирог",
+          "tagline": "Кисло-сладкая романтика.",
+          "description": "В тебе есть романтика, мечты и немного тайны. Ты ищешь цветок папоротника и, возможно, даже находишь. Твой кисло-сладкий характер идеально сбалансирован: достаточно сладкий, чтобы любить, и достаточно кислый, чтобы не было скучно.",
+          "traits": [
+            "Романтика",
+            "Баланс",
+            "Тайна"
+          ]
+        },
+        "gurki": {
+          "name": "Малосольные огурцы",
+          "tagline": "Свежий, хрустящий и немного солёный юмор.",
+          "description": "Ты — глоток свежего воздуха в любой компании. У тебя остроумный, немного солёный юмор, и ты точно знаешь, что помогает после долгой ночи. Простота, без которой не обходится ни один стол.",
+          "traits": [
+            "Свежесть",
+            "Остроумие",
+            "Практичность"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Koks tu Joninių stalo patiekalas?",
+      "hook": "Sūris, šašlykas ar pyragėliai su lašiniais? Joninių naktį tiesa išaiškėja.",
+      "intro": "Joninės yra ilgiausia metų diena ir skaniausia naktis. Kiekvienas atneša ką nors ant šventinio stalo, ir kiekviename iš mūsų slepiasi koks nors Joninių patiekalas. Atsakyk į septynis klausimus apie tai, kaip švenčiai vasaros saulėgrįžą, ir sužinok, ar esi Joninių sūris, šašlykas ar rabarbarų pyragas. Receptai stalui pridedami.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Kaip praleidi Joninių dieną?",
+          "a": [
+            "Pinu vainikus ir renku žoleles",
+            "Kuriu laužą ir grilį",
+            "Kepu ir dengiu stalą",
+            "Maudausi ežere"
+          ]
+        },
+        {
+          "q": "Tavo vaidmuo Joninių naktį?",
+          "a": [
+            "Dainuoju garsiausiai",
+            "Šokinėju per laužą",
+            "Ieškau paparčio žiedo",
+            "Rūpinuosi, kad visiems užtektų maisto"
+          ]
+        },
+        {
+          "q": "Ko niekada nepamiršti pasiimti į kaimą?",
+          "a": [
+            "Gitaros",
+            "Priemonės nuo uodų",
+            "Sūrio ir kmynų",
+            "Grilio įrankių"
+          ]
+        },
+        {
+          "q": "Koks tavo humoras?",
+          "a": [
+            "Sūrus ir truputį rūgštus",
+            "Šiltas ir nuoširdus",
+            "Aštrus ir tiesus",
+            "Subtilus, ne visi supranta"
+          ]
+        },
+        {
+          "q": "Kada eini miegoti Joninių naktį?",
+          "a": [
+            "Sutinku saulėtekį",
+            "Apie vidurnaktį",
+            "Kai baigiasi maistas",
+            "Tyliai dingstu su kuo nors ypatingu"
+          ]
+        },
+        {
+          "q": "Tavo stichija?",
+          "a": [
+            "Saulė",
+            "Ugnis",
+            "Vanduo",
+            "Žemė"
+          ]
+        },
+        {
+          "q": "Ką darai kitą rytą?",
+          "a": [
+            "Valgau agurkus su medumi",
+            "Gaminu pusryčius visiems",
+            "Tęsiu šventę",
+            "Rašau eilėraštį apie naktį"
+          ]
+        }
+      ],
+      "results": {
+        "janu-siers": {
+          "name": "Joninių sūris",
+          "tagline": "Saulė ant stalo, tradicija širdyje.",
+          "description": "Be tavęs nėra tikros šventės. Gerbi tradicijas, žinai visas dainas, ir tavyje yra saulėtos šilumos, apie kurią susiburia visi. Truputis kmynų charakteryje, ir viskas būtent taip, kaip turi būti.",
+          "traits": [
+            "Tradicijos",
+            "Saulėtumas",
+            "Kmyninis charakteris"
+          ]
+        },
+        "saslik": {
+          "name": "Šašlykas",
+          "tagline": "Kur dūmai, ten ir tu.",
+          "description": "Laužas ir grilis yra tavo karalystė. Žinai tobulą marinatą, tavo laiko pojūtis nepriekaištingas, ir visi susiburia aplink tave, kai pradeda sklisti kvapas. Energija, aistra ir truputis dūmų.",
+          "traits": [
+            "Aistra",
+            "Lyderystė",
+            "Grilio magija"
+          ]
+        },
+        "speka-piragi": {
+          "name": "Pyragėliai su lašiniais",
+          "tagline": "Pirmieji dingsta nuo stalo.",
+          "description": "Tave myli visi, ir tai ne perdėta. Tavyje yra jaukumo, rūpesčio ir talento pradžiuginti žmones paprasčiausiais dalykais. Šalia tavęs visi jaučiasi kaip pas močiutę kaime.",
+          "traits": [
+            "Jaukumas",
+            "Rūpestis",
+            "Paprastumas"
+          ]
+        },
+        "kvass": {
+          "name": "Duonos gira",
+          "tagline": "Gaivina ir įkvepia iki saulėtekio.",
+          "description": "Tavyje yra energijos, kuri niekada nesibaigia. Užtrauki dainas, padrąsini pavargusius ir staiga supranti, kad jau aušta. Su tavimi šventė niekada nesibaigia per anksti.",
+          "traits": [
+            "Energija",
+            "Dainos",
+            "Ištvermė"
+          ]
+        },
+        "rabarberu-pirags": {
+          "name": "Rabarbarų pyragas",
+          "tagline": "Saldžiarūgštė romantika.",
+          "description": "Tavyje yra romantikos, svajonių ir truputį paslapties. Ieškai paparčio žiedo ir galbūt net jį randi. Tavo saldžiarūgštis charakteris puikiai subalansuotas: pakankamai saldus, kad mylėtum, ir pakankamai rūgštus, kad nebūtų nuobodu.",
+          "traits": [
+            "Romantika",
+            "Pusiausvyra",
+            "Paslaptis"
+          ]
+        },
+        "gurki": {
+          "name": "Mažai sūdyti agurkai",
+          "tagline": "Gaivus, traškus ir truputį sūrus humoras.",
+          "description": "Tu esi gaivaus oro gūsis bet kokioje kompanijoje. Turi sąmojingą, truputį sūrų humorą ir tiksliai žinai, kas padeda po ilgos nakties. Paprastumas, be kurio neapsieina nė vienas stalas.",
+          "traits": [
+            "Gaivumas",
+            "Sąmojis",
+            "Praktiškumas"
+          ]
+        }
+      }
+    }
+  }
+}

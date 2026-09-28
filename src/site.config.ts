@@ -26,6 +26,7 @@ export const ADS = {
     inFeed: '', // recepšu sarakstos starp kartītēm un sākumlapā
     recipeTop: '', // receptē, pēc ievada, pirms sastāvdaļām
     recipeBottom: '', // receptē, pēc pagatavošanas soļiem
+    quizResult: '', // testa rezultāta lapā, pēc receptēm
   },
   /** Cik recepšu kartītes starp reklāmām sarakstos. */
   feedEvery: 8,

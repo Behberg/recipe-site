@@ -1,0 +1,396 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import QuizCard from '../../../../components/QuizCard.astro';
+import { getQuizzes, quizCoverImage, quizResultUrl, quizUrl, quizzesUrl, QUIZ_IMAGE_SIZES } from '../../../../lib/quizzes';
+import { breadcrumbLd } from '../../../../lib/seo';
+import { LANGS, langParam, href, t, type Lang } from '../../../../i18n';
+
+export async function getStaticPaths() {
+  const quizzes = await getQuizzes('lv');
+  return LANGS.flatMap((lang) => quizzes.map((q) => ({ params: { lang: langParam(lang), quiz: q.id }, props: { lang } })));
+}
+
+const { lang } = Astro.props as { lang: Lang };
+const quizzes = await getQuizzes(lang);
+const quiz = quizzes.find((q) => q.id === Astro.params.quiz)!;
+const others = quizzes.filter((q) => q.id !== quiz.id).slice(0, 3);
+const n = quiz.questions.length;
+// Everything the browser needs to score the answers and open the result page.
+const data = {
+  id: quiz.id,
+  results: Object.fromEntries(quiz.results.map((r) => [r.id, quizResultUrl(quiz.id, r.id, lang)])),
+  order: quiz.results.map((r) => r.id),
+};
+const jsonLd = breadcrumbLd(
+  [
+    { name: t(lang, 'nav.home'), path: href(lang, '/') },
+    { name: t(lang, 'quiz.hubTitle'), path: quizzesUrl(lang) },
+    { name: quiz.title, path: quizUrl(quiz.id, lang) },
+  ],
+  Astro.site,
+);
+---
+
+<Base
+  title={quiz.title}
+  description={`${quiz.hook} ${quiz.intro}`}
+  image={quizCoverImage(quiz.id, lang)}
+  imageSize={QUIZ_IMAGE_SIZES.cover}
+  imageAlt={quiz.title}
+  jsonLd={jsonLd}
+>
+  <div class="container quiz" style={`--qc:${quiz.color}`} data-quiz>
+    <header class="quiz-head">
+      <a class="eyebrow" href={quizzesUrl(lang)}>{t(lang, 'quiz.hubTitle')}</a>
+      <h1><span aria-hidden="true">{quiz.emoji}</span> {quiz.title}</h1>
+      <p class="hook">{quiz.hook}</p>
+    </header>
+
+    <section class="stage" aria-live="polite">
+      <div class="stage-top">
+        <button type="button" class="back" data-back disabled aria-label={t(lang, 'quiz.back')}>
+          <span aria-hidden="true">←</span>
+          <span>{t(lang, 'quiz.back')}</span>
+        </button>
+        <span class="count" data-count>{t(lang, 'quiz.progress', { i: 1, n })}</span>
+      </div>
+      <div class="bar" aria-hidden="true"><span data-bar style={`width:${100 / n}%`}></span></div>
+
+      {
+        quiz.questions.map((qu, i) => (
+          <fieldset class="step" data-step={i} hidden={i > 0}>
+            <legend tabindex="-1">{qu.q}</legend>
+            <div class="answers">
+              {qu.answers.map((a, j) => (
+                <button type="button" class="answer" data-answer={j} data-scores={JSON.stringify(a.scores)}>
+                  <span class="a-emoji" aria-hidden="true">
+                    {a.emoji}
+                  </span>
+                  <span>{a.text}</span>
+                </button>
+              ))}
+            </div>
+          </fieldset>
+        ))
+      }
+
+      <div class="calculating" data-calculating hidden>
+        <span class="spinner" aria-hidden="true">{quiz.emoji}</span>
+        <p>{t(lang, 'quiz.calculating')}</p>
+      </div>
+      <noscript><p class="noscript">{t(lang, 'quiz.noscript')}</p></noscript>
+    </section>
+
+    <section class="about">
+      <h2>{t(lang, 'quiz.aboutTitle')}</h2>
+      <p>{quiz.intro}</p>
+      <details>
+        <summary>{t(lang, 'quiz.allResults')} ({quiz.results.length})</summary>
+        <ul class="all-results">
+          {
+            quiz.results.map((r) => (
+              <li>
+                <a href={quizResultUrl(quiz.id, r.id, lang)}>
+                  <span aria-hidden="true">{r.emoji}</span> <strong>{r.name}</strong>
+                </a>
+                <span>{r.tagline}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </details>
+    </section>
+
+    <section class="more">
+      <div class="section-head">
+        <h2>{t(lang, 'quiz.nextTitle')}</h2>
+        <a class="link-more" href={quizzesUrl(lang)}>{t(lang, 'quiz.allQuizzes')}</a>
+      </div>
+      <div class="more-grid">{others.map((q) => <QuizCard quiz={q} />)}</div>
+    </section>
+  </div>
+  <script is:inline type="application/json" id="quiz-data" set:html={JSON.stringify(data)} />
+  <script is:inline type="application/json" id="quiz-text" set:html={JSON.stringify({ progress: t(lang, 'quiz.progress') })} />
+</Base>
+
+<script>
+  import { MINE_KEY, winner } from '../../../../lib/quizScore';
+
+  const root = document.querySelector<HTMLElement>('[data-quiz]');
+  if (root) {
+    const data = JSON.parse(document.getElementById('quiz-data')!.textContent || '{}') as {
+      id: string;
+      results: Record<string, string>;
+      order: string[];
+    };
+    const text = JSON.parse(document.getElementById('quiz-text')!.textContent || '{}') as { progress: string };
+    const steps = [...root.querySelectorAll<HTMLElement>('[data-step]')];
+    const back = root.querySelector<HTMLButtonElement>('[data-back]')!;
+    const count = root.querySelector<HTMLElement>('[data-count]')!;
+    const bar = root.querySelector<HTMLElement>('[data-bar]')!;
+    const stage = root.querySelector<HTMLElement>('.stage')!;
+    const picks: Record<string, number>[] = [];
+    let current = 0;
+
+    const show = (i: number) => {
+      current = i;
+      steps.forEach((s, j) => (s.hidden = j !== i));
+      back.disabled = i === 0;
+      count.textContent = text.progress.replace('{i}', String(i + 1)).replace('{n}', String(steps.length));
+      bar.style.width = `${((i + 1) / steps.length) * 100}%`;
+      steps[i].querySelectorAll('.answer').forEach((a) => a.classList.remove('is-picked'));
+      // Keep the question in view on small screens, without jumping when it already is.
+      if (stage.getBoundingClientRect().top < 0) stage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      steps[i].querySelector<HTMLElement>('legend')?.focus({ preventScroll: true });
+    };
+
+    const finish = () => {
+      const id = winner(data.order, picks);
+      try {
+        sessionStorage.setItem(MINE_KEY, `${data.id}/${id}`);
+      } catch {
+        /* private mode: the result page simply shows the visitor view */
+      }
+      steps.forEach((s) => (s.hidden = true));
+      root.querySelector<HTMLElement>('[data-calculating]')!.hidden = false;
+      back.disabled = true;
+      bar.style.width = '100%';
+      // A short pause builds a little anticipation before the reveal.
+      setTimeout(() => location.assign(data.results[id]), 900);
+    };
+
+    root.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.answer');
+      if (!btn || btn.closest<HTMLElement>('[data-step]')?.hidden) return;
+      btn.classList.add('is-picked');
+      picks[current] = JSON.parse(btn.dataset.scores || '{}');
+      picks.length = current + 1;
+      setTimeout(() => (current < steps.length - 1 ? show(current + 1) : finish()), 220);
+    });
+    back.addEventListener('click', () => current > 0 && show(current - 1));
+  }
+</script>
+
+<style>
+  .quiz {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  .quiz-head {
+    max-width: 720px;
+    margin: 0 auto 18px;
+    text-align: center;
+  }
+  .quiz-head h1 {
+    font-size: clamp(2rem, 1.4rem + 3vw, 3.2rem);
+    margin: 6px 0 8px;
+  }
+  .hook {
+    color: var(--ink-2);
+    font-size: 1.05rem;
+  }
+  .stage {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 18px;
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow), inset 0 0 0 1px var(--line);
+    scroll-margin-top: calc(var(--header-h) + 12px);
+  }
+  @media (min-width: 700px) {
+    .stage {
+      padding: 28px 32px 32px;
+    }
+  }
+  .stage-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 36px;
+  }
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px 6px 6px;
+    border-radius: var(--pill);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .back:disabled {
+    visibility: hidden;
+  }
+  .count {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink-3);
+  }
+  .bar {
+    height: 6px;
+    margin: 10px 0 20px;
+    border-radius: var(--pill);
+    background: var(--surface-2);
+    overflow: hidden;
+  }
+  .bar span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--qc);
+    transition: width 0.35s var(--ease);
+  }
+  .step {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    animation: rise 0.3s var(--ease);
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+  legend {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.35rem, 1.1rem + 1.2vw, 1.8rem);
+    line-height: 1.25;
+    margin-bottom: 16px;
+    outline: none;
+  }
+  .answers {
+    display: grid;
+    gap: 10px;
+  }
+  @media (min-width: 600px) {
+    .answers {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .answer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 64px;
+    padding: 10px 14px;
+    border-radius: var(--r);
+    background: var(--bg);
+    box-shadow: inset 0 0 0 1.5px var(--line-strong);
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.98rem;
+    line-height: 1.3;
+    color: var(--ink);
+    transition:
+      transform 0.15s var(--ease),
+      box-shadow 0.15s,
+      background 0.15s;
+  }
+  .answer:hover {
+    box-shadow: inset 0 0 0 2px var(--qc);
+    background: color-mix(in oklab, var(--qc) 7%, var(--bg));
+  }
+  .answer:active {
+    transform: scale(0.98);
+  }
+  .answer.is-picked {
+    background: color-mix(in oklab, var(--qc) 16%, var(--bg));
+    box-shadow: inset 0 0 0 2.5px var(--qc);
+  }
+  .a-emoji {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--pill);
+    background: var(--surface);
+    font-size: 1.35rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .calculating {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+    padding: 36px 0 24px;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .calculating[hidden] {
+    display: none;
+  }
+  .spinner {
+    font-size: 3.2rem;
+    animation: wobble 0.9s var(--ease) infinite;
+  }
+  @keyframes wobble {
+    50% {
+      transform: rotate(-12deg) scale(1.12);
+    }
+  }
+  .noscript {
+    color: var(--ink-2);
+  }
+  .about {
+    max-width: 720px;
+    margin: 36px auto 0;
+  }
+  .about h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .about p {
+    color: var(--ink-2);
+  }
+  details {
+    margin-top: 14px;
+    padding: 12px 16px;
+    border-radius: var(--r-sm);
+    background: var(--surface-2);
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .all-results {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: grid;
+    gap: 10px;
+  }
+  .all-results li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .all-results a:hover strong {
+    color: var(--brand);
+  }
+  .all-results li > span {
+    color: var(--ink-2);
+    font-size: 0.9rem;
+  }
+  .more {
+    margin-top: 44px;
+  }
+  .more-grid {
+    display: grid;
+    gap: 18px;
+  }
+  @media (min-width: 700px) {
+    .more-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .step,
+    .spinner {
+      animation: none;
+    }
+  }
+</style>

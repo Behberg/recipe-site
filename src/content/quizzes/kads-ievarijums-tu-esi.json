@@ -1,0 +1,824 @@
+{
+  "order": 9,
+  "emoji": "🫙",
+  "color": "#a4243b",
+  "results": {
+    "dzervenu": {
+      "emoji": "🔴",
+      "color": "#a4243b",
+      "match": "abolu",
+      "recipes": [
+        "dzervenu-ievarijums",
+        "dzervenu-morss",
+        "dzervenu-kekss-ar-baltu-sokoladi"
+      ]
+    },
+    "zemenu": {
+      "emoji": "🍓",
+      "color": "#d8344f",
+      "match": "upenu",
+      "recipes": [
+        "zemenu-ievarijums",
+        "zemenu-kuka",
+        "rabarberu-zemenu-ievarijums"
+      ]
+    },
+    "upenu": {
+      "emoji": "🫐",
+      "color": "#3a2a5a",
+      "match": "zemenu",
+      "recipes": [
+        "upenu-ievarijums",
+        "ogu-kompots",
+        "biezpiena-krems-ar-ogam"
+      ]
+    },
+    "smiltserksku": {
+      "emoji": "🧡",
+      "color": "#e8861f",
+      "match": "avenu",
+      "recipes": [
+        "smiltserksku-sirups",
+        "smiltserksku-teja-ar-medu",
+        "ingvera-teja"
+      ]
+    },
+    "avenu": {
+      "emoji": "💝",
+      "color": "#c2365a",
+      "match": "smiltserksku",
+      "recipes": [
+        "avenu-ievarijums",
+        "avenu-limonade",
+        "biezpiena-deserts-ar-avenem"
+      ]
+    },
+    "abolu": {
+      "emoji": "🍎",
+      "color": "#b8762e",
+      "match": "dzervenu",
+      "recipes": [
+        "abolu-ievarijums",
+        "abolu-biezenis-ziemai",
+        "cepti-aboli"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "😏",
+          "scores": {
+            "dzervenu": 2,
+            "upenu": 1
+          }
+        },
+        {
+          "emoji": "🤷",
+          "scores": {
+            "abolu": 2,
+            "zemenu": 1
+          }
+        },
+        {
+          "emoji": "💪",
+          "scores": {
+            "upenu": 2,
+            "smiltserksku": 1
+          }
+        },
+        {
+          "emoji": "🌷",
+          "scores": {
+            "avenu": 2,
+            "zemenu": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🌲",
+          "scores": {
+            "dzervenu": 2,
+            "smiltserksku": 1
+          }
+        },
+        {
+          "emoji": "🌼",
+          "scores": {
+            "avenu": 2,
+            "zemenu": 1
+          }
+        },
+        {
+          "emoji": "🏖️",
+          "scores": {
+            "smiltserksku": 2
+          }
+        },
+        {
+          "emoji": "🏡",
+          "scores": {
+            "abolu": 2,
+            "upenu": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "☕",
+          "scores": {
+            "upenu": 2,
+            "dzervenu": 1
+          }
+        },
+        {
+          "emoji": "🍵",
+          "scores": {
+            "smiltserksku": 2,
+            "abolu": 1
+          }
+        },
+        {
+          "emoji": "🥛",
+          "scores": {
+            "zemenu": 2,
+            "avenu": 1
+          }
+        },
+        {
+          "emoji": "🍋",
+          "scores": {
+            "dzervenu": 2,
+            "smiltserksku": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "😂",
+          "scores": {
+            "zemenu": 2,
+            "avenu": 1
+          }
+        },
+        {
+          "emoji": "🕵️",
+          "scores": {
+            "dzervenu": 2,
+            "upenu": 1
+          }
+        },
+        {
+          "emoji": "💘",
+          "scores": {
+            "avenu": 2,
+            "zemenu": 1
+          }
+        },
+        {
+          "emoji": "🌍",
+          "scores": {
+            "smiltserksku": 2,
+            "abolu": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🥦",
+          "scores": {
+            "smiltserksku": 2,
+            "upenu": 1
+          }
+        },
+        {
+          "emoji": "🍰",
+          "scores": {
+            "zemenu": 2,
+            "avenu": 1
+          }
+        },
+        {
+          "emoji": "⚖️",
+          "scores": {
+            "abolu": 2
+          }
+        },
+        {
+          "emoji": "🏋️",
+          "scores": {
+            "upenu": 2,
+            "dzervenu": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎯",
+          "scores": {
+            "dzervenu": 2,
+            "upenu": 1
+          }
+        },
+        {
+          "emoji": "🫂",
+          "scores": {
+            "avenu": 2,
+            "abolu": 1
+          }
+        },
+        {
+          "emoji": "🔋",
+          "scores": {
+            "smiltserksku": 2,
+            "zemenu": 1
+          }
+        },
+        {
+          "emoji": "🧺",
+          "scores": {
+            "abolu": 2,
+            "upenu": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🍓",
+          "scores": {
+            "zemenu": 2
+          }
+        },
+        {
+          "emoji": "☀️",
+          "scores": {
+            "avenu": 2,
+            "upenu": 1
+          }
+        },
+        {
+          "emoji": "🍂",
+          "scores": {
+            "abolu": 2,
+            "dzervenu": 1
+          }
+        },
+        {
+          "emoji": "❄️",
+          "scores": {
+            "upenu": 2,
+            "dzervenu": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds ievārījums esi tu?",
+      "hook": "Salds, skābs vai ar raksturu? Atver burciņu un uzzini.",
+      "intro": "Latvijā ievārījums nav tikai deserts, tas ir vasara burkā un vecmāmiņas mīlestība, kas pietiek visai ziemai. Katrai ogai ir savs raksturs: viena ir salda un saulaina, cita skāba un spītīga. Atbildi uz septiņiem jautājumiem un uzzini, kurš ievārījums esi tu. Recepte, lai to izvārītu arī savā virtuvē, ir klāt.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Kā tu reaģē, kad kāds tev saka „nē”?",
+          "a": [
+            "Tikai vēl vairāk gribas",
+            "Labi, tad citreiz",
+            "Mēģinu vēlreiz un vēlreiz",
+            "Samīļoju un pārliecinu"
+          ]
+        },
+        {
+          "q": "Kur tu jūties vislabāk?",
+          "a": [
+            "Purvā vai mežā",
+            "Saulainā pļavā",
+            "Jūras krastā kāpās",
+            "Savā dārzā"
+          ]
+        },
+        {
+          "q": "Tavs rīta dzēriens?",
+          "a": [
+            "Melna kafija",
+            "Zāļu tēja",
+            "Kakao vai latte",
+            "Ūdens ar citronu"
+          ]
+        },
+        {
+          "q": "Kādas filmas tev patīk?",
+          "a": [
+            "Komēdijas",
+            "Detektīvi",
+            "Romantiskas filmas",
+            "Dokumentālās filmas par dabu"
+          ]
+        },
+        {
+          "q": "Kāda ir tava attieksme pret veselīgu dzīvesveidu?",
+          "a": [
+            "Vitamīni ir mana reliģija",
+            "Dzīve ir par īsu, lai atteiktos no kūkas",
+            "Visu ar mēru",
+            "Treniņi un disciplīna"
+          ]
+        },
+        {
+          "q": "Tava superspēja draugu vidū?",
+          "a": [
+            "Pateikt patiesību acīs",
+            "Samīļot un nomierināt",
+            "Uzlādēt ar enerģiju",
+            "Man vienmēr viss ir līdzi"
+          ]
+        },
+        {
+          "q": "Kurā mēnesī tu jūties vislabāk?",
+          "a": [
+            "Jūnijā",
+            "Jūlijā",
+            "Septembrī",
+            "Novembrī"
+          ]
+        }
+      ],
+      "results": {
+        "dzervenu": {
+          "name": "Dzērveņu ievārījums",
+          "tagline": "Skābs raksturs, zelta sirds.",
+          "description": "Tevī ir purva ogas spīts: mazliet skābuma, daudz rakstura un vitamīni visiem tuvajiem. Tu nebaidies pateikt patiesību, un tieši par to tevi mīl. Starp citu, tev par godu ir nosaukta šī vietne.",
+          "traits": [
+            "Raksturs",
+            "Godīgums",
+            "Spīts"
+          ]
+        },
+        "zemenu": {
+          "name": "Zemeņu ievārījums",
+          "tagline": "Vasaras smaids burciņā.",
+          "description": "Tevi mīl visi, un tu to zini. Tu esi saldums, prieks un vasaras smarža vienā burciņā, un ar tevi pat pelēkākā februāra diena kļūst saulaina. Klasika, kas nekad neapnīk.",
+          "traits": [
+            "Prieks",
+            "Saldums",
+            "Klasika"
+          ]
+        },
+        "upenu": {
+          "name": "Upeņu ievārījums",
+          "tagline": "Intensitāte, dziļums un spēks.",
+          "description": "Tevī ir intensitāte, ko nevar ignorēt. Tu runā tieši, strādā ar pilnu atdevi un vienmēr ej līdz galam. Daži saka, ka tevis ir par daudz, bet tieši tu esi tas vitamīns, kas visus uztur ziemā.",
+          "traits": [
+            "Intensitāte",
+            "Spēks",
+            "Disciplīna"
+          ]
+        },
+        "smiltserksku": {
+          "name": "Smiltsērkšķu sīrups",
+          "tagline": "Ziemeļu saule kāpās.",
+          "description": "Tu esi eksotika latviešu dvēselē. Tevī ir oranžs gaišums, aizrautība ar veselīgu dzīvi un enerģija, ar ko pietiek visiem. Tieši tu visiem atgādini par vitamīniem, un vienmēr izrādās, ka tev bija taisnība.",
+          "traits": [
+            "Enerģija",
+            "Veselība",
+            "Unikalitāte"
+          ]
+        },
+        "avenu": {
+          "name": "Aveņu ievārījums",
+          "tagline": "Maigums, kas dziedē.",
+          "description": "Tevī ir maigums un romantika, un tu proti sasildīt ar vienu skatienu. Tev uztic noslēpumus, un tu tos glabā. Kad kādam ir slikti, tu esi kā karote aveņu ievārījuma tējā: tieši tas, kas vajadzīgs.",
+          "traits": [
+            "Maigums",
+            "Romantika",
+            "Uzticamība"
+          ]
+        },
+        "abolu": {
+          "name": "Ābolu ievārījums ar kanēli",
+          "tagline": "Vienkāršība, gudrība un kanēļa smarža.",
+          "description": "Tev piemīt praktiska gudrība un rudens miers. Tu nedzenies pēc modes, jo zini, ka vienkāršas lietas ir labākās. Tev vienmēr viss ir līdzi, tu vienmēr zini, ko darīt, un tavā klātbūtnē smaržo pēc kanēļa.",
+          "traits": [
+            "Gudrība",
+            "Praktiskums",
+            "Miers"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which jam are you?",
+      "hook": "Sweet, sour or full of character? Open the jar and find out.",
+      "intro": "In Latvia jam is more than dessert: it's summer in a jar and a grandmother's love that lasts all winter. Every berry has its own character: one is sweet and sunny, another sour and stubborn. Answer seven questions to find out which jam you are, with a recipe to make it in your own kitchen.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "How do you react when someone tells you “no”?",
+          "a": [
+            "It only makes me want it more",
+            "Fine, maybe next time",
+            "I try again and again",
+            "I charm them into a yes"
+          ]
+        },
+        {
+          "q": "Where do you feel best?",
+          "a": [
+            "In a bog or a forest",
+            "In a sunny meadow",
+            "On the dunes by the sea",
+            "In my own garden"
+          ]
+        },
+        {
+          "q": "Your morning drink?",
+          "a": [
+            "Black coffee",
+            "Herbal tea",
+            "Cocoa or a latte",
+            "Water with lemon"
+          ]
+        },
+        {
+          "q": "What films do you like?",
+          "a": [
+            "Comedies",
+            "Detective stories",
+            "Romance",
+            "Nature documentaries"
+          ]
+        },
+        {
+          "q": "Your attitude to healthy living?",
+          "a": [
+            "Vitamins are my religion",
+            "Life is too short to say no to cake",
+            "Everything in moderation",
+            "Training and discipline"
+          ]
+        },
+        {
+          "q": "Your superpower among friends?",
+          "a": [
+            "Telling people the truth to their face",
+            "Hugging and calming people down",
+            "Recharging everyone with energy",
+            "I always have everything with me"
+          ]
+        },
+        {
+          "q": "Which month do you feel best in?",
+          "a": [
+            "June",
+            "July",
+            "September",
+            "November"
+          ]
+        }
+      ],
+      "results": {
+        "dzervenu": {
+          "name": "Cranberry jam",
+          "tagline": "Sour character, heart of gold.",
+          "description": "You have the stubbornness of a bog berry: a little sourness, a lot of character and vitamins for everyone close to you. You're not afraid to tell the truth, and that's exactly why people love you. By the way, this website is named after you: dzērvene means cranberry.",
+          "traits": [
+            "Character",
+            "Honesty",
+            "Stubbornness"
+          ]
+        },
+        "zemenu": {
+          "name": "Strawberry jam",
+          "tagline": "A summer smile in a jar.",
+          "description": "Everybody loves you, and you know it. You are sweetness, joy and the smell of summer in one jar, and with you even the greyest February day turns sunny. A classic that never gets old.",
+          "traits": [
+            "Joy",
+            "Sweetness",
+            "Classic"
+          ]
+        },
+        "upenu": {
+          "name": "Blackcurrant jam",
+          "tagline": "Intensity, depth and strength.",
+          "description": "You have an intensity that can't be ignored. You speak directly, work at full power and always go all the way. Some say you're too much, but you are exactly the vitamin that keeps everyone going through winter.",
+          "traits": [
+            "Intensity",
+            "Strength",
+            "Discipline"
+          ]
+        },
+        "smiltserksku": {
+          "name": "Sea buckthorn syrup",
+          "tagline": "Northern sunshine on the dunes.",
+          "description": "You are the exotic streak in the Latvian soul. You have an orange glow, a passion for healthy living and energy enough for everyone. You're the one reminding everyone about vitamins, and it always turns out you were right.",
+          "traits": [
+            "Energy",
+            "Health",
+            "Uniqueness"
+          ]
+        },
+        "avenu": {
+          "name": "Raspberry jam",
+          "tagline": "Gentleness that heals.",
+          "description": "You carry gentleness and romance, and you can warm someone up with a single look. People trust you with their secrets, and you keep them. When someone feels bad, you are like a spoonful of raspberry jam in tea: exactly what's needed.",
+          "traits": [
+            "Gentleness",
+            "Romance",
+            "Trust"
+          ]
+        },
+        "abolu": {
+          "name": "Apple and cinnamon jam",
+          "tagline": "Simplicity, wisdom and the smell of cinnamon.",
+          "description": "You have practical wisdom and an autumn calm. You don't chase trends because you know simple things are the best. You always have everything with you, you always know what to do, and wherever you are it smells of cinnamon.",
+          "traits": [
+            "Wisdom",
+            "Practicality",
+            "Calm"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какое ты варенье?",
+      "hook": "Сладкое, кислое или с характером? Открой баночку и узнай.",
+      "intro": "В Латвии варенье — не просто десерт, а лето в банке и бабушкина любовь, которой хватает на всю зиму. У каждой ягоды свой характер: одна сладкая и солнечная, другая кислая и упрямая. Ответь на семь вопросов и узнай, какое ты варенье. Рецепт, чтобы сварить его на своей кухне, прилагается.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Как ты реагируешь, когда тебе говорят «нет»?",
+          "a": [
+            "Хочется ещё больше",
+            "Ладно, в другой раз",
+            "Пробую снова и снова",
+            "Очаровываю и уговариваю"
+          ]
+        },
+        {
+          "q": "Где тебе лучше всего?",
+          "a": [
+            "На болоте или в лесу",
+            "На солнечном лугу",
+            "В дюнах у моря",
+            "В своём саду"
+          ]
+        },
+        {
+          "q": "Твой утренний напиток?",
+          "a": [
+            "Чёрный кофе",
+            "Травяной чай",
+            "Какао или латте",
+            "Вода с лимоном"
+          ]
+        },
+        {
+          "q": "Какие фильмы тебе нравятся?",
+          "a": [
+            "Комедии",
+            "Детективы",
+            "Романтические фильмы",
+            "Документальные фильмы о природе"
+          ]
+        },
+        {
+          "q": "Как ты относишься к здоровому образу жизни?",
+          "a": [
+            "Витамины — моя религия",
+            "Жизнь слишком коротка, чтобы отказываться от торта",
+            "Всё в меру",
+            "Тренировки и дисциплина"
+          ]
+        },
+        {
+          "q": "Твоя суперсила среди друзей?",
+          "a": [
+            "Сказать правду в лицо",
+            "Обнять и успокоить",
+            "Зарядить энергией",
+            "У меня всегда всё с собой"
+          ]
+        },
+        {
+          "q": "В каком месяце тебе лучше всего?",
+          "a": [
+            "В июне",
+            "В июле",
+            "В сентябре",
+            "В ноябре"
+          ]
+        }
+      ],
+      "results": {
+        "dzervenu": {
+          "name": "Клюквенное варенье",
+          "tagline": "Кислый характер, золотое сердце.",
+          "description": "В тебе упрямство болотной ягоды: немного кислинки, много характера и витамины для всех, кто рядом. Ты не боишься говорить правду, и именно за это тебя любят. Кстати, этот сайт назван в твою честь: dzērvene по-латышски — клюква.",
+          "traits": [
+            "Характер",
+            "Честность",
+            "Упрямство"
+          ]
+        },
+        "zemenu": {
+          "name": "Клубничное варенье",
+          "tagline": "Летняя улыбка в баночке.",
+          "description": "Тебя любят все, и ты это знаешь. Ты — сладость, радость и запах лета в одной баночке, и с тобой даже самый серый февральский день становится солнечным. Классика, которая никогда не надоедает.",
+          "traits": [
+            "Радость",
+            "Сладость",
+            "Классика"
+          ]
+        },
+        "upenu": {
+          "name": "Смородиновое варенье",
+          "tagline": "Интенсивность, глубина и сила.",
+          "description": "В тебе есть интенсивность, которую невозможно игнорировать. Ты говоришь прямо, работаешь на полную и всегда идёшь до конца. Кто-то скажет, что тебя слишком много, но именно ты — тот витамин, который держит всех зимой.",
+          "traits": [
+            "Интенсивность",
+            "Сила",
+            "Дисциплина"
+          ]
+        },
+        "smiltserksku": {
+          "name": "Облепиховый сироп",
+          "tagline": "Северное солнце в дюнах.",
+          "description": "Ты — экзотика в латышской душе. В тебе оранжевое сияние, увлечённость здоровой жизнью и энергия, которой хватает на всех. Именно ты всем напоминаешь о витаминах, и всегда оказывается, что правда была на твоей стороне.",
+          "traits": [
+            "Энергия",
+            "Здоровье",
+            "Уникальность"
+          ]
+        },
+        "avenu": {
+          "name": "Малиновое варенье",
+          "tagline": "Нежность, которая лечит.",
+          "description": "В тебе есть нежность и романтика, и ты умеешь согреть одним взглядом. Тебе доверяют секреты, и ты их хранишь. Когда кому-то плохо, ты как ложка малинового варенья в чае: именно то, что нужно.",
+          "traits": [
+            "Нежность",
+            "Романтика",
+            "Доверие"
+          ]
+        },
+        "abolu": {
+          "name": "Яблочное варенье с корицей",
+          "tagline": "Простота, мудрость и аромат корицы.",
+          "description": "В тебе практическая мудрость и осенний покой. Ты не гонишься за модой, потому что знаешь: простые вещи — самые лучшие. У тебя всегда всё с собой, ты всегда знаешь, что делать, и рядом с тобой пахнет корицей.",
+          "traits": [
+            "Мудрость",
+            "Практичность",
+            "Покой"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Kokia tu uogienė?",
+      "hook": "Saldi, rūgšti ar su charakteriu? Atidaryk stiklainį ir sužinok.",
+      "intro": "Latvijoje uogienė yra ne tik desertas: tai vasara stiklainyje ir močiutės meilė, kurios užtenka visai žiemai. Kiekviena uoga turi savo charakterį: viena saldi ir saulėta, kita rūgšti ir užsispyrusi. Atsakyk į septynis klausimus ir sužinok, kokia uogienė esi tu. Receptas, kad ją išsivirtum savo virtuvėje, pridedamas.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Kaip reaguoji, kai kas nors tau sako „ne“?",
+          "a": [
+            "Tik dar labiau norisi",
+            "Gerai, kitą kartą",
+            "Bandau vėl ir vėl",
+            "Sužaviu ir įtikinu"
+          ]
+        },
+        {
+          "q": "Kur jautiesi geriausiai?",
+          "a": [
+            "Pelkėje ar miške",
+            "Saulėtoje pievoje",
+            "Kopose prie jūros",
+            "Savo sode"
+          ]
+        },
+        {
+          "q": "Tavo rytinis gėrimas?",
+          "a": [
+            "Juoda kava",
+            "Žolelių arbata",
+            "Kakava ar latte",
+            "Vanduo su citrina"
+          ]
+        },
+        {
+          "q": "Kokie filmai tau patinka?",
+          "a": [
+            "Komedijos",
+            "Detektyvai",
+            "Romantiniai filmai",
+            "Dokumentiniai filmai apie gamtą"
+          ]
+        },
+        {
+          "q": "Koks tavo požiūris į sveiką gyvenseną?",
+          "a": [
+            "Vitaminai yra mano religija",
+            "Gyvenimas per trumpas, kad atsisakytum torto",
+            "Viskas saikingai",
+            "Treniruotės ir disciplina"
+          ]
+        },
+        {
+          "q": "Tavo supergalia tarp draugų?",
+          "a": [
+            "Pasakyti tiesą į akis",
+            "Apkabinti ir nuraminti",
+            "Užkrėsti energija",
+            "Visada viską turiu su savimi"
+          ]
+        },
+        {
+          "q": "Kurį mėnesį jautiesi geriausiai?",
+          "a": [
+            "Birželį",
+            "Liepą",
+            "Rugsėjį",
+            "Lapkritį"
+          ]
+        }
+      ],
+      "results": {
+        "dzervenu": {
+          "name": "Spanguolių uogienė",
+          "tagline": "Rūgštus charakteris, auksinė širdis.",
+          "description": "Tavyje yra pelkės uogos užsispyrimo: truputį rūgštumo, daug charakterio ir vitaminų visiems, kas šalia. Nebijai sakyti tiesos, ir būtent už tai tave myli. Beje, šios svetainės pavadinimas latviškai reiškia spanguolę.",
+          "traits": [
+            "Charakteris",
+            "Sąžiningumas",
+            "Užsispyrimas"
+          ]
+        },
+        "zemenu": {
+          "name": "Braškių uogienė",
+          "tagline": "Vasaros šypsena stiklainyje.",
+          "description": "Tave myli visi, ir tu tai žinai. Tu esi saldumas, džiaugsmas ir vasaros kvapas viename stiklainyje, o su tavimi net pilkiausia vasario diena tampa saulėta. Klasika, kuri niekada neatsibosta.",
+          "traits": [
+            "Džiaugsmas",
+            "Saldumas",
+            "Klasika"
+          ]
+        },
+        "upenu": {
+          "name": "Juodųjų serbentų uogienė",
+          "tagline": "Intensyvumas, gylis ir jėga.",
+          "description": "Tavyje yra intensyvumo, kurio neįmanoma ignoruoti. Kalbi tiesiai, dirbi visu pajėgumu ir visada eini iki galo. Kai kas sako, kad tavęs per daug, bet būtent tu esi tas vitaminas, kuris visus palaiko žiemą.",
+          "traits": [
+            "Intensyvumas",
+            "Jėga",
+            "Disciplina"
+          ]
+        },
+        "smiltserksku": {
+          "name": "Šaltalankių sirupas",
+          "tagline": "Šiaurės saulė kopose.",
+          "description": "Tu esi egzotika latviškoje sieloje. Tavyje yra oranžinio švytėjimo, aistros sveikam gyvenimui ir energijos, kurios užtenka visiems. Būtent tu visiems primeni apie vitaminus, ir visada paaiškėja, kad tiesa buvo tavo pusėje.",
+          "traits": [
+            "Energija",
+            "Sveikata",
+            "Unikalumas"
+          ]
+        },
+        "avenu": {
+          "name": "Aviečių uogienė",
+          "tagline": "Švelnumas, kuris gydo.",
+          "description": "Tavyje yra švelnumo ir romantikos, ir moki sušildyti vienu žvilgsniu. Tau patiki paslaptis, ir tu jas saugai. Kai kam nors bloga, tu esi kaip šaukštelis aviečių uogienės arbatoje: būtent tai, ko reikia.",
+          "traits": [
+            "Švelnumas",
+            "Romantika",
+            "Pasitikėjimas"
+          ]
+        },
+        "abolu": {
+          "name": "Obuolių uogienė su cinamonu",
+          "tagline": "Paprastumas, išmintis ir cinamono kvapas.",
+          "description": "Tavyje yra praktinės išminties ir rudens ramybės. Nesivaikai mados, nes žinai, kad paprasti dalykai yra geriausi. Visada viską turi su savimi, visada žinai, ką daryti, o šalia tavęs kvepia cinamonu.",
+          "traits": [
+            "Išmintis",
+            "Praktiškumas",
+            "Ramybė"
+          ]
+        }
+      }
+    }
+  }
+}

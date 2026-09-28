@@ -61,6 +61,7 @@ const is = {
   occasions: path.startsWith('/svetki'),
   fridge: path.startsWith('/ledusskapis'),
   tinder: path.startsWith('/tinderis'),
+  quizzes: path.startsWith('/kvizi'),
   favorites: path.startsWith('/izlase'),
 };
 
@@ -70,6 +71,7 @@ const nav = [
   { href: u('/svetki/'), label: t(lang, 'nav.occasions'), on: is.occasions },
   { href: u('/ledusskapis/'), label: t(lang, 'nav.fridge'), on: is.fridge },
   { href: u('/tinderis/'), label: t(lang, 'nav.tinder'), on: is.tinder },
+  { href: u('/kvizi/'), label: t(lang, 'nav.quizzes'), on: is.quizzes },
 ];
 ---
 
@@ -192,6 +194,7 @@ const nav = [
               <li><a href={u('/ledusskapis/')}>{t(lang, 'footer.fridge')}</a></li>
               <li><a href={u('/tinderis/')}>{t(lang, 'footer.tinder')}</a></li>
               <li><a href={u('/svetki/')}>{t(lang, 'footer.occasionsCal')}</a></li>
+              <li><a href={u('/kvizi/')}>{t(lang, 'footer.quizzes')}</a></li>
             </ul>
           </div>
           <div>

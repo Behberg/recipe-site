@@ -1,0 +1,825 @@
+{
+  "order": 3,
+  "emoji": "🍲",
+  "color": "#c8773a",
+  "results": {
+    "skabo-kapostu": {
+      "emoji": "🥬",
+      "color": "#8a8a2e",
+      "match": "tom-yum",
+      "recipes": [
+        "skabo-kapostu-zupa",
+        "sauteti-skabie-kaposti",
+        "skabeti-kaposti"
+      ]
+    },
+    "ramens": {
+      "emoji": "🍜",
+      "color": "#b8612a",
+      "match": "kirbju",
+      "recipes": [
+        "atrais-ramens",
+        "miso-zupa",
+        "vontonu-zupa"
+      ]
+    },
+    "auksta-zupa": {
+      "emoji": "🩷",
+      "color": "#d6527f",
+      "match": "vistas-zupa",
+      "recipes": [
+        "auksta-zupa",
+        "okroska",
+        "gaspaco"
+      ]
+    },
+    "kirbju": {
+      "emoji": "🎃",
+      "color": "#e07a1f",
+      "match": "ramens",
+      "recipes": [
+        "kirbju-kremzupa",
+        "burkanu-ingvera-kremzupa",
+        "kirbju-maize-ar-kaneli"
+      ]
+    },
+    "tom-yum": {
+      "emoji": "🌶️",
+      "color": "#d23b24",
+      "match": "skabo-kapostu",
+      "recipes": [
+        "tom-yum",
+        "tom-kha-gai",
+        "pad-thai"
+      ]
+    },
+    "vistas-zupa": {
+      "emoji": "🐔",
+      "color": "#c9a227",
+      "match": "auksta-zupa",
+      "recipes": [
+        "vistas-zupa-ar-nudelem",
+        "majas-vistas-buljons",
+        "klimpu-zupa"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🧘",
+          "scores": {
+            "kirbju": 2,
+            "skabo-kapostu": 1
+          }
+        },
+        {
+          "emoji": "🎮",
+          "scores": {
+            "ramens": 2,
+            "tom-yum": 1
+          }
+        },
+        {
+          "emoji": "🏃",
+          "scores": {
+            "auksta-zupa": 2,
+            "tom-yum": 1
+          }
+        },
+        {
+          "emoji": "📞",
+          "scores": {
+            "vistas-zupa": 2,
+            "kirbju": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "☀️",
+          "scores": {
+            "auksta-zupa": 2
+          }
+        },
+        {
+          "emoji": "🍂",
+          "scores": {
+            "kirbju": 2,
+            "ramens": 1
+          }
+        },
+        {
+          "emoji": "❄️",
+          "scores": {
+            "skabo-kapostu": 2,
+            "vistas-zupa": 1
+          }
+        },
+        {
+          "emoji": "🌸",
+          "scores": {
+            "vistas-zupa": 2,
+            "auksta-zupa": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🩹",
+          "scores": {
+            "vistas-zupa": 2,
+            "kirbju": 1
+          }
+        },
+        {
+          "emoji": "💡",
+          "scores": {
+            "tom-yum": 2,
+            "ramens": 1
+          }
+        },
+        {
+          "emoji": "🗿",
+          "scores": {
+            "skabo-kapostu": 2,
+            "tom-yum": 1
+          }
+        },
+        {
+          "emoji": "😎",
+          "scores": {
+            "auksta-zupa": 2,
+            "ramens": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🌄",
+          "scores": {
+            "skabo-kapostu": 2,
+            "vistas-zupa": 1
+          }
+        },
+        {
+          "emoji": "🌞",
+          "scores": {
+            "auksta-zupa": 2,
+            "tom-yum": 1
+          }
+        },
+        {
+          "emoji": "🌆",
+          "scores": {
+            "kirbju": 2,
+            "vistas-zupa": 1
+          }
+        },
+        {
+          "emoji": "🌙",
+          "scores": {
+            "ramens": 2,
+            "tom-yum": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🏯",
+          "scores": {
+            "ramens": 2
+          }
+        },
+        {
+          "emoji": "🏝️",
+          "scores": {
+            "tom-yum": 2,
+            "auksta-zupa": 1
+          }
+        },
+        {
+          "emoji": "🏡",
+          "scores": {
+            "skabo-kapostu": 2,
+            "vistas-zupa": 1
+          }
+        },
+        {
+          "emoji": "🍁",
+          "scores": {
+            "kirbju": 2,
+            "skabo-kapostu": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🔥",
+          "scores": {
+            "tom-yum": 2,
+            "auksta-zupa": 1
+          }
+        },
+        {
+          "emoji": "🧊",
+          "scores": {
+            "auksta-zupa": 2,
+            "ramens": 1
+          }
+        },
+        {
+          "emoji": "🤝",
+          "scores": {
+            "vistas-zupa": 2,
+            "kirbju": 1
+          }
+        },
+        {
+          "emoji": "🪓",
+          "scores": {
+            "skabo-kapostu": 2,
+            "tom-yum": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🥢",
+          "scores": {
+            "ramens": 2,
+            "tom-yum": 1
+          }
+        },
+        {
+          "emoji": "🧺",
+          "scores": {
+            "auksta-zupa": 2,
+            "vistas-zupa": 1
+          }
+        },
+        {
+          "emoji": "🕯️",
+          "scores": {
+            "kirbju": 2,
+            "ramens": 1
+          }
+        },
+        {
+          "emoji": "🌶️",
+          "scores": {
+            "tom-yum": 2,
+            "ramens": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāda zupa esi tu?",
+      "hook": "Sildoša, asa vai rozā? Atbildi godīgi, zupa visu redz.",
+      "intro": "Zupa ir ēdiens ar raksturu. Viena tevi sasilda pēc garas dienas, cita pamodina ar asumu, vēl cita atsvaidzina karstā jūlijā. Atbildi uz septiņiem jautājumiem, un mēs pateiksim, kura zupa ir tavs dvēseles katls, un iedosim recepti, lai to uzvārītu vēl šonedēļ.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Kā tu atpūties pēc garas dienas?",
+          "a": [
+            "Pilnā klusumā",
+            "Spēles vai seriāls līdz naktij",
+            "Treniņš vai skrējiens",
+            "Piezvanu kādam tuvam"
+          ]
+        },
+        {
+          "q": "Tavs gadalaiks?",
+          "a": [
+            "Vasara",
+            "Rudens",
+            "Ziema",
+            "Pavasaris"
+          ]
+        },
+        {
+          "q": "Ko tu ienes draugu kompānijā?",
+          "a": [
+            "Rūpes par visiem",
+            "Trakas idejas",
+            "Patiesību bez pušķiem",
+            "Stilu un vieglumu"
+          ]
+        },
+        {
+          "q": "Kad tev ir visvairāk enerģijas?",
+          "a": [
+            "Agri no rīta",
+            "Dienas vidū",
+            "Vakarā",
+            "Naktī"
+          ]
+        },
+        {
+          "q": "Kur tu labprāt pazustu uz mēnesi?",
+          "a": [
+            "Tokijas ielās",
+            "Taizemes pludmalē",
+            "Vecmāmiņas lauku mājā",
+            "Kanādas mežos"
+          ]
+        },
+        {
+          "q": "Kā tu risini strīdus?",
+          "a": [
+            "Uzsprāgstu, bet ātri atdziestu",
+            "Saglabāju vēsu prātu",
+            "Meklēju kompromisu",
+            "Pasaku taisni, kā ir"
+          ]
+        },
+        {
+          "q": "Ideālas sestdienas vakariņas?",
+          "a": [
+            "Līdzņemamais ēdiens ar irbulīšiem",
+            "Pikniks parkā",
+            "Sveces, sega un kaut kas silts",
+            "Kaut kas pavisam jauns un ass"
+          ]
+        }
+      ],
+      "results": {
+        "skabo-kapostu": {
+          "name": "Skābo kāpostu zupa",
+          "tagline": "Godīgums līdz pēdējai karotei.",
+          "description": "Tu saki patiesību, pat ja tā ir mazliet skāba. Tev ir spēcīgas saknes, liela izturība un spēja izārstēt gandrīz visu, sākot ar saaukstēšanos un beidzot ar salauztu sirdi. Kas tevi saprot, tas tevi mīl uz mūžu.",
+          "traits": [
+            "Godīgums",
+            "Saknes",
+            "Dziedinošs spēks"
+          ]
+        },
+        "ramens": {
+          "name": "Rāmens",
+          "tagline": "Pusnakts dziļums bļodā.",
+          "description": "Tu dzīvo pilsētas ritmā, vislabāk domā naktī un zini labākās vietas, par kurām citi vēl nav dzirdējuši. Tev ir daudz slāņu, un katrs nākamais ir interesantāks par iepriekšējo. Garlaicība tev ir svešvārds.",
+          "traits": [
+            "Dziļums",
+            "Pilsētas gars",
+            "Nakts enerģija"
+          ]
+        },
+        "auksta-zupa": {
+          "name": "Aukstā zupa",
+          "tagline": "Spilgtums, vēsums un ne mirkli garlaicības.",
+          "description": "Tu esi vasaras enerģija cilvēka izskatā. Tev piestāv spilgtas krāsas, tu acumirklī atsvaidzini jebkuru kompāniju un saglabā vēsu prātu, kad citiem jau vārās. Tevi nevar sajaukt ne ar vienu citu.",
+          "traits": [
+            "Svaigums",
+            "Vēss prāts",
+            "Spilgtums"
+          ]
+        },
+        "kirbju": {
+          "name": "Ķirbju krēmzupa",
+          "tagline": "Samta maigums un rudens siltums.",
+          "description": "Tevī ir samta maigums un rudens miers. Tu radi mājīgumu, kur vien ej: sveces, sega, laba grāmata un saruna, kas ievelkas līdz pusnaktij. Pie tevis cilvēki atpūšas.",
+          "traits": [
+            "Maigums",
+            "Mājīgums",
+            "Miers"
+          ]
+        },
+        "tom-yum": {
+          "name": "Tom yum",
+          "tagline": "Asums, kaislība un nulle baiļu.",
+          "description": "Tu dzīvē meklē asumu un vienmēr izvēlies vistrakāko ēdienu ēdienkartē. Tevī ir kaislība, drosme un temperaments, kas iedegas acumirklī. Ar tevi ir aizraujoši, un neviens vakars nebeidzas tā, kā bija plānots.",
+          "traits": [
+            "Kaislība",
+            "Drosme",
+            "Temperaments"
+          ]
+        },
+        "vistas-zupa": {
+          "name": "Vistas zupa ar nūdelēm",
+          "tagline": "Tu dziedē ar rūpēm.",
+          "description": "Tev zvana, kad ir slikti, un tu vienmēr atbildi. Tu atceries, kuram rīt ir svarīga diena, un proti sasildīt ar vienu vārdu. Tavas rūpes ir labākās zāles, ko pasaule ir izgudrojusi.",
+          "traits": [
+            "Rūpes",
+            "Uzticība",
+            "Siltums"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which soup are you?",
+      "hook": "Warming, spicy or pink? Answer honestly, the soup can tell.",
+      "intro": "Soup is a dish with character. One warms you up after a long day, another wakes you up with heat, another cools you down on a hot July afternoon. Answer seven questions and we'll tell you which soup warms your soul, with a recipe to cook it this week.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "How do you unwind after a long day?",
+          "a": [
+            "In complete silence",
+            "Games or a series until late",
+            "A workout or a run",
+            "I call someone close"
+          ]
+        },
+        {
+          "q": "Your season?",
+          "a": [
+            "Summer",
+            "Autumn",
+            "Winter",
+            "Spring"
+          ]
+        },
+        {
+          "q": "What do you bring to your friend group?",
+          "a": [
+            "Care for everyone",
+            "Crazy ideas",
+            "The plain truth",
+            "Style and lightness"
+          ]
+        },
+        {
+          "q": "When do you have the most energy?",
+          "a": [
+            "Early morning",
+            "Midday",
+            "Evening",
+            "Night"
+          ]
+        },
+        {
+          "q": "Where would you disappear for a month?",
+          "a": [
+            "The streets of Tokyo",
+            "A beach in Thailand",
+            "Grandma's country house",
+            "The forests of Canada"
+          ]
+        },
+        {
+          "q": "How do you handle an argument?",
+          "a": [
+            "I blow up but cool down fast",
+            "I keep a cool head",
+            "I look for a compromise",
+            "I say it straight"
+          ]
+        },
+        {
+          "q": "Ideal Saturday dinner?",
+          "a": [
+            "Takeaway with chopsticks",
+            "A picnic in the park",
+            "Candles, a blanket and something warm",
+            "Something totally new and spicy"
+          ]
+        }
+      ],
+      "results": {
+        "skabo-kapostu": {
+          "name": "Sauerkraut soup",
+          "tagline": "Honest to the last spoonful.",
+          "description": "You tell the truth even when it's a little sour. You have strong roots, great stamina and the power to cure almost anything, from a cold to a broken heart. Whoever understands you loves you for life.",
+          "traits": [
+            "Honesty",
+            "Roots",
+            "Healing power"
+          ]
+        },
+        "ramens": {
+          "name": "Ramen",
+          "tagline": "Midnight depth in a bowl.",
+          "description": "You live at city pace, think best at night and know the best places before anyone else has heard of them. You have many layers, and each one is more interesting than the last. Boredom is a foreign word to you.",
+          "traits": [
+            "Depth",
+            "City spirit",
+            "Night energy"
+          ]
+        },
+        "auksta-zupa": {
+          "name": "Pink cold soup",
+          "tagline": "Bright, cool and never boring.",
+          "description": "You are summer energy in human form. Bright colours suit you, you refresh any company in seconds and you keep a cool head when everyone else is boiling. Nobody could mistake you for anyone else.",
+          "traits": [
+            "Freshness",
+            "Cool head",
+            "Brightness"
+          ]
+        },
+        "kirbju": {
+          "name": "Pumpkin soup",
+          "tagline": "Velvet softness and autumn warmth.",
+          "description": "You carry a velvety gentleness and an autumn calm. You create cosiness wherever you go: candles, a blanket, a good book and a conversation that lasts until midnight. People come to you to rest.",
+          "traits": [
+            "Gentleness",
+            "Cosiness",
+            "Calm"
+          ]
+        },
+        "tom-yum": {
+          "name": "Tom yum",
+          "tagline": "Heat, passion and zero fear.",
+          "description": "You look for spice in life and always order the wildest thing on the menu. You have passion, courage and a temper that lights up fast. Life with you is thrilling, and no evening ends the way it was planned.",
+          "traits": [
+            "Passion",
+            "Courage",
+            "Temper"
+          ]
+        },
+        "vistas-zupa": {
+          "name": "Chicken noodle soup",
+          "tagline": "You heal with care.",
+          "description": "People call you when things are bad, and you always pick up. You remember whose big day is tomorrow and know how to warm someone up with a single word. Your care is the best medicine the world has invented.",
+          "traits": [
+            "Care",
+            "Loyalty",
+            "Warmth"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какой ты суп?",
+      "hook": "Согревающий, острый или розовый? Отвечай честно, суп всё видит.",
+      "intro": "Суп — это блюдо с характером. Один согревает после долгого дня, другой будит остротой, третий освежает в жаркий июльский день. Ответь на семь вопросов, и мы скажем, какой суп — твоя родная кастрюля, и дадим рецепт, чтобы сварить его уже на этой неделе.",
+      "resultLine": "Я — {name}",
+      "questions": [
+        {
+          "q": "Как ты отдыхаешь после долгого дня?",
+          "a": [
+            "В полной тишине",
+            "Игры или сериал до ночи",
+            "Тренировка или пробежка",
+            "Звоню кому-то близкому"
+          ]
+        },
+        {
+          "q": "Твоё время года?",
+          "a": [
+            "Лето",
+            "Осень",
+            "Зима",
+            "Весна"
+          ]
+        },
+        {
+          "q": "Что ты приносишь в компанию друзей?",
+          "a": [
+            "Заботу обо всех",
+            "Безумные идеи",
+            "Правду без прикрас",
+            "Стиль и лёгкость"
+          ]
+        },
+        {
+          "q": "Когда у тебя больше всего энергии?",
+          "a": [
+            "Рано утром",
+            "Днём",
+            "Вечером",
+            "Ночью"
+          ]
+        },
+        {
+          "q": "Куда бы сбежать на месяц?",
+          "a": [
+            "На улицы Токио",
+            "На пляж в Таиланде",
+            "В бабушкин деревенский дом",
+            "В леса Канады"
+          ]
+        },
+        {
+          "q": "Как ты решаешь споры?",
+          "a": [
+            "Вспыхиваю, но быстро остываю",
+            "Сохраняю холодную голову",
+            "Ищу компромисс",
+            "Говорю прямо, как есть"
+          ]
+        },
+        {
+          "q": "Идеальный субботний ужин?",
+          "a": [
+            "Еда навынос с палочками",
+            "Пикник в парке",
+            "Свечи, плед и что-то тёплое",
+            "Что-то совсем новое и острое"
+          ]
+        }
+      ],
+      "results": {
+        "skabo-kapostu": {
+          "name": "Щи из квашеной капусты",
+          "tagline": "Честность до последней ложки.",
+          "description": "Ты говоришь правду, даже если она немного кисловата. У тебя крепкие корни, большая выносливость и способность вылечить почти всё — от простуды до разбитого сердца. Кто тебя понимает, тот любит навсегда.",
+          "traits": [
+            "Честность",
+            "Корни",
+            "Целительная сила"
+          ]
+        },
+        "ramens": {
+          "name": "Рамен",
+          "tagline": "Полуночная глубина в миске.",
+          "description": "Ты живёшь в ритме города, лучше всего думаешь ночью и знаешь лучшие места раньше, чем о них услышат другие. В тебе много слоёв, и каждый следующий интереснее предыдущего. Скука тебе незнакома.",
+          "traits": [
+            "Глубина",
+            "Дух города",
+            "Ночная энергия"
+          ]
+        },
+        "auksta-zupa": {
+          "name": "Холодный розовый суп",
+          "tagline": "Яркость, прохлада и ноль скуки.",
+          "description": "Ты — летняя энергия в человеческом облике. Тебе идут яркие цвета, ты мгновенно освежаешь любую компанию и сохраняешь холодную голову, когда у других уже всё кипит. Тебя ни с кем не спутаешь.",
+          "traits": [
+            "Свежесть",
+            "Холодная голова",
+            "Яркость"
+          ]
+        },
+        "kirbju": {
+          "name": "Тыквенный крем-суп",
+          "tagline": "Бархатная мягкость и осеннее тепло.",
+          "description": "В тебе есть бархатная мягкость и осенний покой. Ты создаёшь уют повсюду: свечи, плед, хорошая книга и разговор до полуночи. Рядом с тобой люди отдыхают.",
+          "traits": [
+            "Мягкость",
+            "Уют",
+            "Покой"
+          ]
+        },
+        "tom-yum": {
+          "name": "Том ям",
+          "tagline": "Острота, страсть и ноль страха.",
+          "description": "Ты ищешь в жизни остроту и всегда заказываешь самое безумное блюдо в меню. В тебе есть страсть, смелость и темперамент, который вспыхивает мгновенно. Жизнь с тобой — приключение, и ни один вечер не заканчивается так, как планировалось.",
+          "traits": [
+            "Страсть",
+            "Смелость",
+            "Темперамент"
+          ]
+        },
+        "vistas-zupa": {
+          "name": "Куриный суп с лапшой",
+          "tagline": "Ты лечишь заботой.",
+          "description": "Тебе звонят, когда плохо, и ты всегда берёшь трубку. Ты помнишь, у кого завтра важный день, и умеешь согреть одним словом. Твоя забота — лучшее лекарство, которое придумал мир.",
+          "traits": [
+            "Забота",
+            "Верность",
+            "Тепло"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Kokia tu sriuba?",
+      "hook": "Šildanti, aštri ar rožinė? Atsakyk sąžiningai, sriuba viską mato.",
+      "intro": "Sriuba yra patiekalas su charakteriu. Viena sušildo po ilgos dienos, kita pažadina aštrumu, dar kita atgaivina karštą liepos dieną. Atsakyk į septynis klausimus, ir mes pasakysime, kuri sriuba yra tavo sielos puodas, bei pasiūlysime receptą, kad ją išsivirtum dar šią savaitę.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Kaip ilsiesi po ilgos dienos?",
+          "a": [
+            "Visiškoje tyloje",
+            "Žaidimai ar serialas iki nakties",
+            "Treniruotė ar bėgimas",
+            "Paskambinu kam nors artimam"
+          ]
+        },
+        {
+          "q": "Tavo metų laikas?",
+          "a": [
+            "Vasara",
+            "Ruduo",
+            "Žiema",
+            "Pavasaris"
+          ]
+        },
+        {
+          "q": "Ką atneši į draugų kompaniją?",
+          "a": [
+            "Rūpestį visais",
+            "Beprotiškas idėjas",
+            "Tiesą be pagražinimų",
+            "Stilių ir lengvumą"
+          ]
+        },
+        {
+          "q": "Kada turi daugiausia energijos?",
+          "a": [
+            "Anksti ryte",
+            "Dienos viduryje",
+            "Vakare",
+            "Naktį"
+          ]
+        },
+        {
+          "q": "Kur norėtum dingti mėnesiui?",
+          "a": [
+            "Į Tokijo gatves",
+            "Į Tailando paplūdimį",
+            "Į močiutės kaimo namus",
+            "Į Kanados miškus"
+          ]
+        },
+        {
+          "q": "Kaip sprendi ginčus?",
+          "a": [
+            "Užsiplieskiu, bet greitai atvėstu",
+            "Išlaikau šaltą protą",
+            "Ieškau kompromiso",
+            "Sakau tiesiai, kaip yra"
+          ]
+        },
+        {
+          "q": "Tobula šeštadienio vakarienė?",
+          "a": [
+            "Išsinešamas maistas su lazdelėmis",
+            "Piknikas parke",
+            "Žvakės, pledas ir kas nors šilto",
+            "Kas nors visiškai nauja ir aštru"
+          ]
+        }
+      ],
+      "results": {
+        "skabo-kapostu": {
+          "name": "Raugintų kopūstų sriuba",
+          "tagline": "Sąžiningumas iki paskutinio šaukšto.",
+          "description": "Sakai tiesą, net jei ji truputį rūgštoka. Turi stiprias šaknis, didelę ištvermę ir galią išgydyti beveik viską, nuo peršalimo iki sudaužytos širdies. Kas tave supranta, tas myli visam gyvenimui.",
+          "traits": [
+            "Sąžiningumas",
+            "Šaknys",
+            "Gydanti galia"
+          ]
+        },
+        "ramens": {
+          "name": "Ramenas",
+          "tagline": "Vidurnakčio gylis dubenyje.",
+          "description": "Gyveni miesto ritmu, geriausiai mąstai naktį ir žinai geriausias vietas anksčiau, nei apie jas išgirsta kiti. Turi daug sluoksnių, ir kiekvienas kitas įdomesnis už ankstesnį. Nuobodulys tau svetimas.",
+          "traits": [
+            "Gylis",
+            "Miesto dvasia",
+            "Nakties energija"
+          ]
+        },
+        "auksta-zupa": {
+          "name": "Rožinė šaltsriubė",
+          "tagline": "Ryškumas, vėsa ir jokio nuobodulio.",
+          "description": "Tu esi vasaros energija žmogaus pavidalu. Tau tinka ryškios spalvos, akimirksniu atgaivini bet kokią kompaniją ir išlaikai šaltą protą, kai kitiems jau verda. Tavęs nesupainiosi su niekuo kitu.",
+          "traits": [
+            "Gaivumas",
+            "Šaltas protas",
+            "Ryškumas"
+          ]
+        },
+        "kirbju": {
+          "name": "Moliūgų trinta sriuba",
+          "tagline": "Aksominis švelnumas ir rudens šiluma.",
+          "description": "Tavyje yra aksominio švelnumo ir rudens ramybės. Kuri jaukumą, kad ir kur eitum: žvakės, pledas, gera knyga ir pokalbis iki vidurnakčio. Šalia tavęs žmonės ilsisi.",
+          "traits": [
+            "Švelnumas",
+            "Jaukumas",
+            "Ramybė"
+          ]
+        },
+        "tom-yum": {
+          "name": "Tom yum",
+          "tagline": "Aštrumas, aistra ir jokios baimės.",
+          "description": "Gyvenime ieškai aštrumo ir visada užsisakai beprotiškiausią meniu patiekalą. Tavyje yra aistros, drąsos ir temperamento, kuris įsiplieskia akimirksniu. Su tavimi įdomu, ir nė vienas vakaras nesibaigia taip, kaip buvo suplanuota.",
+          "traits": [
+            "Aistra",
+            "Drąsa",
+            "Temperamentas"
+          ]
+        },
+        "vistas-zupa": {
+          "name": "Vištienos sriuba su makaronais",
+          "tagline": "Tu gydai rūpesčiu.",
+          "description": "Tau skambina, kai būna blogai, ir tu visada atsiliepi. Prisimeni, kam rytoj svarbi diena, ir moki sušildyti vienu žodžiu. Tavo rūpestis yra geriausi vaistai, kokius sugalvojo pasaulis.",
+          "traits": [
+            "Rūpestis",
+            "Ištikimybė",
+            "Šiluma"
+          ]
+        }
+      }
+    }
+  }
+}

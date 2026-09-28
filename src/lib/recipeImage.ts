@@ -18,7 +18,7 @@ function mix(c: string, base: string, amount: number) {
 }
 
 // The logo mark from LogoMark.astro, used as a small brand stamp.
-const LOGO = `<path d="M33 17c-3 2-5 5-6 9M33 17c3 2 6 4 8 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><path d="M33 17c3-7 10-10 18-9-2 7-9 11-18 9z" fill="#fff"/><path d="M33 17c-3-6-9-8-15-7 2 6 8 9 15 7z" fill="#fff" opacity=".85"/><ellipse cx="42" cy="34" rx="9.5" ry="10.5" fill="#fff" opacity=".9"/><ellipse cx="26" cy="39" rx="12" ry="13" fill="#fff" stroke="#9e3039" stroke-width="2.5"/>`;
+export const LOGO = `<path d="M33 17c-3 2-5 5-6 9M33 17c3 2 6 4 8 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><path d="M33 17c3-7 10-10 18-9-2 7-9 11-18 9z" fill="#fff"/><path d="M33 17c-3-6-9-8-15-7 2 6 8 9 15 7z" fill="#fff" opacity=".85"/><ellipse cx="42" cy="34" rx="9.5" ry="10.5" fill="#fff" opacity=".9"/><ellipse cx="26" cy="39" rx="12" ry="13" fill="#fff" stroke="#9e3039" stroke-width="2.5"/>`;
 
 interface Input {
   icon?: string;
