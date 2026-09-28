@@ -3,7 +3,7 @@ import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import LogoMark from '../components/LogoMark.astro';
 import AdsLoader from '../components/AdsLoader.astro';
-import { SITE, SEARCH_VERIFICATION } from '../site.config';
+import { SITE, SEARCH_VERIFICATION, ADS, adsEnabled } from '../site.config';
 import { getCuisines, getCategories, getOccasions, getRecipes, cuisineUrl, categoryUrl, occasionUrl } from '../lib/recipes';
 import { LANGS, LANG_META, langFromPath, stripLang, href, t, clientDict } from '../i18n';
 
@@ -120,7 +120,7 @@ const nav = [
     <link rel="stylesheet" href={FONTS} media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href={FONTS} /></noscript>
 
-    <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361542084013013" crossorigin="anonymous"></script>
+    {adsEnabled() && <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS.client}`} crossorigin="anonymous"></script>}
 
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>

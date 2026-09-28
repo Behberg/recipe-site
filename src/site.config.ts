@@ -20,7 +20,7 @@ export const SITE = {
  *   3. atjauno public/ads.txt ar savu publisher ID.
  */
 export const ADS = {
-  client: '', // 'ca-pub-XXXXXXXXXXXXXXXX'
+  client: 'ca-pub-9361542084013013',
   slots: {
     inFeed: '', // recepšu sarakstos starp kartītēm un sākumlapā
     recipeTop: '', // receptē, pēc ievada, pirms sastāvdaļām
