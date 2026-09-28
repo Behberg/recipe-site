@@ -1,2 +1,1 @@
-# Aizstāj pub-0000000000000000 ar savu AdSense publisher ID, kad konts ir apstiprināts.
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-9361542084013013, DIRECT, f08c47fec0942fa0
