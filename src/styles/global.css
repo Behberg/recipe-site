@@ -1130,6 +1130,22 @@ p {
   font-size: 0.8rem;
   color: var(--ink-3);
 }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+.footer-links button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.footer-links button[hidden] {
+  display: none;
+}
 
 /* ---------- Toast ---------- */
 .toast {

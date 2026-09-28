@@ -24,12 +24,13 @@ const lang = langFromPath(Astro.url.pathname);
       {t(lang, 'privacy.p3b')}
       <a href="https://adssettings.google.com" rel="noopener" target="_blank">{t(lang, 'privacy.adsSettings')}</a>.
     </p>
+    <p>{t(lang, 'privacy.p2b')}</p>
 
     <h2>{t(lang, 'privacy.h3')}</h2>
     <p>{t(lang, 'privacy.p4')}</p>
 
     <h2>{t(lang, 'privacy.h4')}</h2>
-    <p>{t(lang, 'privacy.p5')}</p>
+    <p>{t(lang, 'privacy.p5')} <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
   </article>
 </Base>
 

@@ -8,6 +8,7 @@ export const SITE = {
     'Latviešu receptes un gardākie ēdieni no visas pasaules: zupas, pamatēdieni, saldie ēdieni, ievārījumi un konservēšana. Vienkārši, skaisti, ērti telefonā.',
   locale: 'lv_LV',
   lang: 'lv',
+  email: 'motivateyoubusiness@gmail.com',
 };
 
 /**

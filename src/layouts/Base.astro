@@ -216,8 +216,32 @@ const nav = [
         </div>
         <div class="footer-bottom">
           <span>© {new Date().getFullYear()} {SITE.name}. {t(lang, 'footer.madeWith')}</span>
-          <a href={u('/privatums/')}>{t(lang, 'footer.privacy')}</a>
+          <span class="footer-links">
+            <a href={u('/kontakti/')}>{t(lang, 'footer.contact')}</a>
+            <a href={u('/privatums/')}>{t(lang, 'footer.privacy')}</a>
+            {adsEnabled() && <button type="button" id="cookie-settings" hidden>{t(lang, 'footer.cookies')}</button>}
+          </span>
         </div>
+        {
+          adsEnabled() && (
+            <script is:inline>
+              // Google's consent banner (AdSense > Privacy & messaging) loads with adsbygoogle.js.
+              // The button appears once it is ready and reopens it, so visitors can change their choice.
+              (function () {
+                var btn = document.getElementById('cookie-settings');
+                window.googlefc = window.googlefc || {};
+                googlefc.callbackQueue = googlefc.callbackQueue || [];
+                googlefc.callbackQueue.push(function () {
+                  if (typeof googlefc.showRevocationMessage !== 'function') return;
+                  btn.hidden = false;
+                  btn.addEventListener('click', function () {
+                    googlefc.showRevocationMessage();
+                  });
+                });
+              })();
+            </script>
+          )
+        }
       </div>
     </footer>
 

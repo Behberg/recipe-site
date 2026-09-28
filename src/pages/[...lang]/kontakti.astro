@@ -1,0 +1,76 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../site.config';
+import { langFromPath, langPaths, t } from '../../i18n';
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+---
+
+<Base title={t(lang, 'contact.title')} description={`${SITE.name}: ${t(lang, 'contact.intro')}`}>
+  <article class="container prose">
+    <span class="eyebrow">{t(lang, 'contact.eyebrow')}</span>
+    <h1>{t(lang, 'contact.title')}</h1>
+    <p>{t(lang, 'contact.intro')}</p>
+
+    <p class="email">
+      <span>{t(lang, 'contact.emailLabel')}</span>
+      <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+    </p>
+
+    <h2>{t(lang, 'contact.h1')}</h2>
+    <ul>
+      <li>{t(lang, 'contact.t1')}</li>
+      <li>{t(lang, 'contact.t2')}</li>
+      <li>{t(lang, 'contact.t3')}</li>
+      <li>{t(lang, 'contact.t4')}</li>
+    </ul>
+    <p>{t(lang, 'contact.reply')}</p>
+  </article>
+</Base>
+
+<style>
+  .prose {
+    max-width: 760px;
+    padding-top: 28px;
+  }
+  .prose h1 {
+    font-size: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+    margin: 8px 0 20px;
+  }
+  .prose h2 {
+    font-size: 1.4rem;
+    margin: 28px 0 8px;
+  }
+  .prose p,
+  .prose li {
+    color: var(--ink-2);
+    margin-top: 10px;
+  }
+  .prose ul {
+    padding-left: 1.2em;
+  }
+  .prose a {
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 20px;
+    padding: 16px 20px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .email span {
+    font-size: 0.8rem;
+    color: var(--ink-3);
+  }
+  .email a {
+    font-size: 1.15rem;
+    overflow-wrap: anywhere;
+  }
+</style>
