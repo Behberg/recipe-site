@@ -3,7 +3,7 @@ title: "Mājas vafeles ar ievārījumu un putukrējumu"
 description: "Kraukšķīgas no ārpuses, mīkstas iekšpusē: vienkāršas mājas vafeles vafeļu pannā. Svētdienas brokastis ar ievārījumu un putukrējumu."
 category: brokastis
 image: "/images/recipes/maja-vafeles.jpg"
-imageAuthor: "Parkerman &amp; Christie from San Diego, USA"
+imageAuthor: "Parkerman & Christie from San Diego, USA"
 imageLicense: "CC BY 2.0"
 imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
 imageSource: "https://commons.wikimedia.org/wiki/File:Waffles_with_Strawberries.jpg"

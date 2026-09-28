@@ -1,0 +1,388 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { SITE } from '../../site.config';
+import { absolute, breadcrumbLd } from '../../lib/seo';
+import { categoryUrl } from '../../lib/recipes';
+import { href, langFromPath, langPaths, type Lang } from '../../i18n';
+
+// Step by step guide to sterilising jars and lids, linked from every preserving recipe
+// (see the note above the steps in recepte/[slug].astro).
+export const getStaticPaths = langPaths;
+const lang = langFromPath(Astro.url.pathname);
+
+interface Section {
+  h: string;
+  intro?: string;
+  steps: string[];
+}
+interface Guide {
+  title: string;
+  seoTitle: string;
+  description: string;
+  eyebrow: string;
+  lead: string;
+  sections: Section[];
+  safetyTitle: string;
+  safety: string[];
+  back: string;
+}
+
+const GUIDES: Record<Lang, Guide> = {
+  lv: {
+    title: 'Kā sterilizēt burkas un vākus',
+    seoTitle: 'Kā sterilizēt burkas: cepeškrāsnī, vārot un tvaikā',
+    description:
+      'Vienkārša pamācība, kā sagatavot un sterilizēt burkas un vākus ievārījumiem un konserviem: cepeškrāsnī, verdošā ūdenī vai tvaikā, lai krājumi nesabojātos.',
+    eyebrow: 'Konservēšanas pamati',
+    lead: 'Tīras, sterilizētas burkas ir svarīgākais, lai ievārījumi, marinējumi un salāti ziemai stāvētu ilgi un nesabojātos. Sterilizācija aizņem apmēram pusstundu, un to var izdarīt, kamēr vārās ievārījums.',
+    sections: [
+      {
+        h: '1. Pārbaudi un nomazgā burkas',
+        steps: [
+          'Pārbaudi katru burku: tai nedrīkst būt plaisu vai atšķēlumu uz malas, citādi vāks cieši nenoslēgsies.',
+          'Pārbaudi vākus: tiem jābūt taisniem, bez rūsas, ar veselu gumijas blīvi. Skrūvējamiem vākiem labāk ņemt jaunus.',
+          'Nomazgā burkas un vākus karstā ūdenī ar trauku mazgājamo līdzekli vai tējkaroti dzeramās sodas. Labi noskalo.',
+          'Neslauki ar dvieli: burkas uzreiz sterilizē mitras.',
+        ],
+      },
+      {
+        h: '2. Sterilizē burkas: izvēlies vienu veidu',
+        intro: 'Visi trīs veidi der. Cepeškrāsnī ērtāk, ja burku ir daudz; tvaikā ir vecais, pārbaudītais mājas veids.',
+        steps: [
+          'Cepeškrāsnī: saliec mitras burkas uz restes aukstā cepeškrāsnī, ar atveri uz augšu. Uzkarsē līdz 120 °C un turi 15 līdz 20 minūtes. Izslēdz un atstāj burkas krāsnī līdz pildīšanai.',
+          'Verdošā ūdenī: lielā katla dibenā ieliec dvieli vai resti, saliec burkas un pārlej ar ūdeni, lai tās ir pilnībā apsegtas. Uzvāri un vāri 10 minūtes. Turi karstā ūdenī līdz pildīšanai.',
+          'Tvaikā: uzliec burku ar atveri uz leju virs katla ar verdošu ūdeni (uz sieta vai speciāla riņķa) un turi 10 līdz 15 minūtes, līdz pa burkas iekšpusi tek lieli ūdens pilieni.',
+        ],
+      },
+      {
+        h: '3. Sterilizē vākus un piederumus',
+        steps: [
+          'Skrūvējamos vākus vāri mazā katliņā 5 minūtes un atstāj karstajā ūdenī līdz lietošanai.',
+          'Vākus ar gumijas blīvēm un gumijas gredzenus nekarsē cepeškrāsnī: tikai applaucē vai vāri dažas minūtes.',
+          'Applaucē ar verdošu ūdeni arī smeļamo kausu, piltuvi un karoti, ar ko pildīsi burkas.',
+          'Burkas un vākus ņem ar tīrām knaiblēm vai aiz ārpuses, neaizskarot iekšpusi.',
+        ],
+      },
+      {
+        h: '4. Piepildi un noslēdz',
+        steps: [
+          'Karstu ievārījumu vai konservu lej karstās burkās: aukstā burkā karsts šķidrums var to saplēst.',
+          'Atstāj apmēram 1 cm brīvas vietas līdz malai.',
+          'Burkas malu noslauki ar tīru, verdošā ūdenī samērcētu salveti un uzreiz cieši aizskrūvē vāku.',
+          'Tālāk rīkojies, kā norādīts receptē: apgriez burkas otrādi vai pasterizē tās ūdens peldē.',
+        ],
+      },
+      {
+        h: '5. Pārbaudi, vai burka noslēgusies',
+        steps: [
+          'Kad burkas pilnībā atdzisušas, piespied vāka vidu. Tam jābūt nedaudz ieliektam, un tas nedrīkst klikšķēt.',
+          'Ja vāks klikšķ, burka nav noslēgusies: glabā to ledusskapī un apēd dažu nedēļu laikā.',
+          'Uzraksti uz burkas saturu un datumu un glabā vēsā, tumšā vietā.',
+        ],
+      },
+    ],
+    safetyTitle: 'Drošībai',
+    safety: [
+      'Ja vāks ir izliecies, burkā ir burbulīši, pelējums vai dīvaina smarža, saturu neēd un pat nenogaršo.',
+      'Dārzeņiem, sēnēm un gaļai ar mazu skābumu īpaši svarīgi ievērot receptes pasterizēšanas laiku.',
+    ],
+    back: 'Visas ievārījumu un konservu receptes',
+  },
+  en: {
+    title: 'How to sterilise jars and lids',
+    seoTitle: 'How to sterilise jars: in the oven, boiling water or steam',
+    description:
+      'A simple guide to preparing and sterilising jars and lids for jams and preserves: in the oven, in boiling water or over steam, so your preserves keep without spoiling.',
+    eyebrow: 'Preserving basics',
+    lead: 'Clean, sterilised jars are the most important thing for jams, pickles and winter salads to keep well without spoiling. Sterilising takes about half an hour, and you can do it while the jam is cooking.',
+    sections: [
+      {
+        h: '1. Check and wash the jars',
+        steps: [
+          'Check every jar: there must be no cracks or chips on the rim, otherwise the lid will not seal tightly.',
+          'Check the lids: they must be flat, rust free and have an intact rubber seal. For screw lids, new ones are best.',
+          'Wash the jars and lids in hot water with washing up liquid or a teaspoon of bicarbonate of soda. Rinse well.',
+          'Do not dry them with a tea towel: the jars go into sterilising while still wet.',
+        ],
+      },
+      {
+        h: '2. Sterilise the jars: choose one method',
+        intro: 'All three methods work. The oven is easiest for a lot of jars; steam is the old, trusted home method.',
+        steps: [
+          'In the oven: stand the wet jars on a rack in a cold oven, open side up. Heat to 120 °C and hold for 15 to 20 minutes. Switch off and leave the jars in the oven until you fill them.',
+          'In boiling water: put a cloth or rack in the bottom of a large pot, stand the jars in it and cover them completely with water. Bring to the boil and boil for 10 minutes. Keep them in the hot water until you fill them.',
+          'Over steam: set a jar upside down over a pot of boiling water (on a sieve or a special ring) and hold for 10 to 15 minutes, until large drops of water run down the inside.',
+        ],
+      },
+      {
+        h: '3. Sterilise the lids and tools',
+        steps: [
+          'Boil screw lids in a small pan for 5 minutes and leave them in the hot water until needed.',
+          'Do not heat lids with rubber seals or rubber rings in the oven: just scald them or boil for a few minutes.',
+          'Also scald the ladle, funnel and spoon you will use to fill the jars with boiling water.',
+          'Handle jars and lids with clean tongs or by the outside, without touching the inside.',
+        ],
+      },
+      {
+        h: '4. Fill and seal',
+        steps: [
+          'Pour hot jam or preserves into hot jars: hot liquid can crack a cold jar.',
+          'Leave about 1 cm of space below the rim.',
+          'Wipe the rim with a clean cloth dipped in boiling water and screw the lid on tightly straight away.',
+          'Then follow the recipe: turn the jars upside down or process them in a water bath.',
+        ],
+      },
+      {
+        h: '5. Check that the jar has sealed',
+        steps: [
+          'Once the jars have cooled completely, press the middle of the lid. It should be slightly concave and must not click.',
+          'If the lid clicks, the jar has not sealed: keep it in the fridge and eat it within a few weeks.',
+          'Label the jars with the contents and date and store them in a cool, dark place.',
+        ],
+      },
+    ],
+    safetyTitle: 'For safety',
+    safety: [
+      'If a lid bulges, or you see bubbles, mould or smell anything odd, do not eat the contents or even taste them.',
+      'With low acid foods such as vegetables, mushrooms and meat it is especially important to follow the processing time in the recipe.',
+    ],
+    back: 'All jam and preserving recipes',
+  },
+  ru: {
+    title: 'Как стерилизовать банки и крышки',
+    seoTitle: 'Как стерилизовать банки: в духовке, кипятком и паром',
+    description:
+      'Простая инструкция, как подготовить и простерилизовать банки и крышки для варенья и заготовок: в духовке, в кипящей воде или над паром, чтобы заготовки не испортились.',
+    eyebrow: 'Основы консервирования',
+    lead: 'Чистые простерилизованные банки главное условие того, чтобы варенье, маринады и салаты на зиму хорошо хранились и не портились. Стерилизация занимает около получаса, и её можно сделать, пока варится варенье.',
+    sections: [
+      {
+        h: '1. Проверьте и вымойте банки',
+        steps: [
+          'Осмотрите каждую банку: на горлышке не должно быть трещин и сколов, иначе крышка не закроется плотно.',
+          'Проверьте крышки: они должны быть ровными, без ржавчины, с целым резиновым уплотнителем. Винтовые крышки лучше брать новые.',
+          'Вымойте банки и крышки горячей водой со средством для посуды или чайной ложкой пищевой соды. Хорошо ополосните.',
+          'Не вытирайте полотенцем: банки отправляются на стерилизацию влажными.',
+        ],
+      },
+      {
+        h: '2. Простерилизуйте банки: выберите один способ',
+        intro: 'Подходят все три способа. В духовке удобнее, если банок много; над паром старый проверенный домашний способ.',
+        steps: [
+          'В духовке: поставьте влажные банки на решётку в холодную духовку горлышком вверх. Нагрейте до 120 °C и держите от 15 до 20 минут. Выключите и оставьте банки в духовке до наполнения.',
+          'В кипящей воде: на дно большой кастрюли положите полотенце или решётку, поставьте банки и залейте водой так, чтобы они были полностью покрыты. Доведите до кипения и кипятите 10 минут. Держите в горячей воде до наполнения.',
+          'Над паром: поставьте банку горлышком вниз над кастрюлей с кипящей водой (на сито или специальную насадку) и держите от 10 до 15 минут, пока по стенкам изнутри не начнут стекать крупные капли.',
+        ],
+      },
+      {
+        h: '3. Простерилизуйте крышки и инструменты',
+        steps: [
+          'Винтовые крышки прокипятите в небольшой кастрюле 5 минут и оставьте в горячей воде до использования.',
+          'Крышки с резиновыми уплотнителями и резиновые кольца не нагревайте в духовке: только ошпарьте или прокипятите несколько минут.',
+          'Ошпарьте кипятком также половник, воронку и ложку, которыми будете наполнять банки.',
+          'Берите банки и крышки чистыми щипцами или за внешнюю сторону, не касаясь внутренней поверхности.',
+        ],
+      },
+      {
+        h: '4. Наполните и закройте',
+        steps: [
+          'Горячее варенье или заготовку разливайте в горячие банки: от горячей жидкости холодная банка может лопнуть.',
+          'Оставьте около 1 см свободного места до края.',
+          'Протрите горлышко чистой салфеткой, смоченной в кипятке, и сразу плотно закрутите крышку.',
+          'Дальше действуйте по рецепту: переверните банки вверх дном или пастеризуйте их на водяной бане.',
+        ],
+      },
+      {
+        h: '5. Проверьте, закрылась ли банка',
+        steps: [
+          'Когда банки полностью остынут, нажмите на центр крышки. Она должна быть слегка вогнутой и не щёлкать.',
+          'Если крышка щёлкает, банка не закрылась: храните её в холодильнике и съешьте в течение нескольких недель.',
+          'Подпишите на банке содержимое и дату и храните в прохладном тёмном месте.',
+        ],
+      },
+    ],
+    safetyTitle: 'Для безопасности',
+    safety: [
+      'Если крышка вздулась, в банке пузырьки, плесень или странный запах, содержимое не ешьте и даже не пробуйте.',
+      'Для продуктов с низкой кислотностью, таких как овощи, грибы и мясо, особенно важно соблюдать время пастеризации из рецепта.',
+    ],
+    back: 'Все рецепты варенья и заготовок',
+  },
+  lt: {
+    title: 'Kaip sterilizuoti stiklainius ir dangtelius',
+    seoTitle: 'Kaip sterilizuoti stiklainius: orkaitėje, verdant ir garuose',
+    description:
+      'Paprasta instrukcija, kaip paruošti ir sterilizuoti stiklainius ir dangtelius uogienėms ir konservams: orkaitėje, verdančiame vandenyje arba garuose, kad atsargos nesugestų.',
+    eyebrow: 'Konservavimo pagrindai',
+    lead: 'Švarūs, sterilizuoti stiklainiai yra svarbiausia, kad uogienės, marinatai ir žiemos salotos ilgai išsilaikytų ir nesugestų. Sterilizavimas trunka apie pusvalandį, ir tai galima padaryti, kol verda uogienė.',
+    sections: [
+      {
+        h: '1. Patikrinkite ir išplaukite stiklainius',
+        steps: [
+          'Apžiūrėkite kiekvieną stiklainį: ant kraštelio neturi būti įtrūkimų ar nuskilimų, kitaip dangtelis sandariai neužsidarys.',
+          'Patikrinkite dangtelius: jie turi būti lygūs, nesurūdiję, su sveika gumine tarpine. Užsukamus dangtelius geriau imti naujus.',
+          'Išplaukite stiklainius ir dangtelius karštu vandeniu su indų plovikliu arba arbatiniu šaukšteliu valgomosios sodos. Gerai nuskalaukite.',
+          'Nešluostykite rankšluosčiu: stiklainiai sterilizuojami drėgni.',
+        ],
+      },
+      {
+        h: '2. Sterilizuokite stiklainius: pasirinkite vieną būdą',
+        intro: 'Tinka visi trys būdai. Orkaitėje patogiau, jei stiklainių daug; garuose yra senas, patikrintas namų būdas.',
+        steps: [
+          'Orkaitėje: sustatykite drėgnus stiklainius ant grotelių į šaltą orkaitę anga į viršų. Įkaitinkite iki 120 °C ir laikykite nuo 15 iki 20 minučių. Išjunkite ir palikite stiklainius orkaitėje iki pildymo.',
+          'Verdančiame vandenyje: į didelio puodo dugną patieskite rankšluostį arba grotelių, sustatykite stiklainius ir užpilkite vandeniu, kad jie būtų visiškai apsemti. Užvirinkite ir virkite 10 minučių. Laikykite karštame vandenyje iki pildymo.',
+          'Garuose: uždėkite stiklainį anga žemyn virš puodo su verdančiu vandeniu (ant sietelio ar specialaus žiedo) ir laikykite nuo 10 iki 15 minučių, kol vidine sienele ims tekėti dideli lašai.',
+        ],
+      },
+      {
+        h: '3. Sterilizuokite dangtelius ir įrankius',
+        steps: [
+          'Užsukamus dangtelius virkite nedideliame puode 5 minutes ir palikite karštame vandenyje iki naudojimo.',
+          'Dangtelių su guminėmis tarpinėmis ir guminių žiedų nekaitinkite orkaitėje: tik nuplikykite arba pavirkite kelias minutes.',
+          'Verdančiu vandeniu nuplikykite ir samtį, piltuvėlį bei šaukštą, kuriais pildysite stiklainius.',
+          'Stiklainius ir dangtelius imkite švariomis žnyplėmis arba už išorės, nelieskite vidaus.',
+        ],
+      },
+      {
+        h: '4. Pripildykite ir uždarykite',
+        steps: [
+          'Karštą uogienę ar konservus pilkite į karštus stiklainius: nuo karšto skysčio šaltas stiklainis gali įskilti.',
+          'Palikite apie 1 cm laisvos vietos iki kraštelio.',
+          'Kraštelį nušluostykite švaria, verdančiame vandenyje suvilgyta servetėle ir iškart sandariai užsukite dangtelį.',
+          'Toliau darykite, kaip nurodyta recepte: apverskite stiklainius dugnu į viršų arba pasterizuokite vandens vonelėje.',
+        ],
+      },
+      {
+        h: '5. Patikrinkite, ar stiklainis užsidarė',
+        steps: [
+          'Kai stiklainiai visiškai atvės, paspauskite dangtelio vidurį. Jis turi būti šiek tiek įlinkęs ir neturi spragsėti.',
+          'Jei dangtelis spragsi, stiklainis neužsidarė: laikykite jį šaldytuve ir suvalgykite per kelias savaites.',
+          'Užrašykite ant stiklainio turinį ir datą ir laikykite vėsioje, tamsioje vietoje.',
+        ],
+      },
+    ],
+    safetyTitle: 'Saugumui',
+    safety: [
+      'Jei dangtelis išsipūtęs, stiklainyje yra burbuliukų, pelėsio ar keistas kvapas, turinio nevalgykite ir net neragaukite.',
+      'Mažo rūgštingumo produktams, tokiems kaip daržovės, grybai ir mėsa, ypač svarbu laikytis recepte nurodyto pasterizavimo laiko.',
+    ],
+    back: 'Visi uogienių ir konservų receptai',
+  },
+};
+
+const g = GUIDES[lang];
+const path = href(lang, '/burku-sterilizesana/');
+const pageUrl = absolute(path, Astro.site);
+const categoryPath = categoryUrl('ievarijumi-un-konservi', lang);
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    '@id': `${pageUrl}#howto`,
+    name: g.title,
+    description: g.description,
+    inLanguage: lang,
+    totalTime: 'PT30M',
+    step: g.sections.map((s, i) => ({
+      '@type': 'HowToSection',
+      name: s.h.replace(/^\d+\.\s*/, ''),
+      position: i + 1,
+      itemListElement: s.steps.map((text, j) => ({ '@type': 'HowToStep', position: j + 1, text })),
+    })),
+    publisher: { '@id': absolute('/#organization', Astro.site) },
+  },
+  breadcrumbLd(
+    [
+      { name: SITE.name, path: href(lang, '/') },
+      { name: g.back, path: categoryPath },
+      { name: g.title, path },
+    ],
+    Astro.site,
+  ),
+];
+---
+
+<Base title={g.seoTitle} description={g.description} type="article" jsonLd={jsonLd}>
+  <article class="container prose">
+    <span class="eyebrow">{g.eyebrow}</span>
+    <h1>{g.title}</h1>
+    <p class="lead">{g.lead}</p>
+
+    {
+      g.sections.map((s) => (
+        <section>
+          <h2>{s.h}</h2>
+          {s.intro && <p>{s.intro}</p>}
+          <ul>
+            {s.steps.map((step) => (
+              <li>{step}</li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <aside class="safety">
+      <h2>{g.safetyTitle}</h2>
+      <ul>
+        {g.safety.map((s) => <li>{s}</li>)}
+      </ul>
+    </aside>
+
+    <p class="back">
+      <a href={categoryPath}><Icon name="arrow-right" /> {g.back}</a>
+    </p>
+  </article>
+</Base>
+
+<style>
+  .prose {
+    max-width: 760px;
+    padding-top: 28px;
+    padding-bottom: 32px;
+  }
+  .prose h1 {
+    font-size: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+    margin: 8px 0 16px;
+  }
+  .lead {
+    font-size: 1.1rem;
+    color: var(--ink-2);
+  }
+  .prose h2 {
+    font-size: 1.35rem;
+    margin: 30px 0 8px;
+  }
+  .prose p {
+    color: var(--ink-2);
+    margin-top: 10px;
+  }
+  .prose ul {
+    margin: 10px 0 0;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 8px;
+  }
+  .prose li {
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  .safety {
+    margin-top: 32px;
+    padding: 16px 20px 18px;
+    border-radius: var(--r);
+    background: color-mix(in oklab, var(--brand) 8%, var(--surface));
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--brand) 22%, transparent);
+  }
+  .safety h2 {
+    margin-top: 0;
+  }
+  .back a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--brand);
+    font-weight: 600;
+  }
+</style>

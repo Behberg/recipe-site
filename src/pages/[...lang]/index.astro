@@ -24,7 +24,24 @@ const featured = recipes.filter((r) => r.data.featured).slice(0, 8);
 const latest = recipes.slice(0, 8);
 const latvian = recipes.filter((r) => r.data.cuisine?.id === 'latviesu').slice(0, 10);
 const comfort = recipes.filter((r) => r.lv.tags.includes('mājīgi')).slice(0, 12);
-const hero = featured[0] ?? recipes[0];
+// "Today's pick" rotates daily. The page is built once, so the browser chooses the day's recipe
+// (inline script below the cards). The pool is 31 dishes with real photos, mixed across
+// categories; the card for the build day is the one shown without JavaScript and to crawlers.
+const PICK_CATEGORIES = ['pamatedieni', 'zupas', 'saldie-edieni', 'brokastis', 'salati-un-uzkodas', 'maize-un-cepumi'];
+const hash = (s: string) => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+const byCategory = PICK_CATEGORIES.map((c) =>
+  // Holiday dishes (gingerbread, paskha) are left out: they would look odd out of season.
+  recipes
+    .filter((r) => r.data.image && r.data.category.id === c && !r.data.occasions.length)
+    .sort((a, b) => hash(a.id) - hash(b.id)),
+);
+const pickPool: typeof recipes = [];
+for (let i = 0; pickPool.length < 31 && byCategory.some((l) => l[i]); i++) {
+  for (const list of byCategory) if (list[i] && pickPool.length < 31) pickPool.push(list[i]);
+}
+if (!pickPool.length) pickPool.push(featured[0] ?? recipes[0]);
+const dayNumber = (d: Date) => Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000);
+const buildPick = dayNumber(new Date()) % pickPool.length;
 const quizzes = await getQuizzes(lang);
 
 const countBy = (key: 'cuisine' | 'category', id: string) => recipes.filter((r) => r.data[key]?.id === id).length;
@@ -79,8 +96,14 @@ const jsonLd = [organizationLd(Astro.site), {
     </div>
 
     {
-      hero && (
-        <a class="hero-feature reveal" href={recipeUrl(hero.id, lang)} style="animation-delay:.08s">
+      pickPool.map((hero, i) => (
+        <a
+          class="hero-feature reveal"
+          href={recipeUrl(hero.id, lang)}
+          style="animation-delay:.08s"
+          data-pick={i}
+          hidden={i !== buildPick}
+        >
           <div class="hero-feature-media">
             <RecipeArt
               image={hero.data.image}
@@ -92,7 +115,7 @@ const jsonLd = [organizationLd(Astro.site), {
               alt={hero.data.title}
               sizes="(min-width: 900px) 520px, 100vw"
               large
-              eager
+              eager={i === buildPick}
             />
           </div>
           <div class="hero-feature-card">
@@ -110,8 +133,27 @@ const jsonLd = [organizationLd(Astro.site), {
             </span>
           </div>
         </a>
-      )
+      ))
     }
+    <script is:inline define:vars={{ size: pickPool.length }}>
+      // Show today's card before first paint. Hidden cards keep lazy images, so only one photo loads.
+      (function () {
+        var now = new Date();
+        var day = Math.floor(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) / 86400000) % size;
+        var cards = document.querySelectorAll('.hero [data-pick]');
+        var today = null;
+        cards.forEach(function (c) {
+          var on = Number(c.getAttribute('data-pick')) === day;
+          c.hidden = !on;
+          if (on) today = c;
+        });
+        var img = today && today.querySelector('img');
+        if (img) {
+          img.loading = 'eager';
+          img.fetchPriority = 'high';
+        }
+      })();
+    </script>
   </section>
 
   <!-- Seasonal suggestion from the built-in calendar -->
@@ -415,6 +457,9 @@ const jsonLd = [organizationLd(Astro.site), {
     margin-top: 4px;
   }
 
+  .hero-feature[hidden] {
+    display: none;
+  }
   .hero-feature {
     position: relative;
     display: block;

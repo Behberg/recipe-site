@@ -18,7 +18,6 @@ import {
   totalTime,
   cuisineUrl,
   categoryUrl,
-  imageUrl,
 } from '../../../lib/recipes';
 import { unitFor, decimal } from '../../../lib/format';
 import { IMAGE_RATIOS, recipeImagePath } from '../../../lib/recipeImage';
@@ -41,6 +40,8 @@ const { Content } = await render(recipe.story);
 const hasStory = recipe.story.body?.trim().length;
 
 const emoji = d.emoji || category?.data.emoji || '🍽️';
+// Preserving recipes start with a reminder to sterilise the jars, linking to the guide.
+const isPreserve = d.category.id === 'ievarijumi-un-konservi';
 const color = category?.data.color || cuisine?.data.color || '#9e3039';
 const total = totalTime(recipe);
 
@@ -338,6 +339,17 @@ const useMultiplier = Boolean(d.yield);
       <!-- Steps -->
       <section class="r-steps" aria-labelledby="steps-title">
         <h2 id="steps-title">{t(lang, 'recipe.steps')}</h2>
+        {
+          isPreserve && (
+            <aside class="sterile">
+              <p class="sterile-q">🫙 {t(lang, 'recipe.sterileQ')}</p>
+              <p>{t(lang, 'recipe.sterileText')}</p>
+              <a href={u('/burku-sterilizesana/')}>
+                {t(lang, 'recipe.sterileLink')} <Icon name="arrow-right" />
+              </a>
+            </aside>
+          )
+        }
         <ol class="steps">
           {
             steps.map((s, i) => (
@@ -1331,6 +1343,31 @@ const useMultiplier = Boolean(d.yield);
   .timer-chip :global(svg) {
     width: 17px;
     height: 17px;
+  }
+  .sterile {
+    margin: 4px 0 18px;
+    padding: 14px 18px 16px;
+    border-radius: var(--r);
+    background: color-mix(in oklab, var(--brand) 7%, var(--surface));
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--brand) 22%, transparent);
+  }
+  .sterile p {
+    margin: 0 0 6px;
+    color: var(--ink-2);
+  }
+  .sterile .sterile-q {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .sterile a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--brand);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .tips {
     margin-top: 24px;
