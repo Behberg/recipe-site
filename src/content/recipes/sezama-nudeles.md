@@ -3,6 +3,11 @@ title: "Aukstās sezama nūdeles ar gurķi"
 description: "Ātras ķīniešu nūdeles riekstainā sezama un sojas mērcē ar kraukšķīgu gurķi un čili."
 cuisine: kiniesu
 category: pamatedieni
+image: "/images/recipes/sezama-nudeles.jpg"
+imageAuthor: "zhugewala"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/person-making-food-with-noodles-vegetables-and-nuts-2676933/"
 emoji: "🍜"
 icon: soup
 iconColors: "#c9a050, #7fb04a"

@@ -2,6 +2,11 @@
 title: "Ķirbju putra ar rīsiem un pienu"
 description: "Maiga, oranža ķirbju putra ar rīsiem, pienu un sviestu. Saldas rudens brokastis, ko bērni ēd ar prieku."
 category: brokastis
+image: "/images/recipes/kirbju-putra.jpg"
+imageAuthor: "kkppwoshizhu"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/pumpkin-porridge-food-diet-328922/"
 emoji: "🎃"
 icon: soup
 iconColors: "#f0a13a, #f7f2ea"

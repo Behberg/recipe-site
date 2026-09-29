@@ -2,6 +2,11 @@
 title: "Sautēta vista ar skābētiem kāpostiem"
 description: "Mīksti vistas šķiņķīši, sautēti ar skābētiem kāpostiem, burkāniem, ķimenēm un medu. Vienkāršs, silts ziemas ēdiens ar kartupeļiem."
 category: pamatedieni
+image: "/images/recipes/sauteta-vista-ar-skabetiem-kapostiem.jpg"
+imageAuthor: "52600603"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/filipino-food-chicken-adobo-10478921/"
 emoji: "🍗"
 icon: skillet
 iconColors: "#e0c078, #a0602e"

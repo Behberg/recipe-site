@@ -3,6 +3,11 @@ title: "Cepumi „Riekstiņi”"
 description: "Riekstu formas cepumi ar vārītā kondensētā piena pildījumu. Nostalģisks svētku galda gardums."
 cuisine: austrumeiropas
 category: maize-un-cepumi
+image: "/images/recipes/riekstini.jpg"
+imageAuthor: "Елена_Г"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/walnut-cookies-retro-christmas-7713336/"
 emoji: "🌰"
 icon: sweets
 iconColors: "#d9a55a"

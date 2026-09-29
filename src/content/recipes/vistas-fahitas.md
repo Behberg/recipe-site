@@ -3,6 +3,11 @@ title: "Vistas fahitas ar paprikām"
 description: "Čurkstošas vistas fahitas ar krāsainām paprikām, sīpolu un meksikāņu garšvielām, pasniegtas tortiljās. Jautras ģimenes vakariņas 30 minūtēs."
 cuisine: meksikas
 category: pamatedieni
+image: "/images/recipes/vistas-fahitas.jpg"
+imageAuthor: "DΛVΞ GΛRCIΛ"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/grilled-chicken-fajitas-with-sizzling-vegetables-32371273/"
 emoji: "🌮"
 icon: skillet
 iconColors: "#d9452e, #f0cf6a"

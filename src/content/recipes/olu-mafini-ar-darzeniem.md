@@ -2,6 +2,11 @@
 title: "Olu mafini ar šķiņķi un dārzeņiem"
 description: "Olu mafini ar šķiņķi, papriku, spinātiem un sieru, cepti krāsnī. Ērtas, olbaltumvielām bagātas brokastis līdzņemšanai."
 category: brokastis
+image: "/images/recipes/olu-mafini-ar-darzeniem.jpg"
+imageAuthor: "RitaE"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/eggs-egg-muffin-egg-breakfast-food-682645/"
 emoji: "🧁"
 icon: bun
 iconColors: "#f2c94a"

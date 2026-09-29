@@ -2,6 +2,11 @@
 title: "Vienkāršā šokolādes kūka vienā bļodā"
 description: "Mitra, šokolādīga kūka, ko sajauc vienā bļodā, ar spīdīgu šokolādes glazūru. Drošākā dzimšanas dienas kūka iesācējiem."
 category: saldie-edieni
+image: "/images/recipes/vienkarsa-sokolades-kuka.jpg"
+imageAuthor: "https://kaboompics.com/"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/putting-sauce-on-cake-5468025/"
 emoji: "🎂"
 icon: cake
 iconColors: "#4a2a1a, #6b3a24"

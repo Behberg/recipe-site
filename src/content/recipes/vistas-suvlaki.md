@@ -3,6 +3,11 @@ title: "Vistas suvlaki ar tzatziki"
 description: "Marinētas vistas iesmiņi ar citronu un oregano, pasniegti ar pitu un gurķu jogurta mērci."
 cuisine: grieku
 category: pamatedieni
+image: "/images/recipes/vistas-suvlaki.jpg"
+imageAuthor: "Daniel Dan"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-photo-of-grilled-bbq-and-fries-on-red-plate-7542730/"
 emoji: "🍢"
 icon: plate
 iconColors: "#c8702a, #f3efe6"

@@ -3,6 +3,11 @@ title: "Spageti boloņese"
 description: "Bagātīga, lēni sautēta gaļas un tomātu mērce ar spageti un parmezānu."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/spageti-bolonese.jpg"
+imageAuthor: "Ruslan Kruglov"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-spaghetti-bolognese-with-garlic-bread-30406652/"
 emoji: "🍝"
 icon: soup
 iconColors: "#a8401e, #f7f2ea"

@@ -2,6 +2,11 @@
 title: "Aukstā gurķu zupa ar jogurtu un dillēm"
 description: "Atspirdzinoša aukstā gurķu zupa ar jogurtu, dillēm, ķiploku un valriekstiem. Gatava 15 minūtēs bez vārīšanas karstām dienām."
 category: zupas
+image: "/images/recipes/auksta-gurku-jogurta-zupa.jpg"
+imageAuthor: "11082974"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/cucumber-soup-cucumbers-food-yogurt-6356257/"
 emoji: "🥒"
 icon: soup
 iconColors: "#dfeecb, #eef1f4"

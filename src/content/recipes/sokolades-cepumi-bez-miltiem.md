@@ -2,6 +2,11 @@
 title: "Šokolādes cepumi bez miltiem"
 description: "Košļājami, spīdīgi šokolādes cepumi bez miltiem un sviesta, tikai ar olu baltumiem un kakao. Bezglutēna un tumšāki par jebkuru brauniju."
 category: maize-un-cepumi
+image: "/images/recipes/sokolades-cepumi-bez-miltiem.jpg"
+imageAuthor: "ROMAN ODINTSOV"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/top-view-of-chocolate-cookies-5847093/"
 emoji: "🍪"
 icon: sweets
 iconColors: "#3a2016, #fbf9f5"

@@ -2,6 +2,11 @@
 title: "Cūkgaļas sautējums paprikas un krējuma mērcē"
 description: "Mīksta, lēni sautēta cūkgaļa biezā paprikas, tomātu un krējuma mērcē. Sātīgs ģimenes ēdiens ar kartupeļiem, rīsiem vai makaroniem."
 category: pamatedieni
+image: "/images/recipes/cukgalas-sautejums-paprikas-merce.jpg"
+imageAuthor: "katiklinski"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/szegediner-goulash-meal-food-dish-5894350/"
 emoji: "🍲"
 icon: skillet
 iconColors: "#c8402a, #9a5a3a"

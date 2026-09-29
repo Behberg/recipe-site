@@ -2,6 +2,11 @@
 title: "Redīsu salāti ar olu un krējumu"
 description: "Pavasara redīsu salāti ar gurķi, vārītu olu, lokiem un dillēm krējuma mērcē. Svaigi, kraukšķīgi un gatavi ātri."
 category: salati-un-uzkodas
+image: "/images/recipes/redisu-salati-ar-krejumu.jpg"
+imageAuthor: "ROMAN ODINTSOV"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-a-salad-on-a-plate-4871278/"
 emoji: "🌱"
 icon: soup
 iconColors: "#f6f1e6, #f7f2ea, #d8456a"

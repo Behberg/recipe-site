@@ -2,6 +2,11 @@
 title: "Smiltsērkšķu sīrups"
 description: "Oranžs, skābens smiltsērkšķu sīrups bez vārīšanas. Īsta vitamīnu deva tējai un smūtijiem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/smiltserksku-sirups.jpg"
+imageAuthor: "KATRIN  BOLOVTSOVA"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/top-view-of-clear-drinking-glass-with-yellow-liquid-5662244/"
 emoji: "🟠"
 icon: jar
 iconColors: "#f28c1e"

@@ -2,6 +2,11 @@
 title: "Krāsnī ceptas olas avokado pusītēs"
 description: "Olas, ceptas avokado pusītēs krāsnī ar čili un lokiem. Skaistas, bezglutēna brokastis ar tikai 3 galvenajām sastāvdaļām."
 category: brokastis
+image: "/images/recipes/olas-cepta-avokado.jpg"
+imageAuthor: "RitaE"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/avocado-egg-baked-tasty-vitamins-5332878/"
 emoji: "🥑"
 icon: flatbread
 iconColors: "#6f9a3a, #d8e8a0, #f6c445"

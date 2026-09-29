@@ -3,6 +3,11 @@ title: "Ziemassvētku cūkas šķiņķis ar medus un sinepju glazūru"
 description: "Svētku cūkas šķiņķis, lēni cepts krāsnī un glazēts ar medu, sinepēm un krustnagliņām. Sulīgs vidū, ar spīdīgu, saldenu garozu."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/ziemassvetku-skinkis-medus-glazura.jpg"
+imageAuthor: "Luis Quintero"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/meat-with-fruit-15362097/"
 emoji: "🍖"
 icon: roast
 iconColors: "#b8562e"

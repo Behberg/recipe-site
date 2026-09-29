@@ -2,6 +2,11 @@
 title: "Tunča salāti ar olu un dārzeņiem"
 description: "Sātīgi tunča salāti ar olu, gurķi, tomātiem un kukurūzu. Ātras, olbaltumvielām bagātas pusdienas 15 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/tunca-salati-ar-olu.jpg"
+imageAuthor: "Alesia  Kozik"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/photograph-of-a-hard-boiled-egg-near-chickpeas-6632289/"
 emoji: "🥗"
 icon: soup
 iconColors: "#e3d7b8, #eef1f4, #f6c445"

@@ -2,6 +2,11 @@
 title: "Teriyaki lasis ar sezamu un rīsiem"
 description: "Spīdīgs teriyaki lasis saldenā sojas, mirina un ingvera glazūrā ar sezamu un lokiem. Ātras, veselīgas vakariņas 25 minūtēs."
 category: pamatedieni
+image: "/images/recipes/teriyaki-lasis.jpg"
+imageAuthor: "Victor Miyata"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/rice-and-salmon-on-a-plate-15895834/"
 emoji: "🍣"
 icon: plate
 iconColors: "#e0703a, #f3efe6, #5a2a10"

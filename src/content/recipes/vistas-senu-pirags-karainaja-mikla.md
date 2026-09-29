@@ -2,6 +2,11 @@
 title: "Vistas un sēņu pīrāgs ar kārtaino mīklu"
 description: "Mājīgs vistas pīrāgs ar sēnēm, burkāniem un zirnīšiem krēmīgā mērcē zem kraukšķīgas kārtainās mīklas. Siltas ģimenes vakariņas."
 category: pamatedieni
+image: "/images/recipes/vistas-senu-pirags-karainaja-mikla.jpg"
+imageAuthor: "Rachel Claire"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/homemade-casserole-on-blue-tablecloth-5863604/"
 emoji: "🥧"
 icon: tart
 iconColors: "#e8c890, #d9a14e"

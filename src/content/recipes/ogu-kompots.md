@@ -2,6 +2,11 @@
 title: "Ogu kompots burkās"
 description: "Dzidrs, salds ogu kompots ziemai no upenēm, jāņogām, ķiršiem vai citām dārza ogām."
 category: dzerieni
+image: "/images/recipes/ogu-kompots.jpg"
+imageAuthor: "jarmoluk"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/compote-preserves-jars-fruit-jam-428111/"
 emoji: "🍷"
 icon: jar
 iconColors: "#8a1a4a"

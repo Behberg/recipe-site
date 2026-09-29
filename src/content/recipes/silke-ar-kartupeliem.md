@@ -3,6 +3,11 @@ title: "Siļķe ar kartupeļiem un krējuma mērci"
 description: "Sālīta siļķe, vārīti kartupeļi un krējuma mērce ar sīpoliem. Latviešu ikdienas klasika."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/silke-ar-kartupeliem.jpg"
+imageAuthor: "analogicus"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/herring-dish-menu-yummy-meal-4507066/"
 emoji: "🐟"
 icon: plate
 iconColors: "#9aa6b0, #e8c878, #fbf7ef"

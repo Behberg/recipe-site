@@ -2,6 +2,11 @@
 title: "Karstā smiltsērkšķu tēja ar medu un ingveru"
 description: "Spilgti oranža smiltsērkšķu tēja ar medu, ingveru un apelsīnu, kā Latvijas kafejnīcās ziemā. Silda, uzmundrina un ir pilna ar C vitamīnu."
 category: dzerieni
+image: "/images/recipes/smiltserksku-teja-ar-medu.jpg"
+imageAuthor: "KATRIN  BOLOVTSOVA"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/brown-cookies-on-white-textile-5662612/"
 emoji: "🍊"
 icon: glass
 iconColors: "#f08a1e, #f5efe6"

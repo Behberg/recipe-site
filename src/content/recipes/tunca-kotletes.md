@@ -2,6 +2,11 @@
 title: "Tunča kotletes ar kartupeļiem"
 description: "Kraukšķīgas tunča kotletes ar kartupeļiem, lokiem un citrona miziņu no skapja produktiem. Ātras, lētas vakariņas 25 minūtēs."
 category: pamatedieni
+image: "/images/recipes/tunca-kotletes.jpg"
+imageAuthor: "Andi  Farruku"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-close-up-shot-of-fried-fish-cakes-on-a-wooden-board-8732583/"
 emoji: "🐟"
 icon: plate
 iconColors: "#e8c880, #f3efe6, #f0e090"

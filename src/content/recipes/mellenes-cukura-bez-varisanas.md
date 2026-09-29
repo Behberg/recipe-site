@@ -2,6 +2,11 @@
 title: "Mellenes cukurā bez vārīšanas"
 description: "Svaigas meža mellenes, sagrūstas ar cukuru bez vārīšanas, lai saglabātu visus vitamīnus. Glabā ledusskapī vai saldētavā."
 category: ievarijumi-un-konservi
+image: "/images/recipes/mellenes-cukura-bez-varisanas.jpg"
+imageAuthor: "MrGajowy3"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/cake-bilberry-blackberry-fruit-4396849/"
 emoji: "🫐"
 icon: jar
 iconColors: "#2a2a5a, #c9a227"

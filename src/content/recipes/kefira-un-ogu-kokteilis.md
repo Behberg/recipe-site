@@ -2,6 +2,11 @@
 title: "Kefīra un ogu kokteilis ar auzām"
 description: "Sātīgs kefīra kokteilis ar saldētām ogām, medu un auzu pārslām. Ātrās brokastis glāzē, gatavas 5 minūtēs."
 category: dzerieni
+image: "/images/recipes/kefira-un-ogu-kokteilis.jpg"
+imageAuthor: "TheoCrazzolara"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/raspberry-berry-milkshake-drink-4287635/"
 emoji: "🥤"
 icon: glass
 iconColors: "#c85a8a"

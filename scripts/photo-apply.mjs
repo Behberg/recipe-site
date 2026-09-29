@@ -1,14 +1,14 @@
-// Downloads the Pexels photos picked from the contact sheets and adds them to the recipes with credit.
+// Downloads the stock photos picked from the contact sheets and adds them to the recipes with credit.
 //
-//   node scripts/pexels-apply.mjs [outDir]
+//   node scripts/photo-apply.mjs pexels|pixabay
 //
-// Reads <outDir>/candidates.json (from pexels-candidates.mjs) and <outDir>/picks.json ({ slug: 1-6 }).
+// Reads .photos/<source>/candidates.json (from photo-candidates.mjs) and .photos/<source>/picks.json ({ slug: 1-6 }).
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 
 const root = path.resolve(import.meta.dirname, '..');
-const outDir = path.resolve(process.argv[2] ?? path.join(root, '.pexels'));
+const outDir = path.join(root, '.photos', process.argv[2] ?? '');
 const recipesDir = path.join(root, 'src/content/recipes');
 const imagesDir = path.join(root, 'public/images/recipes');
 const candidates = JSON.parse(fs.readFileSync(path.join(outDir, 'candidates.json'), 'utf8'));
@@ -23,7 +23,13 @@ for (const [slug, n] of Object.entries(picks)) {
   const photo = candidates[slug].photos[n - 1];
 
   // Same size and encoding as the other recipe photos: at most 1400 px wide, progressive JPEG.
-  const res = await fetch(`${photo.original}?auto=compress&cs=tinysrgb&w=1400`);
+  // Pixabay answers 429 when images are fetched too quickly; wait and try again.
+  let res;
+  for (let wait = 5; ; wait *= 2) {
+    res = await fetch(photo.download);
+    if (res.status !== 429 || wait > 160) break;
+    await new Promise((r) => setTimeout(r, wait * 1000));
+  }
   if (!res.ok) throw new Error(`${slug}: download ${res.status}`);
   await sharp(Buffer.from(await res.arrayBuffer()))
     .resize({ width: 1400, withoutEnlargement: true })
@@ -33,8 +39,8 @@ for (const [slug, n] of Object.entries(picks)) {
   const fields = [
     `image: ${q(`/images/recipes/${slug}.jpg`)}`,
     `imageAuthor: ${q(photo.photographer)}`,
-    `imageLicense: "Pexels License"`,
-    `imageLicenseUrl: "https://www.pexels.com/license/"`,
+    `imageLicense: ${q(photo.license)}`,
+    `imageLicenseUrl: ${q(photo.licenseUrl)}`,
     `imageSource: ${q(photo.url)}`,
   ].join('\n');
   // Keep the field order of the existing recipes: right after category (or description).

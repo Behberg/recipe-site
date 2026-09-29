@@ -2,6 +2,11 @@
 title: "Vistas fileja krējuma un ķiploku mērcē"
 description: "Sulīga vistas fileja maigā krējuma, ķiploku un siera mērcē ar spinātiem. Ātras vakariņas vienā pannā 30 minūtēs."
 category: pamatedieni
+image: "/images/recipes/vistas-fileja-krejuma-merce.jpg"
+imageAuthor: "Biel  Heinrich"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/pasta-with-chicken-and-broccoli-in-a-white-bowl-9760210/"
 emoji: "🍗"
 icon: skillet
 iconColors: "#f1e3c2, #e8c07a"

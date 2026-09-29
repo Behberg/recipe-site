@@ -2,6 +2,11 @@
 title: "Šokolādes siera kūka (krāsnī cepta)"
 description: "Bieza, zīdaina šokolādes siera kūka uz kakao cepumu pamatnes. Šokolādes cienītāju sapnis dzimšanas dienai vai Valentīndienai."
 category: saldie-edieni
+image: "/images/recipes/sokolades-siera-kuka.jpg"
+imageAuthor: "Balazs Simon"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/slice-of-chocolate-cake-on-round-wooden-tray-7845536/"
 emoji: "🍫"
 icon: cake
 iconColors: "#5a3526, #7a4a36, #4a2a1a"

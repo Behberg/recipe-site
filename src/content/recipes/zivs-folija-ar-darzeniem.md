@@ -2,6 +2,11 @@
 title: "Zivs folijā ar dārzeņiem un citronu"
 description: "Balta zivs, cepta folijas paciņās ar kabaci, tomātiem, citronu un dillēm. Sulīga, veselīga un bez liekiem traukiem 30 minūtēs."
 category: pamatedieni
+image: "/images/recipes/zivs-folija-ar-darzeniem.jpg"
+imageAuthor: "eatde"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/fish-fillet-vegetables-redfish-8031138/"
 emoji: "🐟"
 icon: plate
 iconColors: "#f3efe6, #7aa844, #f0d890"

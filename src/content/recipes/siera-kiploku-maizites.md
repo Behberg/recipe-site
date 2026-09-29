@@ -2,6 +2,11 @@
 title: "Siera un ķiploku maizītes (plēšamā maize)"
 description: "Mīkstas rauga maizītes ar ķiploku sviestu un kūstošu sieru, ceptas kopā vienā formā. Plēš ar rokām pie zupas vai ballītē."
 category: maize-un-cepumi
+image: "/images/recipes/siera-kiploku-maizites.jpg"
+imageAuthor: "Mustafa Akın"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/golden-baked-garlic-herb-rolls-37047927/"
 emoji: "🧄"
 icon: bun
 iconColors: "#e0a850"

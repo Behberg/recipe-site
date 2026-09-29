@@ -3,6 +3,11 @@ title: "Putraimu desas (Ziemassvētku desas)"
 description: "Tradicionālās latviešu putraimu desas ar kūpinātu speķi, sīpoliem un majorānu, ceptas krāsnī līdz kraukšķīgām. Ziemassvētku galda klasika."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/putraimu-desas.jpg"
+imageAuthor: "Dreblow"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/sausage-bread-buns-vegetables-556489/"
 emoji: "🌭"
 icon: plate
 iconColors: "#a0522d, #f3efe6, #b3122e"

@@ -2,6 +2,11 @@
 title: "Rukolas salāti ar bumbieri, zilo sieru un valriekstiem"
 description: "Elegants salāts ar rūgtenu rukolu, saldu bumbieri, sāļu zilo sieru, grauzdētiem valriekstiem un medus balzamiko mērci."
 category: salati-un-uzkodas
+image: "/images/recipes/rukolas-salati-ar-bumbieri.jpg"
+imageAuthor: "ROMAN ODINTSOV"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/green-vegetable-on-brown-bowl-4869359/"
 emoji: "🍐"
 icon: soup
 iconColors: "#6fa040, #eef1f4, #e8c878"

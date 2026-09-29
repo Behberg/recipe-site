@@ -2,6 +2,11 @@
 title: "Cūkgaļas rulete ar plūmēm un āboliem"
 description: "Svētku cūkgaļas rulete, pildīta ar žāvētām plūmēm un āboliem, cepta krāsnī ar medus un sinepju glazūru. Iespaidīga, bet vienkārša."
 category: pamatedieni
+image: "/images/recipes/cukgalas-rulete-ar-plumem.jpg"
+imageAuthor: "alepiccoli77"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/meat-dish-food-meal-cuisine-5718098/"
 emoji: "🎄"
 icon: roast
 iconColors: "#c07038"

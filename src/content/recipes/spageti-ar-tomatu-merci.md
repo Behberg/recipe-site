@@ -3,6 +3,11 @@ title: "Spageti ar vienkāršo tomātu mērci"
 description: "Ātra itāļu tomātu mērce ar ķiploku, olīveļļu un baziliku. Pusdienas 20 minūtēs."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/spageti-ar-tomatu-merci.jpg"
+imageAuthor: "Willians Huerta"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-spaghetti-with-tomato-sauce-on-plate-36430170/"
 emoji: "🍝"
 icon: soup
 iconColors: "#d9443a, #f7f2ea"

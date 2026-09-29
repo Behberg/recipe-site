@@ -2,6 +2,11 @@
 title: "Mīkstie kanēļa cepumi"
 description: "Mīksti, košļājami cepumi, apviļāti kanēļa cukurā, ar kraukšķīgām maliņām. Vienkārša bļodas recepte, kas smaržo pēc Ziemassvētkiem."
 category: maize-un-cepumi
+image: "/images/recipes/kanela-cepumi.jpg"
+imageAuthor: "ClickerHappy"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/cinnamon-roll-cinnamon-bread-pastry-4719023/"
 emoji: "🍪"
 icon: sweets
 iconColors: "#d9a86a, #fbf9f5"

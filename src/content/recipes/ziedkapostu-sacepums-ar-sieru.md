@@ -2,6 +2,11 @@
 title: "Ziedkāpostu sacepums ar siera mērci"
 description: "Maigi ziedkāposti bagātīgā siera mērcē, cepti krāsnī līdz zeltainai garoziņai. Lieliska piedeva vai veģetāras vakariņas."
 category: pamatedieni
+image: "/images/recipes/ziedkapostu-sacepums-ar-sieru.jpg"
+imageAuthor: "majomka"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/food-pasta-cauliflower-dinner-772241/"
 emoji: "🥦"
 icon: casserole
 iconColors: "#f3d27a, #d0d6dd"

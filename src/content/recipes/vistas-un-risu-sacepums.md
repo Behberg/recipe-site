@@ -2,6 +2,11 @@
 title: "Vistas un rīsu sacepums ar sēnēm un sieru"
 description: "Krēmīgs krāsnī cepts vistas un rīsu sacepums ar sēnēm, burkāniem un zeltainu siera garoziņu. Viss vienā veidnē bez liekas vārīšanas."
 category: pamatedieni
+image: "/images/recipes/vistas-un-risu-sacepums.jpg"
+imageAuthor: "Stones"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/rice-chicken-breast-mushroom-food-759943/"
 emoji: "🍚"
 icon: casserole
 iconColors: "#f0d890, #c77a3a"

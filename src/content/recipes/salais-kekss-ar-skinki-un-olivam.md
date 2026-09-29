@@ -2,6 +2,11 @@
 title: "Sāļais kēkss ar šķiņķi, olīvām un sieru"
 description: "Francūžu stila sāļais kēkss ar šķiņķi, olīvām un sieru. Lielisks piknikam, ballītes uzkodām un pusdienām līdzņemšanai."
 category: maize-un-cepumi
+image: "/images/recipes/salais-kekss-ar-skinki-un-olivam.jpg"
+imageAuthor: "Letícia Alvares"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/sliced-pumpkin-bread-with-cheese-and-ham-on-set-table-35009504/"
 emoji: "🫒"
 icon: loaf
 iconColors: "#e0b060, #6a7a3a"

@@ -2,6 +2,11 @@
 title: "Rīsu salāti ar tunci, olām un kukurūzu"
 description: "Sātīgi rīsu salāti ar tunci, olām, kukurūzu un gurķi vieglā mērcē. Lēti, ātri un lieliski pusdienām līdzņemšanai."
 category: salati-un-uzkodas
+image: "/images/recipes/risu-salati-ar-tunci.jpg"
+imageAuthor: "Nadin Sh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-bowl-of-tuna-salad-with-eggs-19051901/"
 emoji: "🍚"
 icon: soup
 iconColors: "#f3e6c8, #eef1f4, #f0c040"

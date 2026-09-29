@@ -2,6 +2,11 @@
 title: "Zaļo zirnīšu krēmzupa ar piparmētru"
 description: "Spilgti zaļa zirnīšu krēmzupa ar piparmētru un krējumu no saldētiem zirnīšiem. Svaiga garša un gatava 20 minūtēs."
 category: zupas
+image: "/images/recipes/zalo-zirnisu-kremzupa.jpg"
+imageAuthor: "Danijela Pantic Conic"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/elegant-green-pea-soup-in-blue-decorative-bowl-37173396/"
 emoji: "🟢"
 icon: soup
 iconColors: "#8fc04a, #f7f2ea"

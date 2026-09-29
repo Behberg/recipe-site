@@ -2,6 +2,11 @@
 title: "Sālītas meža sēnes (bērzlapes, baravikas)"
 description: "Tradicionāli sālītas meža sēnes ar ķiplokiem, dillēm un upeņu lapām. Kraukšķīga uzkoda pie kartupeļiem ar krējumu ziemā."
 category: ievarijumi-un-konservi
+image: "/images/recipes/salitas-meza-senes.jpg"
+imageAuthor: "Los Muertos Crew"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-bowl-of-corn-smut-on-wooden-table-7601336/"
 emoji: "🍄"
 icon: jar
 iconColors: "#b8986a, #7a8a3a"

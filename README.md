@@ -20,6 +20,7 @@ Built with [Astro](https://astro.build) as a fully static site for **Netlify**, 
 - **Favourites** (Izlase) stored on the device, no account needed.
 - **SEO**: schema.org `Recipe` data (Google rich results), sitemap, Open Graph, canonical URLs.
 - **Images**: photos uploaded in the admin are resized and converted on the fly by the Netlify Image CDN. Until a recipe has a photo it shows an illustrated dish icon (jar, soup bowl, cake slice, pīrāgi and more, recoloured per dish; see `src/lib/dishIcons.ts`) or a matching emoji. The admin sets these with the Ilustrācija fields.
+- **Stock photos**: `node scripts/photo-candidates.mjs pexels` (or `pixabay`) searches for recipes without a photo and writes contact sheets to `.photos/<source>/`; list the chosen number per recipe in `.photos/<source>/picks.json` and run `node scripts/photo-apply.mjs <source>` to download them with photographer credit. Keys go in `.env` as `PEXELS_API_KEY` and `PIXABAY_API_KEY`.
 - **Google AdSense ready**, switched off until configured (see below).
 
 ## Development

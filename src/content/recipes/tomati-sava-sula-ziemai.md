@@ -2,6 +2,11 @@
 title: "Tomāti savā sulā ziemai"
 description: "Mājas tomāti savā sulā burkās: pamats zupām, mērcēm, sautējumiem un picai visu ziemu. Tikai tomāti, sāls un nedaudz bazilika."
 category: ievarijumi-un-konservi
+image: "/images/recipes/tomati-sava-sula-ziemai.jpg"
+imageAuthor: "TIVASEE ."
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/colorful-preserved-vegetables-in-kitchen-setting-33984942/"
 emoji: "🍅"
 icon: jar
 iconColors: "#d9452e, #7a4a2a"

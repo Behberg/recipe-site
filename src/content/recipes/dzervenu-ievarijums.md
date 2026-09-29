@@ -2,6 +2,11 @@
 title: "Dzērveņu ievārījums ar apelsīnu"
 description: "Rubīnsarkans dzērveņu ievārījums ar apelsīna miziņu. Saldskābs, lielisks pie tējas, biezpiena un gaļas ēdieniem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/dzervenu-ievarijums.jpg"
+imageAuthor: "jarmoluk"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/jam-fruit-jars-fruit-jams-428094/"
 emoji: "🔴"
 icon: jar
 iconColors: "#a0102e, #c9a227"

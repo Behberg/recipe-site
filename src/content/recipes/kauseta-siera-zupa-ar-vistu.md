@@ -2,6 +2,11 @@
 title: "Kausētā siera zupa ar vistu un kartupeļiem"
 description: "Krēmīga kausētā siera zupa ar vistu, kartupeļiem un burkāniem. Viena no populārākajām ģimenes zupām, gatava pusstundā."
 category: zupas
+image: "/images/recipes/kauseta-siera-zupa-ar-vistu.jpg"
+imageAuthor: "petrovhey"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/soup-cheese-food-plate-gourmet-4055647/"
 emoji: "🧀"
 icon: soup
 iconColors: "#f3d27a, #f7f2ea"

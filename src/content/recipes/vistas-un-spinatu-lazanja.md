@@ -2,6 +2,11 @@
 title: "Vistas un spinātu lazanja ar bešamela mērci"
 description: "Krēmīga baltā lazanja ar vistu, spinātiem, bešamela mērci un kūstošu mocarellu. Maigāka alternatīva klasiskajai lazanjai ģimenes vakariņām."
 category: pamatedieni
+image: "/images/recipes/vistas-un-spinatu-lazanja.jpg"
+imageAuthor: "Büşra Yurt"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-homemade-lasagna-with-tomato-sauce-33312938/"
 emoji: "🥬"
 icon: casserole
 iconColors: "#f0d890, #4f8a2c"

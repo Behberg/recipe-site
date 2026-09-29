@@ -2,6 +2,11 @@
 title: "Vistas salāti ar avokado un grauzdiņiem"
 description: "Sātīgi vistas salāti ar avokado, tomātiem, romiešu salātiem un kraukšķīgiem grauzdiņiem medus un sinepju mērcē. Pilnvērtīgas pusdienas."
 category: salati-un-uzkodas
+image: "/images/recipes/vistas-salati-ar-avokado.jpg"
+imageAuthor: "Kristina Paukshtite"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/salad-dish-1591226/"
 emoji: "🥑"
 icon: soup
 iconColors: "#8fbf4a, #f7f2ea, #f3e6c8"

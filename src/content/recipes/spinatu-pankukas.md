@@ -2,6 +2,11 @@
 title: "Zaļās spinātu pankūkas"
 description: "Spilgti zaļas plānās pankūkas ar spinātiem, ko bērni sauc par pūķa pankūkām. Lieliskas ar krēmsieru, lasi vai saldu pildījumu."
 category: brokastis
+image: "/images/recipes/spinatu-pankukas.jpg"
+imageAuthor: "Monstera Production"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/gentle-pancakes-with-syrup-and-fresh-banana-on-top-7144365/"
 emoji: "🥬"
 icon: plate
 iconColors: "#6fa040, #f3efe6, #f5ead0"

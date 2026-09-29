@@ -2,6 +2,11 @@
 title: "Lavaša rullīši ar lasi un krēmsieru"
 description: "Uzkodu rullīši no lavaša ar kūpinātu lasi, krēmsieru, gurķi un dillēm. Bez vārīšanas, gatavi 15 minūtēs un lieliski ballītēm."
 category: salati-un-uzkodas
+image: "/images/recipes/lavasa-rullisi-ar-lasi.jpg"
+imageAuthor: "congerdesign"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/salmon-roll-salmon-cream-cheese-2135735/"
 emoji: "🌯"
 icon: plate
 iconColors: "#f1dfb8, #f28c5c"

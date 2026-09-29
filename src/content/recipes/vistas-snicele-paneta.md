@@ -2,6 +2,11 @@
 title: "Panētas vistas šniceles ar citronu"
 description: "Plānas, kraukšķīgas vistas šniceles rīvmaizes un parmezāna apvalkā, ceptas pannā līdz zeltainām. Ātras ģimenes vakariņas, ko mīl bērni."
 category: pamatedieni
+image: "/images/recipes/vistas-snicele-paneta.jpg"
+imageAuthor: "Lukas Blazek"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fried-meat-with-potato-fries-and-ketchup-dip-on-plate-1352270/"
 emoji: "🍗"
 icon: plate
 iconColors: "#e0a24a, #f0d890"

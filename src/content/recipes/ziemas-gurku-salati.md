@@ -2,6 +2,11 @@
 title: "Gurķu salāti ziemai burkās"
 description: "Kraukšķīgi gurķu un sīpolu salāti burkās ar dillēm, iekonservēti ziemai. Glābiņš gurķu ražai un lieliska piedeva pie gaļas un kartupeļiem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/ziemas-gurku-salati.jpg"
+imageAuthor: "Teodor Buhl"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fresh-cucumbers-and-vegetables-in-pickling-jars-36865441/"
 emoji: "🥒"
 icon: jar
 iconColors: "#9ab85a, #e8e2d8"

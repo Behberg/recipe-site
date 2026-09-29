@@ -2,6 +2,11 @@
 title: "Ķiploku mērce pie grila un šašlika"
 description: "Krēmīga ķiploku mērce ar krējumu, majonēzi un dillēm. Vislabākā pie šašlika, grilētas gaļas, kartupeļu daiviņām un kebabiem. Gatava 5 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/kiploku-merce-grilam.jpg"
+imageAuthor: "Einladung_zum_Essen"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/sauce-dip-cook-yummy-chutney-4171459/"
 emoji: "🧄"
 icon: ramekin
 iconColors: "#f3efe6, #efe4d6"

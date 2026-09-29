@@ -2,6 +2,11 @@
 title: "Vistas kotletes"
 description: "Mīkstas un sulīgas maltas vistas kotletes ar sīpolu un zaļumiem."
 category: pamatedieni
+image: "/images/recipes/vistas-kotletes.jpg"
+imageAuthor: "Alex Bayev"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/homemade-fried-chicken-cakes-19993435/"
 emoji: "🍗"
 icon: plate
 iconColors: "#d9a45a, #f0cf6a"

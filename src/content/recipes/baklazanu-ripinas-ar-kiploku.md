@@ -2,6 +2,11 @@
 title: "Ceptas baklažānu ripiņas ar ķiploku un tomātiem"
 description: "Pannā ceptas baklažānu ripiņas ar ķiploku mērci un tomātu šķēlītēm. Vienkārša vasaras uzkoda, kas pazūd ātrāk, nekā to var pagatavot."
 category: salati-un-uzkodas
+image: "/images/recipes/baklazanu-ripinas-ar-kiploku.jpg"
+imageAuthor: "ElodiV"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/aubergine-food-tomato-parsley-2374163/"
 emoji: "🍆"
 icon: plate
 iconColors: "#6a4a5a, #f3efe6, #d9453a"

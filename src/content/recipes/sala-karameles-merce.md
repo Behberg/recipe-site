@@ -2,6 +2,11 @@
 title: "Sāļās karameles mērce"
 description: "Zīdaina sāļās karameles mērce no cukura, saldā krējuma un sviesta. Lieliska pie saldējuma, pankūkām, kūkām un ābolu deserta."
 category: saldie-edieni
+image: "/images/recipes/sala-karameles-merce.jpg"
+imageAuthor: "Angele  J"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/shallow-photo-of-caramel-128399/"
 emoji: "🍯"
 icon: jar
 iconColors: "#c8762a, #3a3a3a"

@@ -2,6 +2,11 @@
 title: "Ķiploku grauzdiņi ar siera mērci"
 description: "Kraukšķīgi rupjmaizes grauzdiņi ar ķiploku un krēmīgu siera mērci. Latvijas krogu klasika."
 category: salati-un-uzkodas
+image: "/images/recipes/kiploku-grauzdini.jpg"
+imageAuthor: "NickFlims"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/garlic-bread-food-vegetables-cheese-7359756/"
 emoji: "🍞"
 icon: plate
 iconColors: "#5a3420, #f3efe6, #f3cf5a"

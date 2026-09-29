@@ -2,6 +2,11 @@
 title: "Sēņu zupa ar meža sēnēm un kartupeļiem"
 description: "Smaržīga meža sēņu zupa ar baravikām vai bērzlapēm, kartupeļiem un dillēm. Rudens klasika ar krējumu."
 category: zupas
+image: "/images/recipes/senu-zupa.jpg"
+imageAuthor: "Roy Sloan"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/homemade-stew-in-bowl-6166796/"
 emoji: "🍄"
 icon: soup
 iconColors: "#c9a26a, #f7f2ea"

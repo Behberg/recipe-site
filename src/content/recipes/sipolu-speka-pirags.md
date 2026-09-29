@@ -2,6 +2,11 @@
 title: "Sīpolu un bekona pīrāgs"
 description: "Kraukšķīgs smilšu mīklas pīrāgs ar lēni sautētiem sīpoliem, bekonu un krēmīgu olu pildījumu. Lielisks siltā un aukstā veidā."
 category: maize-un-cepumi
+image: "/images/recipes/sipolu-speka-pirags.jpg"
+imageAuthor: "Jansher Chakkittammal"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/square-tart-in-a-cast-iron-pan-18024284/"
 emoji: "🥧"
 icon: tart
 iconColors: "#e8c070, #c88a4a, #f3e0a8"

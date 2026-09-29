@@ -3,6 +3,11 @@ title: "Vācu liellopu gaļas rulādes ar gurķi un bekonu"
 description: "Klasiskās vācu rulādes: plānas liellopu gaļas šķēles ar sinepēm, bekonu, sīpolu un marinētu gurķi, lēni sautētas tumšā sarkanvīna mērcē."
 cuisine: vacu
 category: pamatedieni
+image: "/images/recipes/liellopa-rulades.jpg"
+imageAuthor: "Tho-Ge"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/roulades-beef-bacon-pan-grill-6941781/"
 emoji: "🥩"
 icon: plate
 iconColors: "#6a3a24, #f3efe6, #5a2a14"

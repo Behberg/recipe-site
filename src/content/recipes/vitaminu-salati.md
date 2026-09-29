@@ -2,6 +2,11 @@
 title: "Vitamīnu salāti no kāpostiem, burkāniem un āboliem"
 description: "Kraukšķīgi svaigo kāpostu salāti ar burkānu, ābolu un citronu. Kā ēdnīcā, tikai svaigāki. Lēti, vegāniski un gatavi 15 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/vitaminu-salati.jpg"
+imageAuthor: "Shameel mukkath"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/vegetable-salad-in-a-bowl-14774459/"
 emoji: "🥕"
 icon: soup
 iconColors: "#eef2d8, #f7f2ea, #f08a2e"

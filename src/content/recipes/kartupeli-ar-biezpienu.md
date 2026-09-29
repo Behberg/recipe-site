@@ -3,6 +3,11 @@ title: "Kartupeļi ar biezpienu un dillēm"
 description: "Vārīti jaunie kartupeļi ar biezpienu, krējumu, dillēm un lokiem. Vasaras klasika."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/kartupeli-ar-biezpienu.jpg"
+imageAuthor: "JamesHills"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/ukrainian-dill-potatoes-potatoes-2652561/"
 emoji: "🥔"
 icon: plate
 iconColors: "#e8c878, #f3efe6, #fbf7ef"

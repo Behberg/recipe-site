@@ -2,6 +2,11 @@
 title: "Maltās gaļas kotletes"
 description: "Sulīgas mājas kotletes ar sīpoliem un maizi. Pasniedz ar kartupeļu biezeni un gurķiem."
 category: pamatedieni
+image: "/images/recipes/malta-gala-kotletes.jpg"
+imageAuthor: "Pexels"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/burgers-fire-grill-grilling-cook-1839090/"
 emoji: "🍖"
 icon: plate
 iconColors: "#74421f, #e8c25a"

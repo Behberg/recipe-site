@@ -2,6 +2,11 @@
 title: "Tefteļi krējuma un tomātu mērcē"
 description: "Mīksti gaļas un rīsu tefteļi, sautēti krējuma un tomātu mērcē kā bērnudārzā. Sātīgi, lēti un lieliski ar kartupeļiem vai makaroniem."
 category: pamatedieni
+image: "/images/recipes/tefteli-krejuma-tomatu-merce.jpg"
+imageAuthor: "Shameel mukkath"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cooked-meat-with-red-sauce-on-white-ceramic-plate-5175606/"
 emoji: "🍝"
 icon: skillet
 iconColors: "#e07a4a, #9a5a3a"

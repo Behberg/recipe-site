@@ -2,6 +2,11 @@
 title: "Šampinjonu mērce ar krējumu"
 description: "Krēmīga sēņu mērce ar šampinjoniem, sīpoliem un dillēm. Klasiska mērce pie kartupeļiem, kotletēm, karbonādes un griķiem."
 category: salati-un-uzkodas
+image: "/images/recipes/sampinjonu-merce-ar-krejumu.jpg"
+imageAuthor: "Patrick"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-soup-with-mushrooms-20809056/"
 emoji: "🍄"
 icon: ramekin
 iconColors: "#d8c09a, #efe4d6"

@@ -2,6 +2,11 @@
 title: "Slinkie kāpostu tīteņi tomātu un krējuma mērcē"
 description: "Visas kāpostu tīteņu garšas bez tīšanas: gaļas, rīsu un kāpostu kotletītes, sautētas tomātu un krējuma mērcē."
 category: pamatedieni
+image: "/images/recipes/slinkie-kapostu-titeni.jpg"
+imageAuthor: "Willians Huerta"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-chilaquiles-with-creamy-toppings-36429912/"
 emoji: "🥬"
 icon: skillet
 iconColors: "#c8402a, #8a6a4a"

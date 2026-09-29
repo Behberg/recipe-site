@@ -2,6 +2,11 @@
 title: "Sēklu maize bez miltiem un rauga"
 description: "Kraukšķīga, sātīga sēklu un auzu maize bez miltiem un rauga. Bezglutēna, vegāniska un gatava ar 10 minūšu darbu."
 category: maize-un-cepumi
+image: "/images/recipes/seklu-maize-bez-miltiem.jpg"
+imageAuthor: "Jana Ohajdova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/whole-grain-seeded-rye-bread-on-wooden-surface-33988117/"
 emoji: "🌻"
 icon: loaf
 iconColors: "#8a6a3a, #c9b27a"

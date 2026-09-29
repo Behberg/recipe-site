@@ -2,6 +2,11 @@
 title: "Makaroni ar malto gaļu tomātos vienā katlā"
 description: "Sātīgi makaroni ar malto gaļu tomātu mērcē, vārīti vienā katlā bez atsevišķas vārīšanas. Viens katls, 25 minūtes un paēdusi ģimene."
 category: pamatedieni
+image: "/images/recipes/tomatu-makaroni-viena-kata.jpg"
+imageAuthor: "Antonius Ferret"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/pasta-with-red-sauce-in-a-pot-6223148/"
 emoji: "🍝"
 icon: skillet
 iconColors: "#c8402a, #e8c07a"

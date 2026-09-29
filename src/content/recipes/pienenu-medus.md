@@ -2,6 +2,11 @@
 title: "Pieneņu medus"
 description: "Zeltains sīrups no pieneņu ziediem un citrona. Garšo pēc pavasara un saules."
 category: ievarijumi-un-konservi
+image: "/images/recipes/pienenu-medus.jpg"
+imageAuthor: "Lolame"
+imageLicense: "Pixabay Content License"
+imageLicenseUrl: "https://pixabay.com/service/license-summary/"
+imageSource: "https://pixabay.com/photos/honey-beekeeper-beekeeping-glass-5043708/"
 emoji: "🌼"
 icon: jar
 iconColors: "#f2b705"

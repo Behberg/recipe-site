@@ -2,6 +2,11 @@
 title: "Vistas stilbiņi medus un sojas mērcē krāsnī"
 description: "Lipīgi, spīdīgi vistas stilbiņi medus, sojas un ķiploku glazūrā, cepti krāsnī. Bērnu mīlulis ar 5 minūšu darbu."
 category: pamatedieni
+image: "/images/recipes/vistas-stilbini-medus-sojas.jpg"
+imageAuthor: "素材王国 Footage Kingdom"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/chicken-in-black-plate-13823350/"
 emoji: "🍗"
 icon: plate
 iconColors: "#9a4a1e, #f3efe6, #5a2a10"

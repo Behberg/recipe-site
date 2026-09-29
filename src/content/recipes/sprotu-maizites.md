@@ -3,6 +3,11 @@ title: "Šprotu maizītes ar olu un marinētu gurķi"
 description: "Latvijas svētku galda klasika: grauzdētas maizītes ar ķiploku majonēzi, šprotēm, olu un marinētu gurķi. Gatavas 25 minūtēs."
 cuisine: latviesu
 category: salati-un-uzkodas
+image: "/images/recipes/sprotu-maizites.jpg"
+imageAuthor: "Vilnis Husko"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/slice-of-black-bread-with-sprats-8618430/"
 emoji: "🐟"
 icon: flatbread
 iconColors: "#c98a4a, #f3e6c8, #a0602e"

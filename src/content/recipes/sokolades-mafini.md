@@ -2,6 +2,11 @@
 title: "Šokolādes mafini ar šokolādes gabaliņiem"
 description: "Mitri, šokolādīgi mafini ar kūstošiem šokolādes gabaliņiem. Viena bļoda, 15 minūtes darba un bērnu ballītes hīts."
 category: maize-un-cepumi
+image: "/images/recipes/sokolades-mafini.jpg"
+imageAuthor: "Sara"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-photo-of-cupcakes-on-white-surface-10509256/"
 emoji: "🧁"
 icon: bun
 iconColors: "#5a3526"
