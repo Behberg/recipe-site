@@ -2,6 +2,11 @@
 title: "Krāsnī cepti dārzeņi ar ķiplokiem un rozmarīnu"
 description: "Karamelizēti krāsnī cepti dārzeņi ar batāti, burkāniem, papriku un ķiplokiem. Vienkārša, krāsaina piedeva vai veģetāras vakariņas."
 category: salati-un-uzkodas
+image: "/images/recipes/krasni-cepti-darzeni.jpg"
+imageAuthor: "Pixabay"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/carrot-lot-208453/"
 emoji: "🥕"
 icon: plate
 iconColors: "#d9732e, #8a5a9a"

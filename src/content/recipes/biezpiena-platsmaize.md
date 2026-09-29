@@ -3,6 +3,11 @@ title: "Biezpiena plātsmaize"
 description: "Mīksta rauga plātsmaize ar biezu vaniļas biezpiena kārtu. Kafijas galda klasika."
 cuisine: latviesu
 category: maize-un-cepumi
+image: "/images/recipes/biezpiena-platsmaize.jpg"
+imageAuthor: "Noemí Jiménez"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/dough-with-vegetables-and-cheese-16698504/"
 emoji: "🍰"
 icon: cake
 iconColors: "#d9a55a, #f7ecd0"

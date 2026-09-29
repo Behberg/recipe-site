@@ -3,6 +3,11 @@ title: "Klimpu zupa ar vistu"
 description: "Vecmāmiņas klimpu zupa: dzidrs vistas buljons, kartupeļi un mīkstas miltu klimpas. Vienkārša, lēta un ļoti mājīga."
 cuisine: latviesu
 category: zupas
+image: "/images/recipes/klimpu-zupa.jpg"
+imageAuthor: "JÉSHOOTS"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cutlery-delicious-food-foodporn-3656/"
 emoji: "🍲"
 icon: soup
 iconColors: "#f0cf6a, #f7f2ea, #f6ecd2"

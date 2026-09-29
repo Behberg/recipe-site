@@ -2,6 +2,11 @@
 title: "Krāsnī cepts cūkas stilbs ar kraukšķīgu ādu"
 description: "Lēni cepts cūkas stilbs ar ķimenēm un ķiplokiem: gaļa atdalās no kaula, āda kraukšķ. Pasniedz ar skābētiem kāpostiem, sinepēm un alu."
 category: pamatedieni
+image: "/images/recipes/krasni-cepts-cukas-stilbs.jpg"
+imageAuthor: "Vinícius Caricatte"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/roasted-meat-with-bone-14007234/"
 emoji: "🍖"
 icon: roast
 iconColors: "#a06030"

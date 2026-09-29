@@ -2,6 +2,11 @@
 title: "Augļu salāti ar vaniļas jogurtu"
 description: "Krāsaini svaigu augļu salāti ar vaniļas un medus jogurta mērci un piparmētru. Vienkāršs, veselīgs deserts bērniem un ballītēm."
 category: saldie-edieni
+image: "/images/recipes/auglu-salati-ar-jogurtu.jpg"
+imageAuthor: "Markus Winkler"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/glass-with-chopped-banana-beside-jar-with-cream-3828940/"
 emoji: "🍓"
 icon: soup
 iconColors: "#f28c5c, #f7f2ea, #6fa040"

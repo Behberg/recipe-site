@@ -3,6 +3,11 @@ title: "Dārzeņu tempura"
 description: "Viegli un kraukšķīgi mīklā cepti dārzeņi ar sojas un ingvera mērci."
 cuisine: japanu
 category: salati-un-uzkodas
+image: "/images/recipes/darzenu-tempura.jpg"
+imageAuthor: "Noemí Jiménez"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/seafood-on-plate-20891777/"
 emoji: "🍤"
 icon: plate
 iconColors: "#e8b84a, #f3efe6"

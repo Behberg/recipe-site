@@ -2,6 +2,11 @@
 title: "Jauno kāpostu salāti ar gurķiem un dillēm"
 description: "Kraukšķīgi vasaras salāti no jaunajiem kāpostiem, svaigiem gurķiem, dillēm un lokiem ar vieglu eļļas mērci. Svaigākie salāti pie gaļas."
 category: salati-un-uzkodas
+image: "/images/recipes/jauno-kapostu-salati.jpg"
+imageAuthor: "Victoria Emerson"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/chopped-cabbage-on-cutting-board-with-herbs-and-cucumber-slice-6037887/"
 emoji: "🥬"
 icon: soup
 iconColors: "#dff0c0, #f7f2ea"

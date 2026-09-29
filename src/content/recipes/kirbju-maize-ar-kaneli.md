@@ -2,6 +2,11 @@
 title: "Ķirbju maize ar kanēli un valriekstiem"
 description: "Mitra, smaržīga ķirbju maize ar kanēli, ingveru un valriekstiem. Rudens kēkss pie kafijas, kas smaržo pēc svētkiem."
 category: maize-un-cepumi
+image: "/images/recipes/kirbju-maize-ar-kaneli.jpg"
+imageAuthor: "Annelies Brouw"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/photograph-of-a-banana-bread-on-a-wooden-chopping-board-3223499/"
 emoji: "🎃"
 icon: loaf
 iconColors: "#d9822e"

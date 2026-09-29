@@ -2,6 +2,11 @@
 title: "Cūkgaļas medaljoni ar sēņu mērci"
 description: "Sulīgi cūkgaļas filejas medaljoni ar krēmīgu šampinjonu mērci. Svētku vakariņu izskats 30 minūtēs."
 category: pamatedieni
+image: "/images/recipes/cukgalas-medaljoni-ar-senu-merci.jpg"
+imageAuthor: "Luca Luperto"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/steak-served-in-a-restaurant-17216562/"
 emoji: "🍖"
 icon: plate
 iconColors: "#a86a3a, #f3e0b0, #d8c09a"

@@ -2,6 +2,11 @@
 title: "Gaļa franču gaumē ar kartupeļiem un sieru"
 description: "Svētku klasika: cūkgaļa, kartupeļi, sīpoli un tomāti, cepti krāsnī zem zeltainas siera kārtas. Viss vienā veidnē."
 category: pamatedieni
+image: "/images/recipes/gala-francu-gaume.jpg"
+imageAuthor: "Meliha Ljaljic"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/golden-baked-cheese-and-potato-casserole-33042510/"
 emoji: "🧀"
 icon: casserole
 iconColors: "#e9b949, #7a8fa8"

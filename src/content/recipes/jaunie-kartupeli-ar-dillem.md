@@ -2,6 +2,11 @@
 title: "Jaunie kartupeļi ar dillēm un sviestu"
 description: "Vasaras vienkāršākā greznība: vārīti jaunie kartupeļi ar kūstošu sviestu un daudz svaigu dilļu. Pie siļķes, gurķiem un krējuma."
 category: salati-un-uzkodas
+image: "/images/recipes/jaunie-kartupeli-ar-dillem.jpg"
+imageAuthor: "Jacob  Yavin"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fish-with-lemon-18663959/"
 emoji: "🥔"
 icon: plate
 iconColors: "#f0d890, #f3efe6"

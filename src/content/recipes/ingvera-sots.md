@@ -2,6 +2,11 @@
 title: "Ingvera šoti ar citronu un kurkumu"
 description: "Asi, uzmundrinoši ingvera šoti ar citronu, apelsīnu, kurkumu un medu. Mazs spēka malks aukstajā sezonā."
 category: dzerieni
+image: "/images/recipes/ingvera-sots.jpg"
+imageAuthor: "Polina Tankilevitch"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fruits-and-vegetables-on-the-table-4443464/"
 emoji: "🍋"
 icon: glass
 iconColors: "#e8b82a"

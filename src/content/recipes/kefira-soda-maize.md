@@ -2,6 +2,11 @@
 title: "Ātrā kefīra maize ar sodu (bez rauga)"
 description: "Ātrā maize ar kefīru un sodu, bez rauga un rūgšanas. No bļodas līdz krāsnij 10 minūtēs, lieliska ar sviestu un zupu."
 category: maize-un-cepumi
+image: "/images/recipes/kefira-soda-maize.jpg"
+imageAuthor: "Magda Ehlers"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-photo-of-a-whole-piece-of-loaf-4267966/"
 emoji: "🍞"
 icon: loaf
 iconColors: "#c7904f"

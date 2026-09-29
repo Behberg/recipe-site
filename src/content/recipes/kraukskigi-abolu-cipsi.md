@@ -2,6 +2,11 @@
 title: "Kraukšķīgi ābolu čipsi krāsnī ar kanēli"
 description: "Plāni, kraukšķīgi krāsnī kaltēti ābolu čipsi ar kanēli bez cukura un eļļas. Veselīga uzkoda bērniem un lielisks veids, kā izlietot ābolus."
 category: saldie-edieni
+image: "/images/recipes/kraukskigi-abolu-cipsi.jpg"
+imageAuthor: "Natalia Sevruk"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/dried-apple-slices-on-outdoor-surface-39209376/"
 emoji: "🍎"
 icon: plate
 iconColors: "#f0d890, #f3efe6"

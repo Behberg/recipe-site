@@ -2,6 +2,11 @@
 title: "Melleņu ievārījums"
 description: "Meža melleņu ievārījums ar citronu. Tumšs, biezs un bagāts ar vitamīniem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/mellenu-ievarijums.jpg"
+imageAuthor: "https://kaboompics.com/"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/person-preparing-breakfast-4963885/"
 emoji: "🫐"
 icon: jar
 iconColors: "#2e2a6a"

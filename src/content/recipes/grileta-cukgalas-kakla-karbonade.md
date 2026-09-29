@@ -2,6 +2,11 @@
 title: "Grilēta cūkgaļas kakla karbonāde medus un sinepju marinādē"
 description: "Sulīgi cūkgaļas kakla steiki medus, sinepju un ķiploku marinādē, cepti uz grila. Vienkāršākā un gardākā grila gaļa Jāņiem."
 category: pamatedieni
+image: "/images/recipes/grileta-cukgalas-kakla-karbonade.jpg"
+imageAuthor: "Boris Ivas"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-meat-on-a-grill-18824021/"
 emoji: "🔥"
 icon: plate
 iconColors: "#a0522d, #f3efe6"

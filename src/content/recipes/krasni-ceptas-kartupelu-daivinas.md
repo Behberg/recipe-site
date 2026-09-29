@@ -2,6 +2,11 @@
 title: "Krāsnī ceptas kartupeļu daiviņas ar papriku"
 description: "Kraukšķīgas kartupeļu daiviņas ar papriku, ķiploku un oregano, ceptas krāsnī bez fritēšanas. Labākā piedeva burgeriem un gaļai."
 category: salati-un-uzkodas
+image: "/images/recipes/krasni-ceptas-kartupelu-daivinas.jpg"
+imageAuthor: "Lena Netkach"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/roasted-potato-wedges-with-herbs-on-baking-tray-38950968/"
 emoji: "🍟"
 icon: plate
 iconColors: "#e0a24a, #f3efe6, #c8402a"

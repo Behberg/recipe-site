@@ -3,6 +3,11 @@ title: "Načos ar kausētu sieru, pupiņām un avokado"
 description: "Krāsnī cepti načos ar kūstošu sieru, melnajām pupiņām, halapeņo, svaigu tomātu salsu un avokado. Filmu vakara un ballīšu uzkoda."
 cuisine: meksikas
 category: salati-un-uzkodas
+image: "/images/recipes/nacos-ar-sieru.jpg"
+imageAuthor: "Jose Luis  Maestre Peñataro"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/spicy-meal-on-plate-18930039/"
 emoji: "🧀"
 icon: plate
 iconColors: "#f0c040, #f3efe6, #6fa040"

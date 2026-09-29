@@ -2,6 +2,11 @@
 title: "Bieza karstā šokolāde no īstas šokolādes"
 description: "Bieza, samtaina karstā šokolāde no piena un rūgtās šokolādes ar putukrējumu. Ziemas vakaru labākais dzēriens, gatavs 10 minūtēs."
 category: dzerieni
+image: "/images/recipes/karsta-sokolade.jpg"
+imageAuthor: "TREEDEO.ST"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cocoa-drink-beside-a-chocolate-bar-5429267/"
 emoji: "☕"
 icon: glass
 iconColors: "#4a2616, #f5efe6"

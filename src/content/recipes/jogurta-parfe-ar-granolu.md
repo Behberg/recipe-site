@@ -2,6 +2,11 @@
 title: "Jogurta parfē ar granolu un ogām"
 description: "Kārtainas brokastis glāzē: biezs jogurts ar medu, kraukšķīga granola un svaigas ogas. Gatavas 5 minūtēs un izskatās svinīgi."
 category: brokastis
+image: "/images/recipes/jogurta-parfe-ar-granolu.jpg"
+imageAuthor: "Valeria Boltneva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/creamy-grains-with-blueberries-in-clear-cups-7474043/"
 emoji: "🥛"
 icon: layers
 iconColors: "#f7f2ea, #d8456a, #c8914a"

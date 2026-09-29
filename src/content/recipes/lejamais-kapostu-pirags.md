@@ -2,6 +2,11 @@
 title: "Lejamais kāpostu pīrāgs ar kefīru"
 description: "Ātrs kāpostu pīrāgs no lejamas kefīra mīklas bez rauga un mīcīšanas. Sulīgs pildījums no kāpostiem, burkāniem un dillēm."
 category: maize-un-cepumi
+image: "/images/recipes/lejamais-kapostu-pirags.jpg"
+imageAuthor: "Valeria Boltneva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/slice-of-pie-with-savory-filling-on-a-plate-20182327/"
 emoji: "🥬"
 icon: casserole
 iconColors: "#e8c070, #a8c860"

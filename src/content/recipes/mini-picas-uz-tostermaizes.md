@@ -2,6 +2,11 @@
 title: "Mini picas uz tostermaizes"
 description: "Ātrās mini picas uz tostermaizes ar tomātu mērci, šķiņķi, papriku un sieru. Bērni tās veido paši, un tās ir gatavas 20 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/mini-picas-uz-tostermaizes.jpg"
+imageAuthor: "Piotr Arnoldes"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/tasty-toast-with-pepperoni-slices-on-cutting-board-6493569/"
 emoji: "🍕"
 icon: flatbread
 iconColors: "#e8c07a, #d0432e, #f5d46a"

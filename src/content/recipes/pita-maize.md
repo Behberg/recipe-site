@@ -2,6 +2,11 @@
 title: "Pita maize ar kabatiņu mājās"
 description: "Mīksta pita maize, kas krāsnī uzpūšas ar kabatiņu pildīšanai. Lieliska falafelim, gyros un visām iecienītajām pildītajām maizītēm."
 category: maize-un-cepumi
+image: "/images/recipes/pita-maize.jpg"
+imageAuthor: "Tymur Khakimov"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-freshly-baked-breads-on-a-ceramic-plate-6676018/"
 emoji: "🫓"
 icon: flatbread
 iconColors: "#ecd29a, #f3dfae"

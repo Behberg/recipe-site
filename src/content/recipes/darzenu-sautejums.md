@@ -2,6 +2,11 @@
 title: "Dārzeņu sautējums ar kartupeļiem un kabačiem"
 description: "Krāsains dārzeņu sautējums ar kartupeļiem, kabačiem, baklažānu un papriku tomātu mērcē. Vegānisks, lēts un vasaras ražai."
 category: pamatedieni
+image: "/images/recipes/darzenu-sautejums.jpg"
+imageAuthor: "Harry Tucker"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/rustic-vegetable-stew-in-ceramic-bowl-29075345/"
 emoji: "🥘"
 icon: skillet
 iconColors: "#d86a3a, #6f9a3a"

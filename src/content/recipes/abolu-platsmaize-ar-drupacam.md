@@ -3,6 +3,11 @@ title: "Ābolu plātsmaize ar drupačām"
 description: "Mīksta rauga mīklas plātsmaize ar biezu ābolu kārtu, kanēli un sviesta drupačām. Rudens klasika lielai ģimenei vai darbam."
 cuisine: latviesu
 category: maize-un-cepumi
+image: "/images/recipes/abolu-platsmaize-ar-drupacam.jpg"
+imageAuthor: "Nadine Ginzel"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-plum-crumble-on-ceramic-plate-34492383/"
 emoji: "🍎"
 icon: tart
 iconColors: "#e8b04a, #d9a14e"

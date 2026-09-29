@@ -2,6 +2,11 @@
 title: "Kartupeļi ar gaļu un sēnēm podiņos"
 description: "Krāsnī sautēta cūkgaļa ar kartupeļiem, sēnēm un burkāniem māla podiņos. Sātīgs, smaržīgs ēdiens aukstiem vakariem."
 category: pamatedieni
+image: "/images/recipes/kartupeli-ar-galu-podinos.jpg"
+imageAuthor: "Vladimir Srajber"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-delicious-pot-roast-chicken-14146069/"
 emoji: "🥔"
 icon: ramekin
 iconColors: "#c98a3a, #8a5a3a"

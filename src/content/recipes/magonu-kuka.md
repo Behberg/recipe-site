@@ -2,6 +2,11 @@
 title: "Magoņu kūka ar citrona glazūru"
 description: "Mitra magoņu kūka ar citrona miziņu un skābenu glazūru. Vecās labās kafejnīcas garša, kas vēl joprojām ir iecienīta."
 category: saldie-edieni
+image: "/images/recipes/magonu-kuka.jpg"
+imageAuthor: "Vero Lova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/traditional-almond-and-poppy-seed-cake-in-pan-36269672/"
 emoji: "🌀"
 icon: cake
 iconColors: "#f3e3b8, #5a5a6a, #f3e3b8"

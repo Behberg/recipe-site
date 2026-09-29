@@ -3,6 +3,11 @@ title: "Čar siu (Ķīnas cepta cūkgaļa medus glazūrā)"
 description: "Kantonas čar siu: cūkgaļa saldā sojas, medus un piecu garšvielu marinādē, cepta krāsnī līdz lipīgai, sarkanai glazūrai. Ar rīsiem."
 cuisine: kiniesu
 category: pamatedieni
+image: "/images/recipes/char-siu.jpg"
+imageAuthor: "Victor Cayke"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/grilled-meat-on-clear-plate-12970046/"
 emoji: "🥢"
 icon: plate
 iconColors: "#b8302a, #f3efe6, #e8a03a"

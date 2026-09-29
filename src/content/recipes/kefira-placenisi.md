@@ -2,6 +2,11 @@
 title: "Kefīra plācenīši (biezās pankūkas)"
 description: "Pūkaini, biezi kefīra plācenīši kā pie vecmāmiņas. Lēti, vienkārši un lieliski ar ievārījumu, medu vai krējumu."
 category: brokastis
+image: "/images/recipes/kefira-placenisi.jpg"
+imageAuthor: "Anastasiia Ivanova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/pancakes-on-plate-23939471/"
 emoji: "🥞"
 icon: plate
 iconColors: "#e3b46a, #f5e9cc, #c8102e"

@@ -2,6 +2,11 @@
 title: "Lēcu kotletes ar burkāniem un garšvielām"
 description: "Kraukšķīgas, sātīgas sarkano lēcu kotletes ar burkāniem, sīpolu un kuminu. Vegāniskas, lētas un lieliskas arī burgeru maizītē."
 category: pamatedieni
+image: "/images/recipes/lecu-kotletes.jpg"
+imageAuthor: "JUSTIN JOSEPH"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cutlets-on-a-white-ceramic-plate-5708088/"
 emoji: "🟤"
 icon: plate
 iconColors: "#b8763a, #7aa844"

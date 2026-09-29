@@ -2,6 +2,11 @@
 title: "Kukurūzas vālītes ar ķiploku sviestu"
 description: "Sulīgas vārītas vai grilētas kukurūzas vālītes ar ķiploku un pētersīļu sviestu un rupjo sāli. Vasaras piedeva pie grila."
 category: salati-un-uzkodas
+image: "/images/recipes/kukuruzas-valites-ar-kiploku-sviestu.jpg"
+imageAuthor: "Jonathan Hidalgo"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/grilled-corn-cobs-with-different-dipping-sauces-27085338/"
 emoji: "🌽"
 icon: plate
 iconColors: "#f6d04a, #f3efe6, #fbe07a"

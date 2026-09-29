@@ -2,6 +2,11 @@
 title: "Mazsālītie gurķi ar dillēm un ķiplokiem"
 description: "Kraukšķīgi mazsālītie gurķi ar dillēm, ķiplokiem un upeņu lapām, gatavi jau pēc 1 līdz 2 dienām. Vasaras klasika pie jaunajiem kartupeļiem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/mazsaliti-gurki.jpg"
+imageAuthor: "Maria Verkhoturtseva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/clear-glass-jar-with-green-leaves-and-vegetables-9005955/"
 emoji: "🥒"
 icon: jar
 iconColors: "#8fae5a, #3a6a2a"

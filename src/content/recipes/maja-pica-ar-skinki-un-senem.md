@@ -2,6 +2,11 @@
 title: "Mājas pica ar šķiņķi un sēnēm"
 description: "Mājas pica ar plānu, kraukšķīgu rauga mīklu, tomātu mērci, mocarellu, šķiņķi un šampinjoniem. Labāka par piegādāto un ģimenes vakara prieks."
 category: pamatedieni
+image: "/images/recipes/maja-pica-ar-skinki-un-senem.jpg"
+imageAuthor: "Nadin Sh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/pizza-with-ham-and-mushroom-toppings-12288354/"
 emoji: "🍕"
 icon: flatbread
 iconColors: "#dfa352, #d0432e, #f5d46a"

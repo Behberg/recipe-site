@@ -2,6 +2,11 @@
 title: "Dateļu un riekstu bumbiņas bez cepšanas"
 description: "Šokolādīgas enerģijas bumbiņas no dateļu, valriekstu, mandeļu un kakao, apviļātas kokosā. Veselīgs saldums bez cepšanas un pievienota cukura."
 category: saldie-edieni
+image: "/images/recipes/medus-riekstu-bumbinas.jpg"
+imageAuthor: "Livilla Latini"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-bowl-of-chocolate-balls-with-oats-and-nuts-27850074/"
 emoji: "🌰"
 icon: sweets
 iconColors: "#8a5a3a, #fbf9f5"

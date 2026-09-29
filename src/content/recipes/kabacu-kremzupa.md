@@ -2,6 +2,11 @@
 title: "Kabaču krēmzupa ar kausētu sieru"
 description: "Gaiši zaļa, maiga kabaču krēmzupa ar kausētu sieru, dillēm un grauzdētām ķirbju sēklām. Labākais, ko darīt ar kabaču ražu."
 category: zupas
+image: "/images/recipes/kabacu-kremzupa.jpg"
+imageAuthor: "Shameel mukkath"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-shot-of-a-bowl-of-soup-5639476/"
 emoji: "🥒"
 icon: soup
 iconColors: "#a8c86a, #f7f2ea"

@@ -2,6 +2,11 @@
 title: "Kokosriekstu cepumi (kokosa makarūni)"
 description: "Košļājami kokosriekstu cepumi no olu baltumiem, cukura un kokosa, iemērkti šokolādē. Bezglutēna un no tikai 5 sastāvdaļām."
 category: maize-un-cepumi
+image: "/images/recipes/kokosriekstu-makaruni.jpg"
+imageAuthor: "James Collington"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-delicious-coconut-macaroons-30600169/"
 emoji: "🥥"
 icon: sweets
 iconColors: "#f5ead0, #e8d7c0"

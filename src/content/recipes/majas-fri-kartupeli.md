@@ -2,6 +2,11 @@
 title: "Mājas frī kartupeļi (divreiz cepti)"
 description: "Kraukšķīgi mājas frī kartupeļi, cepti divreiz kā īstā kafejnīcā: mīksti vidū, zeltaini un kraukšķīgi ārā. Pie burgeriem, zivs un kotletēm."
 category: salati-un-uzkodas
+image: "/images/recipes/majas-fri-kartupeli.jpg"
+imageAuthor: "Shourav Sheikh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fries-on-plate-5695624/"
 emoji: "🍟"
 icon: plate
 iconColors: "#f0c040, #f3efe6, #c8402a"

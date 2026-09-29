@@ -2,6 +2,11 @@
 title: "Makaronu sacepums ar desu un sieru"
 description: "Makaroni, desa un olu masa, cepti krāsnī zem siera kārtas. Lielisks veids, kā izmantot pāri palikušo."
 category: pamatedieni
+image: "/images/recipes/makaronu-sacepums.jpg"
+imageAuthor: "Yasser Mohamed"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-macaroni-with-cheese-served-on-table-with-toasted-bread-and-sauce-bowls-4378160/"
 emoji: "🧀"
 icon: casserole
 iconColors: "#e8b84a"

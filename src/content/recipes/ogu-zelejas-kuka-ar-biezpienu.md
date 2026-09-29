@@ -2,6 +2,11 @@
 title: "Biezpiena kūka ar ogu želeju bez cepšanas"
 description: "Krāsaina biezpiena kūka bez cepšanas ar cepumu pamatni, maigu krēmu un spīdīgu ogu želejas virskārtu. Vasaras svētku galda rota."
 category: saldie-edieni
+image: "/images/recipes/ogu-zelejas-kuka-ar-biezpienu.jpg"
+imageAuthor: "DUONG QUÁCH"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-raspberry-red-velvet-cheesecake-slices-34698415/"
 emoji: "🍓"
 icon: layers
 iconColors: "#f5ecd7, #f7ecd5, #c8102e"

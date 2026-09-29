@@ -2,6 +2,11 @@
 title: "Lieldienu kēkss ar rozīnēm un sukādēm"
 description: "Augsts, mīksts Lieldienu rauga kēkss ar rozīnēm, sukādēm un citrona glazūru. Svētku maize Lieldienu galdam, ko cep dienu iepriekš."
 category: maize-un-cepumi
+image: "/images/recipes/lieldienu-kekss-ar-rozinem.jpg"
+imageAuthor: "Viktoria Lunyakova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/assorted-colored-eggs-between-cakes-7746695/"
 emoji: "🥚"
 icon: loaf
 iconColors: "#d9a052, #fbf4e3"

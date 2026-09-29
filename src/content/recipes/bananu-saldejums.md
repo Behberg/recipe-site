@@ -2,6 +2,11 @@
 title: "Banānu saldējums no saldētiem banāniem"
 description: "Krēmīgs saldējums no saldētiem banāniem bez cukura un saldējuma mašīnas. Vegānisks deserts 5 minūtēs, ko var pagatavot kopā ar bērniem."
 category: saldie-edieni
+image: "/images/recipes/bananu-saldejums.jpg"
+imageAuthor: "Silvia Trigo"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-photo-of-dessert-1576120/"
 emoji: "🍌"
 icon: layers
 iconColors: "#f6e7a0, #f9eed2"

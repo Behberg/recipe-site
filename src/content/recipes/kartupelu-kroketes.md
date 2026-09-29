@@ -2,6 +2,11 @@
 title: "Kartupeļu kroketes ar sieru"
 description: "Kraukšķīgas zeltainas kartupeļu kroketes ar sieru un maigu biezeņa vidu. Svētku piedeva pie gaļas un lielisks veids, kā izlietot biezeni."
 category: salati-un-uzkodas
+image: "/images/recipes/kartupelu-kroketes.jpg"
+imageAuthor: "Pablo Rodríguez"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-croquettes-with-dipping-sauce-in-bowl-35813494/"
 emoji: "🥔"
 icon: plate
 iconColors: "#e0a24a, #f3efe6"

@@ -2,6 +2,11 @@
 title: "Ābolu ievārījums ar kanēli"
 description: "Dzintara krāsas ābolu ievārījums ar kanēli un citronu. Smaržo pēc ābolu pīrāga."
 category: ievarijumi-un-konservi
+image: "/images/recipes/abolu-ievarijums.jpg"
+imageAuthor: "Nadin Trosh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-jam-rosemary-cinnamon-sticks-and-crispy-slices-arranged-together-4356100/"
 emoji: "🍏"
 icon: jar
 iconColors: "#e0a33a"

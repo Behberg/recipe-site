@@ -2,6 +2,11 @@
 title: "Biešu krēmzupa ar ābolu un krējumu"
 description: "Tumši rozā biešu krēmzupa ar ābolu, kas dod svaigu saldskābumu. Krāsaina, veselīga un lieliska ar krējumu un dillēm."
 category: zupas
+image: "/images/recipes/biesu-kremzupa.jpg"
+imageAuthor: "Polina Tankilevitch"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/red-liquid-in-clear-glass-container-8599742/"
 emoji: "🟣"
 icon: soup
 iconColors: "#9b1b4a, #f7f2ea"

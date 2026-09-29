@@ -2,6 +2,11 @@
 title: "Krāsnī ceptas pildītas batātes ar pupiņām un fetu"
 description: "Saldas, mīkstas krāsnī ceptas batātes, pildītas ar melnajām pupiņām, kukurūzu, fetu un laimas jogurta mērci. Krāsainas veģetāras vakariņas."
 category: pamatedieni
+image: "/images/recipes/pilditas-batates.jpg"
+imageAuthor: "Anthony Rahayel"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-stuffed-sweet-potato-with-feta-and-pomegranate-32127741/"
 emoji: "🍠"
 icon: flatbread
 iconColors: "#c8602a, #e0843a, #f5f0e0"

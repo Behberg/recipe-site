@@ -2,6 +2,11 @@
 title: "Kartupeļu krēmzupa ar kraukšķīgu bekonu"
 description: "Bieza, samtaina kartupeļu krēmzupa ar kraukšķīgu bekonu, sieru un lokiem. Lēta, sātīga un mājīga zupa aukstiem vakariem."
 category: zupas
+image: "/images/recipes/kartupelu-kremzupa-ar-bekonu.jpg"
+imageAuthor: "Ivan Vi"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fried-bacon-on-soup-in-bowl-20843704/"
 emoji: "🥔"
 icon: soup
 iconColors: "#efe2c0, #f7f2ea"

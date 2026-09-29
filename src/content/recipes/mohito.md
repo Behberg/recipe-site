@@ -2,6 +2,11 @@
 title: "Klasiskais mohito kokteilis"
 description: "Klasiskais kubiešu mohito ar balto rumu, laimu, piparmētru un gāzētu ūdeni. Vasaras terases kokteilis, gatavs 5 minūtēs."
 category: dzerieni
+image: "/images/recipes/mohito.jpg"
+imageAuthor: "Aram Diseño"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-shot-of-ice-in-the-drinking-glass-7259058/"
 emoji: "🍹"
 icon: glass
 iconColors: "#d8ecc0"

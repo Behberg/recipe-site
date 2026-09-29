@@ -2,6 +2,11 @@
 title: "Brokastu burito ar olām, bekonu un avokado"
 description: "Sātīgs brokastu burito ar olu kulteni, kraukšķīgu bekonu, sieru, avokado un tomātu tortiljā. Brokastis, ko var paņemt līdzi."
 category: brokastis
+image: "/images/recipes/brokastu-burito.jpg"
+imageAuthor: "Polina Tankilevitch"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/top-view-of-delicious-breakfast-5848088/"
 emoji: "🌯"
 icon: plate
 iconColors: "#f1dfb8, #f6c445, #c8402a"

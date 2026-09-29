@@ -2,6 +2,11 @@
 title: "Arbūza limonāde ar laimu un piparmētru"
 description: "Atspirdzinoša arbūza limonāde ar laimu un piparmētru, sablendēta 10 minūtēs. Rozā vasaras dzēriens bez liekiem piedevām."
 category: dzerieni
+image: "/images/recipes/arbuza-limonade.jpg"
+imageAuthor: "Tamanna Rumee"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cocktail-drinks-on-blue-surface-8755255/"
 emoji: "🍉"
 icon: glass
 iconColors: "#f07080"

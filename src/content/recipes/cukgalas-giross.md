@@ -3,6 +3,11 @@ title: "Cūkgaļas giross pitā ar tzatziki"
 description: "Mājas grieķu giross: marinēta cūkgaļa ar oregano un citronu, apcepta un ietīta pitā ar tzatziki, tomātiem un sīpolu."
 cuisine: grieku
 category: pamatedieni
+image: "/images/recipes/cukgalas-giross.jpg"
+imageAuthor: "Bruna Santos"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-greek-gyros-on-sunny-day-29906167/"
 emoji: "🥙"
 icon: flatbread
 iconColors: "#e8c07a, #c98a3a, #f5f0e0"

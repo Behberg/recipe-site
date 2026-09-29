@@ -2,6 +2,11 @@
 title: "Krāsnī ceptas auzu pārslas ar āboliem un kanēli"
 description: "Sātīgas krāsnī ceptas auzu pārslas ar āboliem, kanēli, medu un riekstiem. Brokastis visai ģimenei vienā veidnē, garšīgas arī aukstas."
 category: brokastis
+image: "/images/recipes/krasni-ceptas-auzas-ar-aboliem.jpg"
+imageAuthor: "Polina Tankilevitch"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/photo-of-oats-on-tray-3872352/"
 emoji: "🍎"
 icon: casserole
 iconColors: "#d9a86a, #b0413e"

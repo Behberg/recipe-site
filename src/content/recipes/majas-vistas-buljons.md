@@ -2,6 +2,11 @@
 title: "Mājas vistas buljons (dzidrs un bagātīgs)"
 description: "Dzidrs, zeltains mājas vistas buljons no vistas kauliem un dārzeņiem. Pamats zupām, mērcēm un risoto, kas labi sasaldējas."
 category: zupas
+image: "/images/recipes/majas-vistas-buljons.jpg"
+imageAuthor: "Gundula Vogel"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/hearty-chicken-noodle-soup-in-ceramic-pot-28872869/"
 emoji: "🍵"
 icon: soup
 iconColors: "#f3d77a, #eef1f4"

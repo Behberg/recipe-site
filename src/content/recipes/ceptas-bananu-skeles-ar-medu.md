@@ -2,6 +2,11 @@
 title: "Karamelizēti banāni ar medu un kanēli"
 description: "Sviestā karamelizētas banānu šķēles ar medu un kanēli, pasniegtas ar vaniļas saldējumu. Siltais deserts, kas gatavs 10 minūtēs."
 category: saldie-edieni
+image: "/images/recipes/ceptas-bananu-skeles-ar-medu.jpg"
+imageAuthor: "Polina ⠀"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/sliced-banana-on-brown-wooden-round-plate-5645190/"
 emoji: "🍌"
 icon: plate
 iconColors: "#f0c848, #f3efe6, #c8762a"

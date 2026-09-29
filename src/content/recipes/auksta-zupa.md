@@ -3,6 +3,11 @@ title: "Aukstā zupa"
 description: "Spilgti rozā vasaras zupa ar bietēm, kefīru, gurķiem, dillēm un olu. Atspirdzina karstākajā dienā."
 cuisine: latviesu
 category: zupas
+image: "/images/recipes/auksta-zupa.jpg"
+imageAuthor: "Nadin Sh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/variety-of-soup-dishes-in-cooking-pots-8694621/"
 emoji: "🥣"
 icon: soup
 iconColors: "#e55b9b"

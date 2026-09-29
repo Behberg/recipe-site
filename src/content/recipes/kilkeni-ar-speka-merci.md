@@ -3,6 +3,11 @@ title: "Ķiļķeni ar speķa un krējuma mērci"
 description: "Kurzemes ķiļķeni: mīkstas kartupeļu un miltu klimpas ar kūpināta speķa, sīpolu un krējuma mērci. Veids, kā vārītus kartupeļus pārvērst svētku ēdienā."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/kilkeni-ar-speka-merci.jpg"
+imageAuthor: "https://kaboompics.com/"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-dumplings-with-fried-bacon-slices-on-plate-4202385/"
 emoji: "🥔"
 icon: plate
 iconColors: "#efe6cc, #f3efe6, #d9a060"

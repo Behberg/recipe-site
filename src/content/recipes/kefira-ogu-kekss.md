@@ -2,6 +2,11 @@
 title: "Kefīra keksiņš ar ogām"
 description: "Mitrs un mīksts kefīra kēkss ar mellenēm, avenēm vai upenēm. Viena bļoda, desmit minūtes darba un ideāls kēkss kafijai."
 category: saldie-edieni
+image: "/images/recipes/kefira-ogu-kekss.jpg"
+imageAuthor: "eat kubba"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/strawberry-cake-with-icing-11842146/"
 emoji: "🫐"
 icon: loaf
 iconColors: "#e8c070, #5a4a9a"

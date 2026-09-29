@@ -2,6 +2,11 @@
 title: "Sviestā ceptas sēnes ar ķiplokiem"
 description: "Brūnas, sulīgas sviestā ceptas sēnes ar ķiplokiem, timiānu un pētersīļiem. Lieliska piedeva pie steika, uz grauzdiņa vai ar olu."
 category: salati-un-uzkodas
+image: "/images/recipes/ceptas-senes-ar-kiplokiem.jpg"
+imageAuthor: "FOX ^.ᆽ.^= ∫"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/mashrooms-in-a-bowl-and-other-cooking-ingredients-5152271/"
 emoji: "🍄"
 icon: skillet
 iconColors: "#8a6a4a, #c9a26a"

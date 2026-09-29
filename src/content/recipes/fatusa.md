@@ -3,6 +3,11 @@ title: "Fatuša salāti"
 description: "Libānas dārzeņu salāti ar kraukšķīgiem pitas gabaliņiem, piparmētrām un citronu mērci."
 cuisine: tuvo-austrumu
 category: salati-un-uzkodas
+image: "/images/recipes/fatusa.jpg"
+imageAuthor: "Denys Gromov"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/vegetable-salad-on-black-ceramic-bowl-4768991/"
 emoji: "🥗"
 icon: soup
 iconColors: "#8bb04a, #d9443a"

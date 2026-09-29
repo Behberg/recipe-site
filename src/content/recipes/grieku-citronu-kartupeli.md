@@ -3,6 +3,11 @@ title: "Grieķu citronu kartupeļi"
 description: "Krāsnī cepti kartupeļi ar citronu, ķiploku un oregano. Iekšā mīksti, ārā zeltaini."
 cuisine: grieku
 category: pamatedieni
+image: "/images/recipes/grieku-citronu-kartupeli.jpg"
+imageAuthor: "Shameel mukkath"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cooked-food-on-white-ceramic-bowl-5191832/"
 emoji: "🥔"
 icon: plate
 iconColors: "#e8b84a, #f3efe6"

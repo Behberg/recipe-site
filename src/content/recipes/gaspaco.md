@@ -3,6 +3,11 @@ title: "Gaspačo"
 description: "Auksta spāņu tomātu zupa ar gurķi, papriku un olīveļļu. Vasaras karstumam."
 cuisine: spanu
 category: zupas
+image: "/images/recipes/gaspaco.jpg"
+imageAuthor: "Larbigno  •"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/elegant-tomato-gazpacho-in-floral-tea-cup-38475445/"
 emoji: "🍅"
 icon: soup
 iconColors: "#d6402a"

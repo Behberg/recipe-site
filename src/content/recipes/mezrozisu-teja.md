@@ -2,6 +2,11 @@
 title: "Mežrozīšu tēja ar medu"
 description: "Sarkana, saldskāba mežrozīšu tēja no kaltētiem augļiem ar medu un citronu. Ziemas vitamīnu dzēriens, ko gatavoja jau vecmāmiņas."
 category: dzerieni
+image: "/images/recipes/mezrozisu-teja.jpg"
+imageAuthor: "Pixabay"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/white-teacup-with-red-fruits-beside-220704/"
 emoji: "🌹"
 icon: glass
 iconColors: "#c8402a, #f5efe6"

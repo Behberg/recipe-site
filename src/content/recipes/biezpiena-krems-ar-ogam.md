@@ -2,6 +2,11 @@
 title: "Biezpiena krēms ar ogām"
 description: "Gaisīgs biezpiena un krējuma krēms ar ogām un medu. Deserts 5 minūtēs."
 category: saldie-edieni
+image: "/images/recipes/biezpiena-krems-ar-ogam.jpg"
+imageAuthor: "Jessica Lewis 🦋 thepaintedsquare"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/healthy-breakfast-with-fruits-15048297/"
 emoji: "🍓"
 icon: layers
 iconColors: "#f7f0e0, #d6364a, #f7f0e0"

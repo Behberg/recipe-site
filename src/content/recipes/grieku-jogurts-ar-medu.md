@@ -3,6 +3,11 @@ title: "Grieķu jogurts ar medu un riekstiem"
 description: "Biezs grieķu jogurts ar medu, grauzdētiem valriekstiem un svaigām ogām. Brokastis 3 minūtēs."
 cuisine: grieku
 category: brokastis
+image: "/images/recipes/grieku-jogurts-ar-medu.jpg"
+imageAuthor: "Piotr Arnoldes"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/white-ceramic-bowl-with-sliced-figs-and-peanuts-7111398/"
 emoji: "🍯"
 icon: soup
 iconColors: "#f6f2e8, #f7f2ea, #d9a531"

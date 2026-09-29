@@ -2,6 +2,11 @@
 title: "Lēcu zupa ar dārzeņiem un spinātiem"
 description: "Sātīga zaļo lēcu zupa ar burkāniem, seleriju, tomātiem un spinātiem. Vegāniska, lēta un olbaltumvielām bagāta."
 category: zupas
+image: "/images/recipes/lecu-zupa-ar-darzeniem.jpg"
+imageAuthor: "Rahul Sonawane"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/asian-soup-served-in-a-restaurant-20004800/"
 emoji: "🍲"
 icon: soup
 iconColors: "#8a6a3a, #f7f2ea"

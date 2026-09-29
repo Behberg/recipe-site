@@ -2,6 +2,11 @@
 title: "Mannas pudiņš ar ogu mērci"
 description: "Maigs mannas pudiņš ar vaniļu un siltu ogu mērci. Bērnības deserts, kas top no piena, mannas un ogām 25 minūtēs."
 category: saldie-edieni
+image: "/images/recipes/mannas-pudins-ar-ogu-merci.jpg"
+imageAuthor: "Gundula Vogel"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-creamy-rice-porridge-with-berries-topping-33088383/"
 emoji: "🍮"
 icon: ramekin
 iconColors: "#c8102e, #f6efe2"

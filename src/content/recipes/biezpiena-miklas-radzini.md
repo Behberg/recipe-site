@@ -2,6 +2,11 @@
 title: "Biezpiena mīklas radziņi ar ievārījumu"
 description: "Maigi, kārtaini radziņi no biezpiena mīklas ar biezu ievārījumu. Vecmāmiņas cepumi, kas izdodas ar pirmo reizi."
 category: maize-un-cepumi
+image: "/images/recipes/biezpiena-miklas-radzini.jpg"
+imageAuthor: "Anat Landa"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-hamantaschen-cookies-with-powdered-sugar-38431265/"
 emoji: "🥐"
 icon: bun
 iconColors: "#e6b064"

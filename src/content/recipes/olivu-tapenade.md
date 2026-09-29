@@ -3,6 +3,11 @@ title: "Olīvu tapenāde uz grauzdētas bagetes"
 description: "Franču olīvu tapenāde ar kaperiem, anšoviem, ķiploku un citronu. Sāļa, intensīva uzkoda uz grauzdiņiem, gatava 10 minūtēs."
 cuisine: francu
 category: salati-un-uzkodas
+image: "/images/recipes/olivu-tapenade.jpg"
+imageAuthor: "Bingqian Li"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fresh-bread-with-black-olive-tapenade-spread-34178394/"
 emoji: "🫒"
 icon: ramekin
 iconColors: "#3a3a2a, #efe4d6"

@@ -2,6 +2,11 @@
 title: "Pazaudētā maize (franču grauzdiņi) ar kanēli"
 description: "Saldie grauzdiņi olu un piena maisījumā ar kanēli, cepti sviestā. Ātras brokastis, kas izglābj vakardienas maizi."
 category: brokastis
+image: "/images/recipes/pazaudeta-maize.jpg"
+imageAuthor: "DΛVΞ GΛRCIΛ"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/autumn-breakfast-with-french-toast-and-eggs-32655069/"
 emoji: "🍞"
 icon: flatbread
 iconColors: "#d99a4a, #f0c060"

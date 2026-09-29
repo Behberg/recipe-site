@@ -2,6 +2,11 @@
 title: "Pankūkas ar biezpiena pildījumu"
 description: "Plānās pankūkas, pildītas ar saldu vaniļas biezpienu un apceptas sviestā."
 category: saldie-edieni
+image: "/images/recipes/pankukas-ar-biezpienu.jpg"
+imageAuthor: "Nadin Sh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/food-on-plate-11261348/"
 emoji: "🥞"
 icon: plate
 iconColors: "#e8b86a, #f3efe6, #fbf7ef"

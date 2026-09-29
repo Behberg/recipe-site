@@ -2,6 +2,11 @@
 title: "Mājas vaniļas saldējums bez saldējuma mašīnas"
 description: "Krēmīgs mājas vaniļas saldējums no 3 sastāvdaļām bez saldējuma mašīnas un bez maisīšanas saldētavā. Tikai sakul un sasaldē."
 category: saldie-edieni
+image: "/images/recipes/maja-vanilas-saldejums.jpg"
+imageAuthor: "ROMAN ODINTSOV"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/three-ice-cream-cones-5060895/"
 emoji: "🍨"
 icon: layers
 iconColors: "#f9eed2, #fcf5e2"

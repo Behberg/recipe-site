@@ -2,6 +2,11 @@
 title: "Krāsnī ceptas cūkas ribiņas ar skābētiem kāpostiem"
 description: "Mīkstas, lēni ceptas cūkas ribiņas uz skābētu kāpostu, ābolu un ķimeņu gultas. Ziemas svētku un Mārtiņdienas galda klasika vienā pannā."
 category: pamatedieni
+image: "/images/recipes/cukas-ribinas-ar-skabetiem-kapostiem.jpg"
+imageAuthor: "Zhang Thomas"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/traditional-german-meal-with-sauerkraut-and-roast-pork-33859574/"
 emoji: "🍖"
 icon: roast
 iconColors: "#a0522d"

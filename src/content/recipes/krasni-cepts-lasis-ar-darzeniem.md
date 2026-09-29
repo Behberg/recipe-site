@@ -2,6 +2,11 @@
 title: "Krāsnī cepts lasis ar dārzeņiem vienā pannā"
 description: "Sulīgs lasis ar kartupeļiem, brokoļiem un tomātiem, cepts vienā cepešpannā ar citronu un dillēm. Veselīgas vakariņas bez liekiem traukiem."
 category: pamatedieni
+image: "/images/recipes/krasni-cepts-lasis-ar-darzeniem.jpg"
+imageAuthor: "douglas  miller"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/salmon-with-beans-and-potatoes-5670958/"
 emoji: "🐟"
 icon: plate
 iconColors: "#f28c5c, #7aa844"

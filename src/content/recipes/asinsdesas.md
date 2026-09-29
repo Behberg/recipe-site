@@ -3,6 +3,11 @@ title: "Asinsdesas ar putraimiem un speķi"
 description: "Tradicionālās latviešu asinsdesas ar miežu putraimiem, speķi, sīpoliem un majorānu. Ziemassvētku ēdiens ar senām tradīcijām, pasniedz ar brūklenēm."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/asinsdesas.jpg"
+imageAuthor: "José Antonio Otegui Auzmendi"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/gourmet-blood-sausage-with-roast-peppers-31372367/"
 emoji: "🌭"
 icon: plate
 iconColors: "#3a1a1a, #f3efe6, #b3122e"

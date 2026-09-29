@@ -2,6 +2,11 @@
 title: "Kartupeļu gulašs ar desiņām un papriku"
 description: "Biezs kartupeļu gulašs ar desiņām, papriku, majorānu un ķimenēm. Lēts, sātīgs ēdiens vienā katlā, kas vēl labāks otrajā dienā."
 category: pamatedieni
+image: "/images/recipes/kartupelu-gulass-ar-desinam.jpg"
+imageAuthor: "kirpiklipencere"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/traditional-hungarian-goulash-in-pot-38441087/"
 emoji: "🥔"
 icon: skillet
 iconColors: "#d8702a, #f0d890"

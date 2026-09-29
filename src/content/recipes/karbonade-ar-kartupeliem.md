@@ -2,6 +2,11 @@
 title: "Karbonāde ar ceptiem kartupeļiem"
 description: "Plāna, sulīga cūkgaļas karbonāde panējumā ar ceptiem kartupeļiem un skābētiem kāpostiem."
 category: pamatedieni
+image: "/images/recipes/karbonade-ar-kartupeliem.jpg"
+imageAuthor: "Kai-Chieh Chan"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fried-chicken-with-homemade-fries-5652257/"
 emoji: "🥩"
 icon: plate
 iconColors: "#c98a3a, #f0cf6a"

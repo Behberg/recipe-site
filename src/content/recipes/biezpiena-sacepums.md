@@ -2,6 +2,11 @@
 title: "Biezpiena sacepums ar rozīnēm"
 description: "Maigs krāsnī cepts biezpiena sacepums ar mannu un rozīnēm. Garšo gan silts, gan auksts."
 category: saldie-edieni
+image: "/images/recipes/biezpiena-sacepums.jpg"
+imageAuthor: "Electra Studio"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-cheesecake-with-coffee-at-cafe-30925474/"
 emoji: "🍰"
 icon: casserole
 iconColors: "#f0d48a"

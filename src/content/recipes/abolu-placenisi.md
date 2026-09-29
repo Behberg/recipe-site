@@ -2,6 +2,11 @@
 title: "Ābolu plācenīši ar kanēli"
 description: "Mīksti kefīra plācenīši ar rīvētiem āboliem un kanēli. Rudens brokastis, kas smaržo pēc ābolu pīrāga."
 category: brokastis
+image: "/images/recipes/abolu-placenisi.jpg"
+imageAuthor: "Kovacs Apor"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-apple-fritters-with-apricot-sauce-and-coffee-39886104/"
 emoji: "🍎"
 icon: plate
 iconColors: "#dfa85a, #f3efe6, #a0602e"

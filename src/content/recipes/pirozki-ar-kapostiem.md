@@ -3,6 +3,11 @@ title: "Pīrādziņi ar kāpostiem krāsnī"
 description: "Mīksti rauga mīklas pīrādziņi ar sautētu kāpostu, burkānu un olu pildījumu, cepti krāsnī. Lieliski pie buljona vai līdzņemšanai."
 cuisine: austrumeiropas
 category: maize-un-cepumi
+image: "/images/recipes/pirozki-ar-kapostiem.jpg"
+imageAuthor: "Polina Tankilevitch"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-photo-of-pirozhki-bread-8599648/"
 emoji: "🥟"
 icon: bun
 iconColors: "#d8923e"

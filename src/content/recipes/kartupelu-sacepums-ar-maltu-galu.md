@@ -2,6 +2,11 @@
 title: "Kartupeļu sacepums ar malto gaļu un sieru"
 description: "Sātīgs kartupeļu sacepums ar malto gaļu tomātu mērcē, krējuma un olu pildījumu un siera virskārtu. Ģimenes vakariņas vienā veidnē."
 category: pamatedieni
+image: "/images/recipes/kartupelu-sacepums-ar-maltu-galu.jpg"
+imageAuthor: "Edita Brus"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-grilled-mashed-potato-topping-36040894/"
 emoji: "🥔"
 icon: casserole
 iconColors: "#e3a857, #b3473a"

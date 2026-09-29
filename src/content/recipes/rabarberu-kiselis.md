@@ -2,6 +2,11 @@
 title: "Rabarberu ķīselis"
 description: "Skābeni salds rabarberu ķīselis ar vaniļu. Pasniedz ar pienu vai putukrējumu."
 category: saldie-edieni
+image: "/images/recipes/rabarberu-kiselis.jpg"
+imageAuthor: "Yohira Hortensia"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/refreshing-strawberry-dessert-with-mint-leaves-31666571/"
 emoji: "🍧"
 icon: layers
 iconColors: "#e87a90"

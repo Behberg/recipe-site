@@ -3,6 +3,11 @@ title: "Buberts ar ogu mērci"
 description: "Gaisīgs vaniļas mannas deserts ar olu baltumiem un skābenu dzērveņu vai aveņu mērci."
 cuisine: latviesu
 category: saldie-edieni
+image: "/images/recipes/buberts.jpg"
+imageAuthor: "Gundula Vogel"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-rice-pudding-with-berries-and-sauce-33088381/"
 emoji: "🍮"
 icon: layers
 iconColors: "#f7eed6, #f7eed6, #c2185b"

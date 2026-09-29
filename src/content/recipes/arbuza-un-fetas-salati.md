@@ -2,6 +2,11 @@
 title: "Arbūza un fetas salāti ar piparmētru"
 description: "Atspirdzinoši vasaras salāti ar sulīgu arbūzu, sāļu fetu, gurķi, piparmētru un olīvām. Ideāli karstā dienā un pie grila."
 category: salati-un-uzkodas
+image: "/images/recipes/arbuza-un-fetas-salati.jpg"
+imageAuthor: "Valeria Boltneva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/salad-on-plate-16966990/"
 emoji: "🍉"
 icon: soup
 iconColors: "#e8505a, #f7f2ea, #6f9a3a"

@@ -2,6 +2,11 @@
 title: "Citronu kēkss ar citronu glazūru"
 description: "Mīksts, mitrs citronu kēkss ar skābenu citronu sīrupu un baltu glazūru. Vienkārša kūka pie tējas vai kafijas."
 category: maize-un-cepumi
+image: "/images/recipes/citronu-kekss.jpg"
+imageAuthor: "Natalia Olivera"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-glazed-vanilla-pound-cake-30632225/"
 emoji: "🍋"
 icon: loaf
 iconColors: "#e9c46a"

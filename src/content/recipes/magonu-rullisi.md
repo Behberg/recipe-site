@@ -2,6 +2,11 @@
 title: "Magoņu maizītes (magoņu rullīši)"
 description: "Mīkstas rauga maizītes ar saldu magoņu un citrona pildījumu. Svētku kafijas galda klasika, kas smaržo pēc bērnības."
 category: maize-un-cepumi
+image: "/images/recipes/magonu-rullisi.jpg"
+imageAuthor: "Polina Tankilevitch"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/slices-of-cinnamon-swirl-bread-in-close-up-4828440/"
 emoji: "🌀"
 icon: bun
 iconColors: "#dca25a"

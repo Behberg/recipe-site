@@ -2,6 +2,11 @@
 title: "Lasis krējuma mērcē ar spinātiem un tomātiem"
 description: "Sulīgs lasis krēmīgā ķiploku, parmezāna un spinātu mērcē ar ķiršu tomātiem. Elegantas vakariņas vienā pannā 25 minūtēs."
 category: pamatedieni
+image: "/images/recipes/lasis-krejuma-merce-ar-spinatiem.jpg"
+imageAuthor: "Valeria Boltneva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fried-fish-with-spinach-20505438/"
 emoji: "🐟"
 icon: skillet
 iconColors: "#f3e6c8, #f28c5c"

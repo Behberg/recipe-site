@@ -2,6 +2,11 @@
 title: "Biezpiena deserts ar avenēm glāzēs"
 description: "Kārtains biezpiena un jogurta deserts ar avenēm un cepumu drupačām glāzēs. Gaišs, svaigs un gatavs 15 minūtēs bez cepšanas."
 category: saldie-edieni
+image: "/images/recipes/biezpiena-deserts-ar-avenem.jpg"
+imageAuthor: "Ella Olsson"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/dessert-jars-3026801/"
 emoji: "🍧"
 icon: layers
 iconColors: "#f3e9d8, #d8456a, #f3e9d8"

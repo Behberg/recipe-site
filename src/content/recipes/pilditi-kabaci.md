@@ -2,6 +2,11 @@
 title: "Pildīti kabači ar gaļu un sieru krāsnī"
 description: "Kabaču laiviņas, pildītas ar malto gaļu, tomātiem un sieru, ceptas krāsnī. Vasaras vakariņas no dārza ražas."
 category: pamatedieni
+image: "/images/recipes/pilditi-kabaci.jpg"
+imageAuthor: "Teodor Buhl"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-stuffed-zucchini-with-rice-in-skillet-36865407/"
 emoji: "🥒"
 icon: flatbread
 iconColors: "#8fae5a, #b8663a, #f3cf5a"

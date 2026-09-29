@@ -3,6 +3,11 @@ title: "Panna cotta ar ogu mērci"
 description: "Zīdaini maigs vaniļas krējuma deserts ar svaigu ogu mērci. Gatavs bez cepšanas."
 cuisine: italu
 category: saldie-edieni
+image: "/images/recipes/panna-cotta.jpg"
+imageAuthor: "Mattia Marcassoli"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/baked-dessert-3301907/"
 emoji: "🍮"
 icon: layers
 iconColors: "#fbf6ea, #fbf6ea, #c2185b"

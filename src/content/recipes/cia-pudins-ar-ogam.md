@@ -2,6 +2,11 @@
 title: "Čia sēklu pudiņš ar ogām"
 description: "Krēmīgs čia sēklu pudiņš, kas ievelkas pa nakti, ar ogām virsū. Veselīgas brokastis bez vārīšanas 5 minūšu darbā."
 category: brokastis
+image: "/images/recipes/cia-pudins-ar-ogam.jpg"
+imageAuthor: "Anastasia Belousova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fruits-in-clear-glass-9022034/"
 emoji: "🫐"
 icon: layers
 iconColors: "#b83a5a, #f3ecdf"

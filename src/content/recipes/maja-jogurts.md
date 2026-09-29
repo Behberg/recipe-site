@@ -2,6 +2,11 @@
 title: "Mājas jogurts bez jogurta pagatavotāja"
 description: "Biezs, maigs mājas jogurts tikai no piena un karotes dzīvā jogurta. Bez piedevām, lētāks par veikala un gatavs pa nakti."
 category: brokastis
+image: "/images/recipes/maja-jogurts.jpg"
+imageAuthor: "Mike Jones"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/person-preparing-a-clear-glass-of-food-8805104/"
 emoji: "🥛"
 icon: jar
 iconColors: "#fbf6ea, #cfe0ee"

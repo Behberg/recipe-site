@@ -2,6 +2,11 @@
 title: "Kartupeļi ar sēnēm krējumā (sautējums)"
 description: "Sātīgs kartupeļu un sēņu sautējums krējumā ar sīpoliem un dillēm. Rudens mājas ēdiens, kas garšo pēc laukiem un meža."
 category: pamatedieni
+image: "/images/recipes/kartupelu-un-senu-sautejums.jpg"
+imageAuthor: "Askar Abayev"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/fresh-vegetables-in-wooden-bowl-5638270/"
 emoji: "🍄"
 icon: skillet
 iconColors: "#e0c070, #8a6a4a"

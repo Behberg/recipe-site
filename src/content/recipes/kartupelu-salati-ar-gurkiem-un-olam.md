@@ -2,6 +2,11 @@
 title: "Kartupeļu salāti ar marinētiem gurķiem un olām"
 description: "Klasiskie kartupeļu salāti ar olām, marinētiem gurķiem, sīpolu un dillēm krējuma un majonēzes mērcē. Obligāti Jāņos un pie grila."
 category: salati-un-uzkodas
+image: "/images/recipes/kartupelu-salati-ar-gurkiem-un-olam.jpg"
+imageAuthor: "tom davis"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-homemade-potato-salad-on-picnic-table-30146054/"
 emoji: "🥔"
 icon: soup
 iconColors: "#f0e0b0, #f7f2ea"

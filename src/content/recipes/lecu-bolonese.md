@@ -2,6 +2,11 @@
 title: "Lēcu boloņese ar spageti (veģetārā)"
 description: "Bieza, sātīga veģetārā boloņeses mērce ar sarkanajām lēcām, dārzeņiem un tomātiem. Vegāniska, lēta un tikpat laba kā ar gaļu."
 category: pamatedieni
+image: "/images/recipes/lecu-bolonese.jpg"
+imageAuthor: "Ketut Subiyanto"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/pasta-bolognaise-served-on-plate-on-table-4349774/"
 emoji: "🍝"
 icon: skillet
 iconColors: "#b8402a, #8a6a3a"

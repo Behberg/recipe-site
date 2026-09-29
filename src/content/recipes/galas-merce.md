@@ -2,6 +2,11 @@
 title: "Gaļas mērce ar kartupeļiem"
 description: "Mīksti sautēti cūkgaļas gabaliņi krējuma mērcē ar sīpoliem. Pasniedz ar vārītiem kartupeļiem."
 category: pamatedieni
+image: "/images/recipes/galas-merce.jpg"
+imageAuthor: "Vero Lova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/traditional-czech-meal-with-dumplings-and-pork-37047950/"
 emoji: "🍲"
 icon: skillet
 iconColors: "#b8844a, #7a3e22"

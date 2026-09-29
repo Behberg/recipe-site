@@ -3,6 +3,11 @@ title: "Ābolu drupačkūka"
 description: "Silti kanēļa āboli zem kraukšķīgas sviesta drupatu kārtas. Pasniedz ar vaniļas saldējumu."
 cuisine: britu
 category: saldie-edieni
+image: "/images/recipes/abolu-drupackuka.jpg"
+imageAuthor: "Sofía  Falco"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-apple-crumble-tart-with-ice-cream-32318139/"
 emoji: "🍎"
 icon: tart
 iconColors: "#e0b060, #c98a3a"

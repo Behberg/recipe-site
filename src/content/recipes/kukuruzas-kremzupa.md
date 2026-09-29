@@ -2,6 +2,11 @@
 title: "Kukurūzas krēmzupa ar bekonu"
 description: "Saldena, krēmīga kukurūzas zupa ar kartupeļiem, pienu un kraukšķīgu bekonu. Bērniem patīk tās krāsa un garša."
 category: zupas
+image: "/images/recipes/kukuruzas-kremzupa.jpg"
+imageAuthor: "Change C.C"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/soup-with-pasta-served-in-a-restaurant-24186312/"
 emoji: "🌽"
 icon: soup
 iconColors: "#f6d04a, #f7f2ea"

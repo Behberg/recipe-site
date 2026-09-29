@@ -2,6 +2,11 @@
 title: "Cīsiņi kārtainajā mīklā ar sieru"
 description: "Zeltaini cīsiņi kraukšķīgā kārtainajā mīklā ar sieru un sezamu. Bērnu ballīšu hīts, gatavs 35 minūtēs no gatavas mīklas."
 category: maize-un-cepumi
+image: "/images/recipes/cisini-mikla.jpg"
+imageAuthor: "Sophia Martin"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/hot-dogs-with-sausages-24354841/"
 emoji: "🌭"
 icon: plate
 iconColors: "#e0a24a, #b3562e, #c8402a"

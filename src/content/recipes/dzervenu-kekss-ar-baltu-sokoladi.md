@@ -2,6 +2,11 @@
 title: "Dzērveņu kēkss ar balto šokolādi un apelsīnu"
 description: "Mīksts sviesta kēkss ar skābenām dzērvenēm, baltās šokolādes gabaliņiem un apelsīna miziņu. Ziemas kafijas galda rota."
 category: maize-un-cepumi
+image: "/images/recipes/dzervenu-kekss-ar-baltu-sokoladi.jpg"
+imageAuthor: "Theodore Nguyen"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-chocolate-fruitcake-with-oranges-and-berries-32789072/"
 emoji: "🍒"
 icon: loaf
 iconColors: "#e9c890, #b3122e"

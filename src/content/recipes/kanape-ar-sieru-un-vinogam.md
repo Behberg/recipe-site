@@ -2,6 +2,11 @@
 title: "Siera un vīnogu kanapē ar medu un riekstiem"
 description: "Vienkāršākās svētku kanapē: siera kubiņi ar vīnogām, valriekstiem un medu uz iesmiņiem. Uzkoda Jaunajam gadam un ballītēm bez gatavošanas."
 category: salati-un-uzkodas
+image: "/images/recipes/kanape-ar-sieru-un-vinogam.jpg"
+imageAuthor: "Farhad Ibrahimzade"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-shot-of-variety-of-cheese-8738016/"
 emoji: "🧀"
 icon: plate
 iconColors: "#f3cf5a, #7a2a5a"

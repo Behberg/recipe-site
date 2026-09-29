@@ -2,6 +2,11 @@
 title: "Makaronu salāti ar šķiņķi un dārzeņiem"
 description: "Sātīgi makaronu salāti ar šķiņķi, marinētiem gurķiem, papriku un zirnīšiem. Lieliski ballītēm, piknikiem un līdzņemšanai."
 category: salati-un-uzkodas
+image: "/images/recipes/makaronu-salati.jpg"
+imageAuthor: "Engin Akyurt"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/pasta-dish-on-white-ceramic-bowl-9399946/"
 emoji: "🍝"
 icon: soup
 iconColors: "#f3d27a, #f7f2ea, #e35d4a"

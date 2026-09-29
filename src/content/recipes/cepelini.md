@@ -3,6 +3,11 @@ title: "Cepelīni"
 description: "Lietuviešu kartupeļu klimpas ar gaļas pildījumu un speķa un krējuma mērci."
 cuisine: lietuviesu
 category: pamatedieni
+image: "/images/recipes/cepelini.jpg"
+imageAuthor: "https://kaboompics.com/"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/round-cepelinais-with-bacon-served-on-plate-4202391/"
 emoji: "🥔"
 icon: plate
 iconColors: "#e8dcb0, #f3efe6, #d9a066"

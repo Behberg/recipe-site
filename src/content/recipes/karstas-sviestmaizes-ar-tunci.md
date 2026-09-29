@@ -2,6 +2,11 @@
 title: "Karstās sviestmaizes ar tunci un sieru"
 description: "Krāsnī ceptas karstās sviestmaizes ar krēmīgu tunča salātu pildījumu un kūstošu sieru. Ātras pusdienas vai vakariņas 20 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/karstas-sviestmaizes-ar-tunci.jpg"
+imageAuthor: "Mateusz Feliksik"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-toasts-13428163/"
 emoji: "🥪"
 icon: flatbread
 iconColors: "#e0b060, #f3cf5a, #c8a080"

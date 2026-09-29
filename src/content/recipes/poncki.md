@@ -3,6 +3,11 @@ title: "Pončiki ar ievārījumu"
 description: "Mīksti un kupli poļu rauga virtuļi ar aveņu ievārījumu un pūdercukuru."
 cuisine: polu
 category: saldie-edieni
+image: "/images/recipes/poncki.jpg"
+imageAuthor: "K Zoltan"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-plate-of-jam-filled-donuts-12035835/"
 emoji: "🍩"
 icon: bun
 iconColors: "#d9913a"

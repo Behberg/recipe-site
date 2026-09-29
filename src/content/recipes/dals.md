@@ -3,6 +3,11 @@ title: "Dāls ar sarkanajām lēcām"
 description: "Maigs indiešu lēcu karijs ar kurkumu, ķiploku un tomātiem. Lēts, vegānisks un ļoti sātīgs."
 cuisine: indiesu
 category: pamatedieni
+image: "/images/recipes/dals.jpg"
+imageAuthor: "Thomas Nahar"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-delicious-khichdi-with-red-chilies-and-coriander-leaves-6363501/"
 emoji: "🍲"
 icon: soup
 iconColors: "#e0a526"

@@ -2,6 +2,11 @@
 title: "Mārrutku un tomātu mērce (asā uzkoda)"
 description: "Asa mārrutku un tomātu mērce ar ķiplokiem bez vārīšanas. Uzkoda, kas sasilda, pie gaļas, galerta un pelmeņiem."
 category: ievarijumi-un-konservi
+image: "/images/recipes/marrutku-merce.jpg"
+imageAuthor: "MART  PRODUCTION"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/marinara-sauce-in-a-cup-8108152/"
 emoji: "🥄"
 icon: jar
 iconColors: "#f3efe6, #d9453a"

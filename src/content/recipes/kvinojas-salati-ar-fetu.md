@@ -2,6 +2,11 @@
 title: "Kvinojas salāti ar fetu, gurķi un tomātiem"
 description: "Sātīgi kvinojas salāti ar fetu, gurķi, tomātiem, olīvām un citrona mērci. Veselīgas pusdienas līdzņemšanai, bezglutēna."
 category: salati-un-uzkodas
+image: "/images/recipes/kvinojas-salati-ar-fetu.jpg"
+imageAuthor: "Nic Wood"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/vegan-quinoa-and-bean-salad-28286267/"
 emoji: "🥗"
 icon: soup
 iconColors: "#e8d8a8, #f7f2ea, #6f9a3a"

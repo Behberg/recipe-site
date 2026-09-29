@@ -2,6 +2,11 @@
 title: "Burkānu un ābolu salāti ar rozīnēm"
 description: "Saldeni, kraukšķīgi burkānu un ābolu salāti ar rozīnēm, valriekstiem un jogurta un medus mērci. Vitamīnu bumba, ko bērni ēd ar prieku."
 category: salati-un-uzkodas
+image: "/images/recipes/burkanu-un-abolu-salati.jpg"
+imageAuthor: "Gu Ko"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/colorful-carrot-and-apple-salad-on-wooden-table-37332350/"
 emoji: "🥕"
 icon: soup
 iconColors: "#f08a2e, #f7f2ea, #a0602e"

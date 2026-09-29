@@ -3,6 +3,11 @@ title: "Cepta pīle ar āboliem"
 description: "Svētku pīle ar kraukšķīgu ādu, pildīta ar skābeniem āboliem un majorānu. Mārtiņdienas un Ziemassvētku galdam."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/cepta-pile-ar-aboliem.jpg"
+imageAuthor: "Nadin Sh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/festive-roast-duck-with-citrus-and-herbs-29333558/"
 emoji: "🦆"
 icon: roast
 iconColors: "#b8662e"

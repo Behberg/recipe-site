@@ -2,6 +2,11 @@
 title: "Auzu pankūkas ar banānu bez cukura"
 description: "Pūkainas auzu pankūkas ar banānu un kanēli bez miltiem un cukura, sablendētas 5 minūtēs. Veselīgas brokastis ar ogām."
 category: brokastis
+image: "/images/recipes/auzu-pankukas-ar-bananu.jpg"
+imageAuthor: "Yani Bautista"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/brown-pancakes-with-red-cherry-on-white-ceramic-plate-11243321/"
 emoji: "🥞"
 icon: plate
 iconColors: "#d9a86a, #f3efe6, #3a3a8c"

@@ -2,6 +2,11 @@
 title: "Augļu iesmiņi ar šokolādi"
 description: "Krāsaini augļu iesmiņi ar kūstošas tumšās un baltās šokolādes svītrām. Ballīšu deserts, ko bērni var pagatavot paši 20 minūtēs."
 category: saldie-edieni
+image: "/images/recipes/auglu-iesmini-ar-sokoladi.jpg"
+imageAuthor: "Jana Ohajdova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/chocolate-covered-strawberries-11394610/"
 emoji: "🍡"
 icon: plate
 iconColors: "#e8505a, #f3efe6, #5a3020"

@@ -3,6 +3,11 @@ title: "Elote (grilēta kukurūza)"
 description: "Meksikāņu ielu kukurūza ar majonēzi, sieru, čili un laimu."
 cuisine: meksikas
 category: salati-un-uzkodas
+image: "/images/recipes/elote.jpg"
+imageAuthor: "J E"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/corn-and-lime-17582268/"
 emoji: "🌽"
 icon: plate
 iconColors: "#f2c230, #f3efe6"

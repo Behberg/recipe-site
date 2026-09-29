@@ -2,6 +2,11 @@
 title: "Pupiņu sautējums ar desiņām tomātu mērcē"
 description: "Sātīgs pupiņu sautējums ar apceptām desiņām kūpinātā tomātu mērcē. Viena panna, 45 minūtes un lētas, sildošas vakariņas."
 category: pamatedieni
+image: "/images/recipes/pupinu-sautejums-ar-desinam.jpg"
+imageAuthor: "Ammad Rasool"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/meatballs-with-beans-16009811/"
 emoji: "🫘"
 icon: skillet
 iconColors: "#b8502a, #c98a5a"

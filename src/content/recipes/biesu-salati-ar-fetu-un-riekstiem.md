@@ -2,6 +2,11 @@
 title: "Biešu salāti ar fetu, valriekstiem un medus mērci"
 description: "Krāsaini biešu salāti ar krēmīgu fetu, grauzdētiem valriekstiem un medus balzamiko mērci. Vienkārši, bet izskatās kā restorānā."
 category: salati-un-uzkodas
+image: "/images/recipes/biesu-salati-ar-fetu-un-riekstiem.jpg"
+imageAuthor: "Odeani Baker"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/salad-on-a-wooden-chopping-board-7994668/"
 emoji: "🥗"
 icon: soup
 iconColors: "#9b1b4a, #eef1f4"

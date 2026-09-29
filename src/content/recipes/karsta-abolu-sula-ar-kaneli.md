@@ -2,6 +2,11 @@
 title: "Karstā ābolu sula ar kanēli"
 description: "Silta, smaržīga ābolu sula ar kanēli, krustnagliņām un apelsīnu. Rudens dzēriens, kas sasilda un smaržo pēc ābolu pīrāga."
 category: dzerieni
+image: "/images/recipes/karsta-abolu-sula-ar-kaneli.jpg"
+imageAuthor: "Denys Gromov"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cinnamon-cocktail-drink-6427780/"
 emoji: "🍎"
 icon: glass
 iconColors: "#d08a3a, #f5efe6"

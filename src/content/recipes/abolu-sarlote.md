@@ -2,6 +2,11 @@
 title: "Ābolu šarlote (vienkāršā ābolu kūka ar olām)"
 description: "Gaisīgā ābolu šarlote no olām, cukura un miltiem ar daudz āboliem un kanēli. Klasika, kas izdodas no 4 sastāvdaļām un 15 minūšu darba."
 category: saldie-edieni
+image: "/images/recipes/abolu-sarlote.jpg"
+imageAuthor: "Gültac Əşrəfli"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/rustic-homemade-apple-pie-on-vintage-plate-33338121/"
 emoji: "🍏"
 icon: cake
 iconColors: "#f0d890, #e8b04a"

@@ -2,6 +2,11 @@
 title: "Aroniju ievārījums ar āboliem"
 description: "Tumšs, bagātīgs aroniju ievārījums ar āboliem un citronu, kas mīkstina aroniju sīvo garšu. Ļoti vitamīniem bagāts rudens krājums."
 category: ievarijumi-un-konservi
+image: "/images/recipes/aroniju-ievarijums-ar-aboliem.jpg"
+imageAuthor: "https://kaboompics.com/"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/brown-bread-with-jam-and-white-cream-on-brown-wooden-table-4963923/"
 emoji: "🫐"
 icon: jar
 iconColors: "#2a1030, #c9a227"

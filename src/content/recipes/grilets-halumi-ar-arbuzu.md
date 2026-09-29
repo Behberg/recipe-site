@@ -2,6 +2,11 @@
 title: "Grilēts halumi ar arbūzu un piparmētru"
 description: "Sāļš, uz grila apcepts halumi siers ar sulīgu arbūzu, piparmētru un laimas medus mērci. Negaidīts, bet lielisks vasaras duets."
 category: salati-un-uzkodas
+image: "/images/recipes/grilets-halumi-ar-arbuzu.jpg"
+imageAuthor: "Rasul Yarichev"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/meal-with-salad-on-tray-17615597/"
 emoji: "🍉"
 icon: plate
 iconColors: "#f0c878, #e8505a, #6fa040"

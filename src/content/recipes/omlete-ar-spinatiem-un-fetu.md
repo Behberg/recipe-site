@@ -2,6 +2,11 @@
 title: "Omlete ar spinātiem un fetu"
 description: "Maiga, pūkaina omlete ar svaigiem spinātiem un sāļu fetu. Olbaltumvielām bagātas brokastis, gatavas 10 minūtēs."
 category: brokastis
+image: "/images/recipes/omlete-ar-spinatiem-un-fetu.jpg"
+imageAuthor: "ROMAN ODINTSOV"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/stainless-steel-fork-and-knife-on-a-plate-of-food-5840304/"
 emoji: "🍳"
 icon: plate
 iconColors: "#f6c445, #4f8a2c"

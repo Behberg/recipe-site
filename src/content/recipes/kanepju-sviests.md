@@ -3,6 +3,11 @@ title: "Kaņepju sviests uz rupjmaizes"
 description: "Tradicionālais latviešu kaņepju sviests no grauzdētām kaņepju sēklām un sviesta. Riekstaina, sātīga smēre uz rupjmaizes un pie kartupeļiem."
 cuisine: latviesu
 category: salati-un-uzkodas
+image: "/images/recipes/kanepju-sviests.jpg"
+imageAuthor: "Nadin Sh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-shot-of-yummy-bread-11214699/"
 emoji: "🌿"
 icon: ramekin
 iconColors: "#6a6a4a, #efe4d6"

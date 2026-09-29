@@ -2,6 +2,11 @@
 title: "Rabarberu pīrāgs ar kraukšķīgu virskārtu"
 description: "Skābeni salds rabarberu pīrāgs ar drupaču virskārtu. Vienkāršākā vasaras kūka."
 category: saldie-edieni
+image: "/images/recipes/rabarberu-pirags.jpg"
+imageAuthor: "Irina Edilbaeva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/strawberries-topped-cake-in-plate-2072476/"
 emoji: "🥧"
 icon: tart
 iconColors: "#d9607a, #d9a14e"

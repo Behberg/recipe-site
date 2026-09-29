@@ -2,6 +2,11 @@
 title: "BBQ vistas stilbiņi uz grila"
 description: "Lipīgi, dūmakaini vistas stilbiņi ar kūpinātās paprikas garšvielām un BBQ mērces glazūru uz grila. Grila ballītes favorīts."
 category: pamatedieni
+image: "/images/recipes/bbq-vistas-stilbini-uz-grila.jpg"
+imageAuthor: "Askar Abayev"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/grilled-meat-on-charcoal-grill-5637682/"
 emoji: "🍗"
 icon: plate
 iconColors: "#8a2a1a, #f3efe6, #c8402a"

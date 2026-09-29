@@ -2,6 +2,11 @@
 title: "Jogurta un ogu saldējuma kociņi"
 description: "Veselīgi mājas saldējuma kociņi no jogurta, medus un ogām ar skaistām rozā svītrām. Vasaras kārums bērniem bez cukura pievienošanas."
 category: saldie-edieni
+image: "/images/recipes/jogurta-ogu-saldejuma-kocini.jpg"
+imageAuthor: "Marcia Salido"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/berries-popsicles-on-a-white-surface-14133086/"
 emoji: "🍦"
 icon: layers
 iconColors: "#f5f0e0, #c8102e, #f5f0e0"

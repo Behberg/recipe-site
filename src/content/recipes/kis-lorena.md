@@ -3,6 +3,11 @@ title: "Kišs Lorēna"
 description: "Franču pīrāgs ar kraukšķīgu mīklu, bekonu, sieru un krēmīgu olu pildījumu."
 cuisine: francu
 category: maize-un-cepumi
+image: "/images/recipes/kis-lorena.jpg"
+imageAuthor: "Amanda Reed"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/three-round-pies-288264/"
 emoji: "🥧"
 icon: tart
 iconColors: "#f0cf6a, #d9a14e"

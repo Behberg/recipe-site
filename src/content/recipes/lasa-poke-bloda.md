@@ -2,6 +2,11 @@
 title: "Laša poke bļoda ar avokado un rīsiem"
 description: "Krāsaina laša poke bļoda ar suši rīsiem, avokado, gurķi, edamame un sojas un sezama mērci. Svaigas, veselīgas pusdienas 40 minūtēs."
 category: pamatedieni
+image: "/images/recipes/lasa-poke-bloda.jpg"
+imageAuthor: "Valeria Boltneva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/poke-bowl-with-salmon-15913488/"
 emoji: "🍣"
 icon: soup
 iconColors: "#f28c5c, #f7f2ea, #6f9a3a"

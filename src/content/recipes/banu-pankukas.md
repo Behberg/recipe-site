@@ -3,6 +3,11 @@ title: "Banānu pankūkas no 3 sastāvdaļām"
 description: "Vienkāršas pankūkas no banāna, olām un auzu pārslām. Bez cukura un bez miltiem."
 cuisine: amerikas
 category: brokastis
+image: "/images/recipes/banu-pankukas.jpg"
+imageAuthor: "Polina Tankilevitch"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/pancakes-and-banana-slices-4725658/"
 emoji: "🥞"
 icon: plate
 iconColors: "#d8a860, #f6e27a"

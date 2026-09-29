@@ -2,6 +2,11 @@
 title: "Ceptas paprikas olīveļļas un ķiploku marinādē"
 description: "Saldas, dūmakainas krāsnī ceptas paprikas, marinētas olīveļļā ar ķiploku, balzamiko un baziliku. Uzkoda, piedeva vai sviestmaižu pildījums."
 category: salati-un-uzkodas
+image: "/images/recipes/marinetas-ceptas-paprikas.jpg"
+imageAuthor: "Angela Khebou"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/grilled-peppers-on-the-plate-16575688/"
 emoji: "🫑"
 icon: plate
 iconColors: "#d9452e, #f3efe6, #f0c040"

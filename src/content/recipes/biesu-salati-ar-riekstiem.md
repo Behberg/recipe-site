@@ -2,6 +2,11 @@
 title: "Biešu salāti ar ķiplokiem un riekstiem"
 description: "Vienkārši, sātīgi biešu salāti ar ķiploku, valriekstiem, žāvētām plūmēm un majonēzi."
 category: salati-un-uzkodas
+image: "/images/recipes/biesu-salati-ar-riekstiem.jpg"
+imageAuthor: "Shameel mukkath"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-shot-of-a-bowl-of-dish-11161423/"
 emoji: "🥗"
 icon: soup
 iconColors: "#9c1c4a"

@@ -2,6 +2,11 @@
 title: "Nakts auzas burciņā ar jogurtu un ogām"
 description: "Auzu pārslas, kas pa nakti ievelkas ar jogurtu un pienu, ar banānu un ogām. Brokastis, kas gaida gatavas ledusskapī."
 category: brokastis
+image: "/images/recipes/nakts-auzas.jpg"
+imageAuthor: "Livilla Latini"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/oatmeal-with-berries-and-blackberries-on-a-wooden-table-27850095/"
 emoji: "🥛"
 icon: layers
 iconColors: "#efe2c6, #f7ecd5, #d9453a"

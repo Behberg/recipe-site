@@ -2,6 +2,11 @@
 title: "Kārtainās mīklas ābolu kabatiņas"
 description: "Kraukšķīgas kārtainās mīklas kabatiņas ar karamelizētiem kanēļa āboliem. Ātrs kafijas galda cepums no gatavas mīklas."
 category: maize-un-cepumi
+image: "/images/recipes/karainas-miklas-abolu-kabatinas.jpg"
+imageAuthor: "Peter Xie"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-freshly-baked-apple-turnovers-on-rack-38001929/"
 emoji: "🥐"
 icon: bun
 iconColors: "#e3b060"

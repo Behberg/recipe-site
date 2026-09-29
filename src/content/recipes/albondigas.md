@@ -3,6 +3,11 @@ title: "Albondigas tomātu mērcē"
 description: "Spāņu gaļas bumbiņas bagātīgā tomātu mērcē ar papriku un ķiploku."
 cuisine: spanu
 category: pamatedieni
+image: "/images/recipes/albondigas.jpg"
+imageAuthor: "Wijs (Wise)"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/meatballs-in-sauce-17989471/"
 emoji: "🍝"
 icon: skillet
 iconColors: "#c8402a, #8a5230"

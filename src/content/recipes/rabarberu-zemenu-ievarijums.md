@@ -2,6 +2,11 @@
 title: "Rabarberu un zemeņu ievārījums"
 description: "Saldskābs rabarberu un zemeņu ievārījums ar citronu. Jūnija klasika, kurā rabarberi dod svaigumu, bet zemenes krāsu un aromātu."
 category: ievarijumi-un-konservi
+image: "/images/recipes/rabarberu-zemenu-ievarijums.jpg"
+imageAuthor: "K Zoltan"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/a-glass-jar-with-strawberry-jam-on-the-table-12369983/"
 emoji: "🍓"
 icon: jar
 iconColors: "#d8456a, #8a6a4a"

@@ -2,6 +2,11 @@
 title: "Lasis folijā uz grila ar citronu un dillēm"
 description: "Sulīgs lasis, cepts folijas paciņās uz grila ar citronu, sviestu, ķiplokiem un dillēm. Nekad neizžūst un nepielīp pie grila."
 category: pamatedieni
+image: "/images/recipes/lasis-folija-uz-grila.jpg"
+imageAuthor: "Анатолий Стафичук"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cooked-salmon-on-a-wooden-board-4158440/"
 emoji: "🐟"
 icon: plate
 iconColors: "#f08a5a, #f3efe6"

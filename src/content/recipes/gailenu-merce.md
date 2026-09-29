@@ -3,6 +3,11 @@ title: "Gaileņu mērce ar jaunajiem kartupeļiem"
 description: "Krēmīga gaileņu mērce ar sīpoliem un dillēm. Latvijas vasaras beigu delikatese."
 cuisine: latviesu
 category: pamatedieni
+image: "/images/recipes/gailenu-merce.jpg"
+imageAuthor: "Anh Nguyen"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-polish-dumplings-with-creamy-mushroom-sauce-37616033/"
 emoji: "🍄"
 icon: skillet
 iconColors: "#f0dfb8, #e3a02b"

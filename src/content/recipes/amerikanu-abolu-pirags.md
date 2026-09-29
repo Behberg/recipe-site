@@ -3,6 +3,11 @@ title: "Amerikāņu ābolu pīrāgs ar režģi"
 description: "Klasiskais amerikāņu ābolu pīrāgs ar sviestainu, kārtainu mīklu, kanēļa ābolu pildījumu un režģa virsu. Rudens deserts ar vaniļas saldējumu."
 cuisine: amerikas
 category: saldie-edieni
+image: "/images/recipes/amerikanu-abolu-pirags.jpg"
+imageAuthor: "Hande Yavuz"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/brown-round-pie-garnished-with-powdered-sugar-14478394/"
 emoji: "🥧"
 icon: tart
 iconColors: "#e8b04a, #c98a3a"

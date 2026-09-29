@@ -2,6 +2,11 @@
 title: "Auzu batoniņi ar medu un rozīnēm"
 description: "Košļājami, sātīgi auzu batoniņi ar medu, sviestu, rozīnēm un sēklām. Veselīgāka uzkoda skolas somai un pārgājieniem."
 category: maize-un-cepumi
+image: "/images/recipes/auzu-batonini.jpg"
+imageAuthor: "Annelies Brouw"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/tray-of-cookies-3065512/"
 emoji: "🌾"
 icon: layers
 iconColors: "#c8914a, #e3b56a"

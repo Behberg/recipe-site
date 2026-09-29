@@ -2,6 +2,11 @@
 title: "Mājas persiku ledus tēja"
 description: "Atspirdzinoša mājas ledus tēja ar svaigiem persikiem un citronu. Daudz mazāk cukura nekā veikalā un īsta augļu garša."
 category: dzerieni
+image: "/images/recipes/persiku-ledus-teja.jpg"
+imageAuthor: "Shameel mukkath"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cold-drink-with-lemon-slices-11009226/"
 emoji: "🍑"
 icon: glass
 iconColors: "#e8a060"

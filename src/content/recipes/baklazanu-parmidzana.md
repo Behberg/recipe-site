@@ -3,6 +3,11 @@ title: "Baklažānu parmidžana"
 description: "Cepti baklažāni kārtās ar tomātu mērci, mocarellu un parmezānu. Itāļu dārzeņu sacepums."
 cuisine: italu
 category: pamatedieni
+image: "/images/recipes/baklazanu-parmidzana.jpg"
+imageAuthor: "Willians Huerta"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-italian-eggplant-parmesan-dish-34875011/"
 emoji: "🍆"
 icon: casserole
 iconColors: "#c8502a"

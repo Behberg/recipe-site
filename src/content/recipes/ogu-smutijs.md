@@ -2,6 +2,11 @@
 title: "Ogu smūtijs ar banānu un jogurtu"
 description: "Biezs, krēmīgs ogu smūtijs ar banānu un jogurtu 5 minūtēs. Vitamīniem bagātas brokastis vai uzkoda, ko var ņemt līdzi."
 category: dzerieni
+image: "/images/recipes/ogu-smutijs.jpg"
+imageAuthor: "Karolina Grabowska www.kaboompics.com"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/girl-holding-yoghurt-5972/"
 emoji: "🫐"
 icon: glass
 iconColors: "#8a3a8c"

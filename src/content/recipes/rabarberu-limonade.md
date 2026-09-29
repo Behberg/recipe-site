@@ -2,6 +2,11 @@
 title: "Rabarberu limonāde"
 description: "Rozā, atspirdzinoša rabarberu limonāde ar citronu un piparmētru."
 category: dzerieni
+image: "/images/recipes/rabarberu-limonade.jpg"
+imageAuthor: "freestocks.org"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/cup-of-fruit-shake-on-table-104662/"
 emoji: "🍹"
 icon: glass
 iconColors: "#f2a0b0"

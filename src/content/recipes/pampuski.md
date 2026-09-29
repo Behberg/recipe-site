@@ -3,6 +3,11 @@ title: "Pampuški ar ķiploku"
 description: "Mīkstas rauga maizītes ar ķiploku un dilles eļļu. Obligāts pavadonis boršam."
 cuisine: ukrainu
 category: maize-un-cepumi
+image: "/images/recipes/pampuski.jpg"
+imageAuthor: "Pramod  Tiwari"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/bread-bun-on-plate-14841924/"
 emoji: "🧄"
 icon: bun
 iconColors: "#d9913a"

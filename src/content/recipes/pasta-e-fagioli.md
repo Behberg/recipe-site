@@ -3,6 +3,11 @@ title: "Pasta e fagioli (itāļu pupiņu un pastas zupa)"
 description: "Itāļu mājas zupa pasta e fagioli ar baltajām pupiņām, mazu pastu, tomātiem un rozmarīnu. Bieza, lēta un sātīga kā sautējums."
 cuisine: italu
 category: zupas
+image: "/images/recipes/pasta-e-fagioli.jpg"
+imageAuthor: "Jana Ohajdova"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/ladle-pouring-soup-into-a-bowl-11033944/"
 emoji: "🫘"
 icon: soup
 iconColors: "#c8703a, #f7f2ea, #f3d27a"

@@ -2,6 +2,11 @@
 title: "Grūbu zupa ar sēnēm"
 description: "Sātīga pērļu grūbu zupa ar šampinjoniem, kartupeļiem un burkāniem. Lēta, veģetāra un ļoti mājīga."
 category: zupas
+image: "/images/recipes/grubu-zupa-ar-senem.jpg"
+imageAuthor: "alleksana"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-soup-bowls-on-table-5950429/"
 emoji: "🍲"
 icon: soup
 iconColors: "#d8b98a, #eef1f4"

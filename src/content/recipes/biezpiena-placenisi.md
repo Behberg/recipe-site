@@ -2,6 +2,11 @@
 title: "Biezpiena plācenīši"
 description: "Maigi, zeltaini biezpiena plācenīši brokastīm ar krējumu un ievārījumu."
 category: brokastis
+image: "/images/recipes/biezpiena-placenisi.jpg"
+imageAuthor: "Sveta Moisseyeva"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/delicious-breakfast-with-pancakes-and-cream-37637120/"
 emoji: "🥞"
 icon: plate
 iconColors: "#e6b05a, #f3efe6, #fbf5ea"

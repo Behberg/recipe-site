@@ -2,6 +2,11 @@
 title: "Gurķu un tomātu salāti ar sīpolu un dillēm"
 description: "Vienkāršākie vasaras salāti: nogatavojušies tomāti, kraukšķīgi gurķi, sarkanais sīpols un dilles ar eļļu. Gatavi 10 minūtēs."
 category: salati-un-uzkodas
+image: "/images/recipes/gurku-tomatu-salati.jpg"
+imageAuthor: "Анатолий Стафичук"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/vegetable-salad-with-parsley-on-table-4129134/"
 emoji: "🍅"
 icon: soup
 iconColors: "#d9453a, #f7f2ea, #8fbf4a"

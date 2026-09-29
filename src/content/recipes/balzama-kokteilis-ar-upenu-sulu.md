@@ -3,6 +3,11 @@ title: "Melnā balzama kokteilis ar upeņu sulu"
 description: "Populārākais Rīgas Melnā balzama kokteilis ar upeņu sulu un ledu. Latvijas klasika, ko pagatavo 3 minūtēs."
 cuisine: latviesu
 category: dzerieni
+image: "/images/recipes/balzama-kokteilis-ar-upenu-sulu.jpg"
+imageAuthor: "Nadin Sh"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/holding-lowball-glasses-with-blackberry-cocktail-19564495/"
 emoji: "🥃"
 icon: glass
 iconColors: "#3a1030"

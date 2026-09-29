@@ -2,6 +2,11 @@
 title: "Biezpiena bumbiņas (biezpiena virtulīši)"
 description: "Zeltainas, mīkstas biezpiena bumbiņas, ceptas eļļā un pārkaisītas ar pūdercukuru. Bērnības gardums, gatavs 35 minūtēs bez rauga."
 category: saldie-edieni
+image: "/images/recipes/biezpiena-bumbinas.jpg"
+imageAuthor: "Karolina Grabowska www.kaboompics.com"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/small-homemade-doughnuts-6365/"
 emoji: "🍩"
 icon: bun
 iconColors: "#e0a04a"

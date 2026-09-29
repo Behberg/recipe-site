@@ -2,6 +2,11 @@
 title: "Biezpiena kūka"
 description: "Krēmīga biezpiena kūka ar kraukšķīgu smilšu mīklas pamatni un citrona aromātu."
 category: saldie-edieni
+image: "/images/recipes/biezpiena-kuka.jpg"
+imageAuthor: "Pavel Danilyuk"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/mouthwatering-cakes-on-a-glass-shelf-6612672/"
 emoji: "🍰"
 icon: cake
 iconColors: "#d9a55a, #f5e6c4"

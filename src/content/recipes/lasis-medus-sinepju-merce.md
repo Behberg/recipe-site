@@ -2,6 +2,11 @@
 title: "Lasis medus un sinepju mērcē pannā"
 description: "Lasis ar spīdīgu medus, graudaino sinepju un ķiploku glazūru, cepts pannā 10 minūtēs. Gardas un ātras vakariņas diviem."
 category: pamatedieni
+image: "/images/recipes/lasis-medus-sinepju-merce.jpg"
+imageAuthor: "Mayumi Maciel"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/close-up-of-fish-with-sauce-17988079/"
 emoji: "🍯"
 icon: plate
 iconColors: "#ee8b52, #f3d27a, #e0b43a"
