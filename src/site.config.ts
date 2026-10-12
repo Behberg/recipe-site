@@ -27,7 +27,7 @@ export const ADS = {
    * visas vietas zemāk: vieta, kurai nav sava ID, izmanto šo. Kamēr gan šis, gan vietas ID ir
    * tukši, šajā vietā nekas netiek rādīts (paliek tikai Google Auto ads, ja tās ir ieslēgtas).
    */
-  fallbackSlot: '',
+  fallbackSlot: '4396376666',
   /** Atsevišķi ID katrai vietai nav obligāti, bet AdSense pārskatos ļauj redzēt, kura vieta pelna. */
   slots: {
     inFeed: '', // recepšu sarakstos starp kartītēm, sākumlapā un padomu sarakstā
