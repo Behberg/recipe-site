@@ -115,6 +115,8 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
     }
   </div>
 
+  <AdSlot slot="listBottom" class="ad-list-end" />
+
   <div class="empty" data-empty hidden>
     <div class="big">🥄</div>
     <h3>{t(lang, 'browser.emptyTitle')}</h3>
@@ -289,6 +291,9 @@ const usedCategories = categories.filter((c) => count('category', c.id) > 0);
   }
   .grid.is-filtered :global(.ad-feed) {
     display: none;
+  }
+  .browser :global(.ad-list-end) {
+    margin-top: 24px;
   }
   [hidden] {
     display: none !important;

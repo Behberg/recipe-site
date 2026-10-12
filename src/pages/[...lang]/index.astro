@@ -8,7 +8,9 @@ import OccasionBanner from '../../components/OccasionBanner.astro';
 import QuizCard from '../../components/QuizCard.astro';
 import { getQuizzes, quizzesUrl } from '../../lib/quizzes';
 import { SITE } from '../../site.config';
-import { getCatalog, cuisineUrl, categoryUrl, recipeUrl, formatMinutes, totalTime } from '../../lib/recipes';
+import GuideCard from '../../components/GuideCard.astro';
+import { getGuides, guidesUrl } from '../../lib/guides';
+import { getCatalog, cuisineUrl, categoryUrl, recipeUrl, formatMinutes, totalTime, VEGAN_TAG } from '../../lib/recipes';
 import { langFromPath, langPaths, href, t, count } from '../../i18n';
 import { trTag } from '../../i18n/data';
 import { organizationLd } from '../../lib/seo';
@@ -24,6 +26,8 @@ const featured = recipes.filter((r) => r.data.featured).slice(0, 8);
 const latest = recipes.slice(0, 8);
 const latvian = recipes.filter((r) => r.data.cuisine?.id === 'latviesu').slice(0, 10);
 const comfort = recipes.filter((r) => r.lv.tags.includes('mājīgi')).slice(0, 12);
+const vegan = recipes.filter((r) => r.data.image && r.lv.tags.includes(VEGAN_TAG)).slice(0, 12);
+const guides = (await getGuides(lang)).slice(0, 3);
 // "Today's pick" rotates daily. The page is built once, so the browser chooses the day's recipe
 // (inline script below the cards). The pool is 31 dishes with real photos, mixed across
 // categories; the card for the build day is the one shown without JavaScript and to crawlers.
@@ -83,6 +87,7 @@ const jsonLd = [organizationLd(Astro.site), {
       <div class="hero-chips">
         <a class="chip" href={u('/receptes/?laiks=30')}>{t(lang, 'home.chipUnder30')}</a>
         <a class="chip" href={cozyQuery}>{t(lang, 'home.chipCozy')}</a>
+        <a class="chip" href={u('/veganas-receptes/')}>{t(lang, 'home.chipVegan')}</a>
         <a class="chip" href={cuisineUrl('latviesu', lang)}>{t(lang, 'home.chipLatvian')}</a>
         <a class="chip" href={categoryUrl('saldie-edieni', lang)}>{t(lang, 'home.chipSweets')}</a>
         <a class="chip" href={categoryUrl('ievarijumi-un-konservi', lang)}>{t(lang, 'home.chipJams')}</a>
@@ -269,6 +274,32 @@ const jsonLd = [organizationLd(Astro.site), {
     </div>
   </section>
 
+  <!-- Vegan section -->
+  {
+    vegan.length > 0 && (
+      <section class="section container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">{t(lang, 'home.veganEyebrow')}</span>
+            <h2>{t(lang, 'home.veganTitle')}</h2>
+          </div>
+          <a class="link-more" href={u('/veganas-receptes/')}>
+            {t(lang, 'common.all')} <Icon name="arrow-right" />
+          </a>
+        </div>
+        <div class="rail">
+          {vegan.map((r) => (
+            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? "")} category={categoryById.get(r.data.category.id)} wide />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <div class="container">
+    <AdSlot slot="inFeed" />
+  </div>
+
   <!-- Personality quizzes -->
   <section class="section container" aria-labelledby="quiz-title">
     <div class="section-head">
@@ -355,6 +386,24 @@ const jsonLd = [organizationLd(Astro.site), {
       </section>
     )
   }
+
+  <!-- Kitchen guides -->
+  <section class="section container" aria-labelledby="guides-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{t(lang, 'guides.homeEyebrow')}</span>
+        <h2 id="guides-title">{t(lang, 'guides.homeTitle')}</h2>
+      </div>
+      <a class="link-more" href={guidesUrl(lang)}>
+        {t(lang, 'guides.all')} <Icon name="arrow-right" />
+      </a>
+    </div>
+    <div class="quiz-row">{guides.map((g) => <GuideCard guide={g} />)}</div>
+  </section>
+
+  <div class="container">
+    <AdSlot slot="inFeed" />
+  </div>
 
   <!-- Latest -->
   <section class="section container">

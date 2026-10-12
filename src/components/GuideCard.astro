@@ -1,0 +1,96 @@
+---
+import { imageUrl, imageSrcset } from '../lib/recipes';
+import type { Guide } from '../lib/guides';
+import { langFromPath, t } from '../i18n';
+
+interface Props {
+  guide: Guide;
+  eager?: boolean;
+}
+
+const { guide, eager = false } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
+const srcset = imageSrcset(guide.image, [400, 700, 1000]);
+---
+
+<a class="guide-card" href={guide.url} style={`--gc:${guide.color}`}>
+  <span class="gc-media">
+    <img
+      src={imageUrl(guide.image, 700)}
+      srcset={srcset || undefined}
+      sizes={srcset ? '(min-width: 1000px) 380px, (min-width: 600px) 50vw, 100vw' : undefined}
+      alt={guide.imageAlt}
+      width="700"
+      height="467"
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+    />
+  </span>
+  <span class="gc-body">
+    <span class="gc-eyebrow">{guide.emoji} {guide.eyebrow}</span>
+    <span class="gc-title">{guide.title}</span>
+    <span class="gc-desc">{guide.description}</span>
+    <span class="gc-meta">{t(lang, 'guides.readTime', { n: guide.minutes })}</span>
+  </span>
+</a>
+
+<style>
+  .guide-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--r);
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: var(--shadow-sm), inset 0 0 0 1px var(--line);
+    transition:
+      transform 0.2s var(--ease),
+      box-shadow 0.2s;
+  }
+  .guide-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+  }
+  .gc-media {
+    display: block;
+    aspect-ratio: 3 / 2;
+    background: color-mix(in oklab, var(--gc) 16%, var(--surface-2));
+  }
+  .gc-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px 18px;
+  }
+  .gc-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gc);
+  }
+  .gc-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .gc-desc {
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .gc-meta {
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: var(--ink-3);
+  }
+</style>

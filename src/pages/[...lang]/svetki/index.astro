@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Icon from '../../../components/Icon.astro';
+import AdSlot from '../../../components/AdSlot.astro';
 import OccasionBanner from '../../../components/OccasionBanner.astro';
 import { getOccasions, getRecipes, occasionUrl } from '../../../lib/recipes';
 import { langFromPath, langPaths, t, count as countText } from '../../../i18n';
@@ -69,6 +70,8 @@ const rules = occasions.map(({ id, data: { dateType, month, day, easterOffset, w
       }
     </ol>
   </section>
+
+  <div class="container"><AdSlot slot="listBottom" /></div>
 
   <script is:inline type="application/json" id="cal-rules" set:html={JSON.stringify(rules)} />
 </Base>

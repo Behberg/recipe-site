@@ -1,0 +1,432 @@
+{
+  "order": 6,
+  "date": "2026-10-07",
+  "emoji": "🌱",
+  "color": "#3f8f4f",
+  "image": "/images/guides/ar-ko-aizstat-olas-pienu-un-sviestu.jpg",
+  "imageAuthor": "cottonbro studio",
+  "imageSource": "https://www.pexels.com/photo/almond-and-hazelnut-milks-in-studio-on-blue-background-6804191/",
+  "figure": {
+    "src": "/images/guides/ar-ko-aizstat-olas-pienu-un-sviestu-2.jpg",
+    "author": "Marek Kupiec",
+    "source": "https://www.pexels.com/photo/flax-seed-in-wooden-spoon-9974505/",
+    "before": 1
+  },
+  "related": {
+    "tag": "vegāns"
+  },
+  "text": {
+    "lv": {
+      "title": "Ar ko aizstāt olas, pienu un sviestu: vegāna virtuves špikeris",
+      "seoTitle": "Ar ko aizstāt olas, pienu un sviestu cepot un gatavojot",
+      "description": "Praktisks špikeris: ar ko aizstāt olas mīklā, kuru augu pienu izvēlēties, ko likt sviesta, krējuma, medus un želatīna vietā, lai iecienītās receptes izdotos arī bez dzīvnieku produktiem.",
+      "eyebrow": "Vegānu virtuve",
+      "lead": "Gaidi ciemos vegānu, bērnam ir piena alerģija vai vienkārši ledusskapī beigušās olas? Gandrīz katru dzīvnieku izcelsmes produktu var aizstāt ar ko tādu, kas jau stāv plauktā. Galvenais ir saprast, ko šis produkts receptē dara.",
+      "imageAlt": "Augu piena pudeles, glāzes un rieksti uz zila fona",
+      "figureCaption": "Ēdamkarote maltu linsēklu un trīs ēdamkarotes ūdens aizstāj vienu olu mīklā.",
+      "sections": [
+        {
+          "h": "Vispirms saproti, ko ola receptē dara",
+          "p": [
+            "Ola mīklā var darīt trīs dažādas lietas: saturēt kopā, dot mitrumu vai uzirdināt. Kotletēs un cepumos tā ir līme, kēksos un mafinos dod mitrumu, bet biskvītā un bezē tur gaisu. Tāpēc nav viena universāla aizstājēja: izvēlies pēc olas uzdevuma.",
+            "Vieglāk aizstāt vienu vai divas olas. Ja receptē ir četras vai vairāk, labāk meklē recepti, kas jau sākumā rakstīta bez olām."
+          ]
+        },
+        {
+          "h": "Ar ko aizstāt vienu olu",
+          "table": [
+            [
+              "Aizstājējs",
+              "Daudzums",
+              "Kur der vislabāk"
+            ],
+            [
+              "Maltas linsēklas un ūdens",
+              "1 ēd. k. un 3 ēd. k.",
+              "Cepumi, mafini, kotletes"
+            ],
+            [
+              "Saspaidīts banāns",
+              "Puse banāna",
+              "Pankūkas, kēksi, auzu cepumi"
+            ],
+            [
+              "Ābolu biezenis",
+              "60 g",
+              "Kēksi, mafini, brauniji"
+            ],
+            [
+              "Aunazirņu šķidrums (akvafaba)",
+              "3 ēd. k.",
+              "Bezē, musi, majonēze"
+            ],
+            [
+              "Augu jogurts",
+              "60 g",
+              "Kūkas un mafini"
+            ],
+            [
+              "Ciete un ūdens",
+              "1 ēd. k. un 2 ēd. k.",
+              "Krēmi, mērces, kotletes"
+            ]
+          ],
+          "after": [
+            "Linsēklas sajauc ar ūdeni un atstāj uz 10 minūtēm, līdz veidojas biezs želejveida maisījums. Akvafaba ir šķidrums no aunazirņu bundžas: to var sakult stingrās putās tāpat kā olu baltumus. Omletes un kulteņa vietā gatavo tofu kulteni vai aunazirņu miltu omleti."
+          ]
+        },
+        {
+          "h": "Kuru augu pienu izvēlēties",
+          "p": [
+            "Gandrīz visās receptēs govs pienu var aizstāt ar augu pienu attiecībā viens pret vienu. Atšķiras tikai garša un tas, kā piens uzvedas karstumā."
+          ],
+          "list": [
+            "Auzu piens: maiga, viegli salda garša, labi puto kafijā, der pankūkām, putrām un mērcēm. To var pagatavot arī mājās.",
+            "Sojas piens: visvairāk olbaltumvielu, tāpēc cepot uzvedas līdzīgi govs pienam. Labākā izvēle mīklām.",
+            "Mandeļu piens: viegls un riekstains, labs smūtijiem un brokastu pārslām.",
+            "Kokosriekstu piens no bundžas: trekns un biezs, saldā krējuma vietā karijos, krēmzupās un desertos.",
+            "Paniņu vai kefīra vietā: 250 ml augu piena sajauc ar 1 ēdamkaroti citrona sulas vai ābolu etiķa un atstāj uz 5 minūtēm."
+          ]
+        },
+        {
+          "h": "Ko likt sviesta vietā",
+          "list": [
+            "Cepšanai un ceptiem ēdieniem: augu eļļa vai olīveļļa.",
+            "Mīklā: sviestā ir apmēram 80 procenti tauku, tāpēc 100 g sviesta aizstāj ar 80 g eļļas un 1 ēdamkaroti augu piena.",
+            "Smilšu mīklai un cepumiem, kur vajag cietu tauku: augu margarīns vai auksta kokosriekstu eļļa attiecībā viens pret vienu.",
+            "Uz maizes: zemesriekstu sviests, humuss, avokado vai kaņepju sviests."
+          ]
+        },
+        {
+          "h": "Krējums, siers, medus un želatīns",
+          "list": [
+            "Saldais krējums mērcēs: auzu krējums gatavošanai vai kokosriekstu piens.",
+            "Putukrējums: bundžu ar treknu kokosriekstu pienu atdzesē pa nakti, nosmeļ biezo virskārtu un sakuļ ar pūdercukuru.",
+            "Skābais krējums: biezs nesaldināts augu jogurts ar dažiem pilieniem citrona sulas.",
+            "Siera garša mērcēs un uz makaroniem: neaktīvā rauga pārslas vai grauzdēta rīvmaize ar ķiploku.",
+            "Medus: kļavu sīrups, agaves sīrups vai mājās vārīts pieneņu medus.",
+            "Želatīns: agars. Tas jāuzvāra, un tā vajag apmēram trīs reizes mazāk nekā želatīna."
+          ]
+        },
+        {
+          "h": "Trīs padomi iesācējam",
+          "list": [
+            "Sāc ar receptēm, kas jau izdomātas bez dzīvnieku produktiem: karijiem, lēcu zupām, humusu. Tur nekas nav jāaizstāj.",
+            "Vienā receptē maini vienu lietu. Ja vienlaikus aizstāj olas, pienu un sviestu, grūti saprast, kas nogāja greizi.",
+            "Negaidi tādu pašu garšu. Banāns garšo pēc banāna, kokosrieksts pēc kokosrieksta: izvēlies aizstājēju, kura garša ēdienam piestāv."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "en": {
+      "title": "How to replace eggs, milk and butter: a vegan kitchen cheat sheet",
+      "seoTitle": "How to replace eggs, milk and butter in baking and cooking",
+      "description": "A practical cheat sheet: what to use instead of eggs in a batter, which plant milk to choose, and what replaces butter, cream, honey and gelatine, so your favourite recipes work without animal products.",
+      "eyebrow": "Vegan kitchen",
+      "lead": "Is a vegan coming to dinner, does your child have a milk allergy, or have you simply run out of eggs? Almost every animal product can be replaced with something already on the shelf. The key is to understand what that ingredient does in the recipe.",
+      "imageAlt": "Bottles and glasses of plant milk with nuts on a blue background",
+      "figureCaption": "A tablespoon of ground flaxseed and three tablespoons of water replace one egg in a batter.",
+      "sections": [
+        {
+          "h": "First work out what the egg is doing",
+          "p": [
+            "An egg can do three different jobs in a recipe: bind, add moisture or lift. In burgers and cookies it is glue, in loaf cakes and muffins it gives moisture, and in sponge and meringue it holds air. That is why there is no single universal substitute: choose according to the egg's job.",
+            "One or two eggs are easy to replace. If a recipe calls for four or more, it is better to look for one written without eggs from the start."
+          ]
+        },
+        {
+          "h": "What replaces one egg",
+          "table": [
+            [
+              "Substitute",
+              "Amount",
+              "Works best in"
+            ],
+            [
+              "Ground flaxseed and water",
+              "1 tbsp and 3 tbsp",
+              "Cookies, muffins, burgers"
+            ],
+            [
+              "Mashed banana",
+              "Half a banana",
+              "Pancakes, loaf cakes, oat cookies"
+            ],
+            [
+              "Apple purée",
+              "60 g",
+              "Loaf cakes, muffins, brownies"
+            ],
+            [
+              "Chickpea liquid (aquafaba)",
+              "3 tbsp",
+              "Meringue, mousse, mayonnaise"
+            ],
+            [
+              "Plant yogurt",
+              "60 g",
+              "Cakes and muffins"
+            ],
+            [
+              "Cornflour and water",
+              "1 tbsp and 2 tbsp",
+              "Custards, sauces, burgers"
+            ]
+          ],
+          "after": [
+            "Mix the flaxseed with the water and leave for 10 minutes, until it turns into a thick gel. Aquafaba is the liquid from a tin of chickpeas: it whips into stiff peaks just like egg whites. Instead of an omelette or scrambled eggs, make a tofu scramble or a chickpea flour omelette."
+          ]
+        },
+        {
+          "h": "Which plant milk to choose",
+          "p": [
+            "In almost every recipe cow's milk can be swapped for plant milk one for one. Only the flavour differs, and the way the milk behaves when heated."
+          ],
+          "list": [
+            "Oat milk: mild and slightly sweet, froths well in coffee, good for pancakes, porridge and sauces. You can also make it at home.",
+            "Soy milk: the most protein, so it behaves most like cow's milk in baking. The best choice for batters and doughs.",
+            "Almond milk: light and nutty, good for smoothies and breakfast cereal.",
+            "Tinned coconut milk: rich and thick, a stand in for cream in curries, cream soups and desserts.",
+            "Instead of buttermilk or kefir: mix 250 ml of plant milk with 1 tablespoon of lemon juice or cider vinegar and leave for 5 minutes."
+          ]
+        },
+        {
+          "h": "What to use instead of butter",
+          "list": [
+            "For frying and roasting: vegetable oil or olive oil.",
+            "In batters: butter is about 80 per cent fat, so replace 100 g of butter with 80 g of oil and 1 tablespoon of plant milk.",
+            "For shortcrust and cookies, where a solid fat is needed: plant based block margarine or cold coconut oil, one for one.",
+            "On bread: peanut butter, hummus, avocado or hemp seed butter."
+          ]
+        },
+        {
+          "h": "Cream, cheese, honey and gelatine",
+          "list": [
+            "Cream in sauces: oat cooking cream or coconut milk.",
+            "Whipped cream: chill a tin of full fat coconut milk overnight, scoop off the thick top layer and whip it with icing sugar.",
+            "Sour cream: thick unsweetened plant yogurt with a few drops of lemon juice.",
+            "A cheesy flavour in sauces and on pasta: nutritional yeast flakes, or toasted breadcrumbs with garlic.",
+            "Honey: maple syrup, agave syrup or homemade dandelion honey.",
+            "Gelatine: agar. It has to be boiled, and you need about a third as much as gelatine."
+          ]
+        },
+        {
+          "h": "Three tips for beginners",
+          "list": [
+            "Start with recipes that were created without animal products: curries, lentil soups, hummus. There is nothing to replace.",
+            "Change one thing per recipe. If you swap the eggs, milk and butter all at once, it is hard to tell what went wrong.",
+            "Do not expect the same taste. Banana tastes of banana, coconut of coconut: choose a substitute whose flavour suits the dish."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "ru": {
+      "title": "Чем заменить яйца, молоко и масло: шпаргалка для веганской кухни",
+      "seoTitle": "Чем заменить яйца, молоко и сливочное масло в выпечке и готовке",
+      "description": "Практичная шпаргалка: чем заменить яйца в тесте, какое растительное молоко выбрать, что взять вместо сливочного масла, сливок, мёда и желатина, чтобы любимые рецепты получались и без животных продуктов.",
+      "eyebrow": "Веганская кухня",
+      "lead": "Ждёте в гости вегана, у ребёнка аллергия на молоко или просто закончились яйца? Почти любой продукт животного происхождения можно заменить тем, что уже стоит на полке. Главное понять, что этот продукт делает в рецепте.",
+      "imageAlt": "Бутылки и стаканы с растительным молоком и орехи на синем фоне",
+      "figureCaption": "Столовая ложка молотых семян льна и три столовые ложки воды заменяют одно яйцо в тесте.",
+      "sections": [
+        {
+          "h": "Сначала разберитесь, что делает яйцо",
+          "p": [
+            "Яйцо в рецепте может выполнять три разные задачи: связывать, давать влагу или поднимать тесто. В котлетах и печенье оно клей, в кексах и маффинах даёт влагу, а в бисквите и безе удерживает воздух. Поэтому одной универсальной замены нет: выбирайте по задаче яйца.",
+            "Одно или два яйца заменить легко. Если в рецепте их четыре и больше, лучше поискать рецепт, который изначально написан без яиц."
+          ]
+        },
+        {
+          "h": "Чем заменить одно яйцо",
+          "table": [
+            [
+              "Замена",
+              "Количество",
+              "Где подходит лучше всего"
+            ],
+            [
+              "Молотые семена льна и вода",
+              "1 ст. л. и 3 ст. л.",
+              "Печенье, маффины, котлеты"
+            ],
+            [
+              "Размятый банан",
+              "Половина банана",
+              "Панкейки, кексы, овсяное печенье"
+            ],
+            [
+              "Яблочное пюре",
+              "60 г",
+              "Кексы, маффины, брауни"
+            ],
+            [
+              "Жидкость от нута (аквафаба)",
+              "3 ст. л.",
+              "Безе, муссы, майонез"
+            ],
+            [
+              "Растительный йогурт",
+              "60 г",
+              "Торты и маффины"
+            ],
+            [
+              "Крахмал и вода",
+              "1 ст. л. и 2 ст. л.",
+              "Кремы, соусы, котлеты"
+            ]
+          ],
+          "after": [
+            "Смешайте семена льна с водой и оставьте на 10 минут, пока не получится густая желеобразная масса. Аквафаба это жидкость из банки с нутом: её можно взбить в крепкую пену, как яичные белки. Вместо омлета и яичницы приготовьте скрэмбл из тофу или омлет из нутовой муки."
+          ]
+        },
+        {
+          "h": "Какое растительное молоко выбрать",
+          "p": [
+            "Почти во всех рецептах коровье молоко можно заменить растительным один к одному. Отличаются только вкус и то, как молоко ведёт себя при нагревании."
+          ],
+          "list": [
+            "Овсяное молоко: мягкий, слегка сладкий вкус, хорошо взбивается в кофе, подходит для блинов, каш и соусов. Его можно приготовить и дома.",
+            "Соевое молоко: больше всего белка, поэтому в выпечке ведёт себя почти как коровье. Лучший выбор для теста.",
+            "Миндальное молоко: лёгкое и ореховое, хорошо для смузи и хлопьев на завтрак.",
+            "Кокосовое молоко из банки: жирное и густое, вместо сливок в карри, крем-супах и десертах.",
+            "Вместо пахты или кефира: смешайте 250 мл растительного молока с 1 столовой ложкой лимонного сока или яблочного уксуса и оставьте на 5 минут."
+          ]
+        },
+        {
+          "h": "Что взять вместо сливочного масла",
+          "list": [
+            "Для жарки и запекания: растительное или оливковое масло.",
+            "В тесте: в сливочном масле около 80 процентов жира, поэтому 100 г масла замените на 80 г растительного масла и 1 столовую ложку растительного молока.",
+            "Для песочного теста и печенья, где нужен твёрдый жир: растительный маргарин или холодное кокосовое масло один к одному.",
+            "На хлеб: арахисовая паста, хумус, авокадо или конопляное масло из семян."
+          ]
+        },
+        {
+          "h": "Сливки, сыр, мёд и желатин",
+          "list": [
+            "Сливки в соусах: овсяные сливки для готовки или кокосовое молоко.",
+            "Взбитые сливки: охладите банку жирного кокосового молока в течение ночи, снимите густой верхний слой и взбейте с сахарной пудрой.",
+            "Сметана: густой несладкий растительный йогурт с несколькими каплями лимонного сока.",
+            "Сырный вкус в соусах и на пасте: пищевые дрожжевые хлопья или обжаренные сухари с чесноком.",
+            "Мёд: кленовый сироп, сироп агавы или домашний мёд из одуванчиков.",
+            "Желатин: агар. Его нужно прокипятить, и требуется его примерно втрое меньше, чем желатина."
+          ]
+        },
+        {
+          "h": "Три совета новичку",
+          "list": [
+            "Начните с рецептов, которые изначально придуманы без животных продуктов: карри, чечевичные супы, хумус. Там ничего не надо заменять.",
+            "В одном рецепте меняйте что-то одно. Если заменить сразу яйца, молоко и масло, трудно понять, что пошло не так.",
+            "Не ждите такого же вкуса. Банан на вкус как банан, кокос как кокос: выбирайте замену, вкус которой подходит блюду."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "lt": {
+      "title": "Kuo pakeisti kiaušinius, pieną ir sviestą: veganiškos virtuvės atmintinė",
+      "seoTitle": "Kuo pakeisti kiaušinius, pieną ir sviestą kepant ir gaminant",
+      "description": "Praktiška atmintinė: kuo pakeisti kiaušinius tešloje, kurį augalinį pieną rinktis, ką dėti vietoj sviesto, grietinėlės, medaus ir želatinos, kad mėgstami receptai pavyktų ir be gyvūninių produktų.",
+      "eyebrow": "Veganiška virtuvė",
+      "lead": "Laukiate svečio vegano, vaikas alergiškas pienui ar tiesiog baigėsi kiaušiniai? Beveik kiekvieną gyvūninės kilmės produktą galima pakeisti tuo, kas jau stovi lentynoje. Svarbiausia suprasti, ką tas produktas recepte daro.",
+      "imageAlt": "Augalinio pieno buteliai, stiklinės ir riešutai mėlyname fone",
+      "figureCaption": "Šaukštas maltų linų sėmenų ir trys šaukštai vandens tešloje pakeičia vieną kiaušinį.",
+      "sections": [
+        {
+          "h": "Pirmiausia supraskite, ką kiaušinis daro recepte",
+          "p": [
+            "Kiaušinis recepte gali atlikti tris skirtingus darbus: surišti, suteikti drėgmės arba iškelti. Kotletuose ir sausainiuose jis yra klijai, keksuose ir keksiukuose suteikia drėgmės, o biskvite ir morenguose laiko orą. Todėl vieno universalaus pakaitalo nėra: rinkitės pagal kiaušinio užduotį.",
+            "Vieną ar du kiaušinius pakeisti lengva. Jei recepte jų keturi ar daugiau, geriau ieškokite recepto, kuris iš pat pradžių parašytas be kiaušinių."
+          ]
+        },
+        {
+          "h": "Kuo pakeisti vieną kiaušinį",
+          "table": [
+            [
+              "Pakaitalas",
+              "Kiekis",
+              "Kur tinka geriausiai"
+            ],
+            [
+              "Malti linų sėmenys ir vanduo",
+              "1 v. š. ir 3 v. š.",
+              "Sausainiai, keksiukai, kotletai"
+            ],
+            [
+              "Sutrintas bananas",
+              "Pusė banano",
+              "Blyneliai, keksai, avižiniai sausainiai"
+            ],
+            [
+              "Obuolių tyrė",
+              "60 g",
+              "Keksai, keksiukai, šokoladainiai"
+            ],
+            [
+              "Avinžirnių skystis (akvafaba)",
+              "3 v. š.",
+              "Morengai, putėsiai, majonezas"
+            ],
+            [
+              "Augalinis jogurtas",
+              "60 g",
+              "Pyragai ir keksiukai"
+            ],
+            [
+              "Krakmolas ir vanduo",
+              "1 v. š. ir 2 v. š.",
+              "Kremai, padažai, kotletai"
+            ]
+          ],
+          "after": [
+            "Linų sėmenis sumaišykite su vandeniu ir palikite 10 minučių, kol susidarys tirštas želė primenantis mišinys. Akvafaba yra skystis iš avinžirnių skardinės: jį galima išplakti į standžias putas kaip kiaušinių baltymus. Vietoj omleto ir kiaušinienės pasigaminkite tofu kiaušinienę arba avinžirnių miltų omletą."
+          ]
+        },
+        {
+          "h": "Kurį augalinį pieną rinktis",
+          "p": [
+            "Beveik visuose receptuose karvės pieną galima pakeisti augaliniu santykiu vienas su vienu. Skiriasi tik skonis ir tai, kaip pienas elgiasi kaitinamas."
+          ],
+          "list": [
+            "Avižų pienas: švelnus, šiek tiek salsvas, gerai putoja kavoje, tinka blynams, košėms ir padažams. Jį galima pasigaminti ir namuose.",
+            "Sojų pienas: daugiausia baltymų, todėl kepant elgiasi panašiausiai į karvės pieną. Geriausias pasirinkimas tešloms.",
+            "Migdolų pienas: lengvas ir riešutinis, tinka kokteiliams ir pusryčių dribsniams.",
+            "Kokosų pienas iš skardinės: riebus ir tirštas, vietoj grietinėlės kariuose, trintose sriubose ir desertuose.",
+            "Vietoj pasukų ar kefyro: 250 ml augalinio pieno sumaišykite su 1 šaukštu citrinos sulčių arba obuolių acto ir palikite 5 minutes."
+          ]
+        },
+        {
+          "h": "Ką dėti vietoj sviesto",
+          "list": [
+            "Kepimui keptuvėje ir orkaitėje: augalinis arba alyvuogių aliejus.",
+            "Tešloje: svieste yra apie 80 procentų riebalų, todėl 100 g sviesto pakeiskite 80 g aliejaus ir 1 šaukštu augalinio pieno.",
+            "Trapiai tešlai ir sausainiams, kur reikia kietų riebalų: augalinis margarinas arba šaltas kokosų aliejus santykiu vienas su vienu.",
+            "Ant duonos: žemės riešutų sviestas, humusas, avokadas arba kanapių sėklų sviestas."
+          ]
+        },
+        {
+          "h": "Grietinėlė, sūris, medus ir želatina",
+          "list": [
+            "Grietinėlė padažuose: avižų grietinėlė gaminimui arba kokosų pienas.",
+            "Plakta grietinėlė: riebaus kokosų pieno skardinę per naktį atšaldykite, nugriebkite tirštą viršutinį sluoksnį ir išplakite su cukraus pudra.",
+            "Grietinė: tirštas nesaldintas augalinis jogurtas su keliais lašais citrinos sulčių.",
+            "Sūrio skonis padažuose ir ant makaronų: maistinių mielių dribsniai arba skrudinti džiūvėsėliai su česnaku.",
+            "Medus: klevų sirupas, agavų sirupas arba naminis pienių medus.",
+            "Želatina: agaras. Jį reikia užvirti, o reikia jo maždaug tris kartus mažiau nei želatinos."
+          ]
+        },
+        {
+          "h": "Trys patarimai pradedančiajam",
+          "list": [
+            "Pradėkite nuo receptų, kurie iš pat pradžių sugalvoti be gyvūninių produktų: karių, lęšių sriubų, humuso. Ten nieko nereikia keisti.",
+            "Viename recepte keiskite vieną dalyką. Jei iškart pakeisite kiaušinius, pieną ir sviestą, sunku suprasti, kas nepavyko.",
+            "Nesitikėkite tokio paties skonio. Bananas turi banano skonį, kokosas kokoso: rinkitės pakaitalą, kurio skonis patiekalui tinka."
+          ],
+          "box": true
+        }
+      ]
+    }
+  }
+}

@@ -56,22 +56,26 @@ const footerCuisines = [...cuisines]
 
 const is = {
   home: path === '/',
-  recipes: path.startsWith('/receptes') || path.startsWith('/recepte/') || path.startsWith('/kategorijas'),
+  recipes: path.startsWith('/receptes') || path.startsWith('/recepte/') || path.startsWith('/kategorijas') || path.startsWith('/veganas-receptes'),
   cuisines: path.startsWith('/virtuves'),
   occasions: path.startsWith('/svetki'),
   fridge: path.startsWith('/ledusskapis'),
   tinder: path.startsWith('/tinderis'),
   quizzes: path.startsWith('/kvizi'),
+  vegan: path.startsWith('/veganas-receptes'),
+  guides: path.startsWith('/padomi') || path.startsWith('/burku-sterilizesana'),
   favorites: path.startsWith('/izlase'),
 };
 
 const nav = [
   { href: u('/receptes/'), label: t(lang, 'nav.recipes'), on: is.recipes },
+  { href: u('/veganas-receptes/'), label: t(lang, 'nav.vegan'), on: is.vegan },
   { href: u('/virtuves/'), label: t(lang, 'nav.cuisines'), on: is.cuisines },
-  { href: u('/svetki/'), label: t(lang, 'nav.occasions'), on: is.occasions },
+  { href: u('/svetki/'), label: t(lang, 'nav.occasionsShort'), on: is.occasions },
   { href: u('/ledusskapis/'), label: t(lang, 'nav.fridge'), on: is.fridge },
   { href: u('/tinderis/'), label: t(lang, 'nav.tinder'), on: is.tinder },
   { href: u('/kvizi/'), label: t(lang, 'nav.quizzes'), on: is.quizzes },
+  { href: u('/padomi/'), label: t(lang, 'nav.guides'), on: is.guides },
 ];
 ---
 
@@ -122,6 +126,7 @@ const nav = [
     <link rel="stylesheet" href={FONTS} media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href={FONTS} /></noscript>
 
+    {adsEnabled() && <meta name="google-adsense-account" content={ADS.client} />}
     {adsEnabled() && <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS.client}`} crossorigin="anonymous"></script>}
 
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
@@ -195,6 +200,8 @@ const nav = [
               <li><a href={u('/tinderis/')}>{t(lang, 'footer.tinder')}</a></li>
               <li><a href={u('/svetki/')}>{t(lang, 'footer.occasionsCal')}</a></li>
               <li><a href={u('/kvizi/')}>{t(lang, 'footer.quizzes')}</a></li>
+              <li><a href={u('/veganas-receptes/')}>{t(lang, 'footer.vegan')}</a></li>
+              <li><a href={u('/padomi/')}>{t(lang, 'footer.guides')}</a></li>
             </ul>
           </div>
           <div>

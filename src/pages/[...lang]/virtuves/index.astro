@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import AdSlot from '../../../components/AdSlot.astro';
 import { getCatalog, cuisineUrl } from '../../../lib/recipes';
 import { langFromPath, langPaths, href, t, count as countText, type UIKey } from '../../../i18n';
 import { itemListLd } from '../../../lib/seo';
@@ -75,6 +76,7 @@ const continents = [
       </section>
     ))
   }
+  <div class="container"><AdSlot slot="listBottom" /></div>
 </Base>
 
 <style>

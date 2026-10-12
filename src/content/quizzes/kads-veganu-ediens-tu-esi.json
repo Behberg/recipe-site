@@ -1,0 +1,840 @@
+{
+  "order": 11,
+  "emoji": "🌱",
+  "color": "#3f8f4f",
+  "results": {
+    "humuss": {
+      "emoji": "🧆",
+      "color": "#c9a25a",
+      "match": "tako",
+      "recipes": [
+        "humuss",
+        "biesu-humuss",
+        "falafeli"
+      ]
+    },
+    "karijs": {
+      "emoji": "🍛",
+      "color": "#d9822b",
+      "match": "bloda",
+      "recipes": [
+        "kirbju-un-aunazirnu-karijs",
+        "aunazirnu-karijs",
+        "saag-aloo"
+      ]
+    },
+    "bloda": {
+      "emoji": "🥗",
+      "color": "#5f9a4a",
+      "match": "karijs",
+      "recipes": [
+        "budas-bloda",
+        "griku-salati-ar-ceptiem-darzeniem",
+        "kuskuss-ar-darzeniem"
+      ],
+      "properName": true,
+      "icon": "soup",
+      "iconColors": "#8bb04a, #f7f2ea, #e07a1f",
+      "iconExtra": "chunks herbs"
+    },
+    "burgers": {
+      "emoji": "🍔",
+      "color": "#8a5230",
+      "match": "kuka",
+      "recipes": [
+        "melno-pupinu-burgers",
+        "asie-ziedkapostu-sparnini",
+        "majas-fri-kartupeli"
+      ],
+      "icon": "plate",
+      "iconColors": "#5a3a2a, #f0cf6a",
+      "iconExtra": "patty potatoes"
+    },
+    "tako": {
+      "emoji": "🌮",
+      "color": "#d9452e",
+      "match": "humuss",
+      "recipes": [
+        "ziedkapostu-tako",
+        "gvakamole",
+        "pico-de-gallo"
+      ],
+      "icon": "flatbread",
+      "iconColors": "#f0d890, #8bb04a",
+      "iconExtra": "boat herbs"
+    },
+    "kuka": {
+      "emoji": "🍫",
+      "color": "#6b3a24",
+      "match": "burgers",
+      "recipes": [
+        "vegana-sokolades-kuka",
+        "sokolades-avokado-muss",
+        "datelu-energijas-bumbinas"
+      ],
+      "icon": "cake",
+      "iconColors": "#4a2a1a, #6b3a24",
+      "iconExtra": "drizzle"
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "🫂",
+          "scores": {
+            "humuss": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "🛋️",
+          "scores": {
+            "karijs": 2,
+            "kuka": 1
+          }
+        },
+        {
+          "emoji": "🎸",
+          "scores": {
+            "tako": 2,
+            "burgers": 1
+          }
+        },
+        {
+          "emoji": "🧘",
+          "scores": {
+            "bloda": 2,
+            "humuss": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🏷️",
+          "scores": {
+            "bloda": 2,
+            "karijs": 1
+          }
+        },
+        {
+          "emoji": "🎨",
+          "scores": {
+            "kuka": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "🌶️",
+          "scores": {
+            "karijs": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "📱",
+          "scores": {
+            "burgers": 2,
+            "humuss": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🤝",
+          "scores": {
+            "humuss": 2,
+            "karijs": 1
+          }
+        },
+        {
+          "emoji": "😂",
+          "scores": {
+            "burgers": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "📋",
+          "scores": {
+            "bloda": 2,
+            "humuss": 1
+          }
+        },
+        {
+          "emoji": "🎂",
+          "scores": {
+            "kuka": 2,
+            "karijs": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🇲🇽",
+          "scores": {
+            "tako": 2,
+            "burgers": 1
+          }
+        },
+        {
+          "emoji": "🌊",
+          "scores": {
+            "bloda": 2,
+            "kuka": 1
+          }
+        },
+        {
+          "emoji": "🕌",
+          "scores": {
+            "karijs": 2,
+            "humuss": 1
+          }
+        },
+        {
+          "emoji": "🥐",
+          "scores": {
+            "kuka": 2,
+            "bloda": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "⚡",
+          "scores": {
+            "tako": 2,
+            "burgers": 1
+          }
+        },
+        {
+          "emoji": "⚖️",
+          "scores": {
+            "bloda": 2,
+            "karijs": 1
+          }
+        },
+        {
+          "emoji": "🗣️",
+          "scores": {
+            "humuss": 2,
+            "kuka": 1
+          }
+        },
+        {
+          "emoji": "🎉",
+          "scores": {
+            "burgers": 2,
+            "kuka": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🚪",
+          "scores": {
+            "humuss": 2,
+            "burgers": 1
+          }
+        },
+        {
+          "emoji": "🍬",
+          "scores": {
+            "kuka": 2,
+            "humuss": 1
+          }
+        },
+        {
+          "emoji": "🔥",
+          "scores": {
+            "tako": 2,
+            "karijs": 1
+          }
+        },
+        {
+          "emoji": "🍽️",
+          "scores": {
+            "burgers": 2,
+            "karijs": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🧣",
+          "scores": {
+            "karijs": 2,
+            "kuka": 1
+          }
+        },
+        {
+          "emoji": "🌈",
+          "scores": {
+            "bloda": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "🙌",
+          "scores": {
+            "burgers": 2,
+            "tako": 1
+          }
+        },
+        {
+          "emoji": "🥙",
+          "scores": {
+            "humuss": 2,
+            "bloda": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāds vegānu ēdiens esi tu?",
+      "hook": "Humuss, karijs vai šokolādes kūka? Augi par tevi zina vairāk, nekā domā.",
+      "intro": "Vegānu virtuve nav tikai salāti. Tajā ir sātīgi burgeri, ugunīgi tako, karijs, kas silda dvēseli, un kūka, kurai neviens netic, ka tā ir bez olām. Atbildi uz septiņiem jautājumiem, un mēs pateiksim, kurš augu valsts ēdiens ir tavs raksturs uz šķīvja, kopā ar recepti, ko pagatavot jau šovakar.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Ideāls piektdienas vakars?",
+          "a": [
+            "Liels galds un daudz draugu",
+            "Sega, seriāls un kaut kas silts",
+            "Koncerts, par kuru uzzināju pirms stundas",
+            "Treniņš un agri gulēt"
+          ]
+        },
+        {
+          "q": "Kā izskatās tava virtuve?",
+          "a": [
+            "Burciņas ar uzlīmēm un viss savā vietā",
+            "Radošs haoss un milti uz grīdas",
+            "Garšvielas no divpadsmit valstīm",
+            "Kāda virtuve? Es pasūtu"
+          ]
+        },
+        {
+          "q": "Kas tu esi draugu kompānijā?",
+          "a": [
+            "Tas, kurš visus saved kopā",
+            "Skaļākie smiekli pie galda",
+            "Plānotājs ar tabulu",
+            "Tas, kurš atceras visas dzimšanas dienas"
+          ]
+        },
+        {
+          "q": "Sapņu ceļojums?",
+          "a": [
+            "Ielu ēdiens Mehiko",
+            "Jogas nometne pie jūras",
+            "Garšvielu tirgus Indijā",
+            "Parīzes konditorejas"
+          ]
+        },
+        {
+          "q": "Kā tu pieņem lēmumus?",
+          "a": [
+            "Uzreiz, pēc sajūtas",
+            "Ar plusu un mīnusu sarakstu",
+            "Vispirms pajautāju visiem",
+            "Izvēlos to, kas ir jautrāk"
+          ]
+        },
+        {
+          "q": "Tava vājība?",
+          "a": [
+            "Nevaru atteikt ciemiņiem",
+            "Kaut kas salds pēc katras ēdienreizes",
+            "Vienmēr pielieku vēl čili",
+            "Otrā porcija"
+          ]
+        },
+        {
+          "q": "Ko tu gribi no vakariņām?",
+          "a": [
+            "Lai silda un mierina",
+            "Lai ir viegls un krāsains",
+            "Lai var ēst ar rokām",
+            "Lai var dalīties no galda vidus"
+          ]
+        }
+      ],
+      "results": {
+        "humuss": {
+          "name": "Humuss",
+          "tagline": "Ap tevi vienmēr ir pilns galds.",
+          "description": "Tu esi cilvēks, pie kura visi sanāk kopā. Tev nevajag būt uzmanības centrā: pietiek, ka tu esi klāt, un visiem kļūst omulīgi. Tu saproties ar jebkuru, no vecmāmiņas līdz kaimiņa kaķim, un ar tevi dalīties ir pats dabiskākais pasaulē.",
+          "traits": [
+            "Dāsnums",
+            "Miers",
+            "Saderība ar visiem"
+          ]
+        },
+        "karijs": {
+          "name": "Aunazirņu karijs",
+          "tagline": "Siltums, kas nāk no dziļuma.",
+          "description": "Tevī ir slāņi: jo ilgāk tevi pazīst, jo vairāk garšu atklāj. Tu nesteidzies, klausies līdz galam un zini, ka labākās lietas top lēni. Aukstā vakarā tieši tevi gribas redzēt blakus uz dīvāna.",
+          "traits": [
+            "Dziļums",
+            "Pacietība",
+            "Sirsnība"
+          ]
+        },
+        "bloda": {
+          "name": "Budas bļoda",
+          "tagline": "Līdzsvars ir tava superspēja.",
+          "description": "Tev viss ir savās vietās: kalendārs, garšvielu plaukts un dzīves prioritātes. Tu zini, ko gribi, plāno uz priekšu un tomēr atrodi laiku sev. Citi pie tevis nāk pēc padoma, jo tu vienīgais esi izlasījis instrukciju.",
+          "traits": [
+            "Līdzsvars",
+            "Kārtība",
+            "Rūpes par sevi"
+          ]
+        },
+        "burgers": {
+          "name": "Melno pupiņu burgers",
+          "tagline": "Liels, skaļš un bez atvainošanās.",
+          "description": "Tu ienāc telpā, un ballīte ir sākusies. Tev nepatīk pustoņi: ja smieties, tad skaļi, ja ēst, tad ar abām rokām. Tu pierādi, ka var darīt pa savam un tik un tā būt visu mīlulis.",
+          "traits": [
+            "Drosme",
+            "Humors",
+            "Liela apetīte"
+          ]
+        },
+        "tako": {
+          "name": "Ziedkāpostu tako",
+          "tagline": "Plāns? Kāds plāns?",
+          "description": "Tu esi spontanitāte ar laima šķēlīti. Biļetes tu pērc iepriekšējā vakarā, jaunus cilvēkus satiec rindā pēc kafijas, un tavā dzīvē vienmēr ir par vienu krāsu vairāk, nekā vajadzētu. Ar tevi nekad nav garlaicīgi un reizēm ir mazliet asi.",
+          "traits": [
+            "Spontanitāte",
+            "Krāsas",
+            "Piedzīvojumu gars"
+          ]
+        },
+        "kuka": {
+          "name": "Šokolādes kūka",
+          "tagline": "Dzīve ir par īsu, lai atteiktos no deserta.",
+          "description": "Tu esi romantiķis, kas tic labām beigām un otrajam gabaliņam. Tu atceries dzimšanas dienas, raksti garas ziņas un proti parastu otrdienu padarīt par svētkiem. Cilvēki pie tevis nāk pēc mierinājuma un aiziet ar smaidu.",
+          "traits": [
+            "Romantika",
+            "Maigums",
+            "Svētku sajūta"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which vegan dish are you?",
+      "hook": "Hummus, curry or chocolate cake? Plants know more about you than you think.",
+      "intro": "Vegan food is not just salad. It has hearty burgers, fiery tacos, a curry that warms the soul and a cake nobody believes is egg free. Answer seven questions and we will tell you which plant based dish is your character on a plate, with a recipe to cook tonight.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "The ideal Friday evening?",
+          "a": [
+            "A big table and lots of friends",
+            "A blanket, a series and something warm",
+            "A concert I heard about an hour ago",
+            "A workout and an early night"
+          ]
+        },
+        {
+          "q": "What does your kitchen look like?",
+          "a": [
+            "Labelled jars and everything in its place",
+            "Creative chaos and flour on the floor",
+            "Spices from twelve countries",
+            "What kitchen? I order in"
+          ]
+        },
+        {
+          "q": "Who are you in your friend group?",
+          "a": [
+            "The one who brings everyone together",
+            "The loudest laugh at the table",
+            "The planner with a spreadsheet",
+            "The one who remembers every birthday"
+          ]
+        },
+        {
+          "q": "Dream trip?",
+          "a": [
+            "Street food in Mexico City",
+            "A yoga retreat by the sea",
+            "A spice market in India",
+            "The pastry shops of Paris"
+          ]
+        },
+        {
+          "q": "How do you make decisions?",
+          "a": [
+            "Straight away, on instinct",
+            "With a list of pros and cons",
+            "I ask everyone first",
+            "I pick whatever is more fun"
+          ]
+        },
+        {
+          "q": "Your weakness?",
+          "a": [
+            "I cannot say no to guests",
+            "Something sweet after every meal",
+            "I always add more chilli",
+            "A second helping"
+          ]
+        },
+        {
+          "q": "What do you want from dinner?",
+          "a": [
+            "Warmth and comfort",
+            "Something light and colourful",
+            "Something to eat with my hands",
+            "Something to share from the middle of the table"
+          ]
+        }
+      ],
+      "results": {
+        "humuss": {
+          "name": "Hummus",
+          "tagline": "There is always a full table around you.",
+          "description": "You are the person everyone gathers around. You do not need to be the centre of attention: it is enough that you are there and everyone feels at ease. You get on with anyone, from grandma to the neighbour's cat, and sharing with you is the most natural thing in the world.",
+          "traits": [
+            "Generosity",
+            "Calm",
+            "Gets on with everyone"
+          ]
+        },
+        "karijs": {
+          "name": "Chickpea curry",
+          "tagline": "Warmth that comes from deep down.",
+          "description": "You have layers: the longer people know you, the more flavours they find. You do not rush, you listen to the end and you know the best things take time. On a cold evening you are exactly who people want next to them on the sofa.",
+          "traits": [
+            "Depth",
+            "Patience",
+            "Warm heart"
+          ]
+        },
+        "bloda": {
+          "name": "Buddha bowl",
+          "tagline": "Balance is your superpower.",
+          "description": "Everything in your life has its place: the calendar, the spice shelf and your priorities. You know what you want, you plan ahead and still find time for yourself. Others come to you for advice, because you are the only one who read the instructions.",
+          "traits": [
+            "Balance",
+            "Order",
+            "Self care"
+          ]
+        },
+        "burgers": {
+          "name": "Black bean burger",
+          "tagline": "Big, loud and unapologetic.",
+          "description": "You walk into the room and the party has started. You do not do half measures: if you laugh, you laugh loudly, and if you eat, you use both hands. You prove that you can do things your own way and still be everybody's favourite.",
+          "traits": [
+            "Boldness",
+            "Humour",
+            "Big appetite"
+          ]
+        },
+        "tako": {
+          "name": "Cauliflower taco",
+          "tagline": "A plan? What plan?",
+          "description": "You are spontaneity with a wedge of lime. You buy tickets the night before, meet new people in the coffee queue, and your life always has one colour more than strictly necessary. Nobody is ever bored with you, and sometimes it gets a little spicy.",
+          "traits": [
+            "Spontaneity",
+            "Colour",
+            "Sense of adventure"
+          ]
+        },
+        "kuka": {
+          "name": "Chocolate cake",
+          "tagline": "Life is too short to skip dessert.",
+          "description": "You are a romantic who believes in happy endings and second helpings. You remember birthdays, write long messages and know how to turn an ordinary Tuesday into a celebration. People come to you for comfort and leave with a smile.",
+          "traits": [
+            "Romance",
+            "Tenderness",
+            "Festive spirit"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какое ты веганское блюдо?",
+      "hook": "Хумус, карри или шоколадный торт? Растения знают о тебе больше, чем ты думаешь.",
+      "intro": "Веганская кухня это не только салаты. В ней есть сытные бургеры, огненные тако, карри, которое греет душу, и торт, про который никто не верит, что он без яиц. Ответь на семь вопросов, и мы скажем, какое растительное блюдо твой характер на тарелке, и дадим рецепт, который можно приготовить уже сегодня вечером.",
+      "resultLine": "Мой результат: {name}",
+      "questions": [
+        {
+          "q": "Идеальный вечер пятницы?",
+          "a": [
+            "Большой стол и много друзей",
+            "Плед, сериал и что-нибудь тёплое",
+            "Концерт, о котором стало известно час назад",
+            "Тренировка и рано спать"
+          ]
+        },
+        {
+          "q": "Как выглядит твоя кухня?",
+          "a": [
+            "Баночки с этикетками и всё на своих местах",
+            "Творческий хаос и мука на полу",
+            "Специи из двенадцати стран",
+            "Какая кухня? Я заказываю"
+          ]
+        },
+        {
+          "q": "Кто ты в компании друзей?",
+          "a": [
+            "Тот, кто всех собирает вместе",
+            "Самый громкий смех за столом",
+            "Планировщик с таблицей",
+            "Тот, кто помнит все дни рождения"
+          ]
+        },
+        {
+          "q": "Путешествие мечты?",
+          "a": [
+            "Уличная еда в Мехико",
+            "Йога-ретрит у моря",
+            "Рынок специй в Индии",
+            "Кондитерские Парижа"
+          ]
+        },
+        {
+          "q": "Как ты принимаешь решения?",
+          "a": [
+            "Сразу, по ощущению",
+            "Со списком плюсов и минусов",
+            "Сначала спрашиваю всех",
+            "Выбираю то, что веселее"
+          ]
+        },
+        {
+          "q": "Твоя слабость?",
+          "a": [
+            "Не могу отказать гостям",
+            "Что-нибудь сладкое после каждой еды",
+            "Всегда добавляю ещё чили",
+            "Вторая порция"
+          ]
+        },
+        {
+          "q": "Чего ты ждёшь от ужина?",
+          "a": [
+            "Чтобы грел и утешал",
+            "Чтобы был лёгким и ярким",
+            "Чтобы можно было есть руками",
+            "Чтобы можно было делиться с середины стола"
+          ]
+        }
+      ],
+      "results": {
+        "humuss": {
+          "name": "Хумус",
+          "tagline": "Вокруг тебя всегда полный стол.",
+          "description": "Ты человек, вокруг которого все собираются. Тебе не нужно быть в центре внимания: достаточно того, что ты рядом, и всем становится уютно. Ты ладишь с кем угодно, от бабушки до соседского кота, и делиться с тобой самое естественное дело на свете.",
+          "traits": [
+            "Щедрость",
+            "Спокойствие",
+            "Ладит со всеми"
+          ]
+        },
+        "karijs": {
+          "name": "Карри из нута",
+          "tagline": "Тепло, которое идёт из глубины.",
+          "description": "В тебе много слоёв: чем дольше тебя знают, тем больше вкусов открывают. Ты не спешишь, слушаешь до конца и знаешь, что лучшее получается медленно. Холодным вечером именно тебя хочется видеть рядом на диване.",
+          "traits": [
+            "Глубина",
+            "Терпение",
+            "Душевность"
+          ]
+        },
+        "bloda": {
+          "name": "Будда-боул",
+          "tagline": "Баланс твоя суперсила.",
+          "description": "У тебя всё на своих местах: календарь, полка со специями и жизненные приоритеты. Ты знаешь, чего хочешь, планируешь наперёд и всё же находишь время для себя. К тебе приходят за советом, потому что ты единственный, кто прочитал инструкцию.",
+          "traits": [
+            "Баланс",
+            "Порядок",
+            "Забота о себе"
+          ]
+        },
+        "burgers": {
+          "name": "Бургер из чёрной фасоли",
+          "tagline": "Большой, громкий и без извинений.",
+          "description": "Ты входишь в комнату, и вечеринка началась. Ты не любишь полутонов: если смеяться, то громко, если есть, то двумя руками. Ты доказываешь, что можно делать по-своему и всё равно быть всеобщим любимцем.",
+          "traits": [
+            "Смелость",
+            "Юмор",
+            "Большой аппетит"
+          ]
+        },
+        "tako": {
+          "name": "Тако с цветной капустой",
+          "tagline": "План? Какой план?",
+          "description": "Ты спонтанность с долькой лайма. Билеты ты покупаешь накануне вечером, с новыми людьми знакомишься в очереди за кофе, и в твоей жизни всегда на один цвет больше, чем нужно. С тобой никогда не скучно и иногда немного остро.",
+          "traits": [
+            "Спонтанность",
+            "Краски",
+            "Дух приключений"
+          ]
+        },
+        "kuka": {
+          "name": "Шоколадный торт",
+          "tagline": "Жизнь слишком коротка, чтобы отказываться от десерта.",
+          "description": "Ты романтик, который верит в счастливый конец и во второй кусочек. Ты помнишь дни рождения, пишешь длинные сообщения и умеешь превратить обычный вторник в праздник. К тебе приходят за утешением и уходят с улыбкой.",
+          "traits": [
+            "Романтика",
+            "Нежность",
+            "Ощущение праздника"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Koks tu veganiškas patiekalas?",
+      "hook": "Humusas, karis ar šokoladinis pyragas? Augalai apie tave žino daugiau, nei manai.",
+      "intro": "Veganiška virtuvė nėra vien salotos. Joje yra sotūs mėsainiai, ugningi tako, sielą šildantis karis ir pyragas, kuriuo niekas netiki, kad jis be kiaušinių. Atsakyk į septynis klausimus, ir pasakysime, kuris augalinis patiekalas yra tavo charakteris lėkštėje, ir duosime receptą, kurį gali pagaminti jau šį vakarą.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Idealus penktadienio vakaras?",
+          "a": [
+            "Didelis stalas ir daug draugų",
+            "Pledas, serialas ir kas nors šilto",
+            "Koncertas, apie kurį sužinojau prieš valandą",
+            "Treniruotė ir anksti miegoti"
+          ]
+        },
+        {
+          "q": "Kaip atrodo tavo virtuvė?",
+          "a": [
+            "Stiklainiai su etiketėmis ir viskas savo vietoje",
+            "Kūrybinis chaosas ir miltai ant grindų",
+            "Prieskoniai iš dvylikos šalių",
+            "Kokia virtuvė? Aš užsisakau"
+          ]
+        },
+        {
+          "q": "Kas tu esi draugų kompanijoje?",
+          "a": [
+            "Tas, kuris visus suburia",
+            "Garsiausias juokas prie stalo",
+            "Planuotojas su lentele",
+            "Tas, kuris prisimena visus gimtadienius"
+          ]
+        },
+        {
+          "q": "Svajonių kelionė?",
+          "a": [
+            "Gatvės maistas Meksike",
+            "Jogos stovykla prie jūros",
+            "Prieskonių turgus Indijoje",
+            "Paryžiaus konditerijos"
+          ]
+        },
+        {
+          "q": "Kaip priimi sprendimus?",
+          "a": [
+            "Iškart, pagal nuojautą",
+            "Su pliusų ir minusų sąrašu",
+            "Pirmiausia paklausiu visų",
+            "Renkuosi tai, kas smagiau"
+          ]
+        },
+        {
+          "q": "Tavo silpnybė?",
+          "a": [
+            "Negaliu atsakyti svečiams",
+            "Kas nors saldaus po kiekvieno valgio",
+            "Visada įdedu dar čili",
+            "Antra porcija"
+          ]
+        },
+        {
+          "q": "Ko nori iš vakarienės?",
+          "a": [
+            "Kad šildytų ir guostų",
+            "Kad būtų lengva ir spalvinga",
+            "Kad galima būtų valgyti rankomis",
+            "Kad galima būtų dalytis nuo stalo vidurio"
+          ]
+        }
+      ],
+      "results": {
+        "humuss": {
+          "name": "Humusas",
+          "tagline": "Aplink tave visada pilnas stalas.",
+          "description": "Tu esi žmogus, prie kurio visi susirenka. Tau nereikia būti dėmesio centre: užtenka, kad esi šalia, ir visiems tampa jauku. Sutari su bet kuo, nuo močiutės iki kaimyno katino, o dalytis su tavimi yra natūraliausias dalykas pasaulyje.",
+          "traits": [
+            "Dosnumas",
+            "Ramybė",
+            "Sutaria su visais"
+          ]
+        },
+        "karijs": {
+          "name": "Avinžirnių karis",
+          "tagline": "Šiluma, kylanti iš gelmių.",
+          "description": "Tavyje daug sluoksnių: kuo ilgiau tave pažįsta, tuo daugiau skonių atranda. Neskubi, išklausai iki galo ir žinai, kad geriausi dalykai gimsta lėtai. Šaltą vakarą būtent tave norisi matyti šalia ant sofos.",
+          "traits": [
+            "Gilumas",
+            "Kantrybė",
+            "Nuoširdumas"
+          ]
+        },
+        "bloda": {
+          "name": "Budos dubuo",
+          "tagline": "Pusiausvyra yra tavo supergalia.",
+          "description": "Pas tave viskas savo vietose: kalendorius, prieskonių lentyna ir gyvenimo prioritetai. Žinai, ko nori, planuoji į priekį ir vis tiek randi laiko sau. Kiti ateina pas tave patarimo, nes tu vienintelis perskaitei instrukciją.",
+          "traits": [
+            "Pusiausvyra",
+            "Tvarka",
+            "Rūpinimasis savimi"
+          ]
+        },
+        "burgers": {
+          "name": "Juodųjų pupelių mėsainis",
+          "tagline": "Didelis, garsus ir be atsiprašymų.",
+          "description": "Įeini į kambarį, ir vakarėlis prasidėjo. Nemėgsti pustonių: jei juoktis, tai garsiai, jei valgyti, tai abiem rankomis. Įrodai, kad galima daryti savaip ir vis tiek būti visų numylėtiniu.",
+          "traits": [
+            "Drąsa",
+            "Humoras",
+            "Didelis apetitas"
+          ]
+        },
+        "tako": {
+          "name": "Žiedinių kopūstų tako",
+          "tagline": "Planas? Koks planas?",
+          "description": "Tu esi spontaniškumas su žaliosios citrinos skiltele. Bilietus perki išvakarėse, naujus žmones sutinki eilėje prie kavos, o tavo gyvenime visada viena spalva daugiau, nei reikėtų. Su tavimi niekada nenuobodu, o kartais būna truputį aštru.",
+          "traits": [
+            "Spontaniškumas",
+            "Spalvos",
+            "Nuotykių dvasia"
+          ]
+        },
+        "kuka": {
+          "name": "Šokoladinis pyragas",
+          "tagline": "Gyvenimas per trumpas, kad atsisakytum deserto.",
+          "description": "Tu esi romantikas, tikintis laiminga pabaiga ir antru gabalėliu. Prisimeni gimtadienius, rašai ilgas žinutes ir moki paprastą antradienį paversti švente. Žmonės ateina pas tave paguodos ir išeina su šypsena.",
+          "traits": [
+            "Romantika",
+            "Švelnumas",
+            "Šventės jausmas"
+          ]
+        }
+      }
+    }
+  }
+}

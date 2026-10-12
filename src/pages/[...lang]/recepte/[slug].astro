@@ -334,6 +334,7 @@ const useMultiplier = Boolean(d.yield);
             </div>
           )
         }
+        <AdSlot slot="recipeMid" class="only-mobile r-ad-mid" />
       </section>
 
       <!-- Steps -->
@@ -413,6 +414,8 @@ const useMultiplier = Boolean(d.yield);
         </section>
       )
     }
+
+    <div class="container no-print"><AdSlot slot="recipeEnd" /></div>
 
     <!-- Floating CTA (mobile) -->
     <button type="button" class="float-cta btn btn-primary no-print" data-cook-open data-float-cta>
@@ -967,6 +970,9 @@ const useMultiplier = Boolean(d.yield);
   }
 
   /* ---------- Body layout ---------- */
+  .r-ingredients :global(.r-ad-mid) {
+    margin: 20px 0 0;
+  }
   .r-body {
     display: grid;
     gap: 32px;
@@ -1411,7 +1417,7 @@ const useMultiplier = Boolean(d.yield);
     position: fixed;
     z-index: 45;
     left: 50%;
-    bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 12px);
+    bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + var(--anchor-ad-bottom, 0px) + 12px);
     transform: translate(-50%, 24px);
     opacity: 0;
     pointer-events: none;

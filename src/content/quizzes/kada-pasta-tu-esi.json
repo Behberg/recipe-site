@@ -1,0 +1,828 @@
+{
+  "order": 12,
+  "emoji": "🍝",
+  "color": "#c8402a",
+  "results": {
+    "karbonara": {
+      "emoji": "🥓",
+      "color": "#d9b24a",
+      "match": "arrabjata",
+      "recipes": [
+        "spageti-karbonara",
+        "mac-and-cheese",
+        "makaroni-ar-senem-krejuma"
+      ]
+    },
+    "bolonese": {
+      "emoji": "🍝",
+      "color": "#a8401e",
+      "match": "pesto",
+      "recipes": [
+        "spageti-bolonese",
+        "lecu-bolonese",
+        "tefteli-krejuma-tomatu-merce"
+      ],
+      "properName": true
+    },
+    "pesto": {
+      "emoji": "🌿",
+      "color": "#6b9a3a",
+      "match": "bolonese",
+      "recipes": [
+        "spageti-ar-pesto",
+        "avokado-pasta",
+        "kabacu-spageti-ar-pesto"
+      ]
+    },
+    "arrabjata": {
+      "emoji": "🌶️",
+      "color": "#c8402a",
+      "match": "karbonara",
+      "recipes": [
+        "penne-arrabjata",
+        "spageti-aglio-olio",
+        "spageti-ar-tomatu-merci"
+      ]
+    },
+    "lazanja": {
+      "emoji": "🧀",
+      "color": "#e0a83a",
+      "match": "garneles",
+      "recipes": [
+        "lazanja",
+        "vistas-un-spinatu-lazanja",
+        "makaronu-sacepums"
+      ]
+    },
+    "garneles": {
+      "emoji": "🦐",
+      "color": "#f08a5a",
+      "match": "lazanja",
+      "recipes": [
+        "spageti-ar-garnelem-un-kiplokiem",
+        "spageti-ar-tunci-un-tomatiem",
+        "tomatu-makaroni-viena-kata"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "answers": [
+        {
+          "emoji": "👨‍👩‍👧",
+          "scores": {
+            "bolonese": 2,
+            "lazanja": 1
+          }
+        },
+        {
+          "emoji": "🧺",
+          "scores": {
+            "pesto": 2,
+            "garneles": 1
+          }
+        },
+        {
+          "emoji": "😴",
+          "scores": {
+            "lazanja": 2,
+            "karbonara": 1
+          }
+        },
+        {
+          "emoji": "💬",
+          "scores": {
+            "arrabjata": 2,
+            "karbonara": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "📏",
+          "scores": {
+            "karbonara": 2,
+            "arrabjata": 1
+          }
+        },
+        {
+          "emoji": "🤗",
+          "scores": {
+            "bolonese": 2,
+            "lazanja": 1
+          }
+        },
+        {
+          "emoji": "🔥",
+          "scores": {
+            "arrabjata": 2,
+            "garneles": 1
+          }
+        },
+        {
+          "emoji": "🌹",
+          "scores": {
+            "garneles": 2,
+            "pesto": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🌊",
+          "scores": {
+            "garneles": 2,
+            "pesto": 1
+          }
+        },
+        {
+          "emoji": "🏛️",
+          "scores": {
+            "karbonara": 2,
+            "arrabjata": 1
+          }
+        },
+        {
+          "emoji": "🌻",
+          "scores": {
+            "pesto": 2,
+            "bolonese": 1
+          }
+        },
+        {
+          "emoji": "🛋️",
+          "scores": {
+            "lazanja": 2,
+            "bolonese": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🎓",
+          "scores": {
+            "karbonara": 2,
+            "arrabjata": 1
+          }
+        },
+        {
+          "emoji": "🌋",
+          "scores": {
+            "arrabjata": 2,
+            "karbonara": 1
+          }
+        },
+        {
+          "emoji": "🤷",
+          "scores": {
+            "garneles": 2,
+            "pesto": 1
+          }
+        },
+        {
+          "emoji": "🍳",
+          "scores": {
+            "bolonese": 2,
+            "lazanja": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🕯️",
+          "scores": {
+            "garneles": 2,
+            "karbonara": 1
+          }
+        },
+        {
+          "emoji": "👩‍🍳",
+          "scores": {
+            "lazanja": 2,
+            "bolonese": 1
+          }
+        },
+        {
+          "emoji": "🧺",
+          "scores": {
+            "pesto": 2,
+            "garneles": 1
+          }
+        },
+        {
+          "emoji": "💃",
+          "scores": {
+            "arrabjata": 2,
+            "garneles": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🐢",
+          "scores": {
+            "bolonese": 2,
+            "lazanja": 1
+          }
+        },
+        {
+          "emoji": "⏰",
+          "scores": {
+            "arrabjata": 2,
+            "pesto": 1
+          }
+        },
+        {
+          "emoji": "🗂️",
+          "scores": {
+            "lazanja": 2,
+            "karbonara": 1
+          }
+        },
+        {
+          "emoji": "🎯",
+          "scores": {
+            "karbonara": 2,
+            "garneles": 1
+          }
+        }
+      ]
+    },
+    {
+      "answers": [
+        {
+          "emoji": "🍷",
+          "scores": {
+            "lazanja": 2,
+            "bolonese": 1
+          }
+        },
+        {
+          "emoji": "🥂",
+          "scores": {
+            "garneles": 2,
+            "pesto": 1
+          }
+        },
+        {
+          "emoji": "☕",
+          "scores": {
+            "karbonara": 2,
+            "arrabjata": 1
+          }
+        },
+        {
+          "emoji": "🍋",
+          "scores": {
+            "pesto": 2,
+            "garneles": 1
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "lv": {
+      "title": "Kāda pasta esi tu?",
+      "hook": "Karbonāra, pesto vai dusmīgā arrabjata? Septiņi jautājumi, un mērce būs skaidra.",
+      "intro": "Itāļi saka, ka par cilvēku visu var pateikt pēc tā, kādu pastu viņš pasūta. Viens nekad neatkāpjas no klasikas, cits pieliek čili visam, vēl cits stundām vāra mērci visai ģimenei. Atbildi uz septiņiem jautājumiem un uzzini, kura pasta esi tu, kopā ar recepti šī vakara vakariņām.",
+      "resultLine": "Es esmu {name}",
+      "questions": [
+        {
+          "q": "Kāds ir tavs svētdienas rīts?",
+          "a": [
+            "Garas brokastis ar visu ģimeni",
+            "Skrējiens un tirgus ar svaigiem zaļumiem",
+            "Zem segas līdz pusdienlaikam",
+            "Es jau ar kādu strīdos internetā"
+          ]
+        },
+        {
+          "q": "Kā draugi tevi raksturo?",
+          "a": [
+            "Principiāls",
+            "Gādīgs",
+            "Ugunīgs",
+            "Romantisks"
+          ]
+        },
+        {
+          "q": "Kur tu gribētu dzīvot?",
+          "a": [
+            "Pie jūras",
+            "Romas vecpilsētā",
+            "Lauku mājā ar dārzu",
+            "Mājīgā dzīvoklī ar lielu dīvānu"
+          ]
+        },
+        {
+          "q": "Kāds karbonārai pielej saldo krējumu. Ko tu dari?",
+          "a": [
+            "Nolasu īsu lekciju par tradīcijām",
+            "Uzsprāgstu",
+            "Paraustu plecus, ja vien garšo",
+            "Klusi pagatavoju pareizi un pacienāju"
+          ]
+        },
+        {
+          "q": "Ideāls randiņš?",
+          "a": [
+            "Restorāns pie ūdens un sveces",
+            "Kopīga gatavošana mājās",
+            "Pikniks pļavā",
+            "Dejas līdz rītam"
+          ]
+        },
+        {
+          "q": "Kā tu strādā?",
+          "a": [
+            "Lēni un pamatīgi",
+            "Ātri un pēdējā brīdī",
+            "Ar plāniem vairākās kārtās",
+            "Maz lietu, toties perfekti"
+          ]
+        },
+        {
+          "q": "Ko ieliet glāzē?",
+          "a": [
+            "Sarkanvīnu",
+            "Labi atdzesētu baltvīnu",
+            "Espreso, stāvot pie letes",
+            "Ūdeni ar citronu un piparmētrām"
+          ]
+        }
+      ],
+      "results": {
+        "karbonara": {
+          "name": "Karbonāra",
+          "tagline": "Četras sastāvdaļas un nekādu kompromisu.",
+          "description": "Tev ir principi, un saldais krējums karbonārā nav viens no tiem. Tu tici, ka labas lietas ir vienkāršas, bet vienkāršība prasa precizitāti. Tev ir maz draugu, toties uz mūžu, un tavs vārds sver vairāk nekā citu līgumi.",
+          "traits": [
+            "Principi",
+            "Precizitāte",
+            "Klasika"
+          ]
+        },
+        "bolonese": {
+          "name": "Boloņas mērce",
+          "tagline": "Labas lietas vārās trīs stundas.",
+          "description": "Tu esi svētdienas pusdienas cilvēka izskatā. Tu gatavo par daudz, zvani mammai un nekad nelaid ciemiņus mājās tukšām rokām. Tev ir pacietība, ko citi apskauž, un pie tava galda vienmēr atrodas vēl viens krēsls.",
+          "traits": [
+            "Ģimene",
+            "Pacietība",
+            "Dāsnums"
+          ]
+        },
+        "pesto": {
+          "name": "Pesto pasta",
+          "tagline": "Svaigs gaiss un atvērti logi.",
+          "description": "Tu esi tas cilvēks, kuram uz palodzes aug baziliks un kurš pirmais pamana pavasari. Tu neuztraucies par sīkumiem, ātri piedod un vislabāk jūties ārā. Blakus tev citi atceras, ka dzīvi var dzīvot vieglāk.",
+          "traits": [
+            "Svaigums",
+            "Vieglums",
+            "Optimisms"
+          ]
+        },
+        "arrabjata": {
+          "name": "Arrabjata",
+          "tagline": "Dusmīga tikai nosaukumā. Gandrīz.",
+          "description": "Tu saki, ko domā, un domā ātri. Tev ir temperaments, kas uzliesmo sekundē un tikpat ātri norimst, un neviens nekad nešaubās, kurā pusē tu stāvi. Ar tevi ir karsti, godīgi un nekad nav remdeni.",
+          "traits": [
+            "Temperaments",
+            "Tiešums",
+            "Kaislība"
+          ]
+        },
+        "lazanja": {
+          "name": "Lazanja",
+          "tagline": "Kārta pēc kārtas, un katra ir tā vērta.",
+          "description": "Tu esi mājas cilvēks ar dziļu iekšējo pasauli. No ārpuses mierīgs, bet iekšā ir kārtas: atmiņas, plāni, grāmatas un viedokļi par visu. Tu neatveries uzreiz, toties tie, kas tiek līdz vidum, vairs negrib iet prom.",
+          "traits": [
+            "Dziļums",
+            "Mājīgums",
+            "Uzticība"
+          ]
+        },
+        "garneles": {
+          "name": "Spageti ar garnelēm",
+          "tagline": "Jūras vējš, baltvīns un saulriets.",
+          "description": "Tevī ir kaut kas no vasaras brīvdienām, kas nekad nebeidzas. Tu proti izbaudīt mirkli, ģērbies ar gaumi un pat pirmdienu spēj padarīt par nelielu notikumu. Cilvēki tev seko, jo tur, kur esi tu, ir skaistāk.",
+          "traits": [
+            "Elegance",
+            "Romantika",
+            "Dzīves baudīšana"
+          ]
+        }
+      }
+    },
+    "en": {
+      "title": "Which pasta are you?",
+      "hook": "Carbonara, pesto or angry arrabbiata? Seven questions and the sauce will be clear.",
+      "intro": "Italians say you can tell everything about a person from the pasta they order. One never strays from the classics, another puts chilli on everything, another simmers a sauce for hours for the whole family. Answer seven questions and find out which pasta you are, with a recipe for tonight's dinner.",
+      "resultLine": "I got {name}",
+      "questions": [
+        {
+          "q": "What is your Sunday morning like?",
+          "a": [
+            "A long breakfast with the whole family",
+            "A run and the market for fresh herbs",
+            "Under the blanket until noon",
+            "I am already arguing with someone online"
+          ]
+        },
+        {
+          "q": "How do your friends describe you?",
+          "a": [
+            "Principled",
+            "Caring",
+            "Fiery",
+            "Romantic"
+          ]
+        },
+        {
+          "q": "Where would you like to live?",
+          "a": [
+            "By the sea",
+            "In the old town of Rome",
+            "In a country house with a garden",
+            "In a cosy flat with a big sofa"
+          ]
+        },
+        {
+          "q": "Someone pours cream into the carbonara. What do you do?",
+          "a": [
+            "I give a short lecture on tradition",
+            "I explode",
+            "I shrug, as long as it tastes good",
+            "I quietly cook it properly and share"
+          ]
+        },
+        {
+          "q": "The ideal date?",
+          "a": [
+            "A restaurant by the water and candles",
+            "Cooking together at home",
+            "A picnic in a meadow",
+            "Dancing until morning"
+          ]
+        },
+        {
+          "q": "How do you work?",
+          "a": [
+            "Slowly and thoroughly",
+            "Fast and at the last minute",
+            "With several layers of plans",
+            "Few things, but done perfectly"
+          ]
+        },
+        {
+          "q": "What goes in your glass?",
+          "a": [
+            "Red wine",
+            "Well chilled white wine",
+            "An espresso, standing at the bar",
+            "Water with lemon and mint"
+          ]
+        }
+      ],
+      "results": {
+        "karbonara": {
+          "name": "Carbonara",
+          "tagline": "Four ingredients and no compromises.",
+          "description": "You have principles, and cream in carbonara is not one of them. You believe good things are simple, but simplicity demands precision. You have few friends, but they are for life, and your word weighs more than other people's contracts.",
+          "traits": [
+            "Principles",
+            "Precision",
+            "A love of classics"
+          ]
+        },
+        "bolonese": {
+          "name": "Bolognese",
+          "tagline": "Good things simmer for three hours.",
+          "description": "You are Sunday lunch in human form. You cook too much, call your mum and never let guests go home empty handed. You have a patience others envy, and there is always one more chair at your table.",
+          "traits": [
+            "Family",
+            "Patience",
+            "Generosity"
+          ]
+        },
+        "pesto": {
+          "name": "Pesto pasta",
+          "tagline": "Fresh air and open windows.",
+          "description": "You are the person with basil growing on the windowsill and the first to notice spring. You do not fret over small things, you forgive quickly and you feel best outdoors. Around you, others remember that life can be lived more lightly.",
+          "traits": [
+            "Freshness",
+            "Lightness",
+            "Optimism"
+          ]
+        },
+        "arrabjata": {
+          "name": "Arrabbiata",
+          "tagline": "Angry in name only. Almost.",
+          "description": "You say what you think, and you think fast. You have a temper that flares in a second and dies down just as quickly, and nobody ever doubts which side you are on. With you things are hot, honest and never lukewarm.",
+          "traits": [
+            "Temper",
+            "Directness",
+            "Passion"
+          ]
+        },
+        "lazanja": {
+          "name": "Lasagne",
+          "tagline": "Layer after layer, and each one is worth it.",
+          "description": "You are a homebody with a deep inner world. Calm on the outside, but inside there are layers: memories, plans, books and opinions on everything. You do not open up at once, but those who reach the middle never want to leave.",
+          "traits": [
+            "Depth",
+            "Cosiness",
+            "Loyalty"
+          ]
+        },
+        "garneles": {
+          "name": "Prawn spaghetti",
+          "tagline": "Sea breeze, white wine and a sunset.",
+          "description": "There is something in you of a summer holiday that never ends. You know how to enjoy the moment, you dress with taste and can turn even a Monday into a small occasion. People follow you, because wherever you are it is more beautiful.",
+          "traits": [
+            "Elegance",
+            "Romance",
+            "Joy of living"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "title": "Какая ты паста?",
+      "hook": "Карбонара, песто или сердитая арраббьята? Семь вопросов, и с соусом всё станет ясно.",
+      "intro": "Итальянцы говорят, что о человеке всё можно понять по тому, какую пасту он заказывает. Один никогда не отступает от классики, другой добавляет чили во всё, третий часами варит соус на всю семью. Ответь на семь вопросов и узнай, какая ты паста, а заодно получи рецепт на сегодняшний ужин.",
+      "resultLine": "Мой результат: {name}",
+      "questions": [
+        {
+          "q": "Какое у тебя воскресное утро?",
+          "a": [
+            "Долгий завтрак всей семьёй",
+            "Пробежка и рынок со свежей зеленью",
+            "Под одеялом до полудня",
+            "Я уже с кем-то спорю в интернете"
+          ]
+        },
+        {
+          "q": "Как тебя описывают друзья?",
+          "a": [
+            "Принципиальный человек",
+            "Заботливый человек",
+            "Огненный человек",
+            "Романтичный человек"
+          ]
+        },
+        {
+          "q": "Где тебе хотелось бы жить?",
+          "a": [
+            "У моря",
+            "В старом центре Рима",
+            "В загородном доме с садом",
+            "В уютной квартире с большим диваном"
+          ]
+        },
+        {
+          "q": "Кто-то добавляет в карбонару сливки. Что ты делаешь?",
+          "a": [
+            "Читаю короткую лекцию о традициях",
+            "Взрываюсь",
+            "Пожимаю плечами, лишь бы было вкусно",
+            "Молча готовлю правильно и угощаю"
+          ]
+        },
+        {
+          "q": "Идеальное свидание?",
+          "a": [
+            "Ресторан у воды и свечи",
+            "Готовить вместе дома",
+            "Пикник на лугу",
+            "Танцы до утра"
+          ]
+        },
+        {
+          "q": "Как ты работаешь?",
+          "a": [
+            "Медленно и основательно",
+            "Быстро и в последний момент",
+            "С планами в несколько слоёв",
+            "Мало дел, зато идеально"
+          ]
+        },
+        {
+          "q": "Что налить в бокал?",
+          "a": [
+            "Красное вино",
+            "Хорошо охлаждённое белое вино",
+            "Эспрессо, стоя у стойки",
+            "Воду с лимоном и мятой"
+          ]
+        }
+      ],
+      "results": {
+        "karbonara": {
+          "name": "Карбонара",
+          "tagline": "Четыре ингредиента и никаких компромиссов.",
+          "description": "У тебя есть принципы, и сливки в карбонаре в них не входят. Ты веришь, что хорошие вещи просты, но простота требует точности. У тебя мало друзей, зато на всю жизнь, и твоё слово весит больше чужих договоров.",
+          "traits": [
+            "Принципы",
+            "Точность",
+            "Классика"
+          ]
+        },
+        "bolonese": {
+          "name": "Болоньезе",
+          "tagline": "Хорошее варится три часа.",
+          "description": "Ты воскресный обед в человеческом облике. Ты готовишь слишком много, звонишь маме и никогда не отпускаешь гостей с пустыми руками. У тебя терпение, которому завидуют, и за твоим столом всегда найдётся ещё один стул.",
+          "traits": [
+            "Семья",
+            "Терпение",
+            "Щедрость"
+          ]
+        },
+        "pesto": {
+          "name": "Паста с песто",
+          "tagline": "Свежий воздух и открытые окна.",
+          "description": "Ты тот человек, у которого на подоконнике растёт базилик и кто первым замечает весну. Ты не переживаешь из-за мелочей, быстро прощаешь и лучше всего чувствуешь себя на улице. Рядом с тобой другие вспоминают, что жить можно легче.",
+          "traits": [
+            "Свежесть",
+            "Лёгкость",
+            "Оптимизм"
+          ]
+        },
+        "arrabjata": {
+          "name": "Арраббьята",
+          "tagline": "Сердитая только по названию. Почти.",
+          "description": "Ты говоришь, что думаешь, и думаешь быстро. У тебя темперамент, который вспыхивает за секунду и так же быстро гаснет, и никто никогда не сомневается, на чьей ты стороне. С тобой горячо, честно и никогда не бывает тепловато.",
+          "traits": [
+            "Темперамент",
+            "Прямота",
+            "Страсть"
+          ]
+        },
+        "lazanja": {
+          "name": "Лазанья",
+          "tagline": "Слой за слоем, и каждый того стоит.",
+          "description": "Ты домашний человек с глубоким внутренним миром. Снаружи спокойствие, а внутри слои: воспоминания, планы, книги и мнения обо всём. Ты раскрываешься не сразу, зато те, кто добрался до середины, уходить уже не хотят.",
+          "traits": [
+            "Глубина",
+            "Уют",
+            "Верность"
+          ]
+        },
+        "garneles": {
+          "name": "Спагетти с креветками",
+          "tagline": "Морской ветер, белое вино и закат.",
+          "description": "В тебе есть что-то от летнего отпуска, который никогда не кончается. Ты умеешь наслаждаться моментом, одеваешься со вкусом и даже понедельник способен превратить в небольшое событие. За тобой идут, потому что там, где ты, красивее.",
+          "traits": [
+            "Элегантность",
+            "Романтика",
+            "Вкус к жизни"
+          ]
+        }
+      }
+    },
+    "lt": {
+      "title": "Kokia tu pasta?",
+      "hook": "Karbonara, pesto ar pikta arabiata? Septyni klausimai, ir padažas bus aiškus.",
+      "intro": "Italai sako, kad apie žmogų viską galima pasakyti iš to, kokią pastą jis užsisako. Vienas niekada nenukrypsta nuo klasikos, kitas į viską deda čili, trečias valandų valandas verda padažą visai šeimai. Atsakyk į septynis klausimus ir sužinok, kokia pasta esi tu, kartu su receptu šio vakaro vakarienei.",
+      "resultLine": "Aš esu {name}",
+      "questions": [
+        {
+          "q": "Koks tavo sekmadienio rytas?",
+          "a": [
+            "Ilgi pusryčiai su visa šeima",
+            "Bėgimas ir turgus su šviežiais žalumynais",
+            "Po antklode iki vidurdienio",
+            "Jau su kažkuo ginčijuosi internete"
+          ]
+        },
+        {
+          "q": "Kaip tave apibūdina draugai?",
+          "a": [
+            "Principingas",
+            "Rūpestingas",
+            "Ugningas",
+            "Romantiškas"
+          ]
+        },
+        {
+          "q": "Kur norėtum gyventi?",
+          "a": [
+            "Prie jūros",
+            "Romos senamiestyje",
+            "Kaimo name su sodu",
+            "Jaukiame bute su didele sofa"
+          ]
+        },
+        {
+          "q": "Kažkas į karbonarą pila grietinėlę. Ką darai?",
+          "a": [
+            "Perskaitau trumpą paskaitą apie tradicijas",
+            "Sprogstu",
+            "Gūžteliu pečiais, kad tik būtų skanu",
+            "Tyliai pagaminu teisingai ir pavaišinu"
+          ]
+        },
+        {
+          "q": "Idealus pasimatymas?",
+          "a": [
+            "Restoranas prie vandens ir žvakės",
+            "Gaminti kartu namuose",
+            "Piknikas pievoje",
+            "Šokiai iki ryto"
+          ]
+        },
+        {
+          "q": "Kaip dirbi?",
+          "a": [
+            "Lėtai ir kruopščiai",
+            "Greitai ir paskutinę minutę",
+            "Su planais keliais sluoksniais",
+            "Mažai darbų, užtat tobulai"
+          ]
+        },
+        {
+          "q": "Ką įpilti į taurę?",
+          "a": [
+            "Raudonojo vyno",
+            "Gerai atšaldyto baltojo vyno",
+            "Espreso, stovint prie baro",
+            "Vandens su citrina ir mėtomis"
+          ]
+        }
+      ],
+      "results": {
+        "karbonara": {
+          "name": "Karbonara",
+          "tagline": "Keturi ingredientai ir jokių kompromisų.",
+          "description": "Turi principus, ir grietinėlė karbonaroje nėra vienas iš jų. Tiki, kad geri dalykai yra paprasti, bet paprastumas reikalauja tikslumo. Turi nedaug draugų, užtat visam gyvenimui, o tavo žodis sveria daugiau nei kitų sutartys.",
+          "traits": [
+            "Principai",
+            "Tikslumas",
+            "Klasika"
+          ]
+        },
+        "bolonese": {
+          "name": "Bolonijos padažas",
+          "tagline": "Geri dalykai verda tris valandas.",
+          "description": "Tu esi sekmadienio pietūs žmogaus pavidalu. Gamini per daug, skambini mamai ir niekada neišleidi svečių tuščiomis rankomis. Turi kantrybės, kurios kiti pavydi, o prie tavo stalo visada atsiranda dar viena kėdė.",
+          "traits": [
+            "Šeima",
+            "Kantrybė",
+            "Dosnumas"
+          ]
+        },
+        "pesto": {
+          "name": "Pasta su pesto",
+          "tagline": "Grynas oras ir atviri langai.",
+          "description": "Tu esi tas žmogus, kuriam ant palangės auga bazilikas ir kuris pirmas pastebi pavasarį. Nesijaudini dėl smulkmenų, greitai atleidi ir geriausiai jautiesi lauke. Šalia tavęs kiti prisimena, kad gyventi galima lengviau.",
+          "traits": [
+            "Gaivumas",
+            "Lengvumas",
+            "Optimizmas"
+          ]
+        },
+        "arrabjata": {
+          "name": "Arabiata",
+          "tagline": "Pikta tik pavadinimu. Beveik.",
+          "description": "Sakai, ką galvoji, ir galvoji greitai. Tavo temperamentas užsiliepsnoja per sekundę ir taip pat greitai nurimsta, ir niekas niekada neabejoja, kurioje pusėje stovi. Su tavimi karšta, sąžininga ir niekada nebūna drungna.",
+          "traits": [
+            "Temperamentas",
+            "Tiesumas",
+            "Aistra"
+          ]
+        },
+        "lazanja": {
+          "name": "Lazanija",
+          "tagline": "Sluoksnis po sluoksnio, ir kiekvienas to vertas.",
+          "description": "Tu esi namų žmogus su giliu vidiniu pasauliu. Iš išorės ramus, o viduje sluoksniai: prisiminimai, planai, knygos ir nuomonės apie viską. Atsiveri ne iš karto, užtat tie, kurie pasiekia vidurį, nebenori išeiti.",
+          "traits": [
+            "Gilumas",
+            "Jaukumas",
+            "Ištikimybė"
+          ]
+        },
+        "garneles": {
+          "name": "Spagečiai su krevetėmis",
+          "tagline": "Jūros vėjas, baltasis vynas ir saulėlydis.",
+          "description": "Tavyje yra kažkas iš vasaros atostogų, kurios niekada nesibaigia. Moki mėgautis akimirka, rengiesi skoningai ir net pirmadienį gebi paversti mažu įvykiu. Žmonės seka paskui tave, nes ten, kur esi tu, gražiau.",
+          "traits": [
+            "Elegancija",
+            "Romantika",
+            "Gyvenimo džiaugsmas"
+          ]
+        }
+      }
+    }
+  }
+}

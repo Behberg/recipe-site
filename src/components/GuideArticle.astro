@@ -1,0 +1,421 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from './Icon.astro';
+import AdSlot from './AdSlot.astro';
+import RecipeCard from './RecipeCard.astro';
+import GuideCard from './GuideCard.astro';
+import { SITE } from '../site.config';
+import { getGuides, guidesUrl } from '../lib/guides';
+import { getCatalog, imageUrl, imageSrcset, categoryUrl } from '../lib/recipes';
+import { absolute, breadcrumbLd } from '../lib/seo';
+import { href, langFromPath, t } from '../i18n';
+
+/** A whole guide page: article, photos, ads between sections, matching recipes and more guides. */
+interface Props {
+  id: string;
+}
+
+const lang = langFromPath(Astro.url.pathname);
+const guides = await getGuides(lang);
+const g = guides.find((x) => x.id === Astro.props.id)!;
+const others = guides.filter((x) => x.id !== g.id);
+// The next three in display order, wrapping around, so every guide links to different ones.
+const at = guides.indexOf(g);
+const more = [1, 2, 3].map((i) => guides[(at + i) % guides.length]).filter((x) => x.id !== g.id && others.includes(x));
+
+const { recipes, cuisineById, categoryById } = await getCatalog(lang);
+const related = g.related
+  ? recipes
+      .filter((r) => r.data.image && (g.related!.category ? r.data.category.id === g.related!.category : r.lv.tags.includes(g.related!.tag ?? '')))
+      .slice(0, 10)
+  : [];
+const relatedUrl = g.related?.category ? categoryUrl(g.related.category, lang) : g.related?.tag === 'vegāns' ? href(lang, '/veganas-receptes/') : href(lang, '/receptes/');
+
+const anchor = (i: number) => `s${i + 1}`;
+const n = g.sections.length;
+// Ads sit between sections: after the first one and, in longer articles, past the middle.
+const adBefore = new Set(n >= 5 ? [1, Math.ceil(n * 0.6)] : [1]);
+const date = new Intl.DateTimeFormat(lang, { year: 'numeric', month: 'long', day: 'numeric' }).format(g.date);
+const srcset = imageSrcset(g.image);
+const figSrcset = g.figure ? imageSrcset(g.figure.src) : '';
+const sizes = '(min-width: 800px) 760px, 100vw';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${absolute(g.url, Astro.site)}#article`,
+    headline: g.title,
+    description: g.description,
+    inLanguage: lang,
+    image: [absolute(g.image, Astro.site)],
+    datePublished: g.date.toISOString(),
+    dateModified: g.date.toISOString(),
+    mainEntityOfPage: absolute(g.url, Astro.site),
+    author: { '@id': absolute('/#organization', Astro.site) },
+    publisher: { '@id': absolute('/#organization', Astro.site) },
+  },
+  breadcrumbLd(
+    [
+      { name: SITE.name, path: href(lang, '/') },
+      { name: t(lang, 'guides.title'), path: guidesUrl(lang) },
+      { name: g.title, path: g.url },
+    ],
+    Astro.site,
+  ),
+];
+---
+
+<Base
+  title={g.seoTitle}
+  description={g.description}
+  type="article"
+  image={g.image}
+  imageSize={[1400, 933]}
+  imageAlt={g.imageAlt}
+  published={g.date.toISOString()}
+  jsonLd={jsonLd}
+>
+  <article class="container guide" style={`--gc:${g.color}`}>
+    <nav class="breadcrumbs" aria-label={t(lang, 'common.breadcrumbs')}>
+      <a href={href(lang, '/')}>{t(lang, 'common.home')}</a><span aria-hidden="true">/</span><a href={guidesUrl(lang)}>{t(lang, 'guides.title')}</a>
+    </nav>
+
+    <header>
+      <span class="eyebrow">{g.eyebrow}</span>
+      <h1>{g.title}</h1>
+      <p class="lead">{g.lead}</p>
+      <p class="meta">
+        <span><Icon name="clock" /> {t(lang, 'guides.readTime', { n: g.minutes })}</span>
+        <time datetime={g.date.toISOString().slice(0, 10)}>{date}</time>
+      </p>
+    </header>
+
+    <figure class="hero-photo">
+      <img
+        src={imageUrl(g.image, 1400)}
+        srcset={srcset || undefined}
+        sizes={srcset ? sizes : undefined}
+        alt={g.imageAlt}
+        width="1400"
+        height="933"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+      {
+        g.imageAuthor && (
+          <figcaption>
+            {g.imageSource ? (
+              <a href={g.imageSource} rel="noopener nofollow" target="_blank">{t(lang, 'recipe.photoBy', { author: g.imageAuthor })}</a>
+            ) : (
+              t(lang, 'recipe.photoBy', { author: g.imageAuthor })
+            )}
+          </figcaption>
+        )
+      }
+    </figure>
+
+    <nav class="toc" aria-label={t(lang, 'guides.toc')}>
+      <h2>{t(lang, 'guides.toc')}</h2>
+      <ul>
+        {g.sections.map((s, i) => <li><a href={`#${anchor(i)}`}>{s.h}</a></li>)}
+      </ul>
+    </nav>
+
+    {
+      g.sections.map((s, i) => (
+        <>
+          {adBefore.has(i) && <AdSlot slot="article" class="guide-ad" />}
+          {g.figure && g.figure.before === i && (
+            <figure class="inline-photo">
+              <img
+                src={imageUrl(g.figure.src, 1400)}
+                srcset={figSrcset || undefined}
+                sizes={figSrcset ? sizes : undefined}
+                alt={g.figureCaption || g.imageAlt}
+                width="1400"
+                height="933"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                {g.figureCaption}
+                {g.figure.author && (
+                  <span class="credit">
+                    {g.figure.source ? (
+                      <a href={g.figure.source} rel="noopener nofollow" target="_blank">{t(lang, 'recipe.photoBy', { author: g.figure.author })}</a>
+                    ) : (
+                      t(lang, 'recipe.photoBy', { author: g.figure.author })
+                    )}
+                  </span>
+                )}
+              </figcaption>
+            </figure>
+          )}
+          <section id={anchor(i)} class:list={{ box: s.box }}>
+            <h2>{s.h}</h2>
+            {s.p.map((text) => <p>{text}</p>)}
+            {s.list.length > 0 && <ul>{s.list.map((item) => <li>{item}</li>)}</ul>}
+            {s.table.length > 0 && (
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>{s.table[0].map((cell) => <th scope="col">{cell}</th>)}</tr>
+                  </thead>
+                  <tbody>
+                    {s.table.slice(1).map((row) => (
+                      <tr>{row.map((cell, c) => (c === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>))}</tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+            {s.after.map((text) => <p>{text}</p>)}
+          </section>
+        </>
+      ))
+    }
+
+    <p class="back">
+      <a href={guidesUrl(lang)}><Icon name="arrow-right" /> {t(lang, 'guides.all')}</a>
+    </p>
+  </article>
+
+  <div class="container"><AdSlot slot="article" /></div>
+
+  {
+    related.length > 0 && (
+      <section class="section container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">{t(lang, 'guides.recipesEyebrow')}</span>
+            <h2>{t(lang, 'guides.recipesTitle')}</h2>
+          </div>
+          <a class="link-more" href={relatedUrl}>
+            {t(lang, 'common.all')} <Icon name="arrow-right" />
+          </a>
+        </div>
+        <div class="rail">
+          {related.map((r) => (
+            <RecipeCard recipe={r} cuisine={cuisineById.get(r.data.cuisine?.id ?? '')} category={categoryById.get(r.data.category.id)} wide />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <section class="section container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{t(lang, 'guides.eyebrow')}</span>
+        <h2>{t(lang, 'guides.more')}</h2>
+      </div>
+      <a class="link-more" href={guidesUrl(lang)}>
+        {t(lang, 'guides.all')} <Icon name="arrow-right" />
+      </a>
+    </div>
+    <div class="more-grid">{more.map((x) => <GuideCard guide={x} />)}</div>
+  </section>
+</Base>
+
+<style>
+  .guide {
+    max-width: 760px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .guide h1 {
+    font-size: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+    line-height: 1.08;
+    margin: 8px 0 14px;
+  }
+  .guide .eyebrow {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--gc);
+  }
+  .lead {
+    font-size: 1.12rem;
+    line-height: 1.6;
+    color: var(--ink-2);
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    color: var(--ink-3);
+  }
+  .meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .meta :global(svg) {
+    width: 16px;
+    height: 16px;
+  }
+  figure {
+    margin: 22px 0 0;
+  }
+  figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: var(--r-lg);
+    background: var(--surface-2);
+  }
+  /* Photos run edge to edge on phones, like the recipe photos. */
+  @media (max-width: 640px) {
+    figure {
+      margin-inline: calc(var(--gutter) * -1);
+    }
+    figure img {
+      border-radius: 0;
+    }
+    figcaption {
+      padding-inline: var(--gutter);
+    }
+  }
+  figcaption {
+    margin-top: 8px;
+    font-size: 0.82rem;
+    color: var(--ink-3);
+  }
+  figcaption a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .credit::before {
+    content: ' · ';
+  }
+  .toc {
+    margin-top: 24px;
+    padding: 16px 20px 18px;
+    border-radius: var(--r);
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .toc h2 {
+    font-family: var(--font-body, inherit);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .toc ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+  .toc a {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .toc a:hover {
+    color: var(--brand);
+  }
+  section {
+    scroll-margin-top: 80px;
+  }
+  section h2 {
+    font-size: 1.45rem;
+    line-height: 1.2;
+    margin: 34px 0 10px;
+  }
+  section p {
+    margin-top: 12px;
+    font-size: 1.03rem;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+  section ul {
+    margin: 12px 0 0;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 8px;
+  }
+  section li {
+    line-height: 1.6;
+  }
+  section li::marker {
+    color: var(--gc);
+  }
+  .box {
+    margin-top: 32px;
+    padding: 18px 20px 20px;
+    border-radius: var(--r);
+    background: color-mix(in oklab, var(--gc) 9%, var(--surface));
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--gc) 24%, transparent);
+  }
+  .box h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  .table-wrap {
+    margin-top: 14px;
+    overflow-x: auto;
+    border-radius: var(--r);
+    box-shadow: inset 0 0 0 1px var(--line);
+    background: var(--surface);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+  }
+  th,
+  td {
+    padding: 10px 14px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  tbody th {
+    font-weight: 500;
+    white-space: normal;
+  }
+  thead th {
+    font-size: 0.74rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    background: var(--surface-2);
+  }
+  tbody tr + tr > * {
+    border-top: 1px solid var(--line);
+  }
+  .guide :global(.guide-ad) {
+    margin-top: 28px;
+  }
+  .back {
+    margin-top: 30px;
+  }
+  .back a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--brand);
+    font-weight: 600;
+  }
+  .back :global(svg) {
+    width: 18px;
+    height: 18px;
+    transform: rotate(180deg);
+  }
+  .more-grid {
+    display: grid;
+    gap: 16px;
+  }
+  @media (min-width: 700px) {
+    .more-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+  }
+</style>

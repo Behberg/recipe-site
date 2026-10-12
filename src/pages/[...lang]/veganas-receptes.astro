@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import TaxonomyHero from '../../components/TaxonomyHero.astro';
+import RecipeBrowser from '../../components/RecipeBrowser.astro';
+import { getCatalog, VEGAN_TAG } from '../../lib/recipes';
+import { guideUrl } from '../../lib/guides';
+import { langFromPath, langPaths, href, t } from '../../i18n';
+import { SITE } from '../../site.config';
+import { breadcrumbLd, itemListLd } from '../../lib/seo';
+
+// The vegan section: every recipe tagged "vegāns", across all categories and cuisines.
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const { recipes: all, cuisines, categories } = await getCatalog(lang);
+const recipes = all.filter((r) => r.lv.tags.includes(VEGAN_TAG));
+const path = href(lang, '/veganas-receptes/');
+const title = t(lang, 'vegan.title');
+const jsonLd = [
+  breadcrumbLd(
+    [
+      { name: SITE.name, path: href(lang, '/') },
+      { name: t(lang, 'nav.recipes'), path: href(lang, '/receptes/') },
+      { name: title, path },
+    ],
+    Astro.site,
+  ),
+  itemListLd(title, recipes.map((r) => href(lang, `/recepte/${r.id}/`)), Astro.site),
+];
+---
+
+<Base title={t(lang, 'vegan.metaTitle')} description={t(lang, 'vegan.description')} jsonLd={jsonLd}>
+  <TaxonomyHero
+    name={title}
+    emoji="🌱"
+    color="#3f8f4f"
+    description={t(lang, 'vegan.description')}
+    count={recipes.length}
+    parent={{ href: href(lang, '/receptes/'), label: t(lang, 'nav.recipes') }}
+  />
+
+  <section class="container" style="padding-top:20px">
+    <RecipeBrowser recipes={recipes} cuisines={cuisines} categories={categories} />
+  </section>
+
+  <section class="container about">
+    <h2>{t(lang, 'vegan.aboutTitle')}</h2>
+    <p>{t(lang, 'vegan.aboutText')}</p>
+    <a href={guideUrl('ar-ko-aizstat-olas-pienu-un-sviestu', lang)}>
+      {t(lang, 'vegan.guideLink')} <Icon name="arrow-right" />
+    </a>
+  </section>
+</Base>
+
+<style>
+  .about {
+    max-width: 760px;
+    margin-inline: auto;
+    padding-top: 36px;
+    padding-bottom: 12px;
+  }
+  .about h2 {
+    font-size: 1.35rem;
+  }
+  .about p {
+    margin-top: 8px;
+    color: var(--ink-2);
+  }
+  .about a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    color: var(--brand);
+    font-weight: 600;
+  }
+  .about a :global(svg) {
+    width: 18px;
+    height: 18px;
+  }
+</style>

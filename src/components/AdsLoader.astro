@@ -1,6 +1,7 @@
 ---
 import { adsEnabled } from '../site.config';
-// adsbygoogle.js itself is loaded in the <head> of Base.astro; this only fills the units lazily.
+// adsbygoogle.js itself is loaded in the <head> of Base.astro; this fills the units lazily and
+// keeps the site's own fixed bars out of the way of Google's anchor ads.
 ---
 
 {
@@ -8,7 +9,6 @@ import { adsEnabled } from '../site.config';
     <script is:inline>
       (function () {
         var slots = Array.prototype.slice.call(document.querySelectorAll('ins.adsbygoogle'));
-        if (!slots.length) return;
         function fill(ins) {
           try {
             (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -29,14 +29,53 @@ import { adsEnabled } from '../site.config';
                 }
               });
             },
-            { rootMargin: '600px 0px' }
+            // Roughly one phone screen ahead: the ad is ready when it scrolls in, and is not
+            // requested for parts of the page the reader never reaches.
+            { rootMargin: '700px 0px' }
           );
           slots.forEach(function (s) {
+            // Units hidden for this screen size (display: none) are never requested.
             if (s.offsetParent !== null) io.observe(s);
           });
         }
-        if (document.readyState === 'complete') setTimeout(start, 800);
-        else window.addEventListener('load', function () { setTimeout(start, 800); });
+        if (slots.length) {
+          if (document.readyState === 'complete') setTimeout(start, 200);
+          else window.addEventListener('load', function () { setTimeout(start, 200); });
+        }
+
+        // Auto ads can pin an "anchor" ad to the bottom or top edge of a phone screen. The site has
+        // its own bottom tab bar and sticky header there, so they are moved to sit next to the ad
+        // instead of under it (an ad covering navigation is bad for readers and against policy).
+        var root = document.documentElement;
+        var watched = [];
+        function measure() {
+          var bottom = 0;
+          var top = 0;
+          watched.forEach(function (el) {
+            if (!el.isConnected) return;
+            var cs = getComputedStyle(el);
+            if (cs.position !== 'fixed' || cs.display === 'none' || cs.visibility === 'hidden') return;
+            var r = el.getBoundingClientRect();
+            if (r.height < 20 || r.width < window.innerWidth * 0.6) return;
+            if (r.bottom >= window.innerHeight - 2 && r.top > window.innerHeight / 2) bottom = Math.max(bottom, window.innerHeight - r.top);
+            else if (r.top <= 2 && r.bottom < window.innerHeight / 2) top = Math.max(top, r.bottom);
+          });
+          root.style.setProperty('--anchor-ad-bottom', Math.round(bottom) + 'px');
+          root.style.setProperty('--anchor-ad-top', Math.round(top) + 'px');
+        }
+        var onChange = new MutationObserver(measure);
+        function scan() {
+          Array.prototype.forEach.call(document.body.children, function (el) {
+            if (el.tagName !== 'INS' || !el.classList.contains('adsbygoogle') || watched.indexOf(el) !== -1) return;
+            watched.push(el);
+            onChange.observe(el, { attributes: true, attributeFilter: ['style', 'class', 'data-anchor-status', 'data-anchor-shown'] });
+          });
+          measure();
+        }
+        // Anchor ads are added as direct children of <body>, never inside the page content.
+        new MutationObserver(scan).observe(document.body, { childList: true });
+        window.addEventListener('resize', measure);
+        scan();
       })();
     </script>
   )

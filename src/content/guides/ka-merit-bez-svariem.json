@@ -1,0 +1,278 @@
+{
+  "order": 5,
+  "date": "2026-10-08",
+  "emoji": "🥄",
+  "color": "#b8912a",
+  "image": "/images/guides/ka-merit-bez-svariem.jpg",
+  "imageAuthor": "Hannah Grapp",
+  "imageSource": "https://www.pexels.com/photo/measuring-spoons-beside-flour-9737802/",
+  "figure": {
+    "src": "/images/guides/ka-merit-bez-svariem-2.jpg",
+    "author": "Gu Ko",
+    "source": "https://www.pexels.com/photo/essential-kitchen-tools-on-wooden-surface-38848778/",
+    "before": 3
+  },
+  "related": { "category": "maize-un-cepumi" },
+  "text": {
+    "lv": {
+      "title": "Cik gramu ir glāzē un karotē: kā mērīt bez svariem",
+      "seoTitle": "Cik gramu ir glāzē, ēdamkarotē un tējkarotē: tabula mērīšanai bez svariem",
+      "description": "Tabula, cik gramu miltu, cukura, sāls, eļļas, medus un citu produktu ir glāzē, ēdamkarotē un tējkarotē, un padomi, kā mērīt precīzi, ja nav virtuves svaru.",
+      "eyebrow": "Virtuves pamati",
+      "lead": "Receptē rakstīts 200 g miltu, bet svaru nav vai tie tieši šodien palikuši bez baterijas. Nekas: ar glāzi un karoti var nomērīt gandrīz visu, ja zina, cik katrs produkts sver. Glāze miltu un glāze cukura nav viens un tas pats.",
+      "imageAlt": "Mērkarotes blakus miltu kaudzītei un olām",
+      "figureCaption": "Mērkarotes maksā dažus eiro un ir precīzākas par jebkuru galda karoti.",
+      "sections": [
+        {
+          "h": "Ar ko mērām",
+          "p": [
+            "Šajā tabulā un mūsu receptēs glāze nozīmē 250 ml, ēdamkarote 15 ml un tējkarote 5 ml. Karotes vienmēr ir līdzenas, bez kaudzes, ja vien receptē nav teikts citādi.",
+            "Pirms sāc, pārbaudi savus traukus. Krūzes un glāzes mājās mēdz būt no 200 līdz 350 ml. Ielej glāzē ūdeni no mērtrauka vai no pusotra litra pudeles: sešas pilnas 250 ml glāzes iztukšo pudeli."
+          ]
+        },
+        {
+          "h": "Tabula: cik gramu ir glāzē un karotē",
+          "p": [
+            "Skaitļi ir noapaļoti un der mājas gatavošanai. Miltu un pūdercukura svars visvairāk atkarīgs no tā, cik stipri produkts ir sablīvēts."
+          ],
+          "table": [
+            ["Produkts", "Glāze (250 ml)", "Ēdamkarote", "Tējkarote"],
+            ["Ūdens, piens", "250 g", "15 g", "5 g"],
+            ["Kviešu milti", "150 g", "9 g", "3 g"],
+            ["Cukurs", "200 g", "13 g", "4 g"],
+            ["Pūdercukurs", "120 g", "8 g", "3 g"],
+            ["Smalkā sāls", "300 g", "18 g", "6 g"],
+            ["Eļļa", "230 g", "14 g", "5 g"],
+            ["Kausēts sviests", "240 g", "14 g", "5 g"],
+            ["Medus", "350 g", "21 g", "7 g"],
+            ["Rīsi", "200 g", "13 g", "4 g"],
+            ["Auzu pārslas", "90 g", "6 g", "2 g"],
+            ["Mannas putraimi", "180 g", "11 g", "4 g"],
+            ["Kakao pulveris", "100 g", "6 g", "2 g"]
+          ]
+        },
+        {
+          "h": "Kā mērīt beramus produktus",
+          "list": [
+            "Miltus pirms mērīšanas uzirdini ar karoti, ieber glāzē ar karoti un līdzini ar naža muguru. Ja glāzi iegremdē maisā un piespiež, tajā būs par ceturtdaļu vairāk miltu, un mīkla sanāks cieta.",
+            "Cukuru un sāli ber līdz malai un nolīdzini. Brūno cukuru, gluži otrādi, glāzē viegli piespiež.",
+            "Līdzena karote nozīmē, ka kaudzīte ir nobraukta ar nazi. Karote ar kaudzi satur gandrīz divreiz vairāk.",
+            "Šķipsna ir tik daudz, cik var satvert ar trim pirkstiem, apmēram ceturtā daļa tējkarotes."
+          ]
+        },
+        {
+          "h": "Kā mērīt šķidrumus un lipīgus produktus",
+          "list": [
+            "Šķidrumu glāzē mēri uz līdzenas virsmas un skaties no sāniem acu augstumā, nevis no augšas.",
+            "Pirms medus vai sīrupa mērīšanas karoti ieziež ar eļļas pilienu: medus noslīdēs bez atlikuma.",
+            "Sviestu ērti mērīt pēc paciņas: 200 g paciņas puse ir 100 g, ceturtdaļa 50 g. Viena ēdamkarote mīksta sviesta sver apmēram 14 g.",
+            "Vidēja ola bez čaumalas sver apmēram 50 g: baltums 30 g, dzeltenums 20 g."
+          ]
+        },
+        {
+          "h": "Kad bez svariem neiztikt",
+          "p": [
+            "Zupās, sautējumos un salātos pāris gramu neko nemaina, un tur glāze un karote ir pilnīgi pietiekami. Citādi ir ar cepšanu: biskvīts, bezē, makarūni un maizes mīkla ir ķīmija, kur miltu, cukura un šķidruma attiecībai jābūt precīzai.",
+            "Ja cep bieži, elektroniskie virtuves svari par 10 līdz 15 eiro ir labākais pirkums, ko vari izdarīt. Mūsu receptēs vari arī pieskarties jebkuram daudzumam un ierakstīt, cik produkta tev ir: pārējais tiks pārrēķināts."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "en": {
+      "title": "How many grams in a glass and a spoon: measuring without scales",
+      "seoTitle": "Grams in a glass, tablespoon and teaspoon: a chart for measuring without scales",
+      "description": "A chart of how many grams of flour, sugar, salt, oil, honey and other foods fit in a glass, a tablespoon and a teaspoon, with tips for measuring accurately when you have no kitchen scales.",
+      "eyebrow": "Kitchen basics",
+      "lead": "The recipe says 200 g of flour, but you have no scales, or today of all days the battery is flat. No matter: with a glass and a spoon you can measure almost anything, as long as you know what each food weighs. A glass of flour and a glass of sugar are not the same thing.",
+      "imageAlt": "Measuring spoons beside a pile of flour and eggs",
+      "figureCaption": "Measuring spoons cost a few euros and are more accurate than any spoon from the cutlery drawer.",
+      "sections": [
+        {
+          "h": "What we measure with",
+          "p": [
+            "In this chart and in our recipes a glass means 250 ml, a tablespoon 15 ml and a teaspoon 5 ml. Spoons are always level, not heaped, unless the recipe says otherwise.",
+            "Before you start, check your own glasses. Mugs and glasses at home range from 200 to 350 ml. Fill your glass with water from a measuring jug or a litre and a half bottle: six full 250 ml glasses empty the bottle."
+          ]
+        },
+        {
+          "h": "Chart: grams in a glass and a spoon",
+          "p": [
+            "The numbers are rounded and fine for home cooking. The weight of flour and icing sugar depends most on how tightly the food is packed."
+          ],
+          "table": [
+            ["Food", "Glass (250 ml)", "Tablespoon", "Teaspoon"],
+            ["Water, milk", "250 g", "15 g", "5 g"],
+            ["Wheat flour", "150 g", "9 g", "3 g"],
+            ["Sugar", "200 g", "13 g", "4 g"],
+            ["Icing sugar", "120 g", "8 g", "3 g"],
+            ["Fine salt", "300 g", "18 g", "6 g"],
+            ["Oil", "230 g", "14 g", "5 g"],
+            ["Melted butter", "240 g", "14 g", "5 g"],
+            ["Honey", "350 g", "21 g", "7 g"],
+            ["Rice", "200 g", "13 g", "4 g"],
+            ["Rolled oats", "90 g", "6 g", "2 g"],
+            ["Semolina", "180 g", "11 g", "4 g"],
+            ["Cocoa powder", "100 g", "6 g", "2 g"]
+          ]
+        },
+        {
+          "h": "How to measure dry foods",
+          "list": [
+            "Fluff up flour with a spoon before measuring, spoon it into the glass and level it with the back of a knife. If you dip the glass into the bag and pack it down, it will hold a quarter more flour and the dough will turn out stiff.",
+            "Fill sugar and salt to the brim and level off. Brown sugar, on the contrary, is pressed lightly into the glass.",
+            "A level spoon means the heap has been swept off with a knife. A heaped spoon holds almost twice as much.",
+            "A pinch is what you can pick up with three fingers, about a quarter of a teaspoon."
+          ]
+        },
+        {
+          "h": "How to measure liquids and sticky foods",
+          "list": [
+            "Measure liquid with the glass on a flat surface and look at it from the side at eye level, not from above.",
+            "Before measuring honey or syrup, rub the spoon with a drop of oil: the honey will slide off without leaving any behind.",
+            "Butter is easy to measure by the pack: half a 200 g pack is 100 g, a quarter is 50 g. One tablespoon of soft butter weighs about 14 g.",
+            "A medium egg without its shell weighs about 50 g: 30 g of white and 20 g of yolk."
+          ]
+        },
+        {
+          "h": "When you cannot do without scales",
+          "p": [
+            "In soups, stews and salads a couple of grams change nothing, and a glass and a spoon are perfectly adequate. Baking is different: sponge cake, meringue, macarons and bread dough are chemistry, where the ratio of flour, sugar and liquid has to be exact.",
+            "If you bake often, digital kitchen scales for 10 to 15 euros are the best purchase you can make. In our recipes you can also tap any amount and type in how much of an ingredient you have: the rest is recalculated for you."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "ru": {
+      "title": "Сколько граммов в стакане и ложке: как отмерять без весов",
+      "seoTitle": "Сколько граммов в стакане, столовой и чайной ложке: таблица мер без весов",
+      "description": "Таблица: сколько граммов муки, сахара, соли, масла, мёда и других продуктов в стакане, столовой и чайной ложке, и советы, как отмерять точно, если нет кухонных весов.",
+      "eyebrow": "Основы кухни",
+      "lead": "В рецепте написано 200 г муки, а весов нет или именно сегодня в них села батарейка. Не беда: стаканом и ложкой можно отмерить почти всё, если знать, сколько весит каждый продукт. Стакан муки и стакан сахара: не одно и то же.",
+      "imageAlt": "Мерные ложки рядом с горкой муки и яйцами",
+      "figureCaption": "Мерные ложки стоят несколько евро и точнее любой столовой ложки.",
+      "sections": [
+        {
+          "h": "Чем мы отмеряем",
+          "p": [
+            "В этой таблице и в наших рецептах стакан означает 250 мл, столовая ложка 15 мл, чайная ложка 5 мл. Ложки всегда без горки, если в рецепте не сказано иначе.",
+            "Прежде чем начать, проверьте свою посуду. Кружки и стаканы дома бывают от 200 до 350 мл. Налейте в стакан воду из мерного кувшина или из полуторалитровой бутылки: шесть полных стаканов по 250 мл опустошают бутылку."
+          ]
+        },
+        {
+          "h": "Таблица: сколько граммов в стакане и ложке",
+          "p": [
+            "Цифры округлены и подходят для домашней готовки. Вес муки и сахарной пудры больше всего зависит от того, насколько плотно продукт утрамбован."
+          ],
+          "table": [
+            ["Продукт", "Стакан (250 мл)", "Столовая ложка", "Чайная ложка"],
+            ["Вода, молоко", "250 г", "15 г", "5 г"],
+            ["Пшеничная мука", "150 г", "9 г", "3 г"],
+            ["Сахар", "200 г", "13 г", "4 г"],
+            ["Сахарная пудра", "120 г", "8 г", "3 г"],
+            ["Мелкая соль", "300 г", "18 г", "6 г"],
+            ["Растительное масло", "230 г", "14 г", "5 г"],
+            ["Растопленное сливочное масло", "240 г", "14 г", "5 г"],
+            ["Мёд", "350 г", "21 г", "7 г"],
+            ["Рис", "200 г", "13 г", "4 г"],
+            ["Овсяные хлопья", "90 г", "6 г", "2 г"],
+            ["Манная крупа", "180 г", "11 г", "4 г"],
+            ["Какао-порошок", "100 г", "6 г", "2 г"]
+          ]
+        },
+        {
+          "h": "Как отмерять сыпучие продукты",
+          "list": [
+            "Муку перед отмериванием разрыхлите ложкой, насыпьте в стакан ложкой и срежьте лишнее обухом ножа. Если зачерпнуть стаканом из пакета и утрамбовать, муки окажется на четверть больше, и тесто выйдет тугим.",
+            "Сахар и соль насыпайте до края и разравнивайте. Коричневый сахар, наоборот, слегка уплотняют в стакане.",
+            "Ложка без горки означает, что горка срезана ножом. В ложке с горкой продукта почти вдвое больше.",
+            "Щепотка: столько, сколько можно взять тремя пальцами, примерно четверть чайной ложки."
+          ]
+        },
+        {
+          "h": "Как отмерять жидкости и липкие продукты",
+          "list": [
+            "Жидкость отмеряйте в стакане на ровной поверхности и смотрите сбоку на уровне глаз, а не сверху.",
+            "Перед тем как отмерять мёд или сироп, смажьте ложку каплей масла: мёд соскользнёт без остатка.",
+            "Сливочное масло удобно отмерять по пачке: половина пачки в 200 г это 100 г, четверть 50 г. Одна столовая ложка мягкого масла весит около 14 г.",
+            "Среднее яйцо без скорлупы весит около 50 г: белок 30 г, желток 20 г."
+          ]
+        },
+        {
+          "h": "Когда без весов не обойтись",
+          "p": [
+            "В супах, рагу и салатах пара граммов ничего не меняет, и там стакана и ложки вполне достаточно. С выпечкой иначе: бисквит, безе, макаруны и хлебное тесто это химия, где соотношение муки, сахара и жидкости должно быть точным.",
+            "Если вы печёте часто, электронные кухонные весы за сумму от 10 до 15 евро: лучшая покупка, которую можно сделать. В наших рецептах можно также нажать на любое количество и ввести, сколько продукта у вас есть: остальное будет пересчитано."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "lt": {
+      "title": "Kiek gramų telpa stiklinėje ir šaukšte: kaip matuoti be svarstyklių",
+      "seoTitle": "Kiek gramų stiklinėje, valgomajame ir arbatiniame šaukšte: lentelė matavimui be svarstyklių",
+      "description": "Lentelė, kiek gramų miltų, cukraus, druskos, aliejaus, medaus ir kitų produktų telpa stiklinėje, valgomajame ir arbatiniame šaukšte, ir patarimai, kaip matuoti tiksliai, kai nėra virtuvinių svarstyklių.",
+      "eyebrow": "Virtuvės pagrindai",
+      "lead": "Recepte parašyta 200 g miltų, o svarstyklių nėra arba būtent šiandien išsikrovė jų baterija. Nieko tokio: stikline ir šaukštu galima pamatuoti beveik viską, jei žinote, kiek sveria kiekvienas produktas. Stiklinė miltų ir stiklinė cukraus nėra tas pats.",
+      "imageAlt": "Matavimo šaukšteliai šalia miltų krūvelės ir kiaušinių",
+      "figureCaption": "Matavimo šaukšteliai kainuoja kelis eurus ir yra tikslesni už bet kurį stalo šaukštą.",
+      "sections": [
+        {
+          "h": "Kuo matuojame",
+          "p": [
+            "Šioje lentelėje ir mūsų receptuose stiklinė reiškia 250 ml, valgomasis šaukštas 15 ml, arbatinis šaukštelis 5 ml. Šaukštai visada nubraukti, be kaupo, nebent recepte nurodyta kitaip.",
+            "Prieš pradėdami patikrinkite savo indus. Puodeliai ir stiklinės namuose būna nuo 200 iki 350 ml. Į stiklinę įpilkite vandens iš matavimo indo arba iš pusantro litro butelio: šešios pilnos 250 ml stiklinės ištuština butelį."
+          ]
+        },
+        {
+          "h": "Lentelė: kiek gramų telpa stiklinėje ir šaukšte",
+          "p": [
+            "Skaičiai suapvalinti ir tinka gaminant namuose. Miltų ir cukraus pudros svoris labiausiai priklauso nuo to, kiek stipriai produktas suspaustas."
+          ],
+          "table": [
+            ["Produktas", "Stiklinė (250 ml)", "Valgomasis šaukštas", "Arbatinis šaukštelis"],
+            ["Vanduo, pienas", "250 g", "15 g", "5 g"],
+            ["Kvietiniai miltai", "150 g", "9 g", "3 g"],
+            ["Cukrus", "200 g", "13 g", "4 g"],
+            ["Cukraus pudra", "120 g", "8 g", "3 g"],
+            ["Smulki druska", "300 g", "18 g", "6 g"],
+            ["Aliejus", "230 g", "14 g", "5 g"],
+            ["Lydytas sviestas", "240 g", "14 g", "5 g"],
+            ["Medus", "350 g", "21 g", "7 g"],
+            ["Ryžiai", "200 g", "13 g", "4 g"],
+            ["Avižiniai dribsniai", "90 g", "6 g", "2 g"],
+            ["Manų kruopos", "180 g", "11 g", "4 g"],
+            ["Kakavos milteliai", "100 g", "6 g", "2 g"]
+          ]
+        },
+        {
+          "h": "Kaip matuoti birius produktus",
+          "list": [
+            "Miltus prieš matuodami išpurenkite šaukštu, į stiklinę berkite šaukštu ir nubraukite peilio nugarėle. Jei stikline semsite iš maišelio ir suspausite, miltų bus ketvirtadaliu daugiau, ir tešla išeis kieta.",
+            "Cukrų ir druską berkite iki krašto ir nubraukite. Rudąjį cukrų, priešingai, stiklinėje lengvai suspauskite.",
+            "Nubrauktas šaukštas reiškia, kad kaupas nubrauktas peiliu. Kaupiname šaukšte produkto beveik dvigubai daugiau.",
+            "Žiupsnelis yra tiek, kiek galima suimti trimis pirštais, maždaug ketvirtadalis arbatinio šaukštelio."
+          ]
+        },
+        {
+          "h": "Kaip matuoti skysčius ir lipnius produktus",
+          "list": [
+            "Skystį matuokite stiklinę pastatę ant lygaus paviršiaus ir žiūrėkite iš šono akių lygyje, o ne iš viršaus.",
+            "Prieš matuodami medų ar sirupą šaukštą patepkite lašeliu aliejaus: medus nuslys be likučio.",
+            "Sviestą patogu matuoti pagal pakelį: pusė 200 g pakelio yra 100 g, ketvirtadalis 50 g. Vienas valgomasis šaukštas minkšto sviesto sveria apie 14 g.",
+            "Vidutinis kiaušinis be lukšto sveria apie 50 g: baltymas 30 g, trynys 20 g."
+          ]
+        },
+        {
+          "h": "Kada be svarstyklių neapsieisite",
+          "p": [
+            "Sriubose, troškiniuose ir salotose pora gramų nieko nekeičia, ten stiklinės ir šaukšto visiškai pakanka. Su kepiniais kitaip: biskvitas, morengai, makarūnai ir duonos tešla yra chemija, kur miltų, cukraus ir skysčio santykis turi būti tikslus.",
+            "Jei kepate dažnai, elektroninės virtuvinės svarstyklės už sumą nuo 10 iki 15 eurų yra geriausias pirkinys, kokį galite padaryti. Mūsų receptuose taip pat galite paliesti bet kurį kiekį ir įrašyti, kiek produkto turite: visa kita bus perskaičiuota."
+          ],
+          "box": true
+        }
+      ]
+    }
+  }
+}

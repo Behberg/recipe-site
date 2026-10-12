@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import QuizCard from '../../../components/QuizCard.astro';
+import AdSlot from '../../../components/AdSlot.astro';
 import { getQuizzes, quizUrl, quizzesUrl } from '../../../lib/quizzes';
 import { breadcrumbLd, itemListLd } from '../../../lib/seo';
 import { langFromPath, langPaths, href, t } from '../../../i18n';
@@ -26,6 +27,7 @@ const jsonLd = [
     <div class="quiz-grid">
       {quizzes.map((q) => <QuizCard quiz={q} />)}
     </div>
+    <AdSlot slot="listBottom" class="hub-ad" />
   </div>
 </Base>
 
@@ -45,6 +47,9 @@ const jsonLd = [
   .lead {
     color: var(--ink-2);
     font-size: 1.05rem;
+  }
+  .hub :global(.hub-ad) {
+    margin-top: 24px;
   }
   .quiz-grid {
     display: grid;

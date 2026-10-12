@@ -19,10 +19,12 @@ const jsonLd = itemListLd(t(lang, 'recipes.title'), recipes.map((r) => href(lang
     <h1>{t(lang, 'recipes.title')}</h1>
     <p>{t(lang, 'recipes.lead')}</p>
     <nav class="shortcuts" aria-label={t(lang, 'recipes.shortcuts')}>
+      <a class="chip" href={u('/veganas-receptes/')}>{t(lang, 'recipes.scVegan')}</a>
       <a class="chip" href={u('/virtuves/')}>{t(lang, 'recipes.scCuisines')}</a>
       <a class="chip" href={u('/svetki/')}>{t(lang, 'recipes.scOccasions')}</a>
       <a class="chip" href={u('/ledusskapis/')}>{t(lang, 'recipes.scFridge')}</a>
       <a class="chip" href={u('/tinderis/')}>{t(lang, 'recipes.scTinder')}</a>
+      <a class="chip" href={u('/padomi/')}>{t(lang, 'recipes.scGuides')}</a>
     </nav>
   </section>
   <section class="container" style="padding-top:16px">

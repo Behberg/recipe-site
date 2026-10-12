@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+import GuideArticle from '../../../components/GuideArticle.astro';
+import { LANGS, langParam } from '../../../i18n';
+
+// One page per guide and language. Guides with their own older address (`path`) are rendered there instead.
+export async function getStaticPaths() {
+  const guides = (await getCollection('guides')).filter((g) => !g.data.path);
+  return LANGS.flatMap((lang) => guides.map((g) => ({ params: { lang: langParam(lang), slug: g.id } })));
+}
+---
+
+<GuideArticle id={Astro.params.slug!} />

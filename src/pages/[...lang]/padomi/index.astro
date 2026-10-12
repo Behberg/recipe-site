@@ -1,0 +1,80 @@
+---
+import Base from '../../../layouts/Base.astro';
+import GuideCard from '../../../components/GuideCard.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import { getGuides, guidesUrl } from '../../../lib/guides';
+import { breadcrumbLd, itemListLd } from '../../../lib/seo';
+import { langFromPath, langPaths, href, t } from '../../../i18n';
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromPath(Astro.url.pathname);
+const guides = await getGuides(lang);
+const title = t(lang, 'guides.title');
+const jsonLd = [
+  breadcrumbLd([{ name: t(lang, 'nav.home'), path: href(lang, '/') }, { name: title, path: guidesUrl(lang) }], Astro.site),
+  itemListLd(title, guides.map((g) => g.url), Astro.site),
+];
+---
+
+<Base title={title} description={t(lang, 'guides.meta')} jsonLd={jsonLd}>
+  <div class="container hub">
+    <header class="hub-head">
+      <span class="eyebrow">{t(lang, 'guides.eyebrow')}</span>
+      <h1>{title}</h1>
+      <p class="lead">{t(lang, 'guides.lead')}</p>
+    </header>
+    <div class="guide-grid">
+      {
+        guides.map((g, i) => (
+          <>
+            <GuideCard guide={g} eager={i < 2} />
+            {i === 2 && guides.length > 3 && (
+              <div class="full">
+                <AdSlot slot="inFeed" />
+              </div>
+            )}
+          </>
+        ))
+      }
+    </div>
+  </div>
+</Base>
+
+<style>
+  .hub {
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  .hub-head {
+    max-width: 680px;
+    margin-bottom: 24px;
+  }
+  .hub-head h1 {
+    font-size: clamp(2.1rem, 1.5rem + 3vw, 3.4rem);
+    margin: 6px 0 10px;
+  }
+  .lead {
+    color: var(--ink-2);
+    font-size: 1.05rem;
+  }
+  .guide-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+  .full {
+    grid-column: 1 / -1;
+  }
+  @media (min-width: 600px) {
+    .guide-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1000px) {
+    .guide-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+  }
+</style>

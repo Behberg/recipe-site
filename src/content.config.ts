@@ -202,4 +202,59 @@ const quizzes = defineCollection({
     }),
 });
 
-export const collections = { cuisines, categories, svetki, recipes, recipeTranslations, quizzes };
+/**
+ * Kitchen guides ("Virtuves padomi"): longer articles about cookware, techniques and basics.
+ * One file per article with the text in every language.
+ */
+const guideText = z.object({
+  title: z.string(),
+  seoTitle: z.string(),
+  description: z.string(),
+  eyebrow: z.string(),
+  lead: z.string(),
+  imageAlt: z.string(),
+  figureCaption: optString,
+  sections: z.array(
+    z.object({
+      h: z.string(),
+      p: z.array(z.string()).default([]),
+      list: z.array(z.string()).default([]),
+      /** Rows of cells. The first row is the header. */
+      table: z.array(z.array(z.string())).default([]),
+      /** Paragraphs after the list or table (notes that explain it). */
+      after: z.array(z.string()).default([]),
+      /** Shown as a highlighted box (safety notes, the short version). */
+      box: z.boolean().default(false),
+    }),
+  ),
+});
+
+const guides = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/guides' }),
+  schema: z
+    .object({
+      order: z.coerce.number().default(100),
+      date: z.coerce.date(),
+      emoji: z.string(),
+      color: z.string(),
+      /** Keeps an older address ("/burku-sterilizesana/") instead of /padomi/<id>/. */
+      path: optString,
+      image: z.string(),
+      imageAuthor: optString,
+      imageSource: optString,
+      /** A second photo inside the article, placed before the section with this index (0 based). */
+      figure: z.object({ src: z.string(), author: optString, source: optString, before: z.number().default(2) }).optional(),
+      /** Recipes shown under the article: a category id or a Latvian tag. */
+      related: z.object({ category: optString, tag: optString }).optional(),
+      text: z.object({ lv: guideText, en: guideText, ru: guideText, lt: guideText }),
+    })
+    .superRefine((g, ctx) => {
+      for (const [lang, tx] of Object.entries(g.text)) {
+        if (tx.sections.length !== g.text.lv.sections.length) {
+          ctx.addIssue({ code: 'custom', message: `${lang}: ${tx.sections.length} sections, expected ${g.text.lv.sections.length}` });
+        }
+      }
+    }),
+});
+
+export const collections = { cuisines, categories, svetki, recipes, recipeTranslations, quizzes, guides };

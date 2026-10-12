@@ -115,6 +115,9 @@ export async function getCatalog(lang: Lang = 'lv') {
 
 export const totalTime = (r: Recipe) => r.data.prepTime + r.data.cookTime;
 
+/** The Latvian tag that puts a recipe in the vegan section (/veganas-receptes/). */
+export const VEGAN_TAG = 'vegāns';
+
 export const recipeUrl = (id: string, lang: Lang = 'lv') => href(lang, `/recepte/${id}/`);
 export const cuisineUrl = (id: string, lang: Lang = 'lv') => href(lang, `/virtuves/${id}/`);
 export const categoryUrl = (id: string, lang: Lang = 'lv') => href(lang, `/kategorijas/${id}/`);

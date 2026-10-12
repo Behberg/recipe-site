@@ -1,0 +1,282 @@
+{
+  "order": 2,
+  "date": "2026-10-11",
+  "emoji": "🥘",
+  "color": "#3f6fa0",
+  "image": "/images/guides/kadu-pannu-izveleties.jpg",
+  "imageAuthor": "K",
+  "imageSource": "https://www.pexels.com/photo/assorted-frying-pans-hanging-on-pot-rack-2868977/",
+  "figure": {
+    "src": "/images/guides/kadu-pannu-izveleties-2.jpg",
+    "author": "Arthur Swiffen",
+    "source": "https://www.pexels.com/photo/two-scallops-are-cooking-in-a-pan-on-a-stove-28052912/",
+    "before": 2
+  },
+  "related": { "tag": "ātras vakariņas" },
+  "text": {
+    "lv": {
+      "title": "Kādu pannu izvēlēties: nepiedegošo, tērauda vai čuguna",
+      "seoTitle": "Kādu pannu izvēlēties: nepiedegošā, nerūsējošā tērauda vai čuguna",
+      "description": "Salīdzinām četrus pannu veidus: nepiedegošo, nerūsējošā tērauda, čuguna un oglekļa tērauda. Kura kam der, cik ilgi kalpo un ar kurām divām pietiek lielākajai daļai virtuvju.",
+      "eyebrow": "Virtuves piederumi",
+      "lead": "Veikalā pannas atšķiras ar cenu desmit reizes, un pārdevējs slavē katru. Patiesībā svarīgs ir tikai materiāls: tas nosaka, ko pannā var gatavot, cik stipri to drīkst karsēt un pēc cik gadiem tā būs jāmet ārā.",
+      "imageAlt": "Dažādas pannas, pakārtas virs virtuves darba virsmas",
+      "figureCaption": "Nerūsējošā tērauda pannā ēdiens pats atlaižas no virsmas, kad izveidojusies garoziņa.",
+      "sections": [
+        {
+          "h": "Nepiedegošā panna: olām, pankūkām un zivīm",
+          "p": [
+            "Panna ar nepiedegošu pārklājumu ir visērtākā: nekas nelīp, un pietiek ar dažiem eļļas pilieniem. Tā ir labākā izvēle olām, omletēm, plānajām pankūkām, siera plācenīšiem un trauslai zivij.",
+            "Tās vājā vieta ir pats pārklājums. Tas baidās no stipras uguns, metāla lāpstiņām un trauku mazgājamās mašīnas, un pat saudzīgi lietots nolietojas apmēram 3 līdz 5 gados. Tāpēc dārgai nepiedegošajai pannai nav jēgas: pērc vidējas cenas pannu un nomaini, kad virsma ir saskrāpēta vai ēdiens sāk lipt."
+          ],
+          "list": [
+            "Karsē tikai uz vidējas uguns un nekad tukšu.",
+            "Lieto koka vai silikona lāpstiņu.",
+            "Mazgā ar rokām, ar mīkstu sūkli."
+          ]
+        },
+        {
+          "h": "Nerūsējošā tērauda panna: brūnināšanai un mērcēm",
+          "p": [
+            "Tērauda pannu izvēlas pavāri, jo tā iztur visu: stipru uguni, krāsni, metāla putotāju, skābas mērces un trauku mazgājamo mašīnu. Uz tās veidojas brūnie piedegumi, ko franči sauc par fond: pielejot vīnu vai buljonu, tie pārtop mērcē.",
+            "Iesācējus biedē tas, ka ēdiens pielīp. Noslēpums ir vienkāršs: vispirms uzkarsē tukšu pannu, tad ielej eļļu un tikai tad liec ēdienu. Gaļu nekustini, līdz tā pati atlaižas no virsmas. Tas nozīmē, ka garoziņa ir gatava."
+          ],
+          "list": [
+            "Izvēlies pannu ar biezu, daudzslāņu dibenu: tā karst vienmērīgāk.",
+            "Labākā izvēle steikiem, kotletēm, sautējumiem un mērcēm ar tomātiem vai vīnu.",
+            "Kalpo visu mūžu."
+          ]
+        },
+        {
+          "h": "Čuguna panna: garoziņai un krāsnij",
+          "p": [
+            "Čuguns ir smags un uzkarst lēni, toties karstumu tur vislabāk. Tas ir neaizstājams steikiem, ceptiem kartupeļiem un ēdieniem, ko sāk uz plīts un pabeidz krāsnī. Labi iecepināta čuguna panna kļūst gandrīz nepiedegoša.",
+            "Tā prasa nedaudz kopšanas: pēc mazgāšanas jānosusina un jāieeļļo, citādi tā rūsē. Kā to izdarīt, lasi mūsu pamācībā par čuguna pannas kopšanu."
+          ]
+        },
+        {
+          "h": "Oglekļa tērauda panna: vieglāka čuguna māsa",
+          "p": [
+            "Oglekļa tērauds uzvedas kā čuguns, tikai ir divreiz vieglāks un uzkarst ātrāk. No tā gatavo vokus un restorānu pannas. Arī šī panna jāiecepina un jāsargā no mitruma, toties ar to ir viegli mētāt dārzeņus un cept pankūkas."
+          ]
+        },
+        {
+          "h": "Salīdzinājums vienā tabulā",
+          "table": [
+            ["Materiāls", "Stipra uguns", "Skābi ēdieni", "Kopšana", "Kalpo"],
+            ["Nepiedegošā", "Nē", "Jā", "Viegla", "3 līdz 5 gadus"],
+            ["Nerūsējošais tērauds", "Jā", "Jā", "Viegla", "Visu mūžu"],
+            ["Čuguns", "Jā", "Uzmanīgi", "Jāieeļļo", "Paaudzēm"],
+            ["Oglekļa tērauds", "Jā", "Uzmanīgi", "Jāieeļļo", "Gadu desmitiem"]
+          ]
+        },
+        {
+          "h": "Ar kurām pannām pietiek",
+          "p": [
+            "Lielākajai daļai māju pietiek ar divām pannām: 24 cm nepiedegošo olām un pankūkām un 28 cm tērauda vai čuguna pannu visam pārējam. Diviem cilvēkiem der 24 cm, ģimenei 28 cm: pārpildītā pannā ēdiens sautējas, nevis cepas.",
+            "Pirms pirkšanas pārbaudi dibenu ar magnētu: ja magnēts pielīp, panna derēs arī indukcijas plītij. Paņem pannu rokā: rokturim jābūt ērtam un stingri piekniedētam, bet vākam der noderēt arī tavam katlam."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Which pan to choose: non stick, stainless steel or cast iron",
+      "seoTitle": "Which frying pan to buy: non stick, stainless steel or cast iron",
+      "description": "We compare four kinds of pan: non stick, stainless steel, cast iron and carbon steel. What each is good for, how long it lasts and which two are enough for most kitchens.",
+      "eyebrow": "Cookware",
+      "lead": "In the shop, pans differ in price by a factor of ten and the salesperson praises every one. In truth only the material matters: it decides what you can cook in the pan, how hot you can get it and after how many years you will have to throw it out.",
+      "imageAlt": "Assorted frying pans hanging above a kitchen worktop",
+      "figureCaption": "In a stainless steel pan, food releases by itself once a crust has formed.",
+      "sections": [
+        {
+          "h": "Non stick: for eggs, pancakes and fish",
+          "p": [
+            "A pan with a non stick coating is the most convenient: nothing sticks and a few drops of oil are enough. It is the best choice for eggs, omelettes, thin pancakes, cheese fritters and delicate fish.",
+            "Its weak point is the coating itself. It dislikes high heat, metal utensils and the dishwasher, and even with gentle use it wears out in about 3 to 5 years. That is why an expensive non stick pan makes little sense: buy a mid priced one and replace it when the surface is scratched or food starts to stick."
+          ],
+          "list": [
+            "Heat it only over medium heat and never empty.",
+            "Use a wooden or silicone spatula.",
+            "Wash by hand with a soft sponge."
+          ]
+        },
+        {
+          "h": "Stainless steel: for browning and sauces",
+          "p": [
+            "Chefs choose steel because it survives everything: high heat, the oven, a metal whisk, acidic sauces and the dishwasher. It builds up the brown bits the French call fond: add wine or stock and they turn into a sauce.",
+            "What scares beginners is that food sticks. The secret is simple: heat the empty pan first, then add the oil, and only then the food. Do not move the meat until it releases from the surface by itself. That means the crust is ready."
+          ],
+          "list": [
+            "Choose a pan with a thick, multi layer base: it heats more evenly.",
+            "The best choice for steaks, burgers, stews and sauces with tomatoes or wine.",
+            "It lasts a lifetime."
+          ]
+        },
+        {
+          "h": "Cast iron: for a crust and for the oven",
+          "p": [
+            "Cast iron is heavy and slow to heat, but it holds heat better than anything else. It is unbeatable for steaks, fried potatoes and dishes that start on the hob and finish in the oven. A well seasoned cast iron pan becomes almost non stick.",
+            "It needs a little care: after washing it must be dried and oiled, or it will rust. Our guide to cast iron care explains how."
+          ]
+        },
+        {
+          "h": "Carbon steel: cast iron's lighter sister",
+          "p": [
+            "Carbon steel behaves like cast iron but weighs half as much and heats faster. Woks and restaurant pans are made from it. This pan also needs seasoning and protecting from moisture, but it is easy to toss vegetables in it and to fry pancakes."
+          ]
+        },
+        {
+          "h": "The comparison in one table",
+          "table": [
+            ["Material", "High heat", "Acidic food", "Care", "Lasts"],
+            ["Non stick", "No", "Yes", "Easy", "3 to 5 years"],
+            ["Stainless steel", "Yes", "Yes", "Easy", "A lifetime"],
+            ["Cast iron", "Yes", "With care", "Needs oiling", "Generations"],
+            ["Carbon steel", "Yes", "With care", "Needs oiling", "Decades"]
+          ]
+        },
+        {
+          "h": "Which pans are enough",
+          "p": [
+            "Most homes need just two pans: a 24 cm non stick one for eggs and pancakes, and a 28 cm steel or cast iron one for everything else. For two people 24 cm is enough, for a family 28 cm: in an overcrowded pan food stews instead of frying.",
+            "Before buying, test the base with a magnet: if it sticks, the pan will work on an induction hob too. Pick the pan up: the handle should be comfortable and firmly riveted, and it helps if a lid from one of your pots fits it."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "ru": {
+      "title": "Какую сковороду выбрать: антипригарную, стальную или чугунную",
+      "seoTitle": "Какую сковороду выбрать: антипригарная, из нержавеющей стали или чугунная",
+      "description": "Сравниваем четыре вида сковород: антипригарную, из нержавеющей стали, чугунную и из углеродистой стали. Какая для чего подходит, сколько служит и каких двух хватит большинству кухонь.",
+      "eyebrow": "Кухонная посуда",
+      "lead": "В магазине сковороды различаются по цене в десять раз, и продавец хвалит каждую. На самом деле важен только материал: он определяет, что в сковороде можно готовить, как сильно её можно нагревать и через сколько лет её придётся выбросить.",
+      "imageAlt": "Разные сковороды, подвешенные над кухонной рабочей поверхностью",
+      "figureCaption": "В сковороде из нержавеющей стали еда сама отходит от поверхности, когда образовалась корочка.",
+      "sections": [
+        {
+          "h": "Антипригарная: для яиц, блинов и рыбы",
+          "p": [
+            "Сковорода с антипригарным покрытием самая удобная: ничего не липнет, и хватает нескольких капель масла. Это лучший выбор для яичницы, омлетов, тонких блинов, сырников и нежной рыбы.",
+            "Её слабое место само покрытие. Оно боится сильного огня, металлических лопаток и посудомоечной машины и даже при бережном обращении изнашивается примерно за срок от 3 до 5 лет. Поэтому дорогая антипригарная сковорода не имеет смысла: купите сковороду средней цены и замените её, когда поверхность поцарапается или еда начнёт прилипать."
+          ],
+          "list": [
+            "Нагревайте только на среднем огне и никогда пустой.",
+            "Пользуйтесь деревянной или силиконовой лопаткой.",
+            "Мойте вручную мягкой губкой."
+          ]
+        },
+        {
+          "h": "Нержавеющая сталь: для обжарки и соусов",
+          "p": [
+            "Стальную сковороду выбирают повара, потому что она выдерживает всё: сильный огонь, духовку, металлический венчик, кислые соусы и посудомоечную машину. На ней образуются поджарки, которые французы называют фон: влейте вино или бульон, и они превратятся в соус.",
+            "Новичков пугает то, что еда прилипает. Секрет прост: сначала разогрейте пустую сковороду, затем влейте масло и только потом кладите еду. Не двигайте мясо, пока оно само не отойдёт от поверхности. Это значит, что корочка готова."
+          ],
+          "list": [
+            "Выбирайте сковороду с толстым многослойным дном: она нагревается равномернее.",
+            "Лучший выбор для стейков, котлет, рагу и соусов с помидорами или вином.",
+            "Служит всю жизнь."
+          ]
+        },
+        {
+          "h": "Чугун: для корочки и духовки",
+          "p": [
+            "Чугун тяжёлый и нагревается медленно, зато держит тепло лучше всех. Он незаменим для стейков, жареного картофеля и блюд, которые начинают на плите и доводят в духовке. Хорошо прокалённая чугунная сковорода становится почти антипригарной.",
+            "Ей нужен небольшой уход: после мытья её надо высушить и смазать маслом, иначе она заржавеет. Как это сделать, читайте в нашем руководстве по уходу за чугунной сковородой."
+          ]
+        },
+        {
+          "h": "Углеродистая сталь: лёгкая сестра чугуна",
+          "p": [
+            "Углеродистая сталь ведёт себя как чугун, только весит вдвое меньше и нагревается быстрее. Из неё делают воки и ресторанные сковороды. Эту сковороду тоже нужно прокаливать и беречь от влаги, зато в ней легко подбрасывать овощи и печь блины."
+          ]
+        },
+        {
+          "h": "Сравнение в одной таблице",
+          "table": [
+            ["Материал", "Сильный огонь", "Кислые блюда", "Уход", "Служит"],
+            ["Антипригарная", "Нет", "Да", "Простой", "От 3 до 5 лет"],
+            ["Нержавеющая сталь", "Да", "Да", "Простой", "Всю жизнь"],
+            ["Чугун", "Да", "Осторожно", "Нужно масло", "Поколениями"],
+            ["Углеродистая сталь", "Да", "Осторожно", "Нужно масло", "Десятилетиями"]
+          ]
+        },
+        {
+          "h": "Каких сковород достаточно",
+          "p": [
+            "Большинству домов хватает двух сковород: антипригарной 24 см для яиц и блинов и стальной или чугунной 28 см для всего остального. Для двоих хватит 24 см, для семьи нужна 28 см: в переполненной сковороде еда тушится, а не жарится.",
+            "Перед покупкой проверьте дно магнитом: если он прилипает, сковорода подойдёт и для индукционной плиты. Возьмите сковороду в руку: ручка должна быть удобной и прочно приклёпанной, а крышка от вашей кастрюли хорошо бы тоже подходила."
+          ],
+          "box": true
+        }
+      ]
+    },
+    "lt": {
+      "title": "Kokią keptuvę pasirinkti: nepridegančią, plieninę ar ketaus",
+      "seoTitle": "Kokią keptuvę pirkti: nepridegančią, nerūdijančio plieno ar ketaus",
+      "description": "Lyginame keturias keptuvių rūšis: nepridegančią, nerūdijančio plieno, ketaus ir anglinio plieno. Kuri kam tinka, kiek tarnauja ir kurių dviejų užtenka daugumai virtuvių.",
+      "eyebrow": "Virtuvės indai",
+      "lead": "Parduotuvėje keptuvių kainos skiriasi dešimt kartų, o pardavėjas giria kiekvieną. Iš tiesų svarbi tik medžiaga: ji lemia, ką keptuvėje galima gaminti, kiek stipriai ją galima kaitinti ir po kelerių metų ją teks išmesti.",
+      "imageAlt": "Įvairios keptuvės, pakabintos virš virtuvės darbo paviršiaus",
+      "figureCaption": "Nerūdijančio plieno keptuvėje maistas pats atšoka nuo paviršiaus, kai susidaro plutelė.",
+      "sections": [
+        {
+          "h": "Nepridegančioji: kiaušiniams, blynams ir žuviai",
+          "p": [
+            "Keptuvė su nepridegančia danga yra patogiausia: niekas nelimpa, o aliejaus užtenka kelių lašų. Tai geriausias pasirinkimas kiaušiniams, omletams, lietiniams blynams, varškėčiams ir trapiai žuviai.",
+            "Jos silpnoji vieta yra pati danga. Ji bijo stiprios ugnies, metalinių mentelių ir indaplovės ir net tausojama susidėvi maždaug per laikotarpį nuo 3 iki 5 metų. Todėl brangi nepridegančioji keptuvė neturi prasmės: pirkite vidutinės kainos keptuvę ir pakeiskite ją, kai paviršius susibraižys arba maistas pradės limpti."
+          ],
+          "list": [
+            "Kaitinkite tik ant vidutinės ugnies ir niekada tuščią.",
+            "Naudokite medinę arba silikoninę mentelę.",
+            "Plaukite rankomis, minkšta kempine."
+          ]
+        },
+        {
+          "h": "Nerūdijantis plienas: apskrudinimui ir padažams",
+          "p": [
+            "Plieninę keptuvę renkasi virėjai, nes ji atlaiko viską: stiprią ugnį, orkaitę, metalinę šluotelę, rūgščius padažus ir indaplovę. Ant jos susidaro rudi prikepimai, kuriuos prancūzai vadina fond: įpilkite vyno ar sultinio, ir jie virs padažu.",
+            "Pradedančiuosius gąsdina tai, kad maistas prilimpa. Paslaptis paprasta: pirmiausia įkaitinkite tuščią keptuvę, tada įpilkite aliejaus ir tik tada dėkite maistą. Mėsos nejudinkite, kol ji pati atšoks nuo paviršiaus. Tai reiškia, kad plutelė paruošta."
+          ],
+          "list": [
+            "Rinkitės keptuvę storu, daugiasluoksniu dugnu: ji įkaista tolygiau.",
+            "Geriausias pasirinkimas kepsniams, kotletams, troškiniams ir padažams su pomidorais ar vynu.",
+            "Tarnauja visą gyvenimą."
+          ]
+        },
+        {
+          "h": "Ketus: plutelei ir orkaitei",
+          "p": [
+            "Ketus sunkus ir įkaista lėtai, užtat šilumą laiko geriausiai. Jis nepakeičiamas kepsniams, keptoms bulvėms ir patiekalams, kurie pradedami ant viryklės ir baigiami orkaitėje. Gerai paruošta ketaus keptuvė tampa beveik nepridegančia.",
+            "Jai reikia šiek tiek priežiūros: po plovimo ją būtina nusausinti ir ištepti aliejumi, kitaip ji rūdys. Kaip tai padaryti, skaitykite mūsų vadove apie ketaus keptuvės priežiūrą."
+          ]
+        },
+        {
+          "h": "Anglinis plienas: lengvesnė ketaus sesuo",
+          "p": [
+            "Anglinis plienas elgiasi kaip ketus, tik sveria perpus mažiau ir įkaista greičiau. Iš jo gaminamos vok keptuvės ir restoranų keptuvės. Šią keptuvę taip pat reikia paruošti ir saugoti nuo drėgmės, užtat joje lengva mėtyti daržoves ir kepti blynus."
+          ]
+        },
+        {
+          "h": "Palyginimas vienoje lentelėje",
+          "table": [
+            ["Medžiaga", "Stipri ugnis", "Rūgštūs patiekalai", "Priežiūra", "Tarnauja"],
+            ["Nepridegančioji", "Ne", "Taip", "Lengva", "Nuo 3 iki 5 metų"],
+            ["Nerūdijantis plienas", "Taip", "Taip", "Lengva", "Visą gyvenimą"],
+            ["Ketus", "Taip", "Atsargiai", "Reikia aliejaus", "Kelias kartas"],
+            ["Anglinis plienas", "Taip", "Atsargiai", "Reikia aliejaus", "Dešimtmečius"]
+          ]
+        },
+        {
+          "h": "Kurių keptuvių užtenka",
+          "p": [
+            "Daugumai namų užtenka dviejų keptuvių: 24 cm nepridegančiosios kiaušiniams ir blynams ir 28 cm plieninės ar ketaus keptuvės visam kitam. Dviem žmonėms tinka 24 cm, šeimai 28 cm: perpildytoje keptuvėje maistas troškinasi, o ne kepa.",
+            "Prieš pirkdami patikrinkite dugną magnetu: jei jis prilimpa, keptuvė tiks ir indukcinei viryklei. Paimkite keptuvę į ranką: rankena turi būti patogi ir tvirtai prikniedyta, o jūsų puodo dangtis gerai, jei tiktų ir jai."
+          ],
+          "box": true
+        }
+      ]
+    }
+  }
+}

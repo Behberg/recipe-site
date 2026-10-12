@@ -9,8 +9,11 @@ Built with [Astro](https://astro.build) as a fully static site for **Netlify**, 
 - **Mobile first**: app-style bottom tab bar, horizontal swipe rails, large tap targets, safe-area support, dark mode.
 - **Cuisine directory**: 26 cuisines grouped by continent (Latviešu, Itāļu, Franču, Spāņu, Grieķu, Gruzīnu, Japāņu, Ķīniešu, Indiešu, Taizemes, Korejiešu, Meksikāņu and more). Admin can add more.
 - **Categories**: breakfasts, soups, mains, salads, breads and cookies, sweets, jams and preserves, drinks (admin can add more).
+- **Vegan section** (`/veganas-receptes/`): every recipe tagged `vegāns`, with its own page, home page rail and header link. Tag a recipe `vegāns` and it appears there.
+- **Kitchen guides** (`/padomi/`): longer articles with photos (cookware, knives, measuring, substitutions, sterilising jars). One JSON file per article in `src/content/guides/` with the text in all four languages; photos go in `public/images/guides/`. The jar guide keeps its old address `/burku-sterilizesana/` through the `path` field.
+- **Personality quizzes** (`/kvizi/`): one JSON file per quiz in `src/content/quizzes/`.
 - **Instant search and filters** (category, cuisine, time, difficulty), diacritic-insensitive, mirrored in the URL.
-- **500+ recipes** in Latvian, English, Russian and Lithuanian: Latvian classics, everyday home cooking, sweets, baking, jams, preserves and drinks, plus dishes from 26 cuisines. Everyday dishes that belong to no particular country simply have no cuisine.
+- **670+ recipes** in Latvian, English, Russian and Lithuanian: Latvian classics, everyday home cooking, sweets, baking, jams, preserves and drinks, plus dishes from 26 cuisines. Everyday dishes that belong to no particular country simply have no cuisine.
 - **Recipe page**: servings scaler (or ½×/1×/2×/3× for jars and batches), and "cik tev ir?": tap any amount, type what you actually have (e.g. 650 g strawberries) and the whole recipe is recalculated, with g/kg and ml/l conversion.
 - **Kitchen timers**: auto-detected from steps ("vāra 10 minūtes"), several at once, keep running across pages and reloads, repeating chime and vibration until dismissed, visible inside cooking mode.
 - **Cooking mode**: full-screen, one step at a time, swipe between steps, keeps the screen awake.
@@ -21,7 +24,7 @@ Built with [Astro](https://astro.build) as a fully static site for **Netlify**, 
 - **SEO**: schema.org `Recipe` data (Google rich results), sitemap, Open Graph, canonical URLs.
 - **Images**: photos uploaded in the admin are resized and converted on the fly by the Netlify Image CDN. Until a recipe has a photo it shows an illustrated dish icon (jar, soup bowl, cake slice, pīrāgi and more, recoloured per dish; see `src/lib/dishIcons.ts`) or a matching emoji. The admin sets these with the Ilustrācija fields.
 - **Stock photos**: `node scripts/photo-candidates.mjs pexels` (or `pixabay`) searches for recipes without a photo and writes contact sheets to `.photos/<source>/`; list the chosen number per recipe in `.photos/<source>/picks.json` and run `node scripts/photo-apply.mjs <source>` to download them with photographer credit. Keys go in `.env` as `PEXELS_API_KEY` and `PIXABAY_API_KEY`.
-- **Google AdSense ready**, switched off until configured (see below).
+- **Google AdSense**: the script and Auto ads run site wide; the hand placed units switch on with one ID (see below).
 
 ## Development
 
@@ -68,6 +71,8 @@ Pick one way to sign in:
 | Recipes | `src/content/recipes/*.md` | YAML front matter + Markdown intro |
 | Cuisines | `src/content/cuisines/*.json` | JSON (a recipe's cuisine is optional) |
 | Categories | `src/content/categories/*.json` | JSON |
+| Guides (Virtuves padomi) | `src/content/guides/*.json` | JSON, text in all four languages (edited in the repo, not in the admin) |
+| Quizzes | `src/content/quizzes/*.json` | JSON, text in all four languages |
 | Occasions (Svētku galds) | `src/content/svetki/*.json` | JSON, with date rule and lead days |
 | Fridge products | `src/data/ledusskapis.json` | JSON (admin: Iestatījumi > Ledusskapja produkti) |
 | Uploaded photos | `public/images/recipes/` | JPG/PNG/WebP |
@@ -78,21 +83,32 @@ The schema lives in `src/content.config.ts`; the admin form mirrors it in `publi
 
 ## Google AdSense
 
-Ads are designed to stay out of the way: clearly labelled "Reklāma", separated from recipe content, space reserved in advance (no layout jumps), loaded only after the page itself has loaded and only when a slot is about to scroll into view. There are no pop-ups, sticky or overlay ads, and nothing inside cooking mode.
+The AdSense script loads on every page (`ADS.client` in `src/site.config.ts`, publisher line in `public/ads.txt`), so **Auto ads** work as soon as they are enabled in AdSense. The hand placed units below are extra, and they are the ones with reserved space and the best viewability on phones. They render only once a slot ID is set.
 
-Placements:
+To switch the placed units on:
 
-- `inFeed`: between recipe cards in lists (every 8 cards, hidden while filtering) and once on the home page.
-- `recipeTop`: on recipe pages, after the intro and before the ingredients.
-- `recipeBottom`: on recipe pages, after the steps and tips.
+1. In AdSense go to **Ads > By ad unit > Display ads**, create one responsive unit and copy its `data-ad-slot` number.
+2. Put it in `ADS.fallbackSlot` in `src/site.config.ts`. Every placement uses it.
+3. Optional: create a unit per placement and fill `ADS.slots` to see in AdSense reports which place earns what.
 
-To switch ads on:
+Placements (`ADS.slots`):
 
-1. Apply for AdSense with the live site and wait for approval.
-2. In AdSense, create three **Display** ad units (responsive) and note their slot IDs. Keep **Auto ads off** so Google does not inject extra units.
-3. Edit `src/site.config.ts`: set `ADS.client` (e.g. `ca-pub-1234567890123456`) and the three slot IDs.
-4. Edit `public/ads.txt`: uncomment the line and put in your publisher ID.
-5. Latvia is in the EU, so a Google-certified consent banner is required. In AdSense go to **Privacy & messaging > European regulations** and publish a GDPR message; it is shown automatically by the AdSense script. The privacy policy page is at `/privatums/`.
+| Slot | Where |
+| --- | --- |
+| `inFeed` | Between recipe cards in lists (every `ADS.feedEvery` cards, hidden while filtering), three times on the home page, in the guides list |
+| `listBottom` | End of recipe lists, cuisines, occasions and the quiz list |
+| `recipeTop` | Recipe page, after the intro and before the ingredients |
+| `recipeMid` | Recipe page on phones only, between the ingredients and the method |
+| `recipeBottom` | Recipe page, after the steps and tips |
+| `recipeEnd` | Recipe page, after the related recipes |
+| `quiz`, `quizResult` | Quiz page above the other quizzes, result page after the recipes |
+| `article` | Guides: between sections and at the end |
+
+How the units behave (`AdSlot.astro`, `AdsLoader.astro`): labelled "Reklāma", 280 px reserved so the page does not jump, full width on phones, requested only when about one screen away, hidden again if Google has nothing to show. Nothing is placed inside cooking mode, dialogs or next to buttons.
+
+Recommended Auto ads settings for phones (AdSense > Ads > By site > edit): **Anchor ads on**, **Vignette ads on**, in page formats on, ad load in the middle of the slider to start with. The site moves its bottom tab bar and sticky header next to an anchor ad instead of under it (`--anchor-ad-bottom` / `--anchor-ad-top`, set in `AdsLoader.astro`).
+
+Latvia is in the EU, so a Google certified consent banner is required: **Privacy & messaging > European regulations** in AdSense. It is shown by the AdSense script, and the footer has a "cookie settings" button to reopen it. The privacy policy page is at `/privatums/`.
 
 ---
 

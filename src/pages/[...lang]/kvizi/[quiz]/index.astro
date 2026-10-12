@@ -1,6 +1,7 @@
 ---
 import Base from '../../../../layouts/Base.astro';
 import QuizCard from '../../../../components/QuizCard.astro';
+import AdSlot from '../../../../components/AdSlot.astro';
 import { getQuizzes, quizCoverImage, quizResultUrl, quizUrl, quizzesUrl, QUIZ_IMAGE_SIZES } from '../../../../lib/quizzes';
 import { breadcrumbLd } from '../../../../lib/seo';
 import { LANGS, langParam, href, t, type Lang } from '../../../../i18n';
@@ -100,6 +101,8 @@ const jsonLd = breadcrumbLd(
         </ul>
       </details>
     </section>
+
+    <AdSlot slot="quiz" />
 
     <section class="more">
       <div class="section-head">

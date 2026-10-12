@@ -111,11 +111,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   text-rendering: optimizeLegibility;
-  padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+}
+/* Room for the fixed tab bar. A spacer, not body padding: Google sets its own padding on <body>
+   when it shows an anchor ad, and the two must add up instead of replacing each other. */
+body::after {
+  content: '';
+  display: block;
+  height: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
 }
 @media (min-width: 960px) {
-  body {
-    padding-bottom: 0;
+  body::after {
+    display: none;
   }
 }
 img,
@@ -371,7 +377,8 @@ p {
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
-  top: 0;
+  /* --anchor-ad-*: height of a Google anchor ad pinned to that edge, set in AdsLoader.astro. */
+  top: var(--anchor-ad-top, 0px);
   z-index: 40;
   height: var(--header-h);
   background: var(--glass);
@@ -415,14 +422,15 @@ p {
 }
 .main-nav {
   display: none;
-  margin-left: 16px;
-  gap: 2px;
+  margin-left: 8px;
+  gap: 0;
 }
+/* Eight links have to fit next to the logo from 960px up, in the longest language (Russian). */
 .main-nav a {
-  padding: 8px 12px;
+  padding: 8px 6px;
   border-radius: var(--pill);
   font-weight: 500;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   color: var(--ink-2);
   white-space: nowrap;
   transition:
@@ -455,12 +463,22 @@ p {
   }
 }
 @media (min-width: 1240px) {
+  .main-nav {
+    margin-left: 16px;
+    gap: 2px;
+  }
+  .main-nav a {
+    padding: 8px 12px;
+    font-size: 0.92rem;
+  }
+}
+@media (min-width: 1480px) {
   .header-search {
     display: flex;
     align-items: center;
     gap: 8px;
     height: 44px;
-    width: 220px;
+    width: 180px;
     padding: 0 16px;
     border-radius: var(--pill);
     background: var(--surface);
@@ -484,7 +502,7 @@ p {
 /* ---------- Bottom tab bar (mobile) ---------- */
 .tabbar {
   position: fixed;
-  inset: auto 0 0 0;
+  inset: auto 0 var(--anchor-ad-bottom, 0px) 0;
   z-index: 50;
   padding: 6px 8px calc(8px + env(safe-area-inset-bottom));
   background: var(--glass);
@@ -1151,7 +1169,7 @@ p {
 .toast {
   position: fixed;
   left: 50%;
-  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 16px);
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + var(--anchor-ad-bottom, 0px) + 16px);
   z-index: 90;
   transform: translate(-50%, 20px);
   opacity: 0;
@@ -1180,7 +1198,7 @@ p {
 
 /* ---------- Ads ---------- */
 .ad {
-  margin: 8px 0;
+  margin: 16px 0;
   padding: 10px 12px 12px;
   border-radius: var(--r);
   background: var(--surface-2);
@@ -1197,8 +1215,14 @@ p {
   color: var(--ink-3);
 }
 .ad-slot {
-  min-height: 250px; /* reserve space so nothing jumps when the ad loads */
+  min-height: 280px; /* reserve space so nothing jumps when the ad loads */
   display: block;
+}
+/* Placements that only make sense in the single column phone layout. */
+@media (min-width: 900px) {
+  .ad.only-mobile {
+    display: none;
+  }
 }
 .ad-placeholder {
   min-height: 250px;
@@ -1241,7 +1265,8 @@ p {
   .site-footer,
   .ad,
   .no-print,
-  .toast {
+  .toast,
+  body::after {
     display: none !important;
   }
   body {
