@@ -1,5 +1,5 @@
 ---
-title: "Rasols"
+title: "Rasols (olivjē)"
 description: "Rasols jeb olivjē salāti: svētku kartupeļu salāti ar gaļu, olām, gurķiem un krējuma un majonēzes mērci."
 cuisine: latviesu
 category: salati-un-uzkodas
