@@ -1,8 +1,13 @@
 ---
 title: "Rasols"
-description: "Svētku kartupeļu salāti ar gaļu, olām, gurķiem un krējuma un majonēzes mērci."
+description: "Rasols jeb olivjē salāti: svētku kartupeļu salāti ar gaļu, olām, gurķiem un krējuma un majonēzes mērci."
 cuisine: latviesu
 category: salati-un-uzkodas
+image: "/images/recipes/rasols.jpg"
+imageAuthor: "Shameel mukkath"
+imageLicense: "Pexels License"
+imageLicenseUrl: "https://www.pexels.com/license/"
+imageSource: "https://www.pexels.com/photo/salad-and-sliced-lemons-in-bowls-15108397/"
 emoji: "🥗"
 icon: soup
 iconColors: "#f3ecd6, #f7f2ea, #e8a0a0"
@@ -57,4 +62,4 @@ date: 2025-12-20
 draft: false
 ---
 
-Latviešu svētku galdā vienmēr ir liela bļoda rasola.
+Latviešu svētku galdā vienmēr ir liela bļoda rasola. Citur pasaulē šos salātus sauc par olivjē, bet Latvijā tas ir un paliek rasols.
