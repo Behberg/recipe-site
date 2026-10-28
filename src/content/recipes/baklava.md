@@ -6,6 +6,7 @@ category: saldie-edieni
 image: "/images/recipes/baklava.jpg"
 imageAuthor: "Kultigin"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:Baklava_-_Turkish_special,_80-ply.JPEG"
 emoji: "🥮"
 icon: cake

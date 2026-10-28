@@ -102,6 +102,7 @@ const images = ratios.map((r) => {
     width,
     height,
     creditText: d.imageAuthor,
+    copyrightNotice: /public domain/i.test(d.imageLicense ?? '') ? d.imageLicense : d.imageAuthor,
     creator: d.imageAuthor ? { '@type': 'Person', name: d.imageAuthor } : undefined,
     license: d.imageLicenseUrl,
     acquireLicensePage: d.imageSource,

@@ -5,6 +5,7 @@ category: maize-un-cepumi
 image: "/images/recipes/bananu-mafini.jpg"
 imageAuthor: "Unknown photographer/artist"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:NCI_Visuals_Food_Muffins.jpg"
 emoji: "🍌"
 icon: bun

@@ -5,6 +5,7 @@ category: zupas
 image: "/images/recipes/liellopu-zupa-ar-grubam.jpg"
 imageAuthor: "Photographer: Peggy Greb, Original uploader: Fredrik"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:Vegetable_beef_barley_soup.jpg"
 emoji: "🍲"
 icon: soup

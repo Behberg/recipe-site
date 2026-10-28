@@ -6,6 +6,7 @@ category: salati-un-uzkodas
 image: "/images/recipes/silke-kazoka.jpg"
 imageAuthor: "User:Zserghei"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:Selidi_pod_shuboi.jpg"
 emoji: "🐟"
 icon: cake

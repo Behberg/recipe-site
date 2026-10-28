@@ -6,6 +6,7 @@ category: pamatedieni
 image: "/images/recipes/encilladas.jpg"
 imageAuthor: "Jon Sullivan"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:Enchilada_Rice_Beans.jpg"
 emoji: "🌮"
 icon: casserole

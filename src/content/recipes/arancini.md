@@ -6,6 +6,7 @@ category: salati-un-uzkodas
 image: "/images/recipes/arancini.jpg"
 imageAuthor: "Gmelfi"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:Arancini_002.jpg"
 emoji: "🍙"
 icon: plate

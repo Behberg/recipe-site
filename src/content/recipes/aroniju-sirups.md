@@ -11,7 +11,7 @@ imageSource: "https://www.pexels.com/photo/two-glass-bottles-and-jar-with-honey-
 emoji: "🫐"
 prepTime: 20
 cookTime: 30
-servings: 4
+servings: 20
 yield: "apmēram 1,5 l"
 difficulty: viegli
 ingredients:

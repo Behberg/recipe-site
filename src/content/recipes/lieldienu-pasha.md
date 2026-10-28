@@ -6,6 +6,7 @@ category: saldie-edieni
 image: "/images/recipes/lieldienu-pasha.jpg"
 imageAuthor: "Mitrius"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:Paskha2.jpg"
 emoji: "🐣"
 icon: cake

@@ -5,6 +5,7 @@ category: pamatedieni
 image: "/images/recipes/zivju-kotletes.jpg"
 imageAuthor: "Jon Sullivan"
 imageLicense: "Public domain"
+imageLicenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/"
 imageSource: "https://commons.wikimedia.org/wiki/File:Fish_cakes_food_dinner.jpg"
 emoji: "🐟"
 icon: plate

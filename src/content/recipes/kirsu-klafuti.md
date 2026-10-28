@@ -6,6 +6,7 @@ category: saldie-edieni
 image: "/images/recipes/kirsu-klafuti.jpg"
 imageAuthor: "Rotem Danzig"
 imageLicense: "Attribution"
+imageLicenseUrl: "https://commons.wikimedia.org/wiki/Template:Attribution"
 imageSource: "https://commons.wikimedia.org/wiki/File:Clafoutis3.jpg"
 emoji: "🍒"
 icon: tart
